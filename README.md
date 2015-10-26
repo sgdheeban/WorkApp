@@ -1,7 +1,10 @@
 # WorkApp
 Client-Server Codebase for WorkApp  
 
-Pre-Installations for the Project
+Install the following on the DEV machine before executing the source code
 
-    1. MySQL Server and Workbench, Eclipse IDE, Git, Java SDK 8, Maven 2.3+ Installation on the DEV machine
+    1. MySQL Server and Workbench
+    2. Eclipse IDE, Git
+    3. Java SDK 8
+    4. Maven 2.3+ 
     
