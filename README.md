@@ -20,7 +20,7 @@ WorkApp has a comprehensive set of unit tests that can take several minutes to r
 
     mvn clean install -DskipTests
     
-## Running Presto in your IDE
+## Running WorkApp in your IDE
 
 ### Overview
 
