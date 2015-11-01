@@ -1,5 +1,5 @@
 # WorkApp
-Client-Server Codebase for WorkApp  
+Client-Server Codebase for WorkApp, a platform for connecting talents with customers around the globe  
 
 
 ## Requirement
