@@ -1,6 +1,9 @@
 # WorkApp
 Client-Server Codebase for WorkApp  
 
+
+# Requirement
+
 Install the following on the DEV machine before executing the source code
 
     1. MySQL Server and Workbench
