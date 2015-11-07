@@ -37,6 +37,6 @@ WorkApp comes with sample configuration that should work out-of-the-box for deve
 * Main Class: `com.workappinc.workapp.server.WorkAppServer`
 * VM Options: `-ea -Xmx2G -Dconfig=etc/config.properties -Dlog.levels-file=etc/log.properties`
 * Working directory: `$MODULE_DIR$`
-* Use classpath of module: `workapp-main`
+* Use classpath of module: `WorkApp`
 
-The working directory should be the `workapp-main` subdirectory. In EclipseIDE, using `$MODULE_DIR$` accomplishes this automatically.
+The working directory should be the `WorkApp` subdirectory. In EclipseIDE, using `$MODULE_DIR$` accomplishes this automatically.
