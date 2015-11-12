@@ -1,6 +1,8 @@
 # WorkApp Server
 
-This is the main server, which hosts the backend server logic for WorkApp project. This module contains the following sub-components :
+This is the main server module, which hosts the backend server logic for WorkApp project. This module contains the following : 
+
+## Sub-Components
 
   1. Common Logger [Common Resources Package]
   2. File and Command Line based Configuration Manager [Common Resources Package]
