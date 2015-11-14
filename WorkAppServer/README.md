@@ -8,7 +8,7 @@ This is the main server module, which hosts the backend server logic for WorkApp
   2. File and Command Line based Configuration Manager [Common Resources Package]
   3. REST Service Layer using Embedded HTTP Jetty Server on port 8080 [Common Resources / Service Package]
   4. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Common Resources / Service Package]
-  5. Caching Layer - Consumer for In-Memory and External Caches like Redis, Memcached [Common Resources Package]
+  5. Caching Layer - Consumer for In-Memory Cache like Guava and External Caches like Redis, Memcached [Common Resources Package]
   6. Object Allocation Tracker [Common Resources Package]
   7. PerfMetric Counter [Common Resources Package] 
   8. Model Objects with Serializer-Deserializer between JSON-Query [Model Package] 
