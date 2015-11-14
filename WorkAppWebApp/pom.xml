@@ -7,9 +7,7 @@
     <artifactId>WorkApp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.workappinc</groupId>
   <artifactId>WorkAppWebApp</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>WorkAppWebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
