@@ -13,7 +13,7 @@ This is the main server module, which hosts the backend server logic for WorkApp
   7. Object Allocation Tracker [Common Resources Package]
   8. Code Instrumentor [Common Resources Package]
   9. PerfMetric Counter [Common Resources Package] 
-  10. Model Objects with Serializer-Deserializer between JSON-Query [Model Package] 
+  10. Model Business Objects [Model Package] 
   11. Database Connection Manager - For SQLite, MySQL, PostgreSQL, Cassandra, Mongo [Data Access Package]
   12. DataService Connection Manager - for usefuk toools like Kafka, Zookeeper [Data Access Package]
   13. SQL Query Builder [Data Access Package]
