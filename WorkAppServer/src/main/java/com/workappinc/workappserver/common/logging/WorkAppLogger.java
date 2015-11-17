@@ -15,7 +15,6 @@ public class WorkAppLogger implements ILogger {
 
 	private ConcurrentHashMap<Class<?>, Logger> mLoggerInstances = new ConcurrentHashMap<Class<?>, Logger> ();
 
-	@SuppressWarnings("unused")
 	private Logger getLoggerInstance(Class<?> className) {
 		Logger returnLogger = null;
 		returnLogger = mLoggerInstances.putIfAbsent(className, Logger.getLogger(className));
