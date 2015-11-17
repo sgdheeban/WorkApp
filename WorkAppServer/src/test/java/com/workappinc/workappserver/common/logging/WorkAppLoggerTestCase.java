@@ -1,4 +1,4 @@
-package com.workappinc.workappsever.common.logging;
+package com.workappinc.workappserver.common.logging;
 
 import static org.junit.Assert.*;
 
