@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common;
+package com.workappinc.workappserver.common.resources;
 
 public class WorkAppContext implements IContext
 {

@@ -1,6 +1,6 @@
 package com.workappinc.workappserver.common.logging;
 
-import com.workappinc.workappserver.common.IContext;
+import com.workappinc.workappserver.common.resources.IContext;
 
 /**
  * ILogger Interface is a top-level interface for deriving a common Logger

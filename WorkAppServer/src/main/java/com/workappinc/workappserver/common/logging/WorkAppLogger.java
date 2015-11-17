@@ -4,7 +4,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.log4j.Logger;
 
-import com.workappinc.workappserver.common.IContext;
+import com.workappinc.workappserver.common.exception.SingletonInitException;
+import com.workappinc.workappserver.common.resources.IContext;
 
 /**
  * WorkAppLogger is an implementation of ILogger Interface
@@ -21,20 +22,30 @@ public class WorkAppLogger implements ILogger
 	{
 	}
 
-	/* Singleton Object Instantiation Call */
+	/**
+	 * getInstance method is used to get a singleton object 
+	 * @return
+	 */
 	public static WorkAppLogger getInstance()
 	{
-		if (mInstance == null)
+		try 
 		{
-			synchronized (WorkAppLogger.class)
+			if (mInstance == null)
 			{
-				if (mInstance == null)
+				synchronized (WorkAppLogger.class)
 				{
-					mInstance = new WorkAppLogger();
+					if (mInstance == null)
+					{
+						mInstance = new WorkAppLogger();
+					}
 				}
 			}
+			return mInstance;
 		}
-		return mInstance;
+		catch(Exception ex)
+		{
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppLogger Class",ex);
+		}
 	}
 
 	private Logger getLoggerInstance(Class<?> className)
