@@ -15,7 +15,7 @@ import com.workappinc.workappserver.common.IContext;
 public class WorkAppLogger implements ILogger
 {
 	private ConcurrentHashMap<Class<?>, Logger> mLoggerInstances = new ConcurrentHashMap<Class<?>, Logger>();
-	private static WorkAppLogger mInstance;
+	private static WorkAppLogger mInstance = null;
 
 	private WorkAppLogger()
 	{
