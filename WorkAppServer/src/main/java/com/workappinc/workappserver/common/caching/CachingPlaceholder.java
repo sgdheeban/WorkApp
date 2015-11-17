@@ -1,5 +1,6 @@
 package com.workappinc.workappserver.common.caching;
 
-public class CachingPlaceholder {
+public class CachingPlaceholder
+{
 
 }
