@@ -1,7 +1,9 @@
 package com.workappinc.workappserver.common.exception;
 
 /**
- * WorkAppUncaughtException is a custom RuntimeException for handling Singleton Object creation error
+ * WorkAppUncaughtException is a custom RuntimeException for handling Singleton
+ * Object creation error
+ * 
  * @author dhgovindaraj
  *
  */
@@ -19,7 +21,9 @@ public class WorkAppUncaughtException extends RuntimeException
 
 	/**
 	 * WorkAppUncaughtException Constructor
-	 * @param s  Message string
+	 * 
+	 * @param s
+	 *            Message string
 	 */
 	public WorkAppUncaughtException(String s)
 	{
@@ -28,8 +32,11 @@ public class WorkAppUncaughtException extends RuntimeException
 
 	/**
 	 * WorkAppUncaughtException Constructor
-	 * @param s  Message string
-	 * @param throwable takes an exception throwable as parameter
+	 * 
+	 * @param s
+	 *            Message string
+	 * @param throwable
+	 *            takes an exception throwable as parameter
 	 */
 	public WorkAppUncaughtException(String s, Throwable throwable)
 	{
@@ -38,7 +45,9 @@ public class WorkAppUncaughtException extends RuntimeException
 
 	/**
 	 * WorkAppUncaughtException Constructor
-	 * @param throwable takes an exception throwable as parameter
+	 * 
+	 * @param throwable
+	 *            takes an exception throwable as parameter
 	 */
 	public WorkAppUncaughtException(Throwable throwable)
 	{

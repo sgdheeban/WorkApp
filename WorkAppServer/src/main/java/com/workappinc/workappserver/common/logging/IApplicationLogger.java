@@ -3,8 +3,8 @@ package com.workappinc.workappserver.common.logging;
 import com.workappinc.workappserver.common.resources.IContext;
 
 /**
- * IApplicationLogger Interface is a top-level interface for deriving a common Logger
- * Singleton Object
+ * IApplicationLogger Interface is a top-level interface for deriving a common
+ * Logger Singleton Object
  * 
  * @author dhgovindaraj
  *

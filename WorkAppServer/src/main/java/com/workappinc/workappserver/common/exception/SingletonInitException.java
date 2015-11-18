@@ -1,7 +1,9 @@
 package com.workappinc.workappserver.common.exception;
 
 /**
- * SingletonInitException is a custom RuntimeException for handling Singleton Object creation error
+ * SingletonInitException is a custom RuntimeException for handling Singleton
+ * Object creation error
+ * 
  * @author dhgovindaraj
  *
  */
@@ -19,7 +21,9 @@ public class SingletonInitException extends RuntimeException
 
 	/**
 	 * SingletonInitException Constructor
-	 * @param s  Message string
+	 * 
+	 * @param s
+	 *            Message string
 	 */
 	public SingletonInitException(String s)
 	{
@@ -28,8 +32,11 @@ public class SingletonInitException extends RuntimeException
 
 	/**
 	 * SingletonInitException Constructor
-	 * @param s  Message string
-	 * @param throwable takes an exception throwable as parameter
+	 * 
+	 * @param s
+	 *            Message string
+	 * @param throwable
+	 *            takes an exception throwable as parameter
 	 */
 	public SingletonInitException(String s, Throwable throwable)
 	{
@@ -38,7 +45,9 @@ public class SingletonInitException extends RuntimeException
 
 	/**
 	 * SingletonInitException Constructor
-	 * @param throwable takes an exception throwable as parameter
+	 * 
+	 * @param throwable
+	 *            takes an exception throwable as parameter
 	 */
 	public SingletonInitException(Throwable throwable)
 	{

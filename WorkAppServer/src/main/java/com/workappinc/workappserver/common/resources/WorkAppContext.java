@@ -4,6 +4,6 @@ public class WorkAppContext implements IContext
 {
 	public WorkAppContext()
 	{
-		
+
 	}
 }

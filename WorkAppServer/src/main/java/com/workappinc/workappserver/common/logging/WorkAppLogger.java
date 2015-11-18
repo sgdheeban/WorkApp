@@ -3,9 +3,7 @@ package com.workappinc.workappserver.common.logging;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.log4j.Logger;
-
 import com.workappinc.workappserver.common.exception.SingletonInitException;
-import com.workappinc.workappserver.common.resources.IContext;
 
 /**
  * WorkAppLogger is an implementation of ILogger Interface
@@ -20,15 +18,18 @@ public class WorkAppLogger implements IApplicationLogger
 
 	private WorkAppLogger()
 	{
+		// Logger to catch uncaught exceptions in a separate thread
+		WorkAppUncaughtExceptionLogger.setDefaultUncaughtExceptionHandler();
 	}
 
 	/**
-	 * getInstance method is used to get a singleton object 
+	 * getInstance method is used to get a singleton object
+	 * 
 	 * @return
 	 */
 	public static WorkAppLogger getInstance()
 	{
-		try 
+		try
 		{
 			if (mInstance == null)
 			{
@@ -41,10 +42,9 @@ public class WorkAppLogger implements IApplicationLogger
 				}
 			}
 			return mInstance;
-		}
-		catch(Exception ex)
+		} catch (Exception ex)
 		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppLogger Class",ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppLogger Class", ex);
 		}
 	}
 
