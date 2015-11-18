@@ -9,6 +9,10 @@ package com.workappinc.workappserver.common.resources;
  */
 public class WorkAppContext implements IContext
 {
+	
+	private String mGUID = "";
+	private String mMessage = "";
+	
 	/**
 	 * Default Constructor
 	 */
@@ -24,22 +28,23 @@ public class WorkAppContext implements IContext
 	 * @param Message
 	 *            Message related to the Context object
 	 */
-	public WorkAppContext(Long GUID, String Message)
+	public WorkAppContext(String GUID, String message)
 	{
-
+		this.mGUID = GUID;
+		this.mMessage = message;
 	}
 
 	@Override
-	public Long getGUID()
+	public String getGUID()
 	{
 		// TODO Auto-generated method stub
-		return null;
+		return mGUID;
 	}
 
 	@Override
 	public String getMessage()
 	{
 		// TODO Auto-generated method stub
-		return null;
+		return mMessage;
 	}
 }

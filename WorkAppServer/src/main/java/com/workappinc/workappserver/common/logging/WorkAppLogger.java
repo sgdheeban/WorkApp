@@ -69,7 +69,7 @@ public class WorkAppLogger implements IApplicationLogger
 	@Override
 	public synchronized void LogInfo(Object ctx, Class<?> className)
 	{
-		getLoggerInstance(className).info(format(ctx));
+		if (getLoggerInstance(className).isDebugEnabled()) getLoggerInstance(className).info(format(ctx));
 	}
 
 	@Override
@@ -81,7 +81,8 @@ public class WorkAppLogger implements IApplicationLogger
 	@Override
 	public synchronized void LogDebug(Object ctx, Class<?> className)
 	{
-		getLoggerInstance(className).debug(format(ctx));
+		if (getLoggerInstance(className).isDebugEnabled()) getLoggerInstance(className).debug(format(ctx));
+
 	}
 
 	@Override

@@ -14,7 +14,7 @@ public interface IContext
 	 * 
 	 * @return
 	 */
-	public Long getGUID();
+	public String getGUID();
 
 	/**
 	 * getMessage returns the message associated with the Context object
