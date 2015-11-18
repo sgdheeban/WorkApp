@@ -32,7 +32,8 @@ public class WorkAppUtility
 				}
 			}
 			return mInstance;
-		} catch (Exception ex)
+		}
+		catch (Exception ex)
 		{
 			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppUtility Class", ex);
 		}
@@ -54,7 +55,8 @@ public class WorkAppUtility
 			// of the form
 			// "pid@hostname", which is probably not guaranteed.
 			pid = nameStr.split("@")[0];
-		} catch (RuntimeException e)
+		}
+		catch (RuntimeException e)
 		{
 			// Fall through.
 		}
