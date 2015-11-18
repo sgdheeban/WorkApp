@@ -53,10 +53,11 @@ public class WorkAppLogger implements IApplicationLogger
 		}
 	}
 
-	private Logger getLoggerInstance(Class<?> className)
+	private synchronized Logger getLoggerInstance(Class<?> className)
 	{
 		Logger returnLogger = null;
 		returnLogger = mLoggerInstances.putIfAbsent(className, Logger.getLogger(className));
+		returnLogger = mLoggerInstances.get(className);
 		return returnLogger;
 	}
 
