@@ -51,8 +51,7 @@ public class WorkAppUtility
 		{
 			final String nameStr = ManagementFactory.getRuntimeMXBean().getName();
 
-			// XXX (bjorn): Really stupid parsing assuming that nameStr will be
-			// of the form
+			// TODO: Basic parsing assuming that nameStr will be of the form
 			// "pid@hostname", which is probably not guaranteed.
 			pid = nameStr.split("@")[0];
 		}
