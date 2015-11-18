@@ -13,7 +13,7 @@ import com.workappinc.workappserver.common.resources.IContext;
  * @author dhgovindaraj
  *
  */
-public class WorkAppLogger implements ILogger
+public class WorkAppLogger implements IApplicationLogger
 {
 	private ConcurrentHashMap<Class<?>, Logger> mLoggerInstances = new ConcurrentHashMap<Class<?>, Logger>();
 	private static WorkAppLogger mInstance = null;
@@ -56,48 +56,48 @@ public class WorkAppLogger implements ILogger
 	}
 
 	@Override
-	public void LogPerf(IContext ctx, Class<?> className)
+	public void LogPerf(Object ctx, Class<?> className)
 	{
 		getLoggerInstance(className).info(format(ctx));
 	}
 
 	@Override
-	public void LogInfo(IContext ctx, Class<?> className)
+	public void LogInfo(Object ctx, Class<?> className)
 	{
 		getLoggerInstance(className).info(format(ctx));
 	}
 
 	@Override
-	public void LogWarn(IContext ctx, Class<?> className)
+	public void LogWarn(Object ctx, Class<?> className)
 	{
 		getLoggerInstance(className).warn(format(ctx));
 	}
 
 	@Override
-	public void LogDebug(IContext ctx, Class<?> className)
+	public void LogDebug(Object ctx, Class<?> className)
 	{
 		getLoggerInstance(className).debug(format(ctx));
 	}
 
 	@Override
-	public void LogError(IContext ctx, Class<?> className)
+	public void LogError(Object ctx, Class<?> className)
 	{
 		getLoggerInstance(className).error(format(ctx));
 	}
 
 	@Override
-	public void LogTrace(IContext ctx, Class<?> className)
+	public void LogTrace(Object ctx, Class<?> className)
 	{
 		getLoggerInstance(className).trace(format(ctx));
 	}
 
 	@Override
-	public void LogFatal(IContext ctx, Class<?> className)
+	public void LogFatal(Object ctx, Class<?> className)
 	{
 		getLoggerInstance(className).fatal(format(ctx));
 	}
 
-	private String format(IContext ctx)
+	private String format(Object ctx)
 	{
 		String returnString = null;
 		return returnString;
