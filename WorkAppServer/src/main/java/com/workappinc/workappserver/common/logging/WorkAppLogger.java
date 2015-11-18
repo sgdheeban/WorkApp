@@ -105,7 +105,6 @@ public class WorkAppLogger implements IApplicationLogger
 	private synchronized String format(Object ctx)
 	{
 		String returnString = null;
-
 		if (ctx instanceof Exception)
 		{
 			mStringBuilder = new StringBuilder();
@@ -120,9 +119,12 @@ public class WorkAppLogger implements IApplicationLogger
 		}
 		else if (ctx instanceof IContext)
 		{
-
+			mStringBuilder = new StringBuilder();
+			mStringBuilder.append(((IContext) ctx).getGUID());
+			mStringBuilder.append(",");
+			mStringBuilder.append(((IContext) ctx).getMessage());
+			returnString = mStringBuilder.toString();
 		}
-
 		return returnString;
 	}
 
