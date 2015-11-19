@@ -15,7 +15,7 @@ public interface IPage
 	 * 
 	 * @return returns JSON string
 	 */
-	public String loadPage();
+	public Object loadPage();
 
 	/**
 	 * Loads a specific section, identified by name, of the page and returns a
@@ -24,6 +24,6 @@ public interface IPage
 	 * @param name
 	 * @return JSON string
 	 */
-	public String loadSection(String name);
+	public Object loadSection(Object name);
 
 }
