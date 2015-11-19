@@ -10,12 +10,16 @@ import com.workappinc.workappserver.common.logging.IApplicationLogger;
  * Registration means basically, added a API support to call these call constructors of the specified object 
  * It's the programmers responsibility to use this systematically, could potentially lead to bloat in this file, as the available objects proliferate
  * Singleton objects are also considered by this factory, when you add a singleton, register it with singletonRegistry
- * Add reference in the factory method as classes are created
+ * Add reference in the factory method as classes are created, and will tie up with Object Allocation Tracker to track object track orphaned objects
  * @author dhgovindaraj
  *
  */
 public class WorkAppObjectFactory implements IFactory
 {
+	/**
+	 * Format is <ClassName,Method-Definition>
+	 * Example : <WorkAppConfigFileReader,public static WorkAppConfigFileReader getInstance(IApplicationLogger logger)>
+	 */
 	private static HashMap<String, String> mSingletonDefinitions = new HashMap<String, String> ();
 
 	/**
@@ -27,7 +31,7 @@ public class WorkAppObjectFactory implements IFactory
 	}
 	
 	private static IApplicationLogger mLogger = null;
-	private static WorkAppObjectFactory mInstance = null;
+	private static IFactory mInstance = null;
 	
 	private WorkAppObjectFactory(IApplicationLogger logger)
 	{
@@ -39,7 +43,7 @@ public class WorkAppObjectFactory implements IFactory
 	 * 
 	 * @return
 	 */
-	public static WorkAppObjectFactory getInstance(IApplicationLogger logger)
+	public static IFactory getInstance(IApplicationLogger logger)
 	{
 		try
 		{

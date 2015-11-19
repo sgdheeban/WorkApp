@@ -13,7 +13,7 @@ import com.workappinc.workappserver.common.logging.IApplicationLogger;
 public class WorkAppConfigFileReader implements IReader
 {
 	private static IApplicationLogger mLogger = null;
-	private static WorkAppConfigFileReader mInstance = null;
+	private static IReader mInstance = null;
 	
 	private WorkAppConfigFileReader(IApplicationLogger logger)
 	{
@@ -25,7 +25,7 @@ public class WorkAppConfigFileReader implements IReader
 	 * 
 	 * @return
 	 */
-	public static WorkAppConfigFileReader getInstance(IApplicationLogger logger)
+	public static IReader getInstance(IApplicationLogger logger)
 	{
 		try
 		{
