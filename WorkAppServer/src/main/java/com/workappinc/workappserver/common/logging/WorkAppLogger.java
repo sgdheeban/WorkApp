@@ -2,9 +2,12 @@ package com.workappinc.workappserver.common.logging;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.resources.IContext;
 
@@ -20,10 +23,13 @@ public class WorkAppLogger implements IApplicationLogger
 	private static WorkAppLogger mInstance = null;
 	private StringBuilder mStringBuilder = null;
 
-	private WorkAppLogger()
+	private WorkAppLogger(Properties config)
 	{
+		if (config != null)
+			configureDefaults(config);
+
 		// Logger to catch uncaught exceptions in a separate thread
-		WorkAppUncaughtExceptionLogger.setDefaultUncaughtExceptionHandler();
+		WorkAppUncaughtExceptionLogger.setDefaultUncaughtExceptionHandler(this);
 	}
 
 	/**
@@ -31,7 +37,7 @@ public class WorkAppLogger implements IApplicationLogger
 	 * 
 	 * @return
 	 */
-	public static WorkAppLogger getInstance()
+	public static WorkAppLogger getInstance(Properties config)
 	{
 		try
 		{
@@ -41,7 +47,7 @@ public class WorkAppLogger implements IApplicationLogger
 				{
 					if (mInstance == null)
 					{
-						mInstance = new WorkAppLogger();
+						mInstance = new WorkAppLogger(config);
 					}
 				}
 			}
@@ -51,6 +57,11 @@ public class WorkAppLogger implements IApplicationLogger
 		{
 			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppLogger Class", ex);
 		}
+	}
+
+	private static void configureDefaults(Properties config)
+	{
+		PropertyConfigurator.configure(config);
 	}
 
 	private synchronized Logger getLoggerInstance(Class<?> className)

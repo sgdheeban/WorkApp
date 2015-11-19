@@ -22,12 +22,12 @@ public class WorkAppLoggerExample
 	 */
 	private static void defaultLoggerFunctionalityTest()
 	{
-		WorkAppLogger.getInstance().LogFatal(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance().LogError(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance().LogWarn(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance().LogInfo(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance().LogDebug(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance().LogTrace(ctx, WorkAppLoggerExample.class);
+		WorkAppLogger.getInstance(null).LogFatal(ctx, WorkAppLoggerExample.class);
+		WorkAppLogger.getInstance(null).LogError(ctx, WorkAppLoggerExample.class);
+		WorkAppLogger.getInstance(null).LogWarn(ctx, WorkAppLoggerExample.class);
+		WorkAppLogger.getInstance(null).LogInfo(ctx, WorkAppLoggerExample.class);
+		WorkAppLogger.getInstance(null).LogDebug(ctx, WorkAppLoggerExample.class);
+		WorkAppLogger.getInstance(null).LogTrace(ctx, WorkAppLoggerExample.class);
 	}
 
 	/**
