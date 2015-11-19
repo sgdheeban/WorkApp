@@ -1,22 +1,34 @@
 package com.workappinc.workappserver.common.resources;
 
+import java.util.HashMap;
+
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
- * WorkAppObjectFactory is class with static methods to create objects systematically, every new object type should be registered manually in this factory class
+ * WorkAppObjectFactory is an implementation of IFactory, with static methods to create objects systematically, every new object type should be registered manually in this factory class
  * Registration means basically, added a API support to call these call constructors of the specified object 
  * It's the programmers responsibility to use this systematically, could potentially lead to bloat in this file, as the available objects proliferate
- * Singleton objects are not considered by this factory, when you add a singleton, register it with singletonRegistry
+ * Singleton objects are also considered by this factory, when you add a singleton, register it with singletonRegistry
  * Add reference in the factory method as classes are created
  * @author dhgovindaraj
  *
  */
-public class WorkAppObjectFactory
+public class WorkAppObjectFactory implements IFactory
 {
+	private static HashMap<String, String> mSingletonDefinitions = new HashMap<String, String> ();
+
+	/**
+	 * Singleton Definitions listed here, as singleton POJOs are created
+	 */
+	static 
+	{
+		
+	}
+	
 	private static IApplicationLogger mLogger = null;
 	private static WorkAppObjectFactory mInstance = null;
-
+	
 	private WorkAppObjectFactory(IApplicationLogger logger)
 	{
 		mLogger = logger;
@@ -52,7 +64,16 @@ public class WorkAppObjectFactory
 		}
 	}
 
+	/**
+	 * Returns a list of all singleton objects available in the system
+	 * @return
+	 */
+	public static HashMap<String, String> getSingletonList() {
+		return mSingletonDefinitions;
+	}
 	
-	//TODO Add API Suppor to create objects systematically
+	/**
+	 * Method definitions are listed here as normal POJOs are created
+	 */
 	//Typically, it would be a public static ReturnType Foo(param...)
 }

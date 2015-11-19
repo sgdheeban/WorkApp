@@ -1,0 +1,11 @@
+package com.workappinc.workappserver.common.resources;
+
+/**
+ * IWriter is a top-level interface to write to a steam
+ * @author dhgovindaraj
+ *
+ */
+public interface IWriter
+{
+
+}
