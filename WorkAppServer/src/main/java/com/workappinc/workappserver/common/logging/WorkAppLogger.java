@@ -64,38 +64,15 @@ public class WorkAppLogger implements IApplicationLogger
 	@Override
 	public synchronized void LogPerf(Object ctx, Class<?> className)
 	{
-		getLoggerInstance(className).info(format(ctx));
+		if (getLoggerInstance(className).isInfoEnabled()) 
+			getLoggerInstance(className).info(format(ctx));
 	}
 
 	@Override
-	public synchronized void LogInfo(Object ctx, Class<?> className)
+	public synchronized void LogException(Object ctx, Class<?> className)
 	{
-		if (getLoggerInstance(className).isDebugEnabled()) getLoggerInstance(className).info(format(ctx));
-	}
-
-	@Override
-	public synchronized void LogWarn(Object ctx, Class<?> className)
-	{
-		getLoggerInstance(className).warn(format(ctx));
-	}
-
-	@Override
-	public synchronized void LogDebug(Object ctx, Class<?> className)
-	{
-		if (getLoggerInstance(className).isDebugEnabled()) getLoggerInstance(className).debug(format(ctx));
-
-	}
-
-	@Override
-	public synchronized void LogError(Object ctx, Class<?> className)
-	{
-		getLoggerInstance(className).error(format(ctx));
-	}
-
-	@Override
-	public synchronized void LogTrace(Object ctx, Class<?> className)
-	{
-		getLoggerInstance(className).trace(format(ctx));
+		if (getLoggerInstance(className).isInfoEnabled()) 
+			getLoggerInstance(className).info(format(ctx));
 	}
 
 	@Override
@@ -104,15 +81,49 @@ public class WorkAppLogger implements IApplicationLogger
 		getLoggerInstance(className).fatal(format(ctx));
 	}
 
+	@Override
+	public synchronized void LogError(Object ctx, Class<?> className)
+	{
+		getLoggerInstance(className).error(format(ctx));
+	}
+	
+	@Override
+	public synchronized void LogWarn(Object ctx, Class<?> className)
+	{
+		getLoggerInstance(className).warn(format(ctx));
+	}
+
+	@Override
+	public synchronized void LogInfo(Object ctx, Class<?> className)
+	{
+		if (getLoggerInstance(className).isInfoEnabled()) 
+			getLoggerInstance(className).info(format(ctx));
+	}
+	
+	@Override
+	public synchronized void LogDebug(Object ctx, Class<?> className)
+	{
+		if (getLoggerInstance(className).isDebugEnabled()) 
+			getLoggerInstance(className).debug(format(ctx));
+	}
+
+	@Override
+	public synchronized void LogTrace(Object ctx, Class<?> className)
+	{
+		getLoggerInstance(className).trace(format(ctx));
+	}
+
 	private synchronized String format(Object ctx)
 	{
 		String returnString = null;
 		if (ctx instanceof Exception)
 		{
 			mStringBuilder = new StringBuilder();
+			mStringBuilder.append(" [ ");
 			mStringBuilder.append(((Exception) ctx).getMessage());
 			mStringBuilder.append("- Caused by");
 			mStringBuilder.append(((Exception) ctx).getCause());
+			mStringBuilder.append(" ] ");
 			mStringBuilder.append(" - Stacktrace : ");
 			StringWriter errors = new StringWriter();
 			((Throwable) ctx).printStackTrace(new PrintWriter(errors));
@@ -122,9 +133,11 @@ public class WorkAppLogger implements IApplicationLogger
 		else if (ctx instanceof IContext)
 		{
 			mStringBuilder = new StringBuilder();
+			mStringBuilder.append(" [");
 			mStringBuilder.append(((IContext) ctx).getGUID());
 			mStringBuilder.append(",");
 			mStringBuilder.append(((IContext) ctx).getMessage());
+			mStringBuilder.append("] ");
 			returnString = mStringBuilder.toString();
 		}
 		return returnString;

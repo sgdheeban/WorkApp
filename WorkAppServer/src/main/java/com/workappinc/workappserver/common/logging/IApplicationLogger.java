@@ -37,7 +37,18 @@ public interface IApplicationLogger extends ILogger
 	public void LogPerf(Object ctx, Class<?> className);
 
 	/**
-	 * LogInfo is used to Log general Info throughout the Application
+	 * LogException is used to Log exception Info throughout the Application
+	 * 
+	 * @param ctx
+	 *            Takes a Object Parameter, which is has exception context about the
+	 *            current request under processing
+	 * @param ClassName
+	 *            Takes the caller's ClassName to be used while Logging
+	 */
+	public void LogException(Object ctx, Class<?> className);
+
+	/**
+	 * LogFatal is used to Log Fatal message, which will halt the Application
 	 * 
 	 * @param ctx
 	 *            Takes a Object Parameter, which is has all context about the
@@ -45,7 +56,18 @@ public interface IApplicationLogger extends ILogger
 	 * @param ClassName
 	 *            Takes the caller's ClassName to be used while Logging
 	 */
-	public void LogInfo(Object ctx, Class<?> className);
+	public void LogFatal(Object ctx, Class<?> className);
+
+	/**
+	 * LogWarn is used to Log general Error Scenarios throughout the Application
+	 * 
+	 * @param ctx
+	 *            Takes a Object Parameter, which is has all context about the
+	 *            current request under processing
+	 * @param ClassName
+	 *            Takes the caller's ClassName to be used while Logging
+	 */
+	public void LogError(Object ctx, Class<?> className);
 
 	/**
 	 * LogWarn is used to Log general Warning Scenarios throughout the
@@ -60,6 +82,17 @@ public interface IApplicationLogger extends ILogger
 	public void LogWarn(Object ctx, Class<?> className);
 
 	/**
+	 * LogInfo is used to Log general Info throughout the Application
+	 * 
+	 * @param ctx
+	 *            Takes a Object Parameter, which is has all context about the
+	 *            current request under processing
+	 * @param ClassName
+	 *            Takes the caller's ClassName to be used while Logging
+	 */
+	public void LogInfo(Object ctx, Class<?> className);
+
+	/**
 	 * LogWarn is used to Log general Debug Scenarios throughout the Application
 	 * 
 	 * @param ctx
@@ -71,17 +104,6 @@ public interface IApplicationLogger extends ILogger
 	public void LogDebug(Object ctx, Class<?> className);
 
 	/**
-	 * LogWarn is used to Log general Error Scenarios throughout the Application
-	 * 
-	 * @param ctx
-	 *            Takes a Object Parameter, which is has all context about the
-	 *            current request under processing
-	 * @param ClassName
-	 *            Takes the caller's ClassName to be used while Logging
-	 */
-	public void LogError(Object ctx, Class<?> className);
-
-	/**
 	 * LogTrace is used to Log Trace, which is finer detail than Debug
 	 * 
 	 * @param ctx
@@ -91,16 +113,5 @@ public interface IApplicationLogger extends ILogger
 	 *            Takes the caller's ClassName to be used while Logging
 	 */
 	public void LogTrace(Object ctx, Class<?> className);
-
-	/**
-	 * LogFatal is used to Log Fatal message, which will halt the Application
-	 * 
-	 * @param ctx
-	 *            Takes a Object Parameter, which is has all context about the
-	 *            current request under processing
-	 * @param ClassName
-	 *            Takes the caller's ClassName to be used while Logging
-	 */
-	public void LogFatal(Object ctx, Class<?> className);
 
 }
