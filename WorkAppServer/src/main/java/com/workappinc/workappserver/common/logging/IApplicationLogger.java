@@ -40,8 +40,8 @@ public interface IApplicationLogger extends ILogger
 	 * LogException is used to Log exception Info throughout the Application
 	 * 
 	 * @param ctx
-	 *            Takes a Object Parameter, which is has exception context about the
-	 *            current request under processing
+	 *            Takes a Object Parameter, which is has exception context about
+	 *            the current request under processing
 	 * @param ClassName
 	 *            Takes the caller's ClassName to be used while Logging
 	 */

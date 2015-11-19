@@ -64,14 +64,14 @@ public class WorkAppLogger implements IApplicationLogger
 	@Override
 	public synchronized void LogPerf(Object ctx, Class<?> className)
 	{
-		if (getLoggerInstance(className).isInfoEnabled()) 
+		if (getLoggerInstance(className).isInfoEnabled())
 			getLoggerInstance(className).info(format(ctx));
 	}
 
 	@Override
 	public synchronized void LogException(Object ctx, Class<?> className)
 	{
-		if (getLoggerInstance(className).isInfoEnabled()) 
+		if (getLoggerInstance(className).isInfoEnabled())
 			getLoggerInstance(className).info(format(ctx));
 	}
 
@@ -86,7 +86,7 @@ public class WorkAppLogger implements IApplicationLogger
 	{
 		getLoggerInstance(className).error(format(ctx));
 	}
-	
+
 	@Override
 	public synchronized void LogWarn(Object ctx, Class<?> className)
 	{
@@ -96,14 +96,14 @@ public class WorkAppLogger implements IApplicationLogger
 	@Override
 	public synchronized void LogInfo(Object ctx, Class<?> className)
 	{
-		if (getLoggerInstance(className).isInfoEnabled()) 
+		if (getLoggerInstance(className).isInfoEnabled())
 			getLoggerInstance(className).info(format(ctx));
 	}
-	
+
 	@Override
 	public synchronized void LogDebug(Object ctx, Class<?> className)
 	{
-		if (getLoggerInstance(className).isDebugEnabled()) 
+		if (getLoggerInstance(className).isDebugEnabled())
 			getLoggerInstance(className).debug(format(ctx));
 	}
 

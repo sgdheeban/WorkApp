@@ -9,10 +9,10 @@ package com.workappinc.workappserver.common.resources;
  */
 public class WorkAppContext implements IContext
 {
-	
+
 	private String mGUID = "";
 	private String mMessage = "";
-	
+
 	/**
 	 * Default Constructor
 	 */
