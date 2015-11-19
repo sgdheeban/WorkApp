@@ -9,5 +9,8 @@ package com.workappinc.workappserver.common.resources;
  */
 public interface ISerializer
 {
-
+	//TODO add Serialize and DeSerialize support
+	public Object serialize (Object deserializedObject);
+	public Object deSerialize (Object serializedObject);
+	
 }

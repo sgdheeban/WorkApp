@@ -3,6 +3,7 @@ package com.workappinc.workappserver.common.resources;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
+import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
  * A Singleton class for starting a perf counter to collect metrics and store it
@@ -13,12 +14,13 @@ import com.workappinc.workappserver.common.exception.SingletonInitException;
  */
 public class WorkAppPerfCounter implements ICounter
 {
-	private static WorkAppPerfCounter mInstance = null;
+	private static IApplicationLogger mLogger = null;
 	private static AtomicBoolean mStarted = new AtomicBoolean(false);
-
-	private WorkAppPerfCounter()
+	private static ICounter mInstance = null;
+	
+	private WorkAppPerfCounter(IApplicationLogger logger)
 	{
-
+		mLogger = logger;
 	}
 
 	/**
@@ -26,7 +28,7 @@ public class WorkAppPerfCounter implements ICounter
 	 * 
 	 * @return
 	 */
-	public static WorkAppPerfCounter getInstance()
+	public static ICounter getInstance(IApplicationLogger logger)
 	{
 		try
 		{
@@ -36,7 +38,7 @@ public class WorkAppPerfCounter implements ICounter
 				{
 					if (mInstance == null)
 					{
-						mInstance = new WorkAppPerfCounter();
+						mInstance = new WorkAppPerfCounter(logger);
 					}
 				}
 			}
@@ -44,7 +46,7 @@ public class WorkAppPerfCounter implements ICounter
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppLogger Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppPerfCounter Class", ex);
 		}
 	}
 

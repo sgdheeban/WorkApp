@@ -1,15 +1,28 @@
 package com.workappinc.workappserver.common.resources;
 
 import java.lang.management.ManagementFactory;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.HashMap;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
+import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
+/**
+ * WorkAppUtility is a class with static methods to serve as utility methods across files
+ * @author dhgovindaraj
+ *
+ */
 public class WorkAppUtility
 {
+	private static IApplicationLogger mLogger = null;
+	private static InetAddress ip = null;
+	private static String hostname = null;
 	private static WorkAppUtility mInstance = null;
 
-	private WorkAppUtility()
+	private WorkAppUtility(IApplicationLogger logger)
 	{
+		mLogger = logger;
 	}
 
 	/**
@@ -17,7 +30,7 @@ public class WorkAppUtility
 	 * 
 	 * @return
 	 */
-	public static WorkAppUtility getInstance()
+	public static WorkAppUtility getInstance(IApplicationLogger logger)
 	{
 		try
 		{
@@ -27,7 +40,7 @@ public class WorkAppUtility
 				{
 					if (mInstance == null)
 					{
-						mInstance = new WorkAppUtility();
+						mInstance = new WorkAppUtility(logger);
 					}
 				}
 			}
@@ -35,7 +48,10 @@ public class WorkAppUtility
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppUtility Class", ex);
+			SingletonInitException singletonEx = new SingletonInitException(
+					"Error during Singleton Object Creation for WorkAppUtility Class", ex);
+			mLogger.LogException(singletonEx, WorkAppUtility.class);
+			throw singletonEx;
 		}
 	}
 
@@ -44,7 +60,7 @@ public class WorkAppUtility
 	 * 
 	 * @return
 	 */
-	public static String getMyPid()
+	public synchronized static String getMyPid()
 	{
 		String pid = "-1";
 		try
@@ -55,11 +71,39 @@ public class WorkAppUtility
 			// "pid@hostname", which is probably not guaranteed.
 			pid = nameStr.split("@")[0];
 		}
-		catch (RuntimeException e)
+		catch (RuntimeException ex)
 		{
-			// Fall through.
+			mLogger.LogException(ex, WorkAppUtility.class);
 		}
 		return pid;
+	}
+
+	/**
+	 * Get the HostName or IPAddress of the current machine
+	 * 
+	 * @param isHostIP
+	 *            which when set to true, returns IpAddress , else returns HostName
+	 *            IPAddress
+	 * @return
+	 */
+	public synchronized static String getMyHostInfo(boolean isHostIP)
+	{
+		String returnInfo = null;
+		try
+		{
+			ip = InetAddress.getLocalHost();
+			hostname = ip.getHostName();
+
+			if (isHostIP)
+				returnInfo = ip.getHostAddress();
+			else returnInfo = hostname;
+
+		}
+		catch (UnknownHostException ex)
+		{
+			mLogger.LogException(ex, WorkAppUtility.class);
+		}
+		return returnInfo;
 	}
 
 }

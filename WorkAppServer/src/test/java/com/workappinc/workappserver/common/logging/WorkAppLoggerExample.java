@@ -28,6 +28,8 @@ public class WorkAppLoggerExample
 		WorkAppLogger.getInstance(null).LogInfo(ctx, WorkAppLoggerExample.class);
 		WorkAppLogger.getInstance(null).LogDebug(ctx, WorkAppLoggerExample.class);
 		WorkAppLogger.getInstance(null).LogTrace(ctx, WorkAppLoggerExample.class);
+		WorkAppLogger.getInstance(null).LogException(new Exception("Test Exception"), WorkAppLoggerExample.class);
+		WorkAppLogger.getInstance(null).LogPerf(ctx, WorkAppLoggerExample.class);
 	}
 
 	/**
@@ -42,7 +44,7 @@ public class WorkAppLoggerExample
 	/**
 	 * Testing logger from multiple threads to detect any race conditions
 	 */
-	private static void multiThreadingLoggingTest()
+	private static void multiThreadedLoggingTest()
 	{
 
 	}
@@ -57,7 +59,7 @@ public class WorkAppLoggerExample
 	{
 		defaultLoggerFunctionalityTest();
 		commandLineLoggerConfigParamTest();
-		multiThreadingLoggingTest();
+		multiThreadedLoggingTest();
 
 	}
 }

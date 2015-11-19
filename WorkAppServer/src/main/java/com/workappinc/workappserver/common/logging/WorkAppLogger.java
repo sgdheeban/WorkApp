@@ -6,10 +6,12 @@ import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.MDC;
 import org.apache.log4j.PropertyConfigurator;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.resources.IContext;
+import com.workappinc.workappserver.common.resources.WorkAppUtility;
 
 /**
  * WorkAppLogger is an implementation of ILogger Interface
@@ -20,14 +22,19 @@ import com.workappinc.workappserver.common.resources.IContext;
 public class WorkAppLogger implements IApplicationLogger
 {
 	private ConcurrentHashMap<Class<?>, Logger> mLoggerInstances = new ConcurrentHashMap<Class<?>, Logger>();
-	private static WorkAppLogger mInstance = null;
+	private static IApplicationLogger mInstance = null;
 	private StringBuilder mStringBuilder = null;
 
 	private WorkAppLogger(Properties config)
 	{
+		// If External Config File Exists, override default log4j.properties
 		if (config != null)
 			configureDefaults(config);
 
+		// Obtain System Info for Logging
+		MDC.put("hostname", WorkAppUtility.getMyHostInfo(false));
+		MDC.put("port", WorkAppUtility.getMyPid());
+		
 		// Logger to catch uncaught exceptions in a separate thread
 		WorkAppUncaughtExceptionLogger.setDefaultUncaughtExceptionHandler(this);
 	}
@@ -37,7 +44,7 @@ public class WorkAppLogger implements IApplicationLogger
 	 * 
 	 * @return
 	 */
-	public static WorkAppLogger getInstance(Properties config)
+	public static IApplicationLogger getInstance(Properties config)
 	{
 		try
 		{
@@ -55,7 +62,9 @@ public class WorkAppLogger implements IApplicationLogger
 		}
 		catch (Exception ex)
 		{
+			ex.printStackTrace();
 			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppLogger Class", ex);
+			
 		}
 	}
 
@@ -124,7 +133,7 @@ public class WorkAppLogger implements IApplicationLogger
 		getLoggerInstance(className).trace(format(ctx));
 	}
 
-	private synchronized String format(Object ctx)
+	private String format(Object ctx)
 	{
 		String returnString = null;
 		if (ctx instanceof Exception)
@@ -132,8 +141,6 @@ public class WorkAppLogger implements IApplicationLogger
 			mStringBuilder = new StringBuilder();
 			mStringBuilder.append(" [ ");
 			mStringBuilder.append(((Exception) ctx).getMessage());
-			mStringBuilder.append("- Caused by");
-			mStringBuilder.append(((Exception) ctx).getCause());
 			mStringBuilder.append(" ] ");
 			mStringBuilder.append(" - Stacktrace : ");
 			StringWriter errors = new StringWriter();
