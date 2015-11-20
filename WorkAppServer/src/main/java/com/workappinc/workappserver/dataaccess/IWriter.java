@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.dataaccess;
 
 /**
  * IWriter is a top-level interface to write to a steam

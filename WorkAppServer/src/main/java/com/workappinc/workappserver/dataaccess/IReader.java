@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.dataaccess;
 
 /**
  * IReader is a top-level from which all Reader Interface and Classes are

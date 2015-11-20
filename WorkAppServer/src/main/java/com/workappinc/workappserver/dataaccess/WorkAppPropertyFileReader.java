@@ -1,21 +1,21 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.dataaccess;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
- * WorkAppConfigReader is a singleton implementation of IReader interface to read from
+ * WorkAppPropertyFileReader is a singleton implementation of IReader interface to read from
  * disk and convert to POJO representing configuration
  * 
  * @author dhgovindaraj
  *
  */
-public class WorkAppConfigFileReader implements IReader
+public class WorkAppPropertyFileReader implements IReader
 {
 	private static IApplicationLogger mLogger = null;
 	private static IReader mInstance = null;
 	
-	private WorkAppConfigFileReader(IApplicationLogger logger)
+	private WorkAppPropertyFileReader(IApplicationLogger logger)
 	{
 		mLogger = logger;
 	}
@@ -31,11 +31,11 @@ public class WorkAppConfigFileReader implements IReader
 		{
 			if (mInstance == null)
 			{
-				synchronized (WorkAppConfigFileReader.class)
+				synchronized (WorkAppPropertyFileReader.class)
 				{
 					if (mInstance == null)
 					{
-						mInstance = new WorkAppConfigFileReader(logger);
+						mInstance = new WorkAppPropertyFileReader(logger);
 					}
 				}
 			}
@@ -43,7 +43,7 @@ public class WorkAppConfigFileReader implements IReader
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppConfigFileReader Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppPropertyFileReader Class", ex);
 		}
 	}
 
