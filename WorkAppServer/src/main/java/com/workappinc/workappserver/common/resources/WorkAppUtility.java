@@ -3,7 +3,11 @@ package com.workappinc.workappserver.common.resources;
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
+
+import org.apache.commons.codec.digest.DigestUtils;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
@@ -105,5 +109,33 @@ public class WorkAppUtility
 		}
 		return returnInfo;
 	}
+	
+	// getHash, Encrypt user, Decrypt user, converttoPNG, Generate UUID, checksum
 
+	String generateMD5Hash(String id) throws NoSuchAlgorithmException
+	{
+		MessageDigest md = MessageDigest.getInstance("MD5");
+        md.update(id.getBytes());
+        byte byteData[] = md.digest();
+        StringBuffer hexString = new StringBuffer();
+    	for (int i=0;i<byteData.length;i++) {
+    		String hex=Integer.toHexString(0xff & byteData[i]);
+   	     	if(hex.length()==1) hexString.append('0');
+   	     	hexString.append(hex);
+    	}
+    	return hexString.toString();
+	}
+	
+	byte[] generateMD5HashBytes(String id) throws NoSuchAlgorithmException
+	{
+		MessageDigest md = MessageDigest.getInstance("MD5");
+        md.update(id.getBytes());
+        byte[] byteData = md.digest();
+        return byteData;
+       
+	}
+	
+	
+
+	
 }

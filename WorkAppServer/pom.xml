@@ -9,33 +9,38 @@
 	<artifactId>WorkAppServer</artifactId>
 
 	<dependencies>
-	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-api</artifactId>
-		<version>1.7.5</version>
-	</dependency>
-	<dependency>
-		<groupId>log4j</groupId>
-		<artifactId>log4j</artifactId>
-		<version>1.2.17</version>
-	</dependency>
-	<dependency>
-		<groupId>junit</groupId>
-		<artifactId>junit</artifactId>
-		<version>4.11</version>
-		<scope>test</scope>
-	</dependency>
-	<dependency>
-		<groupId>com.sun.jersey</groupId>
-		<artifactId>jersey-server</artifactId>
-		<version>1.8</version>
-	</dependency>
-	<dependency>
-		<groupId>org.mockito</groupId>
-		<artifactId>mockito-all</artifactId>
-		<version>1.9.5</version>
-		<scope>test</scope>
-	</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>1.8</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 </project>
