@@ -158,6 +158,10 @@ public class WorkAppLogger implements IApplicationLogger
 			mStringBuilder.append("] ");
 			returnString = mStringBuilder.toString();
 		}
+		else if (ctx instanceof String)
+		{
+			returnString = ctx.toString();
+		}
 		return returnString;
 	}
 

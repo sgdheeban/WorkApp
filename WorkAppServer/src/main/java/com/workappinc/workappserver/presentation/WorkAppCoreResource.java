@@ -43,6 +43,27 @@ public class WorkAppCoreResource implements IResource
 		return response;
 	}
 
+	/**
+	 * Add Catalog Category 
+	 * @param response
+	 * @return
+	 */
+	public Response addCatalogCategory(Request request)
+	{
+		Response response = null;
+		return response;
+	}
+	
+	/**
+	 * Get List of Catalog Sub-Categories - given a parent Catalog Name 
+	 * @param response
+	 * @return
+	 */
+	public Response getCatagorySubCategory(Request request)
+	{
+		Response response = null;
+		return response;
+	}
 	
 	
 }
