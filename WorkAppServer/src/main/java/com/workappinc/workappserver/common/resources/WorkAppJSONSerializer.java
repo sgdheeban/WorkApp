@@ -4,8 +4,8 @@ import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
- * WorkAppJSONSerializer is a singleton implementation of ISerializer interface for
- * serializing and de-serializing JSON and POJO
+ * WorkAppJSONSerializer is a singleton implementation of ISerializer interface
+ * for serializing and de-serializing JSON and POJO
  * 
  * @author dhgovindaraj
  *
@@ -14,7 +14,7 @@ public class WorkAppJSONSerializer implements ISerializer
 {
 	private static IApplicationLogger mLogger = null;
 	private static ISerializer mInstance = null;
-	
+
 	private WorkAppJSONSerializer(IApplicationLogger logger)
 	{
 		mLogger = logger;
@@ -43,7 +43,8 @@ public class WorkAppJSONSerializer implements ISerializer
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppJSONSerializer Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppJSONSerializer Class",
+					ex);
 		}
 	}
 

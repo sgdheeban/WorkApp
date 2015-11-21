@@ -17,7 +17,7 @@ public class WorkAppPerfCounter implements ICounter
 	private static IApplicationLogger mLogger = null;
 	private static AtomicBoolean mStarted = new AtomicBoolean(false);
 	private static ICounter mInstance = null;
-	
+
 	private WorkAppPerfCounter(IApplicationLogger logger)
 	{
 		mLogger = logger;

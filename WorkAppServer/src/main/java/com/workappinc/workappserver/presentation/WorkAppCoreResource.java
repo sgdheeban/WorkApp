@@ -4,7 +4,9 @@ import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 
 /**
- *  An implementation of IResource to expose services for performing core site services
+ * An implementation of IResource to expose services for performing core site
+ * services
+ * 
  * @author dhgovindaraj
  *
  */
@@ -12,6 +14,7 @@ public class WorkAppCoreResource implements IResource
 {
 	/**
 	 * Registers new User
+	 * 
 	 * @param response
 	 * @return
 	 */
@@ -20,9 +23,10 @@ public class WorkAppCoreResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 	/**
 	 * Login User
+	 * 
 	 * @param response
 	 * @return
 	 */
@@ -31,9 +35,10 @@ public class WorkAppCoreResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 	/**
 	 * Logout User
+	 * 
 	 * @param response
 	 * @return
 	 */
@@ -44,7 +49,8 @@ public class WorkAppCoreResource implements IResource
 	}
 
 	/**
-	 * Add Catalog Category 
+	 * Add Catalog Category
+	 * 
 	 * @param response
 	 * @return
 	 */
@@ -53,9 +59,10 @@ public class WorkAppCoreResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 	/**
-	 * Get List of Catalog Sub-Categories - given a parent Catalog Name 
+	 * Get List of Catalog Sub-Categories - given a parent Catalog Name
+	 * 
 	 * @param response
 	 * @return
 	 */
@@ -64,6 +71,5 @@ public class WorkAppCoreResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
-	
+
 }

@@ -4,7 +4,9 @@ import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 
 /**
- * An implementation of IResource to expose services for loading Client Pages - Web or Mobile
+ * An implementation of IResource to expose services for loading Client Pages -
+ * Web or Mobile
+ * 
  * @author dhgovindaraj
  *
  */
@@ -12,6 +14,7 @@ public class WorkAppPageResource implements IResource
 {
 	/**
 	 * Loads HomePage
+	 * 
 	 * @param response
 	 * @return
 	 */
@@ -23,6 +26,7 @@ public class WorkAppPageResource implements IResource
 
 	/**
 	 * Loads TalentPage
+	 * 
 	 * @param response
 	 * @return
 	 */
@@ -31,5 +35,5 @@ public class WorkAppPageResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 }

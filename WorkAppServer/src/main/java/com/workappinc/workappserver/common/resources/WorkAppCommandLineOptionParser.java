@@ -4,7 +4,9 @@ import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
- * WorkAppCommandLineOptionParser is a singleton implementation of IParser interface, to read command Line Options passed to the program
+ * WorkAppCommandLineOptionParser is a singleton implementation of IParser
+ * interface, to read command Line Options passed to the program
+ * 
  * @author dhgovindaraj
  *
  */
@@ -12,10 +14,10 @@ public class WorkAppCommandLineOptionParser implements IParser
 {
 	private static IApplicationLogger mLogger = null;
 	private static WorkAppCommandLineOptionParser mInstance = null;
-	
+
 	private WorkAppCommandLineOptionParser(IApplicationLogger logger)
 	{
-		 mLogger = logger;
+		mLogger = logger;
 	}
 
 	/**
@@ -41,7 +43,8 @@ public class WorkAppCommandLineOptionParser implements IParser
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppCommandLineOptionParser Class", ex);
+			throw new SingletonInitException(
+					"Error during Singleton Object Creation for WorkAppCommandLineOptionParser Class", ex);
 		}
 	}
 

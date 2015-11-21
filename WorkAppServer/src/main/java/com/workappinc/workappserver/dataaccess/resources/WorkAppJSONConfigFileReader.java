@@ -4,8 +4,8 @@ import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
- * WorkAppJSONConfigFileReader is a singleton implementation of IReader interface to read from
- * disk and convert to POJO representing configuration
+ * WorkAppJSONConfigFileReader is a singleton implementation of IReader
+ * interface to read from disk and convert to POJO representing configuration
  * 
  * @author dhgovindaraj
  *
@@ -14,7 +14,7 @@ public class WorkAppJSONConfigFileReader implements IReader
 {
 	private static IApplicationLogger mLogger = null;
 	private static IReader mInstance = null;
-	
+
 	private WorkAppJSONConfigFileReader(IApplicationLogger logger)
 	{
 		mLogger = logger;
@@ -43,7 +43,8 @@ public class WorkAppJSONConfigFileReader implements IReader
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppJSONConfigFileReader Class", ex);
+			throw new SingletonInitException(
+					"Error during Singleton Object Creation for WorkAppJSONConfigFileReader Class", ex);
 		}
 	}
 

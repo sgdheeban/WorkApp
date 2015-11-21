@@ -24,7 +24,9 @@ import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
- * WorkAppUtility is a class with static methods to serve as utility methods across files
+ * WorkAppUtility is a class with static methods to serve as utility methods
+ * across files
+ * 
  * @author dhgovindaraj
  *
  */
@@ -43,7 +45,9 @@ public class WorkAppUtility
 
 	/**
 	 * getInstance method is used to get a singleton object
-	 * @param ctx - Nullable object intended for passing context for logging 
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
 	 * @return
 	 */
 	public static WorkAppUtility getInstance(IApplicationLogger logger)
@@ -73,7 +77,9 @@ public class WorkAppUtility
 
 	/**
 	 * Get current Process Id of the running Application
-	 * @param ctx - Nullable object intended for passing context for logging 
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
 	 * @return
 	 */
 	public synchronized static String getMyPid(Object ctx)
@@ -96,10 +102,12 @@ public class WorkAppUtility
 
 	/**
 	 * Get the HostName or IPAddress of the current machine
-	 * @param ctx - Nullable object intended for passing context for logging 
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
 	 * @param isHostIP
-	 *            which when set to true, returns IpAddress , else returns HostName
-	 *            IPAddress
+	 *            which when set to true, returns IpAddress , else returns
+	 *            HostName IPAddress
 	 * @return
 	 */
 	public synchronized static String getMyHostInfo(Object ctx, boolean isHostIP)
@@ -121,12 +129,14 @@ public class WorkAppUtility
 		}
 		return returnInfo;
 	}
-	
-	// converttoPNG, Generate UUID, 
+
+	// converttoPNG, Generate UUID,
 
 	/**
 	 * Generates a String representation of MD5 Hash value
-	 * @param ctx - Nullable object intended for passing context for logging 
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
 	 * @param id
 	 * @return String MD5 Value
 	 * @throws NoSuchAlgorithmException
@@ -134,40 +144,47 @@ public class WorkAppUtility
 	public synchronized static String generateMD5Hash(Object ctx, String id) throws NoSuchAlgorithmException
 	{
 		byte byteData[] = generateMD5HashBytes(ctx, id);
-        StringBuffer hexString = new StringBuffer();
-    	for (int i=0;i<byteData.length;i++) {
-    		String hex=Integer.toHexString(0xff & byteData[i]);
-   	     	if(hex.length()==1) hexString.append('0');
-   	     	hexString.append(hex);
-    	}
-    	return hexString.toString();
+		StringBuffer hexString = new StringBuffer();
+		for (int i = 0; i < byteData.length; i++)
+		{
+			String hex = Integer.toHexString(0xff & byteData[i]);
+			if (hex.length() == 1)
+				hexString.append('0');
+			hexString.append(hex);
+		}
+		return hexString.toString();
 	}
-	
+
 	/**
 	 * Generates a Byte array representation of MD5 Hash value
-	 * @param ctx - Nullable object intended for passing context for logging 
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
 	 * @param id
 	 * @return byte[]
 	 * @throws NoSuchAlgorithmException
 	 */
-	public synchronized static  byte[] generateMD5HashBytes(Object ctx, String id) throws NoSuchAlgorithmException
+	public synchronized static byte[] generateMD5HashBytes(Object ctx, String id) throws NoSuchAlgorithmException
 	{
 		MessageDigest md = MessageDigest.getInstance("MD5");
-        md.update(id.getBytes());
-        byte[] byteData = md.digest();
-        return byteData;
-       
+		md.update(id.getBytes());
+		byte[] byteData = md.digest();
+		return byteData;
+
 	}
-	
+
 	/**
 	 * Generates a Byte Array representation of Checksum of a file
-	 * @param ctx - Nullable object intended for passing context for logging 
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
 	 * @param filePath
 	 * @return byte[]
 	 * @throws NoSuchAlgorithmException
 	 * @throws IOException
 	 */
-	public synchronized static  byte[] generateFileChecksum(Object ctx, String filePath) throws NoSuchAlgorithmException, IOException
+	public synchronized static byte[] generateFileChecksum(Object ctx, String filePath)
+			throws NoSuchAlgorithmException, IOException
 	{
 		MessageDigest md = MessageDigest.getInstance("MD5");
 		FileInputStream fis = new FileInputStream("filePath");
@@ -182,65 +199,79 @@ public class WorkAppUtility
 		fis.close();
 		return mdbytes;
 	}
-	
+
 	/**
 	 * Generates a String representation of Checksum of a file
-	 * @param ctx - Nullable object intended for passing context for logging 
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
 	 * @param filePath
 	 * @return String
 	 * @throws NoSuchAlgorithmException
 	 * @throws IOException
 	 */
-	public synchronized static  String generateFileChecksumString(Object ctx, String filePath) throws NoSuchAlgorithmException, IOException
+	public synchronized static String generateFileChecksumString(Object ctx, String filePath)
+			throws NoSuchAlgorithmException, IOException
 	{
 		byte[] mdbytes = generateFileChecksum(ctx, filePath);
 		StringBuffer hexString = new StringBuffer();
-    	for (int i=0;i<mdbytes.length;i++) {
-    		String hex=Integer.toHexString(0xff & mdbytes[i]);
-   	     	if(hex.length()==1) hexString.append('0');
-   	     	hexString.append(hex);
-    	}
-    	return hexString.toString();
+		for (int i = 0; i < mdbytes.length; i++)
+		{
+			String hex = Integer.toHexString(0xff & mdbytes[i]);
+			if (hex.length() == 1)
+				hexString.append('0');
+			hexString.append(hex);
+		}
+		return hexString.toString();
 	}
-	
+
 	/**
 	 * Encode String using Base64 with Padding
+	 * 
 	 * @param incomingString
 	 * @return String
 	 */
 	public synchronized static String encodeString(Object ctx, String incomingString)
 	{
 		String encodedString = Base64.getEncoder().encodeToString(incomingString.getBytes());
-		return encodedString ;
+		return encodedString;
 	}
 
 	/**
 	 * Decode String with Base64 Decoder
-	 * @param ctx - Nullable object intended for passing context for logging 
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
 	 * @param incomingString
 	 * @return String
 	 */
 	public synchronized static String decodeString(Object ctx, String incomingString)
 	{
-		byte [] decodedByteArray = Base64.getDecoder().decode(incomingString); 
-		return decodedByteArray.toString() ;
+		byte[] decodedByteArray = Base64.getDecoder().decode(incomingString);
+		return decodedByteArray.toString();
 	}
 
 	/**
 	 * Generates a UUID
+	 * 
 	 * @return String
 	 */
 	public synchronized static String generateUUID(Object ctx)
 	{
 		return UUID.randomUUID().toString();
 	}
-	
+
 	/**
 	 * Encrypt String using DES
-	 * @param ctx - Nullable object intended for passing context for logging 
-	 * @param inputString - String to be encrypted
-	 * @param keyString - Send to the Receiver
-	 * @param ivString - Send to the Receiver
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
+	 * @param inputString
+	 *            - String to be encrypted
+	 * @param keyString
+	 *            - Send to the Receiver
+	 * @param ivString
+	 *            - Send to the Receiver
 	 * @return String - Encrypted string
 	 * @throws NoSuchAlgorithmException
 	 * @throws NoSuchPaddingException
@@ -250,38 +281,47 @@ public class WorkAppUtility
 	 * @throws IllegalBlockSizeException
 	 * @throws BadPaddingException
 	 */
-	public synchronized static String encryptMessage(Object ctx, String inputString, String keyString, String ivString) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
+	public synchronized static String encryptMessage(Object ctx, String inputString, String keyString, String ivString)
+			throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException,
+			InvalidAlgorithmParameterException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
 	{
 		byte[] input = inputString.getBytes();
 		byte[] keyBytes = keyString.getBytes();
 		byte[] ivBytes = ivString.getBytes();
-		
-		// wrap key data in Key/IV specs to pass to cipher  
-		SecretKeySpec key = new SecretKeySpec(keyBytes, "DES");  
-		IvParameterSpec ivSpec = new IvParameterSpec(ivBytes);  
-		
+
+		// wrap key data in Key/IV specs to pass to cipher
+		SecretKeySpec key = new SecretKeySpec(keyBytes, "DES");
+		IvParameterSpec ivSpec = new IvParameterSpec(ivBytes);
+
 		// create the cipher with the algorithm you choose
 		// see javadoc for Cipher class for more info, e.g.
 		Cipher cipher = Cipher.getInstance("DES/CBC/PKCS5Padding");
 		cipher.init(Cipher.ENCRYPT_MODE, key, ivSpec);
-		byte[] encrypted= new byte[cipher.getOutputSize(input.length)];
+		byte[] encrypted = new byte[cipher.getOutputSize(input.length)];
 		int enc_len = cipher.update(input, 0, input.length, encrypted, 0);
 		enc_len += cipher.doFinal(encrypted, enc_len);
-		
+
 		// You can add the message to ctx as required
-		String msg = "Encoded-Message-Info: ["+ inputString +COMMA+ encrypted.toString() +COMMA+ enc_len +COMMA+ keyString +COMMA+ ivString  +"]";
+		String msg = "Encoded-Message-Info: [" + inputString + COMMA + encrypted.toString() + COMMA + enc_len + COMMA
+				+ keyString + COMMA + ivString + "]";
 		mLogger.LogInfo(msg, WorkAppUtility.class);
-		
+
 		return encrypted.toString();
 	}
-	
+
 	/**
 	 * Decrypt String using DES
-	 * @param ctx - Nullable object intended for passing context for logging 
-	 * @param inputString - Received Encrypted Message
-	 * @param keyString - Given by the Sender
-	 * @param ivString - Given by the Sender
-	 * @param encLen - Given by the Sender
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
+	 * @param inputString
+	 *            - Received Encrypted Message
+	 * @param keyString
+	 *            - Given by the Sender
+	 * @param ivString
+	 *            - Given by the Sender
+	 * @param encLen
+	 *            - Given by the Sender
 	 * @return String
 	 * @throws InvalidKeyException
 	 * @throws InvalidAlgorithmParameterException
@@ -291,28 +331,31 @@ public class WorkAppUtility
 	 * @throws IllegalBlockSizeException
 	 * @throws BadPaddingException
 	 */
-	public synchronized static String decryptMessage(Object ctx, String inputString, String keyString, String ivString, int encLen) throws InvalidKeyException, InvalidAlgorithmParameterException, NoSuchAlgorithmException, NoSuchPaddingException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
+	public synchronized static String decryptMessage(Object ctx, String inputString, String keyString, String ivString,
+			int encLen) throws InvalidKeyException, InvalidAlgorithmParameterException, NoSuchAlgorithmException,
+					NoSuchPaddingException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
 	{
 		byte[] encrypted = inputString.getBytes();
 		byte[] keyBytes = keyString.getBytes();
 		byte[] ivBytes = ivString.getBytes();
 		int enc_len = encLen;
-		
-		// wrap key data in Key/IV specs to pass to cipher  
-		SecretKeySpec key = new SecretKeySpec(keyBytes, "DES");  
-		IvParameterSpec ivSpec = new IvParameterSpec(ivBytes);  
+
+		// wrap key data in Key/IV specs to pass to cipher
+		SecretKeySpec key = new SecretKeySpec(keyBytes, "DES");
+		IvParameterSpec ivSpec = new IvParameterSpec(ivBytes);
 		Cipher cipher = Cipher.getInstance("DES/CBC/PKCS5Padding");
-		
+
 		cipher.init(Cipher.DECRYPT_MODE, key, ivSpec);
 		byte[] decrypted = new byte[cipher.getOutputSize(enc_len)];
 		int dec_len = cipher.update(encrypted, 0, enc_len, decrypted, 0);
 		dec_len += cipher.doFinal(decrypted, dec_len);
-		
-		String msg = "Decoded-Message-Info: ["+ inputString +COMMA+ enc_len +COMMA+ decrypted.toString() +COMMA+ dec_len  +COMMA+ keyString +COMMA+ ivString  +"]";
+
+		String msg = "Decoded-Message-Info: [" + inputString + COMMA + enc_len + COMMA + decrypted.toString() + COMMA
+				+ dec_len + COMMA + keyString + COMMA + ivString + "]";
 		mLogger.LogInfo(msg, WorkAppUtility.class);
-		
+
 		return decrypted.toString();
-		
+
 	}
-	
+
 }

@@ -5,7 +5,9 @@ import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.resources.ISerializer;
 
 /**
- * A Singleton Class for modeling the homepage and takes care of serializing and de-serializing between JSON-POJO representation 
+ * A Singleton Class for modeling the homepage and takes care of serializing and
+ * de-serializing between JSON-POJO representation
+ * 
  * @author dhgovindaraj
  *
  */
@@ -14,11 +16,11 @@ public class WorkAppHomePage implements IHomePage
 	private static ISerializer mSerializer = null;
 	private static IApplicationLogger mLogger = null;
 	private static IPage mInstance = null;
-	
+
 	private WorkAppHomePage(IApplicationLogger logger, ISerializer serializer)
 	{
 		mLogger = logger;
-		mSerializer = serializer ;
+		mSerializer = serializer;
 	}
 
 	/**
@@ -61,7 +63,7 @@ public class WorkAppHomePage implements IHomePage
 		// TODO Auto-generated method stub - serialize and load page
 		return null;
 	}
-	
+
 	// Incoming updates from Client - use deserialize and save
 
 }

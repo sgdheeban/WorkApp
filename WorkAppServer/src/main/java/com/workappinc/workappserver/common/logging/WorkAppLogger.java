@@ -34,7 +34,7 @@ public class WorkAppLogger implements IApplicationLogger
 		// Obtain System Info for Logging
 		MDC.put("hostname", WorkAppUtility.getMyHostInfo(null, false));
 		MDC.put("port", WorkAppUtility.getMyPid(null));
-		
+
 		// Logger to catch uncaught exceptions in a separate thread
 		WorkAppUncaughtExceptionLogger.setDefaultUncaughtExceptionHandler(this);
 	}
@@ -64,7 +64,7 @@ public class WorkAppLogger implements IApplicationLogger
 		{
 			ex.printStackTrace();
 			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppLogger Class", ex);
-			
+
 		}
 	}
 
