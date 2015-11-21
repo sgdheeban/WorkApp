@@ -43,7 +43,7 @@ public class WorkAppUtility
 
 	/**
 	 * getInstance method is used to get a singleton object
-	 * 
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @return
 	 */
 	public static WorkAppUtility getInstance(IApplicationLogger logger)
@@ -73,10 +73,10 @@ public class WorkAppUtility
 
 	/**
 	 * Get current Process Id of the running Application
-	 * 
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @return
 	 */
-	public synchronized static String getMyPid()
+	public synchronized static String getMyPid(Object ctx)
 	{
 		String pid = "-1";
 		try
@@ -96,13 +96,13 @@ public class WorkAppUtility
 
 	/**
 	 * Get the HostName or IPAddress of the current machine
-	 * 
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @param isHostIP
 	 *            which when set to true, returns IpAddress , else returns HostName
 	 *            IPAddress
 	 * @return
 	 */
-	public synchronized static String getMyHostInfo(boolean isHostIP)
+	public synchronized static String getMyHostInfo(Object ctx, boolean isHostIP)
 	{
 		String returnInfo = null;
 		try
@@ -126,13 +126,14 @@ public class WorkAppUtility
 
 	/**
 	 * Generates a String representation of MD5 Hash value
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @param id
 	 * @return String MD5 Value
 	 * @throws NoSuchAlgorithmException
 	 */
-	public synchronized static String generateMD5Hash(String id) throws NoSuchAlgorithmException
+	public synchronized static String generateMD5Hash(Object ctx, String id) throws NoSuchAlgorithmException
 	{
-		byte byteData[] = generateMD5HashBytes(id);
+		byte byteData[] = generateMD5HashBytes(ctx, id);
         StringBuffer hexString = new StringBuffer();
     	for (int i=0;i<byteData.length;i++) {
     		String hex=Integer.toHexString(0xff & byteData[i]);
@@ -144,11 +145,12 @@ public class WorkAppUtility
 	
 	/**
 	 * Generates a Byte array representation of MD5 Hash value
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @param id
 	 * @return byte[]
 	 * @throws NoSuchAlgorithmException
 	 */
-	public synchronized static  byte[] generateMD5HashBytes(String id) throws NoSuchAlgorithmException
+	public synchronized static  byte[] generateMD5HashBytes(Object ctx, String id) throws NoSuchAlgorithmException
 	{
 		MessageDigest md = MessageDigest.getInstance("MD5");
         md.update(id.getBytes());
@@ -159,12 +161,13 @@ public class WorkAppUtility
 	
 	/**
 	 * Generates a Byte Array representation of Checksum of a file
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @param filePath
 	 * @return byte[]
 	 * @throws NoSuchAlgorithmException
 	 * @throws IOException
 	 */
-	public synchronized static  byte[] generateFileChecksum(String filePath) throws NoSuchAlgorithmException, IOException
+	public synchronized static  byte[] generateFileChecksum(Object ctx, String filePath) throws NoSuchAlgorithmException, IOException
 	{
 		MessageDigest md = MessageDigest.getInstance("MD5");
 		FileInputStream fis = new FileInputStream("filePath");
@@ -182,14 +185,15 @@ public class WorkAppUtility
 	
 	/**
 	 * Generates a String representation of Checksum of a file
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @param filePath
 	 * @return String
 	 * @throws NoSuchAlgorithmException
 	 * @throws IOException
 	 */
-	public synchronized static  String generateFileChecksumString(String filePath) throws NoSuchAlgorithmException, IOException
+	public synchronized static  String generateFileChecksumString(Object ctx, String filePath) throws NoSuchAlgorithmException, IOException
 	{
-		byte[] mdbytes = generateFileChecksum(filePath);
+		byte[] mdbytes = generateFileChecksum(ctx, filePath);
 		StringBuffer hexString = new StringBuffer();
     	for (int i=0;i<mdbytes.length;i++) {
     		String hex=Integer.toHexString(0xff & mdbytes[i]);
@@ -204,7 +208,7 @@ public class WorkAppUtility
 	 * @param incomingString
 	 * @return String
 	 */
-	public synchronized static String encodeString(String incomingString)
+	public synchronized static String encodeString(Object ctx, String incomingString)
 	{
 		String encodedString = Base64.getEncoder().encodeToString(incomingString.getBytes());
 		return encodedString ;
@@ -212,10 +216,11 @@ public class WorkAppUtility
 
 	/**
 	 * Decode String with Base64 Decoder
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @param incomingString
 	 * @return String
 	 */
-	public synchronized static String decodeString(String incomingString)
+	public synchronized static String decodeString(Object ctx, String incomingString)
 	{
 		byte [] decodedByteArray = Base64.getDecoder().decode(incomingString); 
 		return decodedByteArray.toString() ;
@@ -225,13 +230,14 @@ public class WorkAppUtility
 	 * Generates a UUID
 	 * @return String
 	 */
-	public synchronized static String generateUUID()
+	public synchronized static String generateUUID(Object ctx)
 	{
 		return UUID.randomUUID().toString();
 	}
 	
 	/**
 	 * Encrypt String using DES
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @param inputString - String to be encrypted
 	 * @param keyString - Send to the Receiver
 	 * @param ivString - Send to the Receiver
@@ -244,7 +250,7 @@ public class WorkAppUtility
 	 * @throws IllegalBlockSizeException
 	 * @throws BadPaddingException
 	 */
-	public synchronized static String encryptMessage(String inputString, String keyString, String ivString) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
+	public synchronized static String encryptMessage(Object ctx, String inputString, String keyString, String ivString) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
 	{
 		byte[] input = inputString.getBytes();
 		byte[] keyBytes = keyString.getBytes();
@@ -271,6 +277,7 @@ public class WorkAppUtility
 	
 	/**
 	 * Decrypt String using DES
+	 * @param ctx - Nullable object intended for passing context for logging 
 	 * @param inputString - Received Encrypted Message
 	 * @param keyString - Given by the Sender
 	 * @param ivString - Given by the Sender
@@ -284,7 +291,7 @@ public class WorkAppUtility
 	 * @throws IllegalBlockSizeException
 	 * @throws BadPaddingException
 	 */
-	public synchronized static String decryptMessage(String inputString, String keyString, String ivString, int encLen) throws InvalidKeyException, InvalidAlgorithmParameterException, NoSuchAlgorithmException, NoSuchPaddingException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
+	public synchronized static String decryptMessage(Object ctx, String inputString, String keyString, String ivString, int encLen) throws InvalidKeyException, InvalidAlgorithmParameterException, NoSuchAlgorithmException, NoSuchPaddingException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
 	{
 		byte[] encrypted = inputString.getBytes();
 		byte[] keyBytes = keyString.getBytes();

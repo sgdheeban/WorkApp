@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.dataaccess;
+package com.workappinc.workappserver.dataaccess.resources;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;

@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.businesslogic;
+package com.workappinc.workappserver.businesslogic.model;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;

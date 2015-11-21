@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.businesslogic;
+package com.workappinc.workappserver.businesslogic.model;
 
 /**
  * IHomePage interface is a top-level interface for designing HomePage POJOs
