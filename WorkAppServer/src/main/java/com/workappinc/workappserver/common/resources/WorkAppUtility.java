@@ -239,6 +239,18 @@ public class WorkAppUtility
 	}
 
 	/**
+	 * Encode Bytes using Base64 with Padding
+	 * 
+	 * @param incomingBytes
+	 * @return String
+	 */
+	public synchronized static String encodeBytes(Object ctx, byte[] incomingBytes)
+	{
+		String encodedString = Base64.getEncoder().encodeToString(incomingBytes);
+		return encodedString;
+	}
+
+	/**
 	 * Decode String with Base64 Decoder
 	 * 
 	 * @param ctx
@@ -250,6 +262,21 @@ public class WorkAppUtility
 	{
 		byte[] decodedByteArray = Base64.getDecoder().decode(incomingString.trim());
 		return new String(decodedByteArray);
+	}
+
+	/**
+	 * Decoded byte array with Base64 Decoder - without converting to final
+	 * string
+	 * 
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
+	 * @param incomingString
+	 * @return String
+	 */
+	public synchronized static byte[] decodedBytes(Object ctx, String incomingString)
+	{
+		byte[] decodedByteArray = Base64.getDecoder().decode(incomingString.trim());
+		return decodedByteArray;
 	}
 
 	/**
@@ -283,8 +310,7 @@ public class WorkAppUtility
 		byte[] plainTextByte = originalString.getBytes();
 		cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 		byte[] encryptedByte = cipher.doFinal(plainTextByte);
-		Base64.Encoder encoder = Base64.getEncoder();
-		String encryptedText = encoder.encodeToString(encryptedByte);
+		String encryptedText = encodeBytes(null, encryptedByte);
 		return encryptedText;
 	}
 
@@ -306,8 +332,7 @@ public class WorkAppUtility
 			BadPaddingException
 	{
 		Cipher cipher = Cipher.getInstance("AES");
-		Base64.Decoder decoder = Base64.getDecoder();
-		byte[] encryptedTextByte = decoder.decode(encryptedString);
+		byte[] encryptedTextByte = decodedBytes(null, encryptedString);
 		cipher.init(Cipher.DECRYPT_MODE, secretKey);
 		byte[] decryptedByte = cipher.doFinal(encryptedTextByte);
 		String decryptedText = new String(decryptedByte);

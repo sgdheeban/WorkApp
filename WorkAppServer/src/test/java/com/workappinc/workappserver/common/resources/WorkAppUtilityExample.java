@@ -2,18 +2,15 @@ package com.workappinc.workappserver.common.resources;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
 import javax.crypto.BadPaddingException;
-import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
-import javax.crypto.SecretKeyFactory;
 import javax.crypto.ShortBufferException;
 
 /**
@@ -138,14 +135,12 @@ public class WorkAppUtilityExample
 	private void encryptDecryptMessageTest() throws NoSuchAlgorithmException, NoSuchPaddingException,
 			InvalidKeyException, IllegalBlockSizeException, BadPaddingException
 	{
-		String origString = "this is a test string\n";
+		String origString = "this is a test string\tabc";
 		KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
 		keyGenerator.init(128);
 		SecretKey secretKey = keyGenerator.generateKey();
-
 		String encryptedText = WorkAppUtility.encryptString(null, origString, secretKey);
 		String decryptedText = WorkAppUtility.decryptString(null, encryptedText, secretKey);
-
 		System.out.println(origString + " encoded to :" + encryptedText);
 		System.out.println(encryptedText + " decoded to :" + decryptedText);
 	}
@@ -153,7 +148,6 @@ public class WorkAppUtilityExample
 	public static void main(String args[]) throws NoSuchAlgorithmException, IOException, InvalidKeyException,
 			NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException
 	{
-
 		WorkAppUtilityExample example = new WorkAppUtilityExample();
 		example.getPIDTest();
 		example.getHostInfoTest();
