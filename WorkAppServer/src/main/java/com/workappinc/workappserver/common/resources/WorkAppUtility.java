@@ -16,6 +16,7 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKey;
 import javax.crypto.ShortBufferException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
@@ -240,7 +241,8 @@ public class WorkAppUtility
 	/**
 	 * Decode String with Base64 Decoder
 	 * 
-	 * @param ctx - Nullable object intended for passing context for logging
+	 * @param ctx
+	 *            - Nullable object intended for passing context for logging
 	 * @param incomingString
 	 * @return String
 	 */
@@ -261,100 +263,55 @@ public class WorkAppUtility
 	}
 
 	/**
-	 * Encrypt String using DES
+	 * Encrypts a given string
 	 * 
 	 * @param ctx
-	 *            - Nullable object intended for passing context for logging
-	 * @param inputString
-	 *            - String to be encrypted
-	 * @param keyString
-	 *            - Send to the Receiver
-	 * @param ivString
-	 *            - Send to the Receiver
-	 * @return String - Encrypted string
+	 * @param originalString
+	 * @param secretKey
+	 * @return
 	 * @throws NoSuchAlgorithmException
 	 * @throws NoSuchPaddingException
 	 * @throws InvalidKeyException
-	 * @throws InvalidAlgorithmParameterException
-	 * @throws ShortBufferException
 	 * @throws IllegalBlockSizeException
 	 * @throws BadPaddingException
 	 */
-	public synchronized static String encryptMessage(Object ctx, String inputString, String keyString, String ivString)
-			throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException,
-			InvalidAlgorithmParameterException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
+	public static String encryptString(Object ctx, String originalString, SecretKey secretKey)
+			throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException,
+			BadPaddingException
 	{
-		byte[] input = inputString.getBytes();
-		byte[] keyBytes = keyString.getBytes();
-		byte[] ivBytes = ivString.getBytes();
-
-		// wrap key data in Key/IV specs to pass to cipher
-		SecretKeySpec key = new SecretKeySpec(keyBytes, "DES");
-		IvParameterSpec ivSpec = new IvParameterSpec(ivBytes);
-
-		// create the cipher with the algorithm you choose
-		// see javadoc for Cipher class for more info, e.g.
-		Cipher cipher = Cipher.getInstance("DES/CBC/PKCS5Padding");
-		cipher.init(Cipher.ENCRYPT_MODE, key, ivSpec);
-		byte[] encrypted = new byte[cipher.getOutputSize(input.length)];
-		int enc_len = cipher.update(input, 0, input.length, encrypted, 0);
-		enc_len += cipher.doFinal(encrypted, enc_len);
-
-		// You can add the message to ctx as required
-		String msg = "Encoded-Message-Info: [" + inputString + COMMA + encrypted.toString() + COMMA + enc_len + COMMA
-				+ keyString + COMMA + ivString + "]";
-		mLogger.LogInfo(msg, WorkAppUtility.class);
-
-		return encrypted.toString();
+		Cipher cipher = Cipher.getInstance("AES");
+		byte[] plainTextByte = originalString.getBytes();
+		cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+		byte[] encryptedByte = cipher.doFinal(plainTextByte);
+		Base64.Encoder encoder = Base64.getEncoder();
+		String encryptedText = encoder.encodeToString(encryptedByte);
+		return encryptedText;
 	}
 
 	/**
-	 * Decrypt String using DES
+	 * Decrypt encrypted string back to the original
 	 * 
 	 * @param ctx
-	 *            - Nullable object intended for passing context for logging
-	 * @param inputString
-	 *            - Received Encrypted Message
-	 * @param keyString
-	 *            - Given by the Sender
-	 * @param ivString
-	 *            - Given by the Sender
-	 * @param encLen
-	 *            - Given by the Sender
-	 * @return String
-	 * @throws InvalidKeyException
-	 * @throws InvalidAlgorithmParameterException
+	 * @param encryptedString
+	 * @param secretKey
+	 * @return
 	 * @throws NoSuchAlgorithmException
 	 * @throws NoSuchPaddingException
-	 * @throws ShortBufferException
+	 * @throws InvalidKeyException
 	 * @throws IllegalBlockSizeException
 	 * @throws BadPaddingException
 	 */
-	public synchronized static String decryptMessage(Object ctx, String inputString, String keyString, String ivString,
-			int encLen) throws InvalidKeyException, InvalidAlgorithmParameterException, NoSuchAlgorithmException,
-					NoSuchPaddingException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
+	public static String decryptString(Object ctx, String encryptedString, SecretKey secretKey)
+			throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException,
+			BadPaddingException
 	{
-		byte[] encrypted = inputString.getBytes();
-		byte[] keyBytes = keyString.getBytes();
-		byte[] ivBytes = ivString.getBytes();
-		int enc_len = encLen;
-
-		// wrap key data in Key/IV specs to pass to cipher
-		SecretKeySpec key = new SecretKeySpec(keyBytes, "DES");
-		IvParameterSpec ivSpec = new IvParameterSpec(ivBytes);
-		Cipher cipher = Cipher.getInstance("DES/CBC/PKCS5Padding");
-
-		cipher.init(Cipher.DECRYPT_MODE, key, ivSpec);
-		byte[] decrypted = new byte[cipher.getOutputSize(enc_len)];
-		int dec_len = cipher.update(encrypted, 0, enc_len, decrypted, 0);
-		dec_len += cipher.doFinal(decrypted, dec_len);
-
-		String msg = "Decoded-Message-Info: [" + inputString + COMMA + enc_len + COMMA + decrypted.toString() + COMMA
-				+ dec_len + COMMA + keyString + COMMA + ivString + "]";
-		mLogger.LogInfo(msg, WorkAppUtility.class);
-
-		return decrypted.toString();
-
+		Cipher cipher = Cipher.getInstance("AES");
+		Base64.Decoder decoder = Base64.getDecoder();
+		byte[] encryptedTextByte = decoder.decode(encryptedString);
+		cipher.init(Cipher.DECRYPT_MODE, secretKey);
+		byte[] decryptedByte = cipher.doFinal(encryptedTextByte);
+		String decryptedText = new String(decryptedByte);
+		return decryptedText;
 	}
 
 }

@@ -4,7 +4,16 @@ import static org.junit.Assert.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+
+import javax.crypto.BadPaddingException;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.KeyGenerator;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKey;
+import javax.crypto.ShortBufferException;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -28,7 +37,7 @@ public class WorkAppUtilityTestCases
 		String pid2 = WorkAppUtility.getMyPid(null);
 		assertEquals(pid1, pid2);
 	}
-	
+
 	/**
 	 * Test Get Host Info
 	 */
@@ -42,10 +51,11 @@ public class WorkAppUtilityTestCases
 		assertEquals(hostname1, hostname2);
 		assertEquals(hostIP1, hostIP2);
 	}
-	
+
 	/**
 	 * Test Generate MD5 Hash
-	 * @throws NoSuchAlgorithmException 
+	 * 
+	 * @throws NoSuchAlgorithmException
 	 */
 	@Test
 	public void generateMD5HashTest() throws NoSuchAlgorithmException
@@ -54,10 +64,11 @@ public class WorkAppUtilityTestCases
 		String MD5HashString2 = WorkAppUtility.generateMD5HashString(null, "sgd");
 		assertEquals(MD5HashString1, MD5HashString2);
 	}
-	
+
 	/**
 	 * Test Generate MD5 Bytes Hash
-	 * @throws NoSuchAlgorithmException 
+	 * 
+	 * @throws NoSuchAlgorithmException
 	 */
 	@Test
 	public void generateMD5HashBytesTest() throws NoSuchAlgorithmException
@@ -66,11 +77,12 @@ public class WorkAppUtilityTestCases
 		byte[] MD5HashBytes2 = WorkAppUtility.generateMD5HashBytes(null, "sgd");
 		assertArrayEquals(MD5HashBytes1, MD5HashBytes2);
 	}
-	
+
 	/**
 	 * Test Generate File CheckSum
-	 * @throws IOException 
-	 * @throws NoSuchAlgorithmException 
+	 * 
+	 * @throws IOException
+	 * @throws NoSuchAlgorithmException
 	 */
 	@Test
 	public void generateFileChecksumTest() throws NoSuchAlgorithmException, IOException
@@ -84,8 +96,9 @@ public class WorkAppUtilityTestCases
 
 	/**
 	 * Test Generate File Checksum String
-	 * @throws IOException 
-	 * @throws NoSuchAlgorithmException 
+	 * 
+	 * @throws IOException
+	 * @throws NoSuchAlgorithmException
 	 */
 	@Test
 	public void generateFileChecksumStringTest() throws NoSuchAlgorithmException, IOException
@@ -99,8 +112,9 @@ public class WorkAppUtilityTestCases
 
 	/**
 	 * Test Encoding String
-	 * @throws IOException 
-	 * @throws NoSuchAlgorithmException 
+	 * 
+	 * @throws IOException
+	 * @throws NoSuchAlgorithmException
 	 */
 	@Test
 	public void encodeDecodeStringTest() throws NoSuchAlgorithmException, IOException
@@ -122,6 +136,29 @@ public class WorkAppUtilityTestCases
 		assertNotEquals(uuid1, uuid2);
 	}
 
-	
+	/**
+	 * Test Encrypting String
+	 * 
+	 * @throws NoSuchAlgorithmException
+	 * @throws NoSuchPaddingException
+	 * @throws Exception
+	 * @throws BadPaddingException
+	 * @throws IllegalBlockSizeException
+	 * @throws ShortBufferException
+	 * @throws InvalidAlgorithmParameterException
+	 * @throws InvalidKeyException
+	 */
+	@Test
+	public void encryptDecryptMessageTest() throws NoSuchAlgorithmException, NoSuchPaddingException,
+			InvalidKeyException, IllegalBlockSizeException, BadPaddingException
+	{
+		String origString = "this is a test string\n";
+		KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
+		keyGenerator.init(128);
+		SecretKey secretKey = keyGenerator.generateKey();
+		String encryptedText = WorkAppUtility.encryptString(null, origString, secretKey);
+		String decryptedText = WorkAppUtility.decryptString(null, encryptedText, secretKey);
+		assertEquals(origString, decryptedText);
+	}
 
 }
