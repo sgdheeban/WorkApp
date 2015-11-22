@@ -9,6 +9,9 @@ package com.workappinc.workappserver.common.exception;
  */
 public class SingletonInitException extends RuntimeException
 {
+	/**
+	 * Generated Serial UID
+	 */
 	private static final long serialVersionUID = 2345586790716397712L;
 
 	/**

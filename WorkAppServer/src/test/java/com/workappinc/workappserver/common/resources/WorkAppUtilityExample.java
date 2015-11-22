@@ -22,7 +22,6 @@ import javax.crypto.ShortBufferException;
  */
 public class WorkAppUtilityExample
 {
-
 	/**
 	 * Testing get Process ID
 	 */

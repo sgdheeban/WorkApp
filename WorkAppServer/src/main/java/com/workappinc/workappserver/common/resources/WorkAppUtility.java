@@ -362,6 +362,7 @@ public class WorkAppUtility
 
 	/**
 	 * Encrypt File
+	 * 
 	 * @param ctx
 	 * @param key
 	 * @param inputFile
@@ -375,6 +376,7 @@ public class WorkAppUtility
 
 	/**
 	 * Decrypt File
+	 * 
 	 * @param ctx
 	 * @param key
 	 * @param inputFile
@@ -386,7 +388,8 @@ public class WorkAppUtility
 		doCryptoFile(ctx, Cipher.DECRYPT_MODE, key, inputFile, outputFile);
 	}
 
-	private static void doCryptoFile(Object ctx, int cipherMode, String key, File inputFile, File outputFile) throws CryptoException
+	private static void doCryptoFile(Object ctx, int cipherMode, String key, File inputFile, File outputFile)
+			throws CryptoException
 	{
 		try
 		{
