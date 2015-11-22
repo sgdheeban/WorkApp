@@ -6,7 +6,7 @@ package com.workappinc.workappserver.common.authentication;
  * @author dhgovindaraj
  *
  */
-public class WorkAppAuthenticator implements IAuthenticator
+public class WorkAppPasswordAuthenticator implements IAuthenticator
 {
 
 }

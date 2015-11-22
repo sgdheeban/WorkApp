@@ -1,6 +1,18 @@
 package com.workappinc.workappserver.common.resources;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+import javax.crypto.BadPaddingException;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.ShortBufferException;
+
 
 /**
  * WorkAppUtilitiesExample is an example class to test all functionalities of
@@ -34,50 +46,65 @@ public class WorkAppUtilityExample
 
 	/**
 	 * Test Generate MD5 Hash
+	 * @throws NoSuchAlgorithmException 
 	 */
-	private void generateMD5HashTest()
+	private void generateMD5HashTest() throws NoSuchAlgorithmException
 	{
-
+		String MD5HashString = WorkAppUtility.generateMD5HashString(null, "sgd");
+		System.out.println("MD5HashString: " + MD5HashString);
+		
 	}
 
 	/**
 	 * Test Generate MD5 Bytes Hash
+	 * @throws NoSuchAlgorithmException 
 	 */
-	private void generateMD5HashBytesTest()
+	private void generateMD5HashBytesTest() throws NoSuchAlgorithmException
 	{
-
+		byte[] MD5HashString = WorkAppUtility.generateMD5HashBytes(null, "sgd");
+		System.out.println("MD5HashBytes: " + MD5HashString);
 	}
 
 	/**
 	 * Test Generate File CheckSum
+	 * @throws IOException 
+	 * @throws NoSuchAlgorithmException 
 	 */
-	private void generateFileChecksumTest()
+	private void generateFileChecksumTest() throws NoSuchAlgorithmException, IOException
 	{
-
+		File file = new File("src/main/resources/testchecksumfile");
+		String absolutePath = file.getAbsolutePath();
+		System.out.println(absolutePath);
+		String fileChecksumString = WorkAppUtility.generateFileChecksumString(null, absolutePath);
+		System.out.println("fileChecksumString: " + fileChecksumString);
 	}
 
 	/**
 	 * Test Generate File Checksum String
+	 * @throws IOException 
+	 * @throws NoSuchAlgorithmException 
 	 */
-	private void generateFileChecksumStringTest()
+	private void generateFileChecksumStringTest() throws NoSuchAlgorithmException, IOException
 	{
-
+		File file = new File("src/main/resources/testchecksumfile");
+		String absolutePath = file.getAbsolutePath();
+		System.out.println(absolutePath);
+		byte[] fileChecksumBytes = WorkAppUtility.generateFileChecksumBytes(null, absolutePath);
+		System.out.println("fileChecksumBytes: " + fileChecksumBytes);
 	}
 
 	/**
 	 * Test Encoding String
+	 * @throws IOException 
+	 * @throws NoSuchAlgorithmException 
 	 */
-	private void encodeStringTest()
+	private void encodeDecodeStringTest() throws NoSuchAlgorithmException, IOException
 	{
-
-	}
-
-	/**
-	 * Test Decoding String
-	 */
-	private void decodeStringTest()
-	{
-
+		String sourceStr = "test-str22";
+		String encodedString = WorkAppUtility.encodeString(null, sourceStr);
+		String decodedString = WorkAppUtility.decodeString(null, encodedString);
+		System.out.println(sourceStr + " encoded to :" + encodedString);
+		System.out.println(encodedString + " decoded to :" + decodedString);
 	}
 
 	/**
@@ -85,26 +112,33 @@ public class WorkAppUtilityExample
 	 */
 	private void generateUUIDTest()
 	{
-
+		String uuid = WorkAppUtility.generateUUID(null);
+		System.out.println("uuid: " + uuid);
 	}
 
 	/**
 	 * Test Encrypting String
+	 * @throws BadPaddingException 
+	 * @throws IllegalBlockSizeException 
+	 * @throws ShortBufferException 
+	 * @throws InvalidAlgorithmParameterException 
+	 * @throws NoSuchPaddingException 
+	 * @throws NoSuchAlgorithmException 
+	 * @throws InvalidKeyException 
 	 */
-	private void encryptMessageTest()
+	private void encryptDecryptMessageTest() throws InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidAlgorithmParameterException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
 	{
-
+		String sourceStr = "test-str22";
+		SecretKeyFactory factory = SecretKeyFactory.getInstance("DESede");
+		String keyString = null;
+		String ivString = "ivString";
+		String encryptedString = WorkAppUtility.encryptMessage(null, sourceStr, keyString, ivString);
+		String decryptedString = WorkAppUtility.decryptMessage(null, encryptedString, keyString, ivString, sourceStr.length());
+		System.out.println(sourceStr + " encoded to :" + encryptedString);
+		System.out.println(encryptedString + " decoded to :" + decryptedString);
 	}
 
-	/**
-	 * Test Decrypting String
-	 */
-	private void decryptMessageTest()
-	{
-
-	}
-
-	public static void main(String args[]) throws IOException
+	public static void main(String args[]) throws IOException, NoSuchAlgorithmException, InvalidKeyException, NoSuchPaddingException, InvalidAlgorithmParameterException, ShortBufferException, IllegalBlockSizeException, BadPaddingException
 	{
 
 		WorkAppUtilityExample example = new WorkAppUtilityExample();
@@ -115,11 +149,9 @@ public class WorkAppUtilityExample
 		example.generateMD5HashBytesTest();
 		example.generateFileChecksumTest();
 		example.generateFileChecksumStringTest();
-		example.encodeStringTest();
-		example.decodeStringTest();
 		example.generateUUIDTest();
-		example.encryptMessageTest();
-		example.decryptMessageTest();
+		example.encodeDecodeStringTest();
+		example.encryptDecryptMessageTest();
 
 	}
 }

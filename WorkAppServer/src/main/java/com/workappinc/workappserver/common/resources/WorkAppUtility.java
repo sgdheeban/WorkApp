@@ -141,7 +141,7 @@ public class WorkAppUtility
 	 * @return String MD5 Value
 	 * @throws NoSuchAlgorithmException
 	 */
-	public synchronized static String generateMD5Hash(Object ctx, String id) throws NoSuchAlgorithmException
+	public synchronized static String generateMD5HashString(Object ctx, String id) throws NoSuchAlgorithmException
 	{
 		byte byteData[] = generateMD5HashBytes(ctx, id);
 		StringBuffer hexString = new StringBuffer();
@@ -183,11 +183,11 @@ public class WorkAppUtility
 	 * @throws NoSuchAlgorithmException
 	 * @throws IOException
 	 */
-	public synchronized static byte[] generateFileChecksum(Object ctx, String filePath)
+	public synchronized static byte[] generateFileChecksumBytes(Object ctx, String filePath)
 			throws NoSuchAlgorithmException, IOException
 	{
 		MessageDigest md = MessageDigest.getInstance("MD5");
-		FileInputStream fis = new FileInputStream("filePath");
+		FileInputStream fis = new FileInputStream(filePath);
 		byte[] dataBytes = new byte[1024];
 		int nread = 0;
 		while ((nread = fis.read(dataBytes)) != -1)
@@ -213,7 +213,7 @@ public class WorkAppUtility
 	public synchronized static String generateFileChecksumString(Object ctx, String filePath)
 			throws NoSuchAlgorithmException, IOException
 	{
-		byte[] mdbytes = generateFileChecksum(ctx, filePath);
+		byte[] mdbytes = generateFileChecksumBytes(ctx, filePath);
 		StringBuffer hexString = new StringBuffer();
 		for (int i = 0; i < mdbytes.length; i++)
 		{
@@ -233,22 +233,21 @@ public class WorkAppUtility
 	 */
 	public synchronized static String encodeString(Object ctx, String incomingString)
 	{
-		String encodedString = Base64.getEncoder().encodeToString(incomingString.getBytes());
+		String encodedString = Base64.getEncoder().encodeToString(incomingString.trim().getBytes());
 		return encodedString;
 	}
 
 	/**
 	 * Decode String with Base64 Decoder
 	 * 
-	 * @param ctx
-	 *            - Nullable object intended for passing context for logging
+	 * @param ctx - Nullable object intended for passing context for logging
 	 * @param incomingString
 	 * @return String
 	 */
 	public synchronized static String decodeString(Object ctx, String incomingString)
 	{
-		byte[] decodedByteArray = Base64.getDecoder().decode(incomingString);
-		return decodedByteArray.toString();
+		byte[] decodedByteArray = Base64.getDecoder().decode(incomingString.trim());
+		return new String(decodedByteArray);
 	}
 
 	/**
