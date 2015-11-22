@@ -9,7 +9,7 @@ import java.io.IOException;
  * @author dhgovindaraj
  *
  */
-public class WorkAppUtilitiesExample
+public class WorkAppUtilityExample
 {
 
 	/**
@@ -17,7 +17,8 @@ public class WorkAppUtilitiesExample
 	 */
 	private void getPIDTest()
 	{
-
+		String pid = WorkAppUtility.getMyPid(null);
+		System.out.println("My PID: " + pid);
 	}
 
 	/**
@@ -25,7 +26,10 @@ public class WorkAppUtilitiesExample
 	 */
 	private void getHostInfoTest()
 	{
-
+		String hostname = WorkAppUtility.getMyHostInfo(null, false);
+		String hostIP = WorkAppUtility.getMyHostInfo(null, true);
+		System.out.println("My Hostname: " + hostname);
+		System.out.println("My Hostname: " + hostIP);
 	}
 
 	/**
@@ -103,7 +107,7 @@ public class WorkAppUtilitiesExample
 	public static void main(String args[]) throws IOException
 	{
 
-		WorkAppUtilitiesExample example = new WorkAppUtilitiesExample();
+		WorkAppUtilityExample example = new WorkAppUtilityExample();
 
 		example.getPIDTest();
 		example.getHostInfoTest();
