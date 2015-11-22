@@ -1,12 +1,15 @@
 package com.workappinc.workappserver.common.resources;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
+import java.security.Key;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
@@ -15,12 +18,14 @@ import java.util.UUID;
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.ShortBufferException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
+import com.workappinc.workappserver.common.exception.CryptoException;
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
@@ -33,6 +38,8 @@ import com.workappinc.workappserver.common.logging.IApplicationLogger;
  */
 public class WorkAppUtility
 {
+	private static final String ALGORITHM = "AES";
+	private static final String TRANSFORMATION = "AES";
 	private static final String COMMA = ",";
 	private static IApplicationLogger mLogger = null;
 	private static InetAddress ip = null;
@@ -337,6 +344,74 @@ public class WorkAppUtility
 		byte[] decryptedByte = cipher.doFinal(encryptedTextByte);
 		String decryptedText = new String(decryptedByte);
 		return decryptedText;
+	}
+
+	/**
+	 * Generates AES Random Key
+	 * 
+	 * @return
+	 * @throws NoSuchAlgorithmException
+	 */
+	public static SecretKey generateAESRandomKey() throws NoSuchAlgorithmException
+	{
+		KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
+		keyGenerator.init(128);
+		SecretKey secretKey = keyGenerator.generateKey();
+		return secretKey;
+	}
+
+	/**
+	 * Encrypt File
+	 * @param ctx
+	 * @param key
+	 * @param inputFile
+	 * @param outputFile
+	 * @throws CryptoException
+	 */
+	public static void encryptFile(Object ctx, String key, File inputFile, File outputFile) throws CryptoException
+	{
+		doCryptoFile(ctx, Cipher.ENCRYPT_MODE, key, inputFile, outputFile);
+	}
+
+	/**
+	 * Decrypt File
+	 * @param ctx
+	 * @param key
+	 * @param inputFile
+	 * @param outputFile
+	 * @throws CryptoException
+	 */
+	public static void decryptFile(Object ctx, String key, File inputFile, File outputFile) throws CryptoException
+	{
+		doCryptoFile(ctx, Cipher.DECRYPT_MODE, key, inputFile, outputFile);
+	}
+
+	private static void doCryptoFile(Object ctx, int cipherMode, String key, File inputFile, File outputFile) throws CryptoException
+	{
+		try
+		{
+			Key secretKey = new SecretKeySpec(key.getBytes(), ALGORITHM);
+			Cipher cipher = Cipher.getInstance(TRANSFORMATION);
+			cipher.init(cipherMode, secretKey);
+
+			FileInputStream inputStream = new FileInputStream(inputFile);
+			byte[] inputBytes = new byte[(int) inputFile.length()];
+			inputStream.read(inputBytes);
+
+			byte[] outputBytes = cipher.doFinal(inputBytes);
+
+			FileOutputStream outputStream = new FileOutputStream(outputFile);
+			outputStream.write(outputBytes);
+
+			inputStream.close();
+			outputStream.close();
+
+		}
+		catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException | BadPaddingException
+				| IllegalBlockSizeException | IOException ex)
+		{
+			throw new CryptoException("Error encrypting/decrypting file", ex);
+		}
 	}
 
 }
