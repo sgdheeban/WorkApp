@@ -13,6 +13,8 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.ShortBufferException;
 
+import com.workappinc.workappserver.common.exception.CryptoException;
+
 /**
  * WorkAppUtilitiesExample is an example class to test all functionalities of
  * WorkAppUtilitiesExample functionalities
@@ -142,8 +144,19 @@ public class WorkAppUtilityExample
 		System.out.println(encryptedText + " decoded to :" + decryptedText);
 	}
 
+	private void encryptDecryptFileTest() throws NoSuchAlgorithmException, CryptoException 
+	{
+		File origFile = new File("src/main/resources/testchecksumfile");
+		File encryptedFile = new File("src/main/resources/testchecksumfile.encrypted");
+		File decryptedFile = new File("src/main/resources/testchecksumfile.decrypted");
+		SecretKey secretKey = WorkAppUtility.generateAESRandomKey();
+		WorkAppUtility.encryptFile(null, secretKey, origFile, encryptedFile);
+		WorkAppUtility.decryptFile(null, secretKey, encryptedFile, decryptedFile);
+		System.out.println("File successfully encrypted and decrepreted.");
+	}
+
 	public static void main(String args[]) throws NoSuchAlgorithmException, IOException, InvalidKeyException,
-			NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException
+			NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, CryptoException
 	{
 		WorkAppUtilityExample example = new WorkAppUtilityExample();
 		example.getPIDTest();
@@ -155,6 +168,7 @@ public class WorkAppUtilityExample
 		example.generateUUIDTest();
 		example.encodeDecodeStringTest();
 		example.encryptDecryptMessageTest();
+		example.encryptDecryptFileTest();
 
 	}
 }

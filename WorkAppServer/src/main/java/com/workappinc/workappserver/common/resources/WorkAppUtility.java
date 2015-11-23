@@ -323,7 +323,7 @@ public class WorkAppUtility
 	}
 
 	/**
-	 * Encrypt File
+	 * Encrypt File using AES algorithm
 	 * 
 	 * @param ctx
 	 * @param key
@@ -337,7 +337,7 @@ public class WorkAppUtility
 	}
 
 	/**
-	 * Decrypt File
+	 * Decrypt File using AES algorithm
 	 * 
 	 * @param ctx
 	 * @param key
