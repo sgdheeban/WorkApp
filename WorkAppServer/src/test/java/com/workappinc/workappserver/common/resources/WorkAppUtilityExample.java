@@ -135,9 +135,7 @@ public class WorkAppUtilityExample
 			InvalidKeyException, IllegalBlockSizeException, BadPaddingException
 	{
 		String origString = "this is a test string\tabc";
-		KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
-		keyGenerator.init(128);
-		SecretKey secretKey = keyGenerator.generateKey();
+		SecretKey secretKey = WorkAppUtility.generateAESRandomKey();
 		String encryptedText = WorkAppUtility.encryptString(null, origString, secretKey);
 		String decryptedText = WorkAppUtility.decryptString(null, encryptedText, secretKey);
 		System.out.println(origString + " encoded to :" + encryptedText);

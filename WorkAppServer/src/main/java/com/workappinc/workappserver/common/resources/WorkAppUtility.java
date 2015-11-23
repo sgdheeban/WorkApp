@@ -44,45 +44,7 @@ public class WorkAppUtility
 	private static IApplicationLogger mLogger = null;
 	private static InetAddress ip = null;
 	private static String hostname = null;
-	private static WorkAppUtility mInstance = null;
-
-	private WorkAppUtility(IApplicationLogger logger)
-	{
-		mLogger = logger;
-	}
-
-	/**
-	 * getInstance method is used to get a singleton object
-	 * 
-	 * @param ctx
-	 *            - Nullable object intended for passing context for logging
-	 * @return
-	 */
-	public static WorkAppUtility getInstance(IApplicationLogger logger)
-	{
-		try
-		{
-			if (mInstance == null)
-			{
-				synchronized (WorkAppUtility.class)
-				{
-					if (mInstance == null)
-					{
-						mInstance = new WorkAppUtility(logger);
-					}
-				}
-			}
-			return mInstance;
-		}
-		catch (Exception ex)
-		{
-			SingletonInitException singletonEx = new SingletonInitException(
-					"Error during Singleton Object Creation for WorkAppUtility Class", ex);
-			mLogger.LogException(singletonEx, WorkAppUtility.class);
-			throw singletonEx;
-		}
-	}
-
+	
 	/**
 	 * Get current Process Id of the running Application
 	 * 
@@ -313,7 +275,7 @@ public class WorkAppUtility
 			throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException,
 			BadPaddingException
 	{
-		Cipher cipher = Cipher.getInstance("AES");
+		Cipher cipher = Cipher.getInstance(TRANSFORMATION);
 		byte[] plainTextByte = originalString.getBytes();
 		cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 		byte[] encryptedByte = cipher.doFinal(plainTextByte);
@@ -338,7 +300,7 @@ public class WorkAppUtility
 			throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException,
 			BadPaddingException
 	{
-		Cipher cipher = Cipher.getInstance("AES");
+		Cipher cipher = Cipher.getInstance(TRANSFORMATION);
 		byte[] encryptedTextByte = decodedBytes(null, encryptedString);
 		cipher.init(Cipher.DECRYPT_MODE, secretKey);
 		byte[] decryptedByte = cipher.doFinal(encryptedTextByte);
@@ -354,7 +316,7 @@ public class WorkAppUtility
 	 */
 	public static SecretKey generateAESRandomKey() throws NoSuchAlgorithmException
 	{
-		KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
+		KeyGenerator keyGenerator = KeyGenerator.getInstance(TRANSFORMATION);
 		keyGenerator.init(128);
 		SecretKey secretKey = keyGenerator.generateKey();
 		return secretKey;
@@ -369,9 +331,9 @@ public class WorkAppUtility
 	 * @param outputFile
 	 * @throws CryptoException
 	 */
-	public static void encryptFile(Object ctx, String key, File inputFile, File outputFile) throws CryptoException
+	public static void encryptFile(Object ctx, SecretKey secretKey, File inputFile, File outputFile) throws CryptoException
 	{
-		doCryptoFile(ctx, Cipher.ENCRYPT_MODE, key, inputFile, outputFile);
+		doCryptoFile(ctx, Cipher.ENCRYPT_MODE, secretKey, inputFile, outputFile);
 	}
 
 	/**
@@ -383,17 +345,16 @@ public class WorkAppUtility
 	 * @param outputFile
 	 * @throws CryptoException
 	 */
-	public static void decryptFile(Object ctx, String key, File inputFile, File outputFile) throws CryptoException
+	public static void decryptFile(Object ctx, SecretKey secretKey, File inputFile, File outputFile) throws CryptoException
 	{
-		doCryptoFile(ctx, Cipher.DECRYPT_MODE, key, inputFile, outputFile);
+		doCryptoFile(ctx, Cipher.DECRYPT_MODE, secretKey, inputFile, outputFile);
 	}
 
-	private static void doCryptoFile(Object ctx, int cipherMode, String key, File inputFile, File outputFile)
+	private static void doCryptoFile(Object ctx, int cipherMode, SecretKey secretKey, File inputFile, File outputFile)
 			throws CryptoException
 	{
 		try
 		{
-			Key secretKey = new SecretKeySpec(key.getBytes(), ALGORITHM);
 			Cipher cipher = Cipher.getInstance(TRANSFORMATION);
 			cipher.init(cipherMode, secretKey);
 
@@ -408,7 +369,6 @@ public class WorkAppUtility
 
 			inputStream.close();
 			outputStream.close();
-
 		}
 		catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException | BadPaddingException
 				| IllegalBlockSizeException | IOException ex)
