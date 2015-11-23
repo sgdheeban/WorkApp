@@ -10,6 +10,7 @@ import org.apache.log4j.MDC;
 import org.apache.log4j.PropertyConfigurator;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.resources.IContext;
 import com.workappinc.workappserver.common.resources.WorkAppUtility;
 
@@ -25,7 +26,7 @@ public class WorkAppLogger implements IApplicationLogger
 	private static IApplicationLogger mInstance = null;
 	private StringBuilder mStringBuilder = null;
 
-	private WorkAppLogger(Properties config)
+	private WorkAppLogger(Properties config) throws SystemException
 	{
 		// If External Config File Exists, override default log4j.properties
 		if (config != null)

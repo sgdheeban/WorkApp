@@ -2,6 +2,7 @@ package com.workappinc.workappserver.common.exception;
 
 /**
  * Records System Exception such as RuntimeException, UnknownHostException
+ * 
  * @author dhgovindaraj
  *
  */

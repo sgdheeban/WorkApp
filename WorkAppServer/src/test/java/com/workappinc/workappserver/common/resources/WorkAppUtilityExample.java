@@ -8,12 +8,13 @@ import java.security.NoSuchAlgorithmException;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.ShortBufferException;
 
 import com.workappinc.workappserver.common.exception.CryptoException;
+import com.workappinc.workappserver.common.exception.MD5HashingException;
+import com.workappinc.workappserver.common.exception.SystemException;
 
 /**
  * WorkAppUtilitiesExample is an example class to test all functionalities of
@@ -26,8 +27,10 @@ public class WorkAppUtilityExample
 {
 	/**
 	 * Testing get Process ID
+	 * 
+	 * @throws SystemException
 	 */
-	private void getPIDTest()
+	private void getPIDTest() throws SystemException
 	{
 		String pid = WorkAppUtility.getMyPid(null);
 		System.out.println("My PID: " + pid);
@@ -35,8 +38,10 @@ public class WorkAppUtilityExample
 
 	/**
 	 * Test Get Host Info
+	 * 
+	 * @throws SystemException
 	 */
-	private void getHostInfoTest()
+	private void getHostInfoTest() throws SystemException
 	{
 		String hostname = WorkAppUtility.getMyHostInfo(null, false);
 		String hostIP = WorkAppUtility.getMyHostInfo(null, true);
@@ -47,9 +52,9 @@ public class WorkAppUtilityExample
 	/**
 	 * Test Generate MD5 Hash
 	 * 
-	 * @throws NoSuchAlgorithmException
+	 * @throws MD5HashingException
 	 */
-	private void generateMD5HashTest() throws NoSuchAlgorithmException
+	private void generateMD5HashTest() throws MD5HashingException
 	{
 		String MD5HashString = WorkAppUtility.generateMD5HashString(null, "sgd");
 		System.out.println("MD5HashString: " + MD5HashString);
@@ -59,9 +64,9 @@ public class WorkAppUtilityExample
 	/**
 	 * Test Generate MD5 Bytes Hash
 	 * 
-	 * @throws NoSuchAlgorithmException
+	 * @throws MD5HashingException
 	 */
-	private void generateMD5HashBytesTest() throws NoSuchAlgorithmException
+	private void generateMD5HashBytesTest() throws MD5HashingException
 	{
 		byte[] MD5HashString = WorkAppUtility.generateMD5HashBytes(null, "sgd");
 		System.out.println("MD5HashBytes: " + MD5HashString);
@@ -70,10 +75,10 @@ public class WorkAppUtilityExample
 	/**
 	 * Test Generate File CheckSum
 	 * 
-	 * @throws IOException
-	 * @throws NoSuchAlgorithmException
+	 * @throws SystemException
+	 * @throws MD5HashingException
 	 */
-	private void generateFileChecksumTest() throws NoSuchAlgorithmException, IOException
+	private void generateFileChecksumTest() throws MD5HashingException, SystemException
 	{
 		File file = new File("src/main/resources/testchecksumfile");
 		String absolutePath = file.getAbsolutePath();
@@ -85,10 +90,10 @@ public class WorkAppUtilityExample
 	/**
 	 * Test Generate File Checksum String
 	 * 
-	 * @throws IOException
-	 * @throws NoSuchAlgorithmException
+	 * @throws SystemException
+	 * @throws MD5HashingException
 	 */
-	private void generateFileChecksumStringTest() throws NoSuchAlgorithmException, IOException
+	private void generateFileChecksumStringTest() throws MD5HashingException, SystemException
 	{
 		File file = new File("src/main/resources/testchecksumfile");
 		String absolutePath = file.getAbsolutePath();
@@ -103,7 +108,7 @@ public class WorkAppUtilityExample
 	 * @throws IOException
 	 * @throws NoSuchAlgorithmException
 	 */
-	private void encodeDecodeStringTest() throws NoSuchAlgorithmException, IOException
+	private void encodeDecodeStringTest()
 	{
 		String sourceStr = "test-str22";
 		String encodedString = WorkAppUtility.encodeString(null, sourceStr);
@@ -124,17 +129,9 @@ public class WorkAppUtilityExample
 	/**
 	 * Test Encrypting String
 	 * 
-	 * @throws NoSuchAlgorithmException
-	 * @throws NoSuchPaddingException
-	 * @throws Exception
-	 * @throws BadPaddingException
-	 * @throws IllegalBlockSizeException
-	 * @throws ShortBufferException
-	 * @throws InvalidAlgorithmParameterException
-	 * @throws InvalidKeyException
+	 * @throws CryptoException
 	 */
-	private void encryptDecryptMessageTest() throws NoSuchAlgorithmException, NoSuchPaddingException,
-			InvalidKeyException, IllegalBlockSizeException, BadPaddingException
+	private void encryptDecryptMessageTest() throws CryptoException
 	{
 		String origString = "this is a test string\tabc";
 		SecretKey secretKey = WorkAppUtility.generateAESRandomKey();
@@ -144,7 +141,12 @@ public class WorkAppUtilityExample
 		System.out.println(encryptedText + " decoded to :" + decryptedText);
 	}
 
-	private void encryptDecryptFileTest() throws NoSuchAlgorithmException, CryptoException 
+	/**
+	 * Encrypt-Decrypt File
+	 * 
+	 * @throws CryptoException
+	 */
+	private void encryptDecryptFileTest() throws CryptoException
 	{
 		File origFile = new File("src/main/resources/testchecksumfile");
 		File encryptedFile = new File("src/main/resources/testchecksumfile.encrypted");
@@ -155,8 +157,15 @@ public class WorkAppUtilityExample
 		System.out.println("File successfully encrypted and decrepreted.");
 	}
 
-	public static void main(String args[]) throws NoSuchAlgorithmException, IOException, InvalidKeyException,
-			NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, CryptoException
+	/**
+	 * Main Method
+	 * 
+	 * @param args
+	 * @throws SystemException
+	 * @throws MD5HashingException
+	 * @throws CryptoException
+	 */
+	public static void main(String args[]) throws SystemException, MD5HashingException, CryptoException
 	{
 		WorkAppUtilityExample example = new WorkAppUtilityExample();
 		example.getPIDTest();
