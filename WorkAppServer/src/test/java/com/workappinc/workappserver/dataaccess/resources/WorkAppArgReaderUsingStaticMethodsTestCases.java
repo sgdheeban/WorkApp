@@ -17,7 +17,7 @@ import com.workappinc.workappserver.dataaccess.resources.WorkAppCommandLineArgsR
  * @author dhgovindaraj
  *
  */
-public class WorkAppArgReaderUsingStaticMethodsTest
+public class WorkAppArgReaderUsingStaticMethodsTestCases
 {
 	private static final String UTF_8_STR = "UTF-8";
 

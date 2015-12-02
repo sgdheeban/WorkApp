@@ -16,7 +16,7 @@ import java.util.List;
  * @author dhgovindaraj
  *
  */
-public class WorkAppArgReaderTest
+public class WorkAppArgReaderTestCases
 {
 
 	/**
