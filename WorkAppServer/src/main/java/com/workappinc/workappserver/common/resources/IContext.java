@@ -17,9 +17,9 @@ public interface IContext
 	public String getGUID();
 
 	/**
-	 * getMessage returns the message associated with the Context object
+	 * getContextName returns the name associated with the Context object
 	 * 
 	 * @return
 	 */
-	public String getMessage();
+	public String getContextName();
 }

@@ -11,7 +11,7 @@ public class WorkAppContext implements IContext
 {
 
 	private String mGUID = "";
-	private String mMessage = "";
+	private String mContextName = "";
 
 	/**
 	 * Default Constructor
@@ -25,13 +25,13 @@ public class WorkAppContext implements IContext
 	 * 
 	 * @param GUID
 	 *            Global Unique Identifier used to identify the Context object
-	 * @param Message
-	 *            Message related to the Context object
+	 * @param ContextName
+	 *            ContextName related to the Context object
 	 */
 	public WorkAppContext(String GUID, String message)
 	{
 		this.mGUID = GUID;
-		this.mMessage = message;
+		this.mContextName = message;
 	}
 
 	@Override
@@ -42,9 +42,9 @@ public class WorkAppContext implements IContext
 	}
 
 	@Override
-	public String getMessage()
+	public String getContextName()
 	{
 		// TODO Auto-generated method stub
-		return mMessage;
+		return mContextName;
 	}
 }
