@@ -1,7 +1,14 @@
 package com.workappinc.workappserver.dataaccess.resources;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
+import com.workappinc.workappserver.common.exception.FileWritingException;
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
@@ -53,11 +60,55 @@ public class WorkAppPropertyFileWriter extends WorkAppFileWriter
 	/**
 	 * Writes Properties to File System
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
-	public void writeToFile(Object inputProperties)
+	public void writeToFile(String outputFilePath, Object inputProperties)
 	{
-		// TODO Auto-generated method stub
+		OutputStream output = null;
+		Properties prop = null;
+		try
+		{
+			File outputFile = new File(outputFilePath);
+			if (!outputFile.exists())
+			{
+				outputFile.createNewFile();
+			}
+			output = new FileOutputStream(outputFile);
 
+			if (inputProperties instanceof Properties)
+			{
+				prop = (Properties) inputProperties;
+			}
+			else if (inputProperties instanceof Map)
+			{
+				prop = new Properties();
+				prop.putAll((HashMap<String, String>) inputProperties);
+			}
+			else
+			{
+				mLogger.LogError("Unsupported Type passed to writeToFile method", WorkAppPropertyFileWriter.class);
+				throw new FileWritingException("Unsupported Type passed to writeToFile method");
+			}
+			prop.store(output, null);
+		}
+		catch (Exception ex)
+		{
+			mLogger.LogException(ex, WorkAppPropertyFileWriter.class);
+		}
+		finally
+		{
+			if (output != null)
+			{
+				try
+				{
+					output.close();
+				}
+				catch (IOException ex)
+				{
+					mLogger.LogException(ex, WorkAppPropertyFileWriter.class);
+				}
+			}
+		}
 	}
 
 	/**

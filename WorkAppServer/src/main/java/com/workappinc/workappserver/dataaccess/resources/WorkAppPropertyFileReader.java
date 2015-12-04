@@ -1,9 +1,13 @@
 package com.workappinc.workappserver.dataaccess.resources;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
+import com.workappinc.workappserver.common.resources.WorkAppUtility;
 
 /**
  * WorkAppPropertyFileReader is a singleton implementation of IReader interface
@@ -58,8 +62,32 @@ public class WorkAppPropertyFileReader implements IReader
 	 */
 	public Properties loadPropertyFromFileSystem(String filePath)
 	{
-		return null;
-
+		Properties prop = new Properties();
+		InputStream input = null;
+		try
+		{
+			input = new FileInputStream(filePath);
+			prop.load(input);
+		}
+		catch (IOException ex)
+		{
+			mLogger.LogException(ex, WorkAppPropertyFileReader.class);
+		}
+		finally
+		{
+			if (input != null)
+			{
+				try
+				{
+					input.close();
+				}
+				catch (IOException ex)
+				{
+					mLogger.LogException(ex, WorkAppPropertyFileReader.class);
+				}
+			}
+		}
+		return prop;
 	}
 
 	/**
@@ -70,8 +98,38 @@ public class WorkAppPropertyFileReader implements IReader
 	 */
 	public Properties loadPropertyFromClassPath(String filePath)
 	{
-		return null;
-
+		Properties prop = new Properties();
+		InputStream input = null;
+		try
+		{
+			String filename = filePath;
+			input = getClass().getClassLoader().getResourceAsStream(filename);
+			if (input == null)
+			{
+				mLogger.LogError("Sorry, unable to find " + filename, WorkAppPropertyFileReader.class);
+				return null;
+			}
+			prop.load(input);
+		}
+		catch (IOException ex)
+		{
+			mLogger.LogException(ex, WorkAppPropertyFileReader.class);
+		}
+		finally
+		{
+			if (input != null)
+			{
+				try
+				{
+					input.close();
+				}
+				catch (IOException ex)
+				{
+					mLogger.LogException(ex, WorkAppPropertyFileReader.class);
+				}
+			}
+		}
+		return prop;
 	}
 
 }
