@@ -1,5 +1,7 @@
 package com.workappinc.workappserver.dataaccess.resources;
 
+import java.util.Properties;
+
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
@@ -46,6 +48,30 @@ public class WorkAppPropertyFileReader implements IReader
 			throw new SingletonInitException(
 					"Error during Singleton Object Creation for WorkAppPropertyFileReader Class", ex);
 		}
+	}
+
+	/**
+	 * Load Property File from File System
+	 * 
+	 * @param filePath
+	 * @return
+	 */
+	public Properties loadPropertyFromFileSystem(String filePath)
+	{
+		return null;
+
+	}
+
+	/**
+	 * Load Property File from Classpath
+	 * 
+	 * @param filePath
+	 * @return
+	 */
+	public Properties loadPropertyFromClassPath(String filePath)
+	{
+		return null;
+
 	}
 
 }

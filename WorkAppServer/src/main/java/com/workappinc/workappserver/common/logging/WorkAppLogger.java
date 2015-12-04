@@ -33,8 +33,8 @@ public class WorkAppLogger implements IApplicationLogger
 			configureDefaults(config);
 
 		// Obtain System Info for Logging
-		MDC.put("hostname", WorkAppUtility.getMyHostInfo(null, false));
-		MDC.put("port", WorkAppUtility.getMyPid(null));
+		MDC.put("hostname", WorkAppUtility.getMyHostInfo(this, null, false));
+		MDC.put("port", WorkAppUtility.getMyPid(this, null));
 
 		// Logger to catch uncaught exceptions in a separate thread
 		WorkAppUncaughtExceptionLogger.setDefaultUncaughtExceptionHandler(this);

@@ -31,6 +31,7 @@ import com.workappinc.workappserver.common.exception.MD5HashingException;
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
+import com.workappinc.workappserver.common.logging.WorkAppLogger;
 
 /**
  * WorkAppUtility is a class with static methods to serve as utility methods
@@ -44,7 +45,6 @@ public class WorkAppUtility
 	private static final String ALGORITHM = "AES";
 	private static final String TRANSFORMATION = "AES";
 	private static final String COMMA = ",";
-	private static IApplicationLogger mLogger = null;
 	private static InetAddress ip = null;
 	private static String hostname = null;
 
@@ -56,7 +56,7 @@ public class WorkAppUtility
 	 * @return
 	 * @throws SystemException
 	 */
-	public synchronized static String getMyPid(Object ctx) throws SystemException
+	public synchronized static String getMyPid(IApplicationLogger logger, Object ctx) throws SystemException
 	{
 		String pid = "-1";
 		try
@@ -69,7 +69,8 @@ public class WorkAppUtility
 		}
 		catch (RuntimeException ex)
 		{
-			mLogger.LogException(ex, WorkAppUtility.class);
+			if (logger != null)
+				logger.LogException(ex, WorkAppUtility.class);
 			throw new SystemException("Get ProcessID method threw RunTimeException", ex);
 		}
 		return pid;
@@ -86,7 +87,8 @@ public class WorkAppUtility
 	 * @return
 	 * @throws SystemException
 	 */
-	public synchronized static String getMyHostInfo(Object ctx, boolean isHostIP) throws SystemException
+	public synchronized static String getMyHostInfo(IApplicationLogger logger, Object ctx, boolean isHostIP)
+			throws SystemException
 	{
 		String returnInfo = null;
 		try
@@ -101,7 +103,8 @@ public class WorkAppUtility
 		}
 		catch (UnknownHostException ex)
 		{
-			mLogger.LogException(ex, WorkAppUtility.class);
+			if (logger != null)
+				logger.LogException(ex, WorkAppUtility.class);
 			throw new SystemException("Get HostInfo method threw UnknownHostException", ex);
 		}
 		return returnInfo;
@@ -116,9 +119,10 @@ public class WorkAppUtility
 	 * @return String MD5 Value
 	 * @throws MD5HashingException
 	 */
-	public synchronized static String generateMD5HashString(Object ctx, String id) throws MD5HashingException
+	public synchronized static String generateMD5HashString(IApplicationLogger logger, Object ctx, String id)
+			throws MD5HashingException
 	{
-		byte byteData[] = generateMD5HashBytes(ctx, id);
+		byte byteData[] = generateMD5HashBytes(logger, ctx, id);
 		StringBuffer hexString = new StringBuffer();
 		for (int i = 0; i < byteData.length; i++)
 		{
@@ -139,7 +143,8 @@ public class WorkAppUtility
 	 * @return byte[]
 	 * @throws MD5HashingException
 	 */
-	public synchronized static byte[] generateMD5HashBytes(Object ctx, String id) throws MD5HashingException
+	public synchronized static byte[] generateMD5HashBytes(IApplicationLogger logger, Object ctx, String id)
+			throws MD5HashingException
 	{
 		try
 		{
@@ -150,7 +155,7 @@ public class WorkAppUtility
 		}
 		catch (NoSuchAlgorithmException ex)
 		{
-			mLogger.LogException(ex, WorkAppUtility.class);
+			logger.LogException(ex, WorkAppUtility.class);
 			throw new MD5HashingException("Get MD5HashString method threw NoSuchAlgorithmException", ex);
 		}
 
@@ -166,7 +171,7 @@ public class WorkAppUtility
 	 * @throws MD5HashingException
 	 * @throws SystemException
 	 */
-	public synchronized static byte[] generateFileChecksumBytes(Object ctx, String filePath)
+	public synchronized static byte[] generateFileChecksumBytes(IApplicationLogger logger, Object ctx, String filePath)
 			throws MD5HashingException, SystemException
 	{
 		try
@@ -188,7 +193,7 @@ public class WorkAppUtility
 			}
 			catch (NoSuchAlgorithmException ex)
 			{
-				mLogger.LogException(ex, WorkAppUtility.class);
+				logger.LogException(ex, WorkAppUtility.class);
 				throw new MD5HashingException("GenerateFileChecksumBytes method threw NoSuchAlgorithmException", ex);
 			}
 			finally
@@ -199,7 +204,7 @@ public class WorkAppUtility
 		}
 		catch (IOException ex)
 		{
-			mLogger.LogException(ex, WorkAppUtility.class);
+			logger.LogException(ex, WorkAppUtility.class);
 			throw new SystemException("GenerateFileChecksumBytes method threw RunTimeException", ex);
 		}
 	}
@@ -214,10 +219,10 @@ public class WorkAppUtility
 	 * @throws SystemException
 	 * @throws MD5HashingException
 	 */
-	public synchronized static String generateFileChecksumString(Object ctx, String filePath)
+	public synchronized static String generateFileChecksumString(IApplicationLogger logger, Object ctx, String filePath)
 			throws MD5HashingException, SystemException
 	{
-		byte[] mdbytes = generateFileChecksumBytes(ctx, filePath);
+		byte[] mdbytes = generateFileChecksumBytes(logger, ctx, filePath);
 		StringBuffer hexString = new StringBuffer();
 		for (int i = 0; i < mdbytes.length; i++)
 		{
@@ -235,7 +240,7 @@ public class WorkAppUtility
 	 * @param incomingString
 	 * @return String
 	 */
-	public synchronized static String encodeString(Object ctx, String incomingString)
+	public synchronized static String encodeString(IApplicationLogger logger, Object ctx, String incomingString)
 	{
 		String encodedString = Base64.getEncoder().encodeToString(incomingString.trim().getBytes());
 		return encodedString;
@@ -247,7 +252,7 @@ public class WorkAppUtility
 	 * @param incomingBytes
 	 * @return String
 	 */
-	public synchronized static String encodeBytes(Object ctx, byte[] incomingBytes)
+	public synchronized static String encodeBytes(IApplicationLogger logger, Object ctx, byte[] incomingBytes)
 	{
 		String encodedString = Base64.getEncoder().encodeToString(incomingBytes);
 		return encodedString;
@@ -261,7 +266,7 @@ public class WorkAppUtility
 	 * @param incomingString
 	 * @return String
 	 */
-	public synchronized static String decodeString(Object ctx, String incomingString)
+	public synchronized static String decodeString(IApplicationLogger logger, Object ctx, String incomingString)
 	{
 		byte[] decodedByteArray = Base64.getDecoder().decode(incomingString.trim());
 		return new String(decodedByteArray);
@@ -276,7 +281,7 @@ public class WorkAppUtility
 	 * @param incomingString
 	 * @return String
 	 */
-	public synchronized static byte[] decodedBytes(Object ctx, String incomingString)
+	public synchronized static byte[] decodedBytes(IApplicationLogger logger, Object ctx, String incomingString)
 	{
 		byte[] decodedByteArray = Base64.getDecoder().decode(incomingString.trim());
 		return decodedByteArray;
@@ -287,7 +292,7 @@ public class WorkAppUtility
 	 * 
 	 * @return String
 	 */
-	public synchronized static String generateUUID(Object ctx)
+	public synchronized static String generateUUID(IApplicationLogger logger, Object ctx)
 	{
 		return UUID.randomUUID().toString();
 	}
@@ -301,7 +306,8 @@ public class WorkAppUtility
 	 * @return
 	 * @throws CryptoException
 	 */
-	public static String encryptString(Object ctx, String originalString, SecretKey secretKey) throws CryptoException
+	public static String encryptString(IApplicationLogger logger, Object ctx, String originalString,
+			SecretKey secretKey) throws CryptoException
 	{
 		try
 		{
@@ -309,13 +315,13 @@ public class WorkAppUtility
 			byte[] plainTextByte = originalString.getBytes();
 			cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 			byte[] encryptedByte = cipher.doFinal(plainTextByte);
-			String encryptedText = encodeBytes(null, encryptedByte);
+			String encryptedText = encodeBytes(logger, null, encryptedByte);
 			return encryptedText;
 		}
 		catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException
 				| BadPaddingException ex)
 		{
-			mLogger.LogException(ex, WorkAppUtility.class);
+			logger.LogException(ex, WorkAppUtility.class);
 			throw new CryptoException("encryptString throws Error encrypting string", ex);
 		}
 
@@ -330,12 +336,13 @@ public class WorkAppUtility
 	 * @return
 	 * @throws CryptoException
 	 */
-	public static String decryptString(Object ctx, String encryptedString, SecretKey secretKey) throws CryptoException
+	public static String decryptString(IApplicationLogger logger, Object ctx, String encryptedString,
+			SecretKey secretKey) throws CryptoException
 	{
 		try
 		{
 			Cipher cipher = Cipher.getInstance(TRANSFORMATION);
-			byte[] encryptedTextByte = decodedBytes(null, encryptedString);
+			byte[] encryptedTextByte = decodedBytes(logger, null, encryptedString);
 			cipher.init(Cipher.DECRYPT_MODE, secretKey);
 			byte[] decryptedByte = cipher.doFinal(encryptedTextByte);
 			String decryptedText = new String(decryptedByte);
@@ -344,7 +351,7 @@ public class WorkAppUtility
 		catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException
 				| BadPaddingException ex)
 		{
-			mLogger.LogException(ex, WorkAppUtility.class);
+			logger.LogException(ex, WorkAppUtility.class);
 			throw new CryptoException("decryptString throws Error decrypting String", ex);
 		}
 	}
@@ -355,7 +362,7 @@ public class WorkAppUtility
 	 * @return
 	 * @throws CryptoException
 	 */
-	public static SecretKey generateAESRandomKey() throws CryptoException
+	public static SecretKey generateAESRandomKey(IApplicationLogger logger) throws CryptoException
 	{
 		try
 		{
@@ -366,7 +373,7 @@ public class WorkAppUtility
 		}
 		catch (NoSuchAlgorithmException ex)
 		{
-			mLogger.LogException(ex, WorkAppUtility.class);
+			logger.LogException(ex, WorkAppUtility.class);
 			throw new CryptoException("generateAESRandomKey throws error while generating AES Random Key", ex);
 		}
 
@@ -381,10 +388,10 @@ public class WorkAppUtility
 	 * @param outputFile
 	 * @throws CryptoException
 	 */
-	public static void encryptFile(Object ctx, SecretKey secretKey, File inputFile, File outputFile)
-			throws CryptoException
+	public static void encryptFile(IApplicationLogger logger, Object ctx, SecretKey secretKey, File inputFile,
+			File outputFile) throws CryptoException
 	{
-		doCryptoFile(ctx, Cipher.ENCRYPT_MODE, secretKey, inputFile, outputFile);
+		doCryptoFile(logger, ctx, Cipher.ENCRYPT_MODE, secretKey, inputFile, outputFile);
 	}
 
 	/**
@@ -396,14 +403,14 @@ public class WorkAppUtility
 	 * @param outputFile
 	 * @throws CryptoException
 	 */
-	public static void decryptFile(Object ctx, SecretKey secretKey, File inputFile, File outputFile)
-			throws CryptoException
+	public static void decryptFile(IApplicationLogger logger, Object ctx, SecretKey secretKey, File inputFile,
+			File outputFile) throws CryptoException
 	{
-		doCryptoFile(ctx, Cipher.DECRYPT_MODE, secretKey, inputFile, outputFile);
+		doCryptoFile(logger, ctx, Cipher.DECRYPT_MODE, secretKey, inputFile, outputFile);
 	}
 
-	private static void doCryptoFile(Object ctx, int cipherMode, SecretKey secretKey, File inputFile, File outputFile)
-			throws CryptoException
+	private static void doCryptoFile(IApplicationLogger logger, Object ctx, int cipherMode, SecretKey secretKey,
+			File inputFile, File outputFile) throws CryptoException
 	{
 		try
 		{
