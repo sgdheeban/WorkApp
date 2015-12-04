@@ -111,9 +111,6 @@ public class WorkAppPropertyFileWriter extends WorkAppFileWriter
 		}
 	}
 
-	/**
-	 * Formats Properties if required
-	 */
 	@Override
 	public Object format(Object input)
 	{

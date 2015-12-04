@@ -9,8 +9,21 @@ package com.workappinc.workappserver.dataaccess.resources;
  */
 public abstract class WorkAppFileWriter implements IWriter
 {
+	/**
+	 * Abstract method to Write to file system given an output-path and input
+	 * 
+	 * @param outputFilePath
+	 * @param inMemoryObject
+	 */
 	public abstract void writeToFile(String outputFilePath, Object inMemoryObject);
 
+	/**
+	 * Abstract method to format, which can be customized according to the
+	 * FileWriter type
+	 * 
+	 * @param input
+	 * @return
+	 */
 	public abstract Object format(Object input);
 
 }
