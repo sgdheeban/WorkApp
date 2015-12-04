@@ -86,7 +86,8 @@ public class WorkAppPropertyFileWriter extends WorkAppFileWriter
 			}
 			else
 			{
-				mLogger.LogError("Unsupported Type passed to writeToFile method", WorkAppPropertyFileWriter.class);
+				if (mLogger != null)
+					mLogger.LogError("Unsupported Type passed to writeToFile method", WorkAppPropertyFileWriter.class);
 				throw new FileWritingException("Unsupported Type passed to writeToFile method");
 			}
 			prop.store(output, null);
@@ -105,7 +106,8 @@ public class WorkAppPropertyFileWriter extends WorkAppFileWriter
 				}
 				catch (IOException ex)
 				{
-					mLogger.LogException(ex, WorkAppPropertyFileWriter.class);
+					if (mLogger != null)
+						mLogger.LogException(ex, WorkAppPropertyFileWriter.class);
 				}
 			}
 		}

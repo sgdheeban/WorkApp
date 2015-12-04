@@ -1,7 +1,6 @@
 package com.workappinc.workappserver.common.logging;
 
 import java.io.IOException;
-import java.util.concurrent.ConcurrentHashMap;
 
 import com.workappinc.workappserver.common.resources.IContext;
 import com.workappinc.workappserver.common.resources.WorkAppContext;
@@ -33,23 +32,6 @@ public class WorkAppLoggerExample
 	}
 
 	/**
-	 * Testing command line param overide of log4j.properties to avoid
-	 * redeployment of the build
-	 */
-	private static void commandLineLoggerConfigParamTest()
-	{
-
-	}
-
-	/**
-	 * Testing logger from multiple threads to detect any race conditions
-	 */
-	private static void multiThreadedLoggingTest()
-	{
-
-	}
-
-	/**
 	 * Static main method as entry to the test class
 	 * 
 	 * @param args
@@ -58,8 +40,5 @@ public class WorkAppLoggerExample
 	public static void main(String args[]) throws IOException
 	{
 		defaultLoggerFunctionalityTest();
-		commandLineLoggerConfigParamTest();
-		multiThreadedLoggingTest();
-
 	}
 }

@@ -21,5 +21,5 @@ public interface IContext
 	 * 
 	 * @return
 	 */
-	public String getContextName();
+	public String getContextComment();
 }

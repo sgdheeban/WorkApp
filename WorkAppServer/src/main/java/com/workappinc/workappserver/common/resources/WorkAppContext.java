@@ -11,7 +11,7 @@ public class WorkAppContext implements IContext
 {
 
 	private String mGUID = "";
-	private String mContextName = "";
+	private String mContextComment = "";
 
 	/**
 	 * Default Constructor
@@ -31,7 +31,7 @@ public class WorkAppContext implements IContext
 	public WorkAppContext(String GUID, String message)
 	{
 		this.mGUID = GUID;
-		this.mContextName = message;
+		this.mContextComment = message;
 	}
 
 	@Override
@@ -42,9 +42,9 @@ public class WorkAppContext implements IContext
 	}
 
 	@Override
-	public String getContextName()
+	public String getContextComment()
 	{
 		// TODO Auto-generated method stub
-		return mContextName;
+		return mContextComment;
 	}
 }

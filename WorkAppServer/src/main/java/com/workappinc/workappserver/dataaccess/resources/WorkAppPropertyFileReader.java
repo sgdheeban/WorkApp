@@ -71,7 +71,8 @@ public class WorkAppPropertyFileReader implements IReader
 		}
 		catch (IOException ex)
 		{
-			mLogger.LogException(ex, WorkAppPropertyFileReader.class);
+			if (mLogger != null)
+				mLogger.LogException(ex, WorkAppPropertyFileReader.class);
 		}
 		finally
 		{
@@ -83,7 +84,8 @@ public class WorkAppPropertyFileReader implements IReader
 				}
 				catch (IOException ex)
 				{
-					mLogger.LogException(ex, WorkAppPropertyFileReader.class);
+					if (mLogger != null)
+						mLogger.LogException(ex, WorkAppPropertyFileReader.class);
 				}
 			}
 		}
@@ -106,14 +108,16 @@ public class WorkAppPropertyFileReader implements IReader
 			input = getClass().getClassLoader().getResourceAsStream(filename);
 			if (input == null)
 			{
-				mLogger.LogError("Sorry, unable to find " + filename, WorkAppPropertyFileReader.class);
+				if (mLogger != null)
+					mLogger.LogError("Sorry, unable to find " + filename, WorkAppPropertyFileReader.class);
 				return null;
 			}
 			prop.load(input);
 		}
 		catch (IOException ex)
 		{
-			mLogger.LogException(ex, WorkAppPropertyFileReader.class);
+			if (mLogger != null)
+				mLogger.LogException(ex, WorkAppPropertyFileReader.class);
 		}
 		finally
 		{
@@ -125,7 +129,8 @@ public class WorkAppPropertyFileReader implements IReader
 				}
 				catch (IOException ex)
 				{
-					mLogger.LogException(ex, WorkAppPropertyFileReader.class);
+					if (mLogger != null)
+						mLogger.LogException(ex, WorkAppPropertyFileReader.class);
 				}
 			}
 		}

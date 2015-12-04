@@ -155,7 +155,7 @@ public class WorkAppLogger implements IApplicationLogger
 			mStringBuilder.append(" [");
 			mStringBuilder.append(((IContext) ctx).getGUID());
 			mStringBuilder.append(",");
-			mStringBuilder.append(((IContext) ctx).getContextName());
+			mStringBuilder.append(((IContext) ctx).getContextComment());
 			mStringBuilder.append("] ");
 			returnString = mStringBuilder.toString();
 		}
