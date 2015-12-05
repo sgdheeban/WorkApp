@@ -19,7 +19,7 @@ This is the main server module, which hosts the backend server logic for WorkApp
   13. REST Service Layer using Embedded HTTP Jetty Server on port 8080 [Common Resources / Service Package]
   14. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Common Resources / Service Package]
   15. Distributed Coordination Layer [Common Resources Package]
-  16. Queuing Layer [Common Resources Package]
+  16. Queuing and Batching Layer [Common Resources Package]
   16. Model Business Objects [Model Package]
   17. Actual Business Logic using the underlying components [Model Package / Service Package]
   
