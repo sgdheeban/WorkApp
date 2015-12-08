@@ -13,6 +13,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 {
 	private static int poolsize = 10;
 	private static long timeToLive = 300000;
+	private static long threadSleepTime = 300000;
 	private static Vector<WorkAppJDBCConnection> connections;
 	private final ConnectionVerifier verifier;
 	private final String url;
@@ -114,7 +115,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 			{
 				try
 				{
-					Thread.sleep(300000);
+					Thread.sleep(threadSleepTime);
 				}
 				catch (final InterruptedException e)
 				{
