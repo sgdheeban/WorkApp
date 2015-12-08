@@ -1,6 +1,7 @@
-package com.workappinc.workappserver.dataaccess.resources.examples;
+package com.workappinc.workappserver.dataaccess.resources;
 
-import java.io.IOException;
+import static org.junit.Assert.*;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -8,25 +9,31 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.junit.Ignore;
+import org.junit.Test;
+
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 
 /**
- * Test Example for WorkAppMySQLConnectionManager, test after ensuring test db
- * in MySQL is available in the local box. Also change user, password,
- * connection string for MySQL accordingly
+ * Test Cases for WorkAppMySQLConnectionManager, turned off by default. Turn on
+ * to test after ensuring test db in MySQL is available in the local box. Also
+ * change user, password, connection string for MySQL accordingly.
  * 
  * @author dhgovindaraj
  *
  */
-public class WorkAppMySQLConnectionManagerExample
+public class WorkAppMySQLConnectionManagerTestCases
 {
-	WorkAppMySQLConnectionManager connections = null;
-
-	public void testMySQLQueryUsingAdhocConnection(IApplicationLogger logger)
+	/**
+	 * Testing MySQL Queries using Adhoc Connection
+	 */
+	@Test
+	public void testMySQLQueryUsingAdhocConnection()
 	{
+		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String dbClass = "com.mysql.jdbc.Driver";
 		// String query = "Select distinct(table_name) from
@@ -46,20 +53,31 @@ public class WorkAppMySQLConnectionManagerExample
 				// System.out.println("Table name : " + tableName);
 				System.out.println(resultSet.getString(1) + "," + resultSet.getString(2));
 			}
-			connection.close();
+			if (connection != null)
+				connection.close();
+			assertTrue(true);
 		}
 		catch (ClassNotFoundException e)
 		{
 			e.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 		catch (SQLException e)
 		{
 			e.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 	}
 
-	public void testMySQLStatementUsingAdhocConnection(IApplicationLogger logger)
+	/**
+	 * Testing MySQL statements using Adhoc Connection
+	 */
+	@Test
+	public void testMySQLStatementUsingAdhocConnection()
 	{
+		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String dbClass = "com.mysql.jdbc.Driver";
 		// String query = "Select distinct(table_name) from
@@ -73,33 +91,31 @@ public class WorkAppMySQLConnectionManagerExample
 			Connection connection = DriverManager.getConnection(dbUrl, username, password);
 			Statement statement = connection.createStatement();
 			statement.execute(query);
-			connection.close();
+			if (connection != null)
+				connection.close();
+			assertTrue(true);
 		}
 		catch (ClassNotFoundException e)
 		{
 			e.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 		catch (SQLException e)
 		{
 			e.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 	}
 
-	public WorkAppJDBCConnection getConnection(IApplicationLogger logger)
+	/**
+	 * Testing MySQL queries using Connection Manager
+	 */
+	@Test
+	public void testMySQLQueryUsingConnectionManager()
 	{
-		try
-		{
-			return connections.getConnection();
-		}
-		catch (final SQLException ex)
-		{
-			ex.printStackTrace();
-			return null;
-		}
-	}
-
-	public void testMySQLQueryUsingConnectionManager(IApplicationLogger logger)
-	{
+		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String query = "Select * from testdb.user";
 		String username = "root";
@@ -107,10 +123,11 @@ public class WorkAppMySQLConnectionManagerExample
 		WorkAppJDBCConnection conn = null;
 		Statement stmnt = null;
 		ResultSet resultSet = null;
+		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
 			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, logger);
-			conn = getConnection(logger);
+			conn = connections.getConnection();
 			stmnt = conn.createStatement();
 			resultSet = stmnt.executeQuery(query);
 
@@ -118,14 +135,19 @@ public class WorkAppMySQLConnectionManagerExample
 			{
 				System.out.println(resultSet.getString(1) + "," + resultSet.getString(2));
 			}
+			assertTrue(true);
 		}
 		catch (SQLException ex)
 		{
 			ex.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 		catch (ClassNotFoundException ex)
 		{
 			ex.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 		finally
 		{
@@ -140,7 +162,10 @@ public class WorkAppMySQLConnectionManagerExample
 				{
 					stmnt.close();
 				}
-				conn.close();
+				if (conn != null)
+					conn.close();
+				if (connections != null)
+					connections.close();
 			}
 			catch (SQLException ex)
 			{
@@ -149,8 +174,13 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	public void testMySQLPreparedStatementUsingConnectionManager(IApplicationLogger logger)
+	/**
+	 * Testing prepared statements using Connection Manager
+	 */
+	@Test
+	public void testMySQLPreparedStatementUsingConnectionManager()
 	{
+		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String username = "root";
 		String password = "password";
@@ -158,15 +188,15 @@ public class WorkAppMySQLConnectionManagerExample
 		PreparedStatement prpdstmnt = null;
 		Statement stmnt = null;
 		ResultSet resultSet = null;
+		WorkAppMySQLConnectionManager connections = null;
 
 		String selectQuery = "select * from testdb.user";
 		String insertSQL = "insert into testdb.user" + " values" + "(?,?)";
 		String updateSQL = "update testdb.user set name =? " + "where name = ?";
-
 		try
 		{
 			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, logger);
-			conn = getConnection(logger);
+			conn = connections.getConnection();
 
 			// INSERT Query
 			prpdstmnt = conn.prepareStatement(insertSQL);
@@ -179,7 +209,7 @@ public class WorkAppMySQLConnectionManagerExample
 			}
 
 			conn.close();
-			conn = getConnection(logger);
+			conn = connections.getConnection();
 
 			// UPDATE Query
 			prpdstmnt = conn.prepareStatement(updateSQL);
@@ -192,7 +222,7 @@ public class WorkAppMySQLConnectionManagerExample
 			}
 
 			conn.close();
-			conn = getConnection(logger);
+			conn = connections.getConnection();
 
 			// SELECT Query
 			stmnt = conn.createStatement();
@@ -202,31 +232,46 @@ public class WorkAppMySQLConnectionManagerExample
 			{
 				System.out.println(resultSet.getString(1) + "," + resultSet.getString(2));
 			}
-
+			assertTrue(true);
 		}
 		catch (SQLException ex)
 		{
 			ex.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 		catch (ClassNotFoundException ex)
 		{
 			ex.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 		finally
 		{
 			try
 			{
-				conn.close();
+				if (conn != null)
+					conn.close();
+				if (connections != null)
+					connections.close();
 			}
 			catch (Exception ex)
 			{
 				ex.printStackTrace();
 			}
 		}
+
 	}
 
-	private void testMySQLQueryForTransactionsUsingConnectionManager(IApplicationLogger logger)
+	/**
+	 * Testing SQL queries without Transaction using Connection Manager
+	 * 
+	 * @throws ClassNotFoundException
+	 */
+	@Test
+	public void testMySQLQueryForTransactionsUsingConnectionManager() throws ClassNotFoundException
 	{
+		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String query = "Select * from testdb.user";
 		String username = "root";
@@ -234,9 +279,11 @@ public class WorkAppMySQLConnectionManagerExample
 		WorkAppJDBCConnection conn = null;
 		Statement stmnt = null;
 		ResultSet resultSet = null;
+		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
-			conn = getConnection(logger);
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, logger);
+			conn = connections.getConnection();
 			stmnt = conn.createStatement();
 			resultSet = stmnt.executeQuery(query);
 
@@ -244,10 +291,13 @@ public class WorkAppMySQLConnectionManagerExample
 			{
 				System.out.println(resultSet.getString(1) + "," + resultSet.getString(2));
 			}
+			assertTrue(true);
 		}
 		catch (SQLException ex)
 		{
 			ex.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 		finally
 		{
@@ -262,7 +312,10 @@ public class WorkAppMySQLConnectionManagerExample
 				{
 					stmnt.close();
 				}
-				conn.close();
+				if (conn != null)
+					conn.close();
+				if (connections != null)
+					connections.close();
 			}
 			catch (SQLException ex)
 			{
@@ -271,8 +324,13 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	public void testMySQLTransactionsUsingConnectionManager(IApplicationLogger logger)
+	/**
+	 * Testing MySQL Transactions using Connection Manager
+	 */
+	@Test
+	public void testMySQLTransactionsUsingConnectionManager()
 	{
+		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String username = "root";
 		String password = "password";
@@ -284,11 +342,11 @@ public class WorkAppMySQLConnectionManagerExample
 		String selectQuery = "select * from testdb.user";
 		String insertSQL = "insert into testdb.user" + " values" + "(?,?)";
 		String updateSQL = "update testdb.user set name =? " + "where name = ?";
-
+		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
 			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, logger);
-			conn = getConnection(logger);
+			conn = connections.getConnection();
 
 			conn.setAutoCommit(false); // transaction block start
 
@@ -325,15 +383,19 @@ public class WorkAppMySQLConnectionManagerExample
 			{
 				System.out.println(resultSet.getString(1) + "," + resultSet.getString(2));
 			}
-
+			assertTrue(true);
 		}
 		catch (SQLException ex)
 		{
 			ex.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 		catch (ClassNotFoundException ex)
 		{
 			ex.printStackTrace();
+			assertTrue(false);
+			return;
 		}
 		finally
 		{
@@ -348,7 +410,10 @@ public class WorkAppMySQLConnectionManagerExample
 				{
 					stmnt.close();
 				}
-				conn.close();
+				if (conn != null)
+					conn.close();
+				if (connections != null)
+					connections.close();
 			}
 			catch (SQLException ex)
 			{
@@ -357,17 +422,4 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	public static void main(String args[]) throws IOException
-	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
-		WorkAppMySQLConnectionManagerExample app = new WorkAppMySQLConnectionManagerExample();
-		app.testMySQLStatementUsingAdhocConnection(logger);
-		app.testMySQLQueryUsingAdhocConnection(logger);
-		app.testMySQLPreparedStatementUsingConnectionManager(logger);
-		app.testMySQLTransactionsUsingConnectionManager(logger);
-		app.testMySQLQueryForTransactionsUsingConnectionManager(logger);
-
-		if (app.connections != null)
-			app.connections.close();
-	}
 }
