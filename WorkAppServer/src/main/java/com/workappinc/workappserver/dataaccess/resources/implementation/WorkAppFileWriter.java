@@ -1,4 +1,6 @@
-package com.workappinc.workappserver.dataaccess.resources;
+package com.workappinc.workappserver.dataaccess.resources.implementation;
+
+import com.workappinc.workappserver.dataaccess.resources.interfaces.IWriter;
 
 /**
  * WorkAppFileWriter is a generic implementation of IWriter interface which

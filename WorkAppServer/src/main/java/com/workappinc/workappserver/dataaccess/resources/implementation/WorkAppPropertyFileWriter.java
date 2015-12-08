@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.dataaccess.resources;
+package com.workappinc.workappserver.dataaccess.resources.implementation;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -11,6 +11,7 @@ import java.util.Properties;
 import com.workappinc.workappserver.common.exception.FileWritingException;
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
+import com.workappinc.workappserver.dataaccess.resources.interfaces.IWriter;
 
 /**
  * WorkAppPropertyFileWriter abstract class for writing in-memory properties to

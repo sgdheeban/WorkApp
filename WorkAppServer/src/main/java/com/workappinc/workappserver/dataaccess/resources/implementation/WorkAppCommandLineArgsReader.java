@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.dataaccess.resources;
+package com.workappinc.workappserver.dataaccess.resources.implementation;
 
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+
+import com.workappinc.workappserver.dataaccess.resources.interfaces.IReader;
 
 /**
  * WorkAppCommandLineArgsReader implements IReader interface which is used to

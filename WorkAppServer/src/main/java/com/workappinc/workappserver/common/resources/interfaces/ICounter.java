@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.interfaces;
 
 /**
  * ICounter is a top-level interface for deriving Counter classes within the

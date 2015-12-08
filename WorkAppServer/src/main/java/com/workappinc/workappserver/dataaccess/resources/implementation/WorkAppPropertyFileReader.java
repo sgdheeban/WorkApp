@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.dataaccess.resources;
+package com.workappinc.workappserver.dataaccess.resources.implementation;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -7,7 +7,8 @@ import java.util.Properties;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
-import com.workappinc.workappserver.common.resources.WorkAppUtility;
+import com.workappinc.workappserver.common.resources.implementation.WorkAppUtility;
+import com.workappinc.workappserver.dataaccess.resources.interfaces.IReader;
 
 /**
  * WorkAppPropertyFileReader is a singleton implementation of IReader interface

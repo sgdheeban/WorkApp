@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.interfaces;
 
 /**
  * IProcessor is a top-level interface for implementing processors to do

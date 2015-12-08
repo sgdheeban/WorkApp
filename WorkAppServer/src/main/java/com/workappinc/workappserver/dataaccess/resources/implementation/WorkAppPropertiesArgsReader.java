@@ -1,6 +1,9 @@
-package com.workappinc.workappserver.dataaccess.resources;
+package com.workappinc.workappserver.dataaccess.resources.implementation;
 
 import java.util.Properties;
+
+import com.workappinc.workappserver.dataaccess.resources.interfaces.IReader;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.beans.BeanInfo;

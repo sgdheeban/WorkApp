@@ -17,6 +17,7 @@ import com.workappinc.workappserver.common.exception.MD5HashingException;
 import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
+import com.workappinc.workappserver.common.resources.implementation.WorkAppUtility;
 
 /**
  * WorkAppUtilitiesExample is an example class to test all functionalities of

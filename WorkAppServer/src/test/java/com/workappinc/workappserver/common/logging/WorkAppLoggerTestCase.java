@@ -7,9 +7,9 @@ import java.util.Properties;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.workappinc.workappserver.common.resources.IContext;
-import com.workappinc.workappserver.common.resources.WorkAppContext;
-import com.workappinc.workappserver.dataaccess.resources.WorkAppPropertyFileReader;
+import com.workappinc.workappserver.common.resources.implementation.WorkAppContext;
+import com.workappinc.workappserver.common.resources.interfaces.IContext;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
 
 /**
  * JUnit TestCases

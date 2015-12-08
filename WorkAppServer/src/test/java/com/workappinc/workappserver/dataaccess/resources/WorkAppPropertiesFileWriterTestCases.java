@@ -11,6 +11,7 @@ import org.junit.Test;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.dataaccess.resources.examples.WorkAppPropertiesFileWriterExample;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileWriter;
 
 /**
  * Test suite for writing properties to file system

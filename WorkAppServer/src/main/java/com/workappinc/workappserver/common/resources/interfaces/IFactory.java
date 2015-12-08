@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.interfaces;
 
 /**
  * IFactory is a top-level interface for generating objects of any kind

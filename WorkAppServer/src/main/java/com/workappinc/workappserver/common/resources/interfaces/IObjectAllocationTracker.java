@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.interfaces;
 
 /**
  * IObjectAllocationTracker is a top-level interface for tracking object

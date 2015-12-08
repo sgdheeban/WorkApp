@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.dataaccess.resources;
+package com.workappinc.workappserver.dataaccess.resources.implementation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;

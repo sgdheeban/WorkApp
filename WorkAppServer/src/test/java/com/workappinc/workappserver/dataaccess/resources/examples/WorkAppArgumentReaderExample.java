@@ -2,8 +2,8 @@ package com.workappinc.workappserver.dataaccess.resources.examples;
 
 import java.util.List;
 
-import com.workappinc.workappserver.dataaccess.resources.WorkAppArgument;
-import com.workappinc.workappserver.dataaccess.resources.WorkAppCommandLineArgsReader;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppArgument;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
 
 /**
  * Test Example for WorkAppArgument Reading from Command Line and Properties

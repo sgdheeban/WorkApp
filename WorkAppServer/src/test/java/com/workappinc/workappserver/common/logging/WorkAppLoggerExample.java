@@ -2,8 +2,8 @@ package com.workappinc.workappserver.common.logging;
 
 import java.io.IOException;
 
-import com.workappinc.workappserver.common.resources.IContext;
-import com.workappinc.workappserver.common.resources.WorkAppContext;
+import com.workappinc.workappserver.common.resources.implementation.WorkAppContext;
+import com.workappinc.workappserver.common.resources.interfaces.IContext;
 
 /**
  * Example testing WorkAppLogger functionality

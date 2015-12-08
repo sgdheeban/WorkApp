@@ -7,9 +7,9 @@ import java.util.Properties;
 
 import org.junit.Test;
 
-import com.workappinc.workappserver.dataaccess.resources.WorkAppArgument;
-import com.workappinc.workappserver.dataaccess.resources.WorkAppCommandLineArgsReader;
-import com.workappinc.workappserver.dataaccess.resources.WorkAppPropertiesArgsReader;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppArgument;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertiesArgsReader;
 
 /**
  * Test Suits for WorkAppArgument Reading from Command Line and Properties -

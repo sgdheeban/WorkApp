@@ -6,7 +6,7 @@ import java.util.Map;
 
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
-import com.workappinc.workappserver.dataaccess.resources.WorkAppPropertyFileWriter;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileWriter;
 
 /**
  * Test file to write properties file to FileSystem

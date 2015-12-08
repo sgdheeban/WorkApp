@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.dataaccess.resources;
+package com.workappinc.workappserver.dataaccess.resources.interfaces;
 
 /**
  * IProducer is a top-level interface for producing data for other external data

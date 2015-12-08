@@ -1,9 +1,10 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.implementation;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
+import com.workappinc.workappserver.common.resources.interfaces.ICounter;
 
 /**
  * A Singleton class for starting a perf counter to collect metrics and store it

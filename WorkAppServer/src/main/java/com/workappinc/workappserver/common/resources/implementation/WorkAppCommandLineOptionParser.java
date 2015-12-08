@@ -1,7 +1,8 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.implementation;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
+import com.workappinc.workappserver.common.resources.interfaces.IParser;
 
 /**
  * WorkAppCommandLineOptionParser is a singleton implementation of IParser

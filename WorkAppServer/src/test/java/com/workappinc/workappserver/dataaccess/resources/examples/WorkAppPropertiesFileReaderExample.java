@@ -5,7 +5,7 @@ import java.util.Properties;
 
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
-import com.workappinc.workappserver.dataaccess.resources.WorkAppPropertyFileReader;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
 
 /**
  * File Reader Example Test file

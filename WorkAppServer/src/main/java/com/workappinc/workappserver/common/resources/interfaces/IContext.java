@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.interfaces;
 
 /**
  * IContext interface from which all context objects to trace object flow within

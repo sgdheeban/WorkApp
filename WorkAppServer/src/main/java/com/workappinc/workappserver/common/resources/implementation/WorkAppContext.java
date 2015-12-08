@@ -1,4 +1,6 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.implementation;
+
+import com.workappinc.workappserver.common.resources.interfaces.IContext;
 
 /**
  * WorkAppContext is an implementation of IContext, which is used to trace flow

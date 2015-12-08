@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.workappinc.workappserver.dataaccess.resources.WorkAppArgument;
-import com.workappinc.workappserver.dataaccess.resources.WorkAppCommandLineArgsReader;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppArgument;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
 
 /**
  * Test Suits for WorkAppArgument Reading from Command Line and Properties -

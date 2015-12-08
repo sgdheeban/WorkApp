@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.implementation;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,9 +1,10 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.implementation;
 
 import java.util.HashMap;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
+import com.workappinc.workappserver.common.resources.interfaces.IFactory;
 
 /**
  * WorkAppObjectFactory is an implementation of IFactory, with static methods to

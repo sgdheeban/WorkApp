@@ -11,8 +11,8 @@ import org.apache.log4j.PropertyConfigurator;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.exception.SystemException;
-import com.workappinc.workappserver.common.resources.IContext;
-import com.workappinc.workappserver.common.resources.WorkAppUtility;
+import com.workappinc.workappserver.common.resources.implementation.WorkAppUtility;
+import com.workappinc.workappserver.common.resources.interfaces.IContext;
 
 /**
  * WorkAppLogger is an implementation of ILogger Interface

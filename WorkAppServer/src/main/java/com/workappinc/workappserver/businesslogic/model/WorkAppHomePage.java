@@ -2,7 +2,7 @@ package com.workappinc.workappserver.businesslogic.model;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
-import com.workappinc.workappserver.common.resources.ISerializer;
+import com.workappinc.workappserver.common.resources.interfaces.ISerializer;
 
 /**
  * A Singleton Class for modeling the homepage and takes care of serializing and
