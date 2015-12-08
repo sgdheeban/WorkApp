@@ -853,3 +853,117 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
 2015-12-07 18:29:43 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:30398  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 Printing Properties Loaded from Class Path
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 Database: localhost
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 DBUserdheeban
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 DBPasswordpassword
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 Printing Properties Loaded from FileSystem Path
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 Database: localhost
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 DBUserdheeban
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 DBPasswordpassword
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 Printing Properties Loaded from FileSystem Path
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 log4j.rootLogger: all,stdout,file
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 log4j.appender.stdout: org.apache.log4j.ConsoleAppender
+2015-12-08 14:12:14 INFO  WorkAppPropertiesFileReaderExample:121 dhgovindaraj-VirtualBox:4010 log4j.appender.stdout.Target: System.out
+2015-12-08 14:12:32 ERROR WorkAppUncaughtExceptionLogger$1:108 dhgovindaraj-VirtualBox:4030  [ Uncaught exception in thread Thread[main,5,main] ]  - Stacktrace : com.workappinc.workappserver.common.exception.WorkAppUncaughtException: Uncaught exception in thread Thread[main,5,main]
+	at com.workappinc.workappserver.common.logging.WorkAppUncaughtExceptionLogger$1.uncaughtException(WorkAppUncaughtExceptionLogger.java:21)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1057)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1052)
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:1952)
+Caused by: java.lang.NullPointerException
+	at com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager.<init>(WorkAppMySQLConnectionManager.java:42)
+	at com.workappinc.workappserver.dataaccess.resources.examples.WorkAppMySQLConnectionManagerExample.testMySQLPreparedStatementUsingConnectionManager(WorkAppMySQLConnectionManagerExample.java:167)
+	at com.workappinc.workappserver.dataaccess.resources.examples.WorkAppMySQLConnectionManagerExample.main(WorkAppMySQLConnectionManagerExample.java:367)
+
+2015-12-08 14:13:01 ERROR WorkAppUncaughtExceptionLogger$1:108 dhgovindaraj-VirtualBox:4056  [ Uncaught exception in thread Thread[main,5,main] ]  - Stacktrace : com.workappinc.workappserver.common.exception.WorkAppUncaughtException: Uncaught exception in thread Thread[main,5,main]
+	at com.workappinc.workappserver.common.logging.WorkAppUncaughtExceptionLogger$1.uncaughtException(WorkAppUncaughtExceptionLogger.java:21)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1057)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1052)
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:1952)
+Caused by: java.lang.NullPointerException
+	at com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager.<init>(WorkAppMySQLConnectionManager.java:42)
+	at com.workappinc.workappserver.dataaccess.resources.examples.WorkAppMySQLConnectionManagerExample.testMySQLPreparedStatementUsingConnectionManager(WorkAppMySQLConnectionManagerExample.java:167)
+	at com.workappinc.workappserver.dataaccess.resources.examples.WorkAppMySQLConnectionManagerExample.main(WorkAppMySQLConnectionManagerExample.java:367)
+
+2015-12-08 14:14:31 DEBUG WorkAppMySQLConnectionManager:128 dhgovindaraj-VirtualBox:4145 Attempting to connect to db at: jdbc:mysql://localhost:3306/
+2015-12-08 14:14:31 DEBUG WorkAppMySQLConnectionManager:128 dhgovindaraj-VirtualBox:4145 No available MySQL connections, attempting to create a new one
+2015-12-08 14:14:31 DEBUG WorkAppMySQLConnectionManager:128 dhgovindaraj-VirtualBox:4145 Attempting to connect to db at: jdbc:mysql://localhost:3306/
+2015-12-08 14:14:31 DEBUG WorkAppMySQLConnectionManager:128 dhgovindaraj-VirtualBox:4145 No available MySQL connections, attempting to create a new one
+2015-12-08 14:15:21 FATAL WorkAppLoggerTestCase:102 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 ERROR WorkAppLoggerTestCase:108 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 WARN  WorkAppLoggerTestCase:114 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 INFO  WorkAppLoggerTestCase:121 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 DEBUG WorkAppLoggerTestCase:128 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 TRACE WorkAppLoggerTestCase:134 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 INFO  WorkAppLoggerTestCase:96 dhgovindaraj-VirtualBox:4201  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2015-12-08 14:15:21 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 FATAL WorkAppLoggerTestCase:102 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 ERROR WorkAppLoggerTestCase:108 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 WARN  WorkAppLoggerTestCase:114 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 INFO  WorkAppLoggerTestCase:121 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 DEBUG WorkAppLoggerTestCase:128 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 TRACE WorkAppLoggerTestCase:134 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-08 14:15:21 INFO  WorkAppLoggerTestCase:96 dhgovindaraj-VirtualBox:4201  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2015-12-08 14:15:21 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:4201  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 

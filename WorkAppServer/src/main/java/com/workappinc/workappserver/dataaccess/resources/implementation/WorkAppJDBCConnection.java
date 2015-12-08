@@ -19,17 +19,28 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
 
+import com.workappinc.workappserver.common.logging.IApplicationLogger;
+
+/**
+ * WorkAppJDBCConnection is an implementation of JDBC Connection Interface,
+ * extended to support Connection Pooling
+ * 
+ * @author dhgovindaraj
+ *
+ */
 public class WorkAppJDBCConnection implements Connection
 {
 	private final Connection conn;
 	private boolean inuse;
 	private long timestamp;
+	private IApplicationLogger mLogger = null;
 
-	WorkAppJDBCConnection(Connection connection)
+	WorkAppJDBCConnection(Connection connection, IApplicationLogger logger)
 	{
 		this.conn = connection;
 		inuse = false;
 		timestamp = 0;
+		this.mLogger = logger;
 	}
 
 	@Override
@@ -51,6 +62,7 @@ public class WorkAppJDBCConnection implements Connection
 		}
 		catch (final SQLException ex)
 		{
+			mLogger.LogException("SqlException-Could not close connection", WorkAppJDBCConnection.class);
 			terminate();
 			WorkAppMySQLConnectionManager.removeConn(conn);
 		}

@@ -8,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import com.workappinc.workappserver.common.logging.IApplicationLogger;
+import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 
@@ -15,7 +17,7 @@ public class WorkAppMySQLConnectionManagerExample
 {
 	WorkAppMySQLConnectionManager connections = null;
 
-	public void testMySQLQueryUsingAdhocConnection()
+	public void testMySQLQueryUsingAdhocConnection(IApplicationLogger logger)
 	{
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String dbClass = "com.mysql.jdbc.Driver";
@@ -52,7 +54,7 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	public void testMySQLStatementUsingAdhocConnection()
+	public void testMySQLStatementUsingAdhocConnection(IApplicationLogger logger)
 	{
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String dbClass = "com.mysql.jdbc.Driver";
@@ -81,7 +83,7 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	public WorkAppJDBCConnection getConnection()
+	public WorkAppJDBCConnection getConnection(IApplicationLogger logger)
 	{
 		try
 		{
@@ -94,7 +96,7 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	public void testMySQLQueryUsingConnectionManager()
+	public void testMySQLQueryUsingConnectionManager(IApplicationLogger logger)
 	{
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String query = "Select * from testdb.user";
@@ -105,8 +107,8 @@ public class WorkAppMySQLConnectionManagerExample
 		ResultSet resultSet = null;
 		try
 		{
-			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password);
-			conn = getConnection();
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, logger);
+			conn = getConnection(logger);
 			stmnt = conn.createStatement();
 			resultSet = stmnt.executeQuery(query);
 
@@ -146,7 +148,7 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	public void testMySQLPreparedStatementUsingConnectionManager()
+	public void testMySQLPreparedStatementUsingConnectionManager(IApplicationLogger logger)
 	{
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String username = "root";
@@ -162,8 +164,8 @@ public class WorkAppMySQLConnectionManagerExample
 
 		try
 		{
-			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password);
-			conn = getConnection();
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, logger);
+			conn = getConnection(logger);
 
 			// INSERT Query
 			prpdstmnt = conn.prepareStatement(insertSQL);
@@ -176,7 +178,7 @@ public class WorkAppMySQLConnectionManagerExample
 			}
 
 			conn.close();
-			conn = getConnection();
+			conn = getConnection(logger);
 
 			// UPDATE Query
 			prpdstmnt = conn.prepareStatement(updateSQL);
@@ -189,7 +191,7 @@ public class WorkAppMySQLConnectionManagerExample
 			}
 
 			conn.close();
-			conn = getConnection();
+			conn = getConnection(logger);
 
 			// SELECT Query
 			stmnt = conn.createStatement();
@@ -223,7 +225,7 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	private void testMySQLQueryForTransactionsUsingConnectionManager()
+	private void testMySQLQueryForTransactionsUsingConnectionManager(IApplicationLogger logger)
 	{
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String query = "Select * from testdb.user";
@@ -234,7 +236,7 @@ public class WorkAppMySQLConnectionManagerExample
 		ResultSet resultSet = null;
 		try
 		{
-			conn = getConnection();
+			conn = getConnection(logger);
 			stmnt = conn.createStatement();
 			resultSet = stmnt.executeQuery(query);
 
@@ -269,7 +271,7 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	public void testMySQLTransactionsUsingConnectionManager()
+	public void testMySQLTransactionsUsingConnectionManager(IApplicationLogger logger)
 	{
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String username = "root";
@@ -285,8 +287,8 @@ public class WorkAppMySQLConnectionManagerExample
 
 		try
 		{
-			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password);
-			conn = getConnection();
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, logger);
+			conn = getConnection(logger);
 
 			conn.setAutoCommit(false); // transaction block start
 
@@ -358,11 +360,12 @@ public class WorkAppMySQLConnectionManagerExample
 
 	public static void main(String args[]) throws IOException
 	{
+		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		WorkAppMySQLConnectionManagerExample app = new WorkAppMySQLConnectionManagerExample();
-		// app.testMySQLStatementUsingAdhocConnection();
-		// app.testMySQLQueryUsingAdhocConnection();
-		// app.testMySQLPreparedStatementUsingConnectionManager();
-		app.testMySQLTransactionsUsingConnectionManager();
-		app.testMySQLQueryForTransactionsUsingConnectionManager();
+		app.testMySQLStatementUsingAdhocConnection(logger);
+		app.testMySQLQueryUsingAdhocConnection(logger);
+		app.testMySQLPreparedStatementUsingConnectionManager(logger);
+		app.testMySQLTransactionsUsingConnectionManager(logger);
+		app.testMySQLQueryForTransactionsUsingConnectionManager(logger);
 	}
 }

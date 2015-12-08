@@ -5,6 +5,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Locale;
 
+import com.workappinc.workappserver.common.logging.IApplicationLogger;
+
 /**
  * <p>
  * Helper class for managing common JDBC tasks.
@@ -27,7 +29,7 @@ abstract public class WorkAppJDBCUtil
 	 * @param errorString
 	 *            the error message generated
 	 */
-	abstract protected void delegatedLog(String errorString);
+	abstract protected void delegatedLog(String errorString, IApplicationLogger logger);
 
 	/**
 	 * Checks database metadata to see if a table exists. Try UPPER, lower, and
@@ -41,11 +43,12 @@ abstract public class WorkAppJDBCUtil
 	 * @throws SQLException
 	 *             if an exception is encountered while accessing the database
 	 */
-	public static boolean tableExists(DatabaseMetaData dbMetaData, String tableName) throws SQLException
+	public static boolean tableExists(DatabaseMetaData dbMetaData, String tableName, IApplicationLogger logger)
+			throws SQLException
 	{
-		return (tableExistsCaseSensitive(dbMetaData, tableName)
-				|| tableExistsCaseSensitive(dbMetaData, tableName.toUpperCase(Locale.US))
-				|| tableExistsCaseSensitive(dbMetaData, tableName.toLowerCase(Locale.US)));
+		return (tableExistsCaseSensitive(dbMetaData, tableName, logger)
+				|| tableExistsCaseSensitive(dbMetaData, tableName.toUpperCase(Locale.US), logger)
+				|| tableExistsCaseSensitive(dbMetaData, tableName.toLowerCase(Locale.US), logger));
 	}
 
 	/**
@@ -60,7 +63,8 @@ abstract public class WorkAppJDBCUtil
 	 * @throws SQLException
 	 *             if an exception is encountered while accessing the database
 	 */
-	public static boolean tableExistsCaseSensitive(DatabaseMetaData dbMetaData, String tableName) throws SQLException
+	public static boolean tableExistsCaseSensitive(DatabaseMetaData dbMetaData, String tableName,
+			IApplicationLogger logger) throws SQLException
 	{
 		ResultSet rsTables = dbMetaData.getTables(null, null, tableName, null);
 		try
@@ -70,7 +74,7 @@ abstract public class WorkAppJDBCUtil
 		}
 		finally
 		{
-			closeJDBCResultSet(rsTables);
+			closeJDBCResultSet(rsTables, logger);
 		}
 	}
 
@@ -89,22 +93,22 @@ abstract public class WorkAppJDBCUtil
 	 * @throws SQLException
 	 *             if an exception is encountered while accessing the database
 	 */
-	public static boolean columnExists(DatabaseMetaData dbMetaData, String tableName, String columnName)
-			throws SQLException
+	public static boolean columnExists(DatabaseMetaData dbMetaData, String tableName, String columnName,
+			IApplicationLogger logger) throws SQLException
 	{
-		return (columnExistsCaseSensitive(dbMetaData, tableName, columnName)
-				|| columnExistsCaseSensitive(dbMetaData, tableName, columnName.toUpperCase(Locale.US))
-				|| columnExistsCaseSensitive(dbMetaData, tableName, columnName.toLowerCase(Locale.US))
-				|| columnExistsCaseSensitive(dbMetaData, tableName.toUpperCase(Locale.US), columnName)
+		return (columnExistsCaseSensitive(dbMetaData, tableName, columnName, logger)
+				|| columnExistsCaseSensitive(dbMetaData, tableName, columnName.toUpperCase(Locale.US), logger)
+				|| columnExistsCaseSensitive(dbMetaData, tableName, columnName.toLowerCase(Locale.US), logger)
+				|| columnExistsCaseSensitive(dbMetaData, tableName.toUpperCase(Locale.US), columnName, logger)
 				|| columnExistsCaseSensitive(dbMetaData, tableName.toUpperCase(Locale.US),
-						columnName.toUpperCase(Locale.US))
+						columnName.toUpperCase(Locale.US), logger)
 				|| columnExistsCaseSensitive(dbMetaData, tableName.toUpperCase(Locale.US),
-						columnName.toLowerCase(Locale.US))
-				|| columnExistsCaseSensitive(dbMetaData, tableName.toLowerCase(Locale.US), columnName)
+						columnName.toLowerCase(Locale.US), logger)
+				|| columnExistsCaseSensitive(dbMetaData, tableName.toLowerCase(Locale.US), columnName, logger)
 				|| columnExistsCaseSensitive(dbMetaData, tableName.toLowerCase(Locale.US),
-						columnName.toUpperCase(Locale.US))
+						columnName.toUpperCase(Locale.US), logger)
 				|| columnExistsCaseSensitive(dbMetaData, tableName.toLowerCase(Locale.US),
-						columnName.toLowerCase(Locale.US)));
+						columnName.toLowerCase(Locale.US), logger));
 	}
 
 	/**
@@ -122,8 +126,8 @@ abstract public class WorkAppJDBCUtil
 	 * @throws SQLException
 	 *             if an exception is encountered while accessing the database
 	 */
-	public static boolean columnExistsCaseSensitive(DatabaseMetaData dbMetaData, String tableName, String columnName)
-			throws SQLException
+	public static boolean columnExistsCaseSensitive(DatabaseMetaData dbMetaData, String tableName, String columnName,
+			IApplicationLogger logger) throws SQLException
 	{
 		ResultSet rsTables = dbMetaData.getColumns(null, null, tableName, columnName);
 		try
@@ -133,7 +137,7 @@ abstract public class WorkAppJDBCUtil
 		}
 		finally
 		{
-			closeJDBCResultSet(rsTables);
+			closeJDBCResultSet(rsTables, logger);
 		}
 	}
 
@@ -143,7 +147,7 @@ abstract public class WorkAppJDBCUtil
 	 * @param aResultSet
 	 *            the result set to be closed
 	 */
-	public static void closeJDBCResultSet(ResultSet aResultSet)
+	public static void closeJDBCResultSet(ResultSet aResultSet, IApplicationLogger logger)
 	{
 		try
 		{
