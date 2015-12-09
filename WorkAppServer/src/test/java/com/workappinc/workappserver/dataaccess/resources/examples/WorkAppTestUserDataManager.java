@@ -46,14 +46,14 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 	private WorkAppTestUserDataManager(IApplicationLogger logger)
 	{
 		sdf = new SimpleDateFormat("HH:mm:sss");
-		
+
 		mLogger = logger;
 		connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username,
 				password, logger);
 
 		loggingTimer = new Timer(); // Instantiate logging timer
 		loggingTimer.scheduleAtFixedRate(this, 100000, 100000); // Start logging
-															// timer
+		// timer
 	}
 
 	/**
@@ -116,7 +116,8 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 				prpdstmnt.setString(1, entry.getName());
 				prpdstmnt.setInt(2, entry.getAge());
 				prpdstmnt.executeUpdate();
-				mLogger.LogDebug("User Record ("+ entry.getName()+","+entry.getAge()+") Inserted at " + sdf.format(cal.getTime()), WorkAppTestUserDataManager.class);
+				mLogger.LogDebug("User Record (" + entry.getName() + "," + entry.getAge() + ") Inserted at "
+						+ sdf.format(cal.getTime()), WorkAppTestUserDataManager.class);
 			}
 		}
 		catch (SQLException ex)
@@ -132,8 +133,8 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 
 				if (conn != null)
 					conn.close();
-				
-				if(cal != null)
+
+				if (cal != null)
 					cal.clear();
 			}
 			catch (SQLException ex)

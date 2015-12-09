@@ -12,7 +12,8 @@ import com.workappinc.workappserver.dataaccess.entry.IEntry;
 public interface IDataManager
 {
 	/**
-	 * Add a dbEntry to the DataManager Queue for batch JDBC processing 
+	 * Add a dbEntry to the DataManager Queue for batch JDBC processing
+	 * 
 	 * @param entry
 	 */
 	public void addEntry(IEntry entry);

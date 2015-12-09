@@ -86,7 +86,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 					"Error during Singleton Object Creation for WorkAppMySQLConnectionManager Class", ex);
 		}
 	}
-	
+
 	/**
 	 * Close the Connection Manager, closes and removes all active connections
 	 */
