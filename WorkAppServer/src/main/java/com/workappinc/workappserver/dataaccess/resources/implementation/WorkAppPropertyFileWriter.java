@@ -22,7 +22,7 @@ import com.workappinc.workappserver.dataaccess.resources.interfaces.IWriter;
  */
 public class WorkAppPropertyFileWriter extends WorkAppFileWriter
 {
-	private static IApplicationLogger mLogger = null;
+	private IApplicationLogger mLogger = null;
 	private static IWriter mInstance = null;
 
 	private WorkAppPropertyFileWriter(IApplicationLogger logger)

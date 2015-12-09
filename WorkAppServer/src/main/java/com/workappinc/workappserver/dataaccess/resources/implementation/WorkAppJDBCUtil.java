@@ -158,7 +158,7 @@ abstract public class WorkAppJDBCUtil
 		}
 		catch (SQLException ex)
 		{
-			// util.severe("Unable to close JDBCResulset: " + ex);
+			logger.LogError("Unable to close JDBCResulset: " + ex, WorkAppJDBCUtil.class);
 		}
 	}
 }

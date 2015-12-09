@@ -19,7 +19,7 @@ import com.workappinc.workappserver.dataaccess.resources.interfaces.IReader;
  */
 public class WorkAppPropertyFileReader implements IReader
 {
-	private static IApplicationLogger mLogger = null;
+	private IApplicationLogger mLogger = null;
 	private static IReader mInstance = null;
 
 	private WorkAppPropertyFileReader(IApplicationLogger logger)

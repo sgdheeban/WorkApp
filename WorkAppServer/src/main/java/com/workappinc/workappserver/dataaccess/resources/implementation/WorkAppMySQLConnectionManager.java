@@ -7,12 +7,14 @@ import java.sql.SQLException;
 import java.util.Enumeration;
 import java.util.Vector;
 
+import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.dataaccess.resources.interfaces.IConnectionManager;
+import com.workappinc.workappserver.dataaccess.resources.interfaces.IReader;
 
 /**
  * 
- * WorkAppMySQLConnectionManager is an implementation of Closeable and
+ * WorkAppMySQLConnectionManager is a singleton implementation of Closeable and
  * IConnectionManager interface to handle MySQL Connection Pooling
  * 
  * @author dhgovindaraj
@@ -30,6 +32,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 	private final String password;
 	private final String dbClass = "com.mysql.jdbc.Driver";
 	private IApplicationLogger mLogger = null;
+	private static IConnectionManager mInstance = null;
 
 	/**
 	 * Constructor for Instantiating WorkAppMySQLConnectionManager
@@ -42,7 +45,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 	 *            to access MySQL database
 	 * @throws ClassNotFoundException
 	 */
-	public WorkAppMySQLConnectionManager(String url, String user, String password, IApplicationLogger logger)
+	private WorkAppMySQLConnectionManager(String url, String user, String password, IApplicationLogger logger)
 			throws ClassNotFoundException
 	{
 		Class.forName(dbClass);
@@ -56,6 +59,34 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 		verifier.start();
 	}
 
+	/**
+	 * getInstance method is used to get a singleton object
+	 * 
+	 * @return
+	 */
+	public static IConnectionManager getInstance(String url, String user, String password, IApplicationLogger logger)
+	{
+		try
+		{
+			if (mInstance == null)
+			{
+				synchronized (WorkAppMySQLConnectionManager.class)
+				{
+					if (mInstance == null)
+					{
+						mInstance = new WorkAppMySQLConnectionManager(url, user, password, logger);
+					}
+				}
+			}
+			return mInstance;
+		}
+		catch (Exception ex)
+		{
+			throw new SingletonInitException(
+					"Error during Singleton Object Creation for WorkAppMySQLConnectionManager Class", ex);
+		}
+	}
+	
 	/**
 	 * Close the Connection Manager, closes and removes all active connections
 	 */
