@@ -8,6 +8,14 @@ Client-Server Codebase for WorkApp, a platform for connecting talents with custo
 * Maven 3.2.3+ (for building)
 * Python 2.4+ (for running with the launcher script)
 
+## Create Test Table in MySQL
+
+Create the following database and table in MySQL (Ensure the MySQL server is up and running). Alternatively, you can use the --createMySQLSchema option through the commandline option args, and filling out the schema in the MySQLSchema.sql under the config folder in the root directory of WorkAppServer project.
+
+    CREATE DATABASE testdb IF NOT EXISTS;
+    USE testdb;
+    CREATE TABLE user (name text, age int(11)); 
+
 ## Building WokApp
 
 WorkApp is a standard Maven project. Simply run the following command from the project root directory:
