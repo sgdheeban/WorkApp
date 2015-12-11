@@ -35,7 +35,7 @@ After opening the project in Eclipse IDE, double check that the Java SDK is prop
 WorkApp comes with sample configuration that should work out-of-the-box for development. Use the following options to create a run configuration:
 
 * Main Class: `com.workappinc.workapp.server.WorkAppServer`
-* VM Options: `-ea -Xmx2G -Dconfig=etc/config.properties -Dlog.levels-file=etc/log.properties`
+* VM Options: `-ea -Xmx2G`
 * Working directory: `$MODULE_DIR$`
 * Use classpath of module: `WorkApp`
 
