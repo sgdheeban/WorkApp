@@ -11,7 +11,7 @@ import org.apache.log4j.PropertyConfigurator;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.exception.SystemException;
-import com.workappinc.workappserver.common.resources.implementation.WorkAppUtility;
+import com.workappinc.workappserver.common.resources.implementation.WorkAppUtil;
 import com.workappinc.workappserver.common.resources.interfaces.IContext;
 
 /**
@@ -33,8 +33,8 @@ public class WorkAppLogger implements IApplicationLogger
 			configureDefaults(config);
 
 		// Obtain System Info for Logging
-		MDC.put("hostname", WorkAppUtility.getMyHostInfo(this, null, false));
-		MDC.put("port", WorkAppUtility.getMyPid(this, null));
+		MDC.put("hostname", WorkAppUtil.getMyHostInfo(this, null, false));
+		MDC.put("port", WorkAppUtil.getMyPid(this, null));
 
 		// Logger to catch uncaught exceptions in a separate thread
 		WorkAppUncaughtExceptionLogger.setDefaultUncaughtExceptionHandler(this);

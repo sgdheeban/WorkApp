@@ -12,10 +12,16 @@ import java.sql.Statement;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.workappinc.workappserver.common.exception.SingletonInitException;
+import com.workappinc.workappserver.common.logging.IApplicationLogger;
+import com.workappinc.workappserver.common.resources.interfaces.IUtil;
+import com.workappinc.workappserver.dataaccess.resources.interfaces.IReader;
+
 /**
- * Tool to run database scripts
+ * WorkAppScriptRunnerUtility runs database scripts
+ * @author dhgovindaraj
  */
-public class WorkAppScriptRunnerUtility
+public class WorkAppScriptRunnerUtil implements IUtil
 {
 	/**
 	 * Regex to detect delimiter. ignores spaces, allows delimiter in comment, allows an equals-sign
@@ -28,17 +34,46 @@ public class WorkAppScriptRunnerUtility
 	private final boolean autoCommit;
 	private String delimiter = DEFAULT_DELIMITER;
 	private boolean fullLineDelimiter = false;
+	
+	private IApplicationLogger mLogger = null;
+	private static IUtil mInstance = null;
 
-	/**
-	 * Default constructor
-	 */
-	public WorkAppScriptRunnerUtility(Connection connection, boolean autoCommit, boolean stopOnError)
+	private WorkAppScriptRunnerUtil(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
 	{
 		this.connection = connection;
 		this.autoCommit = autoCommit;
 		this.stopOnError = stopOnError;
+		this.mLogger = logger ;
 	}
 
+	/**
+	 * getInstance method is used to get a singleton object
+	 * 
+	 * @return
+	 */
+	public static IUtil getInstance(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
+	{
+		try
+		{
+			if (mInstance == null)
+			{
+				synchronized (WorkAppScriptRunnerUtil.class)
+				{
+					if (mInstance == null)
+					{
+						mInstance = new WorkAppScriptRunnerUtil(connection, autoCommit, stopOnError, logger);
+					}
+				}
+			}
+			return mInstance;
+		}
+		catch (Exception ex)
+		{
+			throw new SingletonInitException(
+					"Error during Singleton Object Creation for WorkAppScriptRunnerUtil Class", ex);
+		}
+	}
+	
 	public void setDelimiter(String delimiter, boolean fullLineDelimiter)
 	{
 		this.delimiter = delimiter;
@@ -156,6 +191,7 @@ public class WorkAppScriptRunnerUtility
 					}
 
 					ResultSet rs = statement.getResultSet();
+					StringBuilder sb = new StringBuilder();
 					if (hasResults && rs != null)
 					{
 						ResultSetMetaData md = rs.getMetaData();
@@ -163,17 +199,18 @@ public class WorkAppScriptRunnerUtility
 						for (int i = 0; i < cols; i++)
 						{
 							String name = md.getColumnLabel(i);
-							print(name + "\t");
+							sb.append(name + "\t");
 						}
-						println("");
+						println(sb.toString());
+						sb.setLength(0);
 						while (rs.next())
 						{
 							for (int i = 0; i < cols; i++)
 							{
 								String value = rs.getString(i);
-								print(value + "\t");
+								sb.append(value + "\t");
 							}
-							println("");
+							println(sb.toString());
 						}
 					}
 
@@ -214,18 +251,7 @@ public class WorkAppScriptRunnerUtility
 		return delimiter;
 	}
 
-
-	private void print(Object o)
-	{
-		
-	}
-
 	private void println(Object o)
-	{
-		
-	}
-
-	private void printlnError(Object o)
 	{
 		
 	}

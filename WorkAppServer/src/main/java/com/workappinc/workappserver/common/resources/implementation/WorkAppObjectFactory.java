@@ -57,7 +57,7 @@ public class WorkAppObjectFactory implements IFactory
 		{
 			if (mInstance == null)
 			{
-				synchronized (WorkAppUtility.class)
+				synchronized (WorkAppUtil.class)
 				{
 					if (mInstance == null)
 					{
@@ -71,7 +71,7 @@ public class WorkAppObjectFactory implements IFactory
 		{
 			SingletonInitException singletonEx = new SingletonInitException(
 					"Error during Singleton Object Creation for WorkAppObjectFactory Class", ex);
-			mLogger.LogException(singletonEx, WorkAppUtility.class);
+			mLogger.LogException(singletonEx, WorkAppUtil.class);
 			throw singletonEx;
 		}
 	}

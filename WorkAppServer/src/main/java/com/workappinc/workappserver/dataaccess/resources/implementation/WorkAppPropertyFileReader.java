@@ -7,7 +7,7 @@ import java.util.Properties;
 
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
-import com.workappinc.workappserver.common.resources.implementation.WorkAppUtility;
+import com.workappinc.workappserver.common.resources.implementation.WorkAppUtil;
 import com.workappinc.workappserver.dataaccess.resources.interfaces.IReader;
 
 /**

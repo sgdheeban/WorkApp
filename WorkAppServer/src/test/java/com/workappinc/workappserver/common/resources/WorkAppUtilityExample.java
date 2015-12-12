@@ -17,7 +17,7 @@ import com.workappinc.workappserver.common.exception.MD5HashingException;
 import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
-import com.workappinc.workappserver.common.resources.implementation.WorkAppUtility;
+import com.workappinc.workappserver.common.resources.implementation.WorkAppUtil;
 
 /**
  * WorkAppUtilitiesExample is an example class to test all functionalities of
@@ -35,7 +35,7 @@ public class WorkAppUtilityExample
 	 */
 	private void getPIDTest(IApplicationLogger logger) throws SystemException
 	{
-		String pid = WorkAppUtility.getMyPid(logger, null);
+		String pid = WorkAppUtil.getMyPid(logger, null);
 		System.out.println("My PID: " + pid);
 	}
 
@@ -46,8 +46,8 @@ public class WorkAppUtilityExample
 	 */
 	private void getHostInfoTest(IApplicationLogger logger) throws SystemException
 	{
-		String hostname = WorkAppUtility.getMyHostInfo(logger, null, false);
-		String hostIP = WorkAppUtility.getMyHostInfo(logger, null, true);
+		String hostname = WorkAppUtil.getMyHostInfo(logger, null, false);
+		String hostIP = WorkAppUtil.getMyHostInfo(logger, null, true);
 		System.out.println("My Hostname: " + hostname);
 		System.out.println("My Hostname: " + hostIP);
 	}
@@ -59,7 +59,7 @@ public class WorkAppUtilityExample
 	 */
 	private void generateMD5HashTest(IApplicationLogger logger) throws MD5HashingException
 	{
-		String MD5HashString = WorkAppUtility.generateMD5HashString(logger, null, "sgd");
+		String MD5HashString = WorkAppUtil.generateMD5HashString(logger, null, "sgd");
 		System.out.println("MD5HashString: " + MD5HashString);
 
 	}
@@ -71,7 +71,7 @@ public class WorkAppUtilityExample
 	 */
 	private void generateMD5HashBytesTest(IApplicationLogger logger) throws MD5HashingException
 	{
-		byte[] MD5HashString = WorkAppUtility.generateMD5HashBytes(logger, null, "sgd");
+		byte[] MD5HashString = WorkAppUtil.generateMD5HashBytes(logger, null, "sgd");
 		System.out.println("MD5HashBytes: " + MD5HashString);
 	}
 
@@ -86,7 +86,7 @@ public class WorkAppUtilityExample
 		File file = new File("src/main/resources/testchecksumfile");
 		String absolutePath = file.getAbsolutePath();
 		System.out.println(absolutePath);
-		String fileChecksumString = WorkAppUtility.generateFileChecksumString(logger, null, absolutePath);
+		String fileChecksumString = WorkAppUtil.generateFileChecksumString(logger, null, absolutePath);
 		System.out.println("fileChecksumString: " + fileChecksumString);
 	}
 
@@ -101,7 +101,7 @@ public class WorkAppUtilityExample
 		File file = new File("src/main/resources/testchecksumfile");
 		String absolutePath = file.getAbsolutePath();
 		System.out.println(absolutePath);
-		byte[] fileChecksumBytes = WorkAppUtility.generateFileChecksumBytes(logger, null, absolutePath);
+		byte[] fileChecksumBytes = WorkAppUtil.generateFileChecksumBytes(logger, null, absolutePath);
 		System.out.println("fileChecksumBytes: " + fileChecksumBytes);
 	}
 
@@ -114,8 +114,8 @@ public class WorkAppUtilityExample
 	private void encodeDecodeStringTest(IApplicationLogger logger)
 	{
 		String sourceStr = "test-str22";
-		String encodedString = WorkAppUtility.encodeString(logger, null, sourceStr);
-		String decodedString = WorkAppUtility.decodeString(logger, null, encodedString);
+		String encodedString = WorkAppUtil.encodeString(logger, null, sourceStr);
+		String decodedString = WorkAppUtil.decodeString(logger, null, encodedString);
 		System.out.println(sourceStr + " encoded to :" + encodedString);
 		System.out.println(encodedString + " decoded to :" + decodedString);
 	}
@@ -125,7 +125,7 @@ public class WorkAppUtilityExample
 	 */
 	private void generateUUIDTest(IApplicationLogger logger)
 	{
-		String uuid = WorkAppUtility.generateUUID(logger, null);
+		String uuid = WorkAppUtil.generateUUID(logger, null);
 		System.out.println("uuid: " + uuid);
 	}
 
@@ -137,9 +137,9 @@ public class WorkAppUtilityExample
 	private void encryptDecryptMessageTest(IApplicationLogger logger) throws CryptoException
 	{
 		String origString = "this is a test string\tabc";
-		SecretKey secretKey = WorkAppUtility.generateAESRandomKey(logger);
-		String encryptedText = WorkAppUtility.encryptString(logger, null, origString, secretKey);
-		String decryptedText = WorkAppUtility.decryptString(logger, null, encryptedText, secretKey);
+		SecretKey secretKey = WorkAppUtil.generateAESRandomKey(logger);
+		String encryptedText = WorkAppUtil.encryptString(logger, null, origString, secretKey);
+		String decryptedText = WorkAppUtil.decryptString(logger, null, encryptedText, secretKey);
 		System.out.println(origString + " encoded to :" + encryptedText);
 		System.out.println(encryptedText + " decoded to :" + decryptedText);
 	}
@@ -154,9 +154,9 @@ public class WorkAppUtilityExample
 		File origFile = new File("src/main/resources/testchecksumfile");
 		File encryptedFile = new File("src/main/resources/testchecksumfile.encrypted");
 		File decryptedFile = new File("src/main/resources/testchecksumfile.decrypted");
-		SecretKey secretKey = WorkAppUtility.generateAESRandomKey(logger);
-		WorkAppUtility.encryptFile(logger, null, secretKey, origFile, encryptedFile);
-		WorkAppUtility.decryptFile(logger, null, secretKey, encryptedFile, decryptedFile);
+		SecretKey secretKey = WorkAppUtil.generateAESRandomKey(logger);
+		WorkAppUtil.encryptFile(logger, null, secretKey, origFile, encryptedFile);
+		WorkAppUtil.decryptFile(logger, null, secretKey, encryptedFile, decryptedFile);
 		System.out.println("File successfully encrypted and decrepreted.");
 	}
 

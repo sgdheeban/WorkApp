@@ -32,6 +32,7 @@ import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
+import com.workappinc.workappserver.common.resources.interfaces.IUtil;
 
 /**
  * WorkAppUtility is a class with static methods to serve as utility methods
@@ -40,7 +41,7 @@ import com.workappinc.workappserver.common.logging.WorkAppLogger;
  * @author dhgovindaraj
  *
  */
-public class WorkAppUtility
+public class WorkAppUtil implements IUtil
 {
 	private static final String ALGORITHM = "AES";
 	private static final String TRANSFORMATION = "AES";
@@ -70,7 +71,7 @@ public class WorkAppUtility
 		catch (RuntimeException ex)
 		{
 			if (logger != null)
-				logger.LogException(ex, WorkAppUtility.class);
+				logger.LogException(ex, WorkAppUtil.class);
 			throw new SystemException("Get ProcessID method threw RunTimeException", ex);
 		}
 		return pid;
@@ -104,7 +105,7 @@ public class WorkAppUtility
 		catch (UnknownHostException ex)
 		{
 			if (logger != null)
-				logger.LogException(ex, WorkAppUtility.class);
+				logger.LogException(ex, WorkAppUtil.class);
 			throw new SystemException("Get HostInfo method threw UnknownHostException", ex);
 		}
 		return returnInfo;
@@ -156,7 +157,7 @@ public class WorkAppUtility
 		catch (NoSuchAlgorithmException ex)
 		{
 			if (logger != null)
-				logger.LogException(ex, WorkAppUtility.class);
+				logger.LogException(ex, WorkAppUtil.class);
 			throw new MD5HashingException("Get MD5HashString method threw NoSuchAlgorithmException", ex);
 		}
 
@@ -195,7 +196,7 @@ public class WorkAppUtility
 			catch (NoSuchAlgorithmException ex)
 			{
 				if (logger != null)
-					logger.LogException(ex, WorkAppUtility.class);
+					logger.LogException(ex, WorkAppUtil.class);
 				throw new MD5HashingException("GenerateFileChecksumBytes method threw NoSuchAlgorithmException", ex);
 			}
 			finally
@@ -207,7 +208,7 @@ public class WorkAppUtility
 		catch (IOException ex)
 		{
 			if (logger != null)
-				logger.LogException(ex, WorkAppUtility.class);
+				logger.LogException(ex, WorkAppUtil.class);
 			throw new SystemException("GenerateFileChecksumBytes method threw RunTimeException", ex);
 		}
 	}
@@ -325,7 +326,7 @@ public class WorkAppUtility
 				| BadPaddingException ex)
 		{
 			if (logger != null)
-				logger.LogException(ex, WorkAppUtility.class);
+				logger.LogException(ex, WorkAppUtil.class);
 			throw new CryptoException("encryptString throws Error encrypting string", ex);
 		}
 
@@ -356,7 +357,7 @@ public class WorkAppUtility
 				| BadPaddingException ex)
 		{
 			if (logger != null)
-				logger.LogException(ex, WorkAppUtility.class);
+				logger.LogException(ex, WorkAppUtil.class);
 			throw new CryptoException("decryptString throws Error decrypting String", ex);
 		}
 	}
@@ -379,7 +380,7 @@ public class WorkAppUtility
 		catch (NoSuchAlgorithmException ex)
 		{
 			if (logger != null)
-				logger.LogException(ex, WorkAppUtility.class);
+				logger.LogException(ex, WorkAppUtil.class);
 			throw new CryptoException("generateAESRandomKey throws error while generating AES Random Key", ex);
 		}
 

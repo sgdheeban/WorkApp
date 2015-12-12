@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.Locale;
 
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
+import com.workappinc.workappserver.common.resources.interfaces.IUtil;
 
 /**
  * <p>
@@ -19,7 +20,7 @@ import com.workappinc.workappserver.common.logging.IApplicationLogger;
  * 
  * @author dhgovindaraj
  */
-abstract public class WorkAppJDBCUtil
+abstract public class WorkAppJDBCUtil implements IUtil
 {
 
 	/**
