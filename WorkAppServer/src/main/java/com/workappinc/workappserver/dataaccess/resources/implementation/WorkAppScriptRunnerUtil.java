@@ -19,14 +19,17 @@ import com.workappinc.workappserver.dataaccess.resources.interfaces.IReader;
 
 /**
  * WorkAppScriptRunnerUtility runs database scripts
+ * 
  * @author dhgovindaraj
  */
 public class WorkAppScriptRunnerUtil implements IUtil
 {
 	/**
-	 * Regex to detect delimiter. ignores spaces, allows delimiter in comment, allows an equals-sign
+	 * Regex to detect delimiter. ignores spaces, allows delimiter in comment,
+	 * allows an equals-sign
 	 */
-	public static final Pattern delimP = Pattern.compile("^\\s*(--)?\\s*delimiter\\s*=?\\s*([^\\s]+)+\\s*.*$", Pattern.CASE_INSENSITIVE);
+	public static final Pattern delimP = Pattern.compile("^\\s*(--)?\\s*delimiter\\s*=?\\s*([^\\s]+)+\\s*.*$",
+			Pattern.CASE_INSENSITIVE);
 
 	private static final String DEFAULT_DELIMITER = ";";
 	private final Connection connection;
@@ -34,16 +37,17 @@ public class WorkAppScriptRunnerUtil implements IUtil
 	private final boolean autoCommit;
 	private String delimiter = DEFAULT_DELIMITER;
 	private boolean fullLineDelimiter = false;
-	
+
 	private IApplicationLogger mLogger = null;
 	private static IUtil mInstance = null;
 
-	private WorkAppScriptRunnerUtil(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
+	private WorkAppScriptRunnerUtil(Connection connection, boolean autoCommit, boolean stopOnError,
+			IApplicationLogger logger)
 	{
 		this.connection = connection;
 		this.autoCommit = autoCommit;
 		this.stopOnError = stopOnError;
-		this.mLogger = logger ;
+		this.mLogger = logger;
 	}
 
 	/**
@@ -51,7 +55,8 @@ public class WorkAppScriptRunnerUtil implements IUtil
 	 * 
 	 * @return
 	 */
-	public static IUtil getInstance(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
+	public static IUtil getInstance(Connection connection, boolean autoCommit, boolean stopOnError,
+			IApplicationLogger logger)
 	{
 		try
 		{
@@ -69,11 +74,11 @@ public class WorkAppScriptRunnerUtil implements IUtil
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException(
-					"Error during Singleton Object Creation for WorkAppScriptRunnerUtil Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppScriptRunnerUtil Class",
+					ex);
 		}
 	}
-	
+
 	public void setDelimiter(String delimiter, boolean fullLineDelimiter)
 	{
 		this.delimiter = delimiter;
@@ -83,7 +88,8 @@ public class WorkAppScriptRunnerUtil implements IUtil
 	/**
 	 * Runs an SQL script (read in using the Reader parameter)
 	 *
-	 * @param reader - the source of the script
+	 * @param reader
+	 *            - the source of the script
 	 */
 	public void runScript(Reader reader) throws IOException, SQLException
 	{
@@ -151,7 +157,8 @@ public class WorkAppScriptRunnerUtil implements IUtil
 				}
 				else if (trimmedLine.startsWith("--"))
 				{
-					println(trimmedLine);
+					if (mLogger != null)
+						mLogger.LogDebug(trimmedLine, WorkAppScriptRunnerUtil.class);
 				}
 				else if (trimmedLine.length() < 1 || trimmedLine.startsWith("--"))
 				{
@@ -164,24 +171,29 @@ public class WorkAppScriptRunnerUtil implements IUtil
 					command.append(" ");
 					Statement statement = conn.createStatement();
 
-					println(command);
+					if (mLogger != null)
+						mLogger.LogDebug(command, WorkAppScriptRunnerUtil.class);
 
 					boolean hasResults = false;
 					try
 					{
 						hasResults = statement.execute(command.toString());
 					}
-					catch (SQLException e)
+					catch (SQLException ex)
 					{
 						final String errText = String.format("Error executing '%s' (line %d): %s", command,
-								lineReader.getLineNumber(), e.getMessage());
+								lineReader.getLineNumber(), ex.getMessage());
 						if (stopOnError)
 						{
-							throw new SQLException(errText, e);
+							if (mLogger != null)
+								mLogger.LogException(ex, WorkAppScriptRunnerUtil.class);
+
+							throw new SQLException(errText, ex);
 						}
 						else
 						{
-							println(errText);
+							if (mLogger != null)
+								mLogger.LogError(errText, WorkAppScriptRunnerUtil.class);
 						}
 					}
 
@@ -201,7 +213,10 @@ public class WorkAppScriptRunnerUtil implements IUtil
 							String name = md.getColumnLabel(i);
 							sb.append(name + "\t");
 						}
-						println(sb.toString());
+
+						if (mLogger != null)
+							mLogger.LogError(sb.toString(), WorkAppScriptRunnerUtil.class);
+
 						sb.setLength(0);
 						while (rs.next())
 						{
@@ -210,10 +225,11 @@ public class WorkAppScriptRunnerUtil implements IUtil
 								String value = rs.getString(i);
 								sb.append(value + "\t");
 							}
-							println(sb.toString());
+
+							if (mLogger != null)
+								mLogger.LogError(sb.toString(), WorkAppScriptRunnerUtil.class);
 						}
 					}
-
 					command = null;
 					try
 					{
@@ -237,12 +253,14 @@ public class WorkAppScriptRunnerUtil implements IUtil
 		}
 		catch (Exception e)
 		{
+			if (mLogger != null)
+				mLogger.LogError(e, WorkAppScriptRunnerUtil.class);
+
 			throw new IOException(String.format("Error executing '%s': %s", command, e.getMessage()), e);
 		}
 		finally
 		{
 			conn.rollback();
-			flush();
 		}
 	}
 
@@ -251,13 +269,4 @@ public class WorkAppScriptRunnerUtil implements IUtil
 		return delimiter;
 	}
 
-	private void println(Object o)
-	{
-		
-	}
-
-	private void flush()
-	{
-
-	}
 }
