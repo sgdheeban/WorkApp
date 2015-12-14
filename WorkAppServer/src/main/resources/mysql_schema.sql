@@ -1,3 +1,5 @@
-create database testdb1;
-use testdb1;
-create table user1 (name text);
+--delimiter %
+use testdb1%
+//test-comment
+--test-dash
+select * from user1%

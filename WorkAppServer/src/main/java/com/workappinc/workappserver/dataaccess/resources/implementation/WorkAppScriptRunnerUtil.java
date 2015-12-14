@@ -150,6 +150,8 @@ public class WorkAppScriptRunnerUtil implements IUtil
 				if (trimmedLine.length() < 1 || trimmedLine.startsWith("//"))
 				{
 					// Do nothing
+					if (mLogger != null)
+						mLogger.LogDebug(trimmedLine, WorkAppScriptRunnerUtil.class);
 				}
 				else if (delimMatch.matches())
 				{
@@ -157,12 +159,15 @@ public class WorkAppScriptRunnerUtil implements IUtil
 				}
 				else if (trimmedLine.startsWith("--"))
 				{
+					// Do nothing
 					if (mLogger != null)
 						mLogger.LogDebug(trimmedLine, WorkAppScriptRunnerUtil.class);
 				}
 				else if (trimmedLine.length() < 1 || trimmedLine.startsWith("--"))
 				{
 					// Do nothing
+					if (mLogger != null)
+						mLogger.LogDebug(trimmedLine, WorkAppScriptRunnerUtil.class);
 				}
 				else if (!fullLineDelimiter && trimmedLine.endsWith(getDelimiter())
 						|| fullLineDelimiter && trimmedLine.equals(getDelimiter()))
@@ -208,7 +213,7 @@ public class WorkAppScriptRunnerUtil implements IUtil
 					{
 						ResultSetMetaData md = rs.getMetaData();
 						int cols = md.getColumnCount();
-						for (int i = 0; i < cols; i++)
+						for (int i = 1; i <= cols; i++)
 						{
 							String name = md.getColumnLabel(i);
 							sb.append(name + "\t");
@@ -220,14 +225,14 @@ public class WorkAppScriptRunnerUtil implements IUtil
 						sb.setLength(0);
 						while (rs.next())
 						{
-							for (int i = 0; i < cols; i++)
+							for (int i = 1; i <= cols; i++)
 							{
 								String value = rs.getString(i);
 								sb.append(value + "\t");
 							}
-
 							if (mLogger != null)
 								mLogger.LogError(sb.toString(), WorkAppScriptRunnerUtil.class);
+							sb.setLength(0);
 						}
 					}
 					command = null;

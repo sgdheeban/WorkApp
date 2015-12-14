@@ -40,6 +40,7 @@ public class WorkAppScriptRunnerUtilExample
 
 			String file = "src/main/resources/mysql_schema.sql";
 			runner.runScript(new BufferedReader(new FileReader(file)));
+			conn.close();
 		}
 		catch (Exception ex)
 		{
