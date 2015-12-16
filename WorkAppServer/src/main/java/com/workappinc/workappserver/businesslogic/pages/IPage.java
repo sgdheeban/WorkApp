@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.businesslogic.model;
+package com.workappinc.workappserver.businesslogic.pages;
 
 /**
  * IPage interface is a top-level interface after which all other pages are

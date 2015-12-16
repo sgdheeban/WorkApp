@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.businesslogic.main;
+package com.workappinc.workappserver.businesslogic.model;
 
 import java.io.IOException;
 
