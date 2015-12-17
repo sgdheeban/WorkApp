@@ -3,6 +3,7 @@ package com.workappinc.workappserver.businesslogic.pages;
 /**
  * WorkAppUserProfilePage is an instance of IPage interface, which models the
  * user through a digital profile
+ * 
  * @author dhgovindaraj
  *
  */
@@ -10,7 +11,7 @@ public class WorkAppUserProfilePage implements IPage
 {
 
 	/*
-	 * Page and Section Load 
+	 * Page and Section Load
 	 */
 	public synchronized static Object loadPage(Object userID)
 	{
@@ -57,7 +58,7 @@ public class WorkAppUserProfilePage implements IPage
 	{
 
 	}
-	
+
 	public synchronized static void RemoveSkill(Object id)
 	{
 
@@ -67,7 +68,7 @@ public class WorkAppUserProfilePage implements IPage
 	{
 
 	}
-	
+
 	public synchronized static void CreateTeam(Object id)
 	{
 		throw new UnsupportedOperationException();
@@ -139,7 +140,6 @@ public class WorkAppUserProfilePage implements IPage
 		throw new UnsupportedOperationException();
 	}
 
-	
 	/*
 	 * Sharing Feature to increase word-of-mouth advertising
 	 */

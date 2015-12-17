@@ -7,12 +7,12 @@ public class WorkAppCommonUtilPage implements IPage
 	{
 		return null;
 	}
-	
+
 	public synchronized static Object Login(Object userCredentialRequest)
 	{
 		return null;
 	}
-	
+
 	public synchronized static Object LogOut(Object userCredentialRequest)
 	{
 		return null;
