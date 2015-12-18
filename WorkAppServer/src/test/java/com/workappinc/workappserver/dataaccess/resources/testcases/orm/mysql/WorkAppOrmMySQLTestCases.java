@@ -23,7 +23,7 @@ public class WorkAppOrmMySQLTestCases extends TestSimple
 
 	public String getProperties()
 	{
-		return  "OrmMySQL.properties";
+		return "OrmMySQL.properties";
 	}
 
 	// several tests are inherited from TestSimple

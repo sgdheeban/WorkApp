@@ -346,7 +346,7 @@ public abstract class TestSimple
 
 		Map<String, Object> simpleMap1 = persist.readMap("select * from simple where id=?", id);
 		assertEquals(id, simpleMap1.get("id"));
-		assertEquals(simple.getIntCol(), simpleMap1.get("int_col"));
+		assertEquals(simple.getIntCol(), Long.parseLong(simpleMap1.get("int_col").toString()));
 		assertEquals(simple.getStringCol(), simpleMap1.get("string_col"));
 
 		persist.delete(simple);
@@ -370,16 +370,16 @@ public abstract class TestSimple
 
 		List<Map<String, Object>> simpleList = persist.readMapList("select * from simple where id in (?,?,?)",
 				simple1.getId(), simple2.getId(), simple3.getId());
-		assertEquals(simple1.getId(), simpleList.get(0).get("id"));
-		assertEquals(simple1.getIntCol(), simpleList.get(0).get("int_col"));
+		assertEquals(simple1.getId(), Long.parseLong(simpleList.get(0).get("id").toString()));
+		assertEquals(simple1.getIntCol(), Long.parseLong(simpleList.get(0).get("int_col").toString()));
 		assertEquals(simple1.getStringCol(), simpleList.get(0).get("string_col"));
 
-		assertEquals(simple2.getId(), simpleList.get(1).get("id"));
-		assertEquals(simple2.getIntCol(), simpleList.get(1).get("int_col"));
+		assertEquals(simple2.getId(), Long.parseLong(simpleList.get(1).get("id").toString()));
+		assertEquals(simple2.getIntCol(), Long.parseLong(simpleList.get(1).get("int_col").toString()));
 		assertEquals(simple2.getStringCol(), simpleList.get(1).get("string_col"));
 
-		assertEquals(simple3.getId(), simpleList.get(2).get("id"));
-		assertEquals(simple3.getIntCol(), simpleList.get(2).get("int_col"));
+		assertEquals(simple3.getId(), Long.parseLong(simpleList.get(2).get("id").toString()));
+		assertEquals(simple3.getIntCol(), Long.parseLong(simpleList.get(2).get("int_col").toString()));
 		assertEquals(simple3.getStringCol(), simpleList.get(2).get("string_col"));
 
 		persist.delete(simple1);

@@ -38,7 +38,8 @@ public class DynamicBean
 	{
 
 		ClassPool pool = ClassPool.getDefault();
-		CtClass cc = pool.makeClass("com.workappinc.workappserver.dataaccess.resources.testcases.orm.framework." + beanMap.getClassName() + (noTable ? "NoTable" : ""));
+		CtClass cc = pool.makeClass("com.workappinc.workappserver.dataaccess.resources.testcases.orm.framework."
+				+ beanMap.getClassName() + (noTable ? "NoTable" : ""));
 
 		if (noTable)
 		{
