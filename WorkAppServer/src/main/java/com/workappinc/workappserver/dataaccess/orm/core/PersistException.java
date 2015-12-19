@@ -1,5 +1,3 @@
-// $Id: RuntimeSQLException.java 12 2007-08-29 05:23:13Z jcamaia $
-
 package com.workappinc.workappserver.dataaccess.orm.core;
 
 @SuppressWarnings("serial")

@@ -1,5 +1,3 @@
-// $Id$
-
 package com.workappinc.workappserver.dataaccess.orm.annotations;
 
 import java.lang.annotation.ElementType;

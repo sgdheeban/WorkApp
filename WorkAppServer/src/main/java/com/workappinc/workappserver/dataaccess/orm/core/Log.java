@@ -1,5 +1,3 @@
-// $Id$
-
 package com.workappinc.workappserver.dataaccess.orm.core;
 
 import org.apache.log4j.Logger;

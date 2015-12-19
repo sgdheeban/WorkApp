@@ -1,5 +1,3 @@
-// $Id$
-
 package com.workappinc.workappserver.dataaccess.orm.core;
 
 import java.io.IOException;
@@ -21,6 +19,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
+
+import com.workappinc.workappserver.common.exception.RuntimeIOException;
+import com.workappinc.workappserver.common.exception.RuntimeSQLException;
 
 /**
  * The main class for the persistence engine.

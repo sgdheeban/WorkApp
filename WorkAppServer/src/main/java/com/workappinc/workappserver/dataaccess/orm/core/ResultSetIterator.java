@@ -1,10 +1,10 @@
-// $Id$
-
 package com.workappinc.workappserver.dataaccess.orm.core;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Iterator;
+
+import com.workappinc.workappserver.common.exception.RuntimeSQLException;
 
 /**
  * Iterator backed by a ResultSet.
