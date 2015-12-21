@@ -1,6 +1,3 @@
-
-// $Id$
-
 package com.workappinc.workappserver.dataaccess.resources.testcases.orm.framework;
 
 import java.io.IOException;

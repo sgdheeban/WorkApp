@@ -1,5 +1,3 @@
-// $Id$
-
 package com.workappinc.workappserver.dataaccess.resources.testcases.orm.common;
 
 import static org.junit.Assert.assertEquals;

@@ -1,6 +1,3 @@
-
-// $Id$
-
 package com.workappinc.workappserver.dataaccess.resources.testcases.orm.mysql;
 
 import com.workappinc.workappserver.dataaccess.orm.annotations.Column;

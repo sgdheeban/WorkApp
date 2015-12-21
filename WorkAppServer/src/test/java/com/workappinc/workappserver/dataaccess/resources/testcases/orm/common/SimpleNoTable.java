@@ -1,6 +1,4 @@
 
-//$Id: Simple.java 7 2007-08-17 19:32:18Z jcamaia $
-
 package com.workappinc.workappserver.dataaccess.resources.testcases.orm.common;
 
 import com.workappinc.workappserver.dataaccess.orm.annotations.NoTable;
