@@ -1,63 +1,48 @@
 package com.workappinc.workappserver.common.resources.implementation;
 
-import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.resources.interfaces.ISerializer;
 
 /**
- * WorkAppJSONSerializer is a singleton implementation of ISerializer interface
- * for serializing and de-serializing JSON and POJO
+ * WorkAppJSONSerializer is an implementation of ISerializer interface for
+ * serializing and de-serializing JSON and POJO
  * 
  * @author dhgovindaraj
  *
  */
 public class WorkAppJSONSerializer implements ISerializer
 {
-	private static IApplicationLogger mLogger = null;
-	private static ISerializer mInstance = null;
-
-	private WorkAppJSONSerializer(IApplicationLogger logger)
-	{
-		mLogger = logger;
-	}
-
 	/**
-	 * getInstance method is used to get a singleton object
-	 * 
-	 * @return
+	 * Serializes POJO to JSON String
 	 */
-	public static ISerializer getInstance(IApplicationLogger logger)
-	{
-		try
-		{
-			if (mInstance == null)
-			{
-				synchronized (WorkAppJSONSerializer.class)
-				{
-					if (mInstance == null)
-					{
-						mInstance = new WorkAppJSONSerializer(logger);
-					}
-				}
-			}
-			return mInstance;
-		}
-		catch (Exception ex)
-		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppJSONSerializer Class",
-					ex);
-		}
-	}
-
-	@Override
-	public Object serialize(Object deserializedObject)
+	public synchronized static String serialize(Object pojo, IApplicationLogger logger)
 	{
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public Object deSerialize(Object serializedObject)
+	/**
+	 * Serializes POJO to JSON File
+	 */
+	public synchronized static boolean serializeToFile(Object pojo, String jsonFilePath, IApplicationLogger logger)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	/**
+	 * Deserializes JSON String to POJO
+	 */
+	public synchronized static Object deSerialize(Object pojo, String json, IApplicationLogger logger)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
+	 * Deserializes JSON File to POJO
+	 */
+	public synchronized static Object deSerializeFromFile(Object pojo, String jsonFilePath, IApplicationLogger logger)
 	{
 		// TODO Auto-generated method stub
 		return null;
