@@ -6,7 +6,7 @@ This is the main server module, which hosts the backend server logic for WorkApp
 
   1. Common Logger [Common Resources Package]
   2. File and Command Line based Configuration Reader [Data Access Package]
-  3. Parser-Serializer-Deserializer for JSON, XML, HTML, DOT, MySQL, SQLLiTe, CQL [Common Resources Package]
+  3. Parser-Serializer-Deserializer between POJO and JSON, XML, HTML, DOT, MySQL, SQLLiTe, CQL [Common Resources Package]
   4. SQL Query Builder [Data Access Package]
   5. Entity Framework  [Data Access Package]  
   6. Object Allocation Tracker [Common Resources Package]
