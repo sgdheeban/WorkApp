@@ -5538,3 +5538,7 @@ Caused by: java.lang.NoSuchMethodException: com.workappinc.workappserver.dataacc
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
 2015-12-22 00:42:23 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:4020  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2015-12-23 19:06:52 DEBUG WorkAppMySQLConnectionManager:128 dhgovindaraj-VirtualBox:6494 Attempting to connect to db at: jdbc:mysql://localhost:3306/
+2015-12-23 19:06:52 DEBUG WorkAppTestUserDataManagerDriver:128 dhgovindaraj-VirtualBox:6494 WorkAppTestUserDataManagerDriver started at 19:06:052
+2015-12-23 19:06:52 DEBUG WorkAppTestUserDataManagerDriver:128 dhgovindaraj-VirtualBox:6494 WorkAppTestUserDataManagerDriver slept at 19:06:052
+2015-12-23 19:06:55 DEBUG WorkAppTestUserDataManagerDriver:128 dhgovindaraj-VirtualBox:6494 WorkAppTestUserDataManagerDriver ended at 19:06:052

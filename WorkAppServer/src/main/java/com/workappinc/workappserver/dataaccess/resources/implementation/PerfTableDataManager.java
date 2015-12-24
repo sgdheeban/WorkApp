@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.dataaccess.resources.examples;
+package com.workappinc.workappserver.dataaccess.resources.implementation;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,6 +13,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import com.workappinc.workappserver.common.exception.SingletonInitException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.dataaccess.entry.IEntry;
+import com.workappinc.workappserver.dataaccess.entry.PerfTableEntry;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 import com.workappinc.workappserver.dataaccess.resources.interfaces.IDataManager;
@@ -24,7 +25,7 @@ import com.workappinc.workappserver.dataaccess.resources.interfaces.IDataManager
  * @author dhgovindaraj
  *
  */
-public class WorkAppTestUserDataManager extends TimerTask implements IDataManager
+public class PerfTableDataManager extends TimerTask implements IDataManager
 {
 	private IApplicationLogger mLogger = null;
 	private static IDataManager mInstance = null;
@@ -43,7 +44,7 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 
 	private final String insertSQL = "insert into testdb.user" + " values" + "(?,?)";
 
-	private WorkAppTestUserDataManager(IApplicationLogger logger)
+	private PerfTableDataManager(IApplicationLogger logger)
 	{
 		sdf = new SimpleDateFormat("HH:mm:sss");
 
@@ -67,11 +68,11 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 		{
 			if (mInstance == null)
 			{
-				synchronized (WorkAppTestUserDataManager.class)
+				synchronized (PerfTableDataManager.class)
 				{
 					if (mInstance == null)
 					{
-						mInstance = new WorkAppTestUserDataManager(logger);
+						mInstance = new PerfTableDataManager(logger);
 					}
 				}
 			}
@@ -112,17 +113,17 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 			prpdstmnt = conn.prepareStatement(insertSQL);
 			while (!insertQueue.isEmpty())
 			{
-				WorkAppUserTestEntry entry = (WorkAppUserTestEntry) insertQueue.poll();
+				PerfTableEntry entry = (PerfTableEntry) insertQueue.poll();
 				prpdstmnt.setString(1, entry.getName());
 				prpdstmnt.setInt(2, entry.getAge());
 				prpdstmnt.executeUpdate();
 				mLogger.LogDebug("User Record (" + entry.getName() + "," + entry.getAge() + ") Inserted at "
-						+ sdf.format(cal.getTime()), WorkAppTestUserDataManager.class);
+						+ sdf.format(cal.getTime()), PerfTableDataManager.class);
 			}
 		}
 		catch (SQLException ex)
 		{
-			mLogger.LogException(ex, WorkAppTestUserDataManager.class);
+			mLogger.LogException(ex, PerfTableDataManager.class);
 		}
 		finally
 		{
@@ -139,7 +140,7 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 			}
 			catch (SQLException ex)
 			{
-				mLogger.LogException(ex, WorkAppTestUserDataManager.class);
+				mLogger.LogException(ex, PerfTableDataManager.class);
 			}
 		}
 
