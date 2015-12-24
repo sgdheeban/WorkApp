@@ -1,9 +1,9 @@
 package com.workappinc.workappserver.dataaccess.entry;
 
 /**
- * PerfTableEntry is a sample database entry - Maps fields of User table
- * <String name, Int Age> are the fields in this test table Also provides Getter
- * and Setter Fields
+ * PerfTableEntry is a sample database entry - Maps fields of User table <String
+ * name, Int Age> are the fields in this test table Also provides Getter and
+ * Setter Fields
  * 
  * @author dhgovindaraj
  *

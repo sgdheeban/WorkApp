@@ -18,8 +18,7 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppM
 import com.workappinc.workappserver.dataaccess.resources.interfaces.IDataManager;
 
 /**
- * PerfTableDataManager is an example singleton implementation of
- * IDataManager
+ * PerfTableDataManager is an example singleton implementation of IDataManager
  * 
  * @author dhgovindaraj
  *
@@ -79,8 +78,8 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException(
-					"Error during Singleton Object Creation for PerfTableDataManager Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for PerfTableDataManager Class",
+					ex);
 		}
 	}
 
