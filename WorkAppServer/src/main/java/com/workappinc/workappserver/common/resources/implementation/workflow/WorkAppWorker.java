@@ -21,7 +21,7 @@ import com.workappinc.workappserver.common.resources.interfaces.IWorker;
 public abstract class WorkAppWorker implements IWorker
 {
 	private IApplicationLogger mLogger = null;
-	
+
 	public static final String NORMAL_PIPE_TYPE = "normal";
 	public static final String ERROR_PIPE_TYPE = "error";
 
@@ -42,9 +42,9 @@ public abstract class WorkAppWorker implements IWorker
 
 	public WorkAppWorker(IApplicationLogger logger)
 	{
-		this.mLogger = logger ; 
+		this.mLogger = logger;
 	}
-	
+
 	@Override
 	public final synchronized boolean receive(final Object data, IPipe sender)
 	{
@@ -72,7 +72,7 @@ public abstract class WorkAppWorker implements IWorker
 		}
 		catch (Exception ex)
 		{
-			if(this.mLogger != null)
+			if (this.mLogger != null)
 				mLogger.LogException(ex, WorkAppWorker.class);
 		}
 		finally

@@ -11,16 +11,18 @@ import com.workappinc.workappserver.common.resources.interfaces.IPipe;
 
 /**
  * Async pipe example with single processor
+ * 
  * @author dhgovindaraj
  *
  */
 public class WorkAppASyncPipeStandardExample
 {
-	private static IApplicationLogger logger ; 
+	private static IApplicationLogger logger;
+
 	public static void main(String[] args) throws Exception
 	{
 		logger = WorkAppLogger.getInstance(null);
-		
+
 		// a workflow reader, which creates data
 		// and will send them through pipeline
 		WorkAppWorker dataReader = createReader();

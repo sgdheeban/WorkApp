@@ -1,6 +1,5 @@
 package com.workappinc.workappserver.common.resources.implementation.workflow;
 
-
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.resources.interfaces.IPipe;
 import com.workappinc.workappserver.common.resources.interfaces.IWorker;
@@ -19,11 +18,11 @@ public class WorkAppWorkflow
 
 	private IPipe[] pipes;
 
-	public WorkAppWorkflow (IApplicationLogger logger)
+	public WorkAppWorkflow(IApplicationLogger logger)
 	{
-		this.mLogger = logger ; 
+		this.mLogger = logger;
 	}
-	
+
 	public void registerPipes(IPipe... pipes) throws Exception
 	{
 		this.pipes = pipes;
@@ -54,38 +53,40 @@ public class WorkAppWorkflow
 
 		while (!isFinished())
 		{
-			if(this.mLogger != null)
-				mLogger.LogInfo("waiting to finish jobs, #active jobs: " + executor.getNumberOfActiveTasks(), WorkAppWorkflow.class);
-			
+			if (this.mLogger != null)
+				mLogger.LogInfo("waiting to finish jobs, #active jobs: " + executor.getNumberOfActiveTasks(),
+						WorkAppWorkflow.class);
+
 			try
 			{
 				Thread.sleep(1000L);
 			}
 			catch (InterruptedException ex)
 			{
-				if(this.mLogger != null)
+				if (this.mLogger != null)
 					mLogger.LogException(ex, WorkAppWorkflow.class);
 			}
 		}
 
 		double totalExecTime = (executor.getTotalExecutionTime()) / 1000.0;
 		double totalProcTime = (executor.getTotalProcessingTime()) / 1000.0;
-		
-		if(this.mLogger != null)
-			mLogger.LogInfo("WorkAppWorkflow ended, took " + totalExecTime + " seconds, " + "total processing time took "
-				+ totalProcTime, WorkAppWorkflow.class);
 
-		if(this.mLogger != null)
+		if (this.mLogger != null)
+			mLogger.LogInfo("WorkAppWorkflow ended, took " + totalExecTime + " seconds, "
+					+ "total processing time took " + totalProcTime, WorkAppWorkflow.class);
+
+		if (this.mLogger != null)
 			mLogger.LogInfo("Total processing time for each worker:", WorkAppWorkflow.class);
-		
+
 		for (IPipe pipe : pipes)
 		{
 			for (IWorker worker : pipe.getEndWorkers())
 			{
 				double time = (worker.getTotalProcessingTime() / 1000.0);
 				int ratioTime = (int) (time * 100.0 / totalExecTime);
-				if(this.mLogger != null)
-					mLogger.LogInfo("\t" + worker.getClass().getSimpleName() + ": " + time + ", " + ratioTime + "%",  WorkAppWorkflow.class);
+				if (this.mLogger != null)
+					mLogger.LogInfo("\t" + worker.getClass().getSimpleName() + ": " + time + ", " + ratioTime + "%",
+							WorkAppWorkflow.class);
 			}
 		}
 

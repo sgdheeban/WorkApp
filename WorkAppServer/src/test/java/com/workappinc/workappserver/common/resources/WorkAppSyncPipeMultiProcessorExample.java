@@ -11,12 +11,14 @@ import com.workappinc.workappserver.common.resources.interfaces.IPipe;
 
 /**
  * Sync pipe example with multiple processors
+ * 
  * @author dhgovindaraj
  *
  */
 public class WorkAppSyncPipeMultiProcessorExample
 {
-	private static IApplicationLogger logger ; 
+	private static IApplicationLogger logger;
+
 	public static void main(String[] args) throws Exception
 	{
 		logger = WorkAppLogger.getInstance(null);

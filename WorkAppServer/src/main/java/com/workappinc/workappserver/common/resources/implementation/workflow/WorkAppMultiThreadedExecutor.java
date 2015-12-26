@@ -13,22 +13,11 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public class WorkAppMultiThreadedExecutor
 {
-
-	// private static WorkAppMultiThreadedExecutor instance = null;
-
 	private AtomicInteger numberOfActiveTasks = new AtomicInteger(0);
 
 	private AtomicLong totalProcessingTime = new AtomicLong(0);
 	private long startTime = -1L;
 	private long endTime = -1L;
-
-	// public static WorkAppMultiThreadedExecutor getInstance(){
-	// if(instance == null){
-	// instance = new WorkAppMultiThreadedExecutor();
-	// instance.startTime = System.currentTimeMillis();
-	// }
-	// return instance;
-	// }
 
 	public WorkAppMultiThreadedExecutor()
 	{
@@ -69,7 +58,6 @@ public class WorkAppMultiThreadedExecutor
 
 	class InnerTask implements Runnable
 	{
-
 		private WorkAppWorker worker;
 		private Object data;
 

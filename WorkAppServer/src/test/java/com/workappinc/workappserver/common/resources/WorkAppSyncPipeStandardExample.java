@@ -17,7 +17,8 @@ import com.workappinc.workappserver.common.resources.interfaces.IPipe;
  */
 public class WorkAppSyncPipeStandardExample
 {
-	private static IApplicationLogger logger ; 
+	private static IApplicationLogger logger;
+
 	public static void main(String[] args) throws Exception
 	{
 		logger = WorkAppLogger.getInstance(null);

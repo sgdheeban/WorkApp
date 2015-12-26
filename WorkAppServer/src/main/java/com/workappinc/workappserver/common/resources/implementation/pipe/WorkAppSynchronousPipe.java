@@ -24,12 +24,12 @@ public class WorkAppSynchronousPipe implements IPipe
 	private IWorker[] outputWorkers;
 
 	private Semaphore freeReceivers;
-	
-	public WorkAppSynchronousPipe (IApplicationLogger logger)
+
+	public WorkAppSynchronousPipe(IApplicationLogger logger)
 	{
-		this.mLogger = logger ; 
+		this.mLogger = logger;
 	}
-	
+
 	public boolean send(Object data)
 	{
 		try
@@ -39,7 +39,7 @@ public class WorkAppSynchronousPipe implements IPipe
 		}
 		catch (InterruptedException ex)
 		{
-			if(this.mLogger != null)
+			if (this.mLogger != null)
 				mLogger.LogException(ex, WorkAppSynchronousPipe.class);
 		}
 		return false;

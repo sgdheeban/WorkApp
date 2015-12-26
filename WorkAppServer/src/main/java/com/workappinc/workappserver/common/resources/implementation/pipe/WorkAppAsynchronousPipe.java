@@ -24,7 +24,7 @@ import com.workappinc.workappserver.common.resources.interfaces.IWorker;
 public class WorkAppAsynchronousPipe implements IPipe
 {
 	private IApplicationLogger mLogger = null;
-	
+
 	private IWorker[] inputWorkers;
 	private IWorker[] outputWorkers;
 
@@ -37,7 +37,7 @@ public class WorkAppAsynchronousPipe implements IPipe
 
 	public WorkAppAsynchronousPipe(int capacity, IApplicationLogger logger)
 	{
-		this.mLogger = logger ; 
+		this.mLogger = logger;
 		this.capacity = capacity;
 		this.dataAsyncBuffer = new ArrayDeque<Object>(capacity);
 	}
@@ -53,7 +53,7 @@ public class WorkAppAsynchronousPipe implements IPipe
 				boolean sent = trySendData(data);
 				if (!sent)
 				{
-					if(this.mLogger != null)
+					if (this.mLogger != null)
 						mLogger.LogError("Data not sent!", WorkAppAsynchronousPipe.class);
 				}
 				return sent;
@@ -73,7 +73,7 @@ public class WorkAppAsynchronousPipe implements IPipe
 		}
 		catch (InterruptedException ex)
 		{
-			if(this.mLogger != null)
+			if (this.mLogger != null)
 				mLogger.LogException(ex, WorkAppAsynchronousPipe.class);
 		}
 		finally
