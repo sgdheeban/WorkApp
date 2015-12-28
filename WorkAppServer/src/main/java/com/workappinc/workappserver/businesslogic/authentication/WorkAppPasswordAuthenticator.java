@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.authentication;
+package com.workappinc.workappserver.businesslogic.authentication;
 
 /**
  * WorkAppAuthenticator is a singleton implementation for IAutheticator

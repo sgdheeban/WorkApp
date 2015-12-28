@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.authentication;
+package com.workappinc.workappserver.businesslogic.authentication;
 
 /**
  * IAuthenticator is a top-level interface for authenticating the user

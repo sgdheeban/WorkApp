@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.authorization;
+package com.workappinc.workappserver.businesslogic.authorization;
 
 /**
  * IAuthorizer is a top-level interface for Authorizing users with group access

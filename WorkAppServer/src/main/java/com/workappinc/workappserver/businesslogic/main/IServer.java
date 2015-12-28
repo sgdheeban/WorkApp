@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.businesslogic.model;
+package com.workappinc.workappserver.businesslogic.main;
 
 /**
  * IServer is a top-level interface for deriving Server classes
