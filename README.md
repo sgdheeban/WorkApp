@@ -44,7 +44,10 @@ WorkApp comes with sample configuration that should work out-of-the-box for deve
 
 * Main Class: `com.workappinc.workapp.server.WorkAppServer`
 * VM Options: `-ea -Xmx2G`
+* VM Options for enabling Allocation Tracker : `-javaagent:local-maven-repo-path-to-jar/java-allocation-instrumenter-3.0.jar`
+* VM Options for enabling Allocation Tracker-Example: `-javaagent:/home/dhgovindaraj/.m2/repository/com/google/code/java-allocation-instrumenter/java-allocation-instrumenter/3.0/java-allocation-instrumenter-3.0.jar`
 * Working directory: `$MODULE_DIR$`
 * Use classpath of module: `WorkApp`
 
 The working directory should be the `WorkApp` subdirectory. In EclipseIDE, using `$MODULE_DIR$` accomplishes this automatically.
+For more info on Allocation Tracker, please check here : `https://github.com/google/allocation-instrumenter`
