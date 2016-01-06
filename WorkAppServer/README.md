@@ -1,6 +1,6 @@
 # WorkApp Server
 
-This is the main server module, which hosts the backend server logic for WorkApp project. This module contains the following : 
+This is the main server module, which hosts the backend server logic for WorkApp project. 
 
 ## Sub-Components
 
