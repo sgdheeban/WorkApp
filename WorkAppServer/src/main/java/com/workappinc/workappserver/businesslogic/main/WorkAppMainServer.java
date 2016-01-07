@@ -26,7 +26,7 @@ public class WorkAppMainServer
 	private static String mode;
 
 	@WorkAppArgument(alias = "p", description = "Start Port")
-	private static Integer port = 8080;
+	private static Integer port;
 
 	@WorkAppArgument(alias = "s", description = "DB Schema File Location")
 	private static String schemaFile;
