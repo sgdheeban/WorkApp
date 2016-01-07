@@ -15512,3 +15512,160 @@ WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:3594 Constructing an el
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
 2016-01-04 16:00:51 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:3891  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 FATAL WorkAppLoggerTestCase:102 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 ERROR WorkAppLoggerTestCase:108 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 WARN  WorkAppLoggerTestCase:114 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 INFO  WorkAppLoggerTestCase:121 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 DEBUG WorkAppLoggerTestCase:128 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 TRACE WorkAppLoggerTestCase:134 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 INFO  WorkAppLoggerTestCase:96 dhgovindaraj-VirtualBox:19492  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-01-06 16:04:20 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 FATAL WorkAppLoggerTestCase:102 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 ERROR WorkAppLoggerTestCase:108 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 WARN  WorkAppLoggerTestCase:114 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 INFO  WorkAppLoggerTestCase:121 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 DEBUG WorkAppLoggerTestCase:128 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 TRACE WorkAppLoggerTestCase:134 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:04:20 INFO  WorkAppLoggerTestCase:96 dhgovindaraj-VirtualBox:19492  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-01-06 16:04:20 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:19492  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:48:31 INFO  WorkAppPropertiesFileWriterExample:121 dhgovindaraj-VirtualBox:19968 Printing Properties to FilePath
+2016-01-06 16:53:24 FATAL WorkAppLoggerTestCase:102 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 ERROR WorkAppLoggerTestCase:108 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 WARN  WorkAppLoggerTestCase:114 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 INFO  WorkAppLoggerTestCase:121 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 DEBUG WorkAppLoggerTestCase:128 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 TRACE WorkAppLoggerTestCase:134 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 INFO  WorkAppLoggerTestCase:96 dhgovindaraj-VirtualBox:20034  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-01-06 16:53:24 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 FATAL WorkAppLoggerTestCase:102 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 ERROR WorkAppLoggerTestCase:108 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 WARN  WorkAppLoggerTestCase:114 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 INFO  WorkAppLoggerTestCase:121 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 DEBUG WorkAppLoggerTestCase:128 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 TRACE WorkAppLoggerTestCase:134 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-06 16:53:24 INFO  WorkAppLoggerTestCase:96 dhgovindaraj-VirtualBox:20034  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-01-06 16:53:24 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:20034  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
