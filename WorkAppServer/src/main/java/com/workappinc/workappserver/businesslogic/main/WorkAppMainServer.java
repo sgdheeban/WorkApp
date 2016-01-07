@@ -59,13 +59,15 @@ public class WorkAppMainServer
 	 */
 	public static void main(String args[]) throws IOException
 	{
-
 		// Step2 : Read config file and update Properties
 		// Step3: Read Log config file, if any and get a Logger Instance
 		// Step4: Instantiate JSON Parser for reading any JSON Config
 		// Step5: Get an Instance of Object Allocation Tracker
-		// Step6: Get an instance of SQL Query Generator and Data Access tools
-		// Step7: Start an Jetty-HTTP or Thrift server to serve requests
+		// Step7: Get an instance of Connection Manager
+		// Step6: Get an instance of SQL Query Generator
+		// Step8: Get an instance of Entity Layer
+		// Step9: Get an instance of Data Manager
+		// Step10: Start an Jetty-HTTP or Thrift server to serve requests
 
 		System.out.println("Hello World ! ");
 
