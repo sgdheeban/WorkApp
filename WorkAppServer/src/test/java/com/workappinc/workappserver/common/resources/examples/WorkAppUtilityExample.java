@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.examples;
 
 import java.io.File;
 import java.io.IOException;

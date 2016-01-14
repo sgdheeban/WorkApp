@@ -19,7 +19,7 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppP
  * @author dhgovindaraj
  *
  */
-public class WorkAppPropertiesFileWriterTestCases
+public class WorkAppPropertiesFileWriterTestCase
 {
 
 	/**

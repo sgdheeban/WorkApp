@@ -25,7 +25,7 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppM
  * @author dhgovindaraj
  *
  */
-public class WorkAppMySQLConnectionManagerTestCases
+public class WorkAppMySQLConnectionManagerTestCase
 {
 	/**
 	 * Testing MySQL Queries using Adhoc Connection

@@ -15,7 +15,7 @@ import com.workappinc.workappserver.dataaccess.resources.testcases.orm.framework
 import com.workappinc.workappserver.dataaccess.resources.testcases.orm.framework.BeanTest;
 import com.workappinc.workappserver.dataaccess.resources.testcases.orm.framework.FieldMap;
 
-public class WorkAppOrmMySQLTestCases extends TestSimple
+public class WorkAppOrmMySQLTestCase extends TestSimple
 {
 
 	public String getProperties()

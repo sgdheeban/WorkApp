@@ -14,7 +14,7 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppC
  * @author dhgovindaraj
  *
  */
-public class WorkAppArgReaderEnumTestCases
+public class WorkAppArgReaderEnumTestCase
 {
 
 	/**

@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.testcases;
 
 import static org.junit.Assert.*;
 
@@ -16,7 +16,7 @@ import com.workappinc.workappserver.dataaccess.resources.examples.testtable.User
  * @author dhgovindaraj
  *
  */
-public class WorkAppJSONSerializerTestCases
+public class WorkAppJSONSerializerTestCase
 {
 	/**
 	 * Serialize Tests

@@ -18,7 +18,7 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppP
  * @author dhgovindaraj
  *
  */
-public class WorkAppPropertiesArgsTestCases
+public class WorkAppPropertiesArgsTestCase
 {
 
 	/**

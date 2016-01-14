@@ -1,35 +1,42 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.examples;
 
 import java.util.Map;
 
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
-import com.workappinc.workappserver.common.resources.implementation.pipe.WorkAppSynchronousPipe;
+import com.workappinc.workappserver.common.resources.implementation.pipe.WorkAppAsynchronousPipe;
 import com.workappinc.workappserver.common.resources.implementation.workflow.WorkAppWorker;
 import com.workappinc.workappserver.common.resources.implementation.workflow.WorkAppWorkflow;
 import com.workappinc.workappserver.common.resources.interfaces.IPipe;
 
 /**
- * Sync pipe example with single processor
+ * Async Pile example with multiple processors
  * 
  * @author dhgovindaraj
  *
  */
-public class WorkAppSyncPipeStandardExample
+public class WorkAppASyncPipeMultiProcessorExample
 {
 	private static IApplicationLogger logger;
 
 	public static void main(String[] args) throws Exception
 	{
 		logger = WorkAppLogger.getInstance(null);
+
 		// a workflow reader, which creates data
 		// and will send them through pipeline
-		WorkAppWorker dataReader = createReader();
+		// WorkAppWorker dataReader = createReader();
+		int numberOfReaderProcessors = 5;
+		WorkAppWorker[] readerProcessors = new WorkAppWorker[numberOfReaderProcessors];
+		for (int i = 0; i < numberOfReaderProcessors; i++)
+		{
+			readerProcessors[i] = createReader();
+		}
 
 		// a workflow processors, each one will be executed in
 		// a separate thread, each one will receive data as
 		// they become available from the reader
-		int numberOfProcessors = 2;
+		int numberOfProcessors = 10;
 		WorkAppWorker[] processors = new WorkAppWorker[numberOfProcessors];
 		for (int i = 0; i < numberOfProcessors; i++)
 		{
@@ -38,11 +45,18 @@ public class WorkAppSyncPipeStandardExample
 
 		// a workflow writer, in this case it collects all processed data
 		// and it will iteratively create statistics from them
-		WorkAppWorker writer = createWriter();
+		// WorkAppWorker writer = createWriter();
+
+		int numberOfWriterProcessors = 5;
+		WorkAppWorker[] writerProcessors = new WorkAppWorker[numberOfWriterProcessors];
+		for (int i = 0; i < numberOfWriterProcessors; i++)
+		{
+			writerProcessors[i] = createWriter();
+		}
 
 		// create pipeline similar to UNIX pipeline
-		IPipe readerPipe = new WorkAppSynchronousPipe(logger).addInputs(dataReader).addOutputs(processors);
-		IPipe writerPipe = new WorkAppSynchronousPipe(logger).addInputs(processors).addOutputs(writer);
+		IPipe readerPipe = new WorkAppAsynchronousPipe(5000, logger).addInputs(readerProcessors).addOutputs(processors);
+		IPipe writerPipe = new WorkAppAsynchronousPipe(5000, logger).addInputs(processors).addOutputs(writerProcessors);
 
 		// register pipes and execute workflow
 		WorkAppWorkflow workflow = new WorkAppWorkflow(logger);

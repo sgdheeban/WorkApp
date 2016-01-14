@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.examples;
 
 import java.util.Map;
 
@@ -10,12 +10,12 @@ import com.workappinc.workappserver.common.resources.implementation.workflow.Wor
 import com.workappinc.workappserver.common.resources.interfaces.IPipe;
 
 /**
- * Async Pile example with multiple processors
+ * Async pipe example with single processor
  * 
  * @author dhgovindaraj
  *
  */
-public class WorkAppASyncPipeMultiProcessorExample
+public class WorkAppASyncPipeStandardExample
 {
 	private static IApplicationLogger logger;
 
@@ -25,18 +25,12 @@ public class WorkAppASyncPipeMultiProcessorExample
 
 		// a workflow reader, which creates data
 		// and will send them through pipeline
-		// WorkAppWorker dataReader = createReader();
-		int numberOfReaderProcessors = 5;
-		WorkAppWorker[] readerProcessors = new WorkAppWorker[numberOfReaderProcessors];
-		for (int i = 0; i < numberOfReaderProcessors; i++)
-		{
-			readerProcessors[i] = createReader();
-		}
+		WorkAppWorker dataReader = createReader();
 
 		// a workflow processors, each one will be executed in
 		// a separate thread, each one will receive data as
 		// they become available from the reader
-		int numberOfProcessors = 10;
+		int numberOfProcessors = 2;
 		WorkAppWorker[] processors = new WorkAppWorker[numberOfProcessors];
 		for (int i = 0; i < numberOfProcessors; i++)
 		{
@@ -45,18 +39,11 @@ public class WorkAppASyncPipeMultiProcessorExample
 
 		// a workflow writer, in this case it collects all processed data
 		// and it will iteratively create statistics from them
-		// WorkAppWorker writer = createWriter();
-
-		int numberOfWriterProcessors = 5;
-		WorkAppWorker[] writerProcessors = new WorkAppWorker[numberOfWriterProcessors];
-		for (int i = 0; i < numberOfWriterProcessors; i++)
-		{
-			writerProcessors[i] = createWriter();
-		}
+		WorkAppWorker writer = createWriter();
 
 		// create pipeline similar to UNIX pipeline
-		IPipe readerPipe = new WorkAppAsynchronousPipe(5000, logger).addInputs(readerProcessors).addOutputs(processors);
-		IPipe writerPipe = new WorkAppAsynchronousPipe(5000, logger).addInputs(processors).addOutputs(writerProcessors);
+		IPipe readerPipe = new WorkAppAsynchronousPipe(1000, logger).addInputs(dataReader).addOutputs(processors);
+		IPipe writerPipe = new WorkAppAsynchronousPipe(1000, logger).addInputs(processors).addOutputs(writer);
 
 		// register pipes and execute workflow
 		WorkAppWorkflow workflow = new WorkAppWorkflow(logger);

@@ -1,4 +1,4 @@
-package com.workappinc.workappserver.common.resources;
+package com.workappinc.workappserver.common.resources.testcases;
 
 import static org.junit.Assert.*;
 
@@ -31,7 +31,7 @@ import com.workappinc.workappserver.common.resources.implementation.WorkAppUtil;
  * @author dhgovindaraj
  *
  */
-public class WorkAppUtilityTestCases
+public class WorkAppUtilityTestCase
 {
 	/**
 	 * Testing get Process ID
