@@ -16,7 +16,7 @@ Create the following test database and table in MySQL for successful execution o
     USE testdb;
     CREATE TABLE user (name text, age int(11)); 
 
-## Building WokApp
+## Building WorkApp
 
 WorkApp is a standard Maven project. Simply run the following command from the project root directory:
 
