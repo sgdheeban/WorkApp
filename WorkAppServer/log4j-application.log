@@ -3373,3 +3373,14 @@ XÃ®7‡�EH¦sat`
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
 2016-01-14 15:14:55 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:7433  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-15 17:13:05 ERROR WorkAppPropertyFileReader:108 dhgovindaraj-VirtualBox:5378 Sorry, unable to find /home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-15 17:13:05 ERROR WorkAppUncaughtExceptionLogger$1:108 dhgovindaraj-VirtualBox:5378  [ Uncaught exception in thread Thread[main,5,main] ]  - Stacktrace : com.workappinc.workappserver.common.exception.WorkAppUncaughtException: Uncaught exception in thread Thread[main,5,main]
+	at com.workappinc.workappserver.common.logging.WorkAppUncaughtExceptionLogger$1.uncaughtException(WorkAppUncaughtExceptionLogger.java:21)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1057)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1052)
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:1952)
+Caused by: java.lang.NullPointerException
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.setValuesFromConfig(WorkAppMainServer.java:84)
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:219)
+
+2016-01-15 17:14:02 ERROR WorkAppPropertyFileReader:108 dhgovindaraj-VirtualBox:5406 Sorry, unable to find /home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
