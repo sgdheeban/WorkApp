@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
+import com.workappinc.workappserver.common.resources.implementation.WorkAppAllocationTrackerUtil;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppArgument;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
@@ -35,6 +36,9 @@ public class WorkAppMainServer
 
 	@WorkAppArgument(alias = "p", description = "Start Port")
 	private static Integer port;
+
+	@WorkAppArgument(alias = "t", description = "Track Allocations")
+	private static Boolean trackAllocation;
 
 	@WorkAppArgument(alias = "s", description = "DB Schema File Location")
 	private static String schemaFile;
@@ -88,6 +92,10 @@ public class WorkAppMainServer
 		{
 			port = Integer.parseInt(prop.getProperty("port"));
 		}
+		if (trackAllocation == null)
+		{
+			trackAllocation = Boolean.parseBoolean(prop.getProperty("trackAllocation"));
+		}
 		if (dbConfigFile == null)
 		{
 			dbConfigFile = prop.getProperty("dbConfigFile");
@@ -95,6 +103,12 @@ public class WorkAppMainServer
 		if (schemaFile == null)
 		{
 			schemaFile = prop.getProperty("schemaFile");
+		}
+
+		// Must be passed
+		if (mode == null || port == null || dbConfigFile == null)
+		{
+			terminateWithMessage();
 		}
 	}
 
@@ -177,6 +191,23 @@ public class WorkAppMainServer
 	}
 
 	/**
+	 * Optional method to print startup config values
+	 * 
+	 * @param logger
+	 */
+	private static void printConfigValues(IApplicationLogger logger)
+	{
+		logger.LogDebug("configFile:" + configFile, WorkAppMainServer.class);
+		logger.LogDebug("log4jPropFile:" + log4jPropFile, WorkAppMainServer.class);
+		logger.LogDebug("logLevel:" + logLevel, WorkAppMainServer.class);
+		logger.LogDebug("mode:" + mode, WorkAppMainServer.class);
+		logger.LogDebug("port:" + port, WorkAppMainServer.class);
+		logger.LogDebug("trackAllocation:" + trackAllocation, WorkAppMainServer.class);
+		logger.LogDebug("dbConfigFile:" + dbConfigFile, WorkAppMainServer.class);
+		logger.LogDebug("schemaFile:" + schemaFile, WorkAppMainServer.class);
+	}
+
+	/**
 	 * Static Main method called on start of the executable, instantiates the
 	 * server
 	 * 
@@ -184,15 +215,7 @@ public class WorkAppMainServer
 	 */
 	public static void main(String args[]) throws IOException
 	{
-		// Step4: Instantiate JSON Parser for reading any JSON Config
-		// Step5: Get an Instance of Object Allocation Tracker
-		// Step7: Get an instance of Connection Manager
-		// Step6: Get an instance of SQL Query Generator
-		// Step8: Get an instance of Entity Layer
-		// Step9: Get an instance of Data Manager
-		// Step10: Start an Jetty-HTTP or Thrift server to serve requests
-
-		// Step1: Read Command-Line Options into Properties
+		// Read Command-Line Options into Properties
 		IApplicationLogger logger = null;
 		@SuppressWarnings("unused")
 		final List<String> parse;
@@ -206,7 +229,7 @@ public class WorkAppMainServer
 			terminateWithMessage();
 		}
 
-		// Step2: Instantiate Logger & override levels from command line
+		// Instantiate Logger & override levels from command line
 		if (log4jPropFile == null)
 			logger = WorkAppLogger.getInstance(null);
 		else
@@ -215,21 +238,36 @@ public class WorkAppMainServer
 		}
 		setLogLevel();
 
-		// Step2 : Read config file and update Properties, if not already set
-		// from command line
+		// Read config file and update Properties, if not already set from
+		// command line
 		setValuesFromConfig(configFile, logger);
+		printConfigValues(logger);
 
-		System.out.println("configFile:" + configFile);
+		// Get an Instance of Object Allocation Tracker - if mode on from
+		// configuration
+		if (trackAllocation)
+		{
+			logger.LogDebug(
+					"Don't forgot to add JVM param -javaagent:<location-to>/java-allocation-instrumenter-3.0.jar",
+					WorkAppMainServer.class);
+			// Track Heap Allocations
+			WorkAppAllocationTrackerUtil.trackHeapAllocation(logger);
+			// Track Custom Constructor Allocations (you can write your own
+			// constructor method to track like below example)
+			// WorkAppAllocationTrackerUtil.trackConstructorAllocationTest(logger);
+		}
 
-		System.out.println("log4jPropFile:" + log4jPropFile);
-		System.out.println("logLevel:" + logLevel);
+		// Instantiate Essentials -
+		// Get an instance of Connection Manager - use connection-string from
+		// dbconfig
+		// Get an instance of SQL Query Generator
+		// Instantiate JSON Parser for reading any JSON Config
+		// Get an instance of Entity Layer
+		// Get an instance of Data Manager
 
-		System.out.println("mode:" + mode);
-		System.out.println("port:" + port);
-
-		System.out.println("dbConfigFile:" + dbConfigFile);
-		System.out.println("schemaFile:" + schemaFile);
+		// Step10: Start an Jetty-HTTP or Thrift server to serve requests - use
+		// mode/port info from config
 
 	}
 
-}
+};

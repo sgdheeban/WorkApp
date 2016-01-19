@@ -3384,3 +3384,1269 @@ Caused by: java.lang.NullPointerException
 	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:219)
 
 2016-01-15 17:14:02 ERROR WorkAppPropertyFileReader:108 dhgovindaraj-VirtualBox:5406 Sorry, unable to find /home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 13:20:31 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19042 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 13:20:31 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19042 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 13:20:31 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19042 logLevel:debug
+2016-01-19 13:20:31 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19042 mode:rest
+2016-01-19 13:20:32 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19042 port:8080
+2016-01-19 13:20:32 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19042 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 13:20:32 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19042 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 13:46:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19324 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 13:46:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19324 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 13:46:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19324 logLevel:debug
+2016-01-19 13:46:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19324 mode:rest
+2016-01-19 13:46:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19324 port:8080
+2016-01-19 13:46:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19324 trackAllocation:false
+2016-01-19 13:46:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19324 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 13:46:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19324 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 13:46:49 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19346 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 13:46:49 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19346 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 13:46:49 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19346 logLevel:debug
+2016-01-19 13:46:49 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19346 mode:rest
+2016-01-19 13:46:49 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19346 port:8080
+2016-01-19 13:46:49 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19346 trackAllocation:true
+2016-01-19 13:46:49 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19346 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 13:46:49 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19346 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 13:46:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19363 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 13:46:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19363 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 13:46:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19363 logLevel:debug
+2016-01-19 13:46:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19363 mode:rest
+2016-01-19 13:46:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19363 port:8080
+2016-01-19 13:46:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19363 trackAllocation:false
+2016-01-19 13:46:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19363 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 13:46:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19363 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 13:47:15 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19383 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 13:47:15 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19383 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 13:47:15 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19383 logLevel:debug
+2016-01-19 13:47:15 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19383 mode:rest
+2016-01-19 13:47:15 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19383 port:8080
+2016-01-19 13:47:15 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19383 trackAllocation:false
+2016-01-19 13:47:15 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19383 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 13:47:15 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19383 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 13:47:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19420 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 13:47:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19420 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 13:47:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19420 logLevel:debug
+2016-01-19 13:47:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19420 mode:rest
+2016-01-19 13:47:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19420 port:8080
+2016-01-19 13:47:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19420 trackAllocation:true
+2016-01-19 13:47:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19420 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 13:47:58 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19420 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 13:48:10 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19437 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 13:48:10 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19437 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 13:48:10 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19437 logLevel:debug
+2016-01-19 13:48:10 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19437 mode:rest
+2016-01-19 13:48:10 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19437 port:8080
+2016-01-19 13:48:10 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19437 trackAllocation:false
+2016-01-19 13:48:10 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19437 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 13:48:10 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19437 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 13:48:23 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19457 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 13:48:23 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19457 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 13:48:23 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19457 logLevel:debug
+2016-01-19 13:48:23 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19457 mode:rest
+2016-01-19 13:48:23 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19457 port:8080
+2016-01-19 13:48:23 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19457 trackAllocation:true
+2016-01-19 13:48:23 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19457 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 13:48:23 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19457 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 14:10:19 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19608 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 14:10:19 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19608 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 14:10:19 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19608 logLevel:debug
+2016-01-19 14:10:19 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19608 mode:rest
+2016-01-19 14:10:19 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19608 port:8080
+2016-01-19 14:10:19 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19608 trackAllocation:true
+2016-01-19 14:10:19 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19608 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 14:10:19 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19608 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 14:11:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19702 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 14:11:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19702 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 14:11:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19702 logLevel:debug
+2016-01-19 14:11:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19702 mode:rest
+2016-01-19 14:11:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19702 port:8080
+2016-01-19 14:11:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19702 trackAllocation:true
+2016-01-19 14:11:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19702 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 14:11:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19702 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 14:12:52 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19746 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 14:12:52 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19746 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 14:12:52 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19746 logLevel:debug
+2016-01-19 14:12:52 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19746 mode:rest
+2016-01-19 14:12:52 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19746 port:8080
+2016-01-19 14:12:52 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19746 trackAllocation:true
+2016-01-19 14:12:52 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19746 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 14:12:52 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19746 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 14:14:11 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19903 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 14:14:11 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19903 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 14:14:11 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19903 logLevel:debug
+2016-01-19 14:14:11 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19903 mode:rest
+2016-01-19 14:14:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19903 port:8080
+2016-01-19 14:14:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19903 trackAllocation:true
+2016-01-19 14:14:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19903 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 14:14:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19903 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 0 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 1 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 2 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 3 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 4 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 5 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 6 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 7 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 8 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19903 Allocated the object 9 of type java/lang/Integer whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java.lang.Object@6f0623d2 of type java/lang/Object whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@61c1d042 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 13
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object com.google.monitoring.runtime.instrumentation.asm.ClassReader@20fcda79 of type com/google/monitoring/runtime/instrumentation/asm/ClassReader whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7eba6507 of type char whose size is 80
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1116f952 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 6
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6ba188a of type char whose size is 80
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 30
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@40d32536 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 6
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6d6ce276 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4b165ae0 of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1dbe7540 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@449d1954 of type char whose size is 96
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 37
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4ee82ce3 of type char whose size is 136
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 59
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3750ae84 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@59aad95b of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 4
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@75d13c83 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7ad189ee of type char whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 11
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@48c73cbe of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@47a844fc of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 6
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3b614dae of type char whose size is 96
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 38
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4d892dd5 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3c5aca16 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 14
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3950f6c5 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@86dc07c of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 22
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@c8ea321 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@66eed2dc of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@58b6e61a of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3ebeb350 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 4
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4750980d of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 20
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5738ca09 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 20
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@38d160c2 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@73be60bb of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@306d1e31 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2114e2b7 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@12f05127 of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@124b407a of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4a0f5894 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4c080a38 of type char whose size is 96
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5c6113f7 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@14e1c091 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@241ae161 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@284f6610 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7ce52645 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 15
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@669a9400 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@15f8605b of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 23
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4654fb12 of type char whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 11
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@13563a93 of type char whose size is 96
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 38
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@21de966d of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@77f2c0b5 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@161f2932 of type char whose size is 104
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 41
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@343f0bc0 of type char whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 10
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@61078ed4 of type char whose size is 96
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@110d29 of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6fa8e2a0 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 4
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2385959e of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 15
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7e29de14 of type char whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 9
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@76d9ecbd of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5eccad24 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 13
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@516aea06 of type char whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 9
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@61835741 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5806f3c8 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 28
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6398c061 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@65243cce of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1ee65674 of type char whose size is 80
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@71916ed3 of type char whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 11
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@542f3348 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@10a9b74f of type char whose size is 80
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 30
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3c5016d8 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@464d1077 of type char whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 12
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6bd5de85 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 28
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@369b0f7f of type char whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 10
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@a4139a2 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 20
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@24a15e35 of type char whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 11
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@61458dd2 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 14
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@f4b8672 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 6
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object com.google.monitoring.runtime.instrumentation.StaticClassWriter@22ba854b of type com/google/monitoring/runtime/instrumentation/StaticClassWriter whose size is 176
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6f5cb7d3 of type char whose size is 80
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java.util.IdentityHashMap$KeySet of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object com.google.monitoring.runtime.instrumentation.VerifyingClassAdapter@118ea560 of type com/google/monitoring/runtime/instrumentation/VerifyingClassAdapter whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object com.google.monitoring.runtime.instrumentation.AllocationClassAdapter@6d003bc6 of type com/google/monitoring/runtime/instrumentation/AllocationClassAdapter whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@6f57471e of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@b164a31 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@2b08a756 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@47ba67fa of type char whose size is 80
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 30
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1200a7a4 of type char whose size is 80
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 30
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2b7e2017 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@45a20039 of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@51332ac0 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@46198ac5 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@1cbd7489 of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@49cb1cef of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@1e64a3c of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@ba3b767 of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 22
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7c4d83a6 of type char whose size is 136
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 59
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6df0c4a4 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5ef4c48c of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@487a58ba of type char whose size is 80
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 29
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap$1; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@583aa2a0 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@338488e7 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4baceabf of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5109d4f8 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5c2b53db of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4b7f2b09 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@67aad9cb of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$1 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@781b7fd2 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7ea85e81 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$2 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4cbd053e of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7d68f9e3 of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 22
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@5eaefc73 of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@624efd71 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@46fe80f3 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7c63de2e of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5507e8b5 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@40372211 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@72fccbfc of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@108cf923 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@7a24e9c7 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3fa6b38 of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@17cdf390 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@607f55ab of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3d48f2b2 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6dbbed88 of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1592d2dc of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@f5a1fc8 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@757db1f3 of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@4798c579 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@449ffb64 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1b640860 of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@30ed0d6 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@23c7ec3 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@39c3e13b of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2dfd96b of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@77a22186 of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@168983d7 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@30e56204 of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4c8df1f2 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2a4547f4 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@7008ee50 of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@6be64717 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@48c739f8 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@48bdbdf3 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7f70b0da of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@26779edc of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/Iterator of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@578e7b13 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@72f90634 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@8f59ed1 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@126e706d of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@361cd7d0 of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 22
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/Collection; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@c6eaf81 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 20
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/Collection of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@2849bbcb of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@49454bb7 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@19b7a718 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@60dc0108 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@52e693b of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@66d592da of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@427e767f of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@42aaeb79 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@343b35a6 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7eb222b9 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4fce6e9e of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/Iterator of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5a2aa53d of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@37d12ddb of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@58997672 of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@649f5961 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@6b130b82 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@55924cce of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@462b8ae8 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5861971d of type char whose size is 64
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@2bddd888 of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@6cee1501 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@7608bebe of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2205161d of type char whose size is 96
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@67d9834d of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7b03d4aa of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@48cd783a of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@42f22ac0 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@699a0a38 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@cd93525 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2f76902c of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$4 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7c010b28 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@45f3055a of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$5 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4660dc of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1baa7708 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 15
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Class of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6f86771e of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 15
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Class of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@32826661 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/String of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@171a06d of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/String of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@49ab957c of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@154925d0 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@34d9e876 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@38a74448 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2db22655 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7109f196 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@ae83d99 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@8efbd88 of type char whose size is 96
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3453a24e of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@ae87013 of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@41a79022 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@34517663 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1d39e375 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@54986029 of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2943dc18 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@161e553d of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@44ee2ec0 of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5360975c of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@64f42234 of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@27242a of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@358a92c0 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6207395a of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@272752ac of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1e183416 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7f65a987 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object I of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@24f392d8 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@39dc06d8 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object I of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@663b3d71 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@34c089a0 of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object I of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@c9da8b2 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@55ae953f of type char whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object I of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6ac1fa4e of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5afce33f of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3b4508ea of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1a6365d0 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7f95ff58 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@42cd1e8e of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$1 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@51dc4c65 of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5090ee6b of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$2 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@afb41e of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2abce3eb of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$3 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@19b03dbd of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4e847b56 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$4 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@33f639dc of type char whose size is 56
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7e9827f2 of type char whose size is 32
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$5 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@66ddb049 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@bee390f of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@954c977 of type java/lang/Object whose size is 40
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@36ccd818 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@3d987970 of type long whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4744198d of type char whose size is 136
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 59
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@68f46f63 of type char whose size is 136
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 59
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@38a8767d of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4605dbe1 of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@216a3add of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6a2ec6e4 of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@114e5e42 of type char whose size is 48
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@797c4559 of type char whose size is 88
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@9b02479 of type char whose size is 80
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 29
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap$1; of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1535da4d of type char whose size is 72
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap$1 of type java/lang/String whose size is 24
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Thread[Thread-1,5,main], Thread[Thread-0,5,main]] of type java/util/IdentityHashMap$KeySet whose size is 16
+2016-01-19 14:14:12 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java.util.IdentityHashMap$KeyIterator@65bc8ddf of type java/util/IdentityHashMap$KeyIterator whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19999 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 14:19:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19999 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 14:19:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19999 logLevel:debug
+2016-01-19 14:19:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19999 mode:rest
+2016-01-19 14:19:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19999 port:8080
+2016-01-19 14:19:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19999 trackAllocation:true
+2016-01-19 14:19:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19999 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 14:19:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19999 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 14:19:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:19999 Don't forgot to add JVM param -javaagent:<location-to>/java-allocation-instrumenter-3.0.jar
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 0 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 1 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 2 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 3 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 4 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 5 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 6 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 7 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 8 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object foo of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 dhgovindaraj-VirtualBox:19999 Allocated the object 9 of type java/lang/Integer whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java.lang.Object@bb4ca73 of type java/lang/Object whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5733575 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 13
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object com.google.monitoring.runtime.instrumentation.asm.ClassReader@444e3f4e of type com/google/monitoring/runtime/instrumentation/asm/ClassReader whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@690492e6 of type char whose size is 80
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@75c0da2e of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 6
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1160292c of type char whose size is 80
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 30
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2461c001 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 6
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@69bff5c9 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1add437a of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@a642044 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@202f98c1 of type char whose size is 96
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 37
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@36a820b0 of type char whose size is 136
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 59
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@469e738c of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6d530d1b of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 4
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@316679e0 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@46bc62dc of type char whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 11
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@738b6b94 of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6459b2b of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 6
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@46e4b7a of type char whose size is 96
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 38
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@21e173a9 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@99e7bca of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 14
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@23282511 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@55eb8f95 of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 22
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7f3dd2ba of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@587b6bc of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@67e50bb0 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6efba7fe of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 4
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7fc20099 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 20
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@47487b8b of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 20
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@83f4059 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3b48c2f7 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5461cbcf of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@50f166eb of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@22bec924 of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5f9cf8fe of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5796f71 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5ee4970b of type char whose size is 96
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@a47821a of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3224d0a4 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7ce83376 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6cebf2f of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@30afaabe of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 15
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@241aedff of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@19d40989 of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 23
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6a10fa5b of type char whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 11
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@272747fd of type char whose size is 96
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 38
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@542123f3 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6d00f0bf of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@af0d66 of type char whose size is 104
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 41
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1daaaa21 of type char whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 10
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@40c93cdc of type char whose size is 96
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2aa6a972 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@529a557d of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 4
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1aa916ad of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 15
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@130fe6f8 of type char whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 9
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@cfd20d2 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@cccbd8d of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 13
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5e82cec7 of type char whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 9
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3256cbc9 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@57c886e1 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 28
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3e017940 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 8
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@763d6cb1 of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@72b1e93c of type char whose size is 80
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@615d8605 of type char whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 11
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@54232817 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@49e69ec6 of type char whose size is 80
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 30
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@346376cf of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3903a3e8 of type char whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 12
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@742d474f of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 28
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@9c0e7a2 of type char whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 10
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@26ba3d5b of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 20
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@202d687 of type char whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 11
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1c8bfeb7 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 14
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1278e773 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 6
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object com.google.monitoring.runtime.instrumentation.StaticClassWriter@71fd0440 of type com/google/monitoring/runtime/instrumentation/StaticClassWriter whose size is 176
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3240228e of type char whose size is 80
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java.util.IdentityHashMap$KeySet of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object com.google.monitoring.runtime.instrumentation.VerifyingClassAdapter@78121ff2 of type com/google/monitoring/runtime/instrumentation/VerifyingClassAdapter whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object com.google.monitoring.runtime.instrumentation.AllocationClassAdapter@52b3c152 of type com/google/monitoring/runtime/instrumentation/AllocationClassAdapter whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@5f41386 of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@6df16145 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@2abf8e24 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@66ca7370 of type char whose size is 80
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 30
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4387340c of type char whose size is 80
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 30
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@259a8e70 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7302fa49 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@466646aa of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3c3b2d3e of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@4da3ddc7 of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@2997a688 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@5d30e606 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@38077243 of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 22
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6b99cd61 of type char whose size is 136
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 59
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7fae857c of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@25f44c59 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@26e2a7ce of type char whose size is 80
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 29
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap$1; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3b594b6 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@8bb64d9 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@f2a7713 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3cc57def of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@13fa4ee5 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@40b47def of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1c7a1805 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$1 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@b472460 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4a0bde8b of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$2 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@29338920 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@65c50633 of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 22
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@57134acf of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@43f82920 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@7637c2f6 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3b8ea69d of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7686d611 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@743540c8 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@3cdd1cca of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@7229ff82 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@325f8988 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6cb2ac0b of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@38ddd61b of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5b5eb6d of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4be8219a of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@32c31e18 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@64787b55 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4ebc0a34 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@44d20688 of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@6ecbe3d4 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@494e9f8b of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@678dd13c of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@33bf7d03 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@25bfde3 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3fd498e4 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@36d9ba13 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7ec69eae of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@232fd070 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@38276f49 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4355537c of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@9ac9656 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@54dd6b43 of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@57030bb6 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@3ea47c99 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@53d7433d of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6c6fbd77 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@237e55f7 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/Iterator of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3e23a5b5 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5704c7e7 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@46915c75 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@179178bd of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@34bc79f7 of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 22
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/Collection; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4576bb78 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 20
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/Collection of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@9482557 of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@1580f053 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@422440d5 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@32f98e92 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7a536707 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@68430276 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@881c543 of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@767247df of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@17f86d49 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@67d88d72 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@61f5f717 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/Iterator of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5dd1849 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@519bbf9e of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@728b1bc2 of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@3c8807cb of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@51fa5f43 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@5d116dad of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@77ee38c6 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@ba4cfaf of type char whose size is 64
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 21
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@8a789df of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@5e0df163 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@58a3ca6c of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7557af60 of type char whose size is 96
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@418a3964 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@70bd5edf of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 18
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@360b1a0e of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7eef8f00 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6ebed8a0 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 3
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@74ef380e of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1ada87f7 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$4 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@184f8c23 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@ac3c52 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$5 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@d8e5b01 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@43258078 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 15
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Class of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@27ef32ab of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 15
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Class of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@46c0c4a8 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/String of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@39e9d922 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/String of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@56a0a827 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@804a232 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4821c21e of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3ff632f1 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6cc444b8 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@41fc7e20 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@70b6533 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@9e4be99 of type char whose size is 96
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@47cbca99 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@65e4b13e of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@399a624c of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@15260390 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/lang/Object of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@ca08caf of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4c8db144 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@26ef229b of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3709f55 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@b3dbe60 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2a9b29d2 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 19
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava/lang/Object; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@753f3de0 of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@72b29e25 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@149af0ad of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@673c9e55 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6be07f6f of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@dc58780 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4e19010d of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object I of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4d54e0ad of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2527f56f of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object I of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4ff8fcc of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2e8f737 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object I of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@68532e4f of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@72c532a7 of type char whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object I of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@abc42dc of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@4fa85df3 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@3ef8231f of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@65737e6d of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@d316abd of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7be92d of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$1 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7f64d2e6 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@19a5b71 of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$2 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@778ad7d of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@58951e3e of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$3 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@1bf1428 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@52ad86bd of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$4 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@107cdad0 of type char whose size is 56
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 17
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6068420f of type char whose size is 32
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 7
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object xxxxx$5 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@198f147e of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@2729e19c of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Ljava.lang.Object;@51f515f3 of type java/lang/Object whose size is 40
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 5
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@732f5df8 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [J@12628b07 of type long whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 1
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@7a2fbdd6 of type char whose size is 136
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 59
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@38c75ed of type char whose size is 136
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 59
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@ac528f9 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@c79b015 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@b3f7d41 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@6b7c52d6 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 25
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@485d2da0 of type char whose size is 48
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@965c5a6 of type char whose size is 88
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 34
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@79c074be of type char whose size is 80
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 29
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object Ljava/util/IdentityHashMap$1; of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [C@702363b2 of type char whose size is 72
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : It's an array of size 27
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java/util/IdentityHashMap$1 of type java/lang/String whose size is 24
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object [Thread[Thread-1,5,main], Thread[Thread-0,5,main]] of type java/util/IdentityHashMap$KeySet whose size is 16
+2016-01-19 14:19:36 DEBUG WorkAppAllocationTrackerUtil:128 : Allocated the object java.util.IdentityHashMap$KeyIterator@cc228af of type java/util/IdentityHashMap$KeyIterator whose size is 40
+2016-01-19 14:20:00 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:20024 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 14:20:00 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:20024 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 14:20:00 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:20024 logLevel:debug
+2016-01-19 14:20:00 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:20024 mode:rest
+2016-01-19 14:20:00 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:20024 port:8080
+2016-01-19 14:20:00 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:20024 trackAllocation:false
+2016-01-19 14:20:00 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:20024 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 14:20:00 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:20024 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 15:49:06 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2410 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 15:49:06 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2410 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 15:49:06 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2410 logLevel:debug
+2016-01-19 15:49:06 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2410 mode:rest
+2016-01-19 15:49:06 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2410 port:8080
+2016-01-19 15:49:06 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2410 trackAllocation:false
+2016-01-19 15:49:06 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2410 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 15:49:06 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2410 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 15:49:14 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2471 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 15:49:14 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2471 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 15:49:14 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2471 logLevel:debug
+2016-01-19 15:49:14 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2471 mode:rest
+2016-01-19 15:49:14 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2471 port:8080
+2016-01-19 15:49:14 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2471 trackAllocation:false
+2016-01-19 15:49:14 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2471 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 15:49:14 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2471 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-19 15:49:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2490 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-19 15:49:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2490 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-19 15:49:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2490 logLevel:debug
+2016-01-19 15:49:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2490 mode:rest
+2016-01-19 15:49:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2490 port:8080
+2016-01-19 15:49:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2490 trackAllocation:false
+2016-01-19 15:49:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2490 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-19 15:49:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2490 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
