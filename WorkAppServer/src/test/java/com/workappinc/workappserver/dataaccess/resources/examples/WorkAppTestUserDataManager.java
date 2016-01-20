@@ -48,8 +48,7 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 		sdf = new SimpleDateFormat("HH:mm:sss");
 
 		mLogger = logger;
-		connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username,
-				password, logger);
+		connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, logger);
 
 		loggingTimer = new Timer(); // Instantiate logging timer
 		loggingTimer.scheduleAtFixedRate(this, 100000, 100000); // Start logging
@@ -79,8 +78,7 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException(
-					"Error during Singleton Object Creation for WorkAppTestUserDataManager Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppTestUserDataManager Class", ex);
 		}
 	}
 
@@ -116,8 +114,7 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 				prpdstmnt.setString(1, entry.getName());
 				prpdstmnt.setInt(2, entry.getAge());
 				prpdstmnt.executeUpdate();
-				mLogger.LogDebug("User Record (" + entry.getName() + "," + entry.getAge() + ") Inserted at "
-						+ sdf.format(cal.getTime()), WorkAppTestUserDataManager.class);
+				mLogger.LogDebug("User Record (" + entry.getName() + "," + entry.getAge() + ") Inserted at " + sdf.format(cal.getTime()), WorkAppTestUserDataManager.class);
 			}
 		}
 		catch (SQLException ex)

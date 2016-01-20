@@ -40,10 +40,8 @@ public class WorkAppQueryBuilderSample
 
 		// Update first_name, last_name and age for a given id...
 		WorkAppQbUpdate up = f.newUpdateQuery();
-		up.set(f.newStdField("first_name"), ":first_name").set(f.newStdField("last_name"), ":last_name")
-				.set(f.newStdField("age"), ":age").inTable("myTable").where().where(f.newStdField("id"), ":id");
-		assert (up.getQueryString()
-				.equals("UPDATE `myTable` SET `first_name` = ?, `last_name` = ?, `age` = ? WHERE `id` = ?"));
+		up.set(f.newStdField("first_name"), ":first_name").set(f.newStdField("last_name"), ":last_name").set(f.newStdField("age"), ":age").inTable("myTable").where().where(f.newStdField("id"), ":id");
+		assert (up.getQueryString().equals("UPDATE `myTable` SET `first_name` = ?, `last_name` = ?, `age` = ? WHERE `id` = ?"));
 
 		// stmt = conn.prepareStatement(up.getQueryString());
 		// stmt.setString(up.getPlaceholderIndex(":first_name"), "John");
@@ -72,8 +70,7 @@ public class WorkAppQueryBuilderSample
 		// which
 		// don't have the given id...
 		WorkAppQbSelect sel = f.newSelectQuery();
-		sel.select(f.newStdField("id"), f.newStdField("age"), f.newStdField("last_name")).from("myTable").where()
-				.where(f.newStdField("id"), QbWhereOperator.NOT_EQUALS, ":id");
+		sel.select(f.newStdField("id"), f.newStdField("age"), f.newStdField("last_name")).from("myTable").where().where(f.newStdField("id"), QbWhereOperator.NOT_EQUALS, ":id");
 		assert (sel.getQueryString().equals("SELECT `id`, `age`, `last_name` FROM `myTable`  WHERE `id` <> ?"));
 		// stmt = conn.prepareStatement(sel.getQueryString());
 		// stmt.setInt(sel.getPlaceholderIndex(":id"), 1024);
@@ -87,22 +84,17 @@ public class WorkAppQueryBuilderSample
 
 		// Complicated select query with join...
 		sel = f.newSelectQuery();
-		sel.select(f.newQualifiedField("t1", "id"), f.newQualifiedField("t2", "id")).from("t1")
-				.join("t2", f.newQualifiedField("t2", "id"), f.newQualifiedField("t1", "t1_id"), QbJoinType.LEFT)
-				.where().where(f.newStdField("age"), ":age");
-		assert (sel.getQueryString().equals(
-				"SELECT `t1`.`id`, `t2`.`id` FROM `t1` LEFT JOIN `t2` ON `t2`.`id` = `t1`.`t1_id` WHERE `age` = ?"));
-				// stmt = conn.prepareStatement(sel.getQueryString());
-				// stmt.setInt(sel.getPlaceholderIndex(":age"), 45);
-				// rs = stmt.executeQuery();
-				// Record enumeration left out...
+		sel.select(f.newQualifiedField("t1", "id"), f.newQualifiedField("t2", "id")).from("t1").join("t2", f.newQualifiedField("t2", "id"), f.newQualifiedField("t1", "t1_id"), QbJoinType.LEFT).where().where(f.newStdField("age"), ":age");
+		assert (sel.getQueryString().equals("SELECT `t1`.`id`, `t2`.`id` FROM `t1` LEFT JOIN `t2` ON `t2`.`id` = `t1`.`t1_id` WHERE `age` = ?"));
+		// stmt = conn.prepareStatement(sel.getQueryString());
+		// stmt.setInt(sel.getPlaceholderIndex(":age"), 45);
+		// rs = stmt.executeQuery();
+		// Record enumeration left out...
 
 		// Select query with group by...
 		sel = f.newSelectQuery();
-		sel.select(f.newAvg(f.newStdField("age"), "avg_age")).from("myTable").groupBy(f.newStdField("first_name"))
-				.having().where(f.newStdField("avg_age"), QbWhereOperator.GREATER_THAN, ":avg_age");
-		assert (sel.getQueryString()
-				.equals("SELECT AVG(`age`) AS avg_age FROM `myTable`  GROUP BY `first_name` HAVING `avg_age` > ?"));
+		sel.select(f.newAvg(f.newStdField("age"), "avg_age")).from("myTable").groupBy(f.newStdField("first_name")).having().where(f.newStdField("avg_age"), QbWhereOperator.GREATER_THAN, ":avg_age");
+		assert (sel.getQueryString().equals("SELECT AVG(`age`) AS avg_age FROM `myTable`  GROUP BY `first_name` HAVING `avg_age` > ?"));
 		// stmt = conn.prepareStatement(sel.getQueryString());
 		// stmt.setInt(sel.getPlaceholderIndex(":avg_age"), 50);
 		// rs = stmt.executeQuery();

@@ -18,8 +18,7 @@ public class WorkAppUncaughtExceptionLogger implements ILogger
 			@Override
 			public void uncaughtException(final Thread th, final Throwable t)
 			{
-				workAppLoggerInstance.LogError(new WorkAppUncaughtException("Uncaught exception in thread " + th, t),
-						this.getClass());
+				workAppLoggerInstance.LogError(new WorkAppUncaughtException("Uncaught exception in thread " + th, t), this.getClass());
 			}
 		});
 	}

@@ -117,8 +117,7 @@ public class WorkAppJDBCConnection implements Connection
 	}
 
 	@Override
-	public Statement createStatement(int resultSetType, int resultSetConcurrency, int resultSetHoldability)
-			throws SQLException
+	public Statement createStatement(int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException
 	{
 		return conn.createStatement(resultSetType, resultSetConcurrency, resultSetHoldability);
 	}
@@ -226,8 +225,7 @@ public class WorkAppJDBCConnection implements Connection
 	}
 
 	@Override
-	public CallableStatement prepareCall(String sql, int resultSetType, int resultSetConcurrency,
-			int resultSetHoldability) throws SQLException
+	public CallableStatement prepareCall(String sql, int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException
 	{
 		return conn.prepareCall(sql, resultSetType, resultSetConcurrency, resultSetHoldability);
 	}
@@ -245,15 +243,13 @@ public class WorkAppJDBCConnection implements Connection
 	}
 
 	@Override
-	public PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency)
-			throws SQLException
+	public PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency) throws SQLException
 	{
 		return conn.prepareStatement(sql, resultSetType, resultSetConcurrency);
 	}
 
 	@Override
-	public PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency,
-			int resultSetHoldability) throws SQLException
+	public PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency, int resultSetHoldability) throws SQLException
 	{
 		return conn.prepareStatement(sql, resultSetType, resultSetConcurrency, resultSetHoldability);
 	}

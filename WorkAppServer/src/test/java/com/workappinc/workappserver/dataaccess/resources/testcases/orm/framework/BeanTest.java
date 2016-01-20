@@ -104,12 +104,10 @@ public class BeanTest
 		// clean by the beginning of the process)
 		String sql = "select * from " + tableName;
 		List read = persist.readList(cls, sql);
-		if (read.size() != 1) { throw new AssertionError(
-				"Expected 1 result but got [" + read.size() + "] as result of sql [" + sql + "]"); }
+		if (read.size() != 1) { throw new AssertionError("Expected 1 result but got [" + read.size() + "] as result of sql [" + sql + "]"); }
 
 		// check if the bean read is the same as inserted
-		if (!obj.equals(read.get(0))) { throw new AssertionError("Expected [" + DynamicBean.toString(obj)
-				+ "] but got [" + DynamicBean.toString(read.get(0)) + "] as result of [" + sql + "]"); }
+		if (!obj.equals(read.get(0))) { throw new AssertionError("Expected [" + DynamicBean.toString(obj) + "] but got [" + DynamicBean.toString(read.get(0)) + "] as result of [" + sql + "]"); }
 	}
 
 	/**
@@ -124,8 +122,7 @@ public class BeanTest
 		Object objNoTable = persist.read(clsNoTable, "select * from " + tableName);
 
 		// compare values
-		if (!DynamicBean.compareBeansFromDifferentClasses(obj, objNoTable)) { throw new AssertionError(
-				"Expected [" + DynamicBean.toString(obj) + "] but got [" + DynamicBean.toString(objNoTable) + "]"); }
+		if (!DynamicBean.compareBeansFromDifferentClasses(obj, objNoTable)) { throw new AssertionError("Expected [" + DynamicBean.toString(obj) + "] but got [" + DynamicBean.toString(objNoTable) + "]"); }
 	}
 
 	/**
@@ -162,10 +159,8 @@ public class BeanTest
 
 					// check if the result is not null and has the same data as
 					// the object being tested
-					if (ret == null) { throw new AssertionError("Expected not null value but got null as result of ["
-							+ sql + "] with parameter [" + fieldValue + "]"); }
-					if (!obj.equals(ret)) { throw new AssertionError("Expected [" + DynamicBean.toString(obj)
-							+ "] but got [" + DynamicBean.toString(ret) + "] as result of [" + sql + "]"); }
+					if (ret == null) { throw new AssertionError("Expected not null value but got null as result of [" + sql + "] with parameter [" + fieldValue + "]"); }
+					if (!obj.equals(ret)) { throw new AssertionError("Expected [" + DynamicBean.toString(obj) + "] but got [" + DynamicBean.toString(ret) + "] as result of [" + sql + "]"); }
 				}
 			}
 		}
@@ -196,8 +191,7 @@ public class BeanTest
 				Object ret = persist.read(cls, sql);
 				if (ret == null)
 					throw new AssertionError("Expected not null value but got null as result of [" + sql + "]");
-				if (!obj.equals(ret)) { throw new AssertionError("Expected [" + DynamicBean.toString(obj)
-						+ "] but got [" + DynamicBean.toString(ret) + "] as result of [" + sql + "]"); }
+				if (!obj.equals(ret)) { throw new AssertionError("Expected [" + DynamicBean.toString(obj) + "] but got [" + DynamicBean.toString(ret) + "] as result of [" + sql + "]"); }
 			}
 		}
 	}
@@ -232,13 +226,11 @@ public class BeanTest
 					// check if "null", which means 0 for numeric values type as
 					// primitive (byte, short, int, etc.)
 					if (!DynamicBean.isNull(fieldType, ret))
-						throw new AssertionError(
-								"Expected null value but got [" + ret + "] as result of [" + sql + "]");
+						throw new AssertionError("Expected null value but got [" + ret + "] as result of [" + sql + "]");
 				}
 				else
 				{
-					if (ret == null) { throw new AssertionError(
-							"Expected not null value but got null as result of [" + sql + "]"); }
+					if (ret == null) { throw new AssertionError("Expected not null value but got null as result of [" + sql + "]"); }
 
 					// TODO: maybe test compatibility of return type with field
 					// type?
@@ -247,8 +239,7 @@ public class BeanTest
 					// consideration "compatible" types
 					// (eg char[]-String, double-BigDecimal, etc)
 					Object retConverted = DynamicBean.convertToType(fieldValue.getClass(), ret);
-					if (!DynamicBean.compareValues(fieldValue, retConverted)) { throw new AssertionError(
-							"Expected [" + fieldValue + "] but got [" + ret + "] as result of [" + sql + "]"); }
+					if (!DynamicBean.compareValues(fieldValue, retConverted)) { throw new AssertionError("Expected [" + fieldValue + "] but got [" + ret + "] as result of [" + sql + "]"); }
 				}
 			}
 		}
@@ -266,8 +257,7 @@ public class BeanTest
 		List<Map<String, Object>> mapList = persist.readMapList(sql);
 
 		// asserts there's only one entry (added during the insert test)
-		if (mapList.size() != 1) { throw new AssertionError(
-				"Expected 1 result but got [" + mapList.size() + "] as result of sql [" + sql + "]"); }
+		if (mapList.size() != 1) { throw new AssertionError("Expected 1 result but got [" + mapList.size() + "] as result of sql [" + sql + "]"); }
 
 		// use the first (or single) map returned
 		Map m = mapList.get(0);
@@ -293,10 +283,7 @@ public class BeanTest
 				// compare values using a method that takes into consideration
 				// "compatible" types
 				// (eg char[]-String, double-BigDecimal, etc)
-				if (!DynamicBean.compareValues(fieldValue,
-						mapValue)) { throw new AssertionError("Map entry [" + columnName + "]=[" + mapValue
-								+ "] does not match field [" + fieldMap.getFieldName() + "]=[" + fieldValue
-								+ "] as result of sql [" + sql + "]"); }
+				if (!DynamicBean.compareValues(fieldValue, mapValue)) { throw new AssertionError("Map entry [" + columnName + "]=[" + mapValue + "] does not match field [" + fieldMap.getFieldName() + "]=[" + fieldValue + "] as result of sql [" + sql + "]"); }
 			}
 		}
 	}
@@ -321,22 +308,19 @@ public class BeanTest
 			{
 					"id"
 			};
-			Result result = persist.executeUpdate(Simple.class, "insert into simple (int_col,string_col) values(?,?)",
-					autoGeneratedKeys, intCol, stringCol);
+			Result result = persist.executeUpdate(Simple.class, "insert into simple (int_col,string_col) values(?,?)", autoGeneratedKeys, intCol, stringCol);
 			assertEquals(1, result.getGeneratedKeys().size());
 			assertEquals(1, result.getRowsModified());
 
 			// read object and compare with inserted data
-			Simple simpleRead = persist.read(Simple.class, "select * from simple where int_col=? and string_col=?",
-					intCol, stringCol);
+			Simple simpleRead = persist.read(Simple.class, "select * from simple where int_col=? and string_col=?", intCol, stringCol);
 			assertNotNull(simpleRead);
 			assertEquals(intCol, simpleRead.getIntCol());
 			assertEquals(stringCol, simpleRead.getStringCol());
 
 			// delete object and check it was removed
 			persist.delete(simpleRead);
-			simpleRead = persist.read(Simple.class, "select * from simple where int_col=? and string_col=?", intCol,
-					stringCol);
+			simpleRead = persist.read(Simple.class, "select * from simple where int_col=? and string_col=?", intCol, stringCol);
 			assertNull(simpleRead);
 		}
 

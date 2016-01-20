@@ -54,8 +54,7 @@ public class WorkAppWorkflow
 		while (!isFinished())
 		{
 			if (this.mLogger != null)
-				mLogger.LogInfo("waiting to finish jobs, #active jobs: " + executor.getNumberOfActiveTasks(),
-						WorkAppWorkflow.class);
+				mLogger.LogInfo("waiting to finish jobs, #active jobs: " + executor.getNumberOfActiveTasks(), WorkAppWorkflow.class);
 
 			try
 			{
@@ -72,8 +71,7 @@ public class WorkAppWorkflow
 		double totalProcTime = (executor.getTotalProcessingTime()) / 1000.0;
 
 		if (this.mLogger != null)
-			mLogger.LogInfo("WorkAppWorkflow ended, took " + totalExecTime + " seconds, "
-					+ "total processing time took " + totalProcTime, WorkAppWorkflow.class);
+			mLogger.LogInfo("WorkAppWorkflow ended, took " + totalExecTime + " seconds, " + "total processing time took " + totalProcTime, WorkAppWorkflow.class);
 
 		if (this.mLogger != null)
 			mLogger.LogInfo("Total processing time for each worker:", WorkAppWorkflow.class);
@@ -85,8 +83,7 @@ public class WorkAppWorkflow
 				double time = (worker.getTotalProcessingTime() / 1000.0);
 				int ratioTime = (int) (time * 100.0 / totalExecTime);
 				if (this.mLogger != null)
-					mLogger.LogInfo("\t" + worker.getClass().getSimpleName() + ": " + time + ", " + ratioTime + "%",
-							WorkAppWorkflow.class);
+					mLogger.LogInfo("\t" + worker.getClass().getSimpleName() + ": " + time + ", " + ratioTime + "%", WorkAppWorkflow.class);
 			}
 		}
 

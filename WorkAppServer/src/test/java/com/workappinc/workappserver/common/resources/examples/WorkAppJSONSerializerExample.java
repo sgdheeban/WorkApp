@@ -42,12 +42,10 @@ public class WorkAppJSONSerializerExample
 	{
 		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		User user = new User();
-		User user1 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd\",\"age\":11}", User.class,
-				logger);
+		User user1 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd\",\"age\":11}", User.class, logger);
 		System.out.println(user1.getAge() + " :: " + user1.getName());
 
-		User user2 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd-21\",\"age\":121}", User.class,
-				logger);
+		User user2 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd-21\",\"age\":121}", User.class, logger);
 		System.out.println(user2.getAge() + " :: " + user2.getName());
 
 	}

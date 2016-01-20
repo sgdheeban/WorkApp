@@ -53,8 +53,7 @@ public class WorkAppPropertyFileWriter extends WorkAppFileWriter
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException(
-					"Error during Singleton Object Creation for WorkAppPropertyFileWriter Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppPropertyFileWriter Class", ex);
 		}
 	}
 

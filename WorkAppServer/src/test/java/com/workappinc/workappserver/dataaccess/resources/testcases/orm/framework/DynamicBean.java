@@ -35,8 +35,7 @@ public class DynamicBean
 	{
 
 		ClassPool pool = ClassPool.getDefault();
-		CtClass cc = pool.makeClass("com.workappinc.workappserver.dataaccess.resources.testcases.orm.framework."
-				+ beanMap.getClassName() + (noTable ? "NoTable" : ""));
+		CtClass cc = pool.makeClass("com.workappinc.workappserver.dataaccess.resources.testcases.orm.framework." + beanMap.getClassName() + (noTable ? "NoTable" : ""));
 
 		if (noTable)
 		{
@@ -69,10 +68,8 @@ public class DynamicBean
 				String fieldNameU = Character.toUpperCase(fieldName.charAt(0)) + fieldName.substring(1);
 				String fieldTypeName = fieldType.getCanonicalName();
 
-				String getterCode = "public " + fieldTypeName + " get" + fieldNameU + "() { return " + fieldName
-						+ "; }";
-				String setterCode = "public void set" + fieldNameU + "(" + fieldTypeName + " " + fieldName + ") { this."
-						+ fieldName + "=" + fieldName + "; }";
+				String getterCode = "public " + fieldTypeName + " get" + fieldNameU + "() { return " + fieldName + "; }";
+				String setterCode = "public void set" + fieldNameU + "(" + fieldTypeName + " " + fieldName + ") { this." + fieldName + "=" + fieldName + "; }";
 
 				CtField cf = new CtField(pool.get(fieldTypeName), fieldName, cc);
 				cc.addField(cf);
@@ -268,9 +265,7 @@ public class DynamicBean
 
 		if (cls == boolean.class || cls == Boolean.class)
 			return ((Boolean) obj).booleanValue() == false;
-		else if (cls == byte.class || cls == Byte.class || cls == short.class || cls == Short.class || cls == int.class
-				|| cls == Integer.class || cls == long.class || cls == Long.class || cls == float.class
-				|| cls == Float.class || cls == double.class || cls == Double.class || cls == BigDecimal.class)
+		else if (cls == byte.class || cls == Byte.class || cls == short.class || cls == Short.class || cls == int.class || cls == Integer.class || cls == long.class || cls == Long.class || cls == float.class || cls == Float.class || cls == double.class || cls == Double.class || cls == BigDecimal.class)
 		{
 
 			// first cast to Number
@@ -561,8 +556,7 @@ public class DynamicBean
 
 		Class clsValue = value.getClass();
 
-		if (cls == String.class || cls == char.class || cls == Character.class || cls == char[].class
-				|| cls == Character[].class || cls == Reader.class || cls == Clob.class)
+		if (cls == String.class || cls == char.class || cls == Character.class || cls == char[].class || cls == Character[].class || cls == Reader.class || cls == Clob.class)
 		{
 
 			// first convert it to string
@@ -736,10 +730,7 @@ public class DynamicBean
 			else return value;
 		}
 
-		else if (clsValue == byte.class || clsValue == Byte.class || clsValue == short.class || clsValue == Short.class
-				|| clsValue == int.class || clsValue == Integer.class || clsValue == long.class
-				|| clsValue == Long.class || clsValue == float.class || clsValue == Float.class
-				|| clsValue == double.class || clsValue == Double.class || clsValue == BigDecimal.class)
+		else if (clsValue == byte.class || clsValue == Byte.class || clsValue == short.class || clsValue == Short.class || clsValue == int.class || clsValue == Integer.class || clsValue == long.class || clsValue == Long.class || clsValue == float.class || clsValue == Float.class || clsValue == double.class || clsValue == Double.class || clsValue == BigDecimal.class)
 		{
 
 			// first cast to Number

@@ -12,8 +12,7 @@ public interface WorkAppQbWhere
 	 */
 	public enum QbWhereOperator
 	{
-		EQUALS("="), NOT_EQUALS("<>"), LESS_THAN("<"), GREATER_THAN(">"), LESS_THAN_EQUALS("<="), GREATER_THAN_EQUALS(
-				">="), LIKE("LIKE"), NOT_LIKE("NOT LIKE");
+		EQUALS("="), NOT_EQUALS("<>"), LESS_THAN("<"), GREATER_THAN(">"), LESS_THAN_EQUALS("<="), GREATER_THAN_EQUALS(">="), LIKE("LIKE"), NOT_LIKE("NOT LIKE");
 
 		private final String value;
 

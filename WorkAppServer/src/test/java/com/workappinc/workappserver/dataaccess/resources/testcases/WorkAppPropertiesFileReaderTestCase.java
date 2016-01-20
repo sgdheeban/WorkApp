@@ -26,8 +26,7 @@ public class WorkAppPropertiesFileReaderTestCase
 	{
 		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		String classFilePath = "config.properties";
-		WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader
-				.getInstance(logger);
+		WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader.getInstance(logger);
 		Properties prop = propertiesFileReader.loadPropertyFromClassPath(classFilePath);
 		assertEquals("localhost", prop.getProperty("database"));
 		assertEquals("dheeban", prop.getProperty("dbuser"));
@@ -42,8 +41,7 @@ public class WorkAppPropertiesFileReaderTestCase
 	{
 		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		String fileSystemPath = "/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties";
-		WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader
-				.getInstance(logger);
+		WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader.getInstance(logger);
 		Properties prop = propertiesFileReader.loadPropertyFromFileSystem(fileSystemPath);
 		assertEquals("localhost", prop.getProperty("database"));
 		assertEquals("dheeban", prop.getProperty("dbuser"));

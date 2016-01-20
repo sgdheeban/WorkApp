@@ -20,13 +20,11 @@ public abstract class Mapping
 	 * NoTableAnnotation if the class has a NoTable annotation set, or
 	 * TableAnnotation otherwise.
 	 */
-	public static final Mapping getMapping(final DatabaseMetaData metaData, final Class objectClass,
-			final NameGuesser nameGuesser)
+	public static final Mapping getMapping(final DatabaseMetaData metaData, final Class objectClass, final NameGuesser nameGuesser)
 	{
 
 		// get @NoTable annotation
-		final com.workappinc.workappserver.dataaccess.orm.annotations.NoTable noTableAnnotation = (com.workappinc.workappserver.dataaccess.orm.annotations.NoTable) objectClass
-				.getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.NoTable.class);
+		final com.workappinc.workappserver.dataaccess.orm.annotations.NoTable noTableAnnotation = (com.workappinc.workappserver.dataaccess.orm.annotations.NoTable) objectClass.getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.NoTable.class);
 
 		// if @NoTable is set, build a NoTableAnnotation
 		if (noTableAnnotation != null)
@@ -102,37 +100,26 @@ public abstract class Mapping
 				final String fieldName = suffix.substring(0, 1).toLowerCase() + suffix.substring(1);
 
 				// column annotation
-				final com.workappinc.workappserver.dataaccess.orm.annotations.Column getterAnnotation = getterSetter[0]
-						.getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.Column.class);
-				final com.workappinc.workappserver.dataaccess.orm.annotations.Column setterAnnotation = getterSetter[1]
-						.getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.Column.class);
+				final com.workappinc.workappserver.dataaccess.orm.annotations.Column getterAnnotation = getterSetter[0].getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.Column.class);
+				final com.workappinc.workappserver.dataaccess.orm.annotations.Column setterAnnotation = getterSetter[1].getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.Column.class);
 
 				// if NoColumn is specified, don't use the field
-				final com.workappinc.workappserver.dataaccess.orm.annotations.NoColumn noPersistGetter = getterSetter[0]
-						.getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.NoColumn.class);
+				final com.workappinc.workappserver.dataaccess.orm.annotations.NoColumn noPersistGetter = getterSetter[0].getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.NoColumn.class);
 
-				final com.workappinc.workappserver.dataaccess.orm.annotations.NoColumn noPersistSetter = getterSetter[1]
-						.getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.NoColumn.class);
+				final com.workappinc.workappserver.dataaccess.orm.annotations.NoColumn noPersistSetter = getterSetter[1].getAnnotation(com.workappinc.workappserver.dataaccess.orm.annotations.NoColumn.class);
 
 				// check conflicting NoColumn and Column annotations
 				if (noPersistGetter != null || noPersistSetter != null)
 				{
-					if (getterAnnotation != null || setterAnnotation != null) { throw new PersistException(
-							"Field [" + fieldName + "] from class [" + objectClass.getName()
-									+ "] has conflicting NoColumn and Column annotations"); }
+					if (getterAnnotation != null || setterAnnotation != null) { throw new PersistException("Field [" + fieldName + "] from class [" + objectClass.getName() + "] has conflicting NoColumn and Column annotations"); }
 					continue;
 				}
 
 				// assert that getters and setters have valid and compatible
 				// types
-				if (getterSetter[1].getParameterTypes().length != 1) { throw new PersistException(
-						"Setter [" + getterSetter[1] + "] should have a single parameter but has "
-								+ getterSetter[1].getParameterTypes().length); }
-				if (getterSetter[0].getReturnType() == void.class) { throw new PersistException(
-						"Getter [" + getterSetter[0] + "] must have a return parameter"); }
-				if (getterSetter[0].getReturnType() != getterSetter[1]
-						.getParameterTypes()[0]) { throw new PersistException("Getter [" + getterSetter[0]
-								+ "] and setter [" + getterSetter[1] + "] have incompatible types"); }
+				if (getterSetter[1].getParameterTypes().length != 1) { throw new PersistException("Setter [" + getterSetter[1] + "] should have a single parameter but has " + getterSetter[1].getParameterTypes().length); }
+				if (getterSetter[0].getReturnType() == void.class) { throw new PersistException("Getter [" + getterSetter[0] + "] must have a return parameter"); }
+				if (getterSetter[0].getReturnType() != getterSetter[1].getParameterTypes()[0]) { throw new PersistException("Getter [" + getterSetter[0] + "] and setter [" + getterSetter[1] + "] have incompatible types"); }
 
 				// check for annotations on the getter/setter
 				com.workappinc.workappserver.dataaccess.orm.annotations.Column annotation = null;
@@ -145,17 +132,11 @@ public abstract class Mapping
 					if (!getterAnnotation.equals(setterAnnotation))
 					{
 
-						final String getterAnn = getterAnnotation.toString().substring(
-								getterAnnotation.toString().indexOf('(') + 1,
-								getterAnnotation.toString().lastIndexOf(')'));
+						final String getterAnn = getterAnnotation.toString().substring(getterAnnotation.toString().indexOf('(') + 1, getterAnnotation.toString().lastIndexOf(')'));
 
-						final String setterAnn = setterAnnotation.toString().substring(
-								setterAnnotation.toString().indexOf('(') + 1,
-								setterAnnotation.toString().lastIndexOf(')'));
+						final String setterAnn = setterAnnotation.toString().substring(setterAnnotation.toString().indexOf('(') + 1, setterAnnotation.toString().lastIndexOf(')'));
 
-						throw new PersistException(
-								"Annotations for getter [" + getterSetter[0] + "] and setter [" + getterSetter[1]
-										+ "] have different annotations [" + getterAnn + "] [" + setterAnn + "]");
+						throw new PersistException("Annotations for getter [" + getterSetter[0] + "] and setter [" + getterSetter[1] + "] have different annotations [" + getterAnn + "] [" + setterAnn + "]");
 					}
 
 					annotation = getterAnnotation;

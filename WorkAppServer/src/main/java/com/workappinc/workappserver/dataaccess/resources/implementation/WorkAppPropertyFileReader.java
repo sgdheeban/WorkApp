@@ -50,8 +50,7 @@ public class WorkAppPropertyFileReader implements IReader
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException(
-					"Error during Singleton Object Creation for WorkAppPropertyFileReader Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppPropertyFileReader Class", ex);
 		}
 	}
 

@@ -43,10 +43,8 @@ public class WorkAppJSONSerializerTestCase
 	{
 		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		User user = new User();
-		User user1 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd\",\"age\":11}", User.class,
-				logger);
-		User user2 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd-21\",\"age\":121}", User.class,
-				logger);
+		User user1 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd\",\"age\":11}", User.class, logger);
+		User user2 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd-21\",\"age\":121}", User.class, logger);
 
 		assertEquals(user1.getAge(), 11);
 		assertEquals(user1.getName(), "sgd");

@@ -108,28 +108,22 @@ public class WorkAppQueryBuilderTestExample
 		select.select(fac.newQualifiedField("myTable", "id"), fac.newQualifiedField("myTable2", "id"));
 		select.from("myTable");
 		select.join("myTable2", fac.newStdField("foreign_key"), fac.newQualifiedField("myTable2", "id"));
-		assert (select.getQueryString().equals(
-				"SELECT `myTable`.`id`, `myTable2`.`id` FROM `myTable`  JOIN `myTable2` ON `foreign_key` = `myTable2`.`id`"));
+		assert (select.getQueryString().equals("SELECT `myTable`.`id`, `myTable2`.`id` FROM `myTable`  JOIN `myTable2` ON `foreign_key` = `myTable2`.`id`"));
 
 		// Test an INNER JOIN....
 		select = fac.newSelectQuery();
 		select.select(fac.newQualifiedField("myTable", "id"), fac.newQualifiedField("myTable2", "id"));
 		select.from("myTable");
-		select.join("myTable2", fac.newStdField("foreign_key"), fac.newQualifiedField("myTable2", "id"),
-				QbJoinType.INNER);
-		assert (select.getQueryString().equals(
-				"SELECT `myTable`.`id`, `myTable2`.`id` FROM `myTable` INNER JOIN `myTable2` ON `foreign_key` = `myTable2`.`id`"));
+		select.join("myTable2", fac.newStdField("foreign_key"), fac.newQualifiedField("myTable2", "id"), QbJoinType.INNER);
+		assert (select.getQueryString().equals("SELECT `myTable`.`id`, `myTable2`.`id` FROM `myTable` INNER JOIN `myTable2` ON `foreign_key` = `myTable2`.`id`"));
 
 		// Test a three way join...
 		select = fac.newSelectQuery();
-		select.select(fac.newQualifiedField("myTable", "id"), fac.newQualifiedField("myTable2", "id"),
-				fac.newQualifiedField("myTable3", "id"));
+		select.select(fac.newQualifiedField("myTable", "id"), fac.newQualifiedField("myTable2", "id"), fac.newQualifiedField("myTable3", "id"));
 		select.from("myTable");
-		select.join("myTable2", fac.newStdField("foreign_key"), fac.newQualifiedField("myTable2", "id"),
-				QbJoinType.INNER);
+		select.join("myTable2", fac.newStdField("foreign_key"), fac.newQualifiedField("myTable2", "id"), QbJoinType.INNER);
 		select.join("myTable3", fac.newStdField("foreign_key"), fac.newQualifiedField("myTable3", "id"));
-		assert (select.getQueryString().equals(
-				"SELECT `myTable`.`id`, `myTable2`.`id`, `myTable3`.`id` FROM `myTable` INNER JOIN `myTable2` ON `foreign_key` = `myTable2`.`id` JOIN `myTable3` ON `foreign_key` = `myTable3`.`id`"));
+		assert (select.getQueryString().equals("SELECT `myTable`.`id`, `myTable2`.`id`, `myTable3`.`id` FROM `myTable` INNER JOIN `myTable2` ON `foreign_key` = `myTable2`.`id` JOIN `myTable3` ON `foreign_key` = `myTable3`.`id`"));
 
 		// Test DISTINCT keyword and method chaining...
 		select = fac.newSelectQuery();
@@ -138,17 +132,13 @@ public class WorkAppQueryBuilderTestExample
 
 		// Test Group by with multiple fields...
 		select = fac.newSelectQuery();
-		select.select(fac.newMin(fac.newStdField("col1"), "minny")).from("myTable").groupBy(fac.newStdField("group1"),
-				fac.newStdField("group2"));
-		assert (select.getQueryString()
-				.equals("SELECT MIN(`col1`) AS minny FROM `myTable`  GROUP BY `group1`, `group2`"));
+		select.select(fac.newMin(fac.newStdField("col1"), "minny")).from("myTable").groupBy(fac.newStdField("group1"), fac.newStdField("group2"));
+		assert (select.getQueryString().equals("SELECT MIN(`col1`) AS minny FROM `myTable`  GROUP BY `group1`, `group2`"));
 
 		// Test group by with one field...
 		select = fac.newSelectQuery();
-		select.select(fac.newMax(fac.newStdField("col1"), "maxxy")).from("myTable")
-				.groupBy(fac.newQualifiedField("myTable", "col1"));
-		assert (select.getQueryString()
-				.equals("SELECT MAX(`col1`) AS maxxy FROM `myTable`  GROUP BY `myTable`.`col1`"));
+		select.select(fac.newMax(fac.newStdField("col1"), "maxxy")).from("myTable").groupBy(fac.newQualifiedField("myTable", "col1"));
+		assert (select.getQueryString().equals("SELECT MAX(`col1`) AS maxxy FROM `myTable`  GROUP BY `myTable`.`col1`"));
 
 		// Test the limit clause...
 		select = fac.newSelectQuery().distinct().select(fac.newAllField()).from("myTable").limit(0, 100);
@@ -156,14 +146,11 @@ public class WorkAppQueryBuilderTestExample
 
 		// Test the having clause...
 		select = fac.newSelectQuery();
-		select.select(fac.newCount(fac.newStdField("col1"), "cnt")).from("myTable").groupBy(fac.newStdField("test"))
-				.having().where(fac.newStdField("cnt"), "cnt");
-		assert (select.getQueryString()
-				.equals("SELECT COUNT(`col1`) AS cnt FROM `myTable`  GROUP BY `test` HAVING `cnt` = ?"));
+		select.select(fac.newCount(fac.newStdField("col1"), "cnt")).from("myTable").groupBy(fac.newStdField("test")).having().where(fac.newStdField("cnt"), "cnt");
+		assert (select.getQueryString().equals("SELECT COUNT(`col1`) AS cnt FROM `myTable`  GROUP BY `test` HAVING `cnt` = ?"));
 
 		// Test the order by clause...
-		select = fac.newSelectQuery().select(fac.newStdField("col1")).distinct().from("myTable").orderBy(QbOrderBy.ASC,
-				fac.newStdField("col2"));
+		select = fac.newSelectQuery().select(fac.newStdField("col1")).distinct().from("myTable").orderBy(QbOrderBy.ASC, fac.newStdField("col2"));
 		assert (select.getQueryString().equals("SELECT DISTINCT `col1` FROM `myTable`  ORDER BY `col2` ASC"));
 	}
 
@@ -194,18 +181,15 @@ public class WorkAppQueryBuilderTestExample
 
 		// Test the placeholders with a select query...
 		WorkAppQbSelect sel = fac.newSelectQuery();
-		sel.distinct().select(fac.newStdField("test")).from("myTable").where().whereIn(fac.newStdField("test"),
-				"test_placeholder", 4);
+		sel.distinct().select(fac.newStdField("test")).from("myTable").where().whereIn(fac.newStdField("test"), "test_placeholder", 4);
 		assert (sel.getQueryString().equals("SELECT DISTINCT `test` FROM `myTable`  WHERE `test` IN (?, ?, ?, ?)"));
 		assert (sel.getPlaceholderIndex("test_placeholder") == 1);
 
 		// Test the placeholders with a complex select...
 		sel = fac.newSelectQuery();
-		sel.select(fac.newCount(fac.newStdField("test"), "cnt")).from("myTable").where().where(fac.newStdField("test"),
-				QbWhereOperator.GREATER_THAN, "1");
+		sel.select(fac.newCount(fac.newStdField("test"), "cnt")).from("myTable").where().where(fac.newStdField("test"), QbWhereOperator.GREATER_THAN, "1");
 		sel.having().where(fac.newStdField("cnt"), QbWhereOperator.LESS_THAN, "2");
-		assert (sel.getQueryString()
-				.equals("SELECT COUNT(`test`) AS cnt FROM `myTable`  WHERE `test` > ? HAVING `cnt` < ?"));
+		assert (sel.getQueryString().equals("SELECT COUNT(`test`) AS cnt FROM `myTable`  WHERE `test` > ? HAVING `cnt` < ?"));
 		assert (sel.getPlaceholderIndex("1") == 1);
 		assert (sel.getPlaceholderIndex("2") == 2);
 	}
@@ -214,33 +198,26 @@ public class WorkAppQueryBuilderTestExample
 	{
 		// Test of where clause...
 		WorkAppQbSelect sel = fac.newSelectQuery();
-		sel.select(fac.newStdField("test")).from("myTable").where()
-				.where(fac.newStdField("test"), QbWhereOperator.NOT_EQUALS, "1").orWhere(fac.newStdField("test2"), "2");
+		sel.select(fac.newStdField("test")).from("myTable").where().where(fac.newStdField("test"), QbWhereOperator.NOT_EQUALS, "1").orWhere(fac.newStdField("test2"), "2");
 		assert (sel.getQueryString().equals("SELECT `test` FROM `myTable`  WHERE `test` <> ? OR `test2` = ?"));
 		assert (sel.getPlaceholderIndex("2") == 2);
 
 		// Test custom where clause and where not in...
 		sel = fac.newSelectQuery();
-		sel.select(fac.newStdField("test")).from("myTable").where().where("x = y")
-				.whereNotIn(fac.newStdField("test"), "2", 10).orWhereNotIn(fac.newStdField("test2"), "3", 5);
-		assert (sel.getQueryString().equals(
-				"SELECT `test` FROM `myTable`  WHERE x = y AND `test` NOT IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) OR `test2` NOT IN (?, ?, ?, ?, ?)"));
+		sel.select(fac.newStdField("test")).from("myTable").where().where("x = y").whereNotIn(fac.newStdField("test"), "2", 10).orWhereNotIn(fac.newStdField("test2"), "3", 5);
+		assert (sel.getQueryString().equals("SELECT `test` FROM `myTable`  WHERE x = y AND `test` NOT IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) OR `test2` NOT IN (?, ?, ?, ?, ?)"));
 		assert (sel.getPlaceholderIndex("3") == 11);
 
 		// Test LIKE clause...
 		sel = fac.newSelectQuery();
-		sel.select(fac.newStdField("col1")).from("myTable").where().where(fac.newStdField("col2"), QbWhereOperator.LIKE,
-				":col2");
+		sel.select(fac.newStdField("col1")).from("myTable").where().where(fac.newStdField("col2"), QbWhereOperator.LIKE, ":col2");
 		assert (sel.getQueryString().equals("SELECT `col1` FROM `myTable`  WHERE `col2` LIKE ?"));
 		assert (sel.getPlaceholderIndex(":col2") == 1);
 
 		// Test OR NOT LIKE clause...
 		sel = fac.newSelectQuery();
-		sel.select(fac.newStdField("col1"), fac.newStdField("col2")).from("myTable").where()
-				.where(fac.newStdField("col2"), ":col2")
-				.orWhere(fac.newStdField("col3"), QbWhereOperator.NOT_LIKE, ":col3");
-		assert (sel.getQueryString()
-				.equals("SELECT `col1`, `col2` FROM `myTable`  WHERE `col2` = ? OR `col3` NOT LIKE ?"));
+		sel.select(fac.newStdField("col1"), fac.newStdField("col2")).from("myTable").where().where(fac.newStdField("col2"), ":col2").orWhere(fac.newStdField("col3"), QbWhereOperator.NOT_LIKE, ":col3");
+		assert (sel.getQueryString().equals("SELECT `col1`, `col2` FROM `myTable`  WHERE `col2` = ? OR `col3` NOT LIKE ?"));
 		assert (sel.getPlaceholderIndex(":col2") == 1);
 		assert (sel.getPlaceholderIndex(":col3") == 2);
 	}
@@ -249,8 +226,7 @@ public class WorkAppQueryBuilderTestExample
 	{
 		// Test a simple update query...
 		WorkAppQbUpdate up = f.newUpdateQuery();
-		up.set(f.newStdField("first_name"), ":first_name").set(f.newStdField("last_name"), ":last_name")
-				.inTable("myTable").where().where(f.newStdField("id"), ":id");
+		up.set(f.newStdField("first_name"), ":first_name").set(f.newStdField("last_name"), ":last_name").inTable("myTable").where().where(f.newStdField("id"), ":id");
 		assert (up.getQueryString().equals("UPDATE `myTable` SET `first_name` = ?, `last_name` = ? WHERE `id` = ?"));
 		assert (up.getPlaceholderIndex(":first_name") == 1);
 		assert (up.getPlaceholderIndex(":last_name") == 2);

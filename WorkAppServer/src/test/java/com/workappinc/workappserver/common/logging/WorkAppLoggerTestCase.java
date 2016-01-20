@@ -44,8 +44,7 @@ public class WorkAppLoggerTestCase
 		try
 		{
 			String fileSystemLog4jPath = "/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties";
-			WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader
-					.getInstance(null);
+			WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader.getInstance(null);
 			Properties prop = propertiesFileReader.loadPropertyFromFileSystem(fileSystemLog4jPath);
 			IApplicationLogger logger = WorkAppLogger.getInstance(prop);
 			logger.LogFatal(ctx, WorkAppLoggerTestCase.class);

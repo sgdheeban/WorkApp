@@ -45,8 +45,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 	 *            to access MySQL database
 	 * @throws ClassNotFoundException
 	 */
-	private WorkAppMySQLConnectionManager(String url, String user, String password, IApplicationLogger logger)
-			throws ClassNotFoundException
+	private WorkAppMySQLConnectionManager(String url, String user, String password, IApplicationLogger logger) throws ClassNotFoundException
 	{
 		Class.forName(dbClass);
 		this.url = url;
@@ -82,8 +81,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException(
-					"Error during Singleton Object Creation for WorkAppMySQLConnectionManager Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppMySQLConnectionManager Class", ex);
 		}
 	}
 
@@ -122,8 +120,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 				conn.terminate();
 			}
 		}
-		mLogger.LogDebug("No available MySQL connections, attempting to create a new one",
-				WorkAppMySQLConnectionManager.class);
+		mLogger.LogDebug("No available MySQL connections, attempting to create a new one", WorkAppMySQLConnectionManager.class);
 		conn = new WorkAppJDBCConnection(DriverManager.getConnection(url, user, password), mLogger);
 		conn.lease();
 		if (!conn.isValid())

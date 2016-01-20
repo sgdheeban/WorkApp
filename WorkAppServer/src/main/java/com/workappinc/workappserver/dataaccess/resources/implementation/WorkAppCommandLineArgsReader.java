@@ -178,13 +178,11 @@ public class WorkAppCommandLineArgsReader implements IReader
 		}
 		catch (NoSuchMethodException e)
 		{
-			throw new IllegalArgumentException(
-					"Could not find constructor in class " + type.getName() + " that takes a string", e);
+			throw new IllegalArgumentException("Could not find constructor in class " + type.getName() + " that takes a string", e);
 		}
 	}
 
-	private static void addPropertyArgument(Class type, PropertyDescriptor property, Object target, Object value,
-			String delimiter)
+	private static void addPropertyArgument(Class type, PropertyDescriptor property, Object target, Object value, String delimiter)
 	{
 		try
 		{
@@ -201,8 +199,7 @@ public class WorkAppCommandLineArgsReader implements IReader
 		}
 		catch (NoSuchMethodException e)
 		{
-			throw new IllegalArgumentException(
-					"Could not find constructor in class " + type.getName() + " that takes a string", e);
+			throw new IllegalArgumentException("Could not find constructor in class " + type.getName() + " that takes a string", e);
 		}
 		catch (InvocationTargetException e)
 		{
@@ -365,8 +362,7 @@ public class WorkAppCommandLineArgsReader implements IReader
 				}
 				catch (IllegalAccessException e)
 				{
-					throw new IllegalArgumentException("Could not use thie field " + field + " as an argument field",
-							e);
+					throw new IllegalArgumentException("Could not use thie field " + field + " as an argument field", e);
 				}
 				catch (InvocationTargetException e)
 				{
@@ -377,8 +373,7 @@ public class WorkAppCommandLineArgsReader implements IReader
 
 	}
 
-	private static void propertyUsage(PrintStream errStream, String prefix, String name, String alias, Class<?> type,
-			String delimiter, String description, Object defaultValue)
+	private static void propertyUsage(PrintStream errStream, String prefix, String name, String alias, Class<?> type, String delimiter, String description, Object defaultValue)
 	{
 		StringBuilder sb = new StringBuilder("  ");
 		sb.append(prefix);
@@ -491,8 +486,7 @@ public class WorkAppCommandLineArgsReader implements IReader
 		}
 		catch (NoSuchMethodException e)
 		{
-			throw new IllegalArgumentException(
-					"Could not find constructor in class " + type.getName() + " that takes a string", e);
+			throw new IllegalArgumentException("Could not find constructor in class " + type.getName() + " that takes a string", e);
 		}
 		catch (InvocationTargetException e)
 		{
@@ -534,8 +528,7 @@ public class WorkAppCommandLineArgsReader implements IReader
 		}
 		catch (NoSuchMethodException e)
 		{
-			throw new IllegalArgumentException(
-					"Could not find constructor in class " + type.getName() + " that takes a string", e);
+			throw new IllegalArgumentException("Could not find constructor in class " + type.getName() + " that takes a string", e);
 		}
 	}
 
@@ -577,8 +570,7 @@ public class WorkAppCommandLineArgsReader implements IReader
 			Object createdValue = valueCreator.createValue(type, valueAsString);
 			if (createdValue != null) { return createdValue; }
 		}
-		throw new IllegalArgumentException(
-				String.format("cannot instanciate any %s object using %s value", type.toString(), valueAsString));
+		throw new IllegalArgumentException(String.format("cannot instanciate any %s object using %s value", type.toString(), valueAsString));
 	}
 
 	private static void makeAccessible(AccessibleObject ao)
@@ -641,9 +633,7 @@ public class WorkAppCommandLineArgsReader implements IReader
 					}
 					catch (Exception e)
 					{
-						throw new IllegalArgumentException(
-								String.format("could not invoke %s#%s to create an obejct from %s", type.toString(),
-										methodName, value));
+						throw new IllegalArgumentException(String.format("could not invoke %s#%s to create an obejct from %s", type.toString(), methodName, value));
 					}
 				}
 				return v;
@@ -690,10 +680,8 @@ public class WorkAppCommandLineArgsReader implements IReader
 		}
 	};
 
-	private static final List<ValueCreator> DEFAULT_VALUE_CREATORS = Arrays
-			.asList(WorkAppCommandLineArgsReader.FROM_STRING_CONSTRUCTOR, WorkAppCommandLineArgsReader.ENUM_CREATOR);
-	private static List<ValueCreator> valueCreators = new ArrayList<WorkAppCommandLineArgsReader.ValueCreator>(
-			DEFAULT_VALUE_CREATORS);
+	private static final List<ValueCreator> DEFAULT_VALUE_CREATORS = Arrays.asList(WorkAppCommandLineArgsReader.FROM_STRING_CONSTRUCTOR, WorkAppCommandLineArgsReader.ENUM_CREATOR);
+	private static List<ValueCreator> valueCreators = new ArrayList<WorkAppCommandLineArgsReader.ValueCreator>(DEFAULT_VALUE_CREATORS);
 
 	/**
 	 * Allows external extension of the valiue creators.

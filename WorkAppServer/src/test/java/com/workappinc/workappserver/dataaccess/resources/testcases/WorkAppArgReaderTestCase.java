@@ -29,8 +29,7 @@ public class WorkAppArgReaderTestCase
 		WorkAppCommandLineArgsReader.usage(tc);
 		String[] args =
 		{
-				"-input", "inputfile", "-o", "outputfile", "extra1", "extra2", "-someflag", "-m", "10", "-values",
-				"1:2:3", "-strings", "sam;dave;jolly"
+				"-input", "inputfile", "-o", "outputfile", "extra1", "extra2", "-someflag", "-m", "10", "-values", "1:2:3", "-strings", "sam;dave;jolly"
 		};
 		List<String> extra = WorkAppCommandLineArgsReader.parse(tc, args);
 		assertEquals("inputfile", tc.inputFilename);
@@ -53,8 +52,7 @@ public class WorkAppArgReaderTestCase
 		WorkAppCommandLineArgsReader.usage(tc);
 		String[] args =
 		{
-				"-input", "inputfile", "-o", "outputfile", "-someflag", "-m", "10", "extra1", "extra2", "-values", "1",
-				"-values", "2", "-values", "3", "-strings", "sam", "-strings", "dave", "-strings", "jolly"
+				"-input", "inputfile", "-o", "outputfile", "-someflag", "-m", "10", "extra1", "extra2", "-values", "1", "-values", "2", "-values", "3", "-strings", "sam", "-strings", "dave", "-strings", "jolly"
 		};
 		List<String> extra = WorkAppCommandLineArgsReader.parse(tc, args);
 		assertEquals("inputfile", tc.inputFilename);
@@ -127,8 +125,7 @@ public class WorkAppArgReaderTestCase
 		WorkAppCommandLineArgsReader.usage(tc);
 		String[] args =
 		{
-				"-input", "inputfile", "-o", "outputfile", "extra1", "-someflag", "extra2", "-m", "10", "-values",
-				"1:2:3"
+				"-input", "inputfile", "-o", "outputfile", "extra1", "-someflag", "extra2", "-m", "10", "-values", "1:2:3"
 		};
 		List<String> extra = WorkAppCommandLineArgsReader.parse(tc, args);
 		assertEquals("inputfile", tc.inputFilename);
@@ -150,8 +147,7 @@ public class WorkAppArgReaderTestCase
 		WorkAppCommandLineArgsReader.usage(tc);
 		String[] args =
 		{
-				"-input", "inputfile", "-o", "outputfile", "extra1", "-someflag", "extra2", "-m", "10", "-values",
-				"1:2:3"
+				"-input", "inputfile", "-o", "outputfile", "extra1", "-someflag", "extra2", "-m", "10", "-values", "1:2:3"
 		};
 		List<String> extra = WorkAppCommandLineArgsReader.parse(tc, args);
 		assertEquals("inputfile", tc.inputFilename);

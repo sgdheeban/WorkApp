@@ -26,8 +26,7 @@ public class WorkAppPropertiesFileWriterExample
 	 */
 	public static void writeToFileSystem(IApplicationLogger logger, String writepath, Map<String, String> map)
 	{
-		WorkAppPropertyFileWriter propertiesFileWriter = (WorkAppPropertyFileWriter) WorkAppPropertyFileWriter
-				.getInstance(logger);
+		WorkAppPropertyFileWriter propertiesFileWriter = (WorkAppPropertyFileWriter) WorkAppPropertyFileWriter.getInstance(logger);
 		logger.LogInfo("Printing Properties to FilePath", WorkAppPropertiesFileWriterExample.class);
 		propertiesFileWriter.writeToFile(writepath, map);
 	}

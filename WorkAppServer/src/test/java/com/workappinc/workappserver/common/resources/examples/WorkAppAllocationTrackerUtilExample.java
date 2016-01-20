@@ -48,7 +48,6 @@ public class WorkAppAllocationTrackerUtilExample
 		{
 			new WorkAppAllocationTrackerUtil.TestTracker();
 		}
-		System.out
-				.println("Constructed " + WorkAppAllocationTrackerUtil.TestTracker.count + " instances of TestTracker");
+		System.out.println("Constructed " + WorkAppAllocationTrackerUtil.TestTracker.count + " instances of TestTracker");
 	}
 }

@@ -59,8 +59,7 @@ public class WorkAppArgReaderUsingStaticMethodsTestCase
 	{
 		CommandCLI cli = new CommandCLI();
 
-		WorkAppCommandLineArgsReader
-				.registerValueCreator(WorkAppCommandLineArgsReader.byStaticMethodInvocation(Charset.class, "forName"));
+		WorkAppCommandLineArgsReader.registerValueCreator(WorkAppCommandLineArgsReader.byStaticMethodInvocation(Charset.class, "forName"));
 
 		String[] args = new String[]
 		{
@@ -69,8 +68,7 @@ public class WorkAppArgReaderUsingStaticMethodsTestCase
 		WorkAppCommandLineArgsReader.parse(cli, args);
 
 		assertNotNull("charset value not built", cli.getCharset());
-		assertTrue("built object is not a " + Charset.class + " class object",
-				Charset.class.isAssignableFrom(cli.getCharset().getClass()));
+		assertTrue("built object is not a " + Charset.class + " class object", Charset.class.isAssignableFrom(cli.getCharset().getClass()));
 		assertEquals("retrieved charset is not " + UTF_8_STR, UTF_8_STR, cli.getCharset().name());
 	}
 

@@ -88,8 +88,7 @@ public class WorkAppUtil implements IUtil
 	 * @return
 	 * @throws SystemException
 	 */
-	public synchronized static String getMyHostInfo(IApplicationLogger logger, Object ctx, boolean isHostIP)
-			throws SystemException
+	public synchronized static String getMyHostInfo(IApplicationLogger logger, Object ctx, boolean isHostIP) throws SystemException
 	{
 		String returnInfo = null;
 		try
@@ -120,8 +119,7 @@ public class WorkAppUtil implements IUtil
 	 * @return String MD5 Value
 	 * @throws MD5HashingException
 	 */
-	public synchronized static String generateMD5HashString(IApplicationLogger logger, Object ctx, String id)
-			throws MD5HashingException
+	public synchronized static String generateMD5HashString(IApplicationLogger logger, Object ctx, String id) throws MD5HashingException
 	{
 		byte byteData[] = generateMD5HashBytes(logger, ctx, id);
 		StringBuffer hexString = new StringBuffer();
@@ -144,8 +142,7 @@ public class WorkAppUtil implements IUtil
 	 * @return byte[]
 	 * @throws MD5HashingException
 	 */
-	public synchronized static byte[] generateMD5HashBytes(IApplicationLogger logger, Object ctx, String id)
-			throws MD5HashingException
+	public synchronized static byte[] generateMD5HashBytes(IApplicationLogger logger, Object ctx, String id) throws MD5HashingException
 	{
 		try
 		{
@@ -173,8 +170,7 @@ public class WorkAppUtil implements IUtil
 	 * @throws MD5HashingException
 	 * @throws SystemException
 	 */
-	public synchronized static byte[] generateFileChecksumBytes(IApplicationLogger logger, Object ctx, String filePath)
-			throws MD5HashingException, SystemException
+	public synchronized static byte[] generateFileChecksumBytes(IApplicationLogger logger, Object ctx, String filePath) throws MD5HashingException, SystemException
 	{
 		try
 		{
@@ -223,8 +219,7 @@ public class WorkAppUtil implements IUtil
 	 * @throws SystemException
 	 * @throws MD5HashingException
 	 */
-	public synchronized static String generateFileChecksumString(IApplicationLogger logger, Object ctx, String filePath)
-			throws MD5HashingException, SystemException
+	public synchronized static String generateFileChecksumString(IApplicationLogger logger, Object ctx, String filePath) throws MD5HashingException, SystemException
 	{
 		byte[] mdbytes = generateFileChecksumBytes(logger, ctx, filePath);
 		StringBuffer hexString = new StringBuffer();
@@ -310,8 +305,7 @@ public class WorkAppUtil implements IUtil
 	 * @return
 	 * @throws CryptoException
 	 */
-	public static String encryptString(IApplicationLogger logger, Object ctx, String originalString,
-			SecretKey secretKey) throws CryptoException
+	public static String encryptString(IApplicationLogger logger, Object ctx, String originalString, SecretKey secretKey) throws CryptoException
 	{
 		try
 		{
@@ -322,8 +316,7 @@ public class WorkAppUtil implements IUtil
 			String encryptedText = encodeBytes(logger, null, encryptedByte);
 			return encryptedText;
 		}
-		catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException
-				| BadPaddingException ex)
+		catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException | BadPaddingException ex)
 		{
 			if (logger != null)
 				logger.LogException(ex, WorkAppUtil.class);
@@ -341,8 +334,7 @@ public class WorkAppUtil implements IUtil
 	 * @return
 	 * @throws CryptoException
 	 */
-	public static String decryptString(IApplicationLogger logger, Object ctx, String encryptedString,
-			SecretKey secretKey) throws CryptoException
+	public static String decryptString(IApplicationLogger logger, Object ctx, String encryptedString, SecretKey secretKey) throws CryptoException
 	{
 		try
 		{
@@ -353,8 +345,7 @@ public class WorkAppUtil implements IUtil
 			String decryptedText = new String(decryptedByte);
 			return decryptedText;
 		}
-		catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException
-				| BadPaddingException ex)
+		catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException | BadPaddingException ex)
 		{
 			if (logger != null)
 				logger.LogException(ex, WorkAppUtil.class);
@@ -395,8 +386,7 @@ public class WorkAppUtil implements IUtil
 	 * @param outputFile
 	 * @throws CryptoException
 	 */
-	public static void encryptFile(IApplicationLogger logger, Object ctx, SecretKey secretKey, File inputFile,
-			File outputFile) throws CryptoException
+	public static void encryptFile(IApplicationLogger logger, Object ctx, SecretKey secretKey, File inputFile, File outputFile) throws CryptoException
 	{
 		doCryptoFile(logger, ctx, Cipher.ENCRYPT_MODE, secretKey, inputFile, outputFile);
 	}
@@ -410,14 +400,12 @@ public class WorkAppUtil implements IUtil
 	 * @param outputFile
 	 * @throws CryptoException
 	 */
-	public static void decryptFile(IApplicationLogger logger, Object ctx, SecretKey secretKey, File inputFile,
-			File outputFile) throws CryptoException
+	public static void decryptFile(IApplicationLogger logger, Object ctx, SecretKey secretKey, File inputFile, File outputFile) throws CryptoException
 	{
 		doCryptoFile(logger, ctx, Cipher.DECRYPT_MODE, secretKey, inputFile, outputFile);
 	}
 
-	private static void doCryptoFile(IApplicationLogger logger, Object ctx, int cipherMode, SecretKey secretKey,
-			File inputFile, File outputFile) throws CryptoException
+	private static void doCryptoFile(IApplicationLogger logger, Object ctx, int cipherMode, SecretKey secretKey, File inputFile, File outputFile) throws CryptoException
 	{
 		try
 		{
@@ -436,8 +424,7 @@ public class WorkAppUtil implements IUtil
 			inputStream.close();
 			outputStream.close();
 		}
-		catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException | BadPaddingException
-				| IllegalBlockSizeException | IOException ex)
+		catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException | BadPaddingException | IllegalBlockSizeException | IOException ex)
 		{
 			throw new CryptoException("doCryptoFile throws Error encrypting/decrypting file", ex);
 		}

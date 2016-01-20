@@ -32,11 +32,9 @@ public class WorkAppScriptRunnerUtilExample
 
 		try
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username,
-					password, logger);
+			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, logger);
 			conn = connections.getConnection();
-			WorkAppScriptRunnerUtil runner = (WorkAppScriptRunnerUtil) WorkAppScriptRunnerUtil.getInstance(conn, false,
-					false, logger);
+			WorkAppScriptRunnerUtil runner = (WorkAppScriptRunnerUtil) WorkAppScriptRunnerUtil.getInstance(conn, false, false, logger);
 
 			String file = "src/main/resources/mysql_schema.sql";
 			runner.runScript(new BufferedReader(new FileReader(file)));

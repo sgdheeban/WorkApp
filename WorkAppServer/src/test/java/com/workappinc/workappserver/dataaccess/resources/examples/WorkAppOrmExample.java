@@ -45,8 +45,7 @@ public class WorkAppOrmExample
 		String updateSQL = "update testdb.user set name =? " + "where name = ?";
 		try
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username,
-					password, logger);
+			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, logger);
 			conn = connections.getConnection();
 			Persist persist = new Persist(conn);
 			List<User> users = persist.readList(User.class, "select * from user where age > ?", 900);

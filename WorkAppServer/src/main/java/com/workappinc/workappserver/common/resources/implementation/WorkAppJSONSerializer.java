@@ -28,8 +28,7 @@ public class WorkAppJSONSerializer implements ISerializer
 	 * @return
 	 * @throws JSONSerializationException
 	 */
-	public synchronized static String serialize(Object pojo, IApplicationLogger logger)
-			throws JSONSerializationException
+	public synchronized static String serialize(Object pojo, IApplicationLogger logger) throws JSONSerializationException
 	{
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonInString = "";
@@ -61,8 +60,7 @@ public class WorkAppJSONSerializer implements ISerializer
 	 * @return
 	 * @throws JSONSerializationException
 	 */
-	public synchronized static String serializeInPrettyPrint(Object pojo, IApplicationLogger logger)
-			throws JSONSerializationException
+	public synchronized static String serializeInPrettyPrint(Object pojo, IApplicationLogger logger) throws JSONSerializationException
 	{
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonInString = "";
@@ -96,8 +94,7 @@ public class WorkAppJSONSerializer implements ISerializer
 	 * @return
 	 * @throws JSONSerializationException
 	 */
-	public synchronized static boolean serializeToFile(Object pojo, String jsonFilePath, IApplicationLogger logger)
-			throws JSONSerializationException
+	public synchronized static boolean serializeToFile(Object pojo, String jsonFilePath, IApplicationLogger logger) throws JSONSerializationException
 	{
 		ObjectMapper mapper = new ObjectMapper();
 		try
@@ -129,8 +126,7 @@ public class WorkAppJSONSerializer implements ISerializer
 	 * @return
 	 * @throws JSONSerializationException
 	 */
-	public synchronized static boolean serializeToFileInPrettyPrint(Object pojo, String jsonFilePath,
-			IApplicationLogger logger) throws JSONSerializationException
+	public synchronized static boolean serializeToFileInPrettyPrint(Object pojo, String jsonFilePath, IApplicationLogger logger) throws JSONSerializationException
 	{
 		ObjectMapper mapper = new ObjectMapper();
 		try
@@ -164,8 +160,7 @@ public class WorkAppJSONSerializer implements ISerializer
 	 * @return
 	 * @throws JSONSerializationException
 	 */
-	public synchronized static Object deSerialize(Object pojo, String json, Class<?> classname,
-			IApplicationLogger logger) throws JSONSerializationException
+	public synchronized static Object deSerialize(Object pojo, String json, Class<?> classname, IApplicationLogger logger) throws JSONSerializationException
 	{
 		ObjectMapper mapper = new ObjectMapper();
 		try
@@ -201,8 +196,7 @@ public class WorkAppJSONSerializer implements ISerializer
 	 * @return
 	 * @throws JSONSerializationException
 	 */
-	public synchronized static Object deSerializeFromFile(Object pojo, String jsonFilePath, Class<?> classname,
-			IApplicationLogger logger) throws JSONSerializationException
+	public synchronized static Object deSerializeFromFile(Object pojo, String jsonFilePath, Class<?> classname, IApplicationLogger logger) throws JSONSerializationException
 	{
 		ObjectMapper mapper = new ObjectMapper();
 		try

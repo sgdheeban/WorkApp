@@ -28,8 +28,7 @@ public class WorkAppScriptRunnerUtil implements IUtil
 	 * Regex to detect delimiter. ignores spaces, allows delimiter in comment,
 	 * allows an equals-sign
 	 */
-	public static final Pattern delimP = Pattern.compile("^\\s*(--)?\\s*delimiter\\s*=?\\s*([^\\s]+)+\\s*.*$",
-			Pattern.CASE_INSENSITIVE);
+	public static final Pattern delimP = Pattern.compile("^\\s*(--)?\\s*delimiter\\s*=?\\s*([^\\s]+)+\\s*.*$", Pattern.CASE_INSENSITIVE);
 
 	private static final String DEFAULT_DELIMITER = ";";
 	private final Connection connection;
@@ -41,8 +40,7 @@ public class WorkAppScriptRunnerUtil implements IUtil
 	private IApplicationLogger mLogger = null;
 	private static IUtil mInstance = null;
 
-	private WorkAppScriptRunnerUtil(Connection connection, boolean autoCommit, boolean stopOnError,
-			IApplicationLogger logger)
+	private WorkAppScriptRunnerUtil(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
 	{
 		this.connection = connection;
 		this.autoCommit = autoCommit;
@@ -55,8 +53,7 @@ public class WorkAppScriptRunnerUtil implements IUtil
 	 * 
 	 * @return
 	 */
-	public static IUtil getInstance(Connection connection, boolean autoCommit, boolean stopOnError,
-			IApplicationLogger logger)
+	public static IUtil getInstance(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
 	{
 		try
 		{
@@ -74,8 +71,7 @@ public class WorkAppScriptRunnerUtil implements IUtil
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppScriptRunnerUtil Class",
-					ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppScriptRunnerUtil Class", ex);
 		}
 	}
 
@@ -169,8 +165,7 @@ public class WorkAppScriptRunnerUtil implements IUtil
 					if (mLogger != null)
 						mLogger.LogDebug(trimmedLine, WorkAppScriptRunnerUtil.class);
 				}
-				else if (!fullLineDelimiter && trimmedLine.endsWith(getDelimiter())
-						|| fullLineDelimiter && trimmedLine.equals(getDelimiter()))
+				else if (!fullLineDelimiter && trimmedLine.endsWith(getDelimiter()) || fullLineDelimiter && trimmedLine.equals(getDelimiter()))
 				{
 					command.append(line.substring(0, line.lastIndexOf(getDelimiter())));
 					command.append(" ");
@@ -186,8 +181,7 @@ public class WorkAppScriptRunnerUtil implements IUtil
 					}
 					catch (SQLException ex)
 					{
-						final String errText = String.format("Error executing '%s' (line %d): %s", command,
-								lineReader.getLineNumber(), ex.getMessage());
+						final String errText = String.format("Error executing '%s' (line %d): %s", command, lineReader.getLineNumber(), ex.getMessage());
 						if (stopOnError)
 						{
 							if (mLogger != null)

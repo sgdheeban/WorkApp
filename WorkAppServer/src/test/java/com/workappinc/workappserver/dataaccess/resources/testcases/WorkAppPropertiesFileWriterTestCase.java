@@ -36,8 +36,7 @@ public class WorkAppPropertiesFileWriterTestCase
 			map.put("database", "localhost");
 			map.put("dbuser", "dheeban");
 			map.put("dbpassword", "password");
-			WorkAppPropertyFileWriter propertiesFileWriter = (WorkAppPropertyFileWriter) WorkAppPropertyFileWriter
-					.getInstance(logger);
+			WorkAppPropertyFileWriter propertiesFileWriter = (WorkAppPropertyFileWriter) WorkAppPropertyFileWriter.getInstance(logger);
 			logger.LogInfo("Printing Properties to FilePath", WorkAppPropertiesFileWriterExample.class);
 			propertiesFileWriter.writeToFile(writepath, map);
 			assertTrue(true);

@@ -46,8 +46,7 @@ public class WorkAppAllocationTrackerUtil
 			public void sampleAllocation(int count, String desc, Object newObj, long size)
 			{
 				if (logger != null)
-					logger.LogDebug("Allocated the object " + newObj + " of type " + desc + " whose size is " + size,
-							WorkAppAllocationTrackerUtil.class);
+					logger.LogDebug("Allocated the object " + newObj + " of type " + desc + " whose size is " + size, WorkAppAllocationTrackerUtil.class);
 				if (count != -1)
 				{
 					if (logger != null)
@@ -77,8 +76,7 @@ public class WorkAppAllocationTrackerUtil
 				public void sample(TestTracker t)
 				{
 					if (logger != null)
-						logger.LogDebug("Constructing an element of type TestTracker with x = " + t.x,
-								WorkAppAllocationTrackerUtil.class);
+						logger.LogDebug("Constructing an element of type TestTracker with x = " + t.x, WorkAppAllocationTrackerUtil.class);
 					TestTracker.count++;
 				}
 			});

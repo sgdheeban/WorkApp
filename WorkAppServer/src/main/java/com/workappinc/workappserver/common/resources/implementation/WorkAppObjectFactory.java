@@ -69,8 +69,7 @@ public class WorkAppObjectFactory implements IFactory
 		}
 		catch (Exception ex)
 		{
-			SingletonInitException singletonEx = new SingletonInitException(
-					"Error during Singleton Object Creation for WorkAppObjectFactory Class", ex);
+			SingletonInitException singletonEx = new SingletonInitException("Error during Singleton Object Creation for WorkAppObjectFactory Class", ex);
 			mLogger.LogException(singletonEx, WorkAppObjectFactory.class);
 			throw singletonEx;
 		}

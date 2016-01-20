@@ -80,8 +80,7 @@ public class WorkAppMainServer
 	 */
 	private static void setValuesFromConfig(String configFile, IApplicationLogger logger)
 	{
-		WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader
-				.getInstance(logger);
+		WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader.getInstance(logger);
 		Properties prop = propertiesFileReader.loadPropertyFromFileSystem(configFile);
 
 		if (mode == null)
@@ -247,9 +246,7 @@ public class WorkAppMainServer
 		// configuration
 		if (trackAllocation)
 		{
-			logger.LogDebug(
-					"Don't forgot to add JVM param -javaagent:<location-to>/java-allocation-instrumenter-3.0.jar",
-					WorkAppMainServer.class);
+			logger.LogDebug("Don't forgot to add JVM param -javaagent:<location-to>/java-allocation-instrumenter-3.0.jar", WorkAppMainServer.class);
 			// Track Heap Allocations
 			WorkAppAllocationTrackerUtil.trackHeapAllocation(logger);
 			// Track Custom Constructor Allocations (you can write your own

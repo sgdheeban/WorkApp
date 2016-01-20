@@ -44,8 +44,7 @@ public class WorkAppCommandLineOptionParser implements IParser
 		}
 		catch (Exception ex)
 		{
-			throw new SingletonInitException(
-					"Error during Singleton Object Creation for WorkAppCommandLineOptionParser Class", ex);
+			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppCommandLineOptionParser Class", ex);
 		}
 	}
 

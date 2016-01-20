@@ -24,8 +24,7 @@ public final class ResultSetIterator implements Iterator
 	public ResultSetIterator(final Persist persist, final Class objectClass, final ResultSet resultSet, final int type)
 	{
 
-		if (type != TYPE_OBJECT
-				&& type != TYPE_MAP) { throw new RuntimeSQLException("Invalid ResultSetIterator type: " + type); }
+		if (type != TYPE_OBJECT && type != TYPE_MAP) { throw new RuntimeSQLException("Invalid ResultSetIterator type: " + type); }
 
 		this.persist = persist;
 		this.objectClass = objectClass;
