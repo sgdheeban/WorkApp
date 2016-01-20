@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.jhades.JHades;
 
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
@@ -15,6 +16,7 @@ import com.workappinc.workappserver.common.resources.implementation.WorkAppAlloc
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppArgument;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
+import com.workappinc.workappserver.presentation.WorkAppRestServer;
 
 /**
  * 
@@ -66,12 +68,14 @@ public class WorkAppMainServer
 	/**
 	 * Private Static Variable Declaration
 	 */
-	private static  IApplicationLogger logger = null;
-	private static  String database = null;
-	private static  String dbUser = null;
-	private static  String dbPassword = null;
-	private static  String dbSchema = null;
-	
+	private static IApplicationLogger logger = null;
+	private static String database = null;
+	private static String dbUser = null;
+	private static String dbPassword = null;
+	private static String dbSchema = null;
+	private static final String REST_SERVICE = "rest";
+	private static final String THRIFT_SERVICE = "thrift";
+
 	/**
 	 * Print terminating condition and end program
 	 */
@@ -119,9 +123,9 @@ public class WorkAppMainServer
 		{
 			terminateWithMessage();
 		}
-		
+
 		// Read DBConfig to memory
-		if(dbConfigFile != null)
+		if (dbConfigFile != null)
 		{
 			Properties dbProp = propertiesFileReader.loadPropertyFromFileSystem(dbConfigFile);
 			database = dbProp.getProperty("database");
@@ -129,7 +133,7 @@ public class WorkAppMainServer
 			dbPassword = dbProp.getProperty("dbpassword");
 			dbSchema = dbProp.getProperty("dbschema");
 		}
-		
+
 		// Must be passed
 		if (database == null || dbUser == null || dbPassword == null || dbSchema == null)
 		{
@@ -293,6 +297,12 @@ public class WorkAppMainServer
 
 		// Start an Jetty-HTTP or Thrift server to serve requests - use
 		// mode/port info from config
+		if (mode.equalsIgnoreCase(REST_SERVICE))
+		{
+			WorkAppRestServer.startServer(port.intValue(), logger);
+		}
+
+		// new JHades().overlappingJarsReport();
 
 	}
 
