@@ -64,11 +64,21 @@ public class WorkAppMainServer
 	}
 
 	/**
+	 * Private Static Variable Declaration
+	 */
+	private static  IApplicationLogger logger = null;
+	private static  String database = null;
+	private static  String dbUser = null;
+	private static  String dbPassword = null;
+	private static  String dbSchema = null;
+	
+	/**
 	 * Print terminating condition and end program
 	 */
 	private static void terminateWithMessage()
 	{
 		WorkAppCommandLineArgsReader.usage(WorkAppMainServer.class);
+		System.err.println("Also please ensure you entered correct values for DBConfig file.");
 		System.exit(1);
 		return;
 	}
@@ -106,6 +116,22 @@ public class WorkAppMainServer
 
 		// Must be passed
 		if (mode == null || port == null || dbConfigFile == null)
+		{
+			terminateWithMessage();
+		}
+		
+		// Read DBConfig to memory
+		if(dbConfigFile != null)
+		{
+			Properties dbProp = propertiesFileReader.loadPropertyFromFileSystem(dbConfigFile);
+			database = dbProp.getProperty("database");
+			dbUser = dbProp.getProperty("dbuser");
+			dbPassword = dbProp.getProperty("dbpassword");
+			dbSchema = dbProp.getProperty("dbschema");
+		}
+		
+		// Must be passed
+		if (database == null || dbUser == null || dbPassword == null || dbSchema == null)
 		{
 			terminateWithMessage();
 		}
@@ -204,6 +230,10 @@ public class WorkAppMainServer
 		logger.LogDebug("trackAllocation:" + trackAllocation, WorkAppMainServer.class);
 		logger.LogDebug("dbConfigFile:" + dbConfigFile, WorkAppMainServer.class);
 		logger.LogDebug("schemaFile:" + schemaFile, WorkAppMainServer.class);
+		logger.LogDebug("database:" + database, WorkAppMainServer.class);
+		logger.LogDebug("dbUser:" + dbUser, WorkAppMainServer.class);
+		logger.LogDebug("dbPassword:" + dbPassword, WorkAppMainServer.class);
+		logger.LogDebug("dbSchema:" + dbSchema, WorkAppMainServer.class);
 	}
 
 	/**
@@ -214,8 +244,6 @@ public class WorkAppMainServer
 	 */
 	public static void main(String args[]) throws IOException
 	{
-		// Read Command-Line Options into Properties
-		IApplicationLogger logger = null;
 		@SuppressWarnings("unused")
 		final List<String> parse;
 
@@ -261,8 +289,9 @@ public class WorkAppMainServer
 		// Instantiate JSON Parser for reading any JSON Config
 		// Get an instance of Entity Layer
 		// Get an instance of Data Manager
+		// If SchemaFile not null, create schema using DB Utility
 
-		// Step10: Start an Jetty-HTTP or Thrift server to serve requests - use
+		// Start an Jetty-HTTP or Thrift server to serve requests - use
 		// mode/port info from config
 
 	}
