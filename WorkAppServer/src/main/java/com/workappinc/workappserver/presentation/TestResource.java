@@ -1,22 +1,26 @@
 package com.workappinc.workappserver.presentation;
 
+import java.util.HashMap;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.workappinc.workappserver.businesslogic.main.WorkAppMainServer;
 import com.workappinc.workappserver.businesslogic.model.TestUserInfo;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 
 @Path("/users")
 public class TestResource implements IResource
 {
-	private static WorkAppMainServer _server;
+	private static WorkAppMySQLConnectionManager _connections;
+	private static HashMap<String, Object> _configMap;
 
-	public static void initResources()
+	public static void initResource(WorkAppMySQLConnectionManager connections, HashMap<String, Object> configMap)
 	{
-
+		_connections = connections;
+		_configMap = configMap;
 	}
 
 	@GET

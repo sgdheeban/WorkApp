@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 
@@ -19,8 +20,12 @@ import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.common.resources.implementation.WorkAppAllocationTrackerUtil;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppArgument;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppScriptRunnerUtil;
+import com.workappinc.workappserver.presentation.TestResource;
+import com.workappinc.workappserver.presentation.WorkAppCoreResource;
+import com.workappinc.workappserver.presentation.WorkAppPageResource;
 import com.workappinc.workappserver.presentation.WorkAppRestServer;
 
 /**
@@ -84,6 +89,8 @@ public class WorkAppMainServer
 	private static int dbPoolSize = -1;
 	private static final String REST_SERVICE = "rest";
 	private static final String THRIFT_SERVICE = "thrift";
+	private static WorkAppMySQLConnectionManager connections = null;
+	private static final HashMap<String, Object> configMap = new HashMap<String, Object>();
 
 	/**
 	 * Print terminating condition and end program
@@ -263,6 +270,29 @@ public class WorkAppMainServer
 	}
 
 	/**
+	 * Populate startup config values to pass in a map
+	 * 
+	 * @param logger
+	 */
+	private static void populateConfigValues()
+	{
+		configMap.put("configFile:", configFile);
+		configMap.put("log4jPropFile:", log4jPropFile);
+		configMap.put("logLevel:", logLevel);
+		configMap.put("mode:", mode);
+		configMap.put("port:", port);
+		configMap.put("trackAllocation:", trackAllocation);
+		configMap.put("detectJARClash:", detectJARClash);
+		configMap.put("dbConfigFile:", dbConfigFile);
+		configMap.put("schemaFile:", schemaFile);
+		configMap.put("database:", database);
+		configMap.put("dbUser:", dbUser);
+		configMap.put("dbPassword:", dbPassword);
+		configMap.put("dbSchema:", dbSchema);
+		configMap.put("dbPoolSize:", dbPoolSize);
+	}
+
+	/**
 	 * Static Main method called on start of the executable, instantiates the
 	 * server
 	 * 
@@ -295,6 +325,7 @@ public class WorkAppMainServer
 		// command line
 		setValuesFromConfig(configFile, logger);
 		printConfigValues(logger);
+		populateConfigValues();
 
 		// Detect JAR Clash and stop
 		if (detectJARClash)
@@ -305,7 +336,6 @@ public class WorkAppMainServer
 		}
 
 		// If SchemaFile not null, create schema using DB Utility and stop
-		// Change from singleton to prototype for WorkAppScriptRunner
 		if (schemaFile != null)
 		{
 			if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
@@ -348,7 +378,11 @@ public class WorkAppMainServer
 		// Pass this reference to Service Layer
 		if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
 		{
-
+			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(database, dbUser, dbPassword, dbPoolSize, logger);
+			TestResource.initResource(connections, configMap); // For Testing
+																// Purpose Only
+			WorkAppCoreResource.initResource(connections, configMap);
+			WorkAppPageResource.initResource(connections, configMap);
 		}
 
 		// Start an Jetty-HTTP or Thrift server to serve requests - use
