@@ -285,15 +285,16 @@ public class WorkAppMainServer
 			// constructor method to track like below example)
 			// WorkAppAllocationTrackerUtil.trackConstructorAllocationTest(logger);
 		}
-
-		// Instantiate Essentials -
-		// Get an instance of Connection Manager - use connection-string from
-		// dbconfig
-		// Get an instance of SQL Query Generator
-		// Instantiate JSON Parser for reading any JSON Config
-		// Get an instance of Entity Layer
-		// Get an instance of Data Manager
-		// If SchemaFile not null, create schema using DB Utility
+		
+		// If detectOverlap not null, run following and stop
+			// new JHades().overlappingJarsReport();
+		
+		// If DB config not null - Instantiate Essentials 
+			// Get an instance of Connection Manager - use connection-string from dbconfig		
+			// Pass this reference to Service Layer
+		
+		// If SchemaFile not null, create schema using DB Utility and stop
+			// Change from singleton to prototype for WorkAppScriptRunner
 
 		// Start an Jetty-HTTP or Thrift server to serve requests - use
 		// mode/port info from config
@@ -302,7 +303,7 @@ public class WorkAppMainServer
 			WorkAppRestServer.startServer(port.intValue(), logger);
 		}
 
-		// new JHades().overlappingJarsReport();
+		
 
 	}
 
