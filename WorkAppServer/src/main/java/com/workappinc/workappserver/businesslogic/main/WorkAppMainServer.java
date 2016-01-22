@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.List;
 import java.util.Properties;
 
@@ -18,10 +17,8 @@ import org.jhades.JHades;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.common.resources.implementation.WorkAppAllocationTrackerUtil;
-import com.workappinc.workappserver.dataaccess.resources.examples.WorkAppScriptRunnerUtilExample;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppArgument;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
-import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppScriptRunnerUtil;
 import com.workappinc.workappserver.presentation.WorkAppRestServer;

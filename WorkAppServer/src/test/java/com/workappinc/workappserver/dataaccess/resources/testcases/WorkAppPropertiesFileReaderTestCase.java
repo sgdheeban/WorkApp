@@ -43,8 +43,8 @@ public class WorkAppPropertiesFileReaderTestCase
 		String fileSystemPath = "/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties";
 		WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader.getInstance(logger);
 		Properties prop = propertiesFileReader.loadPropertyFromFileSystem(fileSystemPath);
-		assertEquals("localhost", prop.getProperty("database"));
-		assertEquals("dheeban", prop.getProperty("dbuser"));
+		assertEquals("jdbc:mysql://localhost:3306/", prop.getProperty("database"));
+		assertEquals("root", prop.getProperty("dbuser"));
 		assertEquals("password", prop.getProperty("dbpassword"));
 	}
 
