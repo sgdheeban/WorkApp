@@ -45,15 +45,17 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 	 *            to access MySQL database
 	 * @throws ClassNotFoundException
 	 */
-	private WorkAppMySQLConnectionManager(String url, String user, String password, IApplicationLogger logger) throws ClassNotFoundException
+	private WorkAppMySQLConnectionManager(String url, String user, String password, int poolsize, IApplicationLogger logger) throws ClassNotFoundException
 	{
 		Class.forName(dbClass);
 		this.url = url;
 		this.user = user;
 		this.password = password;
 		this.mLogger = logger;
+		if(poolsize != -1)
+			this.poolsize = poolsize;
 		mLogger.LogDebug("Attempting to connect to db at: " + url, WorkAppMySQLConnectionManager.class);
-		connections = new Vector<WorkAppJDBCConnection>(poolsize);
+		connections = new Vector<WorkAppJDBCConnection>(this.poolsize);
 		verifier = new ConnectionVerifier();
 		verifier.start();
 	}
@@ -63,7 +65,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 	 * 
 	 * @return
 	 */
-	public static IConnectionManager getInstance(String url, String user, String password, IApplicationLogger logger)
+	public static IConnectionManager getInstance(String url, String user, String password, int poolsize, IApplicationLogger logger)
 	{
 		try
 		{
@@ -73,7 +75,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 				{
 					if (mInstance == null)
 					{
-						mInstance = new WorkAppMySQLConnectionManager(url, user, password, logger);
+						mInstance = new WorkAppMySQLConnectionManager(url, user, password, poolsize, logger);
 					}
 				}
 			}

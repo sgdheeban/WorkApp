@@ -109,7 +109,7 @@ public class WorkAppMySQLConnectionManagerExample
 		ResultSet resultSet = null;
 		try
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, logger);
+			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
 			conn = getConnection(logger);
 			stmnt = conn.createStatement();
 			resultSet = stmnt.executeQuery(query);
@@ -161,7 +161,7 @@ public class WorkAppMySQLConnectionManagerExample
 
 		try
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, logger);
+			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
 			conn = getConnection(logger);
 
 			// INSERT Query
@@ -279,7 +279,7 @@ public class WorkAppMySQLConnectionManagerExample
 
 		try
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, logger);
+			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
 			conn = getConnection(logger);
 
 			conn.setAutoCommit(false); // transaction block start

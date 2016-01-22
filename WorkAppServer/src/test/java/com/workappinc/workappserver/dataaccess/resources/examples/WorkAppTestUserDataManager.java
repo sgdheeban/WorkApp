@@ -48,7 +48,7 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 		sdf = new SimpleDateFormat("HH:mm:sss");
 
 		mLogger = logger;
-		connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, logger);
+		connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
 
 		loggingTimer = new Timer(); // Instantiate logging timer
 		loggingTimer.scheduleAtFixedRate(this, 100000, 100000); // Start logging

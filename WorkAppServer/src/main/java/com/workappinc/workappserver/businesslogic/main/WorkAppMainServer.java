@@ -42,6 +42,9 @@ public class WorkAppMainServer
 	@WorkAppArgument(alias = "t", description = "Track Allocations")
 	private static Boolean trackAllocation;
 
+	@WorkAppArgument(alias = "dj", description = "Detect JAR Clash")
+	private static Boolean detectJARClash;
+	
 	@WorkAppArgument(alias = "s", description = "DB Schema File Location")
 	private static String schemaFile;
 
@@ -73,6 +76,7 @@ public class WorkAppMainServer
 	private static String dbUser = null;
 	private static String dbPassword = null;
 	private static String dbSchema = null;
+	private static int dbPoolSize = -1;
 	private static final String REST_SERVICE = "rest";
 	private static final String THRIFT_SERVICE = "thrift";
 
@@ -109,6 +113,10 @@ public class WorkAppMainServer
 		{
 			trackAllocation = Boolean.parseBoolean(prop.getProperty("trackAllocation"));
 		}
+		if (detectJARClash == null)
+		{
+			detectJARClash = Boolean.parseBoolean(prop.getProperty("detectJARClash"));
+		}
 		if (dbConfigFile == null)
 		{
 			dbConfigFile = prop.getProperty("dbConfigFile");
@@ -132,6 +140,9 @@ public class WorkAppMainServer
 			dbUser = dbProp.getProperty("dbuser");
 			dbPassword = dbProp.getProperty("dbpassword");
 			dbSchema = dbProp.getProperty("dbschema");
+			if(dbProp.getProperty("dbpoolsize") != null)
+				dbPoolSize = Integer.parseInt(dbProp.getProperty("dbpoolsize"));
+			
 		}
 
 		// Must be passed
@@ -232,12 +243,14 @@ public class WorkAppMainServer
 		logger.LogDebug("mode:" + mode, WorkAppMainServer.class);
 		logger.LogDebug("port:" + port, WorkAppMainServer.class);
 		logger.LogDebug("trackAllocation:" + trackAllocation, WorkAppMainServer.class);
+		logger.LogDebug("detectJARClash:" + detectJARClash, WorkAppMainServer.class);
 		logger.LogDebug("dbConfigFile:" + dbConfigFile, WorkAppMainServer.class);
 		logger.LogDebug("schemaFile:" + schemaFile, WorkAppMainServer.class);
 		logger.LogDebug("database:" + database, WorkAppMainServer.class);
 		logger.LogDebug("dbUser:" + dbUser, WorkAppMainServer.class);
 		logger.LogDebug("dbPassword:" + dbPassword, WorkAppMainServer.class);
 		logger.LogDebug("dbSchema:" + dbSchema, WorkAppMainServer.class);
+		logger.LogDebug("dbPoolSize:" + dbPoolSize, WorkAppMainServer.class);
 	}
 
 	/**
@@ -273,6 +286,15 @@ public class WorkAppMainServer
 		// command line
 		setValuesFromConfig(configFile, logger);
 		printConfigValues(logger);
+		
+		//Detect JAR Clash and stop
+		if(detectJARClash)
+		{
+			new JHades().overlappingJarsReport();
+			System.err.println("Please ensure JAR dependency clashes are cleaned up.\n");
+			System.exit(1);
+			return;
+		}
 
 		// Get an Instance of Object Allocation Tracker - if mode on from
 		// configuration
@@ -286,12 +308,13 @@ public class WorkAppMainServer
 			// WorkAppAllocationTrackerUtil.trackConstructorAllocationTest(logger);
 		}
 		
-		// If detectOverlap not null, run following and stop
-			// new JHades().overlappingJarsReport();
-		
 		// If DB config not null - Instantiate Essentials 
 			// Get an instance of Connection Manager - use connection-string from dbconfig		
 			// Pass this reference to Service Layer
+		if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
+		{
+			
+		}
 		
 		// If SchemaFile not null, create schema using DB Utility and stop
 			// Change from singleton to prototype for WorkAppScriptRunner
