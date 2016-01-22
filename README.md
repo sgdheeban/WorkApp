@@ -5,12 +5,12 @@ Client-Server Codebase for WorkApp, a platform for connecting talents with custo
 
 * Linux (Preferred) or Windows 
 * Java 8 Update 40 or higher (8u40+), 64-bit
-* Maven 3.2.3+ (for building)
+* Maven 3.3.9 (for building)
 * Python 2.4+ (for running with the launcher script)
 
 ## Create MySQL schema
 
-Create the following test database and table in MySQL for successful execution of Examples and JUnit tests (Ensure the MySQL server is up and running). Alternatively, you can use the --createMySQLSchema option through the commandline option args, and generate the schema listed in the mysql_schema.sql under the config folder in the root directory of WorkAppServer project (this includes the test db and table). To understand more about using WorkAppScriptRunnerUtil, refer to WorkAppServer/WorkAppScriptRunnerInstruction.md in the project. To execute ORM related testcases and examples, create the tables using the mysql_schema_orm_test.sql in the WorkAppServer/src/main/resources folder. To understand more about WorkApp's ORM Engine, refer to WorkAppServer/WorkAppOrmInstruction.md.
+Create the following test database and table in MySQL for successful execution of Examples and JUnit tests (Ensure the MySQL server is up and running). Alternatively, you can use the --schemaFile option through the commandline option args, and generate the schema listed in the workapp_mysql_schema.sql under the config folder in the root directory of WorkAppServer project (this includes the test db and table). To understand more about using WorkAppScriptRunnerUtil, refer to WorkAppServer/WorkAppScriptRunnerInstruction.md in the project. To execute ORM related testcases and examples, create the tables using the mysql_schema_orm_test.sql in the WorkAppServer/src/main/resources folder. To understand more about WorkApp's ORM Engine, refer to WorkAppServer/WorkAppOrmInstruction.md. Check WorkApp/WorkAppServer/config/dev_config.properties for options.
 
     CREATE DATABASE testdb IF NOT EXISTS;
     USE testdb;
@@ -43,6 +43,7 @@ After opening the project in Eclipse IDE, double check that the Java SDK is prop
 WorkApp comes with sample configuration that should work out-of-the-box for development. Use the following options to create a run configuration:
 
 * Main Class: `com.workappinc.workapp.server.WorkAppServer`
+* Command Line Options (Check Main method for More options): `-c /home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties -lp /home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties -l debug`
 * VM Options: `-ea -Xmx2G`
 * VM Options for enabling Allocation Tracker : `-javaagent:local-maven-repo-path-to-jar/java-allocation-instrumenter-3.0.jar`
 * VM Options for enabling Allocation Tracker-Example: `-javaagent:/home/dhgovindaraj/.m2/repository/com/google/code/java-allocation-instrumenter/java-allocation-instrumenter/3.0/java-allocation-instrumenter-3.0.jar`
