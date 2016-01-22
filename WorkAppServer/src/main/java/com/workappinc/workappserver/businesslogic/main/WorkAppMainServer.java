@@ -1,8 +1,13 @@
 package com.workappinc.workappserver.businesslogic.main;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Properties;
 
@@ -13,9 +18,12 @@ import org.jhades.JHades;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.common.resources.implementation.WorkAppAllocationTrackerUtil;
+import com.workappinc.workappserver.dataaccess.resources.examples.WorkAppScriptRunnerUtilExample;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppArgument;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
+import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppScriptRunnerUtil;
 import com.workappinc.workappserver.presentation.WorkAppRestServer;
 
 /**
@@ -87,6 +95,11 @@ public class WorkAppMainServer
 	{
 		WorkAppCommandLineArgsReader.usage(WorkAppMainServer.class);
 		System.err.println("Also please ensure you entered correct values for DBConfig file.");
+		terminate();
+	}
+
+	private static void terminate()
+	{
 		System.exit(1);
 		return;
 	}
@@ -142,7 +155,6 @@ public class WorkAppMainServer
 			dbSchema = dbProp.getProperty("dbschema");
 			if(dbProp.getProperty("dbpoolsize") != null)
 				dbPoolSize = Integer.parseInt(dbProp.getProperty("dbpoolsize"));
-			
 		}
 
 		// Must be passed
@@ -292,10 +304,36 @@ public class WorkAppMainServer
 		{
 			new JHades().overlappingJarsReport();
 			System.err.println("Please ensure JAR dependency clashes are cleaned up.\n");
-			System.exit(1);
-			return;
+			terminate();
 		}
 
+		// If SchemaFile not null, create schema using DB Utility and stop
+		// Change from singleton to prototype for WorkAppScriptRunner
+		if(schemaFile != null)
+		{
+			if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
+			{
+				try
+				{
+					String dbClass = "com.mysql.jdbc.Driver";
+					Class.forName(dbClass);
+					Connection connection = DriverManager.getConnection(database, dbUser, dbPassword);
+					WorkAppScriptRunnerUtil runner = new WorkAppScriptRunnerUtil(connection, false, false, logger);
+					runner.runScript(new BufferedReader(new FileReader(schemaFile)));
+					connection.close();
+				}
+				catch (Exception ex)
+				{
+					logger.LogException(ex, WorkAppMainServer.class);
+					System.err.println("Error executing Schema File. Please Check File or DB Connection.\n");
+				}
+			}
+			else
+				System.err.println("Please ensure you have provided schemaFile and DB Config details. \n");
+			
+			terminate();		
+		}
+		
 		// Get an Instance of Object Allocation Tracker - if mode on from
 		// configuration
 		if (trackAllocation)
@@ -315,9 +353,6 @@ public class WorkAppMainServer
 		{
 			
 		}
-		
-		// If SchemaFile not null, create schema using DB Utility and stop
-			// Change from singleton to prototype for WorkAppScriptRunner
 
 		// Start an Jetty-HTTP or Thrift server to serve requests - use
 		// mode/port info from config

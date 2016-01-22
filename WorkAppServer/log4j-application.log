@@ -6541,3 +6541,187 @@ Pv±UáÓÜ/ß¦\0¬0’·ˆÍ*”EgÊù)×²?8cÛ„f‰j©q!ùÃÒ	8ã
 2016-01-21 18:23:10 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:6634 STARTED @9144ms ServerConnector@54c5a2ff{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
 2016-01-21 18:23:10 INFO  Server:391 dhgovindaraj-VirtualBox:6634 Started @9146ms
 2016-01-21 18:23:10 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:6634 STARTED @9148ms org.eclipse.jetty.server.Server@29215f06
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 logLevel:debug
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 mode:rest
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 port:8080
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 trackAllocation:false
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 detectJARClash:false
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 database:jdbc:mysql://localhost:3306/
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 dbUser:dheeban
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 dbPassword:password
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 dbSchema:testdb
+2016-01-21 20:27:36 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3490 dbPoolSize:20
+2016-01-21 20:28:07 INFO  WorkAppMainServer:96 dhgovindaraj-VirtualBox:3490  [ Access denied for user 'dheeban'@'localhost' (using password: YES) ]  - Stacktrace : java.sql.SQLException: Access denied for user 'dheeban'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1073)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3597)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3529)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:935)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:4101)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1300)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2337)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2370)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2154)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:792)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:381)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:320)
+
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 logLevel:debug
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 mode:rest
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 port:8080
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 trackAllocation:false
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 detectJARClash:false
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 database:jdbc:mysql://localhost:3306/
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 dbUser:root
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 dbPassword:password
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 dbSchema:testdb
+2016-01-21 20:28:28 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3561 dbPoolSize:20
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 ERROR WorkAppScriptRunnerUtil:108 dhgovindaraj-VirtualBox:3561 Error executing 'drop databases if exists `workapp`  ' (line 1): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databases if exists `workapp`' at line 1
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 ERROR WorkAppScriptRunnerUtil:108 dhgovindaraj-VirtualBox:3561 Error executing 'create table customer (
+	id bigint,
+	email text,
+	mobile bigint,
+	password text,
+	firstname text,
+	middlename text,
+	lastname text,
+	primary key (id, email, mobile, firstname, lastname)
+) ' (line 16): BLOB/TEXT column 'email' used in key specification without a key length
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:28:39 ERROR WorkAppScriptRunnerUtil:108 dhgovindaraj-VirtualBox:3561 Error executing 'create table developer (
+	id bigint,
+	email text,
+	mobile bigint,
+	password text,
+	firstname text,
+	middlename text,
+	lastname text,
+	primary key (id, email, mobile, firstname, lastname)
+) ' (line 28): BLOB/TEXT column 'email' used in key specification without a key length
+2016-01-21 20:28:39 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3561 
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 logLevel:debug
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 mode:rest
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 port:8080
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 trackAllocation:false
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 detectJARClash:false
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 database:jdbc:mysql://localhost:3306/
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 dbUser:root
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 dbPassword:password
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 dbSchema:testdb
+2016-01-21 20:30:12 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3614 dbPoolSize:20
+2016-01-21 20:30:14 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3614 
+2016-01-21 20:30:14 ERROR WorkAppScriptRunnerUtil:108 dhgovindaraj-VirtualBox:3614 Error executing 'drop databases if exists `workapp`  ' (line 1): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databases if exists `workapp`' at line 1
+2016-01-21 20:30:14 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3614 
+2016-01-21 20:30:14 ERROR WorkAppScriptRunnerUtil:108 dhgovindaraj-VirtualBox:3614 Error executing 'create database `workapp` ' (line 2): Can't create database 'workapp'; database exists
+2016-01-21 20:30:14 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3614 
+2016-01-21 20:30:14 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3614 
+2016-01-21 20:30:14 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3614 
+2016-01-21 20:30:14 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3614 
+2016-01-21 20:30:14 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3614 
+2016-01-21 20:30:14 ERROR WorkAppScriptRunnerUtil:108 dhgovindaraj-VirtualBox:3614 Error executing 'create table user (
+	id bigint,
+	email text,
+	primary key (id, email)
+) ' (line 11): BLOB/TEXT column 'email' used in key specification without a key length
+2016-01-21 20:30:14 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3614 
+2016-01-21 20:30:14 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3614 
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 logLevel:debug
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 mode:rest
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 port:8080
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 trackAllocation:false
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 detectJARClash:false
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 database:jdbc:mysql://localhost:3306/
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 dbUser:root
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 dbPassword:password
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 dbSchema:testdb
+2016-01-21 20:30:30 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3635 dbPoolSize:20
+2016-01-21 20:30:31 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3635 
+2016-01-21 20:30:31 ERROR WorkAppScriptRunnerUtil:108 dhgovindaraj-VirtualBox:3635 Error executing 'drop databases if exists `workapp`  ' (line 1): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databases if exists `workapp`' at line 1
+2016-01-21 20:30:31 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3635 
+2016-01-21 20:30:31 ERROR WorkAppScriptRunnerUtil:108 dhgovindaraj-VirtualBox:3635 Error executing 'create database `workapp` ' (line 2): Can't create database 'workapp'; database exists
+2016-01-21 20:30:31 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3635 
+2016-01-21 20:30:31 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3635 
+2016-01-21 20:30:31 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3635 
+2016-01-21 20:30:31 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3635 
+2016-01-21 20:30:31 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3635 
+2016-01-21 20:30:31 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3635 
+2016-01-21 20:30:31 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3635 
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 logLevel:debug
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 mode:rest
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 port:8080
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 trackAllocation:false
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 detectJARClash:false
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 database:jdbc:mysql://localhost:3306/
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 dbUser:root
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 dbPassword:password
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 dbSchema:testdb
+2016-01-21 20:30:57 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3656 dbPoolSize:20
+2016-01-21 20:30:59 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3656 
+2016-01-21 20:30:59 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3656 
+2016-01-21 20:30:59 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3656 
+2016-01-21 20:30:59 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3656 
+2016-01-21 20:30:59 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3656 
+2016-01-21 20:30:59 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3656 
+2016-01-21 20:30:59 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3656 
+2016-01-21 20:30:59 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3656 
+2016-01-21 20:30:59 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3656 
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 logLevel:debug
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 mode:rest
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 port:8080
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 trackAllocation:false
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 detectJARClash:false
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 database:jdbc:mysql://localhost:3306/
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 dbUser:root
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 dbPassword:password
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 dbSchema:testdb
+2016-01-21 20:33:09 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:3703 dbPoolSize:20
+2016-01-21 20:33:11 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3703 
+2016-01-21 20:33:11 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3703 
+2016-01-21 20:33:11 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3703 
+2016-01-21 20:33:11 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3703 
+2016-01-21 20:33:11 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3703 // test
+2016-01-21 20:33:11 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3703 
+2016-01-21 20:33:11 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3703 
+2016-01-21 20:33:11 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3703 
+2016-01-21 20:33:11 DEBUG WorkAppScriptRunnerUtil:128 dhgovindaraj-VirtualBox:3703 

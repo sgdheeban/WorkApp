@@ -38,41 +38,13 @@ public class WorkAppScriptRunnerUtil implements IUtil
 	private boolean fullLineDelimiter = false;
 
 	private IApplicationLogger mLogger = null;
-	private static IUtil mInstance = null;
-
-	private WorkAppScriptRunnerUtil(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
+	
+	public WorkAppScriptRunnerUtil(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
 	{
 		this.connection = connection;
 		this.autoCommit = autoCommit;
 		this.stopOnError = stopOnError;
 		this.mLogger = logger;
-	}
-
-	/**
-	 * getInstance method is used to get a singleton object
-	 * 
-	 * @return
-	 */
-	public static IUtil getInstance(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
-	{
-		try
-		{
-			if (mInstance == null)
-			{
-				synchronized (WorkAppScriptRunnerUtil.class)
-				{
-					if (mInstance == null)
-					{
-						mInstance = new WorkAppScriptRunnerUtil(connection, autoCommit, stopOnError, logger);
-					}
-				}
-			}
-			return mInstance;
-		}
-		catch (Exception ex)
-		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppScriptRunnerUtil Class", ex);
-		}
 	}
 
 	public void setDelimiter(String delimiter, boolean fullLineDelimiter)

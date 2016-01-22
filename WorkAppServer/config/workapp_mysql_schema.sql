@@ -1,26 +1,15 @@
+// Creating WorkApp DB and Tables
+
+drop database if exists `workapp` ;
 create database `workapp`;
 use workapp;
 grant all privileges on workapp.* to 'user'@'%' identified by 'user';
 
-create table customer (
+drop table if exists `user` ;
+create table user (
 	id bigint,
-	email text,
-	mobile bigint,
-	password text,
-	firstname text,
-	middlename text,
-	lastname text,
-	primary key (id, email, mobile, firstname, lastname)
+	email varchar(11),
+	primary key (id, email)
 );
 
-create table developer (
-	id bigint,
-	email text,
-	mobile bigint,
-	password text,
-	firstname text,
-	middlename text,
-	lastname text,
-	primary key (id, email, mobile, firstname, lastname)
-);
 
