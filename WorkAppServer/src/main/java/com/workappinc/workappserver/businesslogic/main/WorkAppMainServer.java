@@ -49,7 +49,7 @@ public class WorkAppMainServer
 
 	@WorkAppArgument(alias = "dj", description = "Detect JAR Clash")
 	private static Boolean detectJARClash;
-	
+
 	@WorkAppArgument(alias = "s", description = "DB Schema File Location")
 	private static String schemaFile;
 
@@ -150,7 +150,7 @@ public class WorkAppMainServer
 			dbUser = dbProp.getProperty("dbuser");
 			dbPassword = dbProp.getProperty("dbpassword");
 			dbSchema = dbProp.getProperty("dbschema");
-			if(dbProp.getProperty("dbpoolsize") != null)
+			if (dbProp.getProperty("dbpoolsize") != null)
 				dbPoolSize = Integer.parseInt(dbProp.getProperty("dbpoolsize"));
 		}
 
@@ -295,9 +295,9 @@ public class WorkAppMainServer
 		// command line
 		setValuesFromConfig(configFile, logger);
 		printConfigValues(logger);
-		
-		//Detect JAR Clash and stop
-		if(detectJARClash)
+
+		// Detect JAR Clash and stop
+		if (detectJARClash)
 		{
 			new JHades().overlappingJarsReport();
 			System.err.println("Please ensure JAR dependency clashes are cleaned up.\n");
@@ -306,7 +306,7 @@ public class WorkAppMainServer
 
 		// If SchemaFile not null, create schema using DB Utility and stop
 		// Change from singleton to prototype for WorkAppScriptRunner
-		if(schemaFile != null)
+		if (schemaFile != null)
 		{
 			if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
 			{
@@ -325,12 +325,11 @@ public class WorkAppMainServer
 					System.err.println("Error executing Schema File. Please Check File or DB Connection.\n");
 				}
 			}
-			else
-				System.err.println("Please ensure you have provided schemaFile and DB Config details. \n");
-			
-			terminate();		
+			else System.err.println("Please ensure you have provided schemaFile and DB Config details. \n");
+
+			terminate();
 		}
-		
+
 		// Get an Instance of Object Allocation Tracker - if mode on from
 		// configuration
 		if (trackAllocation)
@@ -342,13 +341,14 @@ public class WorkAppMainServer
 			// constructor method to track like below example)
 			// WorkAppAllocationTrackerUtil.trackConstructorAllocationTest(logger);
 		}
-		
-		// If DB config not null - Instantiate Essentials 
-			// Get an instance of Connection Manager - use connection-string from dbconfig		
-			// Pass this reference to Service Layer
+
+		// If DB config not null - Instantiate Essentials
+		// Get an instance of Connection Manager - use connection-string from
+		// dbconfig
+		// Pass this reference to Service Layer
 		if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
 		{
-			
+
 		}
 
 		// Start an Jetty-HTTP or Thrift server to serve requests - use
@@ -357,8 +357,6 @@ public class WorkAppMainServer
 		{
 			WorkAppRestServer.startServer(port.intValue(), logger);
 		}
-
-		
 
 	}
 

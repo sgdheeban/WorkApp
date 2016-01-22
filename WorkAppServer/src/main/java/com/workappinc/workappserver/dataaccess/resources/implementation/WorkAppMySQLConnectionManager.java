@@ -52,7 +52,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 		this.user = user;
 		this.password = password;
 		this.mLogger = logger;
-		if(poolsize != -1)
+		if (poolsize != -1)
 			this.poolsize = poolsize;
 		mLogger.LogDebug("Attempting to connect to db at: " + url, WorkAppMySQLConnectionManager.class);
 		connections = new Vector<WorkAppJDBCConnection>(this.poolsize);

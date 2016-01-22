@@ -13,12 +13,12 @@ import com.workappinc.workappserver.businesslogic.model.TestUserInfo;
 public class TestResource implements IResource
 {
 	private static WorkAppMainServer _server;
-	
+
 	public static void initResources()
 	{
-		
+
 	}
-	
+
 	@GET
 	@Path("{userId}")
 	@Produces(MediaType.APPLICATION_JSON)

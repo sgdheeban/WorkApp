@@ -38,7 +38,7 @@ public class WorkAppScriptRunnerUtil implements IUtil
 	private boolean fullLineDelimiter = false;
 
 	private IApplicationLogger mLogger = null;
-	
+
 	public WorkAppScriptRunnerUtil(Connection connection, boolean autoCommit, boolean stopOnError, IApplicationLogger logger)
 	{
 		this.connection = connection;
