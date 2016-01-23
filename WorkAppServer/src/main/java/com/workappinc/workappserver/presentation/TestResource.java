@@ -14,15 +14,6 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppM
 @Path("/users")
 public class TestResource implements IResource
 {
-	private static WorkAppMySQLConnectionManager _connections;
-	private static HashMap<String, Object> _configMap;
-
-	public static void initResource(WorkAppMySQLConnectionManager connections, HashMap<String, Object> configMap)
-	{
-		_connections = connections;
-		_configMap = configMap;
-	}
-
 	@GET
 	@Path("{userId}")
 	@Produces(MediaType.APPLICATION_JSON)

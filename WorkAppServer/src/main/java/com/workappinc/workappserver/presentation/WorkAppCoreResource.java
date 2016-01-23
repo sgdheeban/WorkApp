@@ -2,6 +2,7 @@ package com.workappinc.workappserver.presentation;
 
 import java.util.HashMap;
 
+import javax.ws.rs.Path;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 
@@ -14,22 +15,9 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppM
  * @author dhgovindaraj
  *
  */
+@Path("/core/v1/")
 public class WorkAppCoreResource implements IResource
 {
-
-	private static WorkAppMySQLConnectionManager _connections;
-	private static HashMap<String, Object> _configMap;
-
-	/**
-	 * Loads Common Resources as Static references
-	 * 
-	 * @param connections
-	 */
-	public static void initResource(WorkAppMySQLConnectionManager connections, HashMap<String, Object> configMap)
-	{
-		_connections = connections;
-		_configMap = configMap;
-	}
 
 	/**
 	 * Registers new User

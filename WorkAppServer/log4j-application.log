@@ -13380,3 +13380,106 @@ wûuI›4\'ÎÂ-¤&5¹+Ï{	%ÿ>î“æ*ÙÅô2!Å¦¤7¦Ž–\"÷ç×\0,ý‰
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
 2016-01-22 00:06:22 INFO  WorkAppLoggerTestCase:89 dhgovindaraj-VirtualBox:6435  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-01-22 12:06:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-01-22 12:06:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-01-22 12:06:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 logLevel:debug
+2016-01-22 12:06:26 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 mode:rest
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 port:8080
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 trackAllocation:false
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 detectJARClash:false
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 schemaFile:null
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 database:jdbc:mysql://localhost:3306/
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 dbUser:root
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 dbPassword:password
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 dbSchema:testdb
+2016-01-22 12:06:27 DEBUG WorkAppMainServer:128 dhgovindaraj-VirtualBox:2806 dbPoolSize:20
+2016-01-22 12:06:27 DEBUG WorkAppMySQLConnectionManager:128 dhgovindaraj-VirtualBox:2806 Attempting to connect to db at: jdbc:mysql://localhost:3306/
+2016-01-22 12:06:27 DEBUG log:176 dhgovindaraj-VirtualBox:2806 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-01-22 12:06:27 INFO  log:186 dhgovindaraj-VirtualBox:2806 Logging initialized @4950ms
+2016-01-22 12:06:27 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.server.session.SessionHandler@4738a206 added {org.eclipse.jetty.server.session.HashSessionManager@66d3eec0,AUTO}
+2016-01-22 12:06:27 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 o.e.j.s.ServletContextHandler@1e04fa0a{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@4738a206,AUTO}
+2016-01-22 12:06:27 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.server.session.SessionHandler@4738a206 added {org.eclipse.jetty.servlet.ServletHandler@5b03b9fe,AUTO}
+2016-01-22 12:06:27 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.server.Server@52b1beb6 added {qtp1809194904{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-01-22 12:06:27 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 HttpConnectionFactory@6d4d66d2[HTTP/1.1] added {HttpConfiguration@2a265ea9{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 ServerConnector@78e4deb0{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@52b1beb6,UNMANAGED}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 ServerConnector@78e4deb0{null,[]}{0.0.0.0:0} added {qtp1809194904{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 ServerConnector@78e4deb0{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@2e8c1c9b,AUTO}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 ServerConnector@78e4deb0{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@6e9175d8,POJO}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 ServerConnector@78e4deb0{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@6d4d66d2[HTTP/1.1],AUTO}
+2016-01-22 12:06:28 DEBUG ServerConnector:393 dhgovindaraj-VirtualBox:2806 ServerConnector@78e4deb0{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@6d4d66d2[HTTP/1.1]
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 ServerConnector@78e4deb0{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@8f2ef19,MANAGED}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.server.Server@52b1beb6 added {ServerConnector@78e4deb0{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.server.Server@52b1beb6 added {o.e.j.s.ServletContextHandler@1e04fa0a{/,null,null},AUTO}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.servlet.ServletHandler@5b03b9fe added {org.glassfish.jersey.servlet.ServletContainer-710c2b53@a1e06da9==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.servlet.ServletHandler@5b03b9fe added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-710c2b53,POJO}
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.server.Server@52b1beb6
+2016-01-22 12:06:28 INFO  Server:339 dhgovindaraj-VirtualBox:2806 jetty-9.3.0.M2
+2016-01-22 12:06:28 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.server.Server@52b1beb6
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting qtp1809194904{STOPPED,8<=0<=200,i=0,q=0}
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @5782ms qtp1809194904{STARTED,8<=8<=200,i=7,q=0}
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting o.e.j.s.ServletContextHandler@1e04fa0a{/,null,null}
+2016-01-22 12:06:28 DEBUG PreEncodedHttpField:65 dhgovindaraj-VirtualBox:2806 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@302c971f]
+2016-01-22 12:06:28 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:2806 starting o.e.j.s.ServletContextHandler@1e04fa0a{/,null,STARTING}
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.server.session.SessionHandler@4738a206
+2016-01-22 12:06:28 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.server.session.SessionHandler@4738a206
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.server.session.HashSessionManager@66d3eec0
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.server.session.HashSessionManager@66d3eec0 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@548a24a,MANAGED}
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.server.session.HashSessionIdManager@710636b0
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @5964ms org.eclipse.jetty.server.session.HashSessionIdManager@710636b0
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.server.Server@52b1beb6 added {org.eclipse.jetty.server.session.HashSessionIdManager@710636b0,MANAGED}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.server.session.HashSessionManager@66d3eec0 added {org.eclipse.jetty.server.session.HashSessionIdManager@710636b0,UNMANAGED}
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@548a24a
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @6031ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@548a24a
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @6068ms org.eclipse.jetty.server.session.HashSessionManager@66d3eec0
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.servlet.ServletHandler@5b03b9fe
+2016-01-22 12:06:28 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:2806 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-710c2b53 from default=false
+2016-01-22 12:06:28 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:2806 filterNameMap={}
+2016-01-22 12:06:28 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:2806 pathFilters=null
+2016-01-22 12:06:28 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:2806 servletFilterMap=null
+2016-01-22 12:06:28 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:2806 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-710c2b53@a1e06da9==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-01-22 12:06:28 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:2806 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-710c2b53=org.glassfish.jersey.servlet.ServletContainer-710c2b53@a1e06da9==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-01-22 12:06:28 DEBUG ServletHandler:165 dhgovindaraj-VirtualBox:2806 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@5b03b9fe
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.servlet.ServletHandler@5b03b9fe added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-3feb2dda@d4970a73==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-01-22 12:06:28 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 org.eclipse.jetty.servlet.ServletHandler@5b03b9fe added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-3feb2dda,POJO}
+2016-01-22 12:06:28 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:2806 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-710c2b53 from default=false
+2016-01-22 12:06:28 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:2806 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-3feb2dda from default=false
+2016-01-22 12:06:28 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:2806 filterNameMap={}
+2016-01-22 12:06:28 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:2806 pathFilters=null
+2016-01-22 12:06:28 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:2806 servletFilterMap=null
+2016-01-22 12:06:28 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:2806 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-710c2b53@a1e06da9==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-3feb2dda@d4970a73==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-01-22 12:06:28 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:2806 servletNameMap={org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-3feb2dda=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-3feb2dda@d4970a73==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false, org.glassfish.jersey.servlet.ServletContainer-710c2b53=org.glassfish.jersey.servlet.ServletContainer-710c2b53@a1e06da9==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-01-22 12:06:28 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.servlet.ServletHandler@5b03b9fe
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @6144ms org.eclipse.jetty.servlet.ServletHandler@5b03b9fe
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @6145ms org.eclipse.jetty.server.session.SessionHandler@4738a206
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-3feb2dda@d4970a73==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @6177ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-3feb2dda@d4970a73==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.glassfish.jersey.servlet.ServletContainer-710c2b53@a1e06da9==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-01-22 12:06:28 DEBUG BaseHolder:97 dhgovindaraj-VirtualBox:2806 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@14dad5dc
+2016-01-22 12:06:28 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @6190ms org.glassfish.jersey.servlet.ServletContainer-710c2b53@a1e06da9==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-01-22 12:06:28 DEBUG ServletHolder:612 dhgovindaraj-VirtualBox:2806 Servlet.init org.glassfish.jersey.servlet.ServletContainer@1807f5a7 for org.glassfish.jersey.servlet.ServletContainer-710c2b53
+2016-01-22 12:06:31 INFO  ContextHandler:745 dhgovindaraj-VirtualBox:2806 Started o.e.j.s.ServletContextHandler@1e04fa0a{/,null,AVAILABLE}
+2016-01-22 12:06:31 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @9234ms o.e.j.s.ServletContextHandler@1e04fa0a{/,null,AVAILABLE}
+2016-01-22 12:06:31 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting ServerConnector@78e4deb0{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-01-22 12:06:32 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 ServerConnector@78e4deb0{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@2e8c1c9b
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @9514ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@2e8c1c9b
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting HttpConnectionFactory@6d4d66d2[HTTP/1.1]
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @9514ms HttpConnectionFactory@6d4d66d2[HTTP/1.1]
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@8f2ef19
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2806 starting org.eclipse.jetty.io.ManagedSelector@5a6482a9 id=0 keys=-1 selected=-1
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @9614ms org.eclipse.jetty.io.ManagedSelector@5a6482a9 id=0 keys=0 selected=0
+2016-01-22 12:06:32 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:2806 queue org.eclipse.jetty.io.ManagedSelector@5a6482a9 id=0 keys=0 selected=0
+2016-01-22 12:06:32 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:2806 run org.eclipse.jetty.io.ManagedSelector@5a6482a9 id=0 keys=0 selected=0
+2016-01-22 12:06:32 DEBUG ExecuteProduceRun:66 dhgovindaraj-VirtualBox:2806 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@335ce186 execute
+2016-01-22 12:06:32 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:2806 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@335ce186 produce enter
+2016-01-22 12:06:32 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:2806 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@335ce186 producing
+2016-01-22 12:06:32 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:2806 Selector loop waiting on select
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @9618ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@8f2ef19
+2016-01-22 12:06:32 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2806 ServerConnector@78e4deb0{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@3db64bd4,POJO}
+2016-01-22 12:06:32 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:2806 queue acceptor-0@3db64bd4
+2016-01-22 12:06:32 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:2806 run acceptor-0@3db64bd4
+2016-01-22 12:06:32 INFO  ServerConnector:267 dhgovindaraj-VirtualBox:2806 Started ServerConnector@78e4deb0{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @9669ms ServerConnector@78e4deb0{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-01-22 12:06:32 INFO  Server:391 dhgovindaraj-VirtualBox:2806 Started @9670ms
+2016-01-22 12:06:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2806 STARTED @9676ms org.eclipse.jetty.server.Server@52b1beb6

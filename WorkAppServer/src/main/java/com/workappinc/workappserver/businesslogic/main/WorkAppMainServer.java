@@ -15,6 +15,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.jhades.JHades;
 
+import com.workappinc.workappserver.businesslogic.model.WorkAppServiceManager;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.common.resources.implementation.WorkAppAllocationTrackerUtil;
@@ -379,10 +380,7 @@ public class WorkAppMainServer
 		if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
 		{
 			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(database, dbUser, dbPassword, dbPoolSize, logger);
-			TestResource.initResource(connections, configMap); // For Testing
-																// Purpose Only
-			WorkAppCoreResource.initResource(connections, configMap);
-			WorkAppPageResource.initResource(connections, configMap);
+			WorkAppServiceManager.initResource(connections, configMap);
 		}
 
 		// Start an Jetty-HTTP or Thrift server to serve requests - use

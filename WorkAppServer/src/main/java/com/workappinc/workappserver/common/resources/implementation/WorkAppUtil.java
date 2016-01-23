@@ -57,7 +57,7 @@ public class WorkAppUtil implements IUtil
 	 * @return
 	 * @throws SystemException
 	 */
-	public synchronized static String getMyPid(IApplicationLogger logger, Object ctx) throws SystemException
+	public static String getMyPid(IApplicationLogger logger, Object ctx) throws SystemException
 	{
 		String pid = "-1";
 		try
@@ -88,7 +88,7 @@ public class WorkAppUtil implements IUtil
 	 * @return
 	 * @throws SystemException
 	 */
-	public synchronized static String getMyHostInfo(IApplicationLogger logger, Object ctx, boolean isHostIP) throws SystemException
+	public static String getMyHostInfo(IApplicationLogger logger, Object ctx, boolean isHostIP) throws SystemException
 	{
 		String returnInfo = null;
 		try
@@ -119,7 +119,7 @@ public class WorkAppUtil implements IUtil
 	 * @return String MD5 Value
 	 * @throws MD5HashingException
 	 */
-	public synchronized static String generateMD5HashString(IApplicationLogger logger, Object ctx, String id) throws MD5HashingException
+	public static String generateMD5HashString(IApplicationLogger logger, Object ctx, String id) throws MD5HashingException
 	{
 		byte byteData[] = generateMD5HashBytes(logger, ctx, id);
 		StringBuffer hexString = new StringBuffer();
@@ -142,7 +142,7 @@ public class WorkAppUtil implements IUtil
 	 * @return byte[]
 	 * @throws MD5HashingException
 	 */
-	public synchronized static byte[] generateMD5HashBytes(IApplicationLogger logger, Object ctx, String id) throws MD5HashingException
+	public static byte[] generateMD5HashBytes(IApplicationLogger logger, Object ctx, String id) throws MD5HashingException
 	{
 		try
 		{
@@ -170,7 +170,7 @@ public class WorkAppUtil implements IUtil
 	 * @throws MD5HashingException
 	 * @throws SystemException
 	 */
-	public synchronized static byte[] generateFileChecksumBytes(IApplicationLogger logger, Object ctx, String filePath) throws MD5HashingException, SystemException
+	public static byte[] generateFileChecksumBytes(IApplicationLogger logger, Object ctx, String filePath) throws MD5HashingException, SystemException
 	{
 		try
 		{
@@ -219,7 +219,7 @@ public class WorkAppUtil implements IUtil
 	 * @throws SystemException
 	 * @throws MD5HashingException
 	 */
-	public synchronized static String generateFileChecksumString(IApplicationLogger logger, Object ctx, String filePath) throws MD5HashingException, SystemException
+	public static String generateFileChecksumString(IApplicationLogger logger, Object ctx, String filePath) throws MD5HashingException, SystemException
 	{
 		byte[] mdbytes = generateFileChecksumBytes(logger, ctx, filePath);
 		StringBuffer hexString = new StringBuffer();
@@ -239,7 +239,7 @@ public class WorkAppUtil implements IUtil
 	 * @param incomingString
 	 * @return String
 	 */
-	public synchronized static String encodeString(IApplicationLogger logger, Object ctx, String incomingString)
+	public static String encodeString(IApplicationLogger logger, Object ctx, String incomingString)
 	{
 		String encodedString = Base64.getEncoder().encodeToString(incomingString.trim().getBytes());
 		return encodedString;
@@ -251,7 +251,7 @@ public class WorkAppUtil implements IUtil
 	 * @param incomingBytes
 	 * @return String
 	 */
-	public synchronized static String encodeBytes(IApplicationLogger logger, Object ctx, byte[] incomingBytes)
+	public static String encodeBytes(IApplicationLogger logger, Object ctx, byte[] incomingBytes)
 	{
 		String encodedString = Base64.getEncoder().encodeToString(incomingBytes);
 		return encodedString;
@@ -265,7 +265,7 @@ public class WorkAppUtil implements IUtil
 	 * @param incomingString
 	 * @return String
 	 */
-	public synchronized static String decodeString(IApplicationLogger logger, Object ctx, String incomingString)
+	public static String decodeString(IApplicationLogger logger, Object ctx, String incomingString)
 	{
 		byte[] decodedByteArray = Base64.getDecoder().decode(incomingString.trim());
 		return new String(decodedByteArray);
@@ -280,7 +280,7 @@ public class WorkAppUtil implements IUtil
 	 * @param incomingString
 	 * @return String
 	 */
-	public synchronized static byte[] decodedBytes(IApplicationLogger logger, Object ctx, String incomingString)
+	public static byte[] decodedBytes(IApplicationLogger logger, Object ctx, String incomingString)
 	{
 		byte[] decodedByteArray = Base64.getDecoder().decode(incomingString.trim());
 		return decodedByteArray;
@@ -291,7 +291,7 @@ public class WorkAppUtil implements IUtil
 	 * 
 	 * @return String
 	 */
-	public synchronized static String generateUUID(IApplicationLogger logger, Object ctx)
+	public static String generateUUID(IApplicationLogger logger, Object ctx)
 	{
 		return UUID.randomUUID().toString();
 	}
