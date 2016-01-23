@@ -380,7 +380,10 @@ public class WorkAppMainServer
 		if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
 		{
 			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(database, dbUser, dbPassword, dbPoolSize, logger);
-			WorkAppServiceManager.initResource(connections, configMap);
+			WorkAppServiceManager.initResource(connections, configMap, logger);
+			TestResource.initResource(logger);
+			WorkAppCoreResource.initResource(logger);
+			WorkAppPageResource.initResource(logger);
 		}
 
 		// Start an Jetty-HTTP or Thrift server to serve requests - use
