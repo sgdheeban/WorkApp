@@ -16,6 +16,8 @@ create table user (
 	is_customer bool,
 	is_individual bool,
 	employer_name varchar(20),
+	occupation varchar(20),
+	skills text,
 	is_owner bool,
 	primary key (id, email)
 );

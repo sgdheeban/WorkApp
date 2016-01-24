@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
@@ -277,20 +278,20 @@ public class WorkAppMainServer
 	 */
 	private static void populateConfigValues()
 	{
-		configMap.put("configFile:", configFile);
-		configMap.put("log4jPropFile:", log4jPropFile);
-		configMap.put("logLevel:", logLevel);
-		configMap.put("mode:", mode);
-		configMap.put("port:", port);
-		configMap.put("trackAllocation:", trackAllocation);
-		configMap.put("detectJARClash:", detectJARClash);
-		configMap.put("dbConfigFile:", dbConfigFile);
-		configMap.put("schemaFile:", schemaFile);
-		configMap.put("database:", database);
-		configMap.put("dbUser:", dbUser);
-		configMap.put("dbPassword:", dbPassword);
-		configMap.put("dbSchema:", dbSchema);
-		configMap.put("dbPoolSize:", dbPoolSize);
+		configMap.put("configFile", configFile);
+		configMap.put("log4jPropFile", log4jPropFile);
+		configMap.put("logLevel", logLevel);
+		configMap.put("mo", mode);
+		configMap.put("port", port);
+		configMap.put("trackAllocation", trackAllocation);
+		configMap.put("detectJARClash", detectJARClash);
+		configMap.put("dbConfigFile", dbConfigFile);
+		configMap.put("schemaFile", schemaFile);
+		configMap.put("database", database);
+		configMap.put("dbUser", dbUser);
+		configMap.put("dbPassword", dbPassword);
+		configMap.put("dbSchema", dbSchema);
+		configMap.put("dbPoolSize", dbPoolSize);
 	}
 
 	/**
@@ -379,11 +380,21 @@ public class WorkAppMainServer
 		// Pass this reference to Service Layer
 		if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(database, dbUser, dbPassword, dbPoolSize, logger);
-			WorkAppServiceManager.initResource(connections, configMap, logger);
-			TestResource.initResource(logger);
-			WorkAppCoreResource.initResource(logger);
-			WorkAppPageResource.initResource(logger);
+			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(database+dbSchema, dbUser, dbPassword, dbPoolSize, logger);
+			try
+			{
+				WorkAppServiceManager.initResource(connections, configMap, logger);
+				TestResource.initResource(logger);
+				WorkAppCoreResource.initResource(logger);
+				WorkAppPageResource.initResource(logger);
+			}
+			catch (SQLException ex)
+			{
+				logger.LogException(ex, WorkAppMainServer.class);
+				System.err.println("Error provisioning SQL connections for ORM. Please check SQL connections.\n");
+				terminate();
+			}
+			
 		}
 
 		// Start an Jetty-HTTP or Thrift server to serve requests - use
