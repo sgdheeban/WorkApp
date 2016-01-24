@@ -109,7 +109,7 @@ public class WorkAppMySQLConnectionManagerExample
 		ResultSet resultSet = null;
 		try
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
+			connections = new WorkAppMySQLConnectionManager (dbUrl, username, password, -1, logger);
 			conn = getConnection(logger);
 			stmnt = conn.createStatement();
 			resultSet = stmnt.executeQuery(query);
@@ -120,6 +120,10 @@ public class WorkAppMySQLConnectionManagerExample
 			}
 		}
 		catch (SQLException ex)
+		{
+			ex.printStackTrace();
+		}
+		catch (ClassNotFoundException ex)
 		{
 			ex.printStackTrace();
 		}
@@ -161,7 +165,7 @@ public class WorkAppMySQLConnectionManagerExample
 
 		try
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
+			connections = new WorkAppMySQLConnectionManager (dbUrl, username, password, -1, logger);
 			conn = getConnection(logger);
 
 			// INSERT Query
@@ -201,6 +205,10 @@ public class WorkAppMySQLConnectionManagerExample
 
 		}
 		catch (SQLException ex)
+		{
+			ex.printStackTrace();
+		}
+		catch (ClassNotFoundException ex)
 		{
 			ex.printStackTrace();
 		}
@@ -279,7 +287,7 @@ public class WorkAppMySQLConnectionManagerExample
 
 		try
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
+			connections = new WorkAppMySQLConnectionManager (dbUrl, username, password, -1, logger);
 			conn = getConnection(logger);
 
 			conn.setAutoCommit(false); // transaction block start
@@ -320,6 +328,10 @@ public class WorkAppMySQLConnectionManagerExample
 
 		}
 		catch (SQLException ex)
+		{
+			ex.printStackTrace();
+		}
+		catch (ClassNotFoundException ex)
 		{
 			ex.printStackTrace();
 		}

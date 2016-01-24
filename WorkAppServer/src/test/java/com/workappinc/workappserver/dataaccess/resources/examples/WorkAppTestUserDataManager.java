@@ -43,13 +43,11 @@ public class WorkAppTestUserDataManager extends TimerTask implements IDataManage
 
 	private final String insertSQL = "insert into testdb.user" + " values" + "(?,?)";
 
-	private WorkAppTestUserDataManager(IApplicationLogger logger)
+	private WorkAppTestUserDataManager(IApplicationLogger logger) throws ClassNotFoundException
 	{
 		sdf = new SimpleDateFormat("HH:mm:sss");
-
 		mLogger = logger;
-		connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
-
+		connections = new WorkAppMySQLConnectionManager (dbUrl, username, password, -1, logger);
 		loggingTimer = new Timer(); // Instantiate logging timer
 		loggingTimer.scheduleAtFixedRate(this, 100000, 100000); // Start logging
 		// timer

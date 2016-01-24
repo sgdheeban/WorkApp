@@ -43,13 +43,11 @@ public class PerfTableDataManager extends TimerTask implements IDataManager
 
 	private final String insertSQL = "insert into testdb.user" + " values" + "(?,?)";
 
-	private PerfTableDataManager(IApplicationLogger logger)
+	private PerfTableDataManager(IApplicationLogger logger) throws ClassNotFoundException
 	{
 		sdf = new SimpleDateFormat("HH:mm:sss");
-
 		mLogger = logger;
-		connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
-
+		connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 		loggingTimer = new Timer(); // Instantiate logging timer
 		loggingTimer.scheduleAtFixedRate(this, 100000, 100000); // Start logging
 		// timer

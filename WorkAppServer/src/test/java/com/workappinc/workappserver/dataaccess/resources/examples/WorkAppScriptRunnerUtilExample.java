@@ -32,7 +32,7 @@ public class WorkAppScriptRunnerUtilExample
 
 		try
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(dbUrl, username, password, -1, logger);
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 			WorkAppScriptRunnerUtil runner = new WorkAppScriptRunnerUtil(conn, false, false, logger);
 

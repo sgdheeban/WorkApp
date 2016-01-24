@@ -50,20 +50,12 @@ public class WorkAppServiceManager
 		String table = "user";
 		WorkAppQbSelect select = _fac.newSelectQuery();
 		select.select(_fac.newCount(_fac.newStdField(colname), "cnt")).from(table);
-		
-		
 		int count = _persist.read(int.class, select.getQueryString());
-		
-		System.out.println("Count: " + count);
+		if(count > 0)
+			return isSuccess;
 		
 		// Compose an Insert SQL query to select user with this credential from
 		// DB
-
-		// Get a connection from Pool
-		// Check if user exists by running Select SQL query
-		// if exists, return false
-		// Else
-		// Execute Insert SQL through the connection
 		// Close connection & return success
 		// If exception, return false
 

@@ -45,7 +45,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 	 *            to access MySQL database
 	 * @throws ClassNotFoundException
 	 */
-	private WorkAppMySQLConnectionManager(String url, String user, String password, int poolsize, IApplicationLogger logger) throws ClassNotFoundException
+	public WorkAppMySQLConnectionManager(String url, String user, String password, int poolsize, IApplicationLogger logger) throws ClassNotFoundException
 	{
 		Class.forName(dbClass);
 		this.url = url;
@@ -58,33 +58,6 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 		connections = new Vector<WorkAppJDBCConnection>(this.poolsize);
 		verifier = new ConnectionVerifier();
 		verifier.start();
-	}
-
-	/**
-	 * getInstance method is used to get a singleton object
-	 * 
-	 * @return
-	 */
-	public static IConnectionManager getInstance(String url, String user, String password, int poolsize, IApplicationLogger logger)
-	{
-		try
-		{
-			if (mInstance == null)
-			{
-				synchronized (WorkAppMySQLConnectionManager.class)
-				{
-					if (mInstance == null)
-					{
-						mInstance = new WorkAppMySQLConnectionManager(url, user, password, poolsize, logger);
-					}
-				}
-			}
-			return mInstance;
-		}
-		catch (Exception ex)
-		{
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppMySQLConnectionManager Class", ex);
-		}
 	}
 
 	/**

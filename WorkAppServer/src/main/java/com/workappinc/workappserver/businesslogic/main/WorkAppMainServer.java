@@ -380,9 +380,9 @@ public class WorkAppMainServer
 		// Pass this reference to Service Layer
 		if (database != null || dbUser != null || dbPassword != null || dbSchema != null)
 		{
-			connections = (WorkAppMySQLConnectionManager) WorkAppMySQLConnectionManager.getInstance(database+dbSchema, dbUser, dbPassword, dbPoolSize, logger);
 			try
 			{
+				connections = new WorkAppMySQLConnectionManager (database+dbSchema, dbUser, dbPassword, dbPoolSize, logger);
 				WorkAppServiceManager.initResource(connections, configMap, logger);
 				TestResource.initResource(logger);
 				WorkAppCoreResource.initResource(logger);
@@ -392,6 +392,12 @@ public class WorkAppMainServer
 			{
 				logger.LogException(ex, WorkAppMainServer.class);
 				System.err.println("Error provisioning SQL connections for ORM. Please check SQL connections.\n");
+				terminate();
+			}
+			catch (ClassNotFoundException ex)
+			{
+				logger.LogException(ex, WorkAppMainServer.class);
+				System.err.println("Error creating SQL connection driver. Please check SQL driver code.\n");
 				terminate();
 			}
 			
