@@ -1,9 +1,5 @@
 package com.workappinc.workappserver.dataaccess.resources.examples;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-
 import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,7 +9,6 @@ import java.util.List;
 
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
-import com.workappinc.workappserver.dataaccess.orm.annotations.Table;
 import com.workappinc.workappserver.dataaccess.orm.core.Persist;
 import com.workappinc.workappserver.dataaccess.resources.examples.testtable.User;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
@@ -45,7 +40,7 @@ public class WorkAppOrmExample
 		String updateSQL = "update testdb.user set name =? " + "where name = ?";
 		try
 		{
-			connections = new WorkAppMySQLConnectionManager (dbUrl, username, password, -1, logger);
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 			Persist persist = new Persist(conn);
 			List<User> users = persist.readList(User.class, "select * from user where age > ?", 900);

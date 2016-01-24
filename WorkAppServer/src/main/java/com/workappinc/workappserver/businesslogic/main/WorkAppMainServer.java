@@ -382,7 +382,7 @@ public class WorkAppMainServer
 		{
 			try
 			{
-				connections = new WorkAppMySQLConnectionManager (database+dbSchema, dbUser, dbPassword, dbPoolSize, logger);
+				connections = new WorkAppMySQLConnectionManager(database + dbSchema, dbUser, dbPassword, dbPoolSize, logger);
 				WorkAppServiceManager.initResource(connections, configMap, logger);
 				TestResource.initResource(logger);
 				WorkAppCoreResource.initResource(logger);
@@ -400,7 +400,7 @@ public class WorkAppMainServer
 				System.err.println("Error creating SQL connection driver. Please check SQL driver code.\n");
 				terminate();
 			}
-			
+
 		}
 
 		// Start an Jetty-HTTP or Thrift server to serve requests - use

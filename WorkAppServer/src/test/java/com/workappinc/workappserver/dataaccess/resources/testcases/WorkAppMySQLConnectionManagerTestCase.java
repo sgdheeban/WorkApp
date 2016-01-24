@@ -126,7 +126,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
-			connections = new WorkAppMySQLConnectionManager (dbUrl, username, password, -1, logger);
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 			stmnt = conn.createStatement();
 			resultSet = stmnt.executeQuery(query);
@@ -195,7 +195,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 		String updateSQL = "update testdb.user set name =? " + "where name = ?";
 		try
 		{
-			connections = new WorkAppMySQLConnectionManager (dbUrl, username, password, -1, logger);
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 
 			// INSERT Query
@@ -282,7 +282,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
-			connections = new WorkAppMySQLConnectionManager (dbUrl, username, password, -1, logger);
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 			stmnt = conn.createStatement();
 			resultSet = stmnt.executeQuery(query);
@@ -351,7 +351,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
-			connections = new WorkAppMySQLConnectionManager (dbUrl, username, password, -1, logger);
+			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 
 			conn.setAutoCommit(false); // transaction block start

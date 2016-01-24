@@ -36,32 +36,26 @@ public class WorkAppCoreResource implements IResource
 		_logger = logger;
 	}
 
-	
-	@GET
-	@Path("test")
-	@Produces(MediaType.TEXT_PLAIN)
-	public String test()
-	{
-		ArrayList<String> userInfoList = null;
-		WorkAppServiceManager.registerUser(userInfoList);
-		return "Test";
-	}
-	
 	/**
 	 * Registers new User
 	 * 
 	 * @param response
 	 * @return
 	 */
-	public Response registerUser(Request request)
+	@GET
+	@Path("test")
+	@Produces(MediaType.TEXT_PLAIN)
+	public String registerUser(Request request)
 	{
 		StopWatch stopwatch = new StopWatch();
 		stopwatch.start();
 		Response response = null;
 		ArrayList<String> userInfoList = null;
-		WorkAppServiceManager.registerUser(userInfoList);
+		boolean returnvalue = WorkAppServiceManager.registerUser(userInfoList);
 		stopwatch.stop();
-		return response;
+		if (returnvalue)
+			return "Saved.";
+		else return "Not Saved.";
 	}
 
 	/**
