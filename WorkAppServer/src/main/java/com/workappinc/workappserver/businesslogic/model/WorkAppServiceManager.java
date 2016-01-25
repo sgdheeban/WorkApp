@@ -40,10 +40,10 @@ public class WorkAppServiceManager
 	/**
 	 * Registers new user
 	 * 
-	 * @param userInfo
+	 * @param userJson
 	 * @System.out.println(select.getQueryString());return
 	 */
-	public static boolean registerUser(ArrayList<String> userInfo)
+	public static boolean registerUser(String userJson)
 	{
 		boolean isSuccess = false;
 		WorkAppJDBCConnection conn = null;

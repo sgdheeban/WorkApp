@@ -2,7 +2,9 @@ package com.workappinc.workappserver.presentation;
 
 import java.util.ArrayList;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -37,25 +39,23 @@ public class WorkAppCoreResource implements IResource
 	}
 
 	/**
-	 * Registers new User
+	 * Registers new user
 	 * 
 	 * @param response
 	 * @return
 	 */
-	@GET
-	@Path("test")
-	@Produces(MediaType.TEXT_PLAIN)
-	public String registerUser(Request request)
+	@POST
+	@Path("register")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response registerUser(String userJson)
 	{
 		StopWatch stopwatch = new StopWatch();
 		stopwatch.start();
-		Response response = null;
-		ArrayList<String> userInfoList = null;
-		boolean returnvalue = WorkAppServiceManager.registerUser(userInfoList);
+		boolean returnvalue = WorkAppServiceManager.registerUser(userJson);
 		stopwatch.stop();
 		if (returnvalue)
-			return "Saved.";
-		else return "Not Saved.";
+			return Response.status(200).entity("Saved.").build();
+		else return Response.status(200).entity("Not Saved.").build();
 	}
 
 	/**
