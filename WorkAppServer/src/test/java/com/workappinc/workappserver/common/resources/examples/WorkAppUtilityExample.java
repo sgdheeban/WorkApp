@@ -170,7 +170,7 @@ public class WorkAppUtilityExample
 	 */
 	public static void main(String args[]) throws SystemException, MD5HashingException, CryptoException
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
+		IApplicationLogger logger = new WorkAppLogger(null);
 		WorkAppUtilityExample example = new WorkAppUtilityExample();
 		example.getPIDTest(logger);
 		example.getHostInfoTest(logger);

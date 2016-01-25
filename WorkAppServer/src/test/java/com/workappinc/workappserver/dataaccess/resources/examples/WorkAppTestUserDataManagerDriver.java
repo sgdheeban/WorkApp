@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 
@@ -15,9 +16,9 @@ import com.workappinc.workappserver.common.logging.WorkAppLogger;
  */
 public class WorkAppTestUserDataManagerDriver
 {
-	public static void main(String args[]) throws IOException, InterruptedException
+	public static void main(String args[]) throws IOException, InterruptedException, SystemException
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
+		IApplicationLogger logger = new WorkAppLogger(null);
 		WorkAppTestUserDataManager userDataManager = (WorkAppTestUserDataManager) WorkAppTestUserDataManager.getInstance(logger);
 		Calendar cal = Calendar.getInstance();
 		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:sss");

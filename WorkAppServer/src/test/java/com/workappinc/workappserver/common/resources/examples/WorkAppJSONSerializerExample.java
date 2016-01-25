@@ -3,6 +3,7 @@ package com.workappinc.workappserver.common.resources.examples;
 import java.io.IOException;
 
 import com.workappinc.workappserver.common.exception.JSONSerializationException;
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.common.resources.implementation.WorkAppJSONSerializer;
@@ -21,10 +22,10 @@ public class WorkAppJSONSerializerExample
 	 * Serialize Tests
 	 * 
 	 * @throws JSONSerializationException
+	 * @throws SystemException
 	 */
-	public static void serializeTests() throws JSONSerializationException
+	public static void serializeTests(IApplicationLogger logger) throws JSONSerializationException
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		User user = new User();
 		user.setAge(11);
 		user.setName("sgd");
@@ -38,9 +39,8 @@ public class WorkAppJSONSerializerExample
 	 * 
 	 * @throws JSONSerializationException
 	 */
-	public static void deSerializeTests() throws JSONSerializationException
+	public static void deSerializeTests(IApplicationLogger logger) throws JSONSerializationException
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
 		User user = new User();
 		User user1 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd\",\"age\":11}", User.class, logger);
 		System.out.println(user1.getAge() + " :: " + user1.getName());
@@ -50,9 +50,10 @@ public class WorkAppJSONSerializerExample
 
 	}
 
-	public static void main(String args[]) throws IOException, JSONSerializationException
+	public static void main(String args[]) throws IOException, JSONSerializationException, SystemException
 	{
-		serializeTests();
-		deSerializeTests();
+		IApplicationLogger logger = new WorkAppLogger(null);
+		serializeTests(logger);
+		deSerializeTests(logger);
 	}
 }

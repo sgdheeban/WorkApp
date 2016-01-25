@@ -14,7 +14,7 @@ public class WorkAppAllocationTrackerUtilExample
 {
 	public static void main(String[] args) throws Exception
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
+		IApplicationLogger logger = new WorkAppLogger(null);
 
 		/**
 		 * Enabling Allocation Tracker to track all Heap Object Allocations

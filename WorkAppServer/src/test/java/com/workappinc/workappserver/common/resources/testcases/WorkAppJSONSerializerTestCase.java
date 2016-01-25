@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import com.workappinc.workappserver.common.exception.JSONSerializationException;
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.common.resources.implementation.WorkAppJSONSerializer;
@@ -26,11 +27,21 @@ public class WorkAppJSONSerializerTestCase
 	@Test
 	public void serializeTests() throws JSONSerializationException
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
-		User user = new User();
-		user.setAge(11);
-		user.setName("sgd");
-		assertEquals(WorkAppJSONSerializer.serialize(user, logger), "{\"name\":\"sgd\",\"age\":11}");
+		IApplicationLogger logger;
+		try
+		{
+			logger = new WorkAppLogger(null);
+			User user = new User();
+			user.setAge(11);
+			user.setName("sgd");
+			assertEquals(WorkAppJSONSerializer.serialize(user, logger), "{\"name\":\"sgd\",\"age\":11}");
+		}
+		catch (SystemException ex)
+		{
+			ex.printStackTrace();
+			assertTrue(false);
+		}
+
 	}
 
 	/**
@@ -41,15 +52,24 @@ public class WorkAppJSONSerializerTestCase
 	@Test
 	public void deSerializeTests() throws JSONSerializationException
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
-		User user = new User();
-		User user1 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd\",\"age\":11}", User.class, logger);
-		User user2 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd-21\",\"age\":121}", User.class, logger);
+		IApplicationLogger logger;
+		try
+		{
+			logger = new WorkAppLogger(null);
+			User user = new User();
+			User user1 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd\",\"age\":11}", User.class, logger);
+			User user2 = (User) WorkAppJSONSerializer.deSerialize(user, "{\"name\":\"sgd-21\",\"age\":121}", User.class, logger);
 
-		assertEquals(user1.getAge(), 11);
-		assertEquals(user1.getName(), "sgd");
-		assertEquals(user2.getAge(), 121);
-		assertEquals(user2.getName(), "sgd-21");
+			assertEquals(user1.getAge(), 11);
+			assertEquals(user1.getName(), "sgd");
+			assertEquals(user2.getAge(), 121);
+			assertEquals(user2.getName(), "sgd-21");
+		}
+		catch (SystemException ex)
+		{
+			ex.printStackTrace();
+			assertTrue(false);
+		}
 
 	}
 

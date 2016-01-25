@@ -17,6 +17,7 @@ import org.apache.log4j.Logger;
 import org.jhades.JHades;
 
 import com.workappinc.workappserver.businesslogic.model.WorkAppServiceManager;
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.common.resources.implementation.WorkAppAllocationTrackerUtil;
@@ -184,12 +185,18 @@ public class WorkAppMainServer
 		{
 			input = new FileInputStream(log4jPropFile);
 			log4jProp.load(input);
-			mLogger = WorkAppLogger.getInstance(log4jProp);
+			mLogger = new WorkAppLogger(log4jProp);
 		}
 		catch (IOException ex)
 		{
 			ex.printStackTrace();
 			System.out.println("Check your Log4J properties file format / content. ");
+			System.exit(1);
+		}
+		catch (SystemException ex)
+		{
+			ex.printStackTrace();
+			System.out.println("Log4j logger errored out in Start. Check your Log4J properties file format / content. ");
 			System.exit(1);
 		}
 		finally
@@ -316,7 +323,16 @@ public class WorkAppMainServer
 
 		// Instantiate Logger & override levels from command line
 		if (log4jPropFile == null)
-			logger = WorkAppLogger.getInstance(null);
+			try
+			{
+				logger = new WorkAppLogger(null);
+			}
+			catch (SystemException ex)
+			{
+				ex.printStackTrace();
+				System.out.println("Log4j logger errored out in Start. Check your Log4J properties file format / content. ");
+				System.exit(1);
+			}
 		else
 		{
 			logger = createLoggerFromProperties();

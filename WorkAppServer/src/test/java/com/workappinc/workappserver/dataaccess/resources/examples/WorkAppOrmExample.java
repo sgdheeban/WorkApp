@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.dataaccess.orm.core.Persist;
@@ -23,9 +24,9 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppM
 public class WorkAppOrmExample
 {
 
-	public void simpleTableORMExample()
+	public void simpleTableORMExample() throws SystemException
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
+		IApplicationLogger logger = new WorkAppLogger(null);
 		String dbUrl = "jdbc:mysql://localhost:3306/testdb";
 		String username = "root";
 		String password = "password";
@@ -75,7 +76,7 @@ public class WorkAppOrmExample
 		}
 	}
 
-	public static void main(String args[]) throws IOException
+	public static void main(String args[]) throws IOException, SystemException
 	{
 		WorkAppOrmExample orm = new WorkAppOrmExample();
 		orm.simpleTableORMExample();

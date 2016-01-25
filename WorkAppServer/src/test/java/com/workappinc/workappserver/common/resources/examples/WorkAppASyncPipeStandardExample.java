@@ -21,7 +21,7 @@ public class WorkAppASyncPipeStandardExample
 
 	public static void main(String[] args) throws Exception
 	{
-		logger = WorkAppLogger.getInstance(null);
+		logger = new WorkAppLogger(null);
 
 		// a workflow reader, which creates data
 		// and will send them through pipeline

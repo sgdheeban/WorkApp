@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
@@ -21,9 +22,9 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppS
 public class WorkAppScriptRunnerUtilExample
 {
 
-	public static void main(String args[]) throws IOException
+	public static void main(String args[]) throws IOException, SystemException
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
+		IApplicationLogger logger = new WorkAppLogger(null);
 		String dbUrl = "jdbc:mysql://localhost:3306/";
 		String username = "root";
 		String password = "password";

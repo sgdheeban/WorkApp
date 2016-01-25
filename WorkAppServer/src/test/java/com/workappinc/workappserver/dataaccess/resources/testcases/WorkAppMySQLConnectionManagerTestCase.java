@@ -12,6 +12,7 @@ import java.sql.Statement;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
@@ -33,16 +34,16 @@ public class WorkAppMySQLConnectionManagerTestCase
 	@Test
 	public void testMySQLQueryUsingAdhocConnection()
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
-		String dbUrl = "jdbc:mysql://localhost:3306/";
-		String dbClass = "com.mysql.jdbc.Driver";
-		// String query = "Select distinct(table_name) from
-		// INFORMATION_SCHEMA.TABLES";
-		String query = "Select * from testdb.user";
-		String username = "root";
-		String password = "password";
 		try
 		{
+			IApplicationLogger logger = new WorkAppLogger(null);
+			String dbUrl = "jdbc:mysql://localhost:3306/";
+			String dbClass = "com.mysql.jdbc.Driver";
+			// String query = "Select distinct(table_name) from
+			// INFORMATION_SCHEMA.TABLES";
+			String query = "Select * from testdb.user";
+			String username = "root";
+			String password = "password";
 			Class.forName(dbClass);
 			Connection connection = DriverManager.getConnection(dbUrl, username, password);
 			Statement statement = connection.createStatement();
@@ -69,6 +70,12 @@ public class WorkAppMySQLConnectionManagerTestCase
 			assertTrue(false);
 			return;
 		}
+		catch (SystemException e)
+		{
+			e.printStackTrace();
+			assertTrue(false);
+			return;
+		}
 	}
 
 	/**
@@ -77,16 +84,17 @@ public class WorkAppMySQLConnectionManagerTestCase
 	@Test
 	public void testMySQLStatementUsingAdhocConnection()
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
-		String dbUrl = "jdbc:mysql://localhost:3306/";
-		String dbClass = "com.mysql.jdbc.Driver";
-		// String query = "Select distinct(table_name) from
-		// INFORMATION_SCHEMA.TABLES";
-		String query = "insert into testdb.user values ('dheeban22',29)";
-		String username = "root";
-		String password = "password";
 		try
 		{
+			IApplicationLogger logger = new WorkAppLogger(null);
+			String dbUrl = "jdbc:mysql://localhost:3306/";
+			String dbClass = "com.mysql.jdbc.Driver";
+			// String query = "Select distinct(table_name) from
+			// INFORMATION_SCHEMA.TABLES";
+			String query = "insert into testdb.user values ('dheeban22',29)";
+			String username = "root";
+			String password = "password";
+
 			Class.forName(dbClass);
 			Connection connection = DriverManager.getConnection(dbUrl, username, password);
 			Statement statement = connection.createStatement();
@@ -107,6 +115,12 @@ public class WorkAppMySQLConnectionManagerTestCase
 			assertTrue(false);
 			return;
 		}
+		catch (SystemException e)
+		{
+			e.printStackTrace();
+			assertTrue(false);
+			return;
+		}
 	}
 
 	/**
@@ -115,17 +129,18 @@ public class WorkAppMySQLConnectionManagerTestCase
 	@Test
 	public void testMySQLQueryUsingConnectionManager()
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
-		String dbUrl = "jdbc:mysql://localhost:3306/";
-		String query = "Select * from testdb.user";
-		String username = "root";
-		String password = "password";
 		WorkAppJDBCConnection conn = null;
 		Statement stmnt = null;
 		ResultSet resultSet = null;
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
+			IApplicationLogger logger = new WorkAppLogger(null);
+			String dbUrl = "jdbc:mysql://localhost:3306/";
+			String query = "Select * from testdb.user";
+			String username = "root";
+			String password = "password";
+
 			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 			stmnt = conn.createStatement();
@@ -144,6 +159,12 @@ public class WorkAppMySQLConnectionManagerTestCase
 			return;
 		}
 		catch (ClassNotFoundException ex)
+		{
+			ex.printStackTrace();
+			assertTrue(false);
+			return;
+		}
+		catch (SystemException ex)
 		{
 			ex.printStackTrace();
 			assertTrue(false);
@@ -180,21 +201,22 @@ public class WorkAppMySQLConnectionManagerTestCase
 	@Test
 	public void testMySQLPreparedStatementUsingConnectionManager()
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
-		String dbUrl = "jdbc:mysql://localhost:3306/";
-		String username = "root";
-		String password = "password";
 		WorkAppJDBCConnection conn = null;
 		PreparedStatement prpdstmnt = null;
 		Statement stmnt = null;
 		ResultSet resultSet = null;
 		WorkAppMySQLConnectionManager connections = null;
-
-		String selectQuery = "select * from testdb.user";
-		String insertSQL = "insert into testdb.user" + " values" + "(?,?)";
-		String updateSQL = "update testdb.user set name =? " + "where name = ?";
 		try
 		{
+			IApplicationLogger logger = new WorkAppLogger(null);
+			String dbUrl = "jdbc:mysql://localhost:3306/";
+			String username = "root";
+			String password = "password";
+
+			String selectQuery = "select * from testdb.user";
+			String insertSQL = "insert into testdb.user" + " values" + "(?,?)";
+			String updateSQL = "update testdb.user set name =? " + "where name = ?";
+
 			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 
@@ -246,6 +268,12 @@ public class WorkAppMySQLConnectionManagerTestCase
 			assertTrue(false);
 			return;
 		}
+		catch (SystemException ex)
+		{
+			ex.printStackTrace();
+			assertTrue(false);
+			return;
+		}
 		finally
 		{
 			try
@@ -271,17 +299,18 @@ public class WorkAppMySQLConnectionManagerTestCase
 	@Test
 	public void testMySQLQueryForTransactionsUsingConnectionManager()
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
-		String dbUrl = "jdbc:mysql://localhost:3306/";
-		String query = "Select * from testdb.user";
-		String username = "root";
-		String password = "password";
 		WorkAppJDBCConnection conn = null;
 		Statement stmnt = null;
 		ResultSet resultSet = null;
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
+			IApplicationLogger logger = new WorkAppLogger(null);
+			String dbUrl = "jdbc:mysql://localhost:3306/";
+			String query = "Select * from testdb.user";
+			String username = "root";
+			String password = "password";
+
 			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 			stmnt = conn.createStatement();
@@ -300,6 +329,12 @@ public class WorkAppMySQLConnectionManagerTestCase
 			return;
 		}
 		catch (ClassNotFoundException ex)
+		{
+			ex.printStackTrace();
+			assertTrue(false);
+			return;
+		}
+		catch (SystemException ex)
 		{
 			ex.printStackTrace();
 			assertTrue(false);
@@ -336,21 +371,22 @@ public class WorkAppMySQLConnectionManagerTestCase
 	@Test
 	public void testMySQLTransactionsUsingConnectionManager()
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
-		String dbUrl = "jdbc:mysql://localhost:3306/";
-		String username = "root";
-		String password = "password";
 		WorkAppJDBCConnection conn = null;
 		PreparedStatement prpdstmnt = null;
 		Statement stmnt = null;
 		ResultSet resultSet = null;
-
-		String selectQuery = "select * from testdb.user";
-		String insertSQL = "insert into testdb.user" + " values" + "(?,?)";
-		String updateSQL = "update testdb.user set name =? " + "where name = ?";
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
+			IApplicationLogger logger = new WorkAppLogger(null);
+			String dbUrl = "jdbc:mysql://localhost:3306/";
+			String username = "root";
+			String password = "password";
+
+			String selectQuery = "select * from testdb.user";
+			String insertSQL = "insert into testdb.user" + " values" + "(?,?)";
+			String updateSQL = "update testdb.user set name =? " + "where name = ?";
+
 			connections = new WorkAppMySQLConnectionManager(dbUrl, username, password, -1, logger);
 			conn = connections.getConnection();
 
@@ -398,6 +434,12 @@ public class WorkAppMySQLConnectionManagerTestCase
 			return;
 		}
 		catch (ClassNotFoundException ex)
+		{
+			ex.printStackTrace();
+			assertTrue(false);
+			return;
+		}
+		catch (SystemException ex)
 		{
 			ex.printStackTrace();
 			assertTrue(false);

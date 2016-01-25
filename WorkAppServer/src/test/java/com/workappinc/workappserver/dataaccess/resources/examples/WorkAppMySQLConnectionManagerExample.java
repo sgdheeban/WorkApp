@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
@@ -357,9 +358,9 @@ public class WorkAppMySQLConnectionManagerExample
 		}
 	}
 
-	public static void main(String args[]) throws IOException
+	public static void main(String args[]) throws IOException, SystemException
 	{
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
+		IApplicationLogger logger = new WorkAppLogger(null);
 		WorkAppMySQLConnectionManagerExample app = new WorkAppMySQLConnectionManagerExample();
 		app.testMySQLStatementUsingAdhocConnection(logger);
 		app.testMySQLQueryUsingAdhocConnection(logger);

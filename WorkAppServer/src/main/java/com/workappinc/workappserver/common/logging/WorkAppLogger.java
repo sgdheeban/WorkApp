@@ -24,8 +24,8 @@ public class WorkAppLogger implements IApplicationLogger
 {
 	private ConcurrentHashMap<Class<?>, Logger> mLoggerInstances = new ConcurrentHashMap<Class<?>, Logger>();
 	private static IApplicationLogger mInstance = null;
-	
-	private WorkAppLogger(Properties config) throws SystemException
+
+	public WorkAppLogger(Properties config) throws SystemException
 	{
 		// If External Config File Exists, override default log4j.properties
 		if (config != null)
@@ -37,35 +37,6 @@ public class WorkAppLogger implements IApplicationLogger
 
 		// Logger to catch uncaught exceptions in a separate thread
 		WorkAppUncaughtExceptionLogger.setDefaultUncaughtExceptionHandler(this);
-	}
-
-	/**
-	 * getInstance method is used to get a singleton object
-	 * 
-	 * @return
-	 */
-	public static IApplicationLogger getInstance(Properties config)
-	{
-		try
-		{
-			if (mInstance == null)
-			{
-				synchronized (WorkAppLogger.class)
-				{
-					if (mInstance == null)
-					{
-						mInstance = new WorkAppLogger(config);
-					}
-				}
-			}
-			return mInstance;
-		}
-		catch (Exception ex)
-		{
-			ex.printStackTrace();
-			throw new SingletonInitException("Error during Singleton Object Creation for WorkAppLogger Class", ex);
-
-		}
 	}
 
 	private static void configureDefaults(Properties config)

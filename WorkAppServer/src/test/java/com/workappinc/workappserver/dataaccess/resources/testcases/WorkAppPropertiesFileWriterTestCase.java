@@ -31,7 +31,7 @@ public class WorkAppPropertiesFileWriterTestCase
 		try
 		{
 			String writepath = "config5.properties";
-			IApplicationLogger logger = WorkAppLogger.getInstance(null);
+			IApplicationLogger logger = new WorkAppLogger(null);
 			Map<String, String> map = new HashMap<String, String>();
 			map.put("database", "localhost");
 			map.put("dbuser", "dheeban");

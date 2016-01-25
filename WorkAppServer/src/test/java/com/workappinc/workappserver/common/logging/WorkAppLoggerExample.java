@@ -2,6 +2,7 @@ package com.workappinc.workappserver.common.logging;
 
 import java.io.IOException;
 
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.resources.implementation.WorkAppContext;
 import com.workappinc.workappserver.common.resources.interfaces.IContext;
 
@@ -21,14 +22,23 @@ public class WorkAppLoggerExample
 	 */
 	private static void defaultLoggerFunctionalityTest()
 	{
-		WorkAppLogger.getInstance(null).LogFatal(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance(null).LogError(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance(null).LogWarn(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance(null).LogInfo(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance(null).LogDebug(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance(null).LogTrace(ctx, WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance(null).LogException(new Exception("Test Exception"), WorkAppLoggerExample.class);
-		WorkAppLogger.getInstance(null).LogPerf(ctx, WorkAppLoggerExample.class);
+		WorkAppLogger logger;
+		try
+		{
+			logger = new WorkAppLogger(null);
+			logger.LogFatal(ctx, WorkAppLoggerExample.class);
+			logger.LogError(ctx, WorkAppLoggerExample.class);
+			logger.LogWarn(ctx, WorkAppLoggerExample.class);
+			logger.LogInfo(ctx, WorkAppLoggerExample.class);
+			logger.LogDebug(ctx, WorkAppLoggerExample.class);
+			logger.LogTrace(ctx, WorkAppLoggerExample.class);
+			logger.LogException(new Exception("Test Exception"), WorkAppLoggerExample.class);
+			logger.LogPerf(ctx, WorkAppLoggerExample.class);
+		}
+		catch (SystemException ex)
+		{
+			ex.printStackTrace();
+		}
 	}
 
 	/**

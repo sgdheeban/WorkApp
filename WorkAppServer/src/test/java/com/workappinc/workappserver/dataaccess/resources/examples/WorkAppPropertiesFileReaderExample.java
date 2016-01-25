@@ -3,6 +3,7 @@ package com.workappinc.workappserver.dataaccess.resources.examples;
 import java.io.IOException;
 import java.util.Properties;
 
+import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
@@ -64,13 +65,13 @@ public class WorkAppPropertiesFileReaderExample
 		logger.LogInfo("log4j.appender.stdout.Target: " + prop.getProperty("log4j.appender.stdout.Target"), WorkAppPropertiesFileReaderExample.class);
 	}
 
-	public static void main(String args[]) throws IOException
+	public static void main(String args[]) throws IOException, SystemException
 	{
 		String classFilePath = "config.properties";
 		String fileSystemPath = "/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties";
 		String fileSystemLog4jPath = "/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties";
 
-		IApplicationLogger logger = WorkAppLogger.getInstance(null);
+		IApplicationLogger logger = new WorkAppLogger(null);
 
 		printPropertiesFromClassPath(logger, classFilePath);
 		printPropertiesFromFileSystem(logger, fileSystemPath);
