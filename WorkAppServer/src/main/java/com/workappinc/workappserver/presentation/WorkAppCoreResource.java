@@ -14,6 +14,7 @@ import javax.ws.rs.core.Response;
 import org.apache.commons.lang.time.StopWatch;
 
 import com.workappinc.workappserver.businesslogic.model.WorkAppServiceManager;
+import com.workappinc.workappserver.businesslogic.model.table.User;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
@@ -47,7 +48,7 @@ public class WorkAppCoreResource implements IResource
 	@POST
 	@Path("register")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response registerUser(String userJson)
+	public Response registerUser(User userJson)
 	{
 		StopWatch stopwatch = new StopWatch();
 		stopwatch.start();

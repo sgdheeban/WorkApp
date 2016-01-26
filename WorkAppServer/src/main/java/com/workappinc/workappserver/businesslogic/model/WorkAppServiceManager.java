@@ -43,7 +43,7 @@ public class WorkAppServiceManager
 	 * @param userJson
 	 * @System.out.println(select.getQueryString());return
 	 */
-	public static boolean registerUser(String userJson)
+	public static boolean registerUser(User userJson)
 	{
 		boolean isSuccess = false;
 		WorkAppJDBCConnection conn = null;
