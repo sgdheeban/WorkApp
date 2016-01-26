@@ -1,18 +1,23 @@
 package com.workappinc.workappserver.presentation;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 
 import org.apache.commons.lang.time.StopWatch;
+import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
+import org.glassfish.jersey.media.multipart.FormDataParam;
 
+import com.workappinc.workappserver.businesslogic.model.TestUserInfo;
 import com.workappinc.workappserver.businesslogic.model.WorkAppServiceManager;
 import com.workappinc.workappserver.businesslogic.model.table.User;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
@@ -46,7 +51,7 @@ public class WorkAppCoreResource implements IResource
 	 * @return
 	 */
 	@POST
-	@Path("register")
+	@Path("/user/register")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response registerUser(User userJson)
 	{
@@ -60,12 +65,56 @@ public class WorkAppCoreResource implements IResource
 	}
 
 	/**
-	 * Login User
+	 * Edit user info
 	 * 
-	 * @param response
+	 * @param userJson
 	 * @return
 	 */
-	public Response loginUser(Request request)
+	@POST
+	@Path("/user/edit")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response editUserInfo(String userJson)
+	{
+		Response response = null;
+		return response;
+	}
+
+	/**
+	 * Get configuration value, given a key
+	 * 
+	 * @param configName
+	 * @return
+	 */
+	@GET
+	@Path("{configName}")
+	public Response getConfig(@PathParam("configName")
+	String configName)
+	{
+		Response response = null;
+		return response;
+	}
+
+	@POST
+	@Path("/upload")
+	@Consumes(MediaType.MULTIPART_FORM_DATA)
+	public Response uploadFile(@FormDataParam("file")
+	InputStream uploadedInputStream, @FormDataParam("file")
+	FormDataContentDisposition fileDetail)
+	{
+		Response response = null;
+		return response;
+	}
+
+	/**
+	 * Login User
+	 * 
+	 * @param loginInfo
+	 * @return
+	 */
+	@POST
+	@Path("/user/login")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response loginUser(String loginInfo)
 	{
 		Response response = null;
 		return response;
@@ -74,34 +123,13 @@ public class WorkAppCoreResource implements IResource
 	/**
 	 * Logout User
 	 * 
-	 * @param response
+	 * @param logoutInfo
 	 * @return
 	 */
-	public Response logoutUser(Request request)
-	{
-		Response response = null;
-		return response;
-	}
-
-	/**
-	 * Add Catalog Category
-	 * 
-	 * @param response
-	 * @return
-	 */
-	public Response addCatalogCategory(Request request)
-	{
-		Response response = null;
-		return response;
-	}
-
-	/**
-	 * Get List of Catalog Sub-Categories - given a parent Catalog Name
-	 * 
-	 * @param response
-	 * @return
-	 */
-	public Response getCatagorySubCategory(Request request)
+	@POST
+	@Path("/user/logout")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response logoutUser(String logoutInfo)
 	{
 		Response response = null;
 		return response;
