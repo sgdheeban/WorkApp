@@ -14,8 +14,8 @@ import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 
 import org.apache.commons.lang.time.StopWatch;
-import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
-import org.glassfish.jersey.media.multipart.FormDataParam;
+/*import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
+import org.glassfish.jersey.media.multipart.FormDataParam;*/
 
 import com.workappinc.workappserver.businesslogic.model.TestUserInfo;
 import com.workappinc.workappserver.businesslogic.model.WorkAppServiceManager;
@@ -94,7 +94,7 @@ public class WorkAppCoreResource implements IResource
 		return response;
 	}
 
-	@POST
+/*	@POST
 	@Path("/upload")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
 	public Response uploadFile(@FormDataParam("file")
@@ -104,7 +104,7 @@ public class WorkAppCoreResource implements IResource
 		Response response = null;
 		return response;
 	}
-
+*/
 	/**
 	 * Login User
 	 * 

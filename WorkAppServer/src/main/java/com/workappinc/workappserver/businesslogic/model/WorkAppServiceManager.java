@@ -1,9 +1,11 @@
 package com.workappinc.workappserver.businesslogic.model;
 
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 import com.workappinc.workappserver.businesslogic.model.table.User;
 import com.workappinc.workappserver.common.exception.MD5HashingException;
 import com.workappinc.workappserver.common.exception.RuntimeSQLException;
@@ -43,7 +45,7 @@ public class WorkAppServiceManager
 	 * @param userJson
 	 * @System.out.println(select.getQueryString());return
 	 */
-	public static boolean registerUser(User userJson)
+	public static boolean registerUser(User user)
 	{
 		boolean isSuccess = false;
 		WorkAppJDBCConnection conn = null;
@@ -52,26 +54,19 @@ public class WorkAppServiceManager
 		{
 			conn = _connections.getConnection();
 			persist = new Persist(conn);
-			String colname = "email";
-			String table = "user";
-			WorkAppQbSelect select = _fac.newSelectQuery();
-			select.select(_fac.newCount(_fac.newStdField(colname), "cnt")).from(table);
-			int count = persist.read(int.class, select.getQueryString());
-			if (count > 0)
-				return isSuccess;
-			User user = new User();
 			user.setId(WorkAppUtil.generateUUID(_logger, null));
-			user.setEmail("dhgovindaraj@ebay.com");
-			user.setPassword(WorkAppUtil.generateMD5HashString(_logger, null, "password"));
-			user.setFirst_name("dhgovindaraj");
-			user.setLast_name("SG");
+			String password = user.getPassword();
+			user.setPassword(WorkAppUtil.generateMD5HashString(_logger, null, password));
 			persist.insert(user);
 			isSuccess = true;
 		}
 		catch (RuntimeSQLException ex)
 		{
-			// User/ Email Already Exists etc.
-			_logger.LogException(ex, WorkAppServiceManager.class);
+			if(ex.getCause() instanceof MySQLIntegrityConstraintViolationException)
+			{
+				_logger.LogException(ex, WorkAppServiceManager.class);  
+			}
+			_logger.LogException(ex, WorkAppServiceManager.class);  
 		}
 		catch (SQLException ex)
 		{
