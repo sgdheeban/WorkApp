@@ -84,46 +84,6 @@ public class WorkAppCoreResource implements IResource
 	}
 
 	/**
-	 * Edit user info
-	 * 
-	 * @param userJson
-	 * @return
-	 */
-	@POST
-	@Path("/user/update")
-	@Consumes(MediaType.APPLICATION_JSON)
-	public Response updateUserInfo(String userJson)
-	{
-		Response response = null;
-		return response;
-	}
-
-	/**
-	 * Get configuration value, given a key
-	 * 
-	 * @param configName
-	 * @return
-	 */
-	@GET
-	@Path("{configName}")
-	public Response getConfig(@PathParam("configName")
-	String configName)
-	{
-		Response response = null;
-		return response;
-	}
-
-	/*
-	 * @POST
-	 * 
-	 * @Path("/upload")
-	 * 
-	 * @Consumes(MediaType.MULTIPART_FORM_DATA) public Response
-	 * uploadFile(@FormDataParam("file") InputStream
-	 * uploadedInputStream, @FormDataParam("file") FormDataContentDisposition
-	 * fileDetail) { Response response = null; return response; }
-	 */
-	/**
 	 * Login User
 	 * 
 	 * @param loginInfo
@@ -152,5 +112,62 @@ public class WorkAppCoreResource implements IResource
 		Response response = null;
 		return response;
 	}
+	
+	/*
+	 * API pending to authenticate user session or this is done internally for every action call
+	 */
+	
+	/**
+	 * Edit user info
+	 * 
+	 * @param userJson
+	 * @return
+	 */
+	@POST
+	@Path("/user/update")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response updateUserInfo(String userJson)
+	{
+		Response response = null;
+		return response;
+	}
+
+	/*
+	 * API pending to Upload Files and Pictures
+	 * @POST
+	 * 
+	 * @Path("/upload")
+	 * 
+	 * @Consumes(MediaType.MULTIPART_FORM_DATA) public Response
+	 * uploadFile(@FormDataParam("file") InputStream
+	 * uploadedInputStream, @FormDataParam("file") FormDataContentDisposition
+	 * fileDetail) { Response response = null; return response; }
+	 */
+	
+	/*
+	 * API pending to download files and pics 
+	 */
+	
+	/**
+	 * Get configuration value, given a key
+	 * 
+	 * @param configName
+	 * @return
+	 */
+	@GET
+	@Path("{configName}")
+	public Response getConfig(@PathParam("configName")
+	String configName)
+	{
+		Response response = null;
+		return response;
+	}
+
+	/*
+	 *  API pending to create task
+	 *  API pending to edit task
+	 *  API pending to delete task 
+	 */
+
 
 }
