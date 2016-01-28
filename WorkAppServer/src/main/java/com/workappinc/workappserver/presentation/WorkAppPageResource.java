@@ -33,7 +33,8 @@ public class WorkAppPageResource implements IResource
 	}
 
 	/**
-	 * Test 
+	 * Test
+	 * 
 	 * @return
 	 */
 	@GET
@@ -43,7 +44,7 @@ public class WorkAppPageResource implements IResource
 	{
 		return "Test";
 	}
-	
+
 	/**
 	 * Loads HomePage
 	 * 

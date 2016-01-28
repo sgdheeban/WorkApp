@@ -7,6 +7,9 @@ import java.util.HashMap;
 
 import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 import com.workappinc.workappserver.businesslogic.model.table.User;
+import com.workappinc.workappserver.common.exception.DatabaseException;
+import com.workappinc.workappserver.common.exception.DuplicateDBEntryException;
+import com.workappinc.workappserver.common.exception.InternalServerException;
 import com.workappinc.workappserver.common.exception.MD5HashingException;
 import com.workappinc.workappserver.common.exception.RuntimeSQLException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
@@ -43,11 +46,13 @@ public class WorkAppServiceManager
 	 * Registers new user
 	 * 
 	 * @param userJson
+	 * @throws DuplicateDBEntryException
+	 * @throws DatabaseException
+	 * @throws InternalServerException
 	 * @System.out.println(select.getQueryString());return
 	 */
-	public static boolean registerUser(User user)
+	public static void registerUser(User user) throws DuplicateDBEntryException, DatabaseException, InternalServerException
 	{
-		boolean isSuccess = false;
 		WorkAppJDBCConnection conn = null;
 		Persist persist = null;
 		try
@@ -58,23 +63,29 @@ public class WorkAppServiceManager
 			String password = user.getPassword();
 			user.setPassword(WorkAppUtil.generateMD5HashString(_logger, null, password));
 			persist.insert(user);
-			isSuccess = true;
 		}
 		catch (RuntimeSQLException ex)
 		{
-			if(ex.getCause() instanceof MySQLIntegrityConstraintViolationException)
+			if (ex.getCause() instanceof MySQLIntegrityConstraintViolationException)
 			{
-				_logger.LogException(ex, WorkAppServiceManager.class);  
+				_logger.LogDebug(user.getEmail() + " already exists in the database.", WorkAppServiceManager.class);
+				throw new DuplicateDBEntryException(user.getEmail() + " already exists in the database.", ex);
 			}
-			_logger.LogException(ex, WorkAppServiceManager.class);  
+			else
+			{
+				_logger.LogException(ex, WorkAppServiceManager.class);
+				throw new DatabaseException("Database Exception with messasge:" + ex.getMessage(), ex);
+			}
 		}
 		catch (SQLException ex)
 		{
 			_logger.LogException(ex, WorkAppServiceManager.class);
+			throw new DatabaseException("Database Exception with messasge:" + ex.getMessage(), ex);
 		}
 		catch (MD5HashingException ex)
 		{
 			_logger.LogException(ex, WorkAppServiceManager.class);
+			throw new InternalServerException("Hashing Exception with messasge:" + ex.getMessage(), ex);
 		}
 		finally
 		{
@@ -82,7 +93,6 @@ public class WorkAppServiceManager
 			persist = null;
 			conn = null;
 		}
-		return isSuccess;
 	}
 
 }

@@ -12,6 +12,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
 
 import org.apache.commons.lang.time.StopWatch;
 /*import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
@@ -20,6 +21,9 @@ import org.glassfish.jersey.media.multipart.FormDataParam;*/
 import com.workappinc.workappserver.businesslogic.model.TestUserInfo;
 import com.workappinc.workappserver.businesslogic.model.WorkAppServiceManager;
 import com.workappinc.workappserver.businesslogic.model.table.User;
+import com.workappinc.workappserver.common.exception.DatabaseException;
+import com.workappinc.workappserver.common.exception.DuplicateDBEntryException;
+import com.workappinc.workappserver.common.exception.InternalServerException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
@@ -57,11 +61,26 @@ public class WorkAppCoreResource implements IResource
 	{
 		StopWatch stopwatch = new StopWatch();
 		stopwatch.start();
-		boolean returnvalue = WorkAppServiceManager.registerUser(userJson);
-		stopwatch.stop();
-		if (returnvalue)
-			return Response.status(200).entity("Saved.").build();
-		else return Response.status(200).entity("Not Saved.").build();
+		try
+		{
+			WorkAppServiceManager.registerUser(userJson);
+			stopwatch.stop();
+			return Response.status(Status.OK).entity("Saved.").header("Time Taken", stopwatch.getTime() + " ms").build();
+		}
+		catch (DuplicateDBEntryException ex)
+		{
+			stopwatch.stop();
+			return Response.status(Status.CONFLICT).entity("User already exists in the DB.").header("Time Taken", stopwatch.getTime() + " ms").build();
+		}
+		catch (DatabaseException | InternalServerException ex)
+		{
+			stopwatch.stop();
+			return Response.status(Status.INTERNAL_SERVER_ERROR).entity("Error inside server logic.").header("Time Taken", stopwatch.getTime() + " ms").build();
+		}
+		finally
+		{
+			stopwatch.reset();
+		}
 	}
 
 	/**
@@ -71,9 +90,9 @@ public class WorkAppCoreResource implements IResource
 	 * @return
 	 */
 	@POST
-	@Path("/user/edit")
+	@Path("/user/update")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response editUserInfo(String userJson)
+	public Response updateUserInfo(String userJson)
 	{
 		Response response = null;
 		return response;
@@ -94,17 +113,16 @@ public class WorkAppCoreResource implements IResource
 		return response;
 	}
 
-/*	@POST
-	@Path("/upload")
-	@Consumes(MediaType.MULTIPART_FORM_DATA)
-	public Response uploadFile(@FormDataParam("file")
-	InputStream uploadedInputStream, @FormDataParam("file")
-	FormDataContentDisposition fileDetail)
-	{
-		Response response = null;
-		return response;
-	}
-*/
+	/*
+	 * @POST
+	 * 
+	 * @Path("/upload")
+	 * 
+	 * @Consumes(MediaType.MULTIPART_FORM_DATA) public Response
+	 * uploadFile(@FormDataParam("file") InputStream
+	 * uploadedInputStream, @FormDataParam("file") FormDataContentDisposition
+	 * fileDetail) { Response response = null; return response; }
+	 */
 	/**
 	 * Login User
 	 * 
