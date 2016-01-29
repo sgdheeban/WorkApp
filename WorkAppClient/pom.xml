@@ -6,4 +6,13 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>WorkAppClient</artifactId>
+  
+  <dependencies>
+	 <dependency>
+	 	<groupId>com.workappinc</groupId>
+ 		<artifactId>WorkAppServer</artifactId>
+ 		<version>0.0.1-SNAPSHOT</version>
+ 	 </dependency>
+  </dependencies>
+  
 </project>

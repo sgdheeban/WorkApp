@@ -10,11 +10,6 @@
 	<modules>
 		<module>WorkAppServer</module>
 		<module>WorkAppClient</module>
-		<module>WorkAppMonitor</module>
-		<module>WorkAppWebApp</module>
-		<module>WorkAppTaskScheduler</module>
-		<module>WorkAppLoadBalancer</module>
-		<module>WorkAppMetricsDashboard</module>
 	</modules>
 
 	<build>
