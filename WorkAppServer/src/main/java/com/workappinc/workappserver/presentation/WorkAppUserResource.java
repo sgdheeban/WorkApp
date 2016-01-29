@@ -1,24 +1,21 @@
 package com.workappinc.workappserver.presentation;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Request;
+import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
+import javax.ws.rs.core.UriInfo;
 
 import org.apache.commons.lang.time.StopWatch;
 /*import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import org.glassfish.jersey.media.multipart.FormDataParam;*/
 
-import com.workappinc.workappserver.businesslogic.model.TestUserInfo;
 import com.workappinc.workappserver.businesslogic.model.WorkAppServiceManager;
 import com.workappinc.workappserver.businesslogic.model.table.User;
 import com.workappinc.workappserver.common.exception.DatabaseException;
@@ -27,14 +24,13 @@ import com.workappinc.workappserver.common.exception.InternalServerException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
- * An implementation of IResource to expose services for performing core site
- * services
+ * An implementation of IResource to expose services for performing user related services
  * 
  * @author dhgovindaraj
  *
  */
-@Path("/workapp/core/v1/")
-public class WorkAppCoreResource implements IResource
+@Path("/workapp/v1/user/")
+public class WorkAppUserResource implements IResource
 {
 	private static IApplicationLogger _logger;
 
@@ -55,10 +51,13 @@ public class WorkAppCoreResource implements IResource
 	 * @return
 	 */
 	@POST
-	@Path("/user/register")
+	@Path("register")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response registerUser(User userJson)
+	public Response registerUser(@Context UriInfo uriInfo, User userJson)
 	{
+		MultivaluedMap<String, String> queryMap = uriInfo.getQueryParameters();
+		String queryID = queryMap.getFirst("qid");
+		
 		StopWatch stopwatch = new StopWatch();
 		stopwatch.start();
 		try
@@ -90,7 +89,7 @@ public class WorkAppCoreResource implements IResource
 	 * @return
 	 */
 	@POST
-	@Path("/user/login")
+	@Path("login")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response loginUser(String loginInfo)
 	{
@@ -105,7 +104,7 @@ public class WorkAppCoreResource implements IResource
 	 * @return
 	 */
 	@POST
-	@Path("/user/logout")
+	@Path("logout")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response logoutUser(String logoutInfo)
 	{
@@ -124,7 +123,7 @@ public class WorkAppCoreResource implements IResource
 	 * @return
 	 */
 	@POST
-	@Path("/user/update")
+	@Path("update")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response updateUserInfo(String userJson)
 	{
