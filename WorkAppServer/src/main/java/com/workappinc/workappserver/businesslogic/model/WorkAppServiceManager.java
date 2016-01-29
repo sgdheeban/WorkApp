@@ -56,7 +56,9 @@ public class WorkAppServiceManager
 	 */
 	public static void registerUser(MultivaluedMap<String, String> queryMap,  User user) throws DuplicateDBEntryException, DatabaseException, InternalServerException
 	{
-		String queryID = queryMap.getFirst("qid");
+		String queryID = null;
+		if(queryMap != null)
+			queryID = queryMap.getFirst("qid");
 		WorkAppJDBCConnection conn = null;
 		Persist persist = null;
 		try
