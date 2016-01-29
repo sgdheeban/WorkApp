@@ -5,6 +5,8 @@ import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import javax.ws.rs.core.MultivaluedMap;
+
 import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 import com.workappinc.workappserver.businesslogic.model.table.User;
 import com.workappinc.workappserver.common.exception.DatabaseException;
@@ -45,14 +47,16 @@ public class WorkAppServiceManager
 	/**
 	 * Registers new user
 	 * 
+	 * @param queryMap
 	 * @param userJson
 	 * @throws DuplicateDBEntryException
 	 * @throws DatabaseException
 	 * @throws InternalServerException
 	 * @System.out.println(select.getQueryString());return
 	 */
-	public static void registerUser(User user) throws DuplicateDBEntryException, DatabaseException, InternalServerException
+	public static void registerUser(MultivaluedMap<String, String> queryMap,  User user) throws DuplicateDBEntryException, DatabaseException, InternalServerException
 	{
+		String queryID = queryMap.getFirst("qid");
 		WorkAppJDBCConnection conn = null;
 		Persist persist = null;
 		try
@@ -68,24 +72,24 @@ public class WorkAppServiceManager
 		{
 			if (ex.getCause() instanceof MySQLIntegrityConstraintViolationException)
 			{
-				_logger.LogDebug(user.getEmail() + " already exists in the database.", WorkAppServiceManager.class);
+				_logger.LogDebug("["+queryID+"] "+ user.getEmail() + " already exists in the database.", WorkAppServiceManager.class);
 				throw new DuplicateDBEntryException(user.getEmail() + " already exists in the database.", ex);
 			}
 			else
 			{
 				_logger.LogException(ex, WorkAppServiceManager.class);
-				throw new DatabaseException("Database Exception with messasge:" + ex.getMessage(), ex);
+				throw new DatabaseException("["+queryID+"] "+ "Database Exception with messasge:" + ex.getMessage(), ex);
 			}
 		}
 		catch (SQLException ex)
 		{
 			_logger.LogException(ex, WorkAppServiceManager.class);
-			throw new DatabaseException("Database Exception with messasge:" + ex.getMessage(), ex);
+			throw new DatabaseException("["+queryID+"] "+ "Database Exception with messasge:" + ex.getMessage(), ex);
 		}
 		catch (MD5HashingException ex)
 		{
 			_logger.LogException(ex, WorkAppServiceManager.class);
-			throw new InternalServerException("Hashing Exception with messasge:" + ex.getMessage(), ex);
+			throw new InternalServerException("["+queryID+"] "+ "Hashing Exception with messasge:" + ex.getMessage(), ex);
 		}
 		finally
 		{

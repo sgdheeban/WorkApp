@@ -56,13 +56,11 @@ public class WorkAppUserResource implements IResource
 	public Response registerUser(@Context UriInfo uriInfo, User userJson)
 	{
 		MultivaluedMap<String, String> queryMap = uriInfo.getQueryParameters();
-		String queryID = queryMap.getFirst("qid");
-		
 		StopWatch stopwatch = new StopWatch();
 		stopwatch.start();
 		try
 		{
-			WorkAppServiceManager.registerUser(userJson);
+			WorkAppServiceManager.registerUser(queryMap, userJson);
 			stopwatch.stop();
 			return Response.status(Status.OK).entity("Saved.").header("Time Taken", stopwatch.getTime() + " ms").build();
 		}
