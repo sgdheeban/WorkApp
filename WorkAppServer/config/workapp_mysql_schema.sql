@@ -21,6 +21,25 @@ create table user (
 	is_owner bool,
 	primary key (email)
 );
+
+// Creating session table
+create table session (
+	id varchar(50) NOT NULL,
+	user_id varchar(50) NOT NULL,
+	token varchar(50) NOT NULL,
+	user_agent varchar(50) NOT NULL,
+	logintime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	primary key (id, user_id)
+);
+
+// Creating user_metrics table
+create table user_metrics (
+	id varchar(50) NOT NULL,
+	user_id varchar(50) NOT NULL,
+	primary key (id, user_id)
+);
+
 // End of WorkApp Database and Tables creation
 
-// insert into user (id, email, password, first_name, last_name) values (123, 'sgdheeban@gmail.com', 'sachin10', 'dheeban','sg');
+
+

@@ -24,7 +24,8 @@ import com.workappinc.workappserver.common.exception.InternalServerException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
- * An implementation of IResource to expose services for performing user related services
+ * An implementation of IResource to expose services for performing user related
+ * services
  * 
  * @author dhgovindaraj
  *
@@ -53,7 +54,8 @@ public class WorkAppUserResource implements IResource
 	@POST
 	@Path("register")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response registerUser(@Context UriInfo uriInfo, User userJson)
+	public Response registerUser(@Context
+	UriInfo uriInfo, User userJson)
 	{
 		MultivaluedMap<String, String> queryMap = uriInfo.getQueryParameters();
 		StopWatch stopwatch = new StopWatch();
@@ -109,11 +111,12 @@ public class WorkAppUserResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 	/*
-	 * API pending to authenticate user session or this is done internally for every action call
+	 * API pending to authenticate user session or this is done internally for
+	 * every action call
 	 */
-	
+
 	/**
 	 * Edit user info
 	 * 
@@ -131,6 +134,7 @@ public class WorkAppUserResource implements IResource
 
 	/*
 	 * API pending to Upload Files and Pictures
+	 * 
 	 * @POST
 	 * 
 	 * @Path("/upload")
@@ -140,11 +144,11 @@ public class WorkAppUserResource implements IResource
 	 * uploadedInputStream, @FormDataParam("file") FormDataContentDisposition
 	 * fileDetail) { Response response = null; return response; }
 	 */
-	
+
 	/*
-	 * API pending to download files and pics 
+	 * API pending to download files and pics
 	 */
-	
+
 	/**
 	 * Get configuration value, given a key
 	 * 
@@ -161,10 +165,8 @@ public class WorkAppUserResource implements IResource
 	}
 
 	/*
-	 *  API pending to create task
-	 *  API pending to edit task
-	 *  API pending to delete task 
+	 * API pending to create task API pending to edit task API pending to delete
+	 * task
 	 */
-
 
 }

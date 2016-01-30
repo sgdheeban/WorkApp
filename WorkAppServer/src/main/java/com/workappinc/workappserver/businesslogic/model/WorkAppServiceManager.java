@@ -54,10 +54,10 @@ public class WorkAppServiceManager
 	 * @throws InternalServerException
 	 * @System.out.println(select.getQueryString());return
 	 */
-	public static void registerUser(MultivaluedMap<String, String> queryMap,  User user) throws DuplicateDBEntryException, DatabaseException, InternalServerException
+	public static void registerUser(MultivaluedMap<String, String> queryMap, User user) throws DuplicateDBEntryException, DatabaseException, InternalServerException
 	{
 		String queryID = null;
-		if(queryMap != null)
+		if (queryMap != null)
 			queryID = queryMap.getFirst("qid");
 		WorkAppJDBCConnection conn = null;
 		Persist persist = null;
@@ -74,24 +74,24 @@ public class WorkAppServiceManager
 		{
 			if (ex.getCause() instanceof MySQLIntegrityConstraintViolationException)
 			{
-				_logger.LogDebug("["+queryID+"] "+ user.getEmail() + " already exists in the database.", WorkAppServiceManager.class);
+				_logger.LogDebug("[" + queryID + "] " + user.getEmail() + " already exists in the database.", WorkAppServiceManager.class);
 				throw new DuplicateDBEntryException(user.getEmail() + " already exists in the database.", ex);
 			}
 			else
 			{
 				_logger.LogException(ex, WorkAppServiceManager.class);
-				throw new DatabaseException("["+queryID+"] "+ "Database Exception with messasge:" + ex.getMessage(), ex);
+				throw new DatabaseException("[" + queryID + "] " + "Database Exception with messasge:" + ex.getMessage(), ex);
 			}
 		}
 		catch (SQLException ex)
 		{
 			_logger.LogException(ex, WorkAppServiceManager.class);
-			throw new DatabaseException("["+queryID+"] "+ "Database Exception with messasge:" + ex.getMessage(), ex);
+			throw new DatabaseException("[" + queryID + "] " + "Database Exception with messasge:" + ex.getMessage(), ex);
 		}
 		catch (MD5HashingException ex)
 		{
 			_logger.LogException(ex, WorkAppServiceManager.class);
-			throw new InternalServerException("["+queryID+"] "+ "Hashing Exception with messasge:" + ex.getMessage(), ex);
+			throw new InternalServerException("[" + queryID + "] " + "Hashing Exception with messasge:" + ex.getMessage(), ex);
 		}
 		finally
 		{

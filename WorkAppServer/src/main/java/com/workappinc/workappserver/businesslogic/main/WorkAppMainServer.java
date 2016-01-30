@@ -250,7 +250,7 @@ public class WorkAppMainServer
 				Logger.getRootLogger().setLevel(Level.WARN);
 				break;
 			default:
-				Logger.getRootLogger().setLevel(Level.DEBUG);
+				Logger.getRootLogger().setLevel(Level.WARN);
 				break;
 			}
 	}
