@@ -13,6 +13,7 @@ import com.workappinc.workappserver.dataaccess.orm.annotations.Table;
 public class User
 {
 	String id;
+	String service_key;
 	String email;
 	String password;
 	String phone;
@@ -28,9 +29,9 @@ public class User
 	@Override
 	public String toString()
 	{
-		return "User [id=" + id + ", email=" + email + ", password=" + password + ", phone=" + phone + ", first_name=" + first_name + ", last_name=" + last_name + ", is_customer=" + is_customer + ", is_individual=" + is_individual + ", employer_name=" + employer_name + ", occupation=" + occupation + ", skills=" + skills + ", is_owner=" + is_owner + "]";
+		return "User [id=" + id + ", service_key=" + service_key + ", email=" + email + ", password=" + password + ", phone=" + phone + ", first_name=" + first_name + ", last_name=" + last_name + ", is_customer=" + is_customer + ", is_individual=" + is_individual + ", employer_name=" + employer_name + ", occupation=" + occupation + ", skills=" + skills + ", is_owner=" + is_owner + ", hashCode()=" + hashCode() + ", getId()=" + getId() + ", getService_key()=" + getService_key() + ", getEmail()=" + getEmail() + ", getPassword()=" + getPassword() + ", getPhone()=" + getPhone() + ", getFirst_name()=" + getFirst_name() + ", getLast_name()=" + getLast_name() + ", getIs_customer()=" + getIs_customer() + ", getIs_individual()=" + getIs_individual() + ", getEmployer_name()=" + getEmployer_name() + ", getOccupation()=" + getOccupation() + ", getSkills()=" + getSkills() + ", getIs_owner()=" + getIs_owner() + ", getClass()=" + getClass() + ", toString()=" + super.toString() + "]";
 	}
-
+	
 	@Override
 	public int hashCode()
 	{
@@ -47,6 +48,7 @@ public class User
 		result = prime * result + ((occupation == null) ? 0 : occupation.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((phone == null) ? 0 : phone.hashCode());
+		result = prime * result + ((service_key == null) ? 0 : service_key.hashCode());
 		result = prime * result + ((skills == null) ? 0 : skills.hashCode());
 		return result;
 	}
@@ -123,6 +125,13 @@ public class User
 		}
 		else if (!phone.equals(other.phone))
 			return false;
+		if (service_key == null)
+		{
+			if (other.service_key != null)
+				return false;
+		}
+		else if (!service_key.equals(other.service_key))
+			return false;
 		if (skills == null)
 		{
 			if (other.skills != null)
@@ -132,7 +141,7 @@ public class User
 			return false;
 		return true;
 	}
-
+	
 	public String getId()
 	{
 		return id;
@@ -141,6 +150,16 @@ public class User
 	public void setId(String id)
 	{
 		this.id = id;
+	}
+	
+	public String getService_key()
+	{
+		return service_key;
+	}
+
+	public void setService_key(String service_key)
+	{
+		this.service_key = service_key;
 	}
 
 	public String getEmail()
