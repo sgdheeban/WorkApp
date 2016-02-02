@@ -2025,3 +2025,77 @@ Content-Type: text/plain
 2016-01-30 16:46:37 INFO  ContextHandler:745 dhgovindaraj-VirtualBox:4479 Started o.e.j.s.ServletContextHandler@6136998b{/,null,AVAILABLE}
 2016-01-30 16:46:38 INFO  ServerConnector:267 dhgovindaraj-VirtualBox:4479 Started ServerConnector@3d4fc090{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
 2016-01-30 16:46:38 INFO  Server:391 dhgovindaraj-VirtualBox:4479 Started @6978ms
+2016-02-01 23:30:07 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3799 Error executing 'create table task (
+	id varchar(50) NOT NULL,
+	project_id varchar(50) NOT NULL,
+	task_id varchar(50) NOT NULL,
+	creator_id varchar(50) NOT NULL,
+	last_edittime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	msg text,
+	like BIGINT(20) NOT NULL,
+	dislike BIGINT(20) NOT NULL,	
+	primary key (id)
+) ' (line 104): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like BIGINT(20) NOT NULL,
+	dislike BIGINT(20) NOT NULL,	
+	primary key (id)
+)' at line 8
+2016-02-01 23:30:07 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3799 Error executing 'create table role_index (
+	id varchar(50) NOT NULL,
+	job_id varchar(50) NOT NULL,
+	user_ids text,
+	primary key (skill_id)
+) ' (line 172): Key column 'skill_id' doesn't exist in table
+2016-02-01 23:30:07 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3799 Error executing 'create table role_index (
+	id varchar(50) NOT NULL,
+	user_id varchar(50) NOT NULL,
+	project_id varchar(50) NOT NULL,
+	role_id varchar(50) NOT NULL,
+	description text,
+	primary key (user_id, feed_id)
+) ' (line 183): Key column 'feed_id' doesn't exist in table
+2016-02-01 23:33:28 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3871 Error executing 'create table task (
+	id varchar(50) NOT NULL,
+	project_id varchar(50) NOT NULL,
+	task_id varchar(50) NOT NULL,
+	creator_id varchar(50) NOT NULL,
+	last_edittime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	msg text,
+	like BIGINT(20) NOT NULL,
+	dislike BIGINT(20) NOT NULL,	
+	primary key (id)
+) ' (line 104): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like BIGINT(20) NOT NULL,
+	dislike BIGINT(20) NOT NULL,	
+	primary key (id)
+)' at line 8
+2016-02-01 23:33:28 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3871 Error executing 'create table role_index (
+	id varchar(50) NOT NULL,
+	user_ids text,
+	primary key (id)
+) ' (line 170): Table 'role_index' already exists
+2016-02-01 23:33:55 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3893 Error executing 'create table task (
+	id varchar(50) NOT NULL,
+	project_id varchar(50) NOT NULL,
+	task_id varchar(50) NOT NULL,
+	creator_id varchar(50) NOT NULL,
+	last_edittime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	msg text,
+	likes BIGINT(20) NOT NULL,
+	dislikes BIGINT(20) NOT NULL,	
+	primary key (id)
+) ' (line 104): Table 'task' already exists
+2016-02-01 23:33:55 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3893 Error executing 'create table role_index (
+	id varchar(50) NOT NULL,
+	user_ids text,
+	primary key (id)
+) ' (line 170): Table 'role_index' already exists
+2016-02-01 23:35:25 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3925 Error executing 'create table task (
+	id varchar(50) NOT NULL,
+	project_id varchar(50) NOT NULL,
+	task_id varchar(50) NOT NULL,
+	creator_id varchar(50) NOT NULL,
+	last_edittime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	msg text,
+	likes BIGINT(20) NOT NULL,
+	dislikes BIGINT(20) NOT NULL,	
+	primary key (id)
+) ' (line 104): Table 'task' already exists

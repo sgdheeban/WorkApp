@@ -19,7 +19,7 @@ public class User
 	String phone;
 	String first_name;
 	String last_name;
-	boolean is_customer;
+	boolean is_worker;
 	boolean is_individual;
 	String employer_name;
 	String occupation;
@@ -29,7 +29,7 @@ public class User
 	@Override
 	public String toString()
 	{
-		return "User [id=" + id + ", service_key=" + service_key + ", email=" + email + ", password=" + password + ", phone=" + phone + ", first_name=" + first_name + ", last_name=" + last_name + ", is_customer=" + is_customer + ", is_individual=" + is_individual + ", employer_name=" + employer_name + ", occupation=" + occupation + ", skills=" + skills + ", is_owner=" + is_owner + ", hashCode()=" + hashCode() + ", getId()=" + getId() + ", getService_key()=" + getService_key() + ", getEmail()=" + getEmail() + ", getPassword()=" + getPassword() + ", getPhone()=" + getPhone() + ", getFirst_name()=" + getFirst_name() + ", getLast_name()=" + getLast_name() + ", getIs_customer()=" + getIs_customer() + ", getIs_individual()=" + getIs_individual() + ", getEmployer_name()=" + getEmployer_name() + ", getOccupation()=" + getOccupation() + ", getSkills()=" + getSkills() + ", getIs_owner()=" + getIs_owner() + ", getClass()=" + getClass() + ", toString()=" + super.toString() + "]";
+		return "User [id=" + id + ", service_key=" + service_key + ", email=" + email + ", password=" + password + ", phone=" + phone + ", first_name=" + first_name + ", last_name=" + last_name + ", is_worker=" + is_worker + ", is_individual=" + is_individual + ", employer_name=" + employer_name + ", occupation=" + occupation + ", skills=" + skills + ", is_owner=" + is_owner + ", hashCode()=" + hashCode() + ", getId()=" + getId() + ", getService_key()=" + getService_key() + ", getEmail()=" + getEmail() + ", getPassword()=" + getPassword() + ", getPhone()=" + getPhone() + ", getFirst_name()=" + getFirst_name() + ", getLast_name()=" + getLast_name() + ", getIs_customer()=" + getIs_worker() + ", getIs_individual()=" + getIs_individual() + ", getEmployer_name()=" + getEmployer_name() + ", getOccupation()=" + getOccupation() + ", getSkills()=" + getSkills() + ", getIs_owner()=" + getIs_owner() + ", getClass()=" + getClass() + ", toString()=" + super.toString() + "]";
 	}
 	
 	@Override
@@ -41,7 +41,7 @@ public class User
 		result = prime * result + ((employer_name == null) ? 0 : employer_name.hashCode());
 		result = prime * result + ((first_name == null) ? 0 : first_name.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + (is_customer ? 1231 : 1237);
+		result = prime * result + (is_worker ? 1231 : 1237);
 		result = prime * result + (is_individual ? 1231 : 1237);
 		result = prime * result + (is_owner ? 1231 : 1237);
 		result = prime * result + ((last_name == null) ? 0 : last_name.hashCode());
@@ -91,7 +91,7 @@ public class User
 		}
 		else if (!id.equals(other.id))
 			return false;
-		if (is_customer != other.is_customer)
+		if (is_worker != other.is_worker)
 			return false;
 		if (is_individual != other.is_individual)
 			return false;
@@ -212,14 +212,14 @@ public class User
 		this.last_name = last_name;
 	}
 
-	public boolean getIs_customer()
+	public boolean getIs_worker()
 	{
-		return is_customer;
+		return is_worker;
 	}
 
-	public void setIs_customer(boolean is_customer)
+	public void setIs_worker(boolean is_worker)
 	{
-		this.is_customer = is_customer;
+		this.is_worker = is_worker;
 	}
 
 	public boolean getIs_individual()
