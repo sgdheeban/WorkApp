@@ -2099,3 +2099,82 @@ Content-Type: text/plain
 	dislikes BIGINT(20) NOT NULL,	
 	primary key (id)
 ) ' (line 104): Table 'task' already exists
+2016-02-02 15:26:39 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3663 Error executing 'create table skill_user_index (
+	id varchar(50) NOT NULL,
+	skill_id varchar(50) NOT NULL,
+	user_id id varchar(50) NOT NULL,
+	primary key (skill_id, user_id)
+) ' (line 146): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id varchar(50) NOT NULL,
+	primary key (skill_id, user_id)
+)' at line 4
+2016-02-02 15:26:39 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3663 Error executing 'create table occupation_user_index (
+	id varchar(50) NOT NULL,
+	occupation_id id varchar(50) NOT NULL,
+	user_id id varchar(50) NOT NULL,
+	primary key (occupation_id,user_id)
+) ' (line 155): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id varchar(50) NOT NULL,
+	user_id id varchar(50) NOT NULL,
+	primary key (occupat' at line 3
+2016-02-02 15:26:39 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3663 Error executing 'create table skill_work_index (
+	id varchar(50) NOT NULL,
+	skill_id varchar(50) NOT NULL,
+	work_id id varchar(50) NOT NULL,
+	primary key (skill_id, work_id)
+) ' (line 164): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id varchar(50) NOT NULL,
+	primary key (skill_id, work_id)
+)' at line 4
+2016-02-02 15:26:39 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3663 Error executing 'create table occupation_work_index (
+	id varchar(50) NOT NULL,
+	occupation_id id varchar(50) NOT NULL,
+	work_id id varchar(50) NOT NULL,
+	primary key (occupation_id,work_id)
+) ' (line 173): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id varchar(50) NOT NULL,
+	work_id id varchar(50) NOT NULL,
+	primary key (occupat' at line 3
+2016-02-02 15:26:39 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3663 Error executing 'create table work (
+	id varchar(50) NOT NULL,
+	board_id varchar(50) NOT NULL,
+	name varchar(100) NOT NULL,
+	description text,
+	creator_id varchar(50) NOT NULL,
+	createtime TIMESTAMP,
+	last_editor_id varchar(50) NOT NULL,
+	last_edittime TIMESTAMP,
+	version bigint(20) default 0,
+	status_id varchar(50) NOT NULL,
+	milestone_id varchar(50) NOT NULL,
+	deadline TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	primary key (id)
+) ' (line 225): Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause
+2016-02-02 15:27:21 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3718 Error executing 'create table skill_user_index (
+	id varchar(50) NOT NULL,
+	skill_id varchar(50) NOT NULL,
+	user_id id varchar(50) NOT NULL,
+	primary key (skill_id, user_id)
+) ' (line 146): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id varchar(50) NOT NULL,
+	primary key (skill_id, user_id)
+)' at line 4
+2016-02-02 15:27:21 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3718 Error executing 'create table occupation_user_index (
+	id varchar(50) NOT NULL,
+	occupation_id id varchar(50) NOT NULL,
+	user_id id varchar(50) NOT NULL,
+	primary key (occupation_id,user_id)
+) ' (line 155): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id varchar(50) NOT NULL,
+	user_id id varchar(50) NOT NULL,
+	primary key (occupat' at line 3
+2016-02-02 15:27:21 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3718 Error executing 'create table skill_work_index (
+	id varchar(50) NOT NULL,
+	skill_id varchar(50) NOT NULL,
+	work_id id varchar(50) NOT NULL,
+	primary key (skill_id, work_id)
+) ' (line 164): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id varchar(50) NOT NULL,
+	primary key (skill_id, work_id)
+)' at line 4
+2016-02-02 15:27:21 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3718 Error executing 'create table occupation_work_index (
+	id varchar(50) NOT NULL,
+	occupation_id id varchar(50) NOT NULL,
+	work_id id varchar(50) NOT NULL,
+	primary key (occupation_id,work_id)
+) ' (line 173): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id varchar(50) NOT NULL,
+	work_id id varchar(50) NOT NULL,
+	primary key (occupat' at line 3
