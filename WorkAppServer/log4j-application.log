@@ -2178,3 +2178,12 @@ Content-Type: text/plain
 ) ' (line 173): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id varchar(50) NOT NULL,
 	work_id id varchar(50) NOT NULL,
 	primary key (occupat' at line 3
+2016-02-02 16:05:43 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3939 Error executing 'create table recommendation (
+	id varchar(50) NOT NULL,
+	is_expired bool,
+	expiry_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	work_id varchar(50) NOT NULL,
+	user_id varchar(50) NOT NULL,
+	rank bigint(20) default 0,
+	primary key (board_id, work_id)
+) ' (line 238): Key column 'board_id' doesn't exist in table

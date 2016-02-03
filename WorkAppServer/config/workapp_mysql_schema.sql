@@ -218,10 +218,23 @@ create table work (
 	last_editor_id varchar(50) NOT NULL,
 	last_edittime TIMESTAMP,
 	version bigint(20) default 0,
+	placement_inboard bigint(20) default 0,
 	status_id varchar(50) NOT NULL,
 	milestone_id varchar(50) NOT NULL,
 	deadline TIMESTAMP,
 	primary key (id)
+);
+
+// Creating recommendation table
+drop table if exists `recommendation` ;
+create table recommendation (
+	id varchar(50) NOT NULL,
+	is_expired bool,
+	expiry_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	work_id varchar(50) NOT NULL,
+	user_id varchar(50) NOT NULL,
+	rank bigint(20) default 0,
+	primary key (work_id, user_id)
 );
 
 // Creating news_feed table
