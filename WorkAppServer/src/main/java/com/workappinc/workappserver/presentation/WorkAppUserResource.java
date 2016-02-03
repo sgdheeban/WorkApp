@@ -112,11 +112,6 @@ public class WorkAppUserResource implements IResource
 		return response;
 	}
 
-	/*
-	 * API pending to authenticate user session or this is done internally for
-	 * every action call
-	 */
-
 	/**
 	 * Edit user info
 	 * 
@@ -124,49 +119,12 @@ public class WorkAppUserResource implements IResource
 	 * @return
 	 */
 	@POST
-	@Path("update")
+	@Path("editUserInfo")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response updateUserInfo(String userJson)
+	public Response editUserInfo(String userJson)
 	{
 		Response response = null;
 		return response;
 	}
-
-	/*
-	 * API pending to Upload Files and Pictures
-	 * 
-	 * @POST
-	 * 
-	 * @Path("/upload")
-	 * 
-	 * @Consumes(MediaType.MULTIPART_FORM_DATA) public Response
-	 * uploadFile(@FormDataParam("file") InputStream
-	 * uploadedInputStream, @FormDataParam("file") FormDataContentDisposition
-	 * fileDetail) { Response response = null; return response; }
-	 */
-
-	/*
-	 * API pending to download files and pics
-	 */
-
-	/**
-	 * Get configuration value, given a key
-	 * 
-	 * @param configName
-	 * @return
-	 */
-	@GET
-	@Path("{configName}")
-	public Response getConfig(@PathParam("configName")
-	String configName)
-	{
-		Response response = null;
-		return response;
-	}
-
-	/*
-	 * API pending to create task API pending to edit task API pending to delete
-	 * task
-	 */
 
 }

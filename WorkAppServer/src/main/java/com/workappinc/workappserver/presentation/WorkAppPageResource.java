@@ -16,7 +16,7 @@ import com.workappinc.workappserver.common.logging.IApplicationLogger;
  * @author dhgovindaraj
  *
  */
-@Path("/workapp/page/v1/")
+@Path("/workapp/v1/page/")
 public class WorkAppPageResource implements IResource
 {
 

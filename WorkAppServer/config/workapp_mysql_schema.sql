@@ -8,7 +8,6 @@ grant all privileges on workapp.* to 'user'@'%' identified by 'user';
 drop table if exists `user` ;
 create table user (
 	id varchar(50) NOT NULL,
-	service_key varchar(50) NOT NULL,
 	email varchar(100) NOT NULL,
 	password varchar(100) NOT NULL,
 	phone varchar(20),
