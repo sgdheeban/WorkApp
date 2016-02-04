@@ -214,6 +214,7 @@ create table work (
 	description text,
 	creator_id varchar(50) NOT NULL,
 	createtime TIMESTAMP,
+	assignee_id varchar(50) NOT NULL,
 	last_editor_id varchar(50) NOT NULL,
 	last_edittime TIMESTAMP,
 	version bigint(20) default 0,
@@ -224,9 +225,9 @@ create table work (
 	primary key (id)
 );
 
-// Creating recommendation table
-drop table if exists `recommendation` ;
-create table recommendation (
+// Creating talent_recommendation table
+drop table if exists `talent_recommendation` ;
+create table talent_recommendation (
 	id varchar(50) NOT NULL,
 	is_expired bool,
 	expiry_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
