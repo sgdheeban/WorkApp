@@ -25,6 +25,7 @@ create table user (
 	overall_rating bigint(50) default 0,
 	is_onsiteOK bool,
 	is_equityOK bool,
+	create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	primary key (email)
 );
 
