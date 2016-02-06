@@ -80,6 +80,7 @@ create table user_rating (
 drop table if exists `user_session` ;
 create table user_session (
 	id varchar(50) NOT NULL,
+	token varchar(50) NOT NULL,
 	user_id varchar(50) NOT NULL,
 	user_agent varchar(50) NOT NULL,
 	logintime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

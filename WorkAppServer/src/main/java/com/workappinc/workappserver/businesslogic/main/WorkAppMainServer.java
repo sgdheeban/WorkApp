@@ -288,7 +288,7 @@ public class WorkAppMainServer
 		configMap.put("configFile", configFile);
 		configMap.put("log4jPropFile", log4jPropFile);
 		configMap.put("logLevel", logLevel);
-		configMap.put("mo", mode);
+		configMap.put("mode", mode);
 		configMap.put("port", port);
 		configMap.put("trackAllocation", trackAllocation);
 		configMap.put("detectJARClash", detectJARClash);
