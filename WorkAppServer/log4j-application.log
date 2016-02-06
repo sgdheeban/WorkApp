@@ -4618,3 +4618,834 @@ Content-Type: text/plain
 2016-02-06 14:38:23 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:4451 
 2016-02-06 14:38:23 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:4451 
 2016-02-06 14:38:23 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:4451 
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 logLevel:DEBUG
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 mode:rest
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 port:8080
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 trackAllocation:false
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 detectJARClash:false
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 schemaFile:null
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 database:jdbc:mysql://localhost:3306/
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 dbUser:root
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 dbPassword:password
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 dbSchema:workapp
+2016-02-06 14:49:23 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4674 dbPoolSize:20
+2016-02-06 14:49:23 DEBUG WorkAppMySQLConnectionManager:98 dhgovindaraj-VirtualBox:4674 Attempting to connect to db at: jdbc:mysql://localhost:3306/workapp
+2016-02-06 14:49:24 DEBUG log:176 dhgovindaraj-VirtualBox:4674 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-02-06 14:49:24 INFO  log:186 dhgovindaraj-VirtualBox:4674 Logging initialized @4588ms
+2016-02-06 14:49:24 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.server.session.SessionHandler@4dbb42b7 added {org.eclipse.jetty.server.session.HashSessionManager@66f57048,AUTO}
+2016-02-06 14:49:24 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 o.e.j.s.ServletContextHandler@550dbc7a{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@4dbb42b7,AUTO}
+2016-02-06 14:49:24 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.server.session.SessionHandler@4dbb42b7 added {org.eclipse.jetty.servlet.ServletHandler@6bd61f98,AUTO}
+2016-02-06 14:49:24 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.server.Server@738dc9b added {qtp477533894{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 HttpConnectionFactory@75437611[HTTP/1.1] added {HttpConfiguration@350aac89{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@738dc9b,UNMANAGED}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {qtp477533894{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9,AUTO}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@28261e8e,POJO}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 ServerConnector@7f485fda{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@75437611[HTTP/1.1],AUTO}
+2016-02-06 14:49:25 DEBUG ServerConnector:393 dhgovindaraj-VirtualBox:4674 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8,MANAGED}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.server.Server@738dc9b added {ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.server.Server@738dc9b added {o.e.j.s.ServletContextHandler@550dbc7a{/,null,null},AUTO}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-723ca036,POJO}
+2016-02-06 14:49:25 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.server.Server@738dc9b
+2016-02-06 14:49:25 INFO  Server:339 dhgovindaraj-VirtualBox:4674 jetty-9.3.0.M2
+2016-02-06 14:49:25 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.server.Server@738dc9b
+2016-02-06 14:49:25 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting qtp477533894{STOPPED,8<=0<=200,i=0,q=0}
+2016-02-06 14:49:25 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @5871ms qtp477533894{STARTED,8<=8<=200,i=7,q=0}
+2016-02-06 14:49:25 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting o.e.j.s.ServletContextHandler@550dbc7a{/,null,null}
+2016-02-06 14:49:25 DEBUG PreEncodedHttpField:65 dhgovindaraj-VirtualBox:4674 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@15a34df2]
+2016-02-06 14:49:25 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:4674 starting o.e.j.s.ServletContextHandler@550dbc7a{/,null,STARTING}
+2016-02-06 14:49:25 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-06 14:49:25 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-06 14:49:25 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-06 14:49:25 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.server.session.HashSessionManager@66f57048 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575,MANAGED}
+2016-02-06 14:49:25 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @6184ms org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6
+2016-02-06 14:49:26 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.server.Server@738dc9b added {org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6,MANAGED}
+2016-02-06 14:49:26 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.server.session.HashSessionManager@66f57048 added {org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6,UNMANAGED}
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @6238ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @6268ms org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-06 14:49:26 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:4674 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-723ca036 from default=false
+2016-02-06 14:49:26 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:4674 filterNameMap={}
+2016-02-06 14:49:26 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:4674 pathFilters=null
+2016-02-06 14:49:26 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:4674 servletFilterMap=null
+2016-02-06 14:49:26 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:4674 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-06 14:49:26 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:4674 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-723ca036=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-06 14:49:26 DEBUG ServletHandler:165 dhgovindaraj-VirtualBox:4674 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-06 14:49:26 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-02-06 14:49:26 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81,POJO}
+2016-02-06 14:49:26 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:4674 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-723ca036 from default=false
+2016-02-06 14:49:26 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:4674 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81 from default=false
+2016-02-06 14:49:26 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:4674 filterNameMap={}
+2016-02-06 14:49:26 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:4674 pathFilters=null
+2016-02-06 14:49:26 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:4674 servletFilterMap=null
+2016-02-06 14:49:26 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:4674 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-02-06 14:49:26 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:4674 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-723ca036=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false, org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-02-06 14:49:26 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @6358ms org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @6359ms org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @6380ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-06 14:49:26 DEBUG BaseHolder:97 dhgovindaraj-VirtualBox:4674 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@18b4aac2
+2016-02-06 14:49:26 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @6389ms org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-06 14:49:26 DEBUG ServletHolder:612 dhgovindaraj-VirtualBox:4674 Servlet.init org.glassfish.jersey.servlet.ServletContainer@5e3f861 for org.glassfish.jersey.servlet.ServletContainer-723ca036
+2016-02-06 14:49:31 WARN  /:2069 dhgovindaraj-VirtualBox:4674 unavailable
+org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+[[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method POST and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.logoutUser(java.lang.String) and public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.getNewFeed(java.lang.String) at matching regular expression /logout. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@70e3f36f']
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:554)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:183)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:349)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:346)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:346)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:339)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:170)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:362)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:613)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:396)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:871)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:341)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:742)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:399)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+2016-02-06 14:49:31 DEBUG ServletHandler:875 dhgovindaraj-VirtualBox:4674 EXCEPTION 
+javax.servlet.ServletException: org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:634)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:396)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:871)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:341)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:742)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:399)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+Caused by: org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+[[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method POST and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.logoutUser(java.lang.String) and public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.getNewFeed(java.lang.String) at matching regular expression /logout. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@70e3f36f']
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:554)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:183)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:349)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:346)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:346)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:339)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:170)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:362)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:613)
+	... 13 more
+2016-02-06 14:49:31 WARN  AbstractLifeCycle:213 dhgovindaraj-VirtualBox:4674 FAILED o.e.j.s.ServletContextHandler@550dbc7a{/,null,STARTING}: javax.servlet.ServletException: org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+javax.servlet.ServletException: org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:634)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:396)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:871)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:341)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:742)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:399)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+Caused by: org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+[[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method POST and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.logoutUser(java.lang.String) and public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.getNewFeed(java.lang.String) at matching regular expression /logout. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@70e3f36f']
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:554)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:183)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:349)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:346)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:346)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:339)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:170)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:362)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:613)
+	... 13 more
+2016-02-06 14:49:31 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-06 14:49:32 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-02-06 14:49:32 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9
+2016-02-06 14:49:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @12046ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9
+2016-02-06 14:49:32 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-06 14:49:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @12049ms HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-06 14:49:32 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8
+2016-02-06 14:49:32 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4674 starting org.eclipse.jetty.io.ManagedSelector@2e380628 id=0 keys=-1 selected=-1
+2016-02-06 14:49:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @12149ms org.eclipse.jetty.io.ManagedSelector@2e380628 id=0 keys=0 selected=0
+2016-02-06 14:49:32 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:4674 queue org.eclipse.jetty.io.ManagedSelector@2e380628 id=0 keys=0 selected=0
+2016-02-06 14:49:32 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:4674 run org.eclipse.jetty.io.ManagedSelector@2e380628 id=0 keys=0 selected=0
+2016-02-06 14:49:32 DEBUG ExecuteProduceRun:66 dhgovindaraj-VirtualBox:4674 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6a06b83 execute
+2016-02-06 14:49:32 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:4674 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6a06b83 produce enter
+2016-02-06 14:49:32 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:4674 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6a06b83 producing
+2016-02-06 14:49:32 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4674 Selector loop waiting on select
+2016-02-06 14:49:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @12158ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8
+2016-02-06 14:49:32 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4674 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@15fb7a32,POJO}
+2016-02-06 14:49:32 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:4674 queue acceptor-0@15fb7a32
+2016-02-06 14:49:32 INFO  ServerConnector:267 dhgovindaraj-VirtualBox:4674 Started ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-06 14:49:32 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:4674 run acceptor-0@15fb7a32
+2016-02-06 14:49:32 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4674 STARTED @12230ms ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-06 14:49:32 WARN  AbstractLifeCycle:213 dhgovindaraj-VirtualBox:4674 FAILED org.eclipse.jetty.server.Server@738dc9b: javax.servlet.ServletException: org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+javax.servlet.ServletException: org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:634)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:396)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:871)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:341)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:742)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:399)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+Caused by: org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+[[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method POST and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.logoutUser(java.lang.String) and public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.getNewFeed(java.lang.String) at matching regular expression /logout. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@70e3f36f']
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:554)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:183)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:349)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:346)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:346)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:339)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:170)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:362)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:613)
+	... 13 more
+2016-02-06 14:49:32 INFO  WorkAppRestServer:66 dhgovindaraj-VirtualBox:4674  [ org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false ]  - Stacktrace : javax.servlet.ServletException: org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:634)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:396)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:871)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:341)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:742)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:399)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+Caused by: org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+[[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method POST and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.logoutUser(java.lang.String) and public javax.ws.rs.core.Response com.workappinc.workappserver.presentation.WorkAppUserResource.getNewFeed(java.lang.String) at matching regular expression /logout. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@70e3f36f']
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:554)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:183)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:349)
+	at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:346)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:346)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:339)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:170)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:362)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:613)
+	... 13 more
+
+2016-02-06 14:49:32 ERROR WorkAppUncaughtExceptionLogger$1:78 dhgovindaraj-VirtualBox:4674  [ Uncaught exception in thread Thread[main,5,main] ]  - Stacktrace : com.workappinc.workappserver.common.exception.WorkAppUncaughtException: Uncaught exception in thread Thread[main,5,main]
+	at com.workappinc.workappserver.common.logging.WorkAppUncaughtExceptionLogger$1.uncaughtException(WorkAppUncaughtExceptionLogger.java:21)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1057)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1052)
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:1952)
+Caused by: java.lang.IllegalStateException: !STOPPED
+	at org.eclipse.jetty.server.handler.HandlerWrapper.destroy(HandlerWrapper.java:147)
+	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:43)
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 logLevel:DEBUG
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 mode:rest
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 port:8080
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 trackAllocation:false
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 detectJARClash:false
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 schemaFile:null
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 database:jdbc:mysql://localhost:3306/
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 dbUser:root
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 dbPassword:password
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 dbSchema:workapp
+2016-02-06 14:52:34 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:4892 dbPoolSize:20
+2016-02-06 14:52:34 DEBUG WorkAppMySQLConnectionManager:98 dhgovindaraj-VirtualBox:4892 Attempting to connect to db at: jdbc:mysql://localhost:3306/workapp
+2016-02-06 14:52:35 DEBUG log:176 dhgovindaraj-VirtualBox:4892 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-02-06 14:52:35 INFO  log:186 dhgovindaraj-VirtualBox:4892 Logging initialized @3720ms
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.session.SessionHandler@4dbb42b7 added {org.eclipse.jetty.server.session.HashSessionManager@66f57048,AUTO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 o.e.j.s.ServletContextHandler@550dbc7a{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@4dbb42b7,AUTO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.session.SessionHandler@4dbb42b7 added {org.eclipse.jetty.servlet.ServletHandler@6bd61f98,AUTO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.Server@738dc9b added {qtp477533894{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 HttpConnectionFactory@75437611[HTTP/1.1] added {HttpConfiguration@350aac89{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@738dc9b,UNMANAGED}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {qtp477533894{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9,AUTO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@28261e8e,POJO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 ServerConnector@7f485fda{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@75437611[HTTP/1.1],AUTO}
+2016-02-06 14:52:35 DEBUG ServerConnector:393 dhgovindaraj-VirtualBox:4892 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8,MANAGED}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.Server@738dc9b added {ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.Server@738dc9b added {o.e.j.s.ServletContextHandler@550dbc7a{/,null,null},AUTO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-723ca036,POJO}
+2016-02-06 14:52:35 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.server.Server@738dc9b
+2016-02-06 14:52:35 INFO  Server:339 dhgovindaraj-VirtualBox:4892 jetty-9.3.0.M2
+2016-02-06 14:52:35 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.server.Server@738dc9b
+2016-02-06 14:52:35 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting qtp477533894{STOPPED,8<=0<=200,i=0,q=0}
+2016-02-06 14:52:35 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @4439ms qtp477533894{STARTED,8<=8<=200,i=7,q=0}
+2016-02-06 14:52:35 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting o.e.j.s.ServletContextHandler@550dbc7a{/,null,null}
+2016-02-06 14:52:35 DEBUG PreEncodedHttpField:65 dhgovindaraj-VirtualBox:4892 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@15a34df2]
+2016-02-06 14:52:35 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:4892 starting o.e.j.s.ServletContextHandler@550dbc7a{/,null,STARTING}
+2016-02-06 14:52:35 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-06 14:52:35 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-06 14:52:35 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-06 14:52:35 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.session.HashSessionManager@66f57048 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575,MANAGED}
+2016-02-06 14:52:35 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @4719ms org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6
+2016-02-06 14:52:36 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.Server@738dc9b added {org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6,MANAGED}
+2016-02-06 14:52:36 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.session.HashSessionManager@66f57048 added {org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6,UNMANAGED}
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @4750ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @4766ms org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-06 14:52:36 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:4892 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-723ca036 from default=false
+2016-02-06 14:52:36 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:4892 filterNameMap={}
+2016-02-06 14:52:36 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:4892 pathFilters=null
+2016-02-06 14:52:36 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:4892 servletFilterMap=null
+2016-02-06 14:52:36 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:4892 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-06 14:52:36 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:4892 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-723ca036=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-06 14:52:36 DEBUG ServletHandler:165 dhgovindaraj-VirtualBox:4892 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-06 14:52:36 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-02-06 14:52:36 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81,POJO}
+2016-02-06 14:52:36 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:4892 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-723ca036 from default=false
+2016-02-06 14:52:36 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:4892 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81 from default=false
+2016-02-06 14:52:36 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:4892 filterNameMap={}
+2016-02-06 14:52:36 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:4892 pathFilters=null
+2016-02-06 14:52:36 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:4892 servletFilterMap=null
+2016-02-06 14:52:36 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:4892 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-02-06 14:52:36 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:4892 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-723ca036=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false, org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-02-06 14:52:36 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @4824ms org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @4826ms org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @4864ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-06 14:52:36 DEBUG BaseHolder:97 dhgovindaraj-VirtualBox:4892 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@18b4aac2
+2016-02-06 14:52:36 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @4868ms org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-06 14:52:36 DEBUG ServletHolder:612 dhgovindaraj-VirtualBox:4892 Servlet.init org.glassfish.jersey.servlet.ServletContainer@5e3f861 for org.glassfish.jersey.servlet.ServletContainer-723ca036
+2016-02-06 14:52:38 INFO  ContextHandler:745 dhgovindaraj-VirtualBox:4892 Started o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @7256ms o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-06 14:52:38 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @7346ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @7347ms HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:4892 starting org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=-1 selected=-1
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @7466ms org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=0 selected=0
+2016-02-06 14:52:38 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:4892 queue org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=0 selected=0
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @7467ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8
+2016-02-06 14:52:38 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:4892 run org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=0 selected=0
+2016-02-06 14:52:38 DEBUG ExecuteProduceRun:66 dhgovindaraj-VirtualBox:4892 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 execute
+2016-02-06 14:52:38 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce enter
+2016-02-06 14:52:38 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 producing
+2016-02-06 14:52:38 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:38 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:4892 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@7428de63,POJO}
+2016-02-06 14:52:38 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:4892 queue acceptor-0@7428de63
+2016-02-06 14:52:38 INFO  ServerConnector:267 dhgovindaraj-VirtualBox:4892 Started ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @7514ms ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-06 14:52:38 INFO  Server:391 dhgovindaraj-VirtualBox:4892 Started @7515ms
+2016-02-06 14:52:38 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:4892 STARTED @7515ms org.eclipse.jetty.server.Server@738dc9b
+2016-02-06 14:52:38 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:4892 run acceptor-0@7428de63
+2016-02-06 14:52:44 DEBUG ManagedSelector:116 dhgovindaraj-VirtualBox:4892 Queued change org.eclipse.jetty.io.ManagedSelector$Accept@5429b444 on org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=0 selected=0
+2016-02-06 14:52:44 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 0/0 selected
+2016-02-06 14:52:44 DEBUG ManagedSelector:213 dhgovindaraj-VirtualBox:4892 Running change org.eclipse.jetty.io.ManagedSelector$Accept@5429b444
+2016-02-06 14:52:44 DEBUG ManagedSelector:116 dhgovindaraj-VirtualBox:4892 Queued change org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@593829d9 on org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=1 selected=0
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:143 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produced org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@593829d9
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:184 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 dispatch
+2016-02-06 14:52:44 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:4892 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:190 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@593829d9
+2016-02-06 14:52:44 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:4892 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:114 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce enter
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 producing
+2016-02-06 14:52:44 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:44 DEBUG AbstractEndPoint:105 dhgovindaraj-VirtualBox:4892 onOpen SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,29/30000,null}{io=0,kio=0,kro=0}
+2016-02-06 14:52:44 DEBUG IdleTimeout:156 dhgovindaraj-VirtualBox:4892 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,34/30000,null}{io=0,kio=0,kro=0} idle timeout check, elapsed: 34 ms, remaining: 29966 ms
+2016-02-06 14:52:44 DEBUG HttpChannel:96 dhgovindaraj-VirtualBox:4892 new HttpChannelOverHttp@14331b30{r=0,c=false,a=IDLE,uri=-} -> SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,341/30000,null}{io=0,kio=0,kro=0},null,HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false}
+2016-02-06 14:52:44 DEBUG HttpConnection:103 dhgovindaraj-VirtualBox:4892 New HTTP Connection HttpConnection@179c2468<--null
+2016-02-06 14:52:44 DEBUG AbstractConnection:171 dhgovindaraj-VirtualBox:4892 onOpen HttpConnection@179c2468<--null
+2016-02-06 14:52:44 DEBUG AbstractConnection:117 dhgovindaraj-VirtualBox:4892 fillInterested HttpConnection@179c2468<--null
+2016-02-06 14:52:44 DEBUG FillInterest:61 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:44 DEBUG FillInterest:75 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:44 DEBUG SelectChannelEndPoint:162 dhgovindaraj-VirtualBox:4892 changeInterests p=false 0->1 for SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,6/30000,HttpConnection}{io=1,kio=0,kro=0}
+2016-02-06 14:52:44 DEBUG ManagedSelector:116 dhgovindaraj-VirtualBox:4892 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493 on org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=1 selected=0
+2016-02-06 14:52:44 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 0/1 selected
+2016-02-06 14:52:44 DEBUG ManagedSelector:213 dhgovindaraj-VirtualBox:4892 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493
+2016-02-06 14:52:44 DEBUG ManagedSelector:410 dhgovindaraj-VirtualBox:4892 Created SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,23/30000,HttpConnection}{io=1,kio=0,kro=0}
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:193 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 ran org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@593829d9
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:206 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce exit
+2016-02-06 14:52:44 DEBUG QueuedThreadPool:561 dhgovindaraj-VirtualBox:4892 ran org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=1 selected=0
+2016-02-06 14:52:44 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 0 -> 1 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,24/30000,HttpConnection}{io=1,kio=1,kro=0}
+2016-02-06 14:52:44 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:44 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 1/1 selected
+2016-02-06 14:52:44 DEBUG SelectChannelEndPoint:99 dhgovindaraj-VirtualBox:4892 onSelected 1->0 for SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,31/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:143 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produced org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:184 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 dispatch
+2016-02-06 14:52:44 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:4892 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:190 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:44 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:4892 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:114 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce enter
+2016-02-06 14:52:44 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 producing
+2016-02-06 14:52:44 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 1 -> 0 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,33/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:44 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:44 DEBUG FillInterest:91 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} fillable AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:44 DEBUG HttpConnection:214 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--null onFillable enter HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false}
+2016-02-06 14:52:44 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 364 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,40/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:44 DEBUG HttpConnection:319 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 364
+2016-02-06 14:52:44 DEBUG HttpConnection:336 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-02-06 14:52:44 DEBUG HttpParser:1157 dhgovindaraj-VirtualBox:4892 parseNext s=START HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 START --> SPACE1
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 SPACE1 --> URI
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 URI --> SPACE2
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 SPACE2 --> REQUEST_VERSION
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 REQUEST_VERSION --> HEADER
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_VALUE --> HEADER_IN_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_VALUE --> HEADER_IN_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_NAME
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_NAME --> HEADER_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_VALUE --> HEADER_IN_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_VALUE --> HEADER_IN_VALUE
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:44 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> END
+2016-02-06 14:52:44 DEBUG HttpChannel:517 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=1,c=false,a=IDLE,uri=-} onRequestComplete
+2016-02-06 14:52:44 DEBUG HttpInput:366 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpInputOverHTTP@c5a951e addContent EOF
+2016-02-06 14:52:44 DEBUG HttpConnection:341 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=364,l=364,c=8192,r=0]={GET /workapp/v1/p...US,en;q=0.8\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed true HttpParser{s=END,0 of 0}
+2016-02-06 14:52:44 DEBUG HttpConnection:191 dhgovindaraj-VirtualBox:4892 releaseRequestBuffer HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=364,l=364,c=8192,r=0]={GET /workapp/v1/p...US,en;q=0.8\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:44 DEBUG HttpChannel:252 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=1,c=false,a=IDLE,uri=-} handle //localhost:8080/workapp/v1/page/test 
+2016-02-06 14:52:44 DEBUG HttpChannelState:181 dhgovindaraj-VirtualBox:4892 HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false} handling IDLE
+2016-02-06 14:52:44 DEBUG HttpChannel:267 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/page/test} action REQUEST_DISPATCH
+2016-02-06 14:52:44 DEBUG Server:498 dhgovindaraj-VirtualBox:4892 REQUEST on HttpChannelOverHttp@14331b30{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/page/test}
+GET //localhost:8080/workapp/v1/page/test
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36
+Postman-Token: 220d7343-c228-eb4a-30cd-71fe9163d2b4
+Accept: */*
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+2016-02-06 14:52:44 DEBUG ContextHandler:982 dhgovindaraj-VirtualBox:4892 scope null||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:44 DEBUG ContextHandler:1056 dhgovindaraj-VirtualBox:4892 context=||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:44 DEBUG session:179 dhgovindaraj-VirtualBox:4892 sessionManager=org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-06 14:52:44 DEBUG session:180 dhgovindaraj-VirtualBox:4892 session=null
+2016-02-06 14:52:44 DEBUG ServletHandler:501 dhgovindaraj-VirtualBox:4892 servlet ||/workapp/v1/page/test -> org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,true
+2016-02-06 14:52:44 DEBUG ServletHandler:564 dhgovindaraj-VirtualBox:4892 chain=null
+2016-02-06 14:52:44 DEBUG HttpChannel:616 dhgovindaraj-VirtualBox:4892 Commit HTTP/1.1{s=200,h=3} to HttpChannelOverHttp@14331b30{r=1,c=true,a=DISPATCHED,uri=/workapp/v1/page/test}
+2016-02-06 14:52:44 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@70067d83] generate: NEED_HEADER (null,[p=0,l=4,c=8192,r=4],true)@START
+2016-02-06 14:52:44 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@70067d83] generate: FLUSH ([p=0,l=126,c=8192,r=126],[p=0,l=4,c=8192,r=4],true)@COMPLETING
+2016-02-06 14:52:44 DEBUG WriteFlusher:295 dhgovindaraj-VirtualBox:4892 write: WriteFlusher@251aa9f7{IDLE} [HeapByteBuffer@6b6d5454[p=0,l=126,c=8192,r=126]={<<<HTTP/1.1 200 OK\r\n...y(9.3.0.M2)\r\n\r\n>>>/5.0 (X11; Linux ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@419e1c27[p=0,l=4,c=8192,r=4]={<<<Test>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+2016-02-06 14:52:45 DEBUG WriteFlusher:118 dhgovindaraj-VirtualBox:4892 update WriteFlusher@251aa9f7{WRITING}:IDLE-->WRITING
+2016-02-06 14:52:45 DEBUG ChannelEndPoint:196 dhgovindaraj-VirtualBox:4892 flushed 130 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,W,356/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:45 DEBUG WriteFlusher:412 dhgovindaraj-VirtualBox:4892 Flushed=true 126/126+1 WriteFlusher@251aa9f7{WRITING}
+2016-02-06 14:52:45 DEBUG WriteFlusher:118 dhgovindaraj-VirtualBox:4892 update WriteFlusher@251aa9f7{IDLE}:WRITING-->IDLE
+2016-02-06 14:52:45 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@70067d83] generate: DONE ([p=126,l=126,c=8192,r=0],[p=4,l=4,c=8192,r=0],true)@END
+2016-02-06 14:52:45 DEBUG Server:510 dhgovindaraj-VirtualBox:4892 RESPONSE for /workapp/v1/page/test h=true
+200 OK
+Date: Sat, 06 Feb 2016 22:52:44 GMT
+Content-Length: 4
+Content-Type: text/plain
+
+
+2016-02-06 14:52:45 DEBUG HttpChannelState:298 dhgovindaraj-VirtualBox:4892 HttpChannelState@6046072f{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+2016-02-06 14:52:45 DEBUG HttpParser:1508 dhgovindaraj-VirtualBox:4892 reset HttpParser{s=END,0 of 0}
+2016-02-06 14:52:45 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 END --> START
+2016-02-06 14:52:45 DEBUG HttpChannel:423 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=1,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+2016-02-06 14:52:45 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 0 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,29/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:45 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 0 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,31/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:45 DEBUG HttpConnection:319 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 0
+2016-02-06 14:52:45 DEBUG HttpConnection:336 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-02-06 14:52:45 DEBUG HttpParser:1157 dhgovindaraj-VirtualBox:4892 parseNext s=START HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:45 DEBUG HttpConnection:341 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=START,0 of -1}
+2016-02-06 14:52:45 DEBUG HttpConnection:191 dhgovindaraj-VirtualBox:4892 releaseRequestBuffer HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:45 DEBUG AbstractConnection:117 dhgovindaraj-VirtualBox:4892 fillInterested HttpConnection@179c2468<--null
+2016-02-06 14:52:45 DEBUG FillInterest:61 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:45 DEBUG FillInterest:75 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:45 DEBUG SelectChannelEndPoint:162 dhgovindaraj-VirtualBox:4892 changeInterests p=false 0->1 for SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,5/30000,HttpConnection}{io=1,kio=0,kro=1}
+2016-02-06 14:52:45 DEBUG ManagedSelector:116 dhgovindaraj-VirtualBox:4892 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493 on org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=1 selected=0
+2016-02-06 14:52:45 DEBUG HttpConnection:257 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--null onFillable exit HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false}
+2016-02-06 14:52:45 DEBUG ExecuteProduceRun:193 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 ran org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:45 DEBUG ExecuteProduceRun:206 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce exit
+2016-02-06 14:52:45 DEBUG QueuedThreadPool:561 dhgovindaraj-VirtualBox:4892 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:45 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 0/1 selected
+2016-02-06 14:52:45 DEBUG ManagedSelector:213 dhgovindaraj-VirtualBox:4892 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493
+2016-02-06 14:52:45 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 0 -> 1 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,14/30000,HttpConnection}{io=1,kio=1,kro=1}
+2016-02-06 14:52:45 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:50 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 1/1 selected
+2016-02-06 14:52:50 DEBUG SelectChannelEndPoint:99 dhgovindaraj-VirtualBox:4892 onSelected 1->0 for SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,5558/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-02-06 14:52:50 DEBUG ExecuteProduceRun:143 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produced org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:50 DEBUG ExecuteProduceRun:184 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 dispatch
+2016-02-06 14:52:50 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:4892 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:50 DEBUG ExecuteProduceRun:190 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:50 DEBUG FillInterest:91 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} fillable AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:50 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:4892 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:50 DEBUG ExecuteProduceRun:114 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run
+2016-02-06 14:52:50 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce enter
+2016-02-06 14:52:50 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 producing
+2016-02-06 14:52:50 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 1 -> 0 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,5560/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:50 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:50 DEBUG HttpConnection:214 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--null onFillable enter HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false}
+2016-02-06 14:52:50 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 364 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,5569/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:50 DEBUG HttpConnection:319 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 364
+2016-02-06 14:52:50 DEBUG HttpConnection:336 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-02-06 14:52:50 DEBUG HttpParser:1157 dhgovindaraj-VirtualBox:4892 parseNext s=START HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 START --> SPACE1
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 SPACE1 --> URI
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 URI --> SPACE2
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 SPACE2 --> REQUEST_VERSION
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 REQUEST_VERSION --> HEADER
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_NAME
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_NAME --> HEADER_VALUE
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_VALUE --> HEADER_IN_VALUE
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> END
+2016-02-06 14:52:50 DEBUG HttpChannel:517 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=2,c=false,a=IDLE,uri=-} onRequestComplete
+2016-02-06 14:52:50 DEBUG HttpInput:366 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpInputOverHTTP@c5a951e addContent EOF
+2016-02-06 14:52:50 DEBUG HttpConnection:341 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=364,l=364,c=8192,r=0]={GET /workapp/v1/p...US,en;q=0.8\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed true HttpParser{s=END,0 of -1}
+2016-02-06 14:52:50 DEBUG HttpConnection:191 dhgovindaraj-VirtualBox:4892 releaseRequestBuffer HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=364,l=364,c=8192,r=0]={GET /workapp/v1/p...US,en;q=0.8\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:50 DEBUG HttpChannel:252 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=2,c=false,a=IDLE,uri=-} handle //localhost:8080/workapp/v1/page/test 
+2016-02-06 14:52:50 DEBUG HttpChannelState:181 dhgovindaraj-VirtualBox:4892 HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false} handling IDLE
+2016-02-06 14:52:50 DEBUG HttpChannel:267 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=2,c=false,a=DISPATCHED,uri=/workapp/v1/page/test} action REQUEST_DISPATCH
+2016-02-06 14:52:50 DEBUG Server:498 dhgovindaraj-VirtualBox:4892 REQUEST on HttpChannelOverHttp@14331b30{r=2,c=false,a=DISPATCHED,uri=/workapp/v1/page/test}
+GET //localhost:8080/workapp/v1/page/test
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36
+Postman-Token: 9e424f67-fc99-819b-2346-9552f3c2e40c
+Accept: */*
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+2016-02-06 14:52:50 DEBUG ContextHandler:982 dhgovindaraj-VirtualBox:4892 scope null||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:50 DEBUG ContextHandler:1056 dhgovindaraj-VirtualBox:4892 context=||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:50 DEBUG session:179 dhgovindaraj-VirtualBox:4892 sessionManager=org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-06 14:52:50 DEBUG session:180 dhgovindaraj-VirtualBox:4892 session=null
+2016-02-06 14:52:50 DEBUG ServletHandler:501 dhgovindaraj-VirtualBox:4892 servlet ||/workapp/v1/page/test -> org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,true
+2016-02-06 14:52:50 DEBUG ServletHandler:564 dhgovindaraj-VirtualBox:4892 chain=null
+2016-02-06 14:52:50 DEBUG HttpChannel:616 dhgovindaraj-VirtualBox:4892 Commit HTTP/1.1{s=200,h=3} to HttpChannelOverHttp@14331b30{r=2,c=true,a=DISPATCHED,uri=/workapp/v1/page/test}
+2016-02-06 14:52:50 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@515fc37e] generate: NEED_HEADER (null,[p=0,l=4,c=8192,r=4],true)@START
+2016-02-06 14:52:50 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@515fc37e] generate: FLUSH ([p=0,l=126,c=8192,r=126],[p=0,l=4,c=8192,r=4],true)@COMPLETING
+2016-02-06 14:52:50 DEBUG WriteFlusher:295 dhgovindaraj-VirtualBox:4892 write: WriteFlusher@251aa9f7{IDLE} [HeapByteBuffer@6b6d5454[p=0,l=126,c=8192,r=126]={<<<HTTP/1.1 200 OK\r\n...y(9.3.0.M2)\r\n\r\n>>>/5.0 (X11; Linux ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@5f982725[p=0,l=4,c=8192,r=4]={<<<Test>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+2016-02-06 14:52:50 DEBUG WriteFlusher:118 dhgovindaraj-VirtualBox:4892 update WriteFlusher@251aa9f7{WRITING}:IDLE-->WRITING
+2016-02-06 14:52:50 DEBUG ChannelEndPoint:196 dhgovindaraj-VirtualBox:4892 flushed 130 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,W,102/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:50 DEBUG WriteFlusher:412 dhgovindaraj-VirtualBox:4892 Flushed=true 126/126+1 WriteFlusher@251aa9f7{WRITING}
+2016-02-06 14:52:50 DEBUG WriteFlusher:118 dhgovindaraj-VirtualBox:4892 update WriteFlusher@251aa9f7{IDLE}:WRITING-->IDLE
+2016-02-06 14:52:50 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@515fc37e] generate: DONE ([p=126,l=126,c=8192,r=0],[p=4,l=4,c=8192,r=0],true)@END
+2016-02-06 14:52:50 DEBUG Server:510 dhgovindaraj-VirtualBox:4892 RESPONSE for /workapp/v1/page/test h=true
+200 OK
+Date: Sat, 06 Feb 2016 22:52:50 GMT
+Content-Length: 4
+Content-Type: text/plain
+
+
+2016-02-06 14:52:50 DEBUG HttpChannelState:298 dhgovindaraj-VirtualBox:4892 HttpChannelState@6046072f{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+2016-02-06 14:52:50 DEBUG HttpParser:1508 dhgovindaraj-VirtualBox:4892 reset HttpParser{s=END,0 of -1}
+2016-02-06 14:52:50 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 END --> START
+2016-02-06 14:52:50 DEBUG HttpChannel:423 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=2,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+2016-02-06 14:52:50 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 0 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,7/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:50 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 0 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,9/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:50 DEBUG HttpConnection:319 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 0
+2016-02-06 14:52:50 DEBUG HttpConnection:336 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-02-06 14:52:50 DEBUG HttpParser:1157 dhgovindaraj-VirtualBox:4892 parseNext s=START HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:50 DEBUG HttpConnection:341 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=START,0 of -1}
+2016-02-06 14:52:50 DEBUG HttpConnection:191 dhgovindaraj-VirtualBox:4892 releaseRequestBuffer HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:50 DEBUG AbstractConnection:117 dhgovindaraj-VirtualBox:4892 fillInterested HttpConnection@179c2468<--null
+2016-02-06 14:52:50 DEBUG FillInterest:61 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:50 DEBUG FillInterest:75 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:50 DEBUG SelectChannelEndPoint:162 dhgovindaraj-VirtualBox:4892 changeInterests p=false 0->1 for SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,1/30000,HttpConnection}{io=1,kio=0,kro=1}
+2016-02-06 14:52:50 DEBUG ManagedSelector:116 dhgovindaraj-VirtualBox:4892 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493 on org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=1 selected=0
+2016-02-06 14:52:50 DEBUG HttpConnection:257 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--null onFillable exit HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false}
+2016-02-06 14:52:50 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 0/1 selected
+2016-02-06 14:52:50 DEBUG ManagedSelector:213 dhgovindaraj-VirtualBox:4892 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493
+2016-02-06 14:52:50 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 0 -> 1 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,46/30000,HttpConnection}{io=1,kio=1,kro=1}
+2016-02-06 14:52:50 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:50 DEBUG ExecuteProduceRun:193 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 ran org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:50 DEBUG ExecuteProduceRun:206 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce exit
+2016-02-06 14:52:50 DEBUG QueuedThreadPool:561 dhgovindaraj-VirtualBox:4892 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:53 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 1/1 selected
+2016-02-06 14:52:53 DEBUG SelectChannelEndPoint:99 dhgovindaraj-VirtualBox:4892 onSelected 1->0 for SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,2730/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-02-06 14:52:53 DEBUG ExecuteProduceRun:143 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produced org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:53 DEBUG ExecuteProduceRun:184 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 dispatch
+2016-02-06 14:52:53 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:4892 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:53 DEBUG ExecuteProduceRun:190 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:53 DEBUG FillInterest:91 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} fillable AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:53 DEBUG HttpConnection:214 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--null onFillable enter HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false}
+2016-02-06 14:52:53 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:4892 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:53 DEBUG ExecuteProduceRun:114 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run
+2016-02-06 14:52:53 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce enter
+2016-02-06 14:52:53 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 producing
+2016-02-06 14:52:53 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 1 -> 0 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,2739/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:53 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:53 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 364 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,2739/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:53 DEBUG HttpConnection:319 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 364
+2016-02-06 14:52:53 DEBUG HttpConnection:336 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-02-06 14:52:53 DEBUG HttpParser:1157 dhgovindaraj-VirtualBox:4892 parseNext s=START HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 START --> SPACE1
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 SPACE1 --> URI
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 URI --> SPACE2
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 SPACE2 --> REQUEST_VERSION
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 REQUEST_VERSION --> HEADER
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_NAME
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_NAME --> HEADER_VALUE
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_VALUE --> HEADER_IN_VALUE
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> END
+2016-02-06 14:52:53 DEBUG HttpChannel:517 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=3,c=false,a=IDLE,uri=-} onRequestComplete
+2016-02-06 14:52:53 DEBUG HttpInput:366 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpInputOverHTTP@c5a951e addContent EOF
+2016-02-06 14:52:53 DEBUG HttpConnection:341 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=364,l=364,c=8192,r=0]={GET /workapp/v1/p...US,en;q=0.8\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed true HttpParser{s=END,0 of -1}
+2016-02-06 14:52:53 DEBUG HttpConnection:191 dhgovindaraj-VirtualBox:4892 releaseRequestBuffer HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=364,l=364,c=8192,r=0]={GET /workapp/v1/p...US,en;q=0.8\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:53 DEBUG HttpChannel:252 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=3,c=false,a=IDLE,uri=-} handle //localhost:8080/workapp/v1/page/test 
+2016-02-06 14:52:53 DEBUG HttpChannelState:181 dhgovindaraj-VirtualBox:4892 HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false} handling IDLE
+2016-02-06 14:52:53 DEBUG HttpChannel:267 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=3,c=false,a=DISPATCHED,uri=/workapp/v1/page/test} action REQUEST_DISPATCH
+2016-02-06 14:52:53 DEBUG Server:498 dhgovindaraj-VirtualBox:4892 REQUEST on HttpChannelOverHttp@14331b30{r=3,c=false,a=DISPATCHED,uri=/workapp/v1/page/test}
+GET //localhost:8080/workapp/v1/page/test
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36
+Postman-Token: cf3ff665-84ce-a84d-cc6d-4188dbdb0c21
+Accept: */*
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+2016-02-06 14:52:53 DEBUG ContextHandler:982 dhgovindaraj-VirtualBox:4892 scope null||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:53 DEBUG ContextHandler:1056 dhgovindaraj-VirtualBox:4892 context=||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:53 DEBUG session:179 dhgovindaraj-VirtualBox:4892 sessionManager=org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-06 14:52:53 DEBUG session:180 dhgovindaraj-VirtualBox:4892 session=null
+2016-02-06 14:52:53 DEBUG ServletHandler:501 dhgovindaraj-VirtualBox:4892 servlet ||/workapp/v1/page/test -> org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,true
+2016-02-06 14:52:53 DEBUG ServletHandler:564 dhgovindaraj-VirtualBox:4892 chain=null
+2016-02-06 14:52:53 DEBUG HttpChannel:616 dhgovindaraj-VirtualBox:4892 Commit HTTP/1.1{s=200,h=3} to HttpChannelOverHttp@14331b30{r=3,c=true,a=DISPATCHED,uri=/workapp/v1/page/test}
+2016-02-06 14:52:53 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@7939cab3] generate: NEED_HEADER (null,[p=0,l=4,c=8192,r=4],true)@START
+2016-02-06 14:52:53 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@7939cab3] generate: FLUSH ([p=0,l=126,c=8192,r=126],[p=0,l=4,c=8192,r=4],true)@COMPLETING
+2016-02-06 14:52:53 DEBUG WriteFlusher:295 dhgovindaraj-VirtualBox:4892 write: WriteFlusher@251aa9f7{IDLE} [HeapByteBuffer@6b6d5454[p=0,l=126,c=8192,r=126]={<<<HTTP/1.1 200 OK\r\n...y(9.3.0.M2)\r\n\r\n>>>/5.0 (X11; Linux ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@77fe3be4[p=0,l=4,c=8192,r=4]={<<<Test>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+2016-02-06 14:52:53 DEBUG WriteFlusher:118 dhgovindaraj-VirtualBox:4892 update WriteFlusher@251aa9f7{WRITING}:IDLE-->WRITING
+2016-02-06 14:52:53 DEBUG ChannelEndPoint:196 dhgovindaraj-VirtualBox:4892 flushed 130 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,W,20/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:53 DEBUG WriteFlusher:412 dhgovindaraj-VirtualBox:4892 Flushed=true 126/126+1 WriteFlusher@251aa9f7{WRITING}
+2016-02-06 14:52:53 DEBUG WriteFlusher:118 dhgovindaraj-VirtualBox:4892 update WriteFlusher@251aa9f7{IDLE}:WRITING-->IDLE
+2016-02-06 14:52:53 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@7939cab3] generate: DONE ([p=126,l=126,c=8192,r=0],[p=4,l=4,c=8192,r=0],true)@END
+2016-02-06 14:52:53 DEBUG Server:510 dhgovindaraj-VirtualBox:4892 RESPONSE for /workapp/v1/page/test h=true
+200 OK
+Date: Sat, 06 Feb 2016 22:52:53 GMT
+Content-Length: 4
+Content-Type: text/plain
+
+
+2016-02-06 14:52:53 DEBUG HttpChannelState:298 dhgovindaraj-VirtualBox:4892 HttpChannelState@6046072f{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+2016-02-06 14:52:53 DEBUG HttpParser:1508 dhgovindaraj-VirtualBox:4892 reset HttpParser{s=END,0 of -1}
+2016-02-06 14:52:53 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 END --> START
+2016-02-06 14:52:53 DEBUG HttpChannel:423 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=3,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+2016-02-06 14:52:53 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 0 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,4/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:53 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 0 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,5/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:53 DEBUG HttpConnection:319 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 0
+2016-02-06 14:52:53 DEBUG HttpConnection:336 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-02-06 14:52:53 DEBUG HttpParser:1157 dhgovindaraj-VirtualBox:4892 parseNext s=START HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:53 DEBUG HttpConnection:341 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=START,0 of -1}
+2016-02-06 14:52:53 DEBUG HttpConnection:191 dhgovindaraj-VirtualBox:4892 releaseRequestBuffer HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:53 DEBUG AbstractConnection:117 dhgovindaraj-VirtualBox:4892 fillInterested HttpConnection@179c2468<--null
+2016-02-06 14:52:53 DEBUG FillInterest:61 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:53 DEBUG FillInterest:75 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:53 DEBUG SelectChannelEndPoint:162 dhgovindaraj-VirtualBox:4892 changeInterests p=false 0->1 for SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=0,kro=1}
+2016-02-06 14:52:53 DEBUG ManagedSelector:116 dhgovindaraj-VirtualBox:4892 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493 on org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=1 selected=0
+2016-02-06 14:52:53 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 0/1 selected
+2016-02-06 14:52:53 DEBUG ManagedSelector:213 dhgovindaraj-VirtualBox:4892 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493
+2016-02-06 14:52:53 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 0 -> 1 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,2/30000,HttpConnection}{io=1,kio=1,kro=1}
+2016-02-06 14:52:53 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:53 DEBUG HttpConnection:257 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--null onFillable exit HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false}
+2016-02-06 14:52:53 DEBUG ExecuteProduceRun:193 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 ran org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:53 DEBUG ExecuteProduceRun:206 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce exit
+2016-02-06 14:52:53 DEBUG QueuedThreadPool:561 dhgovindaraj-VirtualBox:4892 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:54 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 1/1 selected
+2016-02-06 14:52:54 DEBUG SelectChannelEndPoint:99 dhgovindaraj-VirtualBox:4892 onSelected 1->0 for SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,904/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-02-06 14:52:54 DEBUG ExecuteProduceRun:143 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produced org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:54 DEBUG ExecuteProduceRun:184 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 dispatch
+2016-02-06 14:52:54 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:4892 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:54 DEBUG ExecuteProduceRun:190 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:54 DEBUG FillInterest:91 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} fillable AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:54 DEBUG HttpConnection:214 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--null onFillable enter HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false}
+2016-02-06 14:52:54 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 364 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,905/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-02-06 14:52:54 DEBUG HttpConnection:319 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 364
+2016-02-06 14:52:54 DEBUG HttpConnection:336 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-02-06 14:52:54 DEBUG HttpParser:1157 dhgovindaraj-VirtualBox:4892 parseNext s=START HeapByteBuffer@6b6d5454[p=0,l=364,c=8192,r=364]={<<<GET /workapp/v1/p...US,en;q=0.8\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 START --> SPACE1
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 SPACE1 --> URI
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 URI --> SPACE2
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 SPACE2 --> REQUEST_VERSION
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 REQUEST_VERSION --> HEADER
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:54 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:4892 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:54 DEBUG ExecuteProduceRun:114 dhgovindaraj-VirtualBox:4892 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 run
+2016-02-06 14:52:54 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce enter
+2016-02-06 14:52:54 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 producing
+2016-02-06 14:52:54 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 1 -> 0 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,6/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:54 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_NAME
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_NAME --> HEADER_VALUE
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_VALUE --> HEADER_IN_VALUE
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> HEADER_IN_VALUE
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER_IN_VALUE --> HEADER
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 HEADER --> END
+2016-02-06 14:52:54 DEBUG HttpChannel:517 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=4,c=false,a=IDLE,uri=-} onRequestComplete
+2016-02-06 14:52:54 DEBUG HttpInput:366 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpInputOverHTTP@c5a951e addContent EOF
+2016-02-06 14:52:54 DEBUG HttpConnection:341 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=364,l=364,c=8192,r=0]={GET /workapp/v1/p...US,en;q=0.8\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed true HttpParser{s=END,0 of -1}
+2016-02-06 14:52:54 DEBUG HttpConnection:191 dhgovindaraj-VirtualBox:4892 releaseRequestBuffer HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=364,l=364,c=8192,r=0]={GET /workapp/v1/p...US,en;q=0.8\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:54 DEBUG HttpChannel:252 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=4,c=false,a=IDLE,uri=-} handle //localhost:8080/workapp/v1/page/test 
+2016-02-06 14:52:54 DEBUG HttpChannelState:181 dhgovindaraj-VirtualBox:4892 HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false} handling IDLE
+2016-02-06 14:52:54 DEBUG HttpChannel:267 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=4,c=false,a=DISPATCHED,uri=/workapp/v1/page/test} action REQUEST_DISPATCH
+2016-02-06 14:52:54 DEBUG Server:498 dhgovindaraj-VirtualBox:4892 REQUEST on HttpChannelOverHttp@14331b30{r=4,c=false,a=DISPATCHED,uri=/workapp/v1/page/test}
+GET //localhost:8080/workapp/v1/page/test
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36
+Postman-Token: 31590929-3bff-fe80-5d1d-98da7a7c78ec
+Accept: */*
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+2016-02-06 14:52:54 DEBUG ContextHandler:982 dhgovindaraj-VirtualBox:4892 scope null||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:54 DEBUG ContextHandler:1056 dhgovindaraj-VirtualBox:4892 context=||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-06 14:52:54 DEBUG session:179 dhgovindaraj-VirtualBox:4892 sessionManager=org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-06 14:52:54 DEBUG session:180 dhgovindaraj-VirtualBox:4892 session=null
+2016-02-06 14:52:54 DEBUG ServletHandler:501 dhgovindaraj-VirtualBox:4892 servlet ||/workapp/v1/page/test -> org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,true
+2016-02-06 14:52:54 DEBUG ServletHandler:564 dhgovindaraj-VirtualBox:4892 chain=null
+2016-02-06 14:52:54 DEBUG HttpChannel:616 dhgovindaraj-VirtualBox:4892 Commit HTTP/1.1{s=200,h=3} to HttpChannelOverHttp@14331b30{r=4,c=true,a=DISPATCHED,uri=/workapp/v1/page/test}
+2016-02-06 14:52:54 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@60591534] generate: NEED_HEADER (null,[p=0,l=4,c=8192,r=4],true)@START
+2016-02-06 14:52:54 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@60591534] generate: FLUSH ([p=0,l=126,c=8192,r=126],[p=0,l=4,c=8192,r=4],true)@COMPLETING
+2016-02-06 14:52:54 DEBUG WriteFlusher:295 dhgovindaraj-VirtualBox:4892 write: WriteFlusher@251aa9f7{IDLE} [HeapByteBuffer@6b6d5454[p=0,l=126,c=8192,r=126]={<<<HTTP/1.1 200 OK\r\n...y(9.3.0.M2)\r\n\r\n>>>/5.0 (X11; Linux ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@6e9ee74f[p=0,l=4,c=8192,r=4]={<<<Test>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+2016-02-06 14:52:54 DEBUG WriteFlusher:118 dhgovindaraj-VirtualBox:4892 update WriteFlusher@251aa9f7{WRITING}:IDLE-->WRITING
+2016-02-06 14:52:54 DEBUG ChannelEndPoint:196 dhgovindaraj-VirtualBox:4892 flushed 130 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,W,37/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:54 DEBUG WriteFlusher:412 dhgovindaraj-VirtualBox:4892 Flushed=true 126/126+1 WriteFlusher@251aa9f7{WRITING}
+2016-02-06 14:52:54 DEBUG WriteFlusher:118 dhgovindaraj-VirtualBox:4892 update WriteFlusher@251aa9f7{IDLE}:WRITING-->IDLE
+2016-02-06 14:52:54 DEBUG HttpConnection:618 dhgovindaraj-VirtualBox:4892 org.eclipse.jetty.server.HttpConnection$SendCallback@6c44dd2[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@60591534] generate: DONE ([p=126,l=126,c=8192,r=0],[p=4,l=4,c=8192,r=0],true)@END
+2016-02-06 14:52:54 DEBUG Server:510 dhgovindaraj-VirtualBox:4892 RESPONSE for /workapp/v1/page/test h=true
+200 OK
+Date: Sat, 06 Feb 2016 22:52:54 GMT
+Content-Length: 4
+Content-Type: text/plain
+
+
+2016-02-06 14:52:54 DEBUG HttpChannelState:298 dhgovindaraj-VirtualBox:4892 HttpChannelState@6046072f{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+2016-02-06 14:52:54 DEBUG HttpParser:1508 dhgovindaraj-VirtualBox:4892 reset HttpParser{s=END,0 of -1}
+2016-02-06 14:52:54 DEBUG HttpParser:1528 dhgovindaraj-VirtualBox:4892 END --> START
+2016-02-06 14:52:54 DEBUG HttpChannel:423 dhgovindaraj-VirtualBox:4892 HttpChannelOverHttp@14331b30{r=4,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+2016-02-06 14:52:54 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 0 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,3/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:54 DEBUG ChannelEndPoint:150 dhgovindaraj-VirtualBox:4892 filled 0 SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,-,-,4/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-02-06 14:52:54 DEBUG HttpConnection:319 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 0
+2016-02-06 14:52:54 DEBUG HttpConnection:336 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-02-06 14:52:54 DEBUG HttpParser:1157 dhgovindaraj-VirtualBox:4892 parseNext s=START HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:54 DEBUG HttpConnection:341 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=START,0 of -1}
+2016-02-06 14:52:54 DEBUG HttpConnection:191 dhgovindaraj-VirtualBox:4892 releaseRequestBuffer HttpConnection@179c2468<--HeapByteBuffer@6b6d5454[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-02-06 14:52:54 DEBUG AbstractConnection:117 dhgovindaraj-VirtualBox:4892 fillInterested HttpConnection@179c2468<--null
+2016-02-06 14:52:54 DEBUG FillInterest:61 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:54 DEBUG FillInterest:75 dhgovindaraj-VirtualBox:4892 FillInterest@7c68d012{true,AC.ReadCB@179c2468{HttpConnection@179c2468<--null}} register AC.ReadCB@179c2468{HttpConnection@179c2468<--null}
+2016-02-06 14:52:54 DEBUG SelectChannelEndPoint:162 dhgovindaraj-VirtualBox:4892 changeInterests p=false 0->1 for SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=0,kro=1}
+2016-02-06 14:52:54 DEBUG ManagedSelector:116 dhgovindaraj-VirtualBox:4892 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493 on org.eclipse.jetty.io.ManagedSelector@5bca7664 id=0 keys=1 selected=0
+2016-02-06 14:52:54 DEBUG ManagedSelector:233 dhgovindaraj-VirtualBox:4892 Selector loop woken up from select, 0/1 selected
+2016-02-06 14:52:54 DEBUG HttpConnection:257 dhgovindaraj-VirtualBox:4892 HttpConnection@179c2468<--null onFillable exit HttpChannelState@6046072f{s=IDLE a=null i=true r=!P!U w=false}
+2016-02-06 14:52:54 DEBUG ExecuteProduceRun:193 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 ran org.eclipse.jetty.io.SelectChannelEndPoint$2@65aab691
+2016-02-06 14:52:54 DEBUG ExecuteProduceRun:206 dhgovindaraj-VirtualBox:4892 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00 produce exit
+2016-02-06 14:52:54 DEBUG QueuedThreadPool:561 dhgovindaraj-VirtualBox:4892 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@76ed3c00
+2016-02-06 14:52:54 DEBUG ManagedSelector:213 dhgovindaraj-VirtualBox:4892 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493
+2016-02-06 14:52:54 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 0 -> 1 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,12/30000,HttpConnection}{io=1,kio=1,kro=1}
+2016-02-06 14:52:54 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select

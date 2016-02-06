@@ -47,20 +47,35 @@ public class WorkAppProjectResource implements IResource
 	}
 
 	/**
-	 * Delete Board
+	 * View Boards for user
 	 * 
 	 * @param boardInfo
 	 * @return
 	 */
 	@POST
-	@Path("deleteBoard")
+	@Path("viewAllBoards")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response deleteBoard(String boardInfo)
+	public Response viewAllBoards(String userInfo)
 	{
 		Response response = null;
 		return response;
 	}
 	
+	/**
+	 * View Board
+	 * 
+	 * @param boardInfo
+	 * @return
+	 */
+	@POST
+	@Path("viewBoard")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response viewBoard(String boardInfo)
+	{
+		Response response = null;
+		return response;
+	}
+
 	/**
 	 * Edit Board
 	 * 
@@ -75,7 +90,7 @@ public class WorkAppProjectResource implements IResource
 		Response response = null;
 		return response;
 	}
-
+	
 	/**
 	 * Create Work
 	 * 
@@ -92,20 +107,35 @@ public class WorkAppProjectResource implements IResource
 	}
 
 	/**
-	 * Delete Work
+	 * View Works for a board
 	 * 
-	 * @param workInfo
+	 * @param boardInfo
 	 * @return
 	 */
 	@POST
-	@Path("deleteWork")
+	@Path("viewAllWorks")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response deleteWork(String workInfo)
+	public Response viewAllWorks(String userInfo)
 	{
 		Response response = null;
 		return response;
 	}
-
+	
+	/**
+	 * View Work
+	 * 
+	 * @param boardInfo
+	 * @return
+	 */
+	@POST
+	@Path("viewWork")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response viewWork(String boardInfo)
+	{
+		Response response = null;
+		return response;
+	}
+	
 	/**
 	 * Edit Work
 	 * 

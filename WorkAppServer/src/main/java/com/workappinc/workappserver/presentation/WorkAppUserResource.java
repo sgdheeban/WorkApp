@@ -112,19 +112,21 @@ public class WorkAppUserResource implements IResource
 		return response;
 	}
 
+	
 	/**
-	 * Edit user info
+	 * Get News Feed for User
 	 * 
-	 * @param userJson
+	 * @param logoutInfo
 	 * @return
 	 */
 	@POST
-	@Path("editUserInfo")
+	@Path("getNewsFeed")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response editUserInfo(String userJson)
+	public Response getNewsFeed(String logoutInfo)
 	{
 		Response response = null;
 		return response;
 	}
 
+	
 }
