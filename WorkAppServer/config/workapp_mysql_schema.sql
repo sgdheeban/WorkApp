@@ -10,15 +10,15 @@ create table user (
 	id varchar(50) NOT NULL,
 	email varchar(100) NOT NULL,
 	password varchar(100) NOT NULL,
-	phone varchar(20),
+	phone varchar(20) NOT NULL,
 	first_name varchar(50) NOT NULL,
 	last_name varchar(50) NOT NULL,
 	profile_pic blob,
-	country varchar(50) NOT NULL,
-	zipcode varchar(50) NOT NULL,
+	country varchar(50),
+	zipcode varchar(50),
 	is_individual bool,
 	is_owner bool, 
-	occupation_id varchar(50) NOT NULL,
+	occupation_id varchar(50),
 	company_name varchar(100),
 	is_worker bool,
 	resume blob,
@@ -223,6 +223,21 @@ create table feed_type (
 	primary key (id)
 );
 
+// Inserting values into feed_type table
+insert into `feed_type` values('0', 'Board Created');
+insert into `feed_type` values('1', 'Board Expired');
+insert into `feed_type` values('2', 'Work Created');
+insert into `feed_type` values('3', 'Work Expired');
+insert into `feed_type` values('4', 'Work Edited');
+insert into `feed_type` values('5', 'Comment Added');
+insert into `feed_type` values('6', 'Comment Removed');
+insert into `feed_type` values('7', 'Team Member Added');
+insert into `feed_type` values('8', 'Team Member Removed');
+insert into `feed_type` values('9', 'Reminder');
+insert into `feed_type` values('10', 'Task Recommendation');
+insert into `feed_type` values('11', 'Talent Recommendation');
+insert into `feed_type` values('12', 'Assistant Bot');
+
 // Creating skill_user_index table
 drop table if exists `skill_user_index` ;
 create table skill_user_index (
@@ -314,18 +329,6 @@ create table work (
 	primary key (id)
 );
 
-// Creating talent_recommendation table
-drop table if exists `talent_recommendation` ;
-create table talent_recommendation (
-	id varchar(50) NOT NULL,
-	is_expired bool,
-	expiry_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	work_id varchar(50) NOT NULL,
-	user_id varchar(50) NOT NULL,
-	rank bigint(20) default 0,
-	primary key (work_id, user_id)
-);
-
 // Creating news_feed table
 drop table if exists `news_feed` ;
 create table news_feed (
@@ -364,6 +367,18 @@ create table user_metric (
 	logout TIMESTAMP NOT NULL,
 	duration BIGINT(20) NOT NULL,
 	primary key (id, user_id, session_id)
+);
+
+// Creating talent_recommendation table
+drop table if exists `talent_recommendation` ;
+create table talent_recommendation (
+	id varchar(50) NOT NULL,
+	is_expired bool,
+	expiry_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	work_id varchar(50) NOT NULL,
+	user_id varchar(50) NOT NULL,
+	rank bigint(20) default 0,
+	primary key (work_id, user_id)
 );
 
 // End of WorkApp Database and Tables creation
