@@ -5449,3 +5449,1391 @@ Content-Type: text/plain
 2016-02-06 14:52:54 DEBUG ManagedSelector:213 dhgovindaraj-VirtualBox:4892 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@aa10493
 2016-02-06 14:52:54 DEBUG SelectChannelEndPoint:128 dhgovindaraj-VirtualBox:4892 Key interests updated 0 -> 1 on SelectChannelEndPoint@717fee5d{/127.0.0.1:33124<->8080,Open,in,out,R,-,12/30000,HttpConnection}{io=1,kio=1,kro=1}
 2016-02-06 14:52:54 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:4892 Selector loop waiting on select
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 logLevel:DEBUG
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 mode:rest
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 port:8080
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 trackAllocation:false
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 detectJARClash:false
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 database:jdbc:mysql://localhost:3306/
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 dbUser:root
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 dbPassword:password
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 dbSchema:workapp
+2016-02-07 00:20:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2518 dbPoolSize:20
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating WorkApp Database and Tables
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating user table
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating user_experience table
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating user_rating table
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating user_session table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating occupation_catalog table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Inserting values into occupation_catalog table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating skill table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Inserting values into skill table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating milestone table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Inserting values into milestone table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating status table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Inserting values into status table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating role table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Inserting values into role table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating board_milestone table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating feed_type table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Inserting values into feed_type table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating skill_user_index table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating occupation_user_index table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating skill_work_index table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating occupation_work_index table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating board_collaborator table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating work_favorite table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating user_backlog_index table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating board table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating work table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating news_feed table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating comment table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating user_metric table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // Creating talent_recommendation table
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 // End of WorkApp Database and Tables creation
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:20:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2518 
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 logLevel:DEBUG
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 mode:rest
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 port:8080
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 trackAllocation:false
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 detectJARClash:false
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 database:jdbc:mysql://localhost:3306/
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 dbUser:root
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 dbPassword:password
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 dbSchema:workapp
+2016-02-07 00:22:59 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2575 dbPoolSize:20
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating WorkApp Database and Tables
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating user table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating user_experience table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating user_rating table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating user_session table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating occupation_catalog table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Inserting values into occupation_catalog table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating skill table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Inserting values into skill table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating milestone table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Inserting values into milestone table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating status table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Inserting values into status table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating role table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Inserting values into role table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating board_milestone table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating feed_type table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Inserting values into feed_type table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating skill_user_index table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating occupation_user_index table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating skill_work_index table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating occupation_work_index table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating board_collaborator table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating work_favorite table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating user_backlog_index table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating board table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating work table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating news_feed table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating comment table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating user_metric table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // Creating talent_recommendation table
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 // End of WorkApp Database and Tables creation
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:23:01 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2575 
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 logLevel:DEBUG
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 mode:rest
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 port:8080
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 trackAllocation:false
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 detectJARClash:false
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 schemaFile:null
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 database:jdbc:mysql://localhost:3306/
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 dbUser:root
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 dbPassword:password
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 dbSchema:workapp
+2016-02-07 00:32:10 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2931 dbPoolSize:20
+2016-02-07 00:32:10 DEBUG WorkAppMySQLConnectionManager:98 dhgovindaraj-VirtualBox:2931 Attempting to connect to db at: jdbc:mysql://localhost:3306/workapp
+2016-02-07 00:32:10 DEBUG log:176 dhgovindaraj-VirtualBox:2931 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-02-07 00:32:10 INFO  log:186 dhgovindaraj-VirtualBox:2931 Logging initialized @4246ms
+2016-02-07 00:32:10 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.server.session.SessionHandler@4dbb42b7 added {org.eclipse.jetty.server.session.HashSessionManager@66f57048,AUTO}
+2016-02-07 00:32:10 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 o.e.j.s.ServletContextHandler@550dbc7a{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@4dbb42b7,AUTO}
+2016-02-07 00:32:10 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.server.session.SessionHandler@4dbb42b7 added {org.eclipse.jetty.servlet.ServletHandler@6bd61f98,AUTO}
+2016-02-07 00:32:10 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.server.Server@738dc9b added {qtp477533894{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 HttpConnectionFactory@75437611[HTTP/1.1] added {HttpConfiguration@350aac89{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@738dc9b,UNMANAGED}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {qtp477533894{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9,AUTO}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@28261e8e,POJO}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 ServerConnector@7f485fda{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@75437611[HTTP/1.1],AUTO}
+2016-02-07 00:32:11 DEBUG ServerConnector:393 dhgovindaraj-VirtualBox:2931 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8,MANAGED}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.server.Server@738dc9b added {ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.server.Server@738dc9b added {o.e.j.s.ServletContextHandler@550dbc7a{/,null,null},AUTO}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-723ca036,POJO}
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.server.Server@738dc9b
+2016-02-07 00:32:11 INFO  Server:339 dhgovindaraj-VirtualBox:2931 jetty-9.3.0.M2
+2016-02-07 00:32:11 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.server.Server@738dc9b
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting qtp477533894{STOPPED,8<=0<=200,i=0,q=0}
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @5103ms qtp477533894{STARTED,8<=8<=200,i=7,q=0}
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting o.e.j.s.ServletContextHandler@550dbc7a{/,null,null}
+2016-02-07 00:32:11 DEBUG PreEncodedHttpField:65 dhgovindaraj-VirtualBox:2931 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@15a34df2]
+2016-02-07 00:32:11 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:2931 starting o.e.j.s.ServletContextHandler@550dbc7a{/,null,STARTING}
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-07 00:32:11 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.server.session.HashSessionManager@66f57048 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575,MANAGED}
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @5357ms org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.server.Server@738dc9b added {org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6,MANAGED}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.server.session.HashSessionManager@66f57048 added {org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6,UNMANAGED}
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @5400ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @5436ms org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-07 00:32:11 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:2931 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-723ca036 from default=false
+2016-02-07 00:32:11 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:2931 filterNameMap={}
+2016-02-07 00:32:11 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:2931 pathFilters=null
+2016-02-07 00:32:11 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:2931 servletFilterMap=null
+2016-02-07 00:32:11 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:2931 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-07 00:32:11 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:2931 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-723ca036=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-07 00:32:11 DEBUG ServletHandler:165 dhgovindaraj-VirtualBox:2931 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-02-07 00:32:11 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81,POJO}
+2016-02-07 00:32:11 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:2931 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-723ca036 from default=false
+2016-02-07 00:32:11 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:2931 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81 from default=false
+2016-02-07 00:32:11 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:2931 filterNameMap={}
+2016-02-07 00:32:11 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:2931 pathFilters=null
+2016-02-07 00:32:11 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:2931 servletFilterMap=null
+2016-02-07 00:32:11 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:2931 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-02-07 00:32:11 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:2931 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-723ca036=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false, org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-02-07 00:32:11 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @5515ms org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @5515ms org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @5573ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-07 00:32:11 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-07 00:32:11 DEBUG BaseHolder:97 dhgovindaraj-VirtualBox:2931 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@18b4aac2
+2016-02-07 00:32:12 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @5610ms org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-07 00:32:12 DEBUG ServletHolder:612 dhgovindaraj-VirtualBox:2931 Servlet.init org.glassfish.jersey.servlet.ServletContainer@5e3f861 for org.glassfish.jersey.servlet.ServletContainer-723ca036
+2016-02-07 00:32:15 INFO  ContextHandler:745 dhgovindaraj-VirtualBox:2931 Started o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @8855ms o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-07 00:32:15 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @8978ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @8980ms HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:2931 starting org.eclipse.jetty.io.ManagedSelector@7f829c76 id=0 keys=-1 selected=-1
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @9084ms org.eclipse.jetty.io.ManagedSelector@7f829c76 id=0 keys=0 selected=0
+2016-02-07 00:32:15 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:2931 queue org.eclipse.jetty.io.ManagedSelector@7f829c76 id=0 keys=0 selected=0
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @9086ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8
+2016-02-07 00:32:15 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:2931 run org.eclipse.jetty.io.ManagedSelector@7f829c76 id=0 keys=0 selected=0
+2016-02-07 00:32:15 DEBUG ExecuteProduceRun:66 dhgovindaraj-VirtualBox:2931 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@59c4d33e execute
+2016-02-07 00:32:15 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:2931 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@59c4d33e produce enter
+2016-02-07 00:32:15 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:2931 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@59c4d33e producing
+2016-02-07 00:32:15 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:2931 Selector loop waiting on select
+2016-02-07 00:32:15 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:2931 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@6e57b5e9,POJO}
+2016-02-07 00:32:15 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:2931 queue acceptor-0@6e57b5e9
+2016-02-07 00:32:15 INFO  ServerConnector:267 dhgovindaraj-VirtualBox:2931 Started ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @9110ms ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-07 00:32:15 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:2931 run acceptor-0@6e57b5e9
+2016-02-07 00:32:15 INFO  Server:391 dhgovindaraj-VirtualBox:2931 Started @9112ms
+2016-02-07 00:32:15 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:2931 STARTED @9112ms org.eclipse.jetty.server.Server@738dc9b
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 logLevel:DEBUG
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 mode:rest
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 port:8080
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 trackAllocation:false
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 detectJARClash:false
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 database:jdbc:mysql://localhost:3306/
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 dbUser:root
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 dbPassword:password
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 dbSchema:workapp
+2016-02-07 00:32:31 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:2962 dbPoolSize:20
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating WorkApp Database and Tables
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating user table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating user_experience table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating user_rating table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating user_session table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating occupation_catalog table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Inserting values into occupation_catalog table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating skill table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Inserting values into skill table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating milestone table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Inserting values into milestone table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating status table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Inserting values into status table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating role table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Inserting values into role table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating board_milestone table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating feed_type table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Inserting values into feed_type table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating skill_user_index table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating occupation_user_index table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating skill_work_index table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating occupation_work_index table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating board_collaborator table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating work_favorite table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating user_backlog_index table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating board table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating work table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating news_feed table
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:32 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating comment table
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating board_progress_report table
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating user_metric table
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // Creating talent_recommendation table
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 // End of WorkApp Database and Tables creation
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:32:33 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:2962 
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 logLevel:DEBUG
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 mode:rest
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 port:8080
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 trackAllocation:false
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 detectJARClash:false
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 database:jdbc:mysql://localhost:3306/
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 dbUser:root
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 dbPassword:password
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 dbSchema:workapp
+2016-02-07 00:34:35 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3078 dbPoolSize:20
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating WorkApp Database and Tables
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating user table
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating user_experience table
+2016-02-07 00:34:36 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating user_rating table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating user_session table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating occupation_catalog table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Inserting values into occupation_catalog table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating skill table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Inserting values into skill table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating milestone table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Inserting values into milestone table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating status table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Inserting values into status table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating role table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Inserting values into role table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating board_milestone table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating feed_type table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Inserting values into feed_type table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating skill_user_index table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating occupation_user_index table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating skill_work_index table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating occupation_work_index table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating board_collaborator table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating work_favorite table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating user_backlog_index table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating board table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating work table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating news_feed table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating comment table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating board_progress_report table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating user_metric table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // Creating talent_recommendation table
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 // End of WorkApp Database and Tables creation
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:34:37 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3078 
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 logLevel:DEBUG
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 mode:rest
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 port:8080
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 trackAllocation:false
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 detectJARClash:false
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 database:jdbc:mysql://localhost:3306/
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 dbUser:root
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 dbPassword:password
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 dbSchema:workapp
+2016-02-07 00:35:24 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3099 dbPoolSize:20
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating WorkApp Database and Tables
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating user table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating user_experience table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating user_rating table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating user_session table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating occupation_catalog table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Inserting values into occupation_catalog table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating skill table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Inserting values into skill table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating milestone table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Inserting values into milestone table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating status table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Inserting values into status table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating role table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Inserting values into role table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating board_milestone table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating feed_type table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Inserting values into feed_type table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating skill_user_index table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating occupation_user_index table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating skill_work_index table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating occupation_work_index table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating board_collaborator table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating work_favorite table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating user_backlog_index table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating board table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating work table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating news_feed table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating comment table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating board_progress_report table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating user_metric table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // Creating talent_recommendation table
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 // End of WorkApp Database and Tables creation
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:35:26 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3099 
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 logLevel:DEBUG
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 mode:rest
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 port:8080
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 trackAllocation:false
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 detectJARClash:false
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 database:jdbc:mysql://localhost:3306/
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 dbUser:root
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 dbPassword:password
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 dbSchema:workapp
+2016-02-07 00:36:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3121 dbPoolSize:20
+2016-02-07 00:36:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating WorkApp Database and Tables
+2016-02-07 00:36:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating user table
+2016-02-07 00:36:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating user_experience table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating user_rating table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating user_session table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating occupation_catalog table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Inserting values into occupation_catalog table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating skill table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Inserting values into skill table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating milestone table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Inserting values into milestone table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating status table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Inserting values into status table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating role table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Inserting values into role table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating board_milestone table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating feed_type table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Inserting values into feed_type table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating skill_user_index table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating occupation_user_index table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating skill_work_index table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating occupation_work_index table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating board_collaborator table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating work_favorite table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating user_backlog_index table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating board table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating work table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating news_feed table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating comment table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating board_progress_report table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating user_metric table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // Creating talent_recommendation table
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 // End of WorkApp Database and Tables creation
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 
+2016-02-07 00:36:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3121 

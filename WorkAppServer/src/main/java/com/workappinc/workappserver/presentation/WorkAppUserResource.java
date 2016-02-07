@@ -128,5 +128,20 @@ public class WorkAppUserResource implements IResource
 		return response;
 	}
 
+	/**
+	 * View Backlog for user
+	 * 
+	 * @param userInfo
+	 * @return
+	 */
+	@POST
+	@Path("viewBacklog")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response viewBacklog(String userInfo)
+	{
+		Response response = null;
+		return response;
+	}
+
 	
 }

@@ -113,7 +113,7 @@ insert into `occupation_catalog` values('13', 'Software Operations');
 insert into `occupation_catalog` values('14', 'Do-It-Yourself');
 insert into `occupation_catalog` values('15', 'Dancing');
 insert into `occupation_catalog` values('16', 'Singing');
-insert into `occupation_catalog` values('17', 'Quilling');
+insert into `occupation_catalog` values('17', 'Arts & Craft');
 insert into `occupation_catalog` values('18', 'Photography');
 insert into `occupation_catalog` values('19', 'Painting');
 insert into `occupation_catalog` values('20', 'Drilling');
@@ -162,7 +162,6 @@ create table milestone (
 	id varchar(50) NOT NULL,
 	occupation_id varchar(50) NOT NULL,
 	name varchar(50) NOT NULL,
-	expiry_date TIMESTAMP,
 	primary key (id,occupation_id)
 );
 
@@ -190,6 +189,9 @@ create table status (
 insert into `status` values('0', 'todo');
 insert into `status` values('1', 'inprogress');
 insert into `status` values('2', 'done');
+insert into `status` values('3', 'behind_schedule');
+insert into `status` values('4', 'on_track');
+insert into `status` values('5', 'stalled');
 
 // Creating role table
 drop table if exists `role` ;
@@ -236,7 +238,7 @@ insert into `feed_type` values('8', 'Team Member Removed');
 insert into `feed_type` values('9', 'Reminder');
 insert into `feed_type` values('10', 'Task Recommendation');
 insert into `feed_type` values('11', 'Talent Recommendation');
-insert into `feed_type` values('12', 'Assistant Bot');
+insert into `feed_type` values('12', 'Assistant');
 
 // Creating skill_user_index table
 drop table if exists `skill_user_index` ;
@@ -294,6 +296,16 @@ create table work_favorite (
 	primary key (user_id,work_id)
 );
 
+// Creating user_backlog_index table
+drop table if exists `user_backlog_index` ;
+create table user_backlog_index (
+	id varchar(50) NOT NULL,
+	user_id varchar(50) NOT NULL,
+	backlog_board_id varchar(50) NOT NULL,
+	expiry_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	primary key (user_id,backlog_board_id)
+);
+
 // Creating board table
 drop table if exists `board` ;
 create table board (
@@ -305,6 +317,7 @@ create table board (
 	version bigint(20) default 0,
 	status_id varchar(50) NOT NULL,
 	is_private bool,
+	expiry_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	is_expired bool,
 	primary key (id)
 );
@@ -347,7 +360,6 @@ create table news_feed (
 drop table if exists `comment` ;
 create table comment (
 	id varchar(50) NOT NULL,
-	board_id varchar(50) NOT NULL,
 	work_id varchar(50) NOT NULL,
 	creator_id varchar(50) NOT NULL,
 	last_edittime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -355,6 +367,21 @@ create table comment (
 	likes BIGINT(20) NOT NULL,
 	dislikes BIGINT(20) NOT NULL,	
 	primary key (id)
+);
+
+// Creating board_progress_report table
+drop table if exists `board_progress_report` ;
+create table board_progress_report (
+	id varchar(50) NOT NULL,
+	last_edittime TIMESTAMP,
+	board_id varchar(50) NOT NULL,
+	total_work bigint(20) default 0,
+	open_work bigint(20) default 0,
+	total_collaborators bigint(20) default 0,
+	benchmark_velocity bigint(20) default 0,
+	actual_velocity bigint(20) default 0,
+	status_id varchar(50) NOT NULL,
+	primary key (id,last_edittime)
 );
 
 // Creating user_metric table
