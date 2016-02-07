@@ -1,12 +1,15 @@
 package com.workappinc.workappclient.main;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
+import java.util.zip.GZIPInputStream;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -16,6 +19,11 @@ import com.workappinc.workappserver.common.logging.WorkAppLogger;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppArgument;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
+
+import jline.TerminalFactory;
+import jline.console.ConsoleReader;
+import jline.console.completer.FileNameCompleter;
+import jline.console.completer.StringsCompleter;
 
 public class WorkAppClient
 {
@@ -37,6 +45,9 @@ public class WorkAppClient
 	@WorkAppArgument(alias = "lp", description = "Log4j Properties File Location")
 	private static String log4jPropFile;
 
+	@WorkAppArgument(alias = "ac", description = "Auto Complete File Location")
+	private static String acFile;
+	
 	private static String printArray(String[] arr)
 	{
 		if (arr == null)
@@ -181,9 +192,13 @@ public class WorkAppClient
 		{
 			port = Integer.parseInt(prop.getProperty("port"));
 		}
+		if (acFile == null)
+		{
+			acFile = prop.getProperty("acFile");
+		}
 
 		// Must be passed
-		if (mode == null || host == null || port == null)
+		if (mode == null || host == null || port == null || acFile == null)
 		{
 			terminateWithMessage();
 		}
@@ -202,6 +217,7 @@ public class WorkAppClient
 		logger.LogDebug("mode:" + mode, WorkAppClient.class);
 		logger.LogDebug("host:" + host, WorkAppClient.class);
 		logger.LogDebug("port:" + port, WorkAppClient.class);
+		logger.LogDebug("acFile:" + acFile, WorkAppClient.class);
 	}
 
 	/**
@@ -217,11 +233,68 @@ public class WorkAppClient
 		configMap.put("mode", mode);
 		configMap.put("host", host);
 		configMap.put("port", port);
+		configMap.put("acFile", acFile);
 	}
 
-	
+	private static void usageRestAPI()
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void startConsole()
+	{
+		InputStream input = null;
+		try
+		{
+			ConsoleReader console = new ConsoleReader();
+			console.setPrompt("WorkAppClient> ");
+
+			// Get file from resources folder
+			input = new FileInputStream(acFile);
+			console.addCompleter(new StringsCompleter(IOUtils.readLines(new GZIPInputStream(input))));
+			console.addCompleter(new FileNameCompleter());
+			String line = null;
+			while ((line = console.readLine()) != null)
+			{
+				if(mode.equalsIgnoreCase(REST_CLIENT))
+				{
+					System.out.println(line+"REST");
+				}
+			}
+		}
+		catch (IOException ex)
+		{
+			logger.LogException(ex, WorkAppClient.class);
+		}
+		finally
+		{
+			try
+			{
+				TerminalFactory.get().restore();
+			}
+			catch (Exception ex)
+			{
+				logger.LogException(ex, WorkAppClient.class);
+			}
+			
+			if (input != null)
+			{
+				try
+				{
+					input.close();
+				}
+				catch (IOException ex)
+				{
+					logger.LogException(ex, WorkAppClient.class);
+				}
+			}
+		}
+	}
+
 	public static void main(String args[]) throws IOException
 	{
+		System.setProperty("jline.shutdownhook", "true");
 		@SuppressWarnings("unused")
 		final List<String> parse;
 
@@ -260,9 +333,8 @@ public class WorkAppClient
 
 		if(mode != null && mode.equalsIgnoreCase(REST_CLIENT))
 		{
-			System.out.println("Hi...");
+			usageRestAPI();
 		}
-
-
+		startConsole();
 	}
 }

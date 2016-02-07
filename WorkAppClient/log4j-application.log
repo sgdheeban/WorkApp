@@ -46,3 +46,49 @@
 2016-02-05 16:48:11 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4419 mode:rest_client
 2016-02-05 16:48:11 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4419 host:localhost
 2016-02-05 16:48:11 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4419 port:8080
+2016-02-07 01:25:36 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4560 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/dev_config.properties
+2016-02-07 01:25:36 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4560 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/log4j.properties
+2016-02-07 01:25:36 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4560 logLevel:DEBUG
+2016-02-07 01:25:36 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4560 mode:rest_client
+2016-02-07 01:25:36 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4560 host:localhost
+2016-02-07 01:25:36 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4560 port:8080
+2016-02-07 01:26:19 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4597 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/dev_config.properties
+2016-02-07 01:26:19 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4597 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/log4j.properties
+2016-02-07 01:26:19 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4597 logLevel:DEBUG
+2016-02-07 01:26:19 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4597 mode:rest_client
+2016-02-07 01:26:19 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4597 host:localhost
+2016-02-07 01:26:19 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4597 port:8080
+2016-02-07 01:29:31 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4714 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/dev_config.properties
+2016-02-07 01:29:31 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4714 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/log4j.properties
+2016-02-07 01:29:31 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4714 logLevel:DEBUG
+2016-02-07 01:29:31 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4714 mode:rest_client
+2016-02-07 01:29:31 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4714 host:localhost
+2016-02-07 01:29:31 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4714 port:8080
+2016-02-07 01:29:47 ERROR WorkAppUncaughtExceptionLogger$1:78 dhgovindaraj-VirtualBox:4714  [ Uncaught exception in thread Thread[main,5,main] ]  - Stacktrace : com.workappinc.workappserver.common.exception.WorkAppUncaughtException: Uncaught exception in thread Thread[main,5,main]
+	at com.workappinc.workappserver.common.logging.WorkAppUncaughtExceptionLogger$1.uncaughtException(WorkAppUncaughtExceptionLogger.java:21)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1057)
+	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1052)
+	at java.lang.Thread.dispatchUncaughtException(Thread.java:1952)
+Caused by: java.lang.NullPointerException
+	at com.workappinc.workappclient.main.WorkAppClient.startConsole(WorkAppClient.java:245)
+	at com.workappinc.workappclient.main.WorkAppClient.main(WorkAppClient.java:323)
+
+2016-02-07 01:31:02 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4799 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/dev_config.properties
+2016-02-07 01:31:02 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4799 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/log4j.properties
+2016-02-07 01:31:02 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4799 logLevel:DEBUG
+2016-02-07 01:31:02 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4799 mode:rest_client
+2016-02-07 01:31:02 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4799 host:localhost
+2016-02-07 01:31:02 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4799 port:8080
+2016-02-07 01:31:24 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4846 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/dev_config.properties
+2016-02-07 01:31:24 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4846 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/log4j.properties
+2016-02-07 01:31:24 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4846 logLevel:DEBUG
+2016-02-07 01:31:24 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4846 mode:rest_client
+2016-02-07 01:31:24 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4846 host:localhost
+2016-02-07 01:31:24 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4846 port:8080
+2016-02-07 01:44:30 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:5639 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/dev_config.properties
+2016-02-07 01:44:30 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:5639 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/log4j.properties
+2016-02-07 01:44:30 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:5639 logLevel:DEBUG
+2016-02-07 01:44:30 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:5639 mode:rest_client
+2016-02-07 01:44:30 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:5639 host:localhost
+2016-02-07 01:44:30 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:5639 port:8080
+2016-02-07 01:44:30 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:5639 acFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/wordlist.txt.gz
