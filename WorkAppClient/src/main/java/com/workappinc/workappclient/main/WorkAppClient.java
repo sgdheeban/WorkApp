@@ -9,9 +9,14 @@ import java.util.List;
 import java.util.Properties;
 import java.util.zip.GZIPInputStream;
 
+import javax.ws.rs.core.Response;
+
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.javatuples.Pair;
+import org.javatuples.Quartet;
+import org.javatuples.Quintet;
 
 import com.workappinc.workappserver.common.exception.SystemException;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
@@ -25,6 +30,10 @@ import jline.console.ConsoleReader;
 import jline.console.completer.FileNameCompleter;
 import jline.console.completer.StringsCompleter;
 
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
+
 public class WorkAppClient
 {
 	@WorkAppArgument(alias = "c", description = "Config File Location (Required)", required = true)
@@ -35,7 +44,7 @@ public class WorkAppClient
 
 	@WorkAppArgument(alias = "h", description = "Start Host")
 	private static String host;
-	
+
 	@WorkAppArgument(alias = "p", description = "Start Port")
 	private static Integer port;
 
@@ -47,7 +56,7 @@ public class WorkAppClient
 
 	@WorkAppArgument(alias = "ac", description = "Auto Complete File Location")
 	private static String acFile;
-	
+
 	private static String printArray(String[] arr)
 	{
 		if (arr == null)
@@ -69,6 +78,9 @@ public class WorkAppClient
 	private static final String REST_CLIENT = "rest_client";
 	private static final String THRIFT_CLIENT = "thrift_client";
 	private static final HashMap<String, Object> configMap = new HashMap<String, Object>();
+	private static final HashMap<String, Quartet<String, String, String, String>> commandMap = new HashMap<String, Quartet<String, String, String, String>>();
+	private static final String GET = "GET";
+	private static final String POST = "POST";
 
 	/**
 	 * Print terminating condition and end program
@@ -85,7 +97,7 @@ public class WorkAppClient
 		System.exit(1);
 		return;
 	}
-	
+
 	/**
 	 * Create Logger from Properties file
 	 * 
@@ -131,7 +143,7 @@ public class WorkAppClient
 
 		return mLogger;
 	}
-	
+
 	/**
 	 * Override Log4j Log-level with command line option if any
 	 */
@@ -169,7 +181,7 @@ public class WorkAppClient
 				break;
 			}
 	}
-	
+
 	/**
 	 * Sets values fromm Config File, if not set from command line already
 	 * 
@@ -238,7 +250,86 @@ public class WorkAppClient
 
 	private static void usageRestAPI()
 	{
-		// TODO Auto-generated method stub
+		StringBuilder outputString = new StringBuilder();
+		outputString.append("Use the following command (Press TAB for auto complete in command line)");
+		outputString.append("\n");
+		outputString.append("test : Test the REST Service\n");
+		outputString.append("register : Register your User\n");
+		outputString.append("login : Login\n");
+		outputString.append("logout : Logout\n");
+		System.out.println(outputString.toString());
+
+		registerRestAPI();
+	}
+
+	private static void registerRestAPI()
+	{
+		commandMap.put(Command.test, new Quartet(GET, "http://" + host + ":" + port + "/workapp/v1/page/test", "application/json", null));
+	}
+
+	private static void executeGetURL(String url, String contentType)
+	{
+		Client client =  null;
+		try
+		{
+			client = Client.create();
+			WebResource webResource = client.resource(url);
+			ClientResponse response = webResource.accept(contentType).get(ClientResponse.class);
+			if (response.getStatus() != 200) { throw new RuntimeException("Failed : HTTP error code : " + response.getStatus()); }
+			String output = response.getEntity(String.class);
+			System.out.println("Output from Server ....");
+			System.out.println(output);
+		}
+		catch (Exception ex)
+		{
+			logger.LogException(ex, WorkAppClient.class);
+		}
+		finally
+		{
+			if(client != null)
+				client.destroy();
+		}
+	}
+
+	private static void executePostURL(String url, String contentType, String payload)
+	{
+		Client client =  null;
+		try
+		{
+			client = Client.create();
+			WebResource webResource = client.resource(url);
+			String input = payload;
+			ClientResponse response = webResource.type(contentType).post(ClientResponse.class, input);
+			if (response.getStatus() != 201) { throw new RuntimeException("Failed : HTTP error code : " + response.getStatus()); }
+			System.out.println("Output from Server ....");
+			String output = response.getEntity(String.class);
+			System.out.println(output);
+		}
+		catch (Exception ex)
+		{
+			logger.LogException(ex, WorkAppClient.class);
+		}
+		finally
+		{
+			if(client != null)
+				client.destroy();
+		}
+	}
+
+	private static void executeURL(Quartet<String, String, String, String> quartet)
+	{
+		switch(quartet.getValue2())
+		{
+			case GET :
+				executeGetURL(quartet.getValue1(), quartet.getValue2());
+				break;
+			case POST :
+				executePostURL(quartet.getValue1(), quartet.getValue2(), quartet.getValue3());
+				break;
+			default:
+				System.err.println("Wrong REST API Type chosen. Does not fit GET or PUT type. No action taken.");
+				break;
+		}
 		
 	}
 
@@ -252,14 +343,23 @@ public class WorkAppClient
 
 			// Get file from resources folder
 			input = new FileInputStream(acFile);
-			console.addCompleter(new StringsCompleter(IOUtils.readLines(new GZIPInputStream(input))));
+
+			// console.addCompleter(new StringsCompleter(IOUtils.readLines(new
+			// GZIPInputStream(input)))); //For tar.gz input
+			console.addCompleter(new StringsCompleter(IOUtils.readLines(input)));
 			console.addCompleter(new FileNameCompleter());
 			String line = null;
 			while ((line = console.readLine()) != null)
 			{
-				if(mode.equalsIgnoreCase(REST_CLIENT))
+				if (mode.equalsIgnoreCase(REST_CLIENT))
 				{
-					System.out.println(line+"REST");
+					switch (line.toLowerCase())
+					{
+					case Command.test:
+						executeURL(commandMap.get(Command.test));
+						break;
+
+					}
 				}
 			}
 		}
@@ -277,7 +377,7 @@ public class WorkAppClient
 			{
 				logger.LogException(ex, WorkAppClient.class);
 			}
-			
+
 			if (input != null)
 			{
 				try
@@ -306,7 +406,7 @@ public class WorkAppClient
 		{
 			terminateWithMessage();
 		}
-		
+
 		// Instantiate Logger & override levels from command line
 		if (log4jPropFile == null)
 			try
@@ -331,7 +431,7 @@ public class WorkAppClient
 		printConfigValues(logger);
 		populateConfigValues();
 
-		if(mode != null && mode.equalsIgnoreCase(REST_CLIENT))
+		if (mode != null && mode.equalsIgnoreCase(REST_CLIENT))
 		{
 			usageRestAPI();
 		}

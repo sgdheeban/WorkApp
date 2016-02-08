@@ -31,7 +31,7 @@ public class User
 	{
 		return "User [id=" + id + ", service_key=" + service_key + ", email=" + email + ", password=" + password + ", phone=" + phone + ", first_name=" + first_name + ", last_name=" + last_name + ", is_worker=" + is_worker + ", is_individual=" + is_individual + ", employer_name=" + employer_name + ", occupation=" + occupation + ", skills=" + skills + ", is_owner=" + is_owner + ", hashCode()=" + hashCode() + ", getId()=" + getId() + ", getService_key()=" + getService_key() + ", getEmail()=" + getEmail() + ", getPassword()=" + getPassword() + ", getPhone()=" + getPhone() + ", getFirst_name()=" + getFirst_name() + ", getLast_name()=" + getLast_name() + ", getIs_customer()=" + getIs_worker() + ", getIs_individual()=" + getIs_individual() + ", getEmployer_name()=" + getEmployer_name() + ", getOccupation()=" + getOccupation() + ", getSkills()=" + getSkills() + ", getIs_owner()=" + getIs_owner() + ", getClass()=" + getClass() + ", toString()=" + super.toString() + "]";
 	}
-	
+
 	@Override
 	public int hashCode()
 	{
@@ -141,7 +141,7 @@ public class User
 			return false;
 		return true;
 	}
-	
+
 	public String getId()
 	{
 		return id;
@@ -151,7 +151,7 @@ public class User
 	{
 		this.id = id;
 	}
-	
+
 	public String getService_key()
 	{
 		return service_key;

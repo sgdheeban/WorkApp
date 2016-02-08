@@ -112,7 +112,6 @@ public class WorkAppUserResource implements IResource
 		return response;
 	}
 
-	
 	/**
 	 * Get News Feed for User
 	 * 
@@ -143,5 +142,4 @@ public class WorkAppUserResource implements IResource
 		return response;
 	}
 
-	
 }

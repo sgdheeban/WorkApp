@@ -60,7 +60,7 @@ public class WorkAppProjectResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 	/**
 	 * View Board
 	 * 
@@ -90,7 +90,7 @@ public class WorkAppProjectResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 	/**
 	 * Create Work
 	 * 
@@ -120,7 +120,7 @@ public class WorkAppProjectResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 	/**
 	 * View Work
 	 * 
@@ -135,7 +135,7 @@ public class WorkAppProjectResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 	/**
 	 * Edit Work
 	 * 
@@ -150,5 +150,5 @@ public class WorkAppProjectResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 }
