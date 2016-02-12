@@ -7279,3 +7279,787 @@ Content-Type: text/plain
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
 2016-02-07 01:36:21 INFO  WorkAppLoggerTestCase:59 dhgovindaraj-VirtualBox:5154  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 logLevel:DEBUG
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 mode:rest
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 port:8080
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 trackAllocation:false
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 detectJARClash:false
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 schemaFile:null
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 database:jdbc:mysql://localhost:3306/
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 dbUser:root
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 dbPassword:password
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 dbSchema:workapp
+2016-02-11 20:45:51 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3212 dbPoolSize:20
+2016-02-11 20:45:51 DEBUG WorkAppMySQLConnectionManager:98 dhgovindaraj-VirtualBox:3212 Attempting to connect to db at: jdbc:mysql://localhost:3306/workapp
+2016-02-11 20:45:52 DEBUG log:176 dhgovindaraj-VirtualBox:3212 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-02-11 20:45:52 INFO  log:186 dhgovindaraj-VirtualBox:3212 Logging initialized @4600ms
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.server.session.SessionHandler@4dbb42b7 added {org.eclipse.jetty.server.session.HashSessionManager@66f57048,AUTO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 o.e.j.s.ServletContextHandler@550dbc7a{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@4dbb42b7,AUTO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.server.session.SessionHandler@4dbb42b7 added {org.eclipse.jetty.servlet.ServletHandler@6bd61f98,AUTO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.server.Server@738dc9b added {qtp477533894{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 HttpConnectionFactory@75437611[HTTP/1.1] added {HttpConfiguration@350aac89{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@738dc9b,UNMANAGED}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {qtp477533894{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9,AUTO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 ServerConnector@7f485fda{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@28261e8e,POJO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 ServerConnector@7f485fda{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@75437611[HTTP/1.1],AUTO}
+2016-02-11 20:45:52 DEBUG ServerConnector:393 dhgovindaraj-VirtualBox:3212 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8,MANAGED}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.server.Server@738dc9b added {ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.server.Server@738dc9b added {o.e.j.s.ServletContextHandler@550dbc7a{/,null,null},AUTO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-723ca036,POJO}
+2016-02-11 20:45:52 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.server.Server@738dc9b
+2016-02-11 20:45:52 INFO  Server:339 dhgovindaraj-VirtualBox:3212 jetty-9.3.0.M2
+2016-02-11 20:45:52 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.server.Server@738dc9b
+2016-02-11 20:45:52 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting qtp477533894{STOPPED,8<=0<=200,i=0,q=0}
+2016-02-11 20:45:52 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @5227ms qtp477533894{STARTED,8<=8<=200,i=7,q=0}
+2016-02-11 20:45:52 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting o.e.j.s.ServletContextHandler@550dbc7a{/,null,null}
+2016-02-11 20:45:52 DEBUG PreEncodedHttpField:65 dhgovindaraj-VirtualBox:3212 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@15a34df2]
+2016-02-11 20:45:52 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:3212 starting o.e.j.s.ServletContextHandler@550dbc7a{/,null,STARTING}
+2016-02-11 20:45:52 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-11 20:45:52 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-11 20:45:52 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-11 20:45:52 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.server.session.HashSessionManager@66f57048 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575,MANAGED}
+2016-02-11 20:45:52 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @5361ms org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6
+2016-02-11 20:45:53 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.server.Server@738dc9b added {org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6,MANAGED}
+2016-02-11 20:45:53 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.server.session.HashSessionManager@66f57048 added {org.eclipse.jetty.server.session.HashSessionIdManager@1a4927d6,UNMANAGED}
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @5402ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@480d3575
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @5415ms org.eclipse.jetty.server.session.HashSessionManager@66f57048
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-11 20:45:53 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:3212 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-723ca036 from default=false
+2016-02-11 20:45:53 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:3212 filterNameMap={}
+2016-02-11 20:45:53 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:3212 pathFilters=null
+2016-02-11 20:45:53 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:3212 servletFilterMap=null
+2016-02-11 20:45:53 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:3212 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-11 20:45:53 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:3212 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-723ca036=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-11 20:45:53 DEBUG ServletHandler:165 dhgovindaraj-VirtualBox:3212 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-11 20:45:53 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-02-11 20:45:53 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 org.eclipse.jetty.servlet.ServletHandler@6bd61f98 added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81,POJO}
+2016-02-11 20:45:53 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:3212 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-723ca036 from default=false
+2016-02-11 20:45:53 DEBUG ServletHandler:1495 dhgovindaraj-VirtualBox:3212 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81 from default=false
+2016-02-11 20:45:53 DEBUG ServletHandler:1516 dhgovindaraj-VirtualBox:3212 filterNameMap={}
+2016-02-11 20:45:53 DEBUG ServletHandler:1517 dhgovindaraj-VirtualBox:3212 pathFilters=null
+2016-02-11 20:45:53 DEBUG ServletHandler:1518 dhgovindaraj-VirtualBox:3212 servletFilterMap=null
+2016-02-11 20:45:53 DEBUG ServletHandler:1519 dhgovindaraj-VirtualBox:3212 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-02-11 20:45:53 DEBUG ServletHandler:1520 dhgovindaraj-VirtualBox:3212 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-723ca036=org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false, org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-02-11 20:45:53 DEBUG AbstractHandler:58 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @5430ms org.eclipse.jetty.servlet.ServletHandler@6bd61f98
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @5430ms org.eclipse.jetty.server.session.SessionHandler@4dbb42b7
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @5438ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7dfd3c81@c20ba28==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-11 20:45:53 DEBUG BaseHolder:97 dhgovindaraj-VirtualBox:3212 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@18b4aac2
+2016-02-11 20:45:53 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @5439ms org.glassfish.jersey.servlet.ServletContainer-723ca036@dbf9d44b==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-11 20:45:53 DEBUG ServletHolder:612 dhgovindaraj-VirtualBox:3212 Servlet.init org.glassfish.jersey.servlet.ServletContainer@5e3f861 for org.glassfish.jersey.servlet.ServletContainer-723ca036
+2016-02-11 20:45:55 INFO  ContextHandler:745 dhgovindaraj-VirtualBox:3212 Started o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @7925ms o.e.j.s.ServletContextHandler@550dbc7a{/,null,AVAILABLE}
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-11 20:45:55 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @8021ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@4c60d6e9
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @8021ms HttpConnectionFactory@75437611[HTTP/1.1]
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:185 dhgovindaraj-VirtualBox:3212 starting org.eclipse.jetty.io.ManagedSelector@7f829c76 id=0 keys=-1 selected=-1
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @8055ms org.eclipse.jetty.io.ManagedSelector@7f829c76 id=0 keys=0 selected=0
+2016-02-11 20:45:55 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:3212 queue org.eclipse.jetty.io.ManagedSelector@7f829c76 id=0 keys=0 selected=0
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @8056ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3ba987b8
+2016-02-11 20:45:55 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:3212 run org.eclipse.jetty.io.ManagedSelector@7f829c76 id=0 keys=0 selected=0
+2016-02-11 20:45:55 DEBUG ExecuteProduceRun:66 dhgovindaraj-VirtualBox:3212 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6a06b83 execute
+2016-02-11 20:45:55 DEBUG ExecuteProduceRun:132 dhgovindaraj-VirtualBox:3212 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6a06b83 produce enter
+2016-02-11 20:45:55 DEBUG ExecuteProduceRun:138 dhgovindaraj-VirtualBox:3212 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6a06b83 producing
+2016-02-11 20:45:55 DEBUG ManagedSelector:230 dhgovindaraj-VirtualBox:3212 Selector loop waiting on select
+2016-02-11 20:45:55 DEBUG ContainerLifeCycle:324 dhgovindaraj-VirtualBox:3212 ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@6e57b5e9,POJO}
+2016-02-11 20:45:55 DEBUG QueuedThreadPool:360 dhgovindaraj-VirtualBox:3212 queue acceptor-0@6e57b5e9
+2016-02-11 20:45:55 DEBUG QueuedThreadPool:558 dhgovindaraj-VirtualBox:3212 run acceptor-0@6e57b5e9
+2016-02-11 20:45:55 INFO  ServerConnector:267 dhgovindaraj-VirtualBox:3212 Started ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @8080ms ServerConnector@7f485fda{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-11 20:45:55 INFO  Server:391 dhgovindaraj-VirtualBox:3212 Started @8081ms
+2016-02-11 20:45:55 DEBUG AbstractLifeCycle:177 dhgovindaraj-VirtualBox:3212 STARTED @8082ms org.eclipse.jetty.server.Server@738dc9b
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 logLevel:DEBUG
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 mode:rest
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 port:8080
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 trackAllocation:false
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 detectJARClash:false
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/insert_mysql_workapp.sql
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 database:jdbc:mysql://localhost:3306/
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 dbUser:root
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 dbPassword:password
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 dbSchema:workapp
+2016-02-11 20:46:18 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3257 dbPoolSize:20
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 // Inserting values into status table
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `status` values('0', 'todo') ' (line 2): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `status` values('1', 'inprogress') ' (line 3): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `status` values('2', 'done') ' (line 4): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `status` values('3', 'behind_schedule') ' (line 5): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `status` values('4', 'on_track') ' (line 6): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `status` values('5', 'stalled') ' (line 7): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 // Inserting values into role table
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `role` values('0', 'owner') ' (line 10): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `role` values('1', 'admin') ' (line 11): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `role` values('2', 'editor') ' (line 12): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `role` values('3', 'reader') ' (line 13): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 // Inserting values into feed_type table
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('0', 'Board Created') ' (line 16): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('1', 'Board Expired') ' (line 17): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('2', 'Work Created') ' (line 18): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('3', 'Work Expired') ' (line 19): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('4', 'Work Edited') ' (line 20): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('5', 'Comment Added') ' (line 21): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('6', 'Comment Removed') ' (line 22): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('7', 'Team Member Added') ' (line 23): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('8', 'Team Member Removed') ' (line 24): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('9', 'Reminder') ' (line 25): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('10', 'Task Recommendation') ' (line 26): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('11', 'Talent Recommendation') ' (line 27): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `feed_type` values('12', 'Assistant') ' (line 28): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 // Inserting values into occupation_catalog table
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('0', 'Personal') ' (line 31): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('1', 'Brainstorming') ' (line 32): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('2', 'Meeting') ' (line 33): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('3', 'Event') ' (line 34): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('4', 'Software Engineering') ' (line 35): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('5', 'Financial Auditing') ' (line 36): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('6', 'Legal Service') ' (line 37): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('7', 'Investment') ' (line 38): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('8', 'Business') ' (line 39): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('9', 'Management') ' (line 40): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('10', 'Marketing') ' (line 41): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('11', 'Sales') ' (line 42): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('12', 'Others') ' (line 43): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('13', 'Software Operations') ' (line 44): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('14', 'Do-It-Yourself') ' (line 45): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('15', 'Dancing') ' (line 46): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('16', 'Singing') ' (line 47): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('17', 'Arts & Craft') ' (line 48): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('18', 'Photography') ' (line 49): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('19', 'Painting') ' (line 50): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('20', 'Drilling') ' (line 51): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('21', 'Plumbing') ' (line 52): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('22', 'Pilot') ' (line 53): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('23', 'Driving') ' (line 54): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('24', 'Dining') ' (line 55): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('25', 'School Home Work') ' (line 56): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `occupation_catalog` values('26', 'Teaching') ' (line 57): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 // Inserting values into skill table
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('0', '4', 'Backend') ' (line 60): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('1', '4', 'Frontend') ' (line 61): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('2', '4', 'Scalability') ' (line 62): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('3', '4', 'High Performance') ' (line 63): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('4', '4', 'Java') ' (line 64): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('5', '4', 'C++') ' (line 65): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('6', '4', 'C') ' (line 66): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('7', '4', 'Web App') ' (line 67): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('8', '4', 'Android App') ' (line 68): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('9', '4', 'iOS App') ' (line 69): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('10', '4', 'JavaScript') ' (line 70): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('11', '4', 'NodeJS') ' (line 71): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('12', '4', 'SQL') ' (line 72): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('13', '4', 'Big Data') ' (line 73): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('14', '4', 'Algorithms') ' (line 74): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('15', '4', 'Virtual Reality') ' (line 75): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('16', '4', 'Virtual Assistant') ' (line 76): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('17', '4', 'Scripting') ' (line 77): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('0', '13', 'Monitoring & Alert') ' (line 78): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('1', '13', 'Production Support') ' (line 79): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `skill` values('2', '13', 'Documentation') ' (line 80): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 // Inserting values into milestone table
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('0', '4', 'Design') ' (line 83): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('1', '4', 'Implementation') ' (line 84): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('2', '4', 'Testing') ' (line 85): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('3', '4', 'Release') ' (line 86): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('4', '4', 'Bug Fixes') ' (line 87): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('0', '13', 'Monitoring') ' (line 88): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('1', '13', 'P0 Support') ' (line 89): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('2', '13', 'P1 Support') ' (line 90): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('3', '13', 'P2 Support') ' (line 91): No database selected
+2016-02-11 20:46:20 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3257 
+2016-02-11 20:46:20 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3257 Error executing 'insert into `milestone` (id,occupation_id,name) values('4', '13', 'P3 Support') ' (line 92): No database selected
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 logLevel:DEBUG
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 mode:rest
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 port:8080
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 trackAllocation:false
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 detectJARClash:false
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/workapp_mysql_schema.sql
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 database:jdbc:mysql://localhost:3306/
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 dbUser:root
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 dbPassword:password
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 dbSchema:workapp
+2016-02-11 20:46:47 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3278 dbPoolSize:20
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating WorkApp Database and Tables
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating user table
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating user_experience table
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating user_rating table
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating user_session table
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating occupation_catalog table
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating skill table
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating milestone table
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating status table
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating role table
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:49 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating board_milestone table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating feed_type table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating skill_user_index table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating occupation_user_index table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating skill_work_index table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating occupation_work_index table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating board_collaborator table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating work_favorite table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating user_backlog_index table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating board table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating work table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating news_feed table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating comment table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating board_progress_report table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating user_metric table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // Creating talent_recommendation table
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 // End of WorkApp Database and Tables creation
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:46:50 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3278 
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 logLevel:DEBUG
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 mode:rest
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 port:8080
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 trackAllocation:false
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 detectJARClash:false
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/insert_mysql_workapp.sql
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 database:jdbc:mysql://localhost:3306/
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 dbUser:root
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 dbPassword:password
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 dbSchema:workapp
+2016-02-11 20:47:08 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3296 dbPoolSize:20
+2016-02-11 20:47:09 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 // Inserting values into status table
+2016-02-11 20:47:09 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `status` values('0', 'todo') ' (line 2): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `status` values('1', 'inprogress') ' (line 3): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `status` values('2', 'done') ' (line 4): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `status` values('3', 'behind_schedule') ' (line 5): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `status` values('4', 'on_track') ' (line 6): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `status` values('5', 'stalled') ' (line 7): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 // Inserting values into role table
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `role` values('0', 'owner') ' (line 10): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `role` values('1', 'admin') ' (line 11): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `role` values('2', 'editor') ' (line 12): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `role` values('3', 'reader') ' (line 13): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 // Inserting values into feed_type table
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('0', 'Board Created') ' (line 16): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('1', 'Board Expired') ' (line 17): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('2', 'Work Created') ' (line 18): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('3', 'Work Expired') ' (line 19): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('4', 'Work Edited') ' (line 20): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('5', 'Comment Added') ' (line 21): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('6', 'Comment Removed') ' (line 22): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('7', 'Team Member Added') ' (line 23): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('8', 'Team Member Removed') ' (line 24): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('9', 'Reminder') ' (line 25): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('10', 'Task Recommendation') ' (line 26): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('11', 'Talent Recommendation') ' (line 27): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `feed_type` values('12', 'Assistant') ' (line 28): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 // Inserting values into occupation_catalog table
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('0', 'Personal') ' (line 31): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('1', 'Brainstorming') ' (line 32): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('2', 'Meeting') ' (line 33): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('3', 'Event') ' (line 34): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('4', 'Software Engineering') ' (line 35): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('5', 'Financial Auditing') ' (line 36): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('6', 'Legal Service') ' (line 37): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('7', 'Investment') ' (line 38): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('8', 'Business') ' (line 39): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('9', 'Management') ' (line 40): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('10', 'Marketing') ' (line 41): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('11', 'Sales') ' (line 42): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('12', 'Others') ' (line 43): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('13', 'Software Operations') ' (line 44): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('14', 'Do-It-Yourself') ' (line 45): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('15', 'Dancing') ' (line 46): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('16', 'Singing') ' (line 47): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('17', 'Arts & Craft') ' (line 48): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('18', 'Photography') ' (line 49): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('19', 'Painting') ' (line 50): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('20', 'Drilling') ' (line 51): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('21', 'Plumbing') ' (line 52): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('22', 'Pilot') ' (line 53): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('23', 'Driving') ' (line 54): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('24', 'Dining') ' (line 55): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('25', 'School Home Work') ' (line 56): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `occupation_catalog` values('26', 'Teaching') ' (line 57): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 // Inserting values into skill table
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('0', '4', 'Backend') ' (line 60): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('1', '4', 'Frontend') ' (line 61): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('2', '4', 'Scalability') ' (line 62): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('3', '4', 'High Performance') ' (line 63): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('4', '4', 'Java') ' (line 64): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('5', '4', 'C++') ' (line 65): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('6', '4', 'C') ' (line 66): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('7', '4', 'Web App') ' (line 67): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('8', '4', 'Android App') ' (line 68): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('9', '4', 'iOS App') ' (line 69): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('10', '4', 'JavaScript') ' (line 70): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('11', '4', 'NodeJS') ' (line 71): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('12', '4', 'SQL') ' (line 72): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('13', '4', 'Big Data') ' (line 73): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('14', '4', 'Algorithms') ' (line 74): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('15', '4', 'Virtual Reality') ' (line 75): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('16', '4', 'Virtual Assistant') ' (line 76): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('17', '4', 'Scripting') ' (line 77): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('0', '13', 'Monitoring & Alert') ' (line 78): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('1', '13', 'Production Support') ' (line 79): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `skill` values('2', '13', 'Documentation') ' (line 80): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 // Inserting values into milestone table
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('0', '4', 'Design') ' (line 83): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('1', '4', 'Implementation') ' (line 84): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('2', '4', 'Testing') ' (line 85): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('3', '4', 'Release') ' (line 86): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('4', '4', 'Bug Fixes') ' (line 87): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('0', '13', 'Monitoring') ' (line 88): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('1', '13', 'P0 Support') ' (line 89): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('2', '13', 'P1 Support') ' (line 90): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('3', '13', 'P2 Support') ' (line 91): No database selected
+2016-02-11 20:47:10 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3296 
+2016-02-11 20:47:10 ERROR WorkAppScriptRunnerUtil:78 dhgovindaraj-VirtualBox:3296 Error executing 'insert into `milestone` (id,occupation_id,name) values('4', '13', 'P3 Support') ' (line 92): No database selected
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 logLevel:DEBUG
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 mode:rest
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 port:8080
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 trackAllocation:false
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 detectJARClash:false
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 dbConfigFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dbconfig.properties
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 schemaFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/insert_mysql_workapp.sql
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 database:jdbc:mysql://localhost:3306/
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 dbUser:root
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 dbPassword:password
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 dbSchema:workapp
+2016-02-11 20:47:39 DEBUG WorkAppMainServer:98 dhgovindaraj-VirtualBox:3316 dbPoolSize:20
+2016-02-11 20:47:40 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:40 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:40 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 // Inserting values into status table
+2016-02-11 20:47:40 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:40 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:40 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:40 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:40 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 // Inserting values into role table
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 // Inserting values into feed_type table
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 // Inserting values into occupation_catalog table
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 // Inserting values into skill table
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 // Inserting values into milestone table
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:47:41 DEBUG WorkAppScriptRunnerUtil:98 dhgovindaraj-VirtualBox:3316 
+2016-02-11 20:48:35 INFO  WorkAppPropertiesFileWriterExample:91 dhgovindaraj-VirtualBox:3361 Printing Properties to FilePath
+2016-02-11 20:48:35 FATAL WorkAppLoggerTestCase:72 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:48:35 ERROR WorkAppLoggerTestCase:78 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:48:35 WARN  WorkAppLoggerTestCase:84 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:48:35 INFO  WorkAppLoggerTestCase:91 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:48:35 INFO  WorkAppLoggerTestCase:66 dhgovindaraj-VirtualBox:3361  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-11 20:48:35 INFO  WorkAppLoggerTestCase:59 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:48:35 FATAL WorkAppLoggerTestCase:72 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:48:35 ERROR WorkAppLoggerTestCase:78 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:48:35 WARN  WorkAppLoggerTestCase:84 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:48:35 INFO  WorkAppLoggerTestCase:91 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-11 20:48:35 INFO  WorkAppLoggerTestCase:66 dhgovindaraj-VirtualBox:3361  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-11 20:48:35 INFO  WorkAppLoggerTestCase:59 dhgovindaraj-VirtualBox:3361  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
