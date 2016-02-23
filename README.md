@@ -3,14 +3,15 @@ Client-Server Codebase for WorkApp, a platform for connecting talents with custo
 
 ## Requirements
 
-* Linux (Preferred) or Windows 
+* Linux (Preferred) or Windows, Developed in Ubuntu
 * Java 8 Update 40 or higher (8u40+), 64-bit
 * Maven 3.3.9 (for building)
 * Python 2.4+ (for running with the launcher script)
+* MySQL 5.6 or above
 
 ## Create MySQL schema
 
-Create the following test database and table in MySQL for successful execution of Examples and JUnit tests (Ensure the MySQL server is up and running). Alternatively, you can use the --schemaFile option through the commandline option args, and generate the schema listed in the workapp_mysql_schema.sql under the config folder in the root directory of WorkAppServer project (this includes the test db and table). To understand more about using WorkAppScriptRunnerUtil, refer to WorkAppServer/WorkAppScriptRunnerInstruction.md in the project. To execute ORM related testcases and examples, create the tables using the mysql_schema.sql & mysql_schema_orm_test.sql in the WorkAppServer/src/main/resources folder. To understand more about WorkApp's ORM Engine, refer to WorkAppServer/WorkAppOrmInstruction.md. Check WorkApp/WorkAppServer/config/dev_config.properties for options.
+Create the following test database and table in MySQL for successful execution of Examples and JUnit tests (Ensure the MySQL server is up and running). Alternatively, you can use the --schemaFile option through the commandline option args, and generate the schema listed in the workapp_mysql_schema.sql under the config folder in the root directory of WorkAppServer project (this includes the test db and table). To understand more about using WorkAppScriptRunnerUtil, refer to WorkAppServer/WorkAppScriptRunnerInstruction.md in the project. To execute ORM related testcases and examples, create the tables using the mysql_schema.sql & mysql_schema_orm_test.sql in the WorkAppServer/src/main/resources folder. To understand more about WorkApp's ORM Engine, refer to WorkAppServer/WorkAppOrmInstruction.md. Check WorkApp/WorkAppServer/config/dev_config.properties for options. Use dev_config_windows.properties for Windows Operating System. You can comment out each #schemaFile options to create, delete or install a particular database, overall for all unit tests to pass you will need to run the Server a few times, while commenting out one of the #schemaFile options. Repeat this exercise for each, except delete_db_if_exists, which is used to delete all databases listed in the file. 
 
     CREATE DATABASE testdb IF NOT EXISTS;
     USE testdb;
@@ -52,3 +53,10 @@ WorkApp comes with sample configuration that should work out-of-the-box for deve
 
 The working directory should be the `WorkApp` subdirectory. In EclipseIDE, using `$MODULE_DIR$` accomplishes this automatically.
 For more info on Allocation Tracker, please check here : `https://github.com/google/allocation-instrumenter`
+
+## Installing eJabberd Server & Environment
+
+This server does the heavy lifting for our chat infrastructure, you can run the scripts found in WorkAppServer/scripts folder. Google to learn more about eJabberd server in Ubuntu.
+
+* prepareEnv.sh for installing the environment
+* installEjabberd.sh for installing Chat server
