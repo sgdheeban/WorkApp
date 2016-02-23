@@ -120,3 +120,17 @@ Caused by: java.lang.NullPointerException
 2016-02-07 21:32:51 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:3691 host:localhost
 2016-02-07 21:32:51 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:3691 port:8080
 2016-02-07 21:32:51 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:3691 acFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/command.txt
+2016-02-15 21:18:46 DEBUG WorkAppClient:98 dheeban-THINK:8548 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-02-15 21:18:46 DEBUG WorkAppClient:98 dheeban-THINK:8548 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-02-15 21:18:46 DEBUG WorkAppClient:98 dheeban-THINK:8548 logLevel:DEBUG
+2016-02-15 21:18:46 DEBUG WorkAppClient:98 dheeban-THINK:8548 mode:rest_client
+2016-02-15 21:18:46 DEBUG WorkAppClient:98 dheeban-THINK:8548 host:localhost
+2016-02-15 21:18:46 DEBUG WorkAppClient:98 dheeban-THINK:8548 port:8080
+2016-02-15 21:18:46 DEBUG WorkAppClient:98 dheeban-THINK:8548 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-02-15 21:19:15 DEBUG WorkAppClient:98 dheeban-THINK:3652 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-02-15 21:19:15 DEBUG WorkAppClient:98 dheeban-THINK:3652 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-02-15 21:19:15 DEBUG WorkAppClient:98 dheeban-THINK:3652 logLevel:DEBUG
+2016-02-15 21:19:15 DEBUG WorkAppClient:98 dheeban-THINK:3652 mode:rest_client
+2016-02-15 21:19:15 DEBUG WorkAppClient:98 dheeban-THINK:3652 host:localhost
+2016-02-15 21:19:15 DEBUG WorkAppClient:98 dheeban-THINK:3652 port:8080
+2016-02-15 21:19:15 DEBUG WorkAppClient:98 dheeban-THINK:3652 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt

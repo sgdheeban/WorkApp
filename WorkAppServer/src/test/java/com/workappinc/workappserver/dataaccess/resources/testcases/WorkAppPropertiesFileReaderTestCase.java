@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.util.Properties;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.workappinc.workappserver.common.exception.SystemException;
@@ -47,7 +48,7 @@ public class WorkAppPropertiesFileReaderTestCase
 	/**
 	 * Testing loading from filesystem
 	 */
-	@Test
+	@Test @Ignore
 	public void printPropertiesFromFileSystem()
 	{
 		IApplicationLogger logger;
