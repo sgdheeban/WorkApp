@@ -90,7 +90,7 @@ public class WorkAppOrmMySQLTestCase extends TestSimple
 	{
 
 		// not testing timestamp here, it doesn't support null values
-		BeanMap beanMap = new BeanMap("DatetimeTypes").addField(new FieldMap("dateCol").setTypes(java.sql.Date.class)).addField(new FieldMap("datetimeCol").setTypes(java.sql.Timestamp.class, java.util.Date.class)).addField(new FieldMap("timeCol").setTypes(java.sql.Time.class, java.util.Date.class)).addField(new FieldMap("year2Col").setTypes(Short.class, short.class).setBoundaries(01, 99).setSupportsCompareMapValue(false)).addField(new FieldMap("year4Col").setTypes(Short.class, short.class).setBoundaries(1901, 1999).setSupportsCompareMapValue(false));
+		BeanMap beanMap = new BeanMap("DatetimeTypes").addField(new FieldMap("dateCol").setTypes(java.sql.Date.class)).addField(new FieldMap("datetimeCol").setTypes(java.sql.Timestamp.class, java.util.Date.class)).addField(new FieldMap("timeCol").setTypes(java.sql.Time.class, java.util.Date.class)).addField(new FieldMap("year2Col").setTypes(Short.class, short.class).setBoundaries(1901, 1999).setSupportsCompareMapValue(false)).addField(new FieldMap("year4Col").setTypes(Short.class, short.class).setBoundaries(1901, 1999).setSupportsCompareMapValue(false));
 
 		BeanTest.test(persist, beanMap);
 	}

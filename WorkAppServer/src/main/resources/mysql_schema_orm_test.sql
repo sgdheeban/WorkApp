@@ -35,7 +35,7 @@ create table datetime_types (
 	date_col date,
 	datetime_col datetime,
 	time_col time,
-	year2_col year(2),
+	year2_col year,
 	year4_col year(4)
 );
 
@@ -81,7 +81,7 @@ create table all_types (
 	datetime_col datetime,
 	timestamp_col timestamp,
 	time_col time,
-	year2_col year(2),
+	year2_col year,
 	year4_col year(4),
 	char_col char(255),
 	varchar_col varchar(255),
