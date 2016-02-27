@@ -24,7 +24,8 @@ This is the main server module, which hosts the backend server logic for WorkApp
 ### Additional Components for Scale-Out / Scale-Up Performance Improvements
 
   1. Generic Timed Cache Manager for in-memory caches like Ehcache, Guava Cache [Common Resources Package]
-  2. Service Consumers for distributed services like Kafka, Zookeeper [Data Access Resources Package]  
-  3. Caching Consumers for distributed caches like Redis, Memcached [Common Resources Package]  
-  4. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Service Package] 
-  5. Distributed Coordination Layer [Common Resources Package]  
+  2. Caching Consumers for in-memory, disk-backed storage libraries like ActiveMQ, RocksDB [Data Access Resources Package]
+  3. Service Consumers for distributed services like Kafka, Zookeeper [Data Access Resources Package]  
+  4. Caching Consumers for distributed caches like Redis, Memcached [Common Resources Package]  
+  5. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Service Package] 
+  6. Distributed Coordination Layer [Common Resources Package]  
