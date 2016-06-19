@@ -1,0 +1,1206 @@
+2016-02-22 21:50:03 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:03 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:8484  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:03 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:03 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:8484  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:50:09 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:8484 Printing Properties to FilePath
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 logLevel:DEBUG
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 mode:rest
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 port:8080
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 trackAllocation:false
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 detectJARClash:false
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 schemaFile:D:\git_learn\WorkApp\WorkAppServer\src\main\resources\drop_db_ifexists.sql
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 dbUser:root
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 dbPassword:password
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 dbSchema:workapp
+2016-02-22 21:51:41 DEBUG WorkAppMainServer:98 dheeban-THINK:4044 dbPoolSize:20
+2016-02-22 21:51:41 INFO  WorkAppMainServer:66 dheeban-THINK:4044  [ D:\git_learn\WorkApp\WorkAppServer\src\main\resources\drop_db_ifexists.sql (The system cannot find the file specified) ]  - Stacktrace : java.io.FileNotFoundException: D:\git_learn\WorkApp\WorkAppServer\src\main\resources\drop_db_ifexists.sql (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:367)
+
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 logLevel:DEBUG
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 mode:rest
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 port:8080
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 trackAllocation:false
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 detectJARClash:false
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 schemaFile:D:\git_learn\WorkApp\WorkAppServer\config\drop_db_ifexists.sql
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 dbUser:root
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 dbPassword:password
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 dbSchema:workapp
+2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 dbPoolSize:20
+2016-02-22 21:52:05 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:6712 
+2016-02-22 21:52:06 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:6712 
+2016-02-22 21:52:06 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:6712 
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 logLevel:DEBUG
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 mode:rest
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 port:8080
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 trackAllocation:false
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 detectJARClash:false
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 schemaFile:D:\git_learn\WorkApp\WorkAppServer\src\main\resources\mysql_schema.sql
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 dbUser:root
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 dbPassword:password
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 dbSchema:workapp
+2016-02-22 21:52:25 DEBUG WorkAppMainServer:98 dheeban-THINK:13552 dbPoolSize:20
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 //test-comment
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 //Creating user table
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 --test-dash
+2016-02-22 21:52:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13552 
+2016-02-22 21:52:26 ERROR WorkAppScriptRunnerUtil:78 dheeban-THINK:13552 name	age	
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 logLevel:DEBUG
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 mode:rest
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 port:8080
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 trackAllocation:false
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 detectJARClash:false
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 schemaFile:D:\git_learn\WorkApp\WorkAppServer\src\main\resources\mysql_schema_orm_test.sql
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 dbUser:root
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 dbPassword:password
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 dbSchema:workapp
+2016-02-22 21:52:34 DEBUG WorkAppMainServer:98 dheeban-THINK:11676 dbPoolSize:20
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 // Creating database and tables for testing ORM Layer
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 //Creating simple Table
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:34 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 //Creating numeric_types Table
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 //Creating datetime_types Table
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 ERROR WorkAppScriptRunnerUtil:78 dheeban-THINK:11676 Error executing 'create table datetime_types (
+	date_col date,
+	datetime_col datetime,
+	time_col time,
+	year2_col year(2),
+	year4_col year(4)
+) ' (line 40): Supports only YEAR or YEAR(4) column.
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 //Creating string_types Table
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 //Creating binary_types Table
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:35 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:36 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:36 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 //Creating all_types Table
+2016-02-22 21:52:36 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:36 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:36 ERROR WorkAppScriptRunnerUtil:78 dheeban-THINK:11676 Error executing 'create table all_types (
+	id int auto_increment,
+	bit_col bit,
+	tinyint_col tinyint,
+	boolean_col boolean,
+	smallint_col smallint,
+	mediumint_col mediumint,
+	int_col	int,
+	bigint_col bigint,
+	float_col float,
+	double_col double,
+	decimal_col decimal,
+	date_col date,
+	datetime_col datetime,
+	timestamp_col timestamp,
+	time_col time,
+	year2_col year(2),
+	year4_col year(4),
+	char_col char(255),
+	varchar_col varchar(255),
+	tinytext_col tinytext,
+	text_col text,
+	mediumtext_col mediumtext,
+	longtext_col longtext,
+	enum_col enum('a','b','c'),
+	set_col set('a','b','c'),
+	binary_col binary(255),
+	varbinary_col varbinary(255),
+	tinyblob_col tinyblob,
+	blob_col blob,
+	mediumblob_col mediumblob,
+	longblob_col longblob,
+	primary key (id)
+) ' (line 101): Supports only YEAR or YEAR(4) column.
+2016-02-22 21:52:36 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 
+2016-02-22 21:52:36 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:11676 // End of database and table creation for testing ORM Layer
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 logLevel:DEBUG
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 mode:rest
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 port:8080
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 trackAllocation:false
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 detectJARClash:false
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 schemaFile:D:\git_learn\WorkApp\WorkAppServer\config\drop_db_ifexists.sql
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 dbUser:root
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 dbPassword:password
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 dbSchema:workapp
+2016-02-22 21:54:45 DEBUG WorkAppMainServer:98 dheeban-THINK:13368 dbPoolSize:20
+2016-02-22 21:54:45 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13368 
+2016-02-22 21:54:46 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13368 
+2016-02-22 21:54:47 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13368 
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 logLevel:DEBUG
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 mode:rest
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 port:8080
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 trackAllocation:false
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 detectJARClash:false
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 schemaFile:D:\git_learn\WorkApp\WorkAppServer\config\drop_db_ifexists.sql
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 dbUser:root
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 dbPassword:password
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 dbSchema:workapp
+2016-02-22 21:55:33 DEBUG WorkAppMainServer:98 dheeban-THINK:13844 dbPoolSize:20
+2016-02-22 21:55:33 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13844 // Dropping persist db
+2016-02-22 21:55:33 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13844 
+2016-02-22 21:55:33 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13844 
+2016-02-22 21:55:33 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13844 // Dropping testdb db
+2016-02-22 21:55:33 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13844 
+2016-02-22 21:55:33 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13844 
+2016-02-22 21:55:33 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13844 // Dropping workapp db
+2016-02-22 21:55:33 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:13844 
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 logLevel:DEBUG
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 mode:rest
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 port:8080
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 trackAllocation:false
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 detectJARClash:false
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 schemaFile:D:\git_learn\WorkApp\WorkAppServer\src\main\resources\mysql_schema_orm_test.sql
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 dbUser:root
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 dbPassword:password
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 dbSchema:workapp
+2016-02-22 21:55:50 DEBUG WorkAppMainServer:98 dheeban-THINK:3000 dbPoolSize:20
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 // Creating database and tables for testing ORM Layer
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 //Creating simple Table
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:50 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 //Creating numeric_types Table
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 //Creating datetime_types Table
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 //Creating string_types Table
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:51 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 //Creating binary_types Table
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 //Creating all_types Table
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 
+2016-02-22 21:55:52 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:3000 // End of database and table creation for testing ORM Layer
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 logLevel:DEBUG
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 mode:rest
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 port:8080
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 trackAllocation:false
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 detectJARClash:false
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 schemaFile:D:\git_learn\WorkApp\WorkAppServer\config\workapp_mysql_schema.sql
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 dbUser:root
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 dbPassword:password
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 dbSchema:workapp
+2016-02-22 21:56:07 DEBUG WorkAppMainServer:98 dheeban-THINK:8412 dbPoolSize:20
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating WorkApp Database and Tables
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating user table
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating user_experience table
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating user_rating table
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:08 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating user_session table
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating occupation_catalog table
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating skill table
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:09 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating milestone table
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating status table
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating role table
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:10 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating board_milestone table
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating feed_type table
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating skill_user_index table
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating occupation_user_index table
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:11 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating skill_work_index table
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating occupation_work_index table
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating board_collaborator table
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:12 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating work_favorite table
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating user_backlog_index table
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating board table
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:13 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating work table
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating news_feed table
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating comment table
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:14 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:15 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:15 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating board_progress_report table
+2016-02-22 21:56:15 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:15 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:15 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:15 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating user_metric table
+2016-02-22 21:56:15 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:15 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:16 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:16 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // Creating talent_recommendation table
+2016-02-22 21:56:16 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:16 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:16 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:16 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 // End of WorkApp Database and Tables creation
+2016-02-22 21:56:16 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:16 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:16 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:8412 
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 logLevel:DEBUG
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 mode:rest
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 port:8080
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 trackAllocation:false
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 detectJARClash:false
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 schemaFile:D:\git_learn\WorkApp\WorkAppServer\config\insert_mysql_workapp.sql
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 dbUser:root
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 dbPassword:password
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 dbSchema:workapp
+2016-02-22 21:56:29 DEBUG WorkAppMainServer:98 dheeban-THINK:12992 dbPoolSize:20
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 // Inserting values into status table
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 // Inserting values into role table
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 // Inserting values into feed_type table
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 // Inserting values into occupation_catalog table
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 // Inserting values into skill table
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:29 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 // Inserting values into milestone table
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:30 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:12992 
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 logLevel:DEBUG
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 mode:rest
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 port:8080
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 trackAllocation:false
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 detectJARClash:false
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 schemaFile:D:\git_learn\WorkApp\WorkAppServer\src\main\resources\mysql_schema.sql
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 dbUser:root
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 dbPassword:password
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 dbSchema:workapp
+2016-02-22 21:56:42 DEBUG WorkAppMainServer:98 dheeban-THINK:1712 dbPoolSize:20
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 //test-comment
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 //Creating user table
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 --test-dash
+2016-02-22 21:56:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:1712 
+2016-02-22 21:56:43 ERROR WorkAppScriptRunnerUtil:78 dheeban-THINK:1712 name	age	
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 logLevel:DEBUG
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 mode:rest
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 port:8080
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 trackAllocation:false
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 detectJARClash:false
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 schemaFile:null
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 database:jdbc:mysql://localhost:3306/
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 dbUser:root
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 dbPassword:password
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 dbSchema:workapp
+2016-02-22 21:56:52 DEBUG WorkAppMainServer:98 dheeban-THINK:120 dbPoolSize:20
+2016-02-22 21:56:52 DEBUG WorkAppMySQLConnectionManager:98 dheeban-THINK:120 Attempting to connect to db at: jdbc:mysql://localhost:3306/workapp
+2016-02-22 21:56:52 DEBUG log:176 dheeban-THINK:120 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-02-22 21:56:52 INFO  log:186 dheeban-THINK:120 Logging initialized @465ms
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.server.session.SessionHandler@38cccef added {org.eclipse.jetty.server.session.HashSessionManager@5679c6c6,AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 o.e.j.s.ServletContextHandler@27ddd392{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@38cccef,AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.server.session.SessionHandler@38cccef added {org.eclipse.jetty.servlet.ServletHandler@59690aa4,AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.server.Server@46f5f779 added {qtp2101842856{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 HttpConnectionFactory@21a06946[HTTP/1.1] added {HttpConfiguration@77f03bb1{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 ServerConnector@66048bfd{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@46f5f779,UNMANAGED}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 ServerConnector@66048bfd{null,[]}{0.0.0.0:0} added {qtp2101842856{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 ServerConnector@66048bfd{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@2cfb4a64,AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 ServerConnector@66048bfd{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@61443d8f,POJO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 ServerConnector@66048bfd{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@21a06946[HTTP/1.1],AUTO}
+2016-02-22 21:56:52 DEBUG ServerConnector:393 dheeban-THINK:120 ServerConnector@66048bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@21a06946[HTTP/1.1]
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 ServerConnector@66048bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@7bb11784,MANAGED}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.server.Server@46f5f779 added {ServerConnector@66048bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.server.Server@46f5f779 added {o.e.j.s.ServletContextHandler@27ddd392{/,null,null},AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.servlet.ServletHandler@59690aa4 added {org.glassfish.jersey.servlet.ServletContainer-4ec6a292@7da29ffc==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.servlet.ServletHandler@59690aa4 added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-4ec6a292,POJO}
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.server.Server@46f5f779
+2016-02-22 21:56:52 INFO  Server:339 dheeban-THINK:120 jetty-9.3.0.M2
+2016-02-22 21:56:52 DEBUG AbstractHandler:58 dheeban-THINK:120 starting org.eclipse.jetty.server.Server@46f5f779
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting qtp2101842856{STOPPED,8<=0<=200,i=0,q=0}
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @658ms qtp2101842856{STARTED,8<=8<=200,i=3,q=0}
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting o.e.j.s.ServletContextHandler@27ddd392{/,null,null}
+2016-02-22 21:56:52 DEBUG PreEncodedHttpField:65 dheeban-THINK:120 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@6a5fc7f7]
+2016-02-22 21:56:52 DEBUG AbstractHandler:58 dheeban-THINK:120 starting o.e.j.s.ServletContextHandler@27ddd392{/,null,STARTING}
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.server.session.SessionHandler@38cccef
+2016-02-22 21:56:52 DEBUG AbstractHandler:58 dheeban-THINK:120 starting org.eclipse.jetty.server.session.SessionHandler@38cccef
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.server.session.HashSessionManager@5679c6c6
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.server.session.HashSessionManager@5679c6c6 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@880ec60,MANAGED}
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.server.session.HashSessionIdManager@511baa65
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @697ms org.eclipse.jetty.server.session.HashSessionIdManager@511baa65
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.server.Server@46f5f779 added {org.eclipse.jetty.server.session.HashSessionIdManager@511baa65,MANAGED}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.server.session.HashSessionManager@5679c6c6 added {org.eclipse.jetty.server.session.HashSessionIdManager@511baa65,UNMANAGED}
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@880ec60
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @701ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@880ec60
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @707ms org.eclipse.jetty.server.session.HashSessionManager@5679c6c6
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.servlet.ServletHandler@59690aa4
+2016-02-22 21:56:52 DEBUG ServletHandler:1495 dheeban-THINK:120 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-4ec6a292 from default=false
+2016-02-22 21:56:52 DEBUG ServletHandler:1516 dheeban-THINK:120 filterNameMap={}
+2016-02-22 21:56:52 DEBUG ServletHandler:1517 dheeban-THINK:120 pathFilters=null
+2016-02-22 21:56:52 DEBUG ServletHandler:1518 dheeban-THINK:120 servletFilterMap=null
+2016-02-22 21:56:52 DEBUG ServletHandler:1519 dheeban-THINK:120 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-4ec6a292@7da29ffc==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-22 21:56:52 DEBUG ServletHandler:1520 dheeban-THINK:120 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-4ec6a292=org.glassfish.jersey.servlet.ServletContainer-4ec6a292@7da29ffc==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-22 21:56:52 DEBUG ServletHandler:165 dheeban-THINK:120 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@59690aa4
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.servlet.ServletHandler@59690aa4 added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7a5d012c@19ce789f==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-02-22 21:56:52 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 org.eclipse.jetty.servlet.ServletHandler@59690aa4 added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7a5d012c,POJO}
+2016-02-22 21:56:52 DEBUG ServletHandler:1495 dheeban-THINK:120 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-4ec6a292 from default=false
+2016-02-22 21:56:52 DEBUG ServletHandler:1495 dheeban-THINK:120 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7a5d012c from default=false
+2016-02-22 21:56:52 DEBUG ServletHandler:1516 dheeban-THINK:120 filterNameMap={}
+2016-02-22 21:56:52 DEBUG ServletHandler:1517 dheeban-THINK:120 pathFilters=null
+2016-02-22 21:56:52 DEBUG ServletHandler:1518 dheeban-THINK:120 servletFilterMap=null
+2016-02-22 21:56:52 DEBUG ServletHandler:1519 dheeban-THINK:120 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-4ec6a292@7da29ffc==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7a5d012c@19ce789f==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-02-22 21:56:52 DEBUG ServletHandler:1520 dheeban-THINK:120 servletNameMap={org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7a5d012c=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7a5d012c@19ce789f==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false, org.glassfish.jersey.servlet.ServletContainer-4ec6a292=org.glassfish.jersey.servlet.ServletContainer-4ec6a292@7da29ffc==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-02-22 21:56:52 DEBUG AbstractHandler:58 dheeban-THINK:120 starting org.eclipse.jetty.servlet.ServletHandler@59690aa4
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @720ms org.eclipse.jetty.servlet.ServletHandler@59690aa4
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @720ms org.eclipse.jetty.server.session.SessionHandler@38cccef
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7a5d012c@19ce789f==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @724ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-7a5d012c@19ce789f==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.glassfish.jersey.servlet.ServletContainer-4ec6a292@7da29ffc==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-22 21:56:52 DEBUG BaseHolder:97 dheeban-THINK:120 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@659e0bfd
+2016-02-22 21:56:52 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @727ms org.glassfish.jersey.servlet.ServletContainer-4ec6a292@7da29ffc==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-02-22 21:56:52 DEBUG ServletHolder:612 dheeban-THINK:120 Servlet.init org.glassfish.jersey.servlet.ServletContainer@3cbbc1e0 for org.glassfish.jersey.servlet.ServletContainer-4ec6a292
+2016-02-22 21:56:54 INFO  ContextHandler:745 dheeban-THINK:120 Started o.e.j.s.ServletContextHandler@27ddd392{/,null,AVAILABLE}
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @2296ms o.e.j.s.ServletContextHandler@27ddd392{/,null,AVAILABLE}
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting ServerConnector@66048bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-22 21:56:54 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 ServerConnector@66048bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@2cfb4a64
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @2326ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@2cfb4a64
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting HttpConnectionFactory@21a06946[HTTP/1.1]
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @2327ms HttpConnectionFactory@21a06946[HTTP/1.1]
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@7bb11784
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.io.ManagedSelector@67b9b51a id=0 keys=-1 selected=-1
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @2466ms org.eclipse.jetty.io.ManagedSelector@67b9b51a id=0 keys=0 selected=0
+2016-02-22 21:56:54 DEBUG QueuedThreadPool:360 dheeban-THINK:120 queue org.eclipse.jetty.io.ManagedSelector@67b9b51a id=0 keys=0 selected=0
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:185 dheeban-THINK:120 starting org.eclipse.jetty.io.ManagedSelector@14f9390f id=1 keys=-1 selected=-1
+2016-02-22 21:56:54 DEBUG QueuedThreadPool:558 dheeban-THINK:120 run org.eclipse.jetty.io.ManagedSelector@67b9b51a id=0 keys=0 selected=0
+2016-02-22 21:56:54 DEBUG ExecuteProduceRun:66 dheeban-THINK:120 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@4ce480bf execute
+2016-02-22 21:56:54 DEBUG ExecuteProduceRun:132 dheeban-THINK:120 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@4ce480bf produce enter
+2016-02-22 21:56:54 DEBUG ExecuteProduceRun:138 dheeban-THINK:120 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@4ce480bf producing
+2016-02-22 21:56:54 DEBUG ManagedSelector:230 dheeban-THINK:120 Selector loop waiting on select
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @2469ms org.eclipse.jetty.io.ManagedSelector@14f9390f id=1 keys=0 selected=0
+2016-02-22 21:56:54 DEBUG QueuedThreadPool:360 dheeban-THINK:120 queue org.eclipse.jetty.io.ManagedSelector@14f9390f id=1 keys=0 selected=0
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @2473ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@7bb11784
+2016-02-22 21:56:54 DEBUG ContainerLifeCycle:324 dheeban-THINK:120 ServerConnector@66048bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@5965be2d,POJO}
+2016-02-22 21:56:54 DEBUG QueuedThreadPool:360 dheeban-THINK:120 queue acceptor-0@5965be2d
+2016-02-22 21:56:54 INFO  ServerConnector:267 dheeban-THINK:120 Started ServerConnector@66048bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-22 21:56:54 DEBUG QueuedThreadPool:558 dheeban-THINK:120 run org.eclipse.jetty.io.ManagedSelector@14f9390f id=1 keys=0 selected=0
+2016-02-22 21:56:54 DEBUG QueuedThreadPool:558 dheeban-THINK:120 run acceptor-0@5965be2d
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @2478ms ServerConnector@66048bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-02-22 21:56:54 DEBUG ExecuteProduceRun:66 dheeban-THINK:120 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7f46efeb execute
+2016-02-22 21:56:54 INFO  Server:391 dheeban-THINK:120 Started @2480ms
+2016-02-22 21:56:54 DEBUG ExecuteProduceRun:132 dheeban-THINK:120 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7f46efeb produce enter
+2016-02-22 21:56:54 DEBUG AbstractLifeCycle:177 dheeban-THINK:120 STARTED @2480ms org.eclipse.jetty.server.Server@46f5f779
+2016-02-22 21:56:54 DEBUG ExecuteProduceRun:138 dheeban-THINK:120 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@7f46efeb producing
+2016-02-22 21:56:54 DEBUG ManagedSelector:230 dheeban-THINK:120 Selector loop waiting on select
+2016-02-22 21:57:14 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:15 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:15 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:12516  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:15 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:15 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:15 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:12516  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:57:22 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:12516 Printing Properties to FilePath
+2016-02-22 21:58:03 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:03 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:11444  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:03 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:03 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:11444  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 21:58:11 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:11444 Printing Properties to FilePath
+2016-02-22 22:01:47 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:47 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:47 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13368  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:47 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:47 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:47 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13368  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:01:54 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:13368 Printing Properties to FilePath
+2016-02-22 22:04:03 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:03 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:1712  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:03 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:03 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:1712  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 22:04:11 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:1712 Printing Properties to FilePath
+2016-02-22 23:59:35 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:35 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:35 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:11448  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:35 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:35 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:35 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:11448  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-22 23:59:42 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:11448 Printing Properties to FilePath
+2016-02-23 00:00:09 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:09 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:09 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13228  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:09 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:09 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:09 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13228  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:00:16 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:13228 Printing Properties to FilePath
+2016-02-23 00:03:29 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:29 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:29 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:8244  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:29 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:29 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:29 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:8244  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-02-23 00:03:36 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:8244 Printing Properties to FilePath
