@@ -28,4 +28,5 @@ This is the main server module, which hosts the backend server logic for WorkApp
   3. Service Consumers for distributed services like Kafka, Zookeeper [Data Access Resources Package]  
   4. Caching Consumers for distributed caches like Redis, Memcached [Common Resources Package]  
   5. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Service Package] 
-  6. Distributed Coordination Layer [Common Resources Package]  
+  6. Distributed Coordination Layer [Common Resources Package]
+  7. High-Perf Algorithm Packages - High Throughput, Scalability, Debuggability, Reliability [Common Resources Packages]
