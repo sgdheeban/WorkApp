@@ -1,6 +1,8 @@
 
 package com.workappinc.workappserver.common.resources.implementation.datastructures;
 
+import java.util.Queue;
+
 import com.workappinc.workappserver.common.exception.AlgorithmException;
 import com.workappinc.workappserver.common.resources.interfaces.IAlgorithm;
 
@@ -14,24 +16,19 @@ import com.workappinc.workappserver.common.resources.interfaces.IAlgorithm;
  * @author dhgovindaraj
  * 
  */
-public class RwayTrie<Value> implements IAlgorithm {
+public class RwayTrieST<Value> implements IAlgorithm {
 	RwayTrieNode root;
 
-	public RwayTrie() {
+	public RwayTrieST() {
 		root = new RwayTrieNode();
 	}
 
 	public void put(String key, Value value) throws AlgorithmException {
-		try
-		{
+		try {
 			put(root, key, value, 0);
-		}
-		catch(RuntimeException ex) 
-		{
+		} catch (RuntimeException ex) {
 			throw new AlgorithmException("Put method throws Exception in RwayTrie Datastructure", ex.getCause());
-		}
-		catch(Exception ex) 
-		{
+		} catch (Exception ex) {
 			throw new AlgorithmException("Put method throws Exception in RwayTrie Datastructure", ex.getCause());
 		}
 	}
@@ -52,8 +49,7 @@ public class RwayTrie<Value> implements IAlgorithm {
 
 	@SuppressWarnings("unchecked")
 	public Value get(String key) throws AlgorithmException {
-		try
-		{
+		try {
 			Value returnObj = null;
 			RwayTrieNode returnNode = get(root, key, 0);
 
@@ -63,12 +59,9 @@ public class RwayTrie<Value> implements IAlgorithm {
 				returnObj = (Value) returnNode.getValue();
 
 			return returnObj;
-		}catch(RuntimeException ex) 
-		{
+		} catch (RuntimeException ex) {
 			throw new AlgorithmException("Get method throws Exception in RwayTrie Datastructure", ex.getCause());
-		}
-		catch(Exception ex) 
-		{
+		} catch (Exception ex) {
 			throw new AlgorithmException("Get method throws Exception in RwayTrie Datastructure", ex.getCause());
 		}
 	}
@@ -85,7 +78,6 @@ public class RwayTrie<Value> implements IAlgorithm {
 		return get(node.getNext((int) (key.charAt(d))), key, d + 1);
 
 	}
-
 }
 
 /**

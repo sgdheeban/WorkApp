@@ -6,8 +6,8 @@ import org.junit.Test;
 
 import com.workappinc.workappserver.common.exception.AlgorithmException;
 import com.workappinc.workappserver.common.resources.implementation.aglorithms.UnionFindAlgorithm;
-import com.workappinc.workappserver.common.resources.implementation.datastructures.RwayTrie;
-import com.workappinc.workappserver.common.resources.implementation.datastructures.TernarySearchTrie;
+import com.workappinc.workappserver.common.resources.implementation.datastructures.RwayTrieST;
+import com.workappinc.workappserver.common.resources.implementation.datastructures.TernarySearchTrieST;
 
 /**
  * Common Test case class to test all available Algorithms 
@@ -38,22 +38,22 @@ public class AlgoDSTestCase {
 	 * Testing Rway & TS Tries data structures
 	 */
 	@Test
-	public void testTries() {
+	public void testTrieST() {
 		try
 		{
-			RwayTrie<Integer> rwayTrie = new RwayTrie<Integer>();
+			RwayTrieST<Integer> rwayTrie = new RwayTrieST<Integer>();
 			rwayTrie.put("cat", 1);
 			rwayTrie.put("bat", 2);
 			assertEquals(new Integer(1),rwayTrie.get("cat"));
 			assertNotEquals(new Integer(1),rwayTrie.get("dat"));
 			assertEquals(new Integer(2),rwayTrie.get("bat"));
 			
-			RwayTrie<String> rwayTrie2 = new RwayTrie<String>();
+			RwayTrieST<String> rwayTrie2 = new RwayTrieST<String>();
 			rwayTrie2.put("cat", "cat");
 			assertEquals("cat",rwayTrie2.get("cat"));
 			assertNotEquals("dat",rwayTrie2.get("dat"));
 			
-			TernarySearchTrie<Integer> tst = new TernarySearchTrie<Integer>();
+			TernarySearchTrieST<Integer> tst = new TernarySearchTrieST<Integer>();
 			tst.put("cat", 1);
 			tst.put("aa", 5);
 			assertEquals(new Integer(1),tst.get("cat"));

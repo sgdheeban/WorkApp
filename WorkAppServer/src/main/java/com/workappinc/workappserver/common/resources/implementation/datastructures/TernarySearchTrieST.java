@@ -1,5 +1,9 @@
 package com.workappinc.workappserver.common.resources.implementation.datastructures;
 
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Queue;
+
 import com.workappinc.workappserver.common.resources.interfaces.IAlgorithm;
 
 /**
@@ -9,39 +13,34 @@ import com.workappinc.workappserver.common.resources.interfaces.IAlgorithm;
  * 
  * Search-Hit: O(L + Ln N) Search-Miss: O(Ln N) Insert: O(L + Ln N) Space:O(4N)
  * 
- * Better than Hash Table for most cases. Avoids Out-of-Memory error for large datasets over Rway Tries
+ * Better than Hash Table for most cases. Avoids Out-of-Memory error for large
+ * datasets over Rway Tries
  * 
  * @author dhgovindaraj
  * 
  */
-public class TernarySearchTrie<Value> implements IAlgorithm {
+public class TernarySearchTrieST<Value> implements IAlgorithm {
 	TernarySearchTrieNode root;
 
 	public void put(String key, Value value) {
-		root =  put(root, key, value, 0);
+		root = put(root, key, value, 0);
 	}
 
 	private TernarySearchTrieNode put(TernarySearchTrieNode node, String key, Value value, int d) {
-		
-		if(node == null)
-		{
+		if (node == null) {
 			node = new TernarySearchTrieNode();
 			node.setC(key.charAt(d));
 		}
-		
-		if(d==(key.length()-1))
-		{
+		if (d == (key.length() - 1)) {
 			node.setValue(value);
 			return node;
 		}
-		
-		if(node.getC() < key.charAt(d))
+		if (node.getC() < key.charAt(d))
 			node.setLeft(put(node.getLeft(), key, value, d));
-		else if(node.getC() > key.charAt(d))
+		else if (node.getC() > key.charAt(d))
 			node.setRight(put(node.getRight(), key, value, d));
 		else
-			node.setMiddle(put(node.getMiddle(), key, value, d+1));
-		
+			node.setMiddle(put(node.getMiddle(), key, value, d + 1));
 		return node;
 	}
 
@@ -49,30 +48,76 @@ public class TernarySearchTrie<Value> implements IAlgorithm {
 	public Value get(String key) {
 		Value returnObj = null;
 		TernarySearchTrieNode returnNode = get(root, key, 0);
-
 		if (returnNode == null)
 			return null;
 		else
 			returnObj = (Value) returnNode.getValue();
-
 		return returnObj;
 	}
 
 	private TernarySearchTrieNode get(TernarySearchTrieNode node, String key, int d) {
-		
-		if(node == null)
+		if (node == null)
 			return null;
-		
-		if(d==(key.length()-1))
+		if (d == (key.length() - 1))
 			return node;
-		
-		if(node.getC() < key.charAt(d))
-			return get(node.getLeft(), key,d);
+		if (node.getC() < key.charAt(d))
+			return get(node.getLeft(), key, d);
 		else if (node.getC() > key.charAt(d))
 			return get(node.getRight(), key, d);
 		else
-			return get(node.getMiddle(), key, d+1);
+			return get(node.getMiddle(), key, d + 1);
 	}
+
+	private void collect(TernarySearchTrieNode x, StringBuilder prefix, Queue<Object> queue) {
+		if (x == null)
+			return;
+		collect(x.getLeft(), prefix, queue);
+		if (x.getValue() != null)
+			queue.add(prefix.toString() + x.getC());
+		collect(x.getMiddle(), prefix.append(x.getC()), queue);
+		prefix.deleteCharAt(prefix.length() - 1);
+		collect(x.getRight(), prefix, queue);
+	}
+
+	public Iterator<Object> keys() {
+		Queue<Object> queue = new LinkedList<Object>();
+		collect(root, new StringBuilder(), queue);
+		return queue.iterator();
+	}
+
+	public Iterator<Object> getkeysWithPrefix(String prefix) {
+		Queue<Object> queue = new LinkedList<Object>();
+		TernarySearchTrieNode x = get(root, prefix, 0);
+		if (x == null)
+			return queue.iterator();
+		if (x.getValue() != null)
+			queue.add(prefix);
+		collect(x.getMiddle(), new StringBuilder(prefix), queue);
+		return queue.iterator();
+	}
+
+	public Object getLongestMatchingKey(String query) {
+		if (query == null || query.length() == 0)
+			return null;
+		int length = 0;
+		TernarySearchTrieNode x = root;
+		int i = 0;
+		while (x != null && i < query.length()) {
+			char c = query.charAt(i);
+			if (c < x.getC())
+				x = x.getLeft();
+			else if (c > x.getC())
+				x = x.getRight();
+			else {
+				i++;
+				if (x.getValue() != null)
+					length = i;
+				x = x.getMiddle();
+			}
+		}
+		return query.substring(0, length);
+	}
+
 }
 
 /**
@@ -117,7 +162,7 @@ class TernarySearchTrieNode {
 	public void setLeft(TernarySearchTrieNode left) {
 		this.left = left;
 	}
-	
+
 	public char getC() {
 		return c;
 	}
