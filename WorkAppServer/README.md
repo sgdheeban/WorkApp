@@ -23,10 +23,8 @@ This is the main server module, which hosts the backend server logic for WorkApp
 
   1. Model Business Objects & Business Logic using the underlying components [Model Package]
 
-### Additional Components for Scale-Out / Scale-Up Performance Improvements (Todo)
+### Components for Scale-Out and Scale-Up Performance Improvements (Todo)
 
   1. Caching Consumers for in-memory, disk-backed storage libraries like ActiveMQ, RocksDB [Data Access Resources Package]
-  2. Service Consumers for distributed services like Kafka, Zookeeper [Data Access Resources Package]  
-  3. Caching Consumers for distributed caches like Redis, Memcached [Common Resources Package]  
-  4. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Service Package] 
-  5. Distributed Coordination Layer [Common Resources Package]
+  2. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Service Package] 
+  3. Distributed Coordination Layer [Common Resources Package]
