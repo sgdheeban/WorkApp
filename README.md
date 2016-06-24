@@ -3,7 +3,7 @@ Client-Server codebase for WorkApp, a generic client-server framework for buildi
 
 This is a project framework with all necessary utilities pre-built, and provides a ready to use project structure, which could be easily extended for any use case. 
 
-This project was build as an academic exercise, well covered by JUnit test cases.
+This project was built solely as an academic exercise, well covered by JUnit test cases and returned back to the Open Source Community with appropriate permissive licence, to the best of my knowledge.
 
 ## Requirements
 
