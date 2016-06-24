@@ -7,7 +7,8 @@ import java.util.Queue;
 import com.workappinc.workappserver.common.resources.interfaces.IAlgorithm;
 
 /**
- * TST is an improved memory efficient Trie variant
+ * TST is an improved memory efficient Trie variant used to build a Symbol
+ * Table.
  * 
  * As fast or faster than a hash table in general
  * 
@@ -31,16 +32,19 @@ public class TernarySearchTrieST<Value> implements IAlgorithm {
 			node = new TernarySearchTrieNode();
 			node.setC(key.charAt(d));
 		}
+
 		if (d == (key.length() - 1)) {
 			node.setValue(value);
 			return node;
 		}
-		if (node.getC() < key.charAt(d))
+
+		if (key.charAt(d) < node.getC())
 			node.setLeft(put(node.getLeft(), key, value, d));
-		else if (node.getC() > key.charAt(d))
+		else if (key.charAt(d) > node.getC())
 			node.setRight(put(node.getRight(), key, value, d));
 		else
 			node.setMiddle(put(node.getMiddle(), key, value, d + 1));
+
 		return node;
 	}
 
@@ -58,11 +62,13 @@ public class TernarySearchTrieST<Value> implements IAlgorithm {
 	private TernarySearchTrieNode get(TernarySearchTrieNode node, String key, int d) {
 		if (node == null)
 			return null;
+
 		if (d == (key.length() - 1))
 			return node;
-		if (node.getC() < key.charAt(d))
+
+		if (key.charAt(d) < node.getC())
 			return get(node.getLeft(), key, d);
-		else if (node.getC() > key.charAt(d))
+		else if (key.charAt(d) > node.getC())
 			return get(node.getRight(), key, d);
 		else
 			return get(node.getMiddle(), key, d + 1);
@@ -116,6 +122,68 @@ public class TernarySearchTrieST<Value> implements IAlgorithm {
 			}
 		}
 		return query.substring(0, length);
+	}
+
+	public void delete(String key) {
+		root = delete(root, key, 0);
+	}
+
+	private TernarySearchTrieNode delete(TernarySearchTrieNode x, String key, int d) {
+		if (x == null)
+			return null;
+		if (d == key.length() - 1) {
+			if (x.getValue() != null)
+				;
+			x.setValue(null);
+		}
+
+		if (d < key.length() - 1) {
+			char c = key.charAt(d);
+			if (c < x.getC())
+				x.setLeft(delete(x.getLeft(), key, d));
+			else if (c > x.getC())
+				x.setRight(delete(x.getRight(), key, d));
+			else if (c == x.getC())
+				x.setMiddle(delete(x.getMiddle(), key, d + 1));
+		}
+
+		// remove subtrie rooted at x if it is completely empty
+		if (x.getValue() != null)
+			return x;
+		if (x.getLeft() != null || x.getMiddle() != null || x.getRight() != null)
+			return x;
+		return null;
+	}
+
+	public Iterator<Object> getKeysThatMatch(String pattern) {
+		Queue<Object> queue = new LinkedList<Object>();
+		collect(root, pattern, new StringBuilder(), 0, queue);
+		return queue.iterator();
+	}
+
+	private void collect(TernarySearchTrieNode n, String prefix, StringBuilder str, int i, Queue<Object> queue) {
+		if (n == null)
+			return;
+
+		char c = prefix.charAt(i);
+
+		if (c == '.' || c < n.getC())
+			collect(n.getLeft(), prefix, str, i, queue);
+
+		if (c == '.' || c == n.getC()) {
+
+			if (i == prefix.length() - 1 && n.getValue() != null)
+				queue.add(str.toString() + n.getC());
+
+			if (i < prefix.length() - 1) {
+				collect(n.getMiddle(), prefix, str.append(n.getC()), i + 1, queue);
+				str.deleteCharAt(str.length() - 1);
+
+			}
+		}
+
+		if (c == '.' || c > n.getC())
+			collect(n.getRight(), prefix, str, i, queue);
 	}
 
 }

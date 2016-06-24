@@ -1,5 +1,9 @@
 # WorkApp
-Client-Server Codebase for WorkApp, a platform for connecting talents with customers around the globe.
+Client-Server codebase for WorkApp, a generic client-server framework for building data-driven software applications. 
+
+This is a project framework with all necessary utilities pre-built, and provides a ready to use project structure, which could be easily extended for any use case. 
+
+This project was build as an academic exercise, well covered by JUnit test cases.
 
 ## Requirements
 
@@ -53,10 +57,3 @@ WorkApp comes with sample configuration that should work out-of-the-box for deve
 
 The working directory should be the `WorkApp` subdirectory. In EclipseIDE, using `$MODULE_DIR$` accomplishes this automatically.
 For more info on Allocation Tracker, please check here : `https://github.com/google/allocation-instrumenter`
-
-## Installing eJabberd Server & Environment
-
-This server does the heavy lifting for our chat infrastructure, you can run the scripts found in WorkAppServer/scripts folder. Google to learn more about eJabberd server in Ubuntu.
-
-* prepareEnv.sh for installing the environment
-* installEjabberd.sh for installing Chat server

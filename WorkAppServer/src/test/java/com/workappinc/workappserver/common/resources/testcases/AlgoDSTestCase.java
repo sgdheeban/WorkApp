@@ -10,7 +10,8 @@ import com.workappinc.workappserver.common.resources.implementation.datastructur
 import com.workappinc.workappserver.common.resources.implementation.datastructures.TernarySearchTrieST;
 
 /**
- * Common Test case class to test all available Algorithms 
+ * Common Test case class to test all available Algorithms
+ * 
  * @author sgdheeban
  *
  */
@@ -33,37 +34,32 @@ public class AlgoDSTestCase {
 			ex.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * Testing Rway & TS Tries data structures
 	 */
 	@Test
 	public void testTrieST() {
-		try
-		{
-			RwayTrieST<Integer> rwayTrie = new RwayTrieST<Integer>();
-			rwayTrie.put("cat", 1);
-			rwayTrie.put("bat", 2);
-			assertEquals(new Integer(1),rwayTrie.get("cat"));
-			assertNotEquals(new Integer(1),rwayTrie.get("dat"));
-			assertEquals(new Integer(2),rwayTrie.get("bat"));
-			
-			RwayTrieST<String> rwayTrie2 = new RwayTrieST<String>();
-			rwayTrie2.put("cat", "cat");
-			assertEquals("cat",rwayTrie2.get("cat"));
-			assertNotEquals("dat",rwayTrie2.get("dat"));
-			
-			TernarySearchTrieST<Integer> tst = new TernarySearchTrieST<Integer>();
-			tst.put("cat", 1);
-			tst.put("aa", 5);
-			assertEquals(new Integer(1),tst.get("cat"));
-			assertNotEquals(new Integer(2),tst.get("dat"));
-			assertEquals(new Integer(5),tst.get("aa"));
-		}
-		catch(AlgorithmException ex)
-		{
-			ex.printStackTrace();
-		}
+
+		RwayTrieST<Integer> rwayTrie = new RwayTrieST<Integer>();
+		rwayTrie.put("cat", 1);
+		rwayTrie.put("bat", 2);
+		assertEquals(new Integer(1), rwayTrie.get("cat"));
+		assertNotEquals(new Integer(1), rwayTrie.get("dat"));
+		assertEquals(new Integer(2), rwayTrie.get("bat"));
+
+		RwayTrieST<String> rwayTrie2 = new RwayTrieST<String>();
+		rwayTrie2.put("cat", "cat");
+		assertEquals("cat", rwayTrie2.get("cat"));
+		assertNotEquals("dat", rwayTrie2.get("dat"));
+
+		TernarySearchTrieST<Integer> tst = new TernarySearchTrieST<Integer>();
+		tst.put("cat", 1);
+		tst.put("aa", 5);
+		assertEquals(new Integer(1), tst.get("cat"));
+		assertNotEquals(new Integer(2), tst.get("dat"));
+		assertEquals(new Integer(5), tst.get("aa"));
+
 	}
-	
+
 }

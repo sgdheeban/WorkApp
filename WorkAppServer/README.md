@@ -16,17 +16,17 @@ This is the main server module, which hosts the backend server logic for WorkApp
   8. Java MultiThreading Pipeline - Queuing and Batching Layer [Common Resources Package]
   9. Database Connection Manager for MySQL [Data Access Package]
   10. REST Service Layer using Embedded Jetty-Jersey Server on port 8080 [Common Resources / Service Package]
-
+  11. Built-in support for in-memory caches like Ehcache, Guava Cache [Maven Jars Included + Examples under Test section]
+  12. Algorithm Packages - Constantly updated as a Learning Exercise [Common Resources Packages]
+ 
 ### Business Logic Components
 
   1. Model Business Objects & Business Logic using the underlying components [Model Package]
 
-### Additional Components for Scale-Out / Scale-Up Performance Improvements
+### Additional Components for Scale-Out / Scale-Up Performance Improvements (Todo)
 
-  1. Generic Timed Cache Manager for in-memory caches like Ehcache, Guava Cache [Common Resources Package]
-  2. Caching Consumers for in-memory, disk-backed storage libraries like ActiveMQ, RocksDB [Data Access Resources Package]
-  3. Service Consumers for distributed services like Kafka, Zookeeper [Data Access Resources Package]  
-  4. Caching Consumers for distributed caches like Redis, Memcached [Common Resources Package]  
-  5. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Service Package] 
-  6. Distributed Coordination Layer [Common Resources Package]
-  7. High-Perf Algorithm Packages - High Throughput, Scalability, Debuggability, Reliability [Common Resources Packages]
+  1. Caching Consumers for in-memory, disk-backed storage libraries like ActiveMQ, RocksDB [Data Access Resources Package]
+  2. Service Consumers for distributed services like Kafka, Zookeeper [Data Access Resources Package]  
+  3. Caching Consumers for distributed caches like Redis, Memcached [Common Resources Package]  
+  4. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Service Package] 
+  5. Distributed Coordination Layer [Common Resources Package]
