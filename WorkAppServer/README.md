@@ -16,7 +16,7 @@ This is the main server module, which hosts the backend server logic for WorkApp
   8. Java MultiThreading Pipeline - Queuing and Batching Layer [Common Resources Package]
   9. Database Connection Manager for MySQL [Data Access Package]
   10. REST Service Layer using Embedded Jetty-Jersey Server on port 8080 [Common Resources / Service Package]
-  11. Built-in support for in-memory caches like Ehcache, Guava Cache [Maven Jars Included + Examples under Test section]
+  11. Supports Ehcache, Guava Cache, ActiveMQ, RocksDB, Thrift Integration [Maven Jars Included]
   12. Algorithm Packages - Constantly updated as a Learning Exercise [Common Resources Packages]
  
 ### Business Logic Components
@@ -25,6 +25,4 @@ This is the main server module, which hosts the backend server logic for WorkApp
 
 ### Components for Scale-Out and Scale-Up Performance Improvements (Todo)
 
-  1. Caching Consumers for in-memory, disk-backed storage libraries like ActiveMQ, RocksDB [Data Access Resources Package]
-  2. THRIFT Message Layer using Embedded THRIFT server on port 9888 [Service Package] 
-  3. Distributed Coordination Layer [Common Resources Package]
+  1. Distributed Coordination Layer [Common Resources Package]
