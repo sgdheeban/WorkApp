@@ -15,7 +15,12 @@ This project was built solely as an academic exercise, well covered by JUnit tes
 
 ## Create MySQL schema
 
-Create the following test database and table in MySQL for successful execution of Examples and JUnit tests (Ensure the MySQL server is up and running). Alternatively, you can use the --schemaFile option through the commandline option args, and generate the schema listed in the workapp_mysql_schema.sql under the config folder in the root directory of WorkAppServer project (this includes the test db and table). To understand more about using WorkAppScriptRunnerUtil, refer to WorkAppServer/WorkAppScriptRunnerInstruction.md in the project. To execute ORM related testcases and examples, create the tables using the mysql_schema.sql & mysql_schema_orm_test.sql in the WorkAppServer/src/main/resources folder. To understand more about WorkApp's ORM Engine, refer to WorkAppServer/WorkAppOrmInstruction.md. Check WorkApp/WorkAppServer/config/dev_config.properties for options. Use dev_config_windows.properties for Windows Operating System. You can comment out each #schemaFile options to create, delete or install a particular database, overall for all unit tests to pass you will need to run the Server a few times, while commenting out one of the #schemaFile options. Repeat this exercise for each, except delete_db_if_exists, which is used to delete all databases listed in the file. 
+Create the following test database and table in MySQL for successful execution of Examples and JUnit tests (Ensure the MySQL server is up and running). 
+
+Alternatively, you can use the --schemaFile option through the commandline option args, and generate the schema listed in the workapp_mysql_schema.sql under the config folder in the root directory of WorkAppServer project (this includes the test db and table). 
+To understand more about using WorkAppScriptRunnerUtil, refer to WorkAppServer/WorkAppScriptRunnerInstruction.md in the project. To execute ORM related testcases and examples, create the tables using the mysql_schema.sql & mysql_schema_orm_test.sql in the WorkAppServer/src/main/resources folder. To understand more about WorkApp's ORM Engine, refer to WorkAppServer/WorkAppOrmInstruction.md. Check WorkApp/WorkAppServer/config/dev_config.properties for options. 
+
+Use dev_config_windows.properties for Windows Operating System. You can comment out each #schemaFile options to create, delete or install a particular database, overall for all unit tests to pass you will need to run the Server a few times, while commenting out one of the #schemaFile options. Repeat this exercise for each, except delete_db_if_exists, which is used to delete all databases listed in the file. 
 
     CREATE DATABASE testdb IF NOT EXISTS;
     USE testdb;
