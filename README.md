@@ -1,5 +1,5 @@
 # WorkApp
-Client-Server codebase for WorkApp, a generic client-server framework for building data-driven software applications. 
+Client-Server codebase for WorkApp, an open-source, generic client-server framework for building data-driven software applications. 
 
 This is a project framework with all necessary utilities pre-built, and provides a ready to use project structure, which could be easily extended for any use case. 
 
