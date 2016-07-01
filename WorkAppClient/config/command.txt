@@ -1,4 +1,4 @@
 test
-register
-login
-logout
+put
+get
+delete

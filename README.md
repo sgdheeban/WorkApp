@@ -15,7 +15,7 @@ This project was built solely as an academic exercise, well covered by JUnit tes
 
 ## Create MySQL schema
 
-Create the following test database and table in MySQL for successful execution of Examples and JUnit tests (Ensure the MySQL server is up and running). Alternatively, you can use the --schemaFile option through the commandline option args, and generate the schema listed in the workapp_mysql_schema.sql under the config folder in the root directory of WorkAppServer project (this includes the test db and table). 
+Create the following test database and table in MySQL for successful execution of Examples and JUnit tests (Ensure the MySQL server is up and running). Alternatively, you can use the --schemaFile option through the command line option args, and generate the schema listed in the .sql files under the config folder in the root directory of WorkAppServer project (this includes all the necessary table). 
 
 To understand more about using WorkAppScriptRunnerUtil, refer to WorkAppServer/WorkAppScriptRunnerInstruction.md in the project. To execute ORM related testcases and examples, create the tables using the mysql_schema.sql & mysql_schema_orm_test.sql in the WorkAppServer/src/main/resources folder. To understand more about WorkApp's ORM Engine, refer to WorkAppServer/WorkAppOrmInstruction.md. Check WorkApp/WorkAppServer/config/dev_config.properties for options. 
 
@@ -31,7 +31,9 @@ WorkApp is a standard Maven project. Simply run the following command from the p
 
     mvn clean install
 
-On the first build, Maven will download all the dependencies from the internet and cache them in the local repository (`~/.m2/repository`), which can take a considerable amount of time. Subsequent builds will be faster.
+On the first build, Maven will download all the dependencies from the internet and cache them in the local repository (`~/.m2/repository`), which can take a considerable amount of time. Subsequent builds will be faster. 
+
+Also, during your first build, depending on the version of the JDK installed in your system, you may encounter build path errors in eclipse, which you can fix by adjusting the build path to point to your JDK specification. You can mirror the same command line and VM arguments for building both the server and the client.
 
 WorkApp has a comprehensive set of unit tests that can take several minutes to run. You can disable the tests when building:
 

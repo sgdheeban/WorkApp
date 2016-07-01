@@ -70,7 +70,7 @@ public class WorkAppClient
 		sb.setLength(sb.length() - 1);
 		return sb.toString();
 	}
-
+	
 	/**
 	 * Private Static Variable Declaration
 	 */
@@ -254,9 +254,9 @@ public class WorkAppClient
 		outputString.append("Use the following command (Press TAB for auto complete in command line)");
 		outputString.append("\n");
 		outputString.append("test : Test the REST Service\n");
-		outputString.append("register : Register your User\n");
-		outputString.append("login : Login\n");
-		outputString.append("logout : Logout\n");
+		outputString.append("get(key) : Get Value for a key\n");
+		outputString.append("put(key,value) : Store a key-value pair\n");
+		outputString.append("quit : Quit\n");
 		System.out.println(outputString.toString());
 
 		registerRestAPI();
