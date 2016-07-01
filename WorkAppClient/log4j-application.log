@@ -190,3 +190,17 @@ Caused by: java.lang.NullPointerException
 2016-07-01 13:29:35 DEBUG WorkAppClient:98 D-SJN-00543448:72684 host:localhost
 2016-07-01 13:29:35 DEBUG WorkAppClient:98 D-SJN-00543448:72684 port:8080
 2016-07-01 13:29:35 DEBUG WorkAppClient:98 D-SJN-00543448:72684 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 15:50:44 DEBUG WorkAppClient:98 D-SJN-00543448:76496 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 15:50:44 DEBUG WorkAppClient:98 D-SJN-00543448:76496 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 15:50:44 DEBUG WorkAppClient:98 D-SJN-00543448:76496 logLevel:debug
+2016-07-01 15:50:44 DEBUG WorkAppClient:98 D-SJN-00543448:76496 mode:rest_client
+2016-07-01 15:50:44 DEBUG WorkAppClient:98 D-SJN-00543448:76496 host:localhost
+2016-07-01 15:50:44 DEBUG WorkAppClient:98 D-SJN-00543448:76496 port:8080
+2016-07-01 15:50:44 DEBUG WorkAppClient:98 D-SJN-00543448:76496 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 logLevel:debug
+2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 mode:rest_client
+2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 host:localhost
+2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 port:8080
+2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt

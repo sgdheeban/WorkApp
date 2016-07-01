@@ -264,7 +264,7 @@ public class WorkAppClient
 
 	private static void registerRestAPI()
 	{
-		commandMap.put(Command.test, new Quartet(GET, "http://" + host + ":" + port + "/workapp/v1/page/test", "application/json", null));
+		commandMap.put(Command.test, new Quartet(GET, "http://" + host + ":" + port + "/workapp/v1/page/test", "text/plain", null));
 	}
 
 	private static void executeGetURL(String url, String contentType)
@@ -300,7 +300,10 @@ public class WorkAppClient
 			WebResource webResource = client.resource(url);
 			String input = payload;
 			ClientResponse response = webResource.type(contentType).post(ClientResponse.class, input);
-			if (response.getStatus() != 201) { throw new RuntimeException("Failed : HTTP error code : " + response.getStatus()); }
+			if (response.getStatus() != 201) 
+			{ 
+				throw new RuntimeException("Failed : HTTP error code : " + response.getStatus()); 
+			}
 			System.out.println("Output from Server ....");
 			String output = response.getEntity(String.class);
 			System.out.println(output);
@@ -318,7 +321,7 @@ public class WorkAppClient
 
 	private static void executeURL(Quartet<String, String, String, String> quartet)
 	{
-		switch(quartet.getValue2())
+		switch(quartet.getValue0())
 		{
 			case GET :
 				executeGetURL(quartet.getValue1(), quartet.getValue2());
