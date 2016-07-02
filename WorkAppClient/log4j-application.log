@@ -204,3 +204,96 @@ Caused by: java.lang.NullPointerException
 2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 host:localhost
 2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 port:8080
 2016-07-01 15:51:11 DEBUG WorkAppClient:98 D-SJN-00543448:73788 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 19:06:20 DEBUG WorkAppClient:98 dheeban-THINK:15280 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 19:06:20 DEBUG WorkAppClient:98 dheeban-THINK:15280 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 19:06:20 DEBUG WorkAppClient:98 dheeban-THINK:15280 logLevel:DEBUG
+2016-07-01 19:06:20 DEBUG WorkAppClient:98 dheeban-THINK:15280 mode:rest_client
+2016-07-01 19:06:20 DEBUG WorkAppClient:98 dheeban-THINK:15280 host:localhost
+2016-07-01 19:06:20 DEBUG WorkAppClient:98 dheeban-THINK:15280 port:8080
+2016-07-01 19:06:20 DEBUG WorkAppClient:98 dheeban-THINK:15280 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 19:54:29 DEBUG WorkAppClient:98 dheeban-THINK:23944 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 19:54:29 DEBUG WorkAppClient:98 dheeban-THINK:23944 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 19:54:29 DEBUG WorkAppClient:98 dheeban-THINK:23944 logLevel:DEBUG
+2016-07-01 19:54:29 DEBUG WorkAppClient:98 dheeban-THINK:23944 mode:rest_client
+2016-07-01 19:54:29 DEBUG WorkAppClient:98 dheeban-THINK:23944 host:localhost
+2016-07-01 19:54:29 DEBUG WorkAppClient:98 dheeban-THINK:23944 port:8080
+2016-07-01 19:54:29 DEBUG WorkAppClient:98 dheeban-THINK:23944 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 19:54:33 DEBUG WorkAppClient:98 dheeban-THINK:18704 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 19:54:33 DEBUG WorkAppClient:98 dheeban-THINK:18704 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 19:54:33 DEBUG WorkAppClient:98 dheeban-THINK:18704 logLevel:DEBUG
+2016-07-01 19:54:33 DEBUG WorkAppClient:98 dheeban-THINK:18704 mode:rest_client
+2016-07-01 19:54:33 DEBUG WorkAppClient:98 dheeban-THINK:18704 host:localhost
+2016-07-01 19:54:33 DEBUG WorkAppClient:98 dheeban-THINK:18704 port:8080
+2016-07-01 19:54:33 DEBUG WorkAppClient:98 dheeban-THINK:18704 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 19:55:46 DEBUG WorkAppClient:98 dheeban-THINK:5580 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 19:55:46 DEBUG WorkAppClient:98 dheeban-THINK:5580 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 19:55:46 DEBUG WorkAppClient:98 dheeban-THINK:5580 logLevel:DEBUG
+2016-07-01 19:55:46 DEBUG WorkAppClient:98 dheeban-THINK:5580 mode:rest_client
+2016-07-01 19:55:46 DEBUG WorkAppClient:98 dheeban-THINK:5580 host:localhost
+2016-07-01 19:55:46 DEBUG WorkAppClient:98 dheeban-THINK:5580 port:8080
+2016-07-01 19:55:46 DEBUG WorkAppClient:98 dheeban-THINK:5580 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 19:55:51 INFO  WorkAppClient:66 dheeban-THINK:5580  [ java.net.ConnectException: Connection refused: connect ]  - Stacktrace : com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.urlconnection.URLConnectionClientHandler.handle(URLConnectionClientHandler.java:155)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.workappinc.workappclient.main.WorkAppClient.executeGetURL(WorkAppClient.java:283)
+	at com.workappinc.workappclient.main.WorkAppClient.executeURL(WorkAppClient.java:335)
+	at com.workappinc.workappclient.main.WorkAppClient.startConsole(WorkAppClient.java:370)
+	at com.workappinc.workappclient.main.WorkAppClient.main(WorkAppClient.java:449)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at com.sun.jersey.client.urlconnection.URLConnectionClientHandler._invoke(URLConnectionClientHandler.java:253)
+	at com.sun.jersey.client.urlconnection.URLConnectionClientHandler.handle(URLConnectionClientHandler.java:153)
+	... 8 more
+
+2016-07-01 19:56:03 DEBUG WorkAppClient:98 dheeban-THINK:4324 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 19:56:03 DEBUG WorkAppClient:98 dheeban-THINK:4324 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 19:56:03 DEBUG WorkAppClient:98 dheeban-THINK:4324 logLevel:DEBUG
+2016-07-01 19:56:03 DEBUG WorkAppClient:98 dheeban-THINK:4324 mode:rest_client
+2016-07-01 19:56:03 DEBUG WorkAppClient:98 dheeban-THINK:4324 host:localhost
+2016-07-01 19:56:03 DEBUG WorkAppClient:98 dheeban-THINK:4324 port:8080
+2016-07-01 19:56:03 DEBUG WorkAppClient:98 dheeban-THINK:4324 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 20:24:21 DEBUG WorkAppClient:98 dheeban-THINK:20056 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 20:24:21 DEBUG WorkAppClient:98 dheeban-THINK:20056 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 20:24:21 DEBUG WorkAppClient:98 dheeban-THINK:20056 logLevel:DEBUG
+2016-07-01 20:24:21 DEBUG WorkAppClient:98 dheeban-THINK:20056 mode:rest_client
+2016-07-01 20:24:21 DEBUG WorkAppClient:98 dheeban-THINK:20056 host:localhost
+2016-07-01 20:24:21 DEBUG WorkAppClient:98 dheeban-THINK:20056 port:8080
+2016-07-01 20:24:21 DEBUG WorkAppClient:98 dheeban-THINK:20056 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 20:24:37 DEBUG WorkAppClient:98 dheeban-THINK:18472 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 20:24:37 DEBUG WorkAppClient:98 dheeban-THINK:18472 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 20:24:37 DEBUG WorkAppClient:98 dheeban-THINK:18472 logLevel:DEBUG
+2016-07-01 20:24:37 DEBUG WorkAppClient:98 dheeban-THINK:18472 mode:rest_client
+2016-07-01 20:24:37 DEBUG WorkAppClient:98 dheeban-THINK:18472 host:localhost
+2016-07-01 20:24:37 DEBUG WorkAppClient:98 dheeban-THINK:18472 port:8080
+2016-07-01 20:24:37 DEBUG WorkAppClient:98 dheeban-THINK:18472 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 logLevel:DEBUG
+2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 mode:rest_client
+2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 host:localhost
+2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 port:8080
+2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt

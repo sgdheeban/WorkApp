@@ -33,7 +33,7 @@ WorkApp is a standard Maven project. Simply run the following command from the p
 
 On the first build, Maven will download all the dependencies from the internet and cache them in the local repository (`~/.m2/repository`), which can take a considerable amount of time. Subsequent builds will be faster. 
 
-Also, during your first build, depending on the version of the JDK installed in your system, you may encounter build path errors in eclipse, which you can fix by adjusting the build path to point to your JDK specification. You can mirror the same command line and VM arguments for building both the server and the client.
+Also, during your first build, depending on the version of the JDK installed in your system, you may encounter build path errors in eclipse, which you can fix by adjusting the build path to point to your JDK specification. 
 
 WorkApp has a comprehensive set of unit tests that can take several minutes to run. You can disable the tests when building:
 
@@ -63,3 +63,5 @@ WorkApp comes with sample configuration that should work out-of-the-box for deve
 
 The working directory should be the `WorkApp` subdirectory. In EclipseIDE, using `$MODULE_DIR$` accomplishes this automatically.
 For more info on Allocation Tracker, please check here : `https://github.com/google/allocation-instrumenter`
+
+For WorkAppClient, you can mirror the same command line and VM arguments for building both the server and the client. But, add -Djline.terminal=jline.UnsupportedTerminal to get the client working in Eclipse, as the JLine, our console reader library has a bug that makes it not to work in Eclise without this parameter.
