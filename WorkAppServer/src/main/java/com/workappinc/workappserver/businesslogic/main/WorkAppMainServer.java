@@ -397,8 +397,8 @@ public class WorkAppMainServer
 			try
 			{
 				connections = new WorkAppMySQLConnectionManager(database + dbSchema, dbUser, dbPassword, dbPoolSize, logger);
-				WorkAppServiceManager.initResource(connections, configMap, logger);
-				WorkAppResource.initResource(logger);
+				WorkAppServiceManager serviceManager = new WorkAppServiceManager(connections, configMap, logger);
+				WorkAppResource.initResource(logger, serviceManager);
 			}
 			catch (SQLException ex)
 			{

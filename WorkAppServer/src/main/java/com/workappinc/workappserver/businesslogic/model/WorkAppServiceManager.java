@@ -25,18 +25,18 @@ import com.workappinc.workappserver.dataaccess.statementgeneration.mysql.interfa
 
 public class WorkAppServiceManager
 {
-	private static WorkAppMySQLConnectionManager _connections;
-	private static HashMap<String, Object> _configMap;
-	private static IApplicationLogger _logger;
-	private static WorkAppQbFactory _fac;
+	private  WorkAppMySQLConnectionManager _connections;
+	private HashMap<String, Object> _configMap;
+	private IApplicationLogger _logger;
+	private WorkAppQbFactory _fac;
 
 	/**
-	 * Loads Common Resources as Static references
+	 * Loads Common Resources in constructor
 	 * 
 	 * @param connections
 	 * @throws SQLException
 	 */
-	public static void initResource(WorkAppMySQLConnectionManager connections, HashMap<String, Object> configMap, IApplicationLogger logger) throws SQLException
+	public WorkAppServiceManager (WorkAppMySQLConnectionManager connections, HashMap<String, Object> configMap, IApplicationLogger logger) throws SQLException
 	{
 		_connections = connections;
 		_configMap = configMap;
@@ -54,7 +54,7 @@ public class WorkAppServiceManager
 	 * @throws InternalServerException
 	 * @System.out.println(select.getQueryString());return
 	 */
-	public static void registerUser(MultivaluedMap<String, String> queryMap, User user) throws DuplicateDBEntryException, DatabaseException, InternalServerException
+	public void registerUser(MultivaluedMap<String, String> queryMap, User user) throws DuplicateDBEntryException, DatabaseException, InternalServerException
 	{
 		String queryID = null;
 		if (queryMap != null)

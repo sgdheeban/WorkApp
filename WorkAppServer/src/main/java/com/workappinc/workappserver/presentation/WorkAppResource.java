@@ -7,6 +7,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 
+import com.workappinc.workappserver.businesslogic.model.WorkAppServiceManager;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
@@ -20,15 +21,17 @@ public class WorkAppResource implements IResource
 {
 
 	private static IApplicationLogger _logger;
+	private static WorkAppServiceManager _serviceManager;
 
 	/**
-	 * Loads Common Resources as Static references
-	 * 
-	 * @param connections
+	 * Initialize Resources
+	 * @param logger
+	 * @param serviceManager
 	 */
-	public static void initResource(IApplicationLogger logger)
+	public static void initResource(IApplicationLogger logger, WorkAppServiceManager serviceManager)
 	{
 		_logger = logger;
+		_serviceManager = serviceManager;
 	}
 
 	/**
