@@ -269,7 +269,7 @@ public class WorkAppClient
 
 	private static void registerRestAPI()
 	{
-		commandMap.put(Command.test, new Quartet(GET, "http://" + host + ":" + port + "/workapp/v1/page/test", "text/plain", null));
+		commandMap.put(Command.test, new Quartet(GET, "http://" + host + ":" + port + "/workapp/v1/test", "text/plain", null));
 	}
 
 	private static void executeGetURL(String url, String contentType)

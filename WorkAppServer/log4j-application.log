@@ -4261,3 +4261,600 @@ Content-Type: text/plain
 2016-07-01 19:56:13 DEBUG ExecuteProduceRun:193 dheeban-THINK:18424 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@5b8780f2 ran org.eclipse.jetty.io.ManagedSelector$2@2aab593
 2016-07-01 19:56:13 DEBUG ExecuteProduceRun:206 dheeban-THINK:18424 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@5b8780f2 produce exit
 2016-07-01 19:56:13 DEBUG QueuedThreadPool:561 dheeban-THINK:18424 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@5b8780f2
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 logLevel:DEBUG
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 mode:rest
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 port:8080
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 trackAllocation:false
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 detectJARClash:false
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 schemaFile:null
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 database:jdbc:mysql://localhost:3306/
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 dbUser:root
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 dbPassword:password
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 dbSchema:workapp
+2016-07-04 12:47:19 DEBUG WorkAppMainServer:98 dheeban-THINK:13004 dbPoolSize:20
+2016-07-04 12:47:19 DEBUG WorkAppMySQLConnectionManager:98 dheeban-THINK:13004 Attempting to connect to db at: jdbc:mysql://localhost:3306/workapp
+2016-07-04 12:47:20 DEBUG log:176 dheeban-THINK:13004 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-07-04 12:47:20 INFO  log:186 dheeban-THINK:13004 Logging initialized @589ms
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.server.session.SessionHandler@2db0f6b2 added {org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8,AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 o.e.j.s.ServletContextHandler@3a4afd8d{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@2db0f6b2,AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.server.session.SessionHandler@2db0f6b2 added {org.eclipse.jetty.servlet.ServletHandler@5ecddf8f,AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.server.Server@52d455b8 added {qtp1123225098{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 HttpConnectionFactory@2cfb4a64[HTTP/1.1] added {HttpConfiguration@5474c6c{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 ServerConnector@7bb11784{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@52d455b8,UNMANAGED}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 ServerConnector@7bb11784{null,[]}{0.0.0.0:0} added {qtp1123225098{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 ServerConnector@7bb11784{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@61443d8f,AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 ServerConnector@7bb11784{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@33a10788,POJO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 ServerConnector@7bb11784{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@2cfb4a64[HTTP/1.1],AUTO}
+2016-07-04 12:47:20 DEBUG ServerConnector:393 dheeban-THINK:13004 ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@2cfb4a64[HTTP/1.1]
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3aa9e816,MANAGED}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.server.Server@52d455b8 added {ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.server.Server@52d455b8 added {o.e.j.s.ServletContextHandler@3a4afd8d{/,null,null},AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.servlet.ServletHandler@5ecddf8f added {org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.servlet.ServletHandler@5ecddf8f added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-71c7db30,POJO}
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.server.Server@52d455b8
+2016-07-04 12:47:20 INFO  Server:339 dheeban-THINK:13004 jetty-9.3.0.M2
+2016-07-04 12:47:20 DEBUG AbstractHandler:58 dheeban-THINK:13004 starting org.eclipse.jetty.server.Server@52d455b8
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting qtp1123225098{STOPPED,8<=0<=200,i=0,q=0}
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @745ms qtp1123225098{STARTED,8<=8<=200,i=1,q=0}
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting o.e.j.s.ServletContextHandler@3a4afd8d{/,null,null}
+2016-07-04 12:47:20 DEBUG PreEncodedHttpField:65 dheeban-THINK:13004 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@b684286]
+2016-07-04 12:47:20 DEBUG AbstractHandler:58 dheeban-THINK:13004 starting o.e.j.s.ServletContextHandler@3a4afd8d{/,null,STARTING}
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.server.session.SessionHandler@2db0f6b2
+2016-07-04 12:47:20 DEBUG AbstractHandler:58 dheeban-THINK:13004 starting org.eclipse.jetty.server.session.SessionHandler@2db0f6b2
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@340f438e,MANAGED}
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.server.session.HashSessionIdManager@17c68925
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @778ms org.eclipse.jetty.server.session.HashSessionIdManager@17c68925
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.server.Server@52d455b8 added {org.eclipse.jetty.server.session.HashSessionIdManager@17c68925,MANAGED}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8 added {org.eclipse.jetty.server.session.HashSessionIdManager@17c68925,UNMANAGED}
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@340f438e
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @784ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@340f438e
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @788ms org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.servlet.ServletHandler@5ecddf8f
+2016-07-04 12:47:20 DEBUG ServletHandler:1495 dheeban-THINK:13004 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-71c7db30 from default=false
+2016-07-04 12:47:20 DEBUG ServletHandler:1516 dheeban-THINK:13004 filterNameMap={}
+2016-07-04 12:47:20 DEBUG ServletHandler:1517 dheeban-THINK:13004 pathFilters=null
+2016-07-04 12:47:20 DEBUG ServletHandler:1518 dheeban-THINK:13004 servletFilterMap=null
+2016-07-04 12:47:20 DEBUG ServletHandler:1519 dheeban-THINK:13004 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-04 12:47:20 DEBUG ServletHandler:1520 dheeban-THINK:13004 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-71c7db30=org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-04 12:47:20 DEBUG ServletHandler:165 dheeban-THINK:13004 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@5ecddf8f
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.servlet.ServletHandler@5ecddf8f added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-07-04 12:47:20 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 org.eclipse.jetty.servlet.ServletHandler@5ecddf8f added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b,POJO}
+2016-07-04 12:47:20 DEBUG ServletHandler:1495 dheeban-THINK:13004 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-71c7db30 from default=false
+2016-07-04 12:47:20 DEBUG ServletHandler:1495 dheeban-THINK:13004 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b from default=false
+2016-07-04 12:47:20 DEBUG ServletHandler:1516 dheeban-THINK:13004 filterNameMap={}
+2016-07-04 12:47:20 DEBUG ServletHandler:1517 dheeban-THINK:13004 pathFilters=null
+2016-07-04 12:47:20 DEBUG ServletHandler:1518 dheeban-THINK:13004 servletFilterMap=null
+2016-07-04 12:47:20 DEBUG ServletHandler:1519 dheeban-THINK:13004 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-07-04 12:47:20 DEBUG ServletHandler:1520 dheeban-THINK:13004 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-71c7db30=org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false, org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-07-04 12:47:20 DEBUG AbstractHandler:58 dheeban-THINK:13004 starting org.eclipse.jetty.servlet.ServletHandler@5ecddf8f
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @801ms org.eclipse.jetty.servlet.ServletHandler@5ecddf8f
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @801ms org.eclipse.jetty.server.session.SessionHandler@2db0f6b2
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @807ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-07-04 12:47:20 DEBUG BaseHolder:97 dheeban-THINK:13004 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@4e0e2f2a
+2016-07-04 12:47:20 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @808ms org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-07-04 12:47:20 DEBUG ServletHolder:612 dheeban-THINK:13004 Servlet.init org.glassfish.jersey.servlet.ServletContainer@3551a94 for org.glassfish.jersey.servlet.ServletContainer-71c7db30
+2016-07-04 12:47:21 INFO  ContextHandler:745 dheeban-THINK:13004 Started o.e.j.s.ServletContextHandler@3a4afd8d{/,null,AVAILABLE}
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @1827ms o.e.j.s.ServletContextHandler@3a4afd8d{/,null,AVAILABLE}
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-04 12:47:21 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@61443d8f
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @1836ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@61443d8f
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting HttpConnectionFactory@2cfb4a64[HTTP/1.1]
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @1837ms HttpConnectionFactory@2cfb4a64[HTTP/1.1]
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3aa9e816
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=-1 selected=-1
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @1917ms org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=0 selected=0
+2016-07-04 12:47:21 DEBUG QueuedThreadPool:360 dheeban-THINK:13004 queue org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=0 selected=0
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:185 dheeban-THINK:13004 starting org.eclipse.jetty.io.ManagedSelector@518caac3 id=1 keys=-1 selected=-1
+2016-07-04 12:47:21 DEBUG QueuedThreadPool:558 dheeban-THINK:13004 run org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=0 selected=0
+2016-07-04 12:47:21 DEBUG ExecuteProduceRun:66 dheeban-THINK:13004 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 execute
+2016-07-04 12:47:21 DEBUG ExecuteProduceRun:132 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produce enter
+2016-07-04 12:47:21 DEBUG ExecuteProduceRun:138 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 producing
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @1920ms org.eclipse.jetty.io.ManagedSelector@518caac3 id=1 keys=0 selected=0
+2016-07-04 12:47:21 DEBUG ManagedSelector:230 dheeban-THINK:13004 Selector loop waiting on select
+2016-07-04 12:47:21 DEBUG QueuedThreadPool:360 dheeban-THINK:13004 queue org.eclipse.jetty.io.ManagedSelector@518caac3 id=1 keys=0 selected=0
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @1922ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3aa9e816
+2016-07-04 12:47:21 DEBUG QueuedThreadPool:558 dheeban-THINK:13004 run org.eclipse.jetty.io.ManagedSelector@518caac3 id=1 keys=0 selected=0
+2016-07-04 12:47:21 DEBUG ExecuteProduceRun:66 dheeban-THINK:13004 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@de3604f execute
+2016-07-04 12:47:21 DEBUG ExecuteProduceRun:132 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@de3604f produce enter
+2016-07-04 12:47:21 DEBUG ExecuteProduceRun:138 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@de3604f producing
+2016-07-04 12:47:21 DEBUG ManagedSelector:230 dheeban-THINK:13004 Selector loop waiting on select
+2016-07-04 12:47:21 DEBUG ContainerLifeCycle:324 dheeban-THINK:13004 ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@6c372fe6,POJO}
+2016-07-04 12:47:21 DEBUG QueuedThreadPool:360 dheeban-THINK:13004 queue acceptor-0@6c372fe6
+2016-07-04 12:47:21 INFO  ServerConnector:267 dheeban-THINK:13004 Started ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-04 12:47:21 DEBUG QueuedThreadPool:558 dheeban-THINK:13004 run acceptor-0@6c372fe6
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @1926ms ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-04 12:47:21 INFO  Server:391 dheeban-THINK:13004 Started @1927ms
+2016-07-04 12:47:21 DEBUG AbstractLifeCycle:177 dheeban-THINK:13004 STARTED @1927ms org.eclipse.jetty.server.Server@52d455b8
+2016-07-04 12:47:30 DEBUG ManagedSelector:116 dheeban-THINK:13004 Queued change org.eclipse.jetty.io.ManagedSelector$Accept@14a6927a on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=0 selected=0
+2016-07-04 12:47:30 DEBUG ManagedSelector:233 dheeban-THINK:13004 Selector loop woken up from select, 0/0 selected
+2016-07-04 12:47:30 DEBUG ManagedSelector:213 dheeban-THINK:13004 Running change org.eclipse.jetty.io.ManagedSelector$Accept@14a6927a
+2016-07-04 12:47:30 DEBUG ManagedSelector:116 dheeban-THINK:13004 Queued change org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@30c727b7 on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=1 selected=0
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:143 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produced org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@30c727b7
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:184 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 dispatch
+2016-07-04 12:47:30 DEBUG QueuedThreadPool:360 dheeban-THINK:13004 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:190 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 run org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@30c727b7
+2016-07-04 12:47:30 DEBUG QueuedThreadPool:558 dheeban-THINK:13004 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:114 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 run
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:132 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produce enter
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:138 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 producing
+2016-07-04 12:47:30 DEBUG ManagedSelector:230 dheeban-THINK:13004 Selector loop waiting on select
+2016-07-04 12:47:30 DEBUG AbstractEndPoint:105 dheeban-THINK:13004 onOpen SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,-,10/30000,null}{io=0,kio=0,kro=0}
+2016-07-04 12:47:30 DEBUG IdleTimeout:156 dheeban-THINK:13004 SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,-,12/30000,null}{io=0,kio=0,kro=0} idle timeout check, elapsed: 12 ms, remaining: 29988 ms
+2016-07-04 12:47:30 DEBUG HttpChannel:96 dheeban-THINK:13004 new HttpChannelOverHttp@6901bfa0{r=0,c=false,a=IDLE,uri=-} -> SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,-,70/30000,null}{io=0,kio=0,kro=0},null,HttpChannelState@77c41a63{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:47:30 DEBUG HttpConnection:103 dheeban-THINK:13004 New HTTP Connection HttpConnection@109e11d9<--null
+2016-07-04 12:47:30 DEBUG AbstractConnection:171 dheeban-THINK:13004 onOpen HttpConnection@109e11d9<--null
+2016-07-04 12:47:30 DEBUG AbstractConnection:117 dheeban-THINK:13004 fillInterested HttpConnection@109e11d9<--null
+2016-07-04 12:47:30 DEBUG FillInterest:61 dheeban-THINK:13004 FillInterest@69c341f6{true,AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}} register AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}
+2016-07-04 12:47:30 DEBUG FillInterest:75 dheeban-THINK:13004 FillInterest@69c341f6{true,AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}} register AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}
+2016-07-04 12:47:30 DEBUG SelectChannelEndPoint:162 dheeban-THINK:13004 changeInterests p=false 0->1 for SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,R,-,2/30000,HttpConnection}{io=1,kio=0,kro=0}
+2016-07-04 12:47:30 DEBUG ManagedSelector:116 dheeban-THINK:13004 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@9b395ce on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=1 selected=0
+2016-07-04 12:47:30 DEBUG ManagedSelector:233 dheeban-THINK:13004 Selector loop woken up from select, 0/1 selected
+2016-07-04 12:47:30 DEBUG ManagedSelector:213 dheeban-THINK:13004 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@9b395ce
+2016-07-04 12:47:30 DEBUG SelectChannelEndPoint:128 dheeban-THINK:13004 Key interests updated 0 -> 1 on SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,R,-,5/30000,HttpConnection}{io=1,kio=1,kro=0}
+2016-07-04 12:47:30 DEBUG ManagedSelector:230 dheeban-THINK:13004 Selector loop waiting on select
+2016-07-04 12:47:30 DEBUG ManagedSelector:233 dheeban-THINK:13004 Selector loop woken up from select, 1/1 selected
+2016-07-04 12:47:30 DEBUG SelectChannelEndPoint:99 dheeban-THINK:13004 onSelected 1->0 for SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,R,-,6/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:143 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produced org.eclipse.jetty.io.SelectChannelEndPoint$2@5049e950
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:184 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 dispatch
+2016-07-04 12:47:30 DEBUG QueuedThreadPool:360 dheeban-THINK:13004 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:190 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 run org.eclipse.jetty.io.SelectChannelEndPoint$2@5049e950
+2016-07-04 12:47:30 DEBUG ManagedSelector:410 dheeban-THINK:13004 Created SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,R,-,4/30000,HttpConnection}{io=1,kio=0,kro=0}
+2016-07-04 12:47:30 DEBUG QueuedThreadPool:558 dheeban-THINK:13004 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:30 DEBUG FillInterest:91 dheeban-THINK:13004 FillInterest@69c341f6{true,AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}} fillable AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}
+2016-07-04 12:47:30 DEBUG HttpConnection:214 dheeban-THINK:13004 HttpConnection@109e11d9<--null onFillable enter HttpChannelState@77c41a63{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:114 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 run
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:132 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produce enter
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:138 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 producing
+2016-07-04 12:47:30 DEBUG SelectChannelEndPoint:128 dheeban-THINK:13004 Key interests updated 1 -> 0 on SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,-,11/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:47:30 DEBUG ManagedSelector:230 dheeban-THINK:13004 Selector loop waiting on select
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:193 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 ran org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@30c727b7
+2016-07-04 12:47:30 DEBUG ChannelEndPoint:150 dheeban-THINK:13004 filled 131 SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,-,10/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:206 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produce exit
+2016-07-04 12:47:30 DEBUG QueuedThreadPool:561 dheeban-THINK:13004 ran org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=1 selected=0
+2016-07-04 12:47:30 DEBUG HttpConnection:319 dheeban-THINK:13004 HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=131,c=8192,r=131]={<<<GET /workapp/v1/p... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 131
+2016-07-04 12:47:30 DEBUG HttpConnection:336 dheeban-THINK:13004 HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=131,c=8192,r=131]={<<<GET /workapp/v1/p... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@5e8e1d29[p=0,l=131,c=8192,r=131]={<<<GET /workapp/v1/p... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-04 12:47:30 DEBUG HttpParser:1157 dheeban-THINK:13004 parseNext s=START HeapByteBuffer@5e8e1d29[p=0,l=131,c=8192,r=131]={<<<GET /workapp/v1/p... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 START --> SPACE1
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 SPACE1 --> URI
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 URI --> SPACE2
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 SPACE2 --> REQUEST_VERSION
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 REQUEST_VERSION --> HEADER
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER --> HEADER_VALUE
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER_IN_VALUE --> HEADER
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER --> HEADER_VALUE
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER_IN_VALUE --> HEADER
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER --> HEADER_VALUE
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER_IN_VALUE --> HEADER
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER --> HEADER_IN_VALUE
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER_IN_VALUE --> HEADER
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 HEADER --> END
+2016-07-04 12:47:30 DEBUG HttpChannel:517 dheeban-THINK:13004 HttpChannelOverHttp@6901bfa0{r=1,c=false,a=IDLE,uri=-} onRequestComplete
+2016-07-04 12:47:30 DEBUG HttpInput:366 dheeban-THINK:13004 org.eclipse.jetty.server.HttpInputOverHTTP@4c5aabaa addContent EOF
+2016-07-04 12:47:30 DEBUG HttpConnection:341 dheeban-THINK:13004 HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=131,l=131,c=8192,r=0]={GET /workapp/v1/p... keep-alive\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed true HttpParser{s=END,0 of 0}
+2016-07-04 12:47:30 DEBUG HttpConnection:191 dheeban-THINK:13004 releaseRequestBuffer HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=131,l=131,c=8192,r=0]={GET /workapp/v1/p... keep-alive\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:47:30 DEBUG HttpChannel:252 dheeban-THINK:13004 HttpChannelOverHttp@6901bfa0{r=1,c=false,a=IDLE,uri=-} handle //localhost:8080/workapp/v1/page/test 
+2016-07-04 12:47:30 DEBUG HttpChannelState:181 dheeban-THINK:13004 HttpChannelState@77c41a63{s=IDLE a=null i=true r=!P!U w=false} handling IDLE
+2016-07-04 12:47:30 DEBUG HttpChannel:267 dheeban-THINK:13004 HttpChannelOverHttp@6901bfa0{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/page/test} action REQUEST_DISPATCH
+2016-07-04 12:47:30 DEBUG Server:498 dheeban-THINK:13004 REQUEST on HttpChannelOverHttp@6901bfa0{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/page/test}
+GET //localhost:8080/workapp/v1/page/test
+Accept: text/plain
+User-Agent: Java/1.8.0_66
+Host: localhost:8080
+Connection: keep-alive
+
+
+2016-07-04 12:47:30 DEBUG ContextHandler:982 dheeban-THINK:13004 scope null||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@3a4afd8d{/,null,AVAILABLE}
+2016-07-04 12:47:30 DEBUG ContextHandler:1056 dheeban-THINK:13004 context=||/workapp/v1/page/test @ o.e.j.s.ServletContextHandler@3a4afd8d{/,null,AVAILABLE}
+2016-07-04 12:47:30 DEBUG session:179 dheeban-THINK:13004 sessionManager=org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8
+2016-07-04 12:47:30 DEBUG session:180 dheeban-THINK:13004 session=null
+2016-07-04 12:47:30 DEBUG ServletHandler:501 dheeban-THINK:13004 servlet ||/workapp/v1/page/test -> org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,true
+2016-07-04 12:47:30 DEBUG ServletHandler:564 dheeban-THINK:13004 chain=null
+2016-07-04 12:47:30 DEBUG HttpChannel:616 dheeban-THINK:13004 Commit HTTP/1.1{s=200,h=3} to HttpChannelOverHttp@6901bfa0{r=1,c=true,a=DISPATCHED,uri=/workapp/v1/page/test}
+2016-07-04 12:47:30 DEBUG HttpConnection:618 dheeban-THINK:13004 org.eclipse.jetty.server.HttpConnection$SendCallback@37e54f18[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@740b2263] generate: NEED_HEADER (null,[p=0,l=4,c=8192,r=4],true)@START
+2016-07-04 12:47:30 DEBUG HttpConnection:618 dheeban-THINK:13004 org.eclipse.jetty.server.HttpConnection$SendCallback@37e54f18[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@740b2263] generate: FLUSH ([p=0,l=126,c=8192,r=126],[p=0,l=4,c=8192,r=4],true)@COMPLETING
+2016-07-04 12:47:30 DEBUG WriteFlusher:295 dheeban-THINK:13004 write: WriteFlusher@ef2b23c{IDLE} [HeapByteBuffer@5e8e1d29[p=0,l=126,c=8192,r=126]={<<<HTTP/1.1 200 OK\r\n...y(9.3.0.M2)\r\n\r\n>>>e\r\n\r\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@34f4d779[p=0,l=4,c=8192,r=4]={<<<Test>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+2016-07-04 12:47:30 DEBUG WriteFlusher:118 dheeban-THINK:13004 update WriteFlusher@ef2b23c{WRITING}:IDLE-->WRITING
+2016-07-04 12:47:30 DEBUG ChannelEndPoint:196 dheeban-THINK:13004 flushed 130 SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,W,140/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:47:30 DEBUG WriteFlusher:412 dheeban-THINK:13004 Flushed=true 126/126+1 WriteFlusher@ef2b23c{WRITING}
+2016-07-04 12:47:30 DEBUG WriteFlusher:118 dheeban-THINK:13004 update WriteFlusher@ef2b23c{IDLE}:WRITING-->IDLE
+2016-07-04 12:47:30 DEBUG HttpConnection:618 dheeban-THINK:13004 org.eclipse.jetty.server.HttpConnection$SendCallback@37e54f18[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@740b2263] generate: DONE ([p=126,l=126,c=8192,r=0],[p=4,l=4,c=8192,r=0],true)@END
+2016-07-04 12:47:30 DEBUG Server:510 dheeban-THINK:13004 RESPONSE for /workapp/v1/page/test h=true
+200 OK
+Date: Mon, 04 Jul 2016 19:47:30 GMT
+Content-Length: 4
+Content-Type: text/plain
+
+
+2016-07-04 12:47:30 DEBUG HttpChannelState:298 dheeban-THINK:13004 HttpChannelState@77c41a63{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+2016-07-04 12:47:30 DEBUG HttpParser:1508 dheeban-THINK:13004 reset HttpParser{s=END,0 of 0}
+2016-07-04 12:47:30 DEBUG HttpParser:1528 dheeban-THINK:13004 END --> START
+2016-07-04 12:47:30 DEBUG HttpChannel:423 dheeban-THINK:13004 HttpChannelOverHttp@6901bfa0{r=1,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+2016-07-04 12:47:30 DEBUG ChannelEndPoint:150 dheeban-THINK:13004 filled 0 SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,-,51/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:47:30 DEBUG ChannelEndPoint:150 dheeban-THINK:13004 filled 0 SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,-,52/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:47:30 DEBUG HttpConnection:319 dheeban-THINK:13004 HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 0
+2016-07-04 12:47:30 DEBUG HttpConnection:336 dheeban-THINK:13004 HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-04 12:47:30 DEBUG HttpParser:1157 dheeban-THINK:13004 parseNext s=START HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:47:30 DEBUG HttpConnection:341 dheeban-THINK:13004 HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=START,0 of -1}
+2016-07-04 12:47:30 DEBUG HttpConnection:191 dheeban-THINK:13004 releaseRequestBuffer HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:47:30 DEBUG AbstractConnection:117 dheeban-THINK:13004 fillInterested HttpConnection@109e11d9<--null
+2016-07-04 12:47:30 DEBUG FillInterest:61 dheeban-THINK:13004 FillInterest@69c341f6{true,AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}} register AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}
+2016-07-04 12:47:30 DEBUG FillInterest:75 dheeban-THINK:13004 FillInterest@69c341f6{true,AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}} register AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}
+2016-07-04 12:47:30 DEBUG SelectChannelEndPoint:162 dheeban-THINK:13004 changeInterests p=false 0->1 for SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,R,-,2/30000,HttpConnection}{io=1,kio=0,kro=1}
+2016-07-04 12:47:30 DEBUG ManagedSelector:116 dheeban-THINK:13004 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@9b395ce on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=1 selected=0
+2016-07-04 12:47:30 DEBUG ManagedSelector:233 dheeban-THINK:13004 Selector loop woken up from select, 0/1 selected
+2016-07-04 12:47:30 DEBUG ManagedSelector:213 dheeban-THINK:13004 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@9b395ce
+2016-07-04 12:47:30 DEBUG SelectChannelEndPoint:128 dheeban-THINK:13004 Key interests updated 0 -> 1 on SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,R,-,6/30000,HttpConnection}{io=1,kio=1,kro=1}
+2016-07-04 12:47:30 DEBUG ManagedSelector:230 dheeban-THINK:13004 Selector loop waiting on select
+2016-07-04 12:47:30 DEBUG HttpConnection:257 dheeban-THINK:13004 HttpConnection@109e11d9<--null onFillable exit HttpChannelState@77c41a63{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:193 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 ran org.eclipse.jetty.io.SelectChannelEndPoint$2@5049e950
+2016-07-04 12:47:30 DEBUG ExecuteProduceRun:206 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produce exit
+2016-07-04 12:47:30 DEBUG QueuedThreadPool:561 dheeban-THINK:13004 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:32 DEBUG ManagedSelector:233 dheeban-THINK:13004 Selector loop woken up from select, 1/1 selected
+2016-07-04 12:47:32 DEBUG SelectChannelEndPoint:99 dheeban-THINK:13004 onSelected 1->0 for SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,R,-,1805/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:143 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produced org.eclipse.jetty.io.SelectChannelEndPoint$2@5049e950
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:184 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 dispatch
+2016-07-04 12:47:32 DEBUG QueuedThreadPool:360 dheeban-THINK:13004 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:190 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 run org.eclipse.jetty.io.SelectChannelEndPoint$2@5049e950
+2016-07-04 12:47:32 DEBUG QueuedThreadPool:558 dheeban-THINK:13004 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:32 DEBUG FillInterest:91 dheeban-THINK:13004 FillInterest@69c341f6{true,AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}} fillable AC.ReadCB@109e11d9{HttpConnection@109e11d9<--null}
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:114 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 run
+2016-07-04 12:47:32 DEBUG HttpConnection:214 dheeban-THINK:13004 HttpConnection@109e11d9<--null onFillable enter HttpChannelState@77c41a63{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:132 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produce enter
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:138 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 producing
+2016-07-04 12:47:32 DEBUG SelectChannelEndPoint:128 dheeban-THINK:13004 Key interests updated 1 -> 0 on SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,-,1809/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:47:32 DEBUG ChannelEndPoint:161 dheeban-THINK:13004 
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.eclipse.jetty.io.ChannelEndPoint.fill(ChannelEndPoint.java:148)
+	at org.eclipse.jetty.server.HttpConnection.fillRequestBuffer(HttpConnection.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:222)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.run(ExecuteProduceRun.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-04 12:47:32 DEBUG ChannelEndPoint:73 dheeban-THINK:13004 ishut SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,Open,in,out,-,-,1813/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:47:32 DEBUG ManagedSelector:230 dheeban-THINK:13004 Selector loop waiting on select
+2016-07-04 12:47:32 DEBUG HttpParser:1490 dheeban-THINK:13004 atEOF HttpParser{s=START,0 of -1}
+2016-07-04 12:47:32 DEBUG HttpConnection:319 dheeban-THINK:13004 HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled -1
+2016-07-04 12:47:32 DEBUG HttpConnection:336 dheeban-THINK:13004 HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-04 12:47:32 DEBUG HttpParser:1157 dheeban-THINK:13004 parseNext s=START HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:47:32 DEBUG HttpParser:1528 dheeban-THINK:13004 START --> CLOSED
+2016-07-04 12:47:32 DEBUG AbstractEndPoint:114 dheeban-THINK:13004 onClose SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,CLOSED,ISHUT,out,-,-,1816/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:47:32 DEBUG ChannelEndPoint:123 dheeban-THINK:13004 close SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,CLOSED,ISHUT,out,-,-,1817/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:47:32 DEBUG ManagedSelector:116 dheeban-THINK:13004 Queued change org.eclipse.jetty.io.ManagedSelector$2@32f42767 on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=1 selected=0
+2016-07-04 12:47:32 DEBUG HttpConnection:341 dheeban-THINK:13004 HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=CLOSED,0 of -1}
+2016-07-04 12:47:32 DEBUG ManagedSelector:233 dheeban-THINK:13004 Selector loop woken up from select, 0/0 selected
+2016-07-04 12:47:32 DEBUG HttpConnection:191 dheeban-THINK:13004 releaseRequestBuffer HttpConnection@109e11d9<--HeapByteBuffer@5e8e1d29[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:143 dheeban-THINK:13004 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produced org.eclipse.jetty.io.ManagedSelector$2@32f42767
+2016-07-04 12:47:32 DEBUG HttpConnection:257 dheeban-THINK:13004 HttpConnection@109e11d9<--null onFillable exit HttpChannelState@77c41a63{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:184 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 dispatch
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:193 dheeban-THINK:13004 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 ran org.eclipse.jetty.io.SelectChannelEndPoint$2@5049e950
+2016-07-04 12:47:32 DEBUG QueuedThreadPool:360 dheeban-THINK:13004 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:138 dheeban-THINK:13004 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 producing
+2016-07-04 12:47:32 DEBUG ManagedSelector:230 dheeban-THINK:13004 Selector loop waiting on select
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:190 dheeban-THINK:13004 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 run org.eclipse.jetty.io.ManagedSelector$2@32f42767
+2016-07-04 12:47:32 DEBUG ManagedSelector:423 dheeban-THINK:13004 Destroyed SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,CLOSED,ISHUT,OSHUT,-,-,1822/30000,HttpConnection}{io=0,kio=-1,kro=-1}
+2016-07-04 12:47:32 DEBUG AbstractConnection:181 dheeban-THINK:13004 onClose HttpConnection@109e11d9<--null
+2016-07-04 12:47:32 DEBUG QueuedThreadPool:558 dheeban-THINK:13004 run EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:32 DEBUG AbstractEndPoint:114 dheeban-THINK:13004 onClose SelectChannelEndPoint@237db10{/127.0.0.1:50447<->8080,CLOSED,ISHUT,OSHUT,-,-,1823/30000,HttpConnection}{io=0,kio=-1,kro=-1}
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:193 dheeban-THINK:13004 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 ran org.eclipse.jetty.io.ManagedSelector$2@32f42767
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:206 dheeban-THINK:13004 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 produce exit
+2016-07-04 12:47:32 DEBUG QueuedThreadPool:561 dheeban-THINK:13004 ran EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:47:32 DEBUG ExecuteProduceRun:114 dheeban-THINK:13004 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51 run
+2016-07-04 12:47:32 DEBUG QueuedThreadPool:561 dheeban-THINK:13004 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1f122f51
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 logLevel:DEBUG
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 mode:rest
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 port:8080
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 trackAllocation:false
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 detectJARClash:false
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 schemaFile:null
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 database:jdbc:mysql://localhost:3306/
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 dbUser:root
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 dbPassword:password
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 dbSchema:workapp
+2016-07-04 12:48:14 DEBUG WorkAppMainServer:98 dheeban-THINK:25744 dbPoolSize:20
+2016-07-04 12:48:14 DEBUG WorkAppMySQLConnectionManager:98 dheeban-THINK:25744 Attempting to connect to db at: jdbc:mysql://localhost:3306/workapp
+2016-07-04 12:48:14 DEBUG log:176 dheeban-THINK:25744 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-07-04 12:48:14 INFO  log:186 dheeban-THINK:25744 Logging initialized @477ms
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.server.session.SessionHandler@2db0f6b2 added {org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8,AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 o.e.j.s.ServletContextHandler@3a4afd8d{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@2db0f6b2,AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.server.session.SessionHandler@2db0f6b2 added {org.eclipse.jetty.servlet.ServletHandler@5ecddf8f,AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.server.Server@52d455b8 added {qtp1123225098{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 HttpConnectionFactory@2cfb4a64[HTTP/1.1] added {HttpConfiguration@5474c6c{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 ServerConnector@7bb11784{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@52d455b8,UNMANAGED}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 ServerConnector@7bb11784{null,[]}{0.0.0.0:0} added {qtp1123225098{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 ServerConnector@7bb11784{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@61443d8f,AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 ServerConnector@7bb11784{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@33a10788,POJO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 ServerConnector@7bb11784{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@2cfb4a64[HTTP/1.1],AUTO}
+2016-07-04 12:48:14 DEBUG ServerConnector:393 dheeban-THINK:25744 ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@2cfb4a64[HTTP/1.1]
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3aa9e816,MANAGED}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.server.Server@52d455b8 added {ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.server.Server@52d455b8 added {o.e.j.s.ServletContextHandler@3a4afd8d{/,null,null},AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.servlet.ServletHandler@5ecddf8f added {org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.servlet.ServletHandler@5ecddf8f added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-71c7db30,POJO}
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.server.Server@52d455b8
+2016-07-04 12:48:14 INFO  Server:339 dheeban-THINK:25744 jetty-9.3.0.M2
+2016-07-04 12:48:14 DEBUG AbstractHandler:58 dheeban-THINK:25744 starting org.eclipse.jetty.server.Server@52d455b8
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting qtp1123225098{STOPPED,8<=0<=200,i=0,q=0}
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @632ms qtp1123225098{STARTED,8<=8<=200,i=1,q=0}
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting o.e.j.s.ServletContextHandler@3a4afd8d{/,null,null}
+2016-07-04 12:48:14 DEBUG PreEncodedHttpField:65 dheeban-THINK:25744 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@b684286]
+2016-07-04 12:48:14 DEBUG AbstractHandler:58 dheeban-THINK:25744 starting o.e.j.s.ServletContextHandler@3a4afd8d{/,null,STARTING}
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.server.session.SessionHandler@2db0f6b2
+2016-07-04 12:48:14 DEBUG AbstractHandler:58 dheeban-THINK:25744 starting org.eclipse.jetty.server.session.SessionHandler@2db0f6b2
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@340f438e,MANAGED}
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.server.session.HashSessionIdManager@17c68925
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @660ms org.eclipse.jetty.server.session.HashSessionIdManager@17c68925
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.server.Server@52d455b8 added {org.eclipse.jetty.server.session.HashSessionIdManager@17c68925,MANAGED}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8 added {org.eclipse.jetty.server.session.HashSessionIdManager@17c68925,UNMANAGED}
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@340f438e
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @665ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@340f438e
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @669ms org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.servlet.ServletHandler@5ecddf8f
+2016-07-04 12:48:14 DEBUG ServletHandler:1495 dheeban-THINK:25744 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-71c7db30 from default=false
+2016-07-04 12:48:14 DEBUG ServletHandler:1516 dheeban-THINK:25744 filterNameMap={}
+2016-07-04 12:48:14 DEBUG ServletHandler:1517 dheeban-THINK:25744 pathFilters=null
+2016-07-04 12:48:14 DEBUG ServletHandler:1518 dheeban-THINK:25744 servletFilterMap=null
+2016-07-04 12:48:14 DEBUG ServletHandler:1519 dheeban-THINK:25744 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-04 12:48:14 DEBUG ServletHandler:1520 dheeban-THINK:25744 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-71c7db30=org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-04 12:48:14 DEBUG ServletHandler:165 dheeban-THINK:25744 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@5ecddf8f
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.servlet.ServletHandler@5ecddf8f added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-07-04 12:48:14 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 org.eclipse.jetty.servlet.ServletHandler@5ecddf8f added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b,POJO}
+2016-07-04 12:48:14 DEBUG ServletHandler:1495 dheeban-THINK:25744 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-71c7db30 from default=false
+2016-07-04 12:48:14 DEBUG ServletHandler:1495 dheeban-THINK:25744 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b from default=false
+2016-07-04 12:48:14 DEBUG ServletHandler:1516 dheeban-THINK:25744 filterNameMap={}
+2016-07-04 12:48:14 DEBUG ServletHandler:1517 dheeban-THINK:25744 pathFilters=null
+2016-07-04 12:48:14 DEBUG ServletHandler:1518 dheeban-THINK:25744 servletFilterMap=null
+2016-07-04 12:48:14 DEBUG ServletHandler:1519 dheeban-THINK:25744 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-07-04 12:48:14 DEBUG ServletHandler:1520 dheeban-THINK:25744 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-71c7db30=org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false, org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-07-04 12:48:14 DEBUG AbstractHandler:58 dheeban-THINK:25744 starting org.eclipse.jetty.servlet.ServletHandler@5ecddf8f
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @680ms org.eclipse.jetty.servlet.ServletHandler@5ecddf8f
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @681ms org.eclipse.jetty.server.session.SessionHandler@2db0f6b2
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @684ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-2ed94a8b@33d9de33==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-07-04 12:48:14 DEBUG BaseHolder:97 dheeban-THINK:25744 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@4e0e2f2a
+2016-07-04 12:48:14 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @686ms org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-07-04 12:48:14 DEBUG ServletHolder:612 dheeban-THINK:25744 Servlet.init org.glassfish.jersey.servlet.ServletContainer@3551a94 for org.glassfish.jersey.servlet.ServletContainer-71c7db30
+2016-07-04 12:48:15 INFO  ContextHandler:745 dheeban-THINK:25744 Started o.e.j.s.ServletContextHandler@3a4afd8d{/,null,AVAILABLE}
+2016-07-04 12:48:15 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @1836ms o.e.j.s.ServletContextHandler@3a4afd8d{/,null,AVAILABLE}
+2016-07-04 12:48:15 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-04 12:48:15 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-07-04 12:48:15 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@61443d8f
+2016-07-04 12:48:15 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @1845ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@61443d8f
+2016-07-04 12:48:15 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting HttpConnectionFactory@2cfb4a64[HTTP/1.1]
+2016-07-04 12:48:15 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @1846ms HttpConnectionFactory@2cfb4a64[HTTP/1.1]
+2016-07-04 12:48:15 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3aa9e816
+2016-07-04 12:48:16 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=-1 selected=-1
+2016-07-04 12:48:16 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @1928ms org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=0 selected=0
+2016-07-04 12:48:16 DEBUG QueuedThreadPool:360 dheeban-THINK:25744 queue org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=0 selected=0
+2016-07-04 12:48:16 DEBUG AbstractLifeCycle:185 dheeban-THINK:25744 starting org.eclipse.jetty.io.ManagedSelector@518caac3 id=1 keys=-1 selected=-1
+2016-07-04 12:48:16 DEBUG QueuedThreadPool:558 dheeban-THINK:25744 run org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=0 selected=0
+2016-07-04 12:48:16 DEBUG ExecuteProduceRun:66 dheeban-THINK:25744 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f execute
+2016-07-04 12:48:16 DEBUG ExecuteProduceRun:132 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f produce enter
+2016-07-04 12:48:16 DEBUG ExecuteProduceRun:138 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f producing
+2016-07-04 12:48:16 DEBUG ManagedSelector:230 dheeban-THINK:25744 Selector loop waiting on select
+2016-07-04 12:48:16 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @1933ms org.eclipse.jetty.io.ManagedSelector@518caac3 id=1 keys=0 selected=0
+2016-07-04 12:48:16 DEBUG QueuedThreadPool:360 dheeban-THINK:25744 queue org.eclipse.jetty.io.ManagedSelector@518caac3 id=1 keys=0 selected=0
+2016-07-04 12:48:16 DEBUG QueuedThreadPool:558 dheeban-THINK:25744 run org.eclipse.jetty.io.ManagedSelector@518caac3 id=1 keys=0 selected=0
+2016-07-04 12:48:16 DEBUG ExecuteProduceRun:66 dheeban-THINK:25744 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@24f5dd63 execute
+2016-07-04 12:48:16 DEBUG ExecuteProduceRun:132 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@24f5dd63 produce enter
+2016-07-04 12:48:16 DEBUG ExecuteProduceRun:138 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@24f5dd63 producing
+2016-07-04 12:48:16 DEBUG ManagedSelector:230 dheeban-THINK:25744 Selector loop waiting on select
+2016-07-04 12:48:16 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @1936ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@3aa9e816
+2016-07-04 12:48:16 DEBUG ContainerLifeCycle:324 dheeban-THINK:25744 ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@6c372fe6,POJO}
+2016-07-04 12:48:16 DEBUG QueuedThreadPool:360 dheeban-THINK:25744 queue acceptor-0@6c372fe6
+2016-07-04 12:48:16 DEBUG QueuedThreadPool:558 dheeban-THINK:25744 run acceptor-0@6c372fe6
+2016-07-04 12:48:16 INFO  ServerConnector:267 dheeban-THINK:25744 Started ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-04 12:48:16 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @1941ms ServerConnector@7bb11784{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-04 12:48:16 INFO  Server:391 dheeban-THINK:25744 Started @1941ms
+2016-07-04 12:48:16 DEBUG AbstractLifeCycle:177 dheeban-THINK:25744 STARTED @1942ms org.eclipse.jetty.server.Server@52d455b8
+2016-07-04 12:48:21 DEBUG ManagedSelector:116 dheeban-THINK:25744 Queued change org.eclipse.jetty.io.ManagedSelector$Accept@602d6278 on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=0 selected=0
+2016-07-04 12:48:21 DEBUG ManagedSelector:233 dheeban-THINK:25744 Selector loop woken up from select, 0/0 selected
+2016-07-04 12:48:21 DEBUG ManagedSelector:213 dheeban-THINK:25744 Running change org.eclipse.jetty.io.ManagedSelector$Accept@602d6278
+2016-07-04 12:48:21 DEBUG ManagedSelector:116 dheeban-THINK:25744 Queued change org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@3ee4a4bd on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=1 selected=0
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:143 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f produced org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@3ee4a4bd
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:184 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f dispatch
+2016-07-04 12:48:21 DEBUG QueuedThreadPool:360 dheeban-THINK:25744 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:190 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f run org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@3ee4a4bd
+2016-07-04 12:48:21 DEBUG QueuedThreadPool:558 dheeban-THINK:25744 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:114 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f run
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:132 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f produce enter
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:138 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f producing
+2016-07-04 12:48:21 DEBUG ManagedSelector:230 dheeban-THINK:25744 Selector loop waiting on select
+2016-07-04 12:48:21 DEBUG AbstractEndPoint:105 dheeban-THINK:25744 onOpen SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,-,6/30000,null}{io=0,kio=0,kro=0}
+2016-07-04 12:48:21 DEBUG IdleTimeout:156 dheeban-THINK:25744 SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,-,7/30000,null}{io=0,kio=0,kro=0} idle timeout check, elapsed: 7 ms, remaining: 29993 ms
+2016-07-04 12:48:21 DEBUG HttpChannel:96 dheeban-THINK:25744 new HttpChannelOverHttp@94f7851{r=0,c=false,a=IDLE,uri=-} -> SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,-,55/30000,null}{io=0,kio=0,kro=0},null,HttpChannelState@30bbd140{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:48:21 DEBUG HttpConnection:103 dheeban-THINK:25744 New HTTP Connection HttpConnection@7f5bb3ff<--null
+2016-07-04 12:48:21 DEBUG AbstractConnection:171 dheeban-THINK:25744 onOpen HttpConnection@7f5bb3ff<--null
+2016-07-04 12:48:21 DEBUG AbstractConnection:117 dheeban-THINK:25744 fillInterested HttpConnection@7f5bb3ff<--null
+2016-07-04 12:48:21 DEBUG FillInterest:61 dheeban-THINK:25744 FillInterest@6f54c699{true,AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}} register AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}
+2016-07-04 12:48:21 DEBUG FillInterest:75 dheeban-THINK:25744 FillInterest@6f54c699{true,AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}} register AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}
+2016-07-04 12:48:21 DEBUG SelectChannelEndPoint:162 dheeban-THINK:25744 changeInterests p=false 0->1 for SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,R,-,2/30000,HttpConnection}{io=1,kio=0,kro=0}
+2016-07-04 12:48:21 DEBUG ManagedSelector:116 dheeban-THINK:25744 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@4db254c7 on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=1 selected=0
+2016-07-04 12:48:21 DEBUG ManagedSelector:233 dheeban-THINK:25744 Selector loop woken up from select, 0/1 selected
+2016-07-04 12:48:21 DEBUG ManagedSelector:213 dheeban-THINK:25744 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@4db254c7
+2016-07-04 12:48:21 DEBUG SelectChannelEndPoint:128 dheeban-THINK:25744 Key interests updated 0 -> 1 on SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,R,-,5/30000,HttpConnection}{io=1,kio=1,kro=0}
+2016-07-04 12:48:21 DEBUG ManagedSelector:230 dheeban-THINK:25744 Selector loop waiting on select
+2016-07-04 12:48:21 DEBUG ManagedSelector:233 dheeban-THINK:25744 Selector loop woken up from select, 1/1 selected
+2016-07-04 12:48:21 DEBUG SelectChannelEndPoint:99 dheeban-THINK:25744 onSelected 1->0 for SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,R,-,7/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:143 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f produced org.eclipse.jetty.io.SelectChannelEndPoint$2@1e5ef90a
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:184 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f dispatch
+2016-07-04 12:48:21 DEBUG QueuedThreadPool:360 dheeban-THINK:25744 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:190 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f run org.eclipse.jetty.io.SelectChannelEndPoint$2@1e5ef90a
+2016-07-04 12:48:21 DEBUG FillInterest:91 dheeban-THINK:25744 FillInterest@6f54c699{true,AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}} fillable AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}
+2016-07-04 12:48:21 DEBUG HttpConnection:214 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--null onFillable enter HttpChannelState@30bbd140{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:48:21 DEBUG ChannelEndPoint:150 dheeban-THINK:25744 filled 126 SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,-,11/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-04 12:48:21 DEBUG ManagedSelector:410 dheeban-THINK:25744 Created SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,R,-,4/30000,HttpConnection}{io=0,kio=0,kro=0}
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:193 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f ran org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@3ee4a4bd
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:138 dheeban-THINK:25744 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f producing
+2016-07-04 12:48:21 DEBUG QueuedThreadPool:558 dheeban-THINK:25744 run EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:21 DEBUG HttpConnection:319 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=126,c=8192,r=126]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 126
+2016-07-04 12:48:21 DEBUG HttpConnection:336 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=126,c=8192,r=126]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@109914b1[p=0,l=126,c=8192,r=126]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-04 12:48:21 DEBUG HttpParser:1157 dheeban-THINK:25744 parseNext s=START HeapByteBuffer@109914b1[p=0,l=126,c=8192,r=126]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:114 dheeban-THINK:25744 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f run
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 START --> SPACE1
+2016-07-04 12:48:21 DEBUG QueuedThreadPool:561 dheeban-THINK:25744 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:21 DEBUG SelectChannelEndPoint:128 dheeban-THINK:25744 Key interests updated 1 -> 0 on SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,-,6/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 SPACE1 --> URI
+2016-07-04 12:48:21 DEBUG ManagedSelector:230 dheeban-THINK:25744 Selector loop waiting on select
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 URI --> SPACE2
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 SPACE2 --> REQUEST_VERSION
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 REQUEST_VERSION --> HEADER
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER --> HEADER_VALUE
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER_IN_VALUE --> HEADER
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER --> HEADER_VALUE
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER_IN_VALUE --> HEADER
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER --> HEADER_VALUE
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER_IN_VALUE --> HEADER
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER --> HEADER_IN_VALUE
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER_IN_VALUE --> HEADER
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 HEADER --> END
+2016-07-04 12:48:21 DEBUG HttpChannel:517 dheeban-THINK:25744 HttpChannelOverHttp@94f7851{r=1,c=false,a=IDLE,uri=-} onRequestComplete
+2016-07-04 12:48:21 DEBUG HttpInput:366 dheeban-THINK:25744 org.eclipse.jetty.server.HttpInputOverHTTP@3e10b2dd addContent EOF
+2016-07-04 12:48:21 DEBUG HttpConnection:341 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=126,l=126,c=8192,r=0]={GET /workapp/v1/t... keep-alive\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed true HttpParser{s=END,0 of 0}
+2016-07-04 12:48:21 DEBUG HttpConnection:191 dheeban-THINK:25744 releaseRequestBuffer HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=126,l=126,c=8192,r=0]={GET /workapp/v1/t... keep-alive\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:48:21 DEBUG HttpChannel:252 dheeban-THINK:25744 HttpChannelOverHttp@94f7851{r=1,c=false,a=IDLE,uri=-} handle //localhost:8080/workapp/v1/test 
+2016-07-04 12:48:21 DEBUG HttpChannelState:181 dheeban-THINK:25744 HttpChannelState@30bbd140{s=IDLE a=null i=true r=!P!U w=false} handling IDLE
+2016-07-04 12:48:21 DEBUG HttpChannel:267 dheeban-THINK:25744 HttpChannelOverHttp@94f7851{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/test} action REQUEST_DISPATCH
+2016-07-04 12:48:21 DEBUG Server:498 dheeban-THINK:25744 REQUEST on HttpChannelOverHttp@94f7851{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/test}
+GET //localhost:8080/workapp/v1/test
+Accept: text/plain
+User-Agent: Java/1.8.0_66
+Host: localhost:8080
+Connection: keep-alive
+
+
+2016-07-04 12:48:21 DEBUG ContextHandler:982 dheeban-THINK:25744 scope null||/workapp/v1/test @ o.e.j.s.ServletContextHandler@3a4afd8d{/,null,AVAILABLE}
+2016-07-04 12:48:21 DEBUG ContextHandler:1056 dheeban-THINK:25744 context=||/workapp/v1/test @ o.e.j.s.ServletContextHandler@3a4afd8d{/,null,AVAILABLE}
+2016-07-04 12:48:21 DEBUG session:179 dheeban-THINK:25744 sessionManager=org.eclipse.jetty.server.session.HashSessionManager@3cd1f1c8
+2016-07-04 12:48:21 DEBUG session:180 dheeban-THINK:25744 session=null
+2016-07-04 12:48:21 DEBUG ServletHandler:501 dheeban-THINK:25744 servlet ||/workapp/v1/test -> org.glassfish.jersey.servlet.ServletContainer-71c7db30@f6924577==org.glassfish.jersey.servlet.ServletContainer,0,true
+2016-07-04 12:48:21 DEBUG ServletHandler:564 dheeban-THINK:25744 chain=null
+2016-07-04 12:48:21 DEBUG HttpChannel:616 dheeban-THINK:25744 Commit HTTP/1.1{s=200,h=3} to HttpChannelOverHttp@94f7851{r=1,c=true,a=DISPATCHED,uri=/workapp/v1/test}
+2016-07-04 12:48:21 DEBUG HttpConnection:618 dheeban-THINK:25744 org.eclipse.jetty.server.HttpConnection$SendCallback@786a8afb[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@28903d87] generate: NEED_HEADER (null,[p=0,l=4,c=8192,r=4],true)@START
+2016-07-04 12:48:21 DEBUG HttpConnection:618 dheeban-THINK:25744 org.eclipse.jetty.server.HttpConnection$SendCallback@786a8afb[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@28903d87] generate: FLUSH ([p=0,l=126,c=8192,r=126],[p=0,l=4,c=8192,r=4],true)@COMPLETING
+2016-07-04 12:48:21 DEBUG WriteFlusher:295 dheeban-THINK:25744 write: WriteFlusher@5f4a5845{IDLE} [HeapByteBuffer@109914b1[p=0,l=126,c=8192,r=126]={<<<HTTP/1.1 200 OK\r\n...y(9.3.0.M2)\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@7ff064e0[p=0,l=4,c=8192,r=4]={<<<Test>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+2016-07-04 12:48:21 DEBUG WriteFlusher:118 dheeban-THINK:25744 update WriteFlusher@5f4a5845{WRITING}:IDLE-->WRITING
+2016-07-04 12:48:21 DEBUG ChannelEndPoint:196 dheeban-THINK:25744 flushed 130 SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,W,107/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:48:21 DEBUG WriteFlusher:412 dheeban-THINK:25744 Flushed=true 126/126+1 WriteFlusher@5f4a5845{WRITING}
+2016-07-04 12:48:21 DEBUG WriteFlusher:118 dheeban-THINK:25744 update WriteFlusher@5f4a5845{IDLE}:WRITING-->IDLE
+2016-07-04 12:48:21 DEBUG HttpConnection:618 dheeban-THINK:25744 org.eclipse.jetty.server.HttpConnection$SendCallback@786a8afb[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@28903d87] generate: DONE ([p=126,l=126,c=8192,r=0],[p=4,l=4,c=8192,r=0],true)@END
+2016-07-04 12:48:21 DEBUG Server:510 dheeban-THINK:25744 RESPONSE for /workapp/v1/test h=true
+200 OK
+Date: Mon, 04 Jul 2016 19:48:21 GMT
+Content-Length: 4
+Content-Type: text/plain
+
+
+2016-07-04 12:48:21 DEBUG HttpChannelState:298 dheeban-THINK:25744 HttpChannelState@30bbd140{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+2016-07-04 12:48:21 DEBUG HttpParser:1508 dheeban-THINK:25744 reset HttpParser{s=END,0 of 0}
+2016-07-04 12:48:21 DEBUG HttpParser:1528 dheeban-THINK:25744 END --> START
+2016-07-04 12:48:21 DEBUG HttpChannel:423 dheeban-THINK:25744 HttpChannelOverHttp@94f7851{r=1,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+2016-07-04 12:48:21 DEBUG ChannelEndPoint:150 dheeban-THINK:25744 filled 0 SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,-,41/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:48:21 DEBUG ChannelEndPoint:150 dheeban-THINK:25744 filled 0 SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,-,42/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:48:21 DEBUG HttpConnection:319 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 0
+2016-07-04 12:48:21 DEBUG HttpConnection:336 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-04 12:48:21 DEBUG HttpParser:1157 dheeban-THINK:25744 parseNext s=START HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:48:21 DEBUG HttpConnection:341 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=START,0 of -1}
+2016-07-04 12:48:21 DEBUG HttpConnection:191 dheeban-THINK:25744 releaseRequestBuffer HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:48:21 DEBUG AbstractConnection:117 dheeban-THINK:25744 fillInterested HttpConnection@7f5bb3ff<--null
+2016-07-04 12:48:21 DEBUG FillInterest:61 dheeban-THINK:25744 FillInterest@6f54c699{true,AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}} register AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}
+2016-07-04 12:48:21 DEBUG FillInterest:75 dheeban-THINK:25744 FillInterest@6f54c699{true,AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}} register AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}
+2016-07-04 12:48:21 DEBUG SelectChannelEndPoint:162 dheeban-THINK:25744 changeInterests p=false 0->1 for SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,R,-,3/30000,HttpConnection}{io=1,kio=0,kro=1}
+2016-07-04 12:48:21 DEBUG ManagedSelector:116 dheeban-THINK:25744 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@4db254c7 on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=1 selected=0
+2016-07-04 12:48:21 DEBUG ManagedSelector:233 dheeban-THINK:25744 Selector loop woken up from select, 0/1 selected
+2016-07-04 12:48:21 DEBUG ManagedSelector:213 dheeban-THINK:25744 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@4db254c7
+2016-07-04 12:48:21 DEBUG SelectChannelEndPoint:128 dheeban-THINK:25744 Key interests updated 0 -> 1 on SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,R,-,12/30000,HttpConnection}{io=1,kio=1,kro=1}
+2016-07-04 12:48:21 DEBUG ManagedSelector:230 dheeban-THINK:25744 Selector loop waiting on select
+2016-07-04 12:48:21 DEBUG HttpConnection:257 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--null onFillable exit HttpChannelState@30bbd140{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:193 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f ran org.eclipse.jetty.io.SelectChannelEndPoint$2@1e5ef90a
+2016-07-04 12:48:21 DEBUG ExecuteProduceRun:206 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f produce exit
+2016-07-04 12:48:21 DEBUG QueuedThreadPool:561 dheeban-THINK:25744 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:23 DEBUG ManagedSelector:233 dheeban-THINK:25744 Selector loop woken up from select, 1/1 selected
+2016-07-04 12:48:23 DEBUG SelectChannelEndPoint:99 dheeban-THINK:25744 onSelected 1->0 for SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,R,-,1545/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:143 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f produced org.eclipse.jetty.io.SelectChannelEndPoint$2@1e5ef90a
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:184 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f dispatch
+2016-07-04 12:48:23 DEBUG QueuedThreadPool:360 dheeban-THINK:25744 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:190 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f run org.eclipse.jetty.io.SelectChannelEndPoint$2@1e5ef90a
+2016-07-04 12:48:23 DEBUG QueuedThreadPool:558 dheeban-THINK:25744 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:23 DEBUG FillInterest:91 dheeban-THINK:25744 FillInterest@6f54c699{true,AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}} fillable AC.ReadCB@7f5bb3ff{HttpConnection@7f5bb3ff<--null}
+2016-07-04 12:48:23 DEBUG HttpConnection:214 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--null onFillable enter HttpChannelState@30bbd140{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:114 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f run
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:132 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f produce enter
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:138 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f producing
+2016-07-04 12:48:23 DEBUG ChannelEndPoint:161 dheeban-THINK:25744 
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.eclipse.jetty.io.ChannelEndPoint.fill(ChannelEndPoint.java:148)
+	at org.eclipse.jetty.server.HttpConnection.fillRequestBuffer(HttpConnection.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:222)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:240)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:93)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.produceAndRun(ExecuteProduceRun.java:191)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceRun.execute(ExecuteProduceRun.java:90)
+	at org.eclipse.jetty.io.ManagedSelector.run(ManagedSelector.java:135)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:641)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:559)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-04 12:48:23 DEBUG ChannelEndPoint:73 dheeban-THINK:25744 ishut SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,-,1553/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:48:23 DEBUG SelectChannelEndPoint:128 dheeban-THINK:25744 Key interests updated 1 -> 0 on SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,Open,in,out,-,-,1549/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:48:23 DEBUG HttpParser:1490 dheeban-THINK:25744 atEOF HttpParser{s=START,0 of -1}
+2016-07-04 12:48:23 DEBUG HttpConnection:319 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled -1
+2016-07-04 12:48:23 DEBUG HttpConnection:336 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-04 12:48:23 DEBUG HttpParser:1157 dheeban-THINK:25744 parseNext s=START HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:48:23 DEBUG HttpParser:1528 dheeban-THINK:25744 START --> CLOSED
+2016-07-04 12:48:23 DEBUG AbstractEndPoint:114 dheeban-THINK:25744 onClose SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,CLOSED,ISHUT,out,-,-,1556/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:48:23 DEBUG ManagedSelector:230 dheeban-THINK:25744 Selector loop waiting on select
+2016-07-04 12:48:23 DEBUG ChannelEndPoint:123 dheeban-THINK:25744 close SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,CLOSED,ISHUT,out,-,-,1556/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-04 12:48:23 DEBUG ManagedSelector:116 dheeban-THINK:25744 Queued change org.eclipse.jetty.io.ManagedSelector$2@5282bd75 on org.eclipse.jetty.io.ManagedSelector@1130520d id=0 keys=0 selected=0
+2016-07-04 12:48:23 DEBUG ManagedSelector:233 dheeban-THINK:25744 Selector loop woken up from select, 0/0 selected
+2016-07-04 12:48:23 DEBUG HttpConnection:341 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=CLOSED,0 of -1}
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:143 dheeban-THINK:25744 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f produced org.eclipse.jetty.io.ManagedSelector$2@5282bd75
+2016-07-04 12:48:23 DEBUG HttpConnection:191 dheeban-THINK:25744 releaseRequestBuffer HttpConnection@7f5bb3ff<--HeapByteBuffer@109914b1[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:184 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f dispatch
+2016-07-04 12:48:23 DEBUG QueuedThreadPool:360 dheeban-THINK:25744 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:23 DEBUG HttpConnection:257 dheeban-THINK:25744 HttpConnection@7f5bb3ff<--null onFillable exit HttpChannelState@30bbd140{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:193 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f ran org.eclipse.jetty.io.SelectChannelEndPoint$2@1e5ef90a
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:138 dheeban-THINK:25744 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f producing
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:190 dheeban-THINK:25744 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f run org.eclipse.jetty.io.ManagedSelector$2@5282bd75
+2016-07-04 12:48:23 DEBUG ManagedSelector:230 dheeban-THINK:25744 Selector loop waiting on select
+2016-07-04 12:48:23 DEBUG ManagedSelector:423 dheeban-THINK:25744 Destroyed SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,CLOSED,ISHUT,OSHUT,-,-,1562/30000,HttpConnection}{io=0,kio=-1,kro=-1}
+2016-07-04 12:48:23 DEBUG AbstractConnection:181 dheeban-THINK:25744 onClose HttpConnection@7f5bb3ff<--null
+2016-07-04 12:48:23 DEBUG AbstractEndPoint:114 dheeban-THINK:25744 onClose SelectChannelEndPoint@b790ae{/127.0.0.1:50452<->8080,CLOSED,ISHUT,OSHUT,-,-,1563/30000,HttpConnection}{io=0,kio=-1,kro=-1}
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:193 dheeban-THINK:25744 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f ran org.eclipse.jetty.io.ManagedSelector$2@5282bd75
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:206 dheeban-THINK:25744 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f produce exit
+2016-07-04 12:48:23 DEBUG QueuedThreadPool:561 dheeban-THINK:25744 ran EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:23 DEBUG QueuedThreadPool:558 dheeban-THINK:25744 run EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f
+2016-07-04 12:48:23 DEBUG ExecuteProduceRun:114 dheeban-THINK:25744 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f run
+2016-07-04 12:48:23 DEBUG QueuedThreadPool:561 dheeban-THINK:25744 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@1131bd9f

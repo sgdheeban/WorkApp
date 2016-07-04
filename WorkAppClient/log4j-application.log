@@ -297,3 +297,17 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 host:localhost
 2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 port:8080
 2016-07-01 20:25:03 DEBUG WorkAppClient:98 dheeban-THINK:21636 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-04 12:47:27 DEBUG WorkAppClient:98 dheeban-THINK:26812 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-04 12:47:27 DEBUG WorkAppClient:98 dheeban-THINK:26812 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-04 12:47:27 DEBUG WorkAppClient:98 dheeban-THINK:26812 logLevel:DEBUG
+2016-07-04 12:47:27 DEBUG WorkAppClient:98 dheeban-THINK:26812 mode:rest_client
+2016-07-04 12:47:27 DEBUG WorkAppClient:98 dheeban-THINK:26812 host:localhost
+2016-07-04 12:47:27 DEBUG WorkAppClient:98 dheeban-THINK:26812 port:8080
+2016-07-04 12:47:27 DEBUG WorkAppClient:98 dheeban-THINK:26812 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 logLevel:DEBUG
+2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 mode:rest_client
+2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 host:localhost
+2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 port:8080
+2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt

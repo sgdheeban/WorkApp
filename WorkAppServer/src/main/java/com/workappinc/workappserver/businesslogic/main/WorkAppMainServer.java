@@ -26,9 +26,7 @@ import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppC
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
 import com.workappinc.workappserver.dataaccess.resources.implementation.WorkAppScriptRunnerUtil;
-import com.workappinc.workappserver.presentation.TestResource;
-import com.workappinc.workappserver.presentation.WorkAppUserResource;
-import com.workappinc.workappserver.presentation.WorkAppPageResource;
+import com.workappinc.workappserver.presentation.WorkAppResource;
 import com.workappinc.workappserver.presentation.WorkAppRestServer;
 
 /**
@@ -400,9 +398,7 @@ public class WorkAppMainServer
 			{
 				connections = new WorkAppMySQLConnectionManager(database + dbSchema, dbUser, dbPassword, dbPoolSize, logger);
 				WorkAppServiceManager.initResource(connections, configMap, logger);
-				TestResource.initResource(logger);
-				WorkAppUserResource.initResource(logger);
-				WorkAppPageResource.initResource(logger);
+				WorkAppResource.initResource(logger);
 			}
 			catch (SQLException ex)
 			{

@@ -9,7 +9,7 @@ package com.workappinc.workappclient.main;
 public class Command
 {
 	public final static String test = "test";
-	public final static String register = "register";
-	public final static String login = "login";
-	public final static String logout = "logout";
+	public final static String get = "get";
+	public final static String put = "put";
+	public final static String delete = "delete";
 }

@@ -10,14 +10,13 @@ import javax.ws.rs.core.Response;
 import com.workappinc.workappserver.common.logging.IApplicationLogger;
 
 /**
- * An implementation of IResource to expose services for loading Client Pages -
- * Web or Mobile
+ * An implementation of IResource to expose services
  * 
  * @author dhgovindaraj
  *
  */
-@Path("/workapp/v1/page/")
-public class WorkAppPageResource implements IResource
+@Path("/workapp/v1/")
+public class WorkAppResource implements IResource
 {
 
 	private static IApplicationLogger _logger;
@@ -46,27 +45,39 @@ public class WorkAppPageResource implements IResource
 	}
 
 	/**
-	 * Loads HomePage
+	 * Get value for a given key
 	 * 
 	 * @param response
 	 * @return
 	 */
-	public Response loadHomePage(Request request)
+	public Response get(String key)
 	{
 		Response response = null;
 		return response;
 	}
 
 	/**
-	 * Loads TalentPage
+	 * Save a key-value pair
 	 * 
 	 * @param response
 	 * @return
 	 */
-	public Response loadTalentPage(Request request)
+	public Response put(String key, String value)
 	{
 		Response response = null;
 		return response;
 	}
 
+	/**
+	 * Delete a key value pair
+	 * 
+	 * @param response
+	 * @return
+	 */
+	public Response delete(String key)
+	{
+		Response response = null;
+		return response;
+	}
+	
 }
