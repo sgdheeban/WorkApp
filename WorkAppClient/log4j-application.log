@@ -64,14 +64,14 @@
 2016-02-07 01:29:31 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4714 mode:rest_client
 2016-02-07 01:29:31 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4714 host:localhost
 2016-02-07 01:29:31 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4714 port:8080
-2016-02-07 01:29:47 ERROR WorkAppUncaughtExceptionLogger$1:78 dhgovindaraj-VirtualBox:4714  [ Uncaught exception in thread Thread[main,5,main] ]  - Stacktrace : com.workappinc.workappserver.common.exception.WorkAppUncaughtException: Uncaught exception in thread Thread[main,5,main]
-	at com.workappinc.workappserver.common.logging.WorkAppUncaughtExceptionLogger$1.uncaughtException(WorkAppUncaughtExceptionLogger.java:21)
+2016-02-07 01:29:47 ERROR WorkAppUncaughtExceptionLogger$1:78 dhgovindaraj-VirtualBox:4714  [ Uncaught exception in thread Thread[main,5,main] ]  - Stacktrace : com.workapp.workappserver.common.exception.WorkAppUncaughtException: Uncaught exception in thread Thread[main,5,main]
+	at com.workapp.workappserver.common.logging.WorkAppUncaughtExceptionLogger$1.uncaughtException(WorkAppUncaughtExceptionLogger.java:21)
 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1057)
 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1052)
 	at java.lang.Thread.dispatchUncaughtException(Thread.java:1952)
 Caused by: java.lang.NullPointerException
-	at com.workappinc.workappclient.main.WorkAppClient.startConsole(WorkAppClient.java:245)
-	at com.workappinc.workappclient.main.WorkAppClient.main(WorkAppClient.java:323)
+	at com.workapp.workappclient.main.WorkAppClient.startConsole(WorkAppClient.java:245)
+	at com.workapp.workappclient.main.WorkAppClient.main(WorkAppClient.java:323)
 
 2016-02-07 01:31:02 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4799 configFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/dev_config.properties
 2016-02-07 01:31:02 DEBUG WorkAppClient:98 dhgovindaraj-VirtualBox:4799 log4jPropFile:/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppClient/config/log4j.properties
@@ -238,10 +238,10 @@ Caused by: java.lang.NullPointerException
 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
 	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
-	at com.workappinc.workappclient.main.WorkAppClient.executeGetURL(WorkAppClient.java:283)
-	at com.workappinc.workappclient.main.WorkAppClient.executeURL(WorkAppClient.java:335)
-	at com.workappinc.workappclient.main.WorkAppClient.startConsole(WorkAppClient.java:370)
-	at com.workappinc.workappclient.main.WorkAppClient.main(WorkAppClient.java:449)
+	at com.workapp.workappclient.main.WorkAppClient.executeGetURL(WorkAppClient.java:283)
+	at com.workapp.workappclient.main.WorkAppClient.executeURL(WorkAppClient.java:335)
+	at com.workapp.workappclient.main.WorkAppClient.startConsole(WorkAppClient.java:370)
+	at com.workapp.workappclient.main.WorkAppClient.main(WorkAppClient.java:449)
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)

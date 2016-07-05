@@ -21,7 +21,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.workappinc.workappclient.main.WorkAppClient</mainClass>
+                  <mainClass>com.workapp.workappclient.main.WorkAppClient</mainClass>
                 </transformer>
               </transformers>
             </configuration>

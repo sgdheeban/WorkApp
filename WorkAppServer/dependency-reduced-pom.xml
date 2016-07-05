@@ -21,7 +21,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.workappinc.workappserver.businesslogic.main.WorkAppMainServer</mainClass>
+                  <mainClass>com.workapp.workappserver.businesslogic.main.WorkAppMainServer</mainClass>
                 </transformer>
               </transformers>
             </configuration>

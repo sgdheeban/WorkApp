@@ -3,7 +3,7 @@
 2016-02-22 21:50:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:8484  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -40,7 +40,7 @@
 2016-02-22 21:50:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:8484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:50:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:8484  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,7 +93,7 @@
 	at java.io.FileInputStream.<init>(Unknown Source)
 	at java.io.FileInputStream.<init>(Unknown Source)
 	at java.io.FileReader.<init>(Unknown Source)
-	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:367)
+	at com.workapp.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:367)
 
 2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
 2016-02-22 21:52:05 DEBUG WorkAppMainServer:98 dheeban-THINK:6712 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
@@ -684,7 +684,7 @@
 2016-02-22 21:57:15 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:12516  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -721,7 +721,7 @@
 2016-02-22 21:57:15 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:12516  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:57:15 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:12516  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -759,7 +759,7 @@
 2016-02-22 21:58:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:11444  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -796,7 +796,7 @@
 2016-02-22 21:58:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:11444  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 21:58:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:11444  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -834,7 +834,7 @@
 2016-02-22 22:01:47 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13368  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -871,7 +871,7 @@
 2016-02-22 22:01:47 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13368  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 22:01:47 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13368  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -909,7 +909,7 @@
 2016-02-22 22:04:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:1712  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -946,7 +946,7 @@
 2016-02-22 22:04:03 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:1712  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 22:04:03 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:1712  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -984,7 +984,7 @@
 2016-02-22 23:59:35 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:11448  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1021,7 +1021,7 @@
 2016-02-22 23:59:35 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:11448  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-22 23:59:35 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:11448  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1059,7 +1059,7 @@
 2016-02-23 00:00:09 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13228  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1096,7 +1096,7 @@
 2016-02-23 00:00:09 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13228  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-23 00:00:09 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13228  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1134,7 +1134,7 @@
 2016-02-23 00:03:29 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:8244  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1171,7 +1171,7 @@
 2016-02-23 00:03:29 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:8244  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-02-23 00:03:29 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:8244  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1209,7 +1209,7 @@
 2016-06-21 19:39:19 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:4748  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-21 19:39:19 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:4748  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-21 19:39:19 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:4748  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1246,7 +1246,7 @@
 2016-06-21 19:39:19 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:4748  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-21 19:39:19 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:4748  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-21 19:39:19 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:4748  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1284,7 +1284,7 @@
 2016-06-21 21:10:53 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:7192  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-21 21:10:53 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:7192  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-21 21:10:53 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:7192  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1321,7 +1321,7 @@
 2016-06-21 21:10:53 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:7192  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-21 21:10:53 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:7192  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-21 21:10:53 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:7192  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1359,7 +1359,7 @@
 2016-06-23 20:22:51 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:1600  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-23 20:22:51 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:1600  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-23 20:22:51 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:1600  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1396,7 +1396,7 @@
 2016-06-23 20:22:51 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:1600  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-23 20:22:51 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:1600  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-06-23 20:22:51 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:1600  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1528,7 +1528,7 @@
 2016-07-01 12:59:25 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:73164  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-01 12:59:25 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:73164  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-01 12:59:25 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:73164  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1565,7 +1565,7 @@
 2016-07-01 12:59:25 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:73164  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-01 12:59:25 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:73164  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-01 12:59:25 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:73164  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1603,7 +1603,7 @@
 2016-07-01 13:02:01 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:75104  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-01 13:02:01 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:75104  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-01 13:02:01 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:75104  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1640,7 +1640,7 @@
 2016-07-01 13:02:01 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:75104  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-01 13:02:01 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:75104  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-01 13:02:01 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:75104  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1813,8 +1813,8 @@ java.net.BindException: Address already in use: bind
 	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
 	at org.eclipse.jetty.server.Server.doStart(Server.java:378)
 	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
-	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+	at com.workapp.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
+	at com.workapp.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
 2016-07-01 13:23:37 WARN  AbstractLifeCycle:213 D-SJN-00543448:72200 FAILED org.eclipse.jetty.server.Server@46cdf8bd: java.net.BindException: Address already in use: bind
 java.net.BindException: Address already in use: bind
 	at sun.nio.ch.Net.bind0(Native Method)
@@ -1828,8 +1828,8 @@ java.net.BindException: Address already in use: bind
 	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
 	at org.eclipse.jetty.server.Server.doStart(Server.java:378)
 	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
-	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+	at com.workapp.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
+	at com.workapp.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
 2016-07-01 13:23:37 INFO  WorkAppRestServer:66 D-SJN-00543448:72200  [ Address already in use: bind ]  - Stacktrace : java.net.BindException: Address already in use: bind
 	at sun.nio.ch.Net.bind0(Native Method)
 	at sun.nio.ch.Net.bind(Net.java:433)
@@ -1842,18 +1842,18 @@ java.net.BindException: Address already in use: bind
 	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
 	at org.eclipse.jetty.server.Server.doStart(Server.java:378)
 	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
-	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+	at com.workapp.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:29)
+	at com.workapp.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
 
-2016-07-01 13:23:37 ERROR WorkAppUncaughtExceptionLogger$1:78 D-SJN-00543448:72200  [ Uncaught exception in thread Thread[main,5,main] ]  - Stacktrace : com.workappinc.workappserver.common.exception.WorkAppUncaughtException: Uncaught exception in thread Thread[main,5,main]
-	at com.workappinc.workappserver.common.logging.WorkAppUncaughtExceptionLogger$1.uncaughtException(WorkAppUncaughtExceptionLogger.java:21)
+2016-07-01 13:23:37 ERROR WorkAppUncaughtExceptionLogger$1:78 D-SJN-00543448:72200  [ Uncaught exception in thread Thread[main,5,main] ]  - Stacktrace : com.workapp.workappserver.common.exception.WorkAppUncaughtException: Uncaught exception in thread Thread[main,5,main]
+	at com.workapp.workappserver.common.logging.WorkAppUncaughtExceptionLogger$1.uncaughtException(WorkAppUncaughtExceptionLogger.java:21)
 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1057)
 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1052)
 	at java.lang.Thread.dispatchUncaughtException(Thread.java:1952)
 Caused by: java.lang.IllegalStateException: !STOPPED
 	at org.eclipse.jetty.server.handler.HandlerWrapper.destroy(HandlerWrapper.java:147)
-	at com.workappinc.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:43)
-	at com.workappinc.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
+	at com.workapp.workappserver.presentation.WorkAppRestServer.startServer(WorkAppRestServer.java:43)
+	at com.workapp.workappserver.businesslogic.main.WorkAppMainServer.main(WorkAppMainServer.java:426)
 
 2016-07-01 13:24:26 DEBUG WorkAppMainServer:98 D-SJN-00543448:72576 configFile:D:\\git_learn\\WorkApp\\WorkAppServer\\config\\dev_config_windows.properties
 2016-07-01 13:24:26 DEBUG WorkAppMainServer:98 D-SJN-00543448:72576 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppServer\\config\\log4j.properties
@@ -4898,7 +4898,7 @@ java.io.IOException: An existing connection was forcibly closed by the remote ho
 2016-07-04 19:42:19 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13096  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-04 19:42:19 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13096  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-04 19:42:19 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13096  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -4935,7 +4935,7 @@ java.io.IOException: An existing connection was forcibly closed by the remote ho
 2016-07-04 19:42:19 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13096  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-04 19:42:19 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13096  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-04 19:42:19 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13096  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
-	at com.workappinc.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -4968,3 +4968,356 @@ java.io.IOException: An existing connection was forcibly closed by the remote ho
 
 2016-07-04 19:42:19 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:13096  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
 2016-07-04 19:42:28 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:13096 Printing Properties to FilePath
+2016-07-04 20:14:38 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:38 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:38 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:38 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:38 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:21692  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-04 20:14:38 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:38 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:38 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:38 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:38 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:38 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:21692  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-04 20:14:38 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:21692  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:14:43 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:21692 Printing Properties to FilePath
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 logLevel:DEBUG
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 mode:rest
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 port:8080
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 trackAllocation:false
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 detectJARClash:false
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 schemaFile:D:\git_learn\WorkApp\WorkAppServer\src\main\resources\drop_db_ifexists.sql
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 database:jdbc:mysql://localhost:3306/
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 dbUser:root
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 dbPassword:password
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 dbSchema:workapp
+2016-07-04 20:16:24 DEBUG WorkAppMainServer:98 dheeban-THINK:25392 dbPoolSize:20
+2016-07-04 20:16:25 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:25392 // Dropping persist db
+2016-07-04 20:16:25 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:25392 
+2016-07-04 20:16:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:25392 
+2016-07-04 20:16:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:25392 // Dropping testdb db
+2016-07-04 20:16:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:25392 
+2016-07-04 20:16:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:25392 
+2016-07-04 20:16:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:25392 // Dropping workapp db
+2016-07-04 20:16:26 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:25392 
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 logLevel:DEBUG
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 mode:rest
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 port:8080
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 trackAllocation:false
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 detectJARClash:false
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 schemaFile:D:\git_learn\WorkApp\WorkAppServer\src\main\resources\drop_db_ifexists.sql
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 database:jdbc:mysql://localhost:3306/
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 dbUser:root
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 dbPassword:password
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 dbSchema:workapp
+2016-07-04 20:17:31 DEBUG WorkAppMainServer:98 dheeban-THINK:27116 dbPoolSize:20
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 // Dropping persist db
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 // Dropping testdb db
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 // Dropping workapp db
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 // Dropping kvdb
+2016-07-04 20:17:31 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:27116 
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 logLevel:DEBUG
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 mode:rest
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 port:8080
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 trackAllocation:false
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 detectJARClash:false
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 schemaFile:D:\git_learn\WorkApp\WorkAppServer\src\main\resources\mysql_schema_orm_test.sql
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 database:jdbc:mysql://localhost:3306/
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 dbUser:root
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 dbPassword:password
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 dbSchema:workapp
+2016-07-04 20:17:42 DEBUG WorkAppMainServer:98 dheeban-THINK:4236 dbPoolSize:20
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 // Creating database and tables for testing ORM Layer
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 //Creating simple Table
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 //Creating numeric_types Table
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 //Creating datetime_types Table
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:43 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 //Creating string_types Table
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 //Creating binary_types Table
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 //Creating all_types Table
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:44 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:45 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 
+2016-07-04 20:17:45 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:4236 // End of database and table creation for testing ORM Layer
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 configFile:D:\git_learn\WorkApp\WorkAppServer\config\dev_config_windows.properties
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 log4jPropFile:D:\git_learn\WorkApp\WorkAppServer\config\log4j.properties
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 logLevel:DEBUG
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 mode:rest
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 port:8080
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 trackAllocation:false
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 detectJARClash:false
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 schemaFile:D:\git_learn\WorkApp\WorkAppServer\src\main\resources\mysql_schema.sql
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 database:jdbc:mysql://localhost:3306/
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 dbUser:root
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 dbPassword:password
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 dbSchema:workapp
+2016-07-04 20:17:58 DEBUG WorkAppMainServer:98 dheeban-THINK:26996 dbPoolSize:20
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 //test-comment
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 //Creating user table
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 --test-dash
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 ERROR WorkAppScriptRunnerUtil:78 dheeban-THINK:26996 name	age	
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 //Creating kvdb Database
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 //Creating kv_table
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:17:59 DEBUG WorkAppScriptRunnerUtil:98 dheeban-THINK:26996 
+2016-07-04 20:18:21 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:21 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:21 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:21 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:21 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:21656  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-04 20:18:21 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:21 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:21 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:21 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:21 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:21 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:21656  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-04 20:18:21 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:21656  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:18:26 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:21656 Printing Properties to FilePath
+2016-07-04 20:21:36 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:36 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:36 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:36 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:36 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13480  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-04 20:21:36 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:36 FATAL WorkAppLoggerTestCase:72 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:36 ERROR WorkAppLoggerTestCase:78 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:36 WARN  WorkAppLoggerTestCase:84 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:36 INFO  WorkAppLoggerTestCase:91 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:36 INFO  WorkAppLoggerTestCase:66 dheeban-THINK:13480  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-04 20:21:36 INFO  WorkAppLoggerTestCase:59 dheeban-THINK:13480  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-04 20:21:43 INFO  WorkAppPropertiesFileWriterExample:91 dheeban-THINK:13480 Printing Properties to FilePath
