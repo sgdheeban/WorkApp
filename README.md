@@ -53,7 +53,7 @@ After opening the project in Eclipse IDE, double check that the Java SDK is prop
 
 WorkApp comes with sample configuration that should work out-of-the-box for development. Use the following options to create a run configuration:
 
-* Main Class: `com.workappinc.workapp.server.WorkAppServer`
+* Main Class: `com.workapp.workapp.server.WorkAppServer`
 * Command Line Options (Check Main method for More options): `-c /home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties -lp /home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties -l debug`
 * VM Options: `-ea -Xmx2G`
 * VM Options for enabling Allocation Tracker : `-javaagent:local-maven-repo-path-to-jar/java-allocation-instrumenter-3.0.jar`

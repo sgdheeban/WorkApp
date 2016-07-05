@@ -311,3 +311,10 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 host:localhost
 2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 port:8080
 2016-07-04 12:48:18 DEBUG WorkAppClient:98 dheeban-THINK:27472 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
+2016-07-04 20:34:32 DEBUG WorkAppClient:98 dheeban-THINK:26876 configFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\dev_config_windows.properties
+2016-07-04 20:34:32 DEBUG WorkAppClient:98 dheeban-THINK:26876 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppClient\\config\\log4j.properties
+2016-07-04 20:34:32 DEBUG WorkAppClient:98 dheeban-THINK:26876 logLevel:DEBUG
+2016-07-04 20:34:32 DEBUG WorkAppClient:98 dheeban-THINK:26876 mode:rest_client
+2016-07-04 20:34:32 DEBUG WorkAppClient:98 dheeban-THINK:26876 host:localhost
+2016-07-04 20:34:32 DEBUG WorkAppClient:98 dheeban-THINK:26876 port:8080
+2016-07-04 20:34:32 DEBUG WorkAppClient:98 dheeban-THINK:26876 acFile:D:\git_learn\WorkApp\WorkAppClient\config\command.txt
