@@ -11,8 +11,8 @@ import com.workapp.workappserver.common.logging.IApplicationLogger;
 import com.workapp.workappserver.common.resources.interfaces.ISerializer;
 
 /**
- * JSONSerializer is an implementation of ISerializer interface for
- * serializing and de-serializing JSON and POJO
+ * JSONSerializer is an implementation of ISerializer interface for serializing
+ * and de-serializing JSON and POJO
  * 
  * @author dhgovindaraj
  *

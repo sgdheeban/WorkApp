@@ -6,8 +6,10 @@ import java.util.Iterator;
 import com.workapp.workappserver.common.resources.implementation.datastructures.RwayTrieST;
 import com.workapp.workappserver.common.resources.implementation.datastructures.TernarySearchTrieST;
 
-public class TrieSTExample {
-	public static void main(String args[]) throws IOException {
+public class TrieSTExample
+{
+	public static void main(String args[]) throws IOException
+	{
 
 		System.out.println("####### RWAY TRIE ST #########");
 		RwayTrieST<Integer> rwayTrie = new RwayTrieST<Integer>();
@@ -32,7 +34,8 @@ public class TrieSTExample {
 		System.out.println("Keys that match (.atch): ");
 
 		Iterator<Object> it = rwayTrie.gKeysThatMatch(".atch");
-		while (it.hasNext()) {
+		while (it.hasNext())
+		{
 			System.out.println(it.next());
 		}
 
@@ -44,13 +47,15 @@ public class TrieSTExample {
 
 		System.out.println("Iterator - Keys value");
 		Iterator<Object> it3 = rwayTrie.keys();
-		while (it3.hasNext()) {
+		while (it3.hasNext())
+		{
 			System.out.println(it3.next());
 		}
 
 		System.out.println("Iterator - Keys with Prefix (ba)");
 		Iterator<Object> it2 = rwayTrie.getKeysWithPrefix("ba");
-		while (it2.hasNext()) {
+		while (it2.hasNext())
+		{
 			System.out.println(it2.next());
 		}
 
@@ -79,7 +84,8 @@ public class TrieSTExample {
 
 		System.out.println("Keys that match (.atch): ");
 		Iterator<Object> it1 = tst.getKeysThatMatch(".atch");
-		while (it1.hasNext()) {
+		while (it1.hasNext())
+		{
 			System.out.println(it1.next());
 		}
 
@@ -91,13 +97,15 @@ public class TrieSTExample {
 
 		System.out.println("Iterator - Keys value");
 		Iterator<Object> it31 = tst.keys();
-		while (it31.hasNext()) {
+		while (it31.hasNext())
+		{
 			System.out.println(it31.next());
 		}
 
 		System.out.println("Iterator - Keys with Prefix (ba)");
 		Iterator<Object> it21 = tst.getkeysWithPrefix("ba");
-		while (it21.hasNext()) {
+		while (it21.hasNext())
+		{
 			System.out.println(it21.next());
 		}
 

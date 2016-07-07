@@ -15,14 +15,17 @@ import com.workapp.workappserver.common.resources.implementation.datastructures.
  * @author sgdheeban
  *
  */
-public class AlgoDSTestCase {
+public class AlgoDSTestCase
+{
 
 	/**
 	 * Testing Union Find Algorithm
 	 */
 	@Test
-	public void testUnionFindAlgorithm() {
-		try {
+	public void testUnionFindAlgorithm()
+	{
+		try
+		{
 			UnionFindAlgorithm algo = new UnionFindAlgorithm(10);
 			algo.union(1, 2);
 			algo.union(2, 4);
@@ -30,7 +33,9 @@ public class AlgoDSTestCase {
 			algo.union(7, 8);
 			assertEquals(true, algo.find(5, 4));
 			assertEquals(false, algo.find(5, 8));
-		} catch (AlgorithmException ex) {
+		}
+		catch (AlgorithmException ex)
+		{
 			ex.printStackTrace();
 		}
 	}
@@ -39,7 +44,8 @@ public class AlgoDSTestCase {
 	 * Testing Rway & TS Tries data structures
 	 */
 	@Test
-	public void testTrieST() {
+	public void testTrieST()
+	{
 
 		RwayTrieST<Integer> rwayTrie = new RwayTrieST<Integer>();
 		rwayTrie.put("cat", 1);

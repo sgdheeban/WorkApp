@@ -5,9 +5,12 @@ import java.io.IOException;
 import com.workapp.workappserver.common.exception.AlgorithmException;
 import com.workapp.workappserver.common.resources.implementation.aglorithms.UnionFindAlgorithm;
 
-public class UnionFindAlgorithmExample {
-	public static void main(String args[]) throws IOException {
-		try {
+public class UnionFindAlgorithmExample
+{
+	public static void main(String args[]) throws IOException
+	{
+		try
+		{
 			UnionFindAlgorithm algo = new UnionFindAlgorithm(10);
 			algo.union(1, 2);
 			algo.union(2, 4);
@@ -24,7 +27,9 @@ public class UnionFindAlgorithmExample {
 			algo.union(2, 7);
 
 			System.out.println(" Connection between 5,8 after connect is : " + algo.find(5, 8));
-		} catch (AlgorithmException ex) {
+		}
+		catch (AlgorithmException ex)
+		{
 			ex.printStackTrace();
 		}
 	}

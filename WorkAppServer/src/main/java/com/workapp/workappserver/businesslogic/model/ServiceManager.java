@@ -25,7 +25,7 @@ import com.workapp.workappserver.dataaccess.statementgeneration.mysql.interfaces
 
 public class ServiceManager
 {
-	private  WorkAppMySQLConnectionManager _connections;
+	private WorkAppMySQLConnectionManager _connections;
 	private HashMap<String, Object> _configMap;
 	private IApplicationLogger _logger;
 	private WorkAppQbFactory _fac;
@@ -36,7 +36,7 @@ public class ServiceManager
 	 * @param connections
 	 * @throws SQLException
 	 */
-	public ServiceManager (WorkAppMySQLConnectionManager connections, HashMap<String, Object> configMap, IApplicationLogger logger) throws SQLException
+	public ServiceManager(WorkAppMySQLConnectionManager connections, HashMap<String, Object> configMap, IApplicationLogger logger) throws SQLException
 	{
 		_connections = connections;
 		_configMap = configMap;

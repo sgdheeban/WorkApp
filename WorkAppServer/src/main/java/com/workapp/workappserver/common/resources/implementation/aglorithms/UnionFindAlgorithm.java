@@ -16,24 +16,29 @@ import com.workapp.workappserver.common.resources.interfaces.IAlgorithm;
  * @author dhgovindaraj
  *
  */
-public class UnionFindAlgorithm implements IAlgorithm {
+public class UnionFindAlgorithm implements IAlgorithm
+{
 	private int[] id;
 	private int[] size;
 
 	// O(N)
-	public UnionFindAlgorithm(int N) {
+	public UnionFindAlgorithm(int N)
+	{
 		id = new int[N];
 		size = new int[N];
-		for (int i = 0; i < N; i++) {
+		for (int i = 0; i < N; i++)
+		{
 			id[i] = i;
 			size[i] = 1;
 		}
 	}
 
 	// Implements path compression
-	private int findRoot(int p) {
+	private int findRoot(int p)
+	{
 		int index = -1;
-		while (id[p] != p) {
+		while (id[p] != p)
+		{
 			size[id[p]] -= size[p]; // updating sub-tree sizes
 			size[id[id[p]]] += size[p];
 			id[p] = id[id[p]]; // path compression
@@ -44,7 +49,8 @@ public class UnionFindAlgorithm implements IAlgorithm {
 	}
 
 	// Implements weighted union
-	public void union(int p, int q) throws AlgorithmException {
+	public void union(int p, int q) throws AlgorithmException
+	{
 		try
 		{
 			int pid = id[p];
@@ -56,25 +62,29 @@ public class UnionFindAlgorithm implements IAlgorithm {
 			int prootsize = size[proot];
 			int qrootsize = size[qroot];
 
-			if (prootsize <= qrootsize) {
+			if (prootsize <= qrootsize)
+			{
 				size[qroot] += size[proot];
 				id[proot] = qroot;
-			} else {
+			}
+			else
+			{
 				size[proot] += size[qroot];
 				id[qroot] = proot;
 			}
 		}
-		catch(RuntimeException ex) 
+		catch (RuntimeException ex)
 		{
 			throw new AlgorithmException("Union method throws Exception in UnionFind", ex.getCause());
 		}
-		catch(Exception ex) 
+		catch (Exception ex)
 		{
 			throw new AlgorithmException("Union method throws Exception in UnionFind", ex.getCause());
 		}
 	}
 
-	public boolean find(int p, int q) throws AlgorithmException {
+	public boolean find(int p, int q) throws AlgorithmException
+	{
 		try
 		{
 			int proot = findRoot(p);
@@ -82,14 +92,13 @@ public class UnionFindAlgorithm implements IAlgorithm {
 
 			if (proot == qroot)
 				return true;
-			else
-				return false;
+			else return false;
 		}
-		catch(RuntimeException ex) 
+		catch (RuntimeException ex)
 		{
 			throw new AlgorithmException("Find method throws Exception in UnionFind", ex.getCause());
 		}
-		catch(Exception ex) 
+		catch (Exception ex)
 		{
 			throw new AlgorithmException("Find method throws Exception in UnionFind", ex.getCause());
 		}

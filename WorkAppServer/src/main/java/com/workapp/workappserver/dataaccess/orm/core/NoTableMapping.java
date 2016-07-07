@@ -9,9 +9,9 @@ import java.util.Set;
  * Represents the mapping of columns to getters and setters of a POJO.
  * <p>
  * It is used when a class specifies a
- * {@link com.workapp.workappserver.dataaccess.orm.annotations.NoTable
- * NoTable} annotation, which means the class is not mapped to a table in the
- * database, and will be only used to store data from queries.
+ * {@link com.workapp.workappserver.dataaccess.orm.annotations.NoTable NoTable}
+ * annotation, which means the class is not mapped to a table in the database,
+ * and will be only used to store data from queries.
  */
 public class NoTableMapping extends Mapping
 {
@@ -138,8 +138,8 @@ public class NoTableMapping extends Mapping
 	 * Checks if
 	 * {@link com.workapp.workappserver.dataaccess.orm.annotations.NoTable
 	 * NoTable} is present and if a conflicting
-	 * {@link com.workapp.workappserver.dataaccess.orm.annotations.Table
-	 * Table} is not present.
+	 * {@link com.workapp.workappserver.dataaccess.orm.annotations.Table Table}
+	 * is not present.
 	 */
 	private void checkAnnotation(Class objectClass)
 	{

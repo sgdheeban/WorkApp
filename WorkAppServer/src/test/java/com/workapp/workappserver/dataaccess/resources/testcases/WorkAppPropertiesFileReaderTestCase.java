@@ -48,7 +48,8 @@ public class WorkAppPropertiesFileReaderTestCase
 	/**
 	 * Testing loading from filesystem
 	 */
-	@Test @Ignore
+	@Test
+	@Ignore
 	public void printPropertiesFromFileSystem()
 	{
 		IApplicationLogger logger;

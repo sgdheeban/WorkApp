@@ -71,7 +71,7 @@ public class WorkAppClient
 		sb.setLength(sb.length() - 1);
 		return sb.toString();
 	}
-	
+
 	/**
 	 * Private Static Variable Declaration
 	 */
@@ -270,7 +270,7 @@ public class WorkAppClient
 
 	private static void executeGetURL(String url, String contentType)
 	{
-		Client client =  null;
+		Client client = null;
 		try
 		{
 			client = ClientBuilder.newClient().register(JacksonJsonProvider.class);
@@ -286,23 +286,20 @@ public class WorkAppClient
 		}
 		finally
 		{
-			if(client != null)
+			if (client != null)
 				client.close();
 		}
 	}
 
 	private static void executePostURL(String url, String contentType, String payload)
 	{
-		Client client =  null;
+		Client client = null;
 		try
 		{
 			client = ClientBuilder.newClient().register(JacksonJsonProvider.class);
 			String input = payload;
 			Response response = client.target(url).request().post(Entity.entity(payload, contentType));
-			if (response.getStatus() != 201) 
-			{ 
-				throw new RuntimeException("Failed : HTTP error code : " + response.getStatus()); 
-			}
+			if (response.getStatus() != 201) { throw new RuntimeException("Failed : HTTP error code : " + response.getStatus()); }
 			System.out.println("Output from Server ....");
 			String output = response.readEntity(String.class);
 			System.out.println(output);
@@ -313,26 +310,26 @@ public class WorkAppClient
 		}
 		finally
 		{
-			if(client != null)
+			if (client != null)
 				client.close();
 		}
 	}
 
 	private static void executeURL(Quartet<String, String, String, String> quartet)
 	{
-		switch(quartet.getValue0())
+		switch (quartet.getValue0())
 		{
-			case GET :
-				executeGetURL(quartet.getValue1(), quartet.getValue2());
-				break;
-			case POST :
-				executePostURL(quartet.getValue1(), quartet.getValue2(), quartet.getValue3());
-				break;
-			default:
-				System.err.println("Wrong REST API Type chosen. Does not fit GET or PUT type. No action taken.");
-				break;
+		case GET:
+			executeGetURL(quartet.getValue1(), quartet.getValue2());
+			break;
+		case POST:
+			executePostURL(quartet.getValue1(), quartet.getValue2(), quartet.getValue3());
+			break;
+		default:
+			System.err.println("Wrong REST API Type chosen. Does not fit GET or PUT type. No action taken.");
+			break;
 		}
-		
+
 	}
 
 	private static void startConsole()

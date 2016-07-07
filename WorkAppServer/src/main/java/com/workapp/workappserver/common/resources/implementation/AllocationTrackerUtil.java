@@ -9,8 +9,8 @@ import com.google.monitoring.runtime.instrumentation.Sampler;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
 
 /**
- * AllocationTrackerUtil is a util class which tracks all objects created
- * by WorkApp
+ * AllocationTrackerUtil is a util class which tracks all objects created by
+ * WorkApp
  * 
  * @author dhgovindaraj
  *

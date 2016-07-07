@@ -25,6 +25,7 @@ public class WorkAppResource implements IResource
 
 	/**
 	 * Initialize Resources
+	 * 
 	 * @param logger
 	 * @param serviceManager
 	 */
@@ -82,5 +83,5 @@ public class WorkAppResource implements IResource
 		Response response = null;
 		return response;
 	}
-	
+
 }

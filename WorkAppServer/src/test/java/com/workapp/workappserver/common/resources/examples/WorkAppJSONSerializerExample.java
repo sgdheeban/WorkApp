@@ -9,7 +9,6 @@ import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.common.resources.implementation.JSONSerializer;
 import com.workapp.workappserver.dataaccess.resources.examples.testtable.User;
 
-
 /**
  * Sample JSON Serializer Example
  * 
