@@ -9,7 +9,7 @@ import java.util.List;
 
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.dataaccess.orm.core.Persist;
 import com.workapp.workappserver.dataaccess.resources.examples.testtable.User;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
@@ -26,7 +26,7 @@ public class WorkAppOrmExample
 
 	public void simpleTableORMExample() throws SystemException
 	{
-		IApplicationLogger logger = new WorkAppLogger(null);
+		IApplicationLogger logger = new AppLogger(null);
 		String dbUrl = "jdbc:mysql://localhost:3306/testdb";
 		String username = "root";
 		String password = "password";

@@ -3,7 +3,7 @@ package com.workapp.workappserver.common.resources.examples;
 import java.util.Map;
 
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.common.resources.implementation.pipe.WorkAppAsynchronousPipe;
 import com.workapp.workappserver.common.resources.implementation.workflow.WorkAppWorker;
 import com.workapp.workappserver.common.resources.implementation.workflow.WorkAppWorkflow;
@@ -21,7 +21,7 @@ public class WorkAppASyncPipeMultiProcessorExample
 
 	public static void main(String[] args) throws Exception
 	{
-		logger = new WorkAppLogger(null);
+		logger = new AppLogger(null);
 
 		// a workflow reader, which creates data
 		// and will send them through pipeline

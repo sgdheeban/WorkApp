@@ -8,8 +8,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import com.workapp.workappserver.common.exception.SystemException;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
-import com.workapp.workappserver.common.resources.implementation.WorkAppContext;
+import com.workapp.workappserver.common.logging.AppLogger;
+import com.workapp.workappserver.common.resources.implementation.AppContext;
 import com.workapp.workappserver.common.resources.interfaces.IContext;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
 
@@ -21,15 +21,15 @@ import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppProp
  */
 public class WorkAppLoggerTestCase
 {
-	private static IContext ctx = new WorkAppContext("2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99", "Test GUID");
+	private static IContext ctx = new AppContext("2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99", "Test GUID");
 
 	@Test
 	public void doBasicTest()
 	{
-		WorkAppLogger logger;
+		AppLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			logger.LogFatal(ctx, WorkAppLoggerTestCase.class);
 			logger.LogError(ctx, WorkAppLoggerTestCase.class);
 			logger.LogWarn(ctx, WorkAppLoggerTestCase.class);
@@ -57,11 +57,11 @@ public class WorkAppLoggerTestCase
 	{
 		try
 		{
-			WorkAppLogger logger;
+			AppLogger logger;
 			String fileSystemLog4jPath = "/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties";
 			WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader.getInstance(null);
 			Properties prop = propertiesFileReader.loadPropertyFromFileSystem(fileSystemLog4jPath);
-			logger = new WorkAppLogger(prop);
+			logger = new AppLogger(prop);
 			logger.LogFatal(ctx, WorkAppLoggerTestCase.class);
 			logger.LogError(ctx, WorkAppLoggerTestCase.class);
 			logger.LogWarn(ctx, WorkAppLoggerTestCase.class);

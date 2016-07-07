@@ -21,7 +21,7 @@ import com.workapp.workappserver.common.exception.CryptoException;
 import com.workapp.workappserver.common.exception.MD5HashingException;
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.common.resources.implementation.WorkAppUtil;
 
 /**
@@ -44,7 +44,7 @@ public class WorkAppUtilityTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			String pid1 = WorkAppUtil.getMyPid(logger, null);
 			String pid2 = WorkAppUtil.getMyPid(logger, null);
 			assertEquals(pid1, pid2);
@@ -68,7 +68,7 @@ public class WorkAppUtilityTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			String hostname1 = WorkAppUtil.getMyHostInfo(logger, null, false);
 			String hostname2 = WorkAppUtil.getMyHostInfo(logger, null, false);
 			String hostIP1 = WorkAppUtil.getMyHostInfo(logger, null, true);
@@ -95,7 +95,7 @@ public class WorkAppUtilityTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			String MD5HashString1 = WorkAppUtil.generateMD5HashString(logger, null, "sgd");
 			String MD5HashString2 = WorkAppUtil.generateMD5HashString(logger, null, "sgd");
 			assertEquals(MD5HashString1, MD5HashString2);
@@ -118,7 +118,7 @@ public class WorkAppUtilityTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			byte[] MD5HashBytes1 = WorkAppUtil.generateMD5HashBytes(logger, null, "sgd");
 			byte[] MD5HashBytes2 = WorkAppUtil.generateMD5HashBytes(logger, null, "sgd");
 			assertArrayEquals(MD5HashBytes1, MD5HashBytes2);
@@ -142,7 +142,7 @@ public class WorkAppUtilityTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			File file = new File("src/main/resources/testchecksumfile");
 			String absolutePath = file.getAbsolutePath();
 			String fileChecksumString1 = WorkAppUtil.generateFileChecksumString(logger, null, absolutePath);
@@ -168,7 +168,7 @@ public class WorkAppUtilityTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			File file = new File("src/main/resources/testchecksumfile");
 			String absolutePath = file.getAbsolutePath();
 			byte[] fileChecksumBytes1 = WorkAppUtil.generateFileChecksumBytes(logger, null, absolutePath);
@@ -191,7 +191,7 @@ public class WorkAppUtilityTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			String sourceStr = "test-str22";
 			String encodedString = WorkAppUtil.encodeString(logger, null, sourceStr);
 			String decodedString = WorkAppUtil.decodeString(logger, null, encodedString);
@@ -213,7 +213,7 @@ public class WorkAppUtilityTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			String uuid1 = WorkAppUtil.generateUUID(logger, null);
 			String uuid2 = WorkAppUtil.generateUUID(logger, null);
 			assertNotEquals(uuid1, uuid2);
@@ -236,7 +236,7 @@ public class WorkAppUtilityTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			String origString = "this is a test string\n";
 			SecretKey secretKey = WorkAppUtil.generateAESRandomKey(logger);
 			String encryptedText = WorkAppUtil.encryptString(logger, null, origString, secretKey);
@@ -258,7 +258,7 @@ public class WorkAppUtilityTestCase
 	{
 		try
 		{
-			IApplicationLogger logger = new WorkAppLogger(null);
+			IApplicationLogger logger = new AppLogger(null);
 			File origFile = new File("src/main/resources/testchecksumfile");
 			File encryptedFile = new File("src/main/resources/testchecksumfile.encrypted");
 			File decryptedFile = new File("src/main/resources/testchecksumfile.decrypted");

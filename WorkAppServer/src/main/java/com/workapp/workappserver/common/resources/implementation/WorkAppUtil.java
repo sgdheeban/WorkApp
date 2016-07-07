@@ -31,7 +31,7 @@ import com.workapp.workappserver.common.exception.MD5HashingException;
 import com.workapp.workappserver.common.exception.SingletonInitException;
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.common.resources.interfaces.IUtil;
 
 /**

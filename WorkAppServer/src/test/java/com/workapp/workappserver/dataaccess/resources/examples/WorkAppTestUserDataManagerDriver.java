@@ -6,7 +6,7 @@ import java.util.Calendar;
 
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 
 /**
  * Test Driver to test WorkAppTestUserDataManager
@@ -18,7 +18,7 @@ public class WorkAppTestUserDataManagerDriver
 {
 	public static void main(String args[]) throws IOException, InterruptedException, SystemException
 	{
-		IApplicationLogger logger = new WorkAppLogger(null);
+		IApplicationLogger logger = new AppLogger(null);
 		WorkAppTestUserDataManager userDataManager = (WorkAppTestUserDataManager) WorkAppTestUserDataManager.getInstance(logger);
 		Calendar cal = Calendar.getInstance();
 		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:sss");

@@ -10,7 +10,7 @@ import java.sql.Statement;
 
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 
@@ -360,7 +360,7 @@ public class WorkAppMySQLConnectionManagerExample
 
 	public static void main(String args[]) throws IOException, SystemException
 	{
-		IApplicationLogger logger = new WorkAppLogger(null);
+		IApplicationLogger logger = new AppLogger(null);
 		WorkAppMySQLConnectionManagerExample app = new WorkAppMySQLConnectionManagerExample();
 		app.testMySQLStatementUsingAdhocConnection(logger);
 		app.testMySQLQueryUsingAdhocConnection(logger);

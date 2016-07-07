@@ -7368,3 +7368,795 @@ Content-Type: text/plain
 2016-07-05 18:33:35 DEBUG QueuedThreadPool:561 D-SJN-00543448:70504 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6f6ee930
 2016-07-05 18:33:35 DEBUG ManagedSelector:230 D-SJN-00543448:70504 Selector loop waiting on select
 2016-07-05 18:33:44 DEBUG session:347 D-SJN-00543448:70504 Scavenging sessions at 1467768824299
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 configFile:D:\\git_learn\\WorkApp\\WorkAppServer\\config\\dev_config_windows.properties
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppServer\\config\\log4j.properties
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 logLevel:debug
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 mode:rest
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 port:8080
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 trackAllocation:false
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 detectJARClash:false
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 schemaFile:null
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 database:jdbc:mysql://localhost:3306/
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 dbUser:root
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 dbPassword:password
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 dbSchema:workapp
+2016-07-06 17:16:08 DEBUG WorkAppMainServer:98 D-SJN-00543448:79272 dbPoolSize:20
+2016-07-06 17:16:08 DEBUG WorkAppMySQLConnectionManager:98 D-SJN-00543448:79272 Attempting to connect to db at: jdbc:mysql://localhost:3306/workapp
+2016-07-06 17:16:09 DEBUG log:176 D-SJN-00543448:79272 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-07-06 17:16:09 INFO  log:186 D-SJN-00543448:79272 Logging initialized @4315ms
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.server.session.SessionHandler@6404f418 added {org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9,AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 o.e.j.s.ServletContextHandler@1de5f259{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@6404f418,AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.server.session.SessionHandler@6404f418 added {org.eclipse.jetty.servlet.ServletHandler@4b0d79fc,AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.server.Server@60099951 added {qtp1101048445{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 HttpConnectionFactory@548d708a[HTTP/1.1] added {HttpConfiguration@4b013c76{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@60099951,UNMANAGED}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{null,[]}{0.0.0.0:0} added {qtp1101048445{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@7bba5817,AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@79e4c792,POJO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@548d708a[HTTP/1.1],AUTO}
+2016-07-06 17:16:09 DEBUG ServerConnector:393 D-SJN-00543448:79272 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@548d708a[HTTP/1.1]
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1349883,MANAGED}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.server.Server@60099951 added {ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.server.Server@60099951 added {o.e.j.s.ServletContextHandler@1de5f259{/,null,null},AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.servlet.ServletHandler@4b0d79fc added {org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.servlet.ServletHandler@4b0d79fc added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-1040be71,POJO}
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.server.Server@60099951
+2016-07-06 17:16:09 INFO  Server:339 D-SJN-00543448:79272 jetty-9.3.0.M2
+2016-07-06 17:16:09 DEBUG AbstractHandler:58 D-SJN-00543448:79272 starting org.eclipse.jetty.server.Server@60099951
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting qtp1101048445{STOPPED,8<=0<=200,i=0,q=0}
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @4566ms qtp1101048445{STARTED,8<=8<=200,i=5,q=0}
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting o.e.j.s.ServletContextHandler@1de5f259{/,null,null}
+2016-07-06 17:16:09 DEBUG PreEncodedHttpField:65 D-SJN-00543448:79272 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@6f204a1a]
+2016-07-06 17:16:09 DEBUG AbstractHandler:58 D-SJN-00543448:79272 starting o.e.j.s.ServletContextHandler@1de5f259{/,null,STARTING}
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.server.session.SessionHandler@6404f418
+2016-07-06 17:16:09 DEBUG AbstractHandler:58 D-SJN-00543448:79272 starting org.eclipse.jetty.server.session.SessionHandler@6404f418
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6e535154,MANAGED}
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.server.session.HashSessionIdManager@25df00a0
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @4633ms org.eclipse.jetty.server.session.HashSessionIdManager@25df00a0
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.server.Server@60099951 added {org.eclipse.jetty.server.session.HashSessionIdManager@25df00a0,MANAGED}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9 added {org.eclipse.jetty.server.session.HashSessionIdManager@25df00a0,UNMANAGED}
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6e535154
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @4646ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6e535154
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @4653ms org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.servlet.ServletHandler@4b0d79fc
+2016-07-06 17:16:09 DEBUG ServletHandler:1495 D-SJN-00543448:79272 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-1040be71 from default=false
+2016-07-06 17:16:09 DEBUG ServletHandler:1516 D-SJN-00543448:79272 filterNameMap={}
+2016-07-06 17:16:09 DEBUG ServletHandler:1517 D-SJN-00543448:79272 pathFilters=null
+2016-07-06 17:16:09 DEBUG ServletHandler:1518 D-SJN-00543448:79272 servletFilterMap=null
+2016-07-06 17:16:09 DEBUG ServletHandler:1519 D-SJN-00543448:79272 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-06 17:16:09 DEBUG ServletHandler:1520 D-SJN-00543448:79272 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-1040be71=org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-06 17:16:09 DEBUG ServletHandler:165 D-SJN-00543448:79272 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@4b0d79fc
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.servlet.ServletHandler@4b0d79fc added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-07-06 17:16:09 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 org.eclipse.jetty.servlet.ServletHandler@4b0d79fc added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee,POJO}
+2016-07-06 17:16:09 DEBUG ServletHandler:1495 D-SJN-00543448:79272 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-1040be71 from default=false
+2016-07-06 17:16:09 DEBUG ServletHandler:1495 D-SJN-00543448:79272 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee from default=false
+2016-07-06 17:16:09 DEBUG ServletHandler:1516 D-SJN-00543448:79272 filterNameMap={}
+2016-07-06 17:16:09 DEBUG ServletHandler:1517 D-SJN-00543448:79272 pathFilters=null
+2016-07-06 17:16:09 DEBUG ServletHandler:1518 D-SJN-00543448:79272 servletFilterMap=null
+2016-07-06 17:16:09 DEBUG ServletHandler:1519 D-SJN-00543448:79272 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-07-06 17:16:09 DEBUG ServletHandler:1520 D-SJN-00543448:79272 servletNameMap={org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false, org.glassfish.jersey.servlet.ServletContainer-1040be71=org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-06 17:16:09 DEBUG AbstractHandler:58 D-SJN-00543448:79272 starting org.eclipse.jetty.servlet.ServletHandler@4b0d79fc
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @4667ms org.eclipse.jetty.servlet.ServletHandler@4b0d79fc
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @4668ms org.eclipse.jetty.server.session.SessionHandler@6404f418
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @4675ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-07-06 17:16:09 DEBUG BaseHolder:97 D-SJN-00543448:79272 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@18b4aac2
+2016-07-06 17:16:09 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @4677ms org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-07-06 17:16:09 DEBUG ServletHolder:612 D-SJN-00543448:79272 Servlet.init org.glassfish.jersey.servlet.ServletContainer@3b35a229 for org.glassfish.jersey.servlet.ServletContainer-1040be71
+2016-07-06 17:16:11 INFO  ContextHandler:745 D-SJN-00543448:79272 Started o.e.j.s.ServletContextHandler@1de5f259{/,null,AVAILABLE}
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6239ms o.e.j.s.ServletContextHandler@1de5f259{/,null,AVAILABLE}
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-06 17:16:11 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@7bba5817
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6274ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@7bba5817
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting HttpConnectionFactory@548d708a[HTTP/1.1]
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6275ms HttpConnectionFactory@548d708a[HTTP/1.1]
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1349883
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=-1 selected=-1
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6424ms org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.io.ManagedSelector@5327a06e id=1 keys=-1 selected=-1
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:66 D-SJN-00543448:79272 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 execute
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:132 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produce enter
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:138 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 producing
+2016-07-06 17:16:11 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6439ms org.eclipse.jetty.io.ManagedSelector@5327a06e id=1 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue org.eclipse.jetty.io.ManagedSelector@5327a06e id=1 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.io.ManagedSelector@2679311f id=2 keys=-1 selected=-1
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run org.eclipse.jetty.io.ManagedSelector@5327a06e id=1 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:66 D-SJN-00543448:79272 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@72d84b98 execute
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:132 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@72d84b98 produce enter
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:138 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@72d84b98 producing
+2016-07-06 17:16:11 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6461ms org.eclipse.jetty.io.ManagedSelector@2679311f id=2 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue org.eclipse.jetty.io.ManagedSelector@2679311f id=2 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:185 D-SJN-00543448:79272 starting org.eclipse.jetty.io.ManagedSelector@287f7811 id=3 keys=-1 selected=-1
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run org.eclipse.jetty.io.ManagedSelector@2679311f id=2 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:66 D-SJN-00543448:79272 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@35643dc4 execute
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:132 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@35643dc4 produce enter
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:138 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@35643dc4 producing
+2016-07-06 17:16:11 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6486ms org.eclipse.jetty.io.ManagedSelector@287f7811 id=3 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue org.eclipse.jetty.io.ManagedSelector@287f7811 id=3 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6487ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1349883
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run org.eclipse.jetty.io.ManagedSelector@287f7811 id=3 keys=0 selected=0
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:66 D-SJN-00543448:79272 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@491e24fb execute
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:132 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@491e24fb produce enter
+2016-07-06 17:16:11 DEBUG ExecuteProduceRun:138 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@491e24fb producing
+2016-07-06 17:16:11 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:16:11 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@421a4ee1,POJO}
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue acceptor-0@421a4ee1
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run acceptor-0@421a4ee1
+2016-07-06 17:16:11 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-1@1237e0be,POJO}
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue acceptor-1@1237e0be
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run acceptor-1@1237e0be
+2016-07-06 17:16:11 DEBUG ContainerLifeCycle:324 D-SJN-00543448:79272 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-2@528f8f8b,POJO}
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue acceptor-2@528f8f8b
+2016-07-06 17:16:11 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run acceptor-2@528f8f8b
+2016-07-06 17:16:11 INFO  ServerConnector:267 D-SJN-00543448:79272 Started ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6582ms ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-06 17:16:11 INFO  Server:391 D-SJN-00543448:79272 Started @6583ms
+2016-07-06 17:16:11 DEBUG AbstractLifeCycle:177 D-SJN-00543448:79272 STARTED @6583ms org.eclipse.jetty.server.Server@60099951
+2016-07-06 17:16:39 DEBUG session:347 D-SJN-00543448:79272 Scavenging sessions at 1467850599540
+2016-07-06 17:17:09 DEBUG session:347 D-SJN-00543448:79272 Scavenging sessions at 1467850629557
+2016-07-06 17:17:28 DEBUG ManagedSelector:116 D-SJN-00543448:79272 Queued change org.eclipse.jetty.io.ManagedSelector$Accept@4f5cd68a on org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=0 selected=0
+2016-07-06 17:17:28 DEBUG ManagedSelector:233 D-SJN-00543448:79272 Selector loop woken up from select, 0/0 selected
+2016-07-06 17:17:28 DEBUG ManagedSelector:213 D-SJN-00543448:79272 Running change org.eclipse.jetty.io.ManagedSelector$Accept@4f5cd68a
+2016-07-06 17:17:28 DEBUG ManagedSelector:116 D-SJN-00543448:79272 Queued change org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@6bbc6bf9 on org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=1 selected=0
+2016-07-06 17:17:28 DEBUG ExecuteProduceRun:143 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produced org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@6bbc6bf9
+2016-07-06 17:17:28 DEBUG ExecuteProduceRun:184 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 dispatch
+2016-07-06 17:17:28 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:28 DEBUG ExecuteProduceRun:190 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 run org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@6bbc6bf9
+2016-07-06 17:17:28 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:28 DEBUG ExecuteProduceRun:114 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 run
+2016-07-06 17:17:28 DEBUG ExecuteProduceRun:132 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produce enter
+2016-07-06 17:17:28 DEBUG ExecuteProduceRun:138 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 producing
+2016-07-06 17:17:28 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:17:28 DEBUG AbstractEndPoint:105 D-SJN-00543448:79272 onOpen SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,20/30000,null}{io=0,kio=0,kro=0}
+2016-07-06 17:17:28 DEBUG IdleTimeout:156 D-SJN-00543448:79272 SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,20/30000,null}{io=0,kio=0,kro=0} idle timeout check, elapsed: 20 ms, remaining: 29980 ms
+2016-07-06 17:17:29 DEBUG HttpChannel:96 D-SJN-00543448:79272 new HttpChannelOverHttp@3855baba{r=0,c=false,a=IDLE,uri=-} -> SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,150/30000,null}{io=0,kio=0,kro=0},null,HttpChannelState@266ca3f{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-06 17:17:29 DEBUG HttpConnection:103 D-SJN-00543448:79272 New HTTP Connection HttpConnection@69e2dab3<--null
+2016-07-06 17:17:29 DEBUG AbstractConnection:171 D-SJN-00543448:79272 onOpen HttpConnection@69e2dab3<--null
+2016-07-06 17:17:29 DEBUG AbstractConnection:117 D-SJN-00543448:79272 fillInterested HttpConnection@69e2dab3<--null
+2016-07-06 17:17:29 DEBUG FillInterest:61 D-SJN-00543448:79272 FillInterest@4631c9ee{true,AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}} register AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}
+2016-07-06 17:17:29 DEBUG FillInterest:75 D-SJN-00543448:79272 FillInterest@4631c9ee{true,AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}} register AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}
+2016-07-06 17:17:29 DEBUG SelectChannelEndPoint:162 D-SJN-00543448:79272 changeInterests p=false 0->1 for SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=0,kro=0}
+2016-07-06 17:17:29 DEBUG ManagedSelector:116 D-SJN-00543448:79272 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@3979b4d9 on org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=1 selected=0
+2016-07-06 17:17:29 DEBUG ManagedSelector:233 D-SJN-00543448:79272 Selector loop woken up from select, 0/1 selected
+2016-07-06 17:17:29 DEBUG ManagedSelector:213 D-SJN-00543448:79272 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@3979b4d9
+2016-07-06 17:17:29 DEBUG ManagedSelector:410 D-SJN-00543448:79272 Created SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=0,kro=0}
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:193 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 ran org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@6bbc6bf9
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:206 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produce exit
+2016-07-06 17:17:29 DEBUG SelectChannelEndPoint:128 D-SJN-00543448:79272 Key interests updated 0 -> 1 on SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,R,-,10/30000,HttpConnection}{io=1,kio=1,kro=0}
+2016-07-06 17:17:29 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:17:29 DEBUG QueuedThreadPool:561 D-SJN-00543448:79272 ran org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=1 selected=0
+2016-07-06 17:17:29 DEBUG ManagedSelector:233 D-SJN-00543448:79272 Selector loop woken up from select, 1/1 selected
+2016-07-06 17:17:29 DEBUG SelectChannelEndPoint:99 D-SJN-00543448:79272 onSelected 1->0 for SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,R,-,10/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:143 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produced org.eclipse.jetty.io.SelectChannelEndPoint$2@28c1c5ca
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:184 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 dispatch
+2016-07-06 17:17:29 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:190 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 run org.eclipse.jetty.io.SelectChannelEndPoint$2@28c1c5ca
+2016-07-06 17:17:29 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:29 DEBUG FillInterest:91 D-SJN-00543448:79272 FillInterest@4631c9ee{true,AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}} fillable AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:114 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 run
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:132 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produce enter
+2016-07-06 17:17:29 DEBUG HttpConnection:214 D-SJN-00543448:79272 HttpConnection@69e2dab3<--null onFillable enter HttpChannelState@266ca3f{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:138 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 producing
+2016-07-06 17:17:29 DEBUG SelectChannelEndPoint:128 D-SJN-00543448:79272 Key interests updated 1 -> 0 on SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,10/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:17:29 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:17:29 DEBUG ChannelEndPoint:150 D-SJN-00543448:79272 filled 195 SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,10/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:17:29 DEBUG HttpConnection:319 D-SJN-00543448:79272 HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=195,c=8192,r=195]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 195
+2016-07-06 17:17:29 DEBUG HttpConnection:336 D-SJN-00543448:79272 HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=195,c=8192,r=195]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@26062ea2[p=0,l=195,c=8192,r=195]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-06 17:17:29 DEBUG HttpParser:1157 D-SJN-00543448:79272 parseNext s=START HeapByteBuffer@26062ea2[p=0,l=195,c=8192,r=195]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 START --> SPACE1
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 SPACE1 --> URI
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 URI --> SPACE2
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 SPACE2 --> REQUEST_VERSION
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 REQUEST_VERSION --> HEADER
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER --> HEADER_VALUE
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER_IN_VALUE --> HEADER
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER --> HEADER_VALUE
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER_IN_VALUE --> HEADER
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER --> HEADER_VALUE
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER_IN_VALUE --> HEADER
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER --> HEADER_IN_VALUE
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER_IN_VALUE --> HEADER
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 HEADER --> END
+2016-07-06 17:17:29 DEBUG HttpChannel:517 D-SJN-00543448:79272 HttpChannelOverHttp@3855baba{r=1,c=false,a=IDLE,uri=-} onRequestComplete
+2016-07-06 17:17:29 DEBUG HttpInput:366 D-SJN-00543448:79272 org.eclipse.jetty.server.HttpInputOverHTTP@60416b72 addContent EOF
+2016-07-06 17:17:29 DEBUG HttpConnection:341 D-SJN-00543448:79272 HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=195,l=195,c=8192,r=0]={GET /workapp/v1/t... keep-alive\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed true HttpParser{s=END,0 of 0}
+2016-07-06 17:17:29 DEBUG HttpConnection:191 D-SJN-00543448:79272 releaseRequestBuffer HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=195,l=195,c=8192,r=0]={GET /workapp/v1/t... keep-alive\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:17:29 DEBUG HttpChannel:252 D-SJN-00543448:79272 HttpChannelOverHttp@3855baba{r=1,c=false,a=IDLE,uri=-} handle //localhost:8080/workapp/v1/test 
+2016-07-06 17:17:29 DEBUG HttpChannelState:181 D-SJN-00543448:79272 HttpChannelState@266ca3f{s=IDLE a=null i=true r=!P!U w=false} handling IDLE
+2016-07-06 17:17:29 DEBUG HttpChannel:267 D-SJN-00543448:79272 HttpChannelOverHttp@3855baba{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/test} action REQUEST_DISPATCH
+2016-07-06 17:17:29 DEBUG Server:498 D-SJN-00543448:79272 REQUEST on HttpChannelOverHttp@3855baba{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/test}
+GET //localhost:8080/workapp/v1/test
+User-Agent: Jersey/2.19 (HttpUrlConnection 1.8.0_92)
+Host: localhost:8080
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+
+
+2016-07-06 17:17:29 DEBUG ContextHandler:982 D-SJN-00543448:79272 scope null||/workapp/v1/test @ o.e.j.s.ServletContextHandler@1de5f259{/,null,AVAILABLE}
+2016-07-06 17:17:29 DEBUG ContextHandler:1056 D-SJN-00543448:79272 context=||/workapp/v1/test @ o.e.j.s.ServletContextHandler@1de5f259{/,null,AVAILABLE}
+2016-07-06 17:17:29 DEBUG session:179 D-SJN-00543448:79272 sessionManager=org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9
+2016-07-06 17:17:29 DEBUG session:180 D-SJN-00543448:79272 session=null
+2016-07-06 17:17:29 DEBUG ServletHandler:501 D-SJN-00543448:79272 servlet ||/workapp/v1/test -> org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,true
+2016-07-06 17:17:29 DEBUG ServletHandler:564 D-SJN-00543448:79272 chain=null
+2016-07-06 17:17:29 DEBUG HttpChannel:616 D-SJN-00543448:79272 Commit HTTP/1.1{s=200,h=3} to HttpChannelOverHttp@3855baba{r=1,c=true,a=DISPATCHED,uri=/workapp/v1/test}
+2016-07-06 17:17:29 DEBUG HttpConnection:618 D-SJN-00543448:79272 org.eclipse.jetty.server.HttpConnection$SendCallback@7fbf81c3[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@36b1ac2f] generate: NEED_HEADER (null,[p=0,l=4,c=8192,r=4],true)@START
+2016-07-06 17:17:29 DEBUG HttpConnection:618 D-SJN-00543448:79272 org.eclipse.jetty.server.HttpConnection$SendCallback@7fbf81c3[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@36b1ac2f] generate: FLUSH ([p=0,l=126,c=8192,r=126],[p=0,l=4,c=8192,r=4],true)@COMPLETING
+2016-07-06 17:17:29 DEBUG WriteFlusher:295 D-SJN-00543448:79272 write: WriteFlusher@594c4cee{IDLE} [HeapByteBuffer@26062ea2[p=0,l=126,c=8192,r=126]={<<<HTTP/1.1 200 OK\r\n...y(9.3.0.M2)\r\n\r\n>>>image/gif, image/...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@56493075[p=0,l=4,c=8192,r=4]={<<<Test>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+2016-07-06 17:17:29 DEBUG WriteFlusher:118 D-SJN-00543448:79272 update WriteFlusher@594c4cee{WRITING}:IDLE-->WRITING
+2016-07-06 17:17:29 DEBUG ChannelEndPoint:196 D-SJN-00543448:79272 flushed 130 SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,W,120/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:17:29 DEBUG WriteFlusher:412 D-SJN-00543448:79272 Flushed=true 126/126+1 WriteFlusher@594c4cee{WRITING}
+2016-07-06 17:17:29 DEBUG WriteFlusher:118 D-SJN-00543448:79272 update WriteFlusher@594c4cee{IDLE}:WRITING-->IDLE
+2016-07-06 17:17:29 DEBUG HttpConnection:618 D-SJN-00543448:79272 org.eclipse.jetty.server.HttpConnection$SendCallback@7fbf81c3[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@36b1ac2f] generate: DONE ([p=126,l=126,c=8192,r=0],[p=4,l=4,c=8192,r=0],true)@END
+2016-07-06 17:17:29 DEBUG Server:510 D-SJN-00543448:79272 RESPONSE for /workapp/v1/test h=true
+200 OK
+Date: Thu, 07 Jul 2016 00:17:29 GMT
+Content-Length: 4
+Content-Type: text/plain
+
+
+2016-07-06 17:17:29 DEBUG HttpChannelState:298 D-SJN-00543448:79272 HttpChannelState@266ca3f{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+2016-07-06 17:17:29 DEBUG HttpParser:1508 D-SJN-00543448:79272 reset HttpParser{s=END,0 of 0}
+2016-07-06 17:17:29 DEBUG HttpParser:1528 D-SJN-00543448:79272 END --> START
+2016-07-06 17:17:29 DEBUG HttpChannel:423 D-SJN-00543448:79272 HttpChannelOverHttp@3855baba{r=1,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+2016-07-06 17:17:29 DEBUG ChannelEndPoint:150 D-SJN-00543448:79272 filled 0 SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,10/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:17:29 DEBUG ChannelEndPoint:150 D-SJN-00543448:79272 filled 0 SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,10/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:17:29 DEBUG HttpConnection:319 D-SJN-00543448:79272 HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 0
+2016-07-06 17:17:29 DEBUG HttpConnection:336 D-SJN-00543448:79272 HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-06 17:17:29 DEBUG HttpParser:1157 D-SJN-00543448:79272 parseNext s=START HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:17:29 DEBUG HttpConnection:341 D-SJN-00543448:79272 HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=START,0 of -1}
+2016-07-06 17:17:29 DEBUG HttpConnection:191 D-SJN-00543448:79272 releaseRequestBuffer HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:17:29 DEBUG AbstractConnection:117 D-SJN-00543448:79272 fillInterested HttpConnection@69e2dab3<--null
+2016-07-06 17:17:29 DEBUG FillInterest:61 D-SJN-00543448:79272 FillInterest@4631c9ee{true,AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}} register AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}
+2016-07-06 17:17:29 DEBUG FillInterest:75 D-SJN-00543448:79272 FillInterest@4631c9ee{true,AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}} register AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}
+2016-07-06 17:17:29 DEBUG SelectChannelEndPoint:162 D-SJN-00543448:79272 changeInterests p=false 0->1 for SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=0,kro=1}
+2016-07-06 17:17:29 DEBUG ManagedSelector:116 D-SJN-00543448:79272 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@3979b4d9 on org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=1 selected=0
+2016-07-06 17:17:29 DEBUG ManagedSelector:233 D-SJN-00543448:79272 Selector loop woken up from select, 0/1 selected
+2016-07-06 17:17:29 DEBUG HttpConnection:257 D-SJN-00543448:79272 HttpConnection@69e2dab3<--null onFillable exit HttpChannelState@266ca3f{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-06 17:17:29 DEBUG ManagedSelector:213 D-SJN-00543448:79272 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@3979b4d9
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:193 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 ran org.eclipse.jetty.io.SelectChannelEndPoint$2@28c1c5ca
+2016-07-06 17:17:29 DEBUG SelectChannelEndPoint:128 D-SJN-00543448:79272 Key interests updated 0 -> 1 on SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,R,-,10/30000,HttpConnection}{io=1,kio=1,kro=1}
+2016-07-06 17:17:29 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:17:29 DEBUG ExecuteProduceRun:206 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produce exit
+2016-07-06 17:17:29 DEBUG QueuedThreadPool:561 D-SJN-00543448:79272 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:34 DEBUG ManagedSelector:233 D-SJN-00543448:79272 Selector loop woken up from select, 1/1 selected
+2016-07-06 17:17:34 DEBUG SelectChannelEndPoint:99 D-SJN-00543448:79272 onSelected 1->0 for SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,R,-,5018/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:143 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produced org.eclipse.jetty.io.SelectChannelEndPoint$2@28c1c5ca
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:184 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 dispatch
+2016-07-06 17:17:34 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:190 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 run org.eclipse.jetty.io.SelectChannelEndPoint$2@28c1c5ca
+2016-07-06 17:17:34 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:34 DEBUG FillInterest:91 D-SJN-00543448:79272 FillInterest@4631c9ee{true,AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}} fillable AC.ReadCB@69e2dab3{HttpConnection@69e2dab3<--null}
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:114 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 run
+2016-07-06 17:17:34 DEBUG HttpConnection:214 D-SJN-00543448:79272 HttpConnection@69e2dab3<--null onFillable enter HttpChannelState@266ca3f{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:132 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produce enter
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:138 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 producing
+2016-07-06 17:17:34 DEBUG ChannelEndPoint:150 D-SJN-00543448:79272 filled -1 SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,5018/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-06 17:17:34 DEBUG ChannelEndPoint:73 D-SJN-00543448:79272 ishut SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,5018/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:17:34 DEBUG SelectChannelEndPoint:128 D-SJN-00543448:79272 Key interests updated 1 -> 0 on SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,Open,in,out,-,-,5018/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:17:34 DEBUG HttpParser:1490 D-SJN-00543448:79272 atEOF HttpParser{s=START,0 of -1}
+2016-07-06 17:17:34 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:17:34 DEBUG HttpConnection:319 D-SJN-00543448:79272 HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled -1
+2016-07-06 17:17:34 DEBUG HttpConnection:336 D-SJN-00543448:79272 HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-06 17:17:34 DEBUG HttpParser:1157 D-SJN-00543448:79272 parseNext s=START HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:17:34 DEBUG HttpParser:1528 D-SJN-00543448:79272 START --> CLOSED
+2016-07-06 17:17:34 DEBUG AbstractEndPoint:114 D-SJN-00543448:79272 onClose SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,CLOSED,ISHUT,out,-,-,5018/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:17:34 DEBUG ChannelEndPoint:123 D-SJN-00543448:79272 close SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,CLOSED,ISHUT,out,-,-,5018/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:17:34 DEBUG ManagedSelector:116 D-SJN-00543448:79272 Queued change org.eclipse.jetty.io.ManagedSelector$2@202c4530 on org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=1 selected=0
+2016-07-06 17:17:34 DEBUG HttpConnection:341 D-SJN-00543448:79272 HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=CLOSED,0 of -1}
+2016-07-06 17:17:34 DEBUG ManagedSelector:233 D-SJN-00543448:79272 Selector loop woken up from select, 0/0 selected
+2016-07-06 17:17:34 DEBUG HttpConnection:191 D-SJN-00543448:79272 releaseRequestBuffer HttpConnection@69e2dab3<--HeapByteBuffer@26062ea2[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:143 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produced org.eclipse.jetty.io.ManagedSelector$2@202c4530
+2016-07-06 17:17:34 DEBUG HttpConnection:257 D-SJN-00543448:79272 HttpConnection@69e2dab3<--null onFillable exit HttpChannelState@266ca3f{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:184 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 dispatch
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:193 D-SJN-00543448:79272 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 ran org.eclipse.jetty.io.SelectChannelEndPoint$2@28c1c5ca
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:138 D-SJN-00543448:79272 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 producing
+2016-07-06 17:17:34 DEBUG QueuedThreadPool:360 D-SJN-00543448:79272 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:34 DEBUG ManagedSelector:230 D-SJN-00543448:79272 Selector loop waiting on select
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:190 D-SJN-00543448:79272 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 run org.eclipse.jetty.io.ManagedSelector$2@202c4530
+2016-07-06 17:17:34 DEBUG QueuedThreadPool:558 D-SJN-00543448:79272 run EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:34 DEBUG ManagedSelector:423 D-SJN-00543448:79272 Destroyed SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,CLOSED,ISHUT,OSHUT,-,-,5019/30000,HttpConnection}{io=0,kio=-1,kro=-1}
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:114 D-SJN-00543448:79272 EPR Prod/Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 run
+2016-07-06 17:17:34 DEBUG AbstractConnection:181 D-SJN-00543448:79272 onClose HttpConnection@69e2dab3<--null
+2016-07-06 17:17:34 DEBUG QueuedThreadPool:561 D-SJN-00543448:79272 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:34 DEBUG AbstractEndPoint:114 D-SJN-00543448:79272 onClose SelectChannelEndPoint@1a634bcd{/127.0.0.1:58011<->8080,CLOSED,ISHUT,OSHUT,-,-,5019/30000,HttpConnection}{io=0,kio=-1,kro=-1}
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:193 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 ran org.eclipse.jetty.io.ManagedSelector$2@202c4530
+2016-07-06 17:17:34 DEBUG ExecuteProduceRun:206 D-SJN-00543448:79272 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870 produce exit
+2016-07-06 17:17:34 DEBUG QueuedThreadPool:561 D-SJN-00543448:79272 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@44697870
+2016-07-06 17:17:39 DEBUG session:347 D-SJN-00543448:79272 Scavenging sessions at 1467850659572
+2016-07-06 17:32:27 FATAL WorkAppLoggerTestCase:72 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:27 ERROR WorkAppLoggerTestCase:78 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:27 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:27 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:27 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:25548  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-06 17:32:27 INFO  WorkAppLoggerTestCase:59 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:27 FATAL WorkAppLoggerTestCase:72 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:27 ERROR WorkAppLoggerTestCase:78 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:27 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:27 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:27 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:25548  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-06 17:32:27 INFO  WorkAppLoggerTestCase:59 D-SJN-00543448:25548  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:32:31 INFO  WorkAppPropertiesFileWriterExample:91 D-SJN-00543448:25548 Printing Properties to FilePath
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 configFile:D:\\git_learn\\WorkApp\\WorkAppServer\\config\\dev_config_windows.properties
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 log4jPropFile:D:\\git_learn\\WorkApp\\WorkAppServer\\config\\log4j.properties
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 logLevel:debug
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 mode:rest
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 port:8080
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 trackAllocation:false
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 detectJARClash:false
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 dbConfigFile:D:\git_learn\WorkApp\WorkAppServer\config\dbconfig.properties
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 schemaFile:null
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 database:jdbc:mysql://localhost:3306/
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 dbUser:root
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 dbPassword:password
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 dbSchema:workapp
+2016-07-06 17:33:30 DEBUG WorkAppMainServer:98 D-SJN-00543448:75372 dbPoolSize:20
+2016-07-06 17:33:30 DEBUG WorkAppMySQLConnectionManager:98 D-SJN-00543448:75372 Attempting to connect to db at: jdbc:mysql://localhost:3306/workapp
+2016-07-06 17:33:31 DEBUG log:176 D-SJN-00543448:75372 Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+2016-07-06 17:33:31 INFO  log:186 D-SJN-00543448:75372 Logging initialized @5043ms
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.server.session.SessionHandler@6404f418 added {org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9,AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 o.e.j.s.ServletContextHandler@1de5f259{/,null,null} added {org.eclipse.jetty.server.session.SessionHandler@6404f418,AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.server.session.SessionHandler@6404f418 added {org.eclipse.jetty.servlet.ServletHandler@4b0d79fc,AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.server.Server@60099951 added {qtp1101048445{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 HttpConnectionFactory@548d708a[HTTP/1.1] added {HttpConfiguration@4b013c76{32768/8192,8192/8192,https://:0,[]},POJO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.server.Server@60099951,UNMANAGED}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{null,[]}{0.0.0.0:0} added {qtp1101048445{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@7bba5817,AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{null,[]}{0.0.0.0:0} added {org.eclipse.jetty.io.ArrayByteBufferPool@79e4c792,POJO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@548d708a[HTTP/1.1],AUTO}
+2016-07-06 17:33:31 DEBUG ServerConnector:393 D-SJN-00543448:75372 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@548d708a[HTTP/1.1]
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1349883,MANAGED}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.server.Server@60099951 added {ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080},AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.server.Server@60099951 added {o.e.j.s.ServletContextHandler@1de5f259{/,null,null},AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.servlet.ServletHandler@4b0d79fc added {org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,-1,false,AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.servlet.ServletHandler@4b0d79fc added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-1040be71,POJO}
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.server.Server@60099951
+2016-07-06 17:33:31 INFO  Server:339 D-SJN-00543448:75372 jetty-9.3.0.M2
+2016-07-06 17:33:31 DEBUG AbstractHandler:58 D-SJN-00543448:75372 starting org.eclipse.jetty.server.Server@60099951
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting qtp1101048445{STOPPED,8<=0<=200,i=0,q=0}
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @5320ms qtp1101048445{STARTED,8<=8<=200,i=7,q=0}
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting o.e.j.s.ServletContextHandler@1de5f259{/,null,null}
+2016-07-06 17:33:31 DEBUG PreEncodedHttpField:65 D-SJN-00543448:75372 HttpField encoders loaded: [org.eclipse.jetty.http.Http1FieldPreEncoder@6f204a1a]
+2016-07-06 17:33:31 DEBUG AbstractHandler:58 D-SJN-00543448:75372 starting o.e.j.s.ServletContextHandler@1de5f259{/,null,STARTING}
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.server.session.SessionHandler@6404f418
+2016-07-06 17:33:31 DEBUG AbstractHandler:58 D-SJN-00543448:75372 starting org.eclipse.jetty.server.session.SessionHandler@6404f418
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9 added {org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6e535154,MANAGED}
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.server.session.HashSessionIdManager@25df00a0
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @5388ms org.eclipse.jetty.server.session.HashSessionIdManager@25df00a0
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.server.Server@60099951 added {org.eclipse.jetty.server.session.HashSessionIdManager@25df00a0,MANAGED}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9 added {org.eclipse.jetty.server.session.HashSessionIdManager@25df00a0,UNMANAGED}
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6e535154
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @5400ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@6e535154
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @5406ms org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.servlet.ServletHandler@4b0d79fc
+2016-07-06 17:33:31 DEBUG ServletHandler:1495 D-SJN-00543448:75372 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-1040be71 from default=false
+2016-07-06 17:33:31 DEBUG ServletHandler:1516 D-SJN-00543448:75372 filterNameMap={}
+2016-07-06 17:33:31 DEBUG ServletHandler:1517 D-SJN-00543448:75372 pathFilters=null
+2016-07-06 17:33:31 DEBUG ServletHandler:1518 D-SJN-00543448:75372 servletFilterMap=null
+2016-07-06 17:33:31 DEBUG ServletHandler:1519 D-SJN-00543448:75372 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-06 17:33:31 DEBUG ServletHandler:1520 D-SJN-00543448:75372 servletNameMap={org.glassfish.jersey.servlet.ServletContainer-1040be71=org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-06 17:33:31 DEBUG ServletHandler:165 D-SJN-00543448:75372 Adding Default404Servlet to org.eclipse.jetty.servlet.ServletHandler@4b0d79fc
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.servlet.ServletHandler@4b0d79fc added {org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false,AUTO}
+2016-07-06 17:33:31 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 org.eclipse.jetty.servlet.ServletHandler@4b0d79fc added {[/]=>org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee,POJO}
+2016-07-06 17:33:31 DEBUG ServletHandler:1495 D-SJN-00543448:75372 Chose path=/* mapped to servlet=org.glassfish.jersey.servlet.ServletContainer-1040be71 from default=false
+2016-07-06 17:33:31 DEBUG ServletHandler:1495 D-SJN-00543448:75372 Chose path=/ mapped to servlet=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee from default=false
+2016-07-06 17:33:31 DEBUG ServletHandler:1516 D-SJN-00543448:75372 filterNameMap={}
+2016-07-06 17:33:31 DEBUG ServletHandler:1517 D-SJN-00543448:75372 pathFilters=null
+2016-07-06 17:33:31 DEBUG ServletHandler:1518 D-SJN-00543448:75372 servletFilterMap=null
+2016-07-06 17:33:31 DEBUG ServletHandler:1519 D-SJN-00543448:75372 servletPathMap={/*=org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false, /=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false}
+2016-07-06 17:33:31 DEBUG ServletHandler:1520 D-SJN-00543448:75372 servletNameMap={org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee=org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false, org.glassfish.jersey.servlet.ServletContainer-1040be71=org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false}
+2016-07-06 17:33:31 DEBUG AbstractHandler:58 D-SJN-00543448:75372 starting org.eclipse.jetty.servlet.ServletHandler@4b0d79fc
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @5417ms org.eclipse.jetty.servlet.ServletHandler@4b0d79fc
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @5417ms org.eclipse.jetty.server.session.SessionHandler@6404f418
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @5422ms org.eclipse.jetty.servlet.ServletHandler$Default404Servlet-5276d6ee@94c07242==org.eclipse.jetty.servlet.ServletHandler$Default404Servlet,-1,false
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-07-06 17:33:31 DEBUG BaseHolder:97 D-SJN-00543448:75372 Holding class org.glassfish.jersey.servlet.ServletContainer from sun.misc.Launcher$AppClassLoader@18b4aac2
+2016-07-06 17:33:31 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @5423ms org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,false
+2016-07-06 17:33:31 DEBUG ServletHolder:612 D-SJN-00543448:75372 Servlet.init org.glassfish.jersey.servlet.ServletContainer@3b35a229 for org.glassfish.jersey.servlet.ServletContainer-1040be71
+2016-07-06 17:33:33 INFO  ContextHandler:745 D-SJN-00543448:75372 Started o.e.j.s.ServletContextHandler@1de5f259{/,null,AVAILABLE}
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @6939ms o.e.j.s.ServletContextHandler@1de5f259{/,null,AVAILABLE}
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-06 17:33:33 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:8080],POJO}
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@7bba5817
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @6974ms org.eclipse.jetty.util.thread.ScheduledExecutorScheduler@7bba5817
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting HttpConnectionFactory@548d708a[HTTP/1.1]
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @6975ms HttpConnectionFactory@548d708a[HTTP/1.1]
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1349883
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=-1 selected=-1
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @7126ms org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:360 D-SJN-00543448:75372 queue org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.io.ManagedSelector@5327a06e id=1 keys=-1 selected=-1
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:558 D-SJN-00543448:75372 run org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:66 D-SJN-00543448:75372 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e execute
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:132 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e produce enter
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:138 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e producing
+2016-07-06 17:33:33 DEBUG ManagedSelector:230 D-SJN-00543448:75372 Selector loop waiting on select
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @7142ms org.eclipse.jetty.io.ManagedSelector@5327a06e id=1 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:360 D-SJN-00543448:75372 queue org.eclipse.jetty.io.ManagedSelector@5327a06e id=1 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.io.ManagedSelector@2679311f id=2 keys=-1 selected=-1
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:558 D-SJN-00543448:75372 run org.eclipse.jetty.io.ManagedSelector@5327a06e id=1 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:66 D-SJN-00543448:75372 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@51e41a0d execute
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:132 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@51e41a0d produce enter
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:138 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@51e41a0d producing
+2016-07-06 17:33:33 DEBUG ManagedSelector:230 D-SJN-00543448:75372 Selector loop waiting on select
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @7165ms org.eclipse.jetty.io.ManagedSelector@2679311f id=2 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:360 D-SJN-00543448:75372 queue org.eclipse.jetty.io.ManagedSelector@2679311f id=2 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:185 D-SJN-00543448:75372 starting org.eclipse.jetty.io.ManagedSelector@287f7811 id=3 keys=-1 selected=-1
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:558 D-SJN-00543448:75372 run org.eclipse.jetty.io.ManagedSelector@2679311f id=2 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:66 D-SJN-00543448:75372 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@fc79dd9 execute
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:132 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@fc79dd9 produce enter
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:138 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@fc79dd9 producing
+2016-07-06 17:33:33 DEBUG ManagedSelector:230 D-SJN-00543448:75372 Selector loop waiting on select
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @7189ms org.eclipse.jetty.io.ManagedSelector@287f7811 id=3 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:360 D-SJN-00543448:75372 queue org.eclipse.jetty.io.ManagedSelector@287f7811 id=3 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @7190ms org.eclipse.jetty.server.ServerConnector$ServerConnectorManager@1349883
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:558 D-SJN-00543448:75372 run org.eclipse.jetty.io.ManagedSelector@287f7811 id=3 keys=0 selected=0
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:66 D-SJN-00543448:75372 EPR Idle/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@45a4bdfa execute
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:132 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@45a4bdfa produce enter
+2016-07-06 17:33:33 DEBUG ExecuteProduceRun:138 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@45a4bdfa producing
+2016-07-06 17:33:33 DEBUG ManagedSelector:230 D-SJN-00543448:75372 Selector loop waiting on select
+2016-07-06 17:33:33 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-0@421a4ee1,POJO}
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:360 D-SJN-00543448:75372 queue acceptor-0@421a4ee1
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:558 D-SJN-00543448:75372 run acceptor-0@421a4ee1
+2016-07-06 17:33:33 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-1@1237e0be,POJO}
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:360 D-SJN-00543448:75372 queue acceptor-1@1237e0be
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:558 D-SJN-00543448:75372 run acceptor-1@1237e0be
+2016-07-06 17:33:33 DEBUG ContainerLifeCycle:324 D-SJN-00543448:75372 ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} added {acceptor-2@528f8f8b,POJO}
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:360 D-SJN-00543448:75372 queue acceptor-2@528f8f8b
+2016-07-06 17:33:33 DEBUG QueuedThreadPool:558 D-SJN-00543448:75372 run acceptor-2@528f8f8b
+2016-07-06 17:33:33 INFO  ServerConnector:267 D-SJN-00543448:75372 Started ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @7281ms ServerConnector@17f9d882{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-07-06 17:33:33 INFO  Server:391 D-SJN-00543448:75372 Started @7282ms
+2016-07-06 17:33:33 DEBUG AbstractLifeCycle:177 D-SJN-00543448:75372 STARTED @7282ms org.eclipse.jetty.server.Server@60099951
+2016-07-06 17:33:39 DEBUG ManagedSelector:116 D-SJN-00543448:75372 Queued change org.eclipse.jetty.io.ManagedSelector$Accept@6b4a2676 on org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=0 selected=0
+2016-07-06 17:33:39 DEBUG ManagedSelector:233 D-SJN-00543448:75372 Selector loop woken up from select, 0/0 selected
+2016-07-06 17:33:39 DEBUG ManagedSelector:213 D-SJN-00543448:75372 Running change org.eclipse.jetty.io.ManagedSelector$Accept@6b4a2676
+2016-07-06 17:33:39 DEBUG ManagedSelector:116 D-SJN-00543448:75372 Queued change org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@431e8783 on org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=1 selected=0
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:143 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e produced org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@431e8783
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:184 D-SJN-00543448:75372 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e dispatch
+2016-07-06 17:33:39 DEBUG QueuedThreadPool:360 D-SJN-00543448:75372 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:190 D-SJN-00543448:75372 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e run org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@431e8783
+2016-07-06 17:33:39 DEBUG QueuedThreadPool:558 D-SJN-00543448:75372 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:114 D-SJN-00543448:75372 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e run
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:132 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e produce enter
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:138 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e producing
+2016-07-06 17:33:39 DEBUG ManagedSelector:230 D-SJN-00543448:75372 Selector loop waiting on select
+2016-07-06 17:33:39 DEBUG AbstractEndPoint:105 D-SJN-00543448:75372 onOpen SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,-,-,20/30000,null}{io=0,kio=0,kro=0}
+2016-07-06 17:33:39 DEBUG IdleTimeout:156 D-SJN-00543448:75372 SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,-,-,20/30000,null}{io=0,kio=0,kro=0} idle timeout check, elapsed: 20 ms, remaining: 29980 ms
+2016-07-06 17:33:39 DEBUG HttpChannel:96 D-SJN-00543448:75372 new HttpChannelOverHttp@4dbb32fe{r=0,c=false,a=IDLE,uri=-} -> SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,-,-,205/30000,null}{io=0,kio=0,kro=0},null,HttpChannelState@3a52a1bc{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-06 17:33:39 DEBUG HttpConnection:103 D-SJN-00543448:75372 New HTTP Connection HttpConnection@393f37e5<--null
+2016-07-06 17:33:39 DEBUG AbstractConnection:171 D-SJN-00543448:75372 onOpen HttpConnection@393f37e5<--null
+2016-07-06 17:33:39 DEBUG AbstractConnection:117 D-SJN-00543448:75372 fillInterested HttpConnection@393f37e5<--null
+2016-07-06 17:33:39 DEBUG FillInterest:61 D-SJN-00543448:75372 FillInterest@275debac{true,AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}} register AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}
+2016-07-06 17:33:39 DEBUG FillInterest:75 D-SJN-00543448:75372 FillInterest@275debac{true,AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}} register AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}
+2016-07-06 17:33:39 DEBUG SelectChannelEndPoint:162 D-SJN-00543448:75372 changeInterests p=false 0->1 for SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=0,kro=0}
+2016-07-06 17:33:39 DEBUG ManagedSelector:116 D-SJN-00543448:75372 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@679d60bd on org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=1 selected=0
+2016-07-06 17:33:39 DEBUG ManagedSelector:233 D-SJN-00543448:75372 Selector loop woken up from select, 0/1 selected
+2016-07-06 17:33:39 DEBUG ManagedSelector:410 D-SJN-00543448:75372 Created SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=0,kro=0}
+2016-07-06 17:33:39 DEBUG ManagedSelector:213 D-SJN-00543448:75372 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@679d60bd
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:193 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e ran org.eclipse.jetty.io.ManagedSelector$CreateEndPoint@431e8783
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:206 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e produce exit
+2016-07-06 17:33:39 DEBUG SelectChannelEndPoint:128 D-SJN-00543448:75372 Key interests updated 0 -> 1 on SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=1,kro=0}
+2016-07-06 17:33:39 DEBUG QueuedThreadPool:561 D-SJN-00543448:75372 ran org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=1 selected=0
+2016-07-06 17:33:39 DEBUG ManagedSelector:230 D-SJN-00543448:75372 Selector loop waiting on select
+2016-07-06 17:33:39 DEBUG ManagedSelector:233 D-SJN-00543448:75372 Selector loop woken up from select, 1/1 selected
+2016-07-06 17:33:39 DEBUG SelectChannelEndPoint:99 D-SJN-00543448:75372 onSelected 1->0 for SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=0,kio=1,kro=1}
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:143 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e produced org.eclipse.jetty.io.SelectChannelEndPoint$2@4de363de
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:184 D-SJN-00543448:75372 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e dispatch
+2016-07-06 17:33:39 DEBUG QueuedThreadPool:360 D-SJN-00543448:75372 queue EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:190 D-SJN-00543448:75372 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e run org.eclipse.jetty.io.SelectChannelEndPoint$2@4de363de
+2016-07-06 17:33:39 DEBUG QueuedThreadPool:558 D-SJN-00543448:75372 run EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:114 D-SJN-00543448:75372 EPR Pend/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e run
+2016-07-06 17:33:39 DEBUG FillInterest:91 D-SJN-00543448:75372 FillInterest@275debac{true,AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}} fillable AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:132 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e produce enter
+2016-07-06 17:33:39 DEBUG HttpConnection:214 D-SJN-00543448:75372 HttpConnection@393f37e5<--null onFillable enter HttpChannelState@3a52a1bc{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:138 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e producing
+2016-07-06 17:33:39 DEBUG SelectChannelEndPoint:128 D-SJN-00543448:75372 Key interests updated 1 -> 0 on SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,-,-,0/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:33:39 DEBUG ChannelEndPoint:150 D-SJN-00543448:75372 filled 195 SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,-,-,0/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:33:39 DEBUG ManagedSelector:230 D-SJN-00543448:75372 Selector loop waiting on select
+2016-07-06 17:33:39 DEBUG HttpConnection:319 D-SJN-00543448:75372 HttpConnection@393f37e5<--HeapByteBuffer@43248412[p=0,l=195,c=8192,r=195]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 195
+2016-07-06 17:33:39 DEBUG HttpConnection:336 D-SJN-00543448:75372 HttpConnection@393f37e5<--HeapByteBuffer@43248412[p=0,l=195,c=8192,r=195]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@43248412[p=0,l=195,c=8192,r=195]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-06 17:33:39 DEBUG HttpParser:1157 D-SJN-00543448:75372 parseNext s=START HeapByteBuffer@43248412[p=0,l=195,c=8192,r=195]={<<<GET /workapp/v1/t... keep-alive\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 START --> SPACE1
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 SPACE1 --> URI
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 URI --> SPACE2
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 SPACE2 --> REQUEST_VERSION
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 REQUEST_VERSION --> HEADER
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER --> HEADER_VALUE
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER_IN_VALUE --> HEADER
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER --> HEADER_VALUE
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER_IN_VALUE --> HEADER
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER --> HEADER_VALUE
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER_VALUE --> HEADER_IN_VALUE
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER_IN_VALUE --> HEADER
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER --> HEADER_IN_VALUE
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER_IN_VALUE --> HEADER
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 HEADER --> END
+2016-07-06 17:33:39 DEBUG HttpChannel:517 D-SJN-00543448:75372 HttpChannelOverHttp@4dbb32fe{r=1,c=false,a=IDLE,uri=-} onRequestComplete
+2016-07-06 17:33:39 DEBUG HttpInput:366 D-SJN-00543448:75372 org.eclipse.jetty.server.HttpInputOverHTTP@75f8a44a addContent EOF
+2016-07-06 17:33:39 DEBUG HttpConnection:341 D-SJN-00543448:75372 HttpConnection@393f37e5<--HeapByteBuffer@43248412[p=195,l=195,c=8192,r=0]={GET /workapp/v1/t... keep-alive\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed true HttpParser{s=END,0 of 0}
+2016-07-06 17:33:39 DEBUG HttpConnection:191 D-SJN-00543448:75372 releaseRequestBuffer HttpConnection@393f37e5<--HeapByteBuffer@43248412[p=195,l=195,c=8192,r=0]={GET /workapp/v1/t... keep-alive\r\n\r\n<<<>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:33:39 DEBUG HttpChannel:252 D-SJN-00543448:75372 HttpChannelOverHttp@4dbb32fe{r=1,c=false,a=IDLE,uri=-} handle //localhost:8080/workapp/v1/test 
+2016-07-06 17:33:39 DEBUG HttpChannelState:181 D-SJN-00543448:75372 HttpChannelState@3a52a1bc{s=IDLE a=null i=true r=!P!U w=false} handling IDLE
+2016-07-06 17:33:39 DEBUG HttpChannel:267 D-SJN-00543448:75372 HttpChannelOverHttp@4dbb32fe{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/test} action REQUEST_DISPATCH
+2016-07-06 17:33:39 DEBUG Server:498 D-SJN-00543448:75372 REQUEST on HttpChannelOverHttp@4dbb32fe{r=1,c=false,a=DISPATCHED,uri=/workapp/v1/test}
+GET //localhost:8080/workapp/v1/test
+User-Agent: Jersey/2.19 (HttpUrlConnection 1.8.0_92)
+Host: localhost:8080
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Connection: keep-alive
+
+
+2016-07-06 17:33:39 DEBUG ContextHandler:982 D-SJN-00543448:75372 scope null||/workapp/v1/test @ o.e.j.s.ServletContextHandler@1de5f259{/,null,AVAILABLE}
+2016-07-06 17:33:39 DEBUG ContextHandler:1056 D-SJN-00543448:75372 context=||/workapp/v1/test @ o.e.j.s.ServletContextHandler@1de5f259{/,null,AVAILABLE}
+2016-07-06 17:33:39 DEBUG session:179 D-SJN-00543448:75372 sessionManager=org.eclipse.jetty.server.session.HashSessionManager@3e11f9e9
+2016-07-06 17:33:39 DEBUG session:180 D-SJN-00543448:75372 session=null
+2016-07-06 17:33:39 DEBUG ServletHandler:501 D-SJN-00543448:75372 servlet ||/workapp/v1/test -> org.glassfish.jersey.servlet.ServletContainer-1040be71@1cdb646==org.glassfish.jersey.servlet.ServletContainer,0,true
+2016-07-06 17:33:39 DEBUG ServletHandler:564 D-SJN-00543448:75372 chain=null
+2016-07-06 17:33:39 DEBUG HttpChannel:616 D-SJN-00543448:75372 Commit HTTP/1.1{s=200,h=3} to HttpChannelOverHttp@4dbb32fe{r=1,c=true,a=DISPATCHED,uri=/workapp/v1/test}
+2016-07-06 17:33:39 DEBUG HttpConnection:618 D-SJN-00543448:75372 org.eclipse.jetty.server.HttpConnection$SendCallback@7e602c89[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@438e0e63] generate: NEED_HEADER (null,[p=0,l=4,c=8192,r=4],true)@START
+2016-07-06 17:33:39 DEBUG HttpConnection:618 D-SJN-00543448:75372 org.eclipse.jetty.server.HttpConnection$SendCallback@7e602c89[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@438e0e63] generate: FLUSH ([p=0,l=126,c=8192,r=126],[p=0,l=4,c=8192,r=4],true)@COMPLETING
+2016-07-06 17:33:39 DEBUG WriteFlusher:295 D-SJN-00543448:75372 write: WriteFlusher@88d1c79{IDLE} [HeapByteBuffer@43248412[p=0,l=126,c=8192,r=126]={<<<HTTP/1.1 200 OK\r\n...y(9.3.0.M2)\r\n\r\n>>>image/gif, image/...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@57442b69[p=0,l=4,c=8192,r=4]={<<<Test>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+2016-07-06 17:33:39 DEBUG WriteFlusher:118 D-SJN-00543448:75372 update WriteFlusher@88d1c79{WRITING}:IDLE-->WRITING
+2016-07-06 17:33:39 DEBUG ChannelEndPoint:196 D-SJN-00543448:75372 flushed 130 SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,-,W,130/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:33:39 DEBUG WriteFlusher:412 D-SJN-00543448:75372 Flushed=true 126/126+1 WriteFlusher@88d1c79{WRITING}
+2016-07-06 17:33:39 DEBUG WriteFlusher:118 D-SJN-00543448:75372 update WriteFlusher@88d1c79{IDLE}:WRITING-->IDLE
+2016-07-06 17:33:39 DEBUG HttpConnection:618 D-SJN-00543448:75372 org.eclipse.jetty.server.HttpConnection$SendCallback@7e602c89[PROCESSING][i=HTTP/1.1{s=200,h=3},cb=org.eclipse.jetty.server.HttpChannel$CommitCallback@438e0e63] generate: DONE ([p=126,l=126,c=8192,r=0],[p=4,l=4,c=8192,r=0],true)@END
+2016-07-06 17:33:39 DEBUG Server:510 D-SJN-00543448:75372 RESPONSE for /workapp/v1/test h=true
+200 OK
+Date: Thu, 07 Jul 2016 00:33:39 GMT
+Content-Length: 4
+Content-Type: text/plain
+
+
+2016-07-06 17:33:39 DEBUG HttpChannelState:298 D-SJN-00543448:75372 HttpChannelState@3a52a1bc{s=DISPATCHED a=null i=true r=!P!U w=false} unhandle DISPATCHED
+2016-07-06 17:33:39 DEBUG HttpParser:1508 D-SJN-00543448:75372 reset HttpParser{s=END,0 of 0}
+2016-07-06 17:33:39 DEBUG HttpParser:1528 D-SJN-00543448:75372 END --> START
+2016-07-06 17:33:39 DEBUG HttpChannel:423 D-SJN-00543448:75372 HttpChannelOverHttp@4dbb32fe{r=1,c=false,a=IDLE,uri=-} handle exit, result COMPLETE
+2016-07-06 17:33:39 DEBUG ChannelEndPoint:150 D-SJN-00543448:75372 filled 0 SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,-,-,0/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:33:39 DEBUG ChannelEndPoint:150 D-SJN-00543448:75372 filled 0 SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,-,-,0/30000,HttpConnection}{io=0,kio=0,kro=1}
+2016-07-06 17:33:39 DEBUG HttpConnection:319 D-SJN-00543448:75372 HttpConnection@393f37e5<--HeapByteBuffer@43248412[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} filled 0
+2016-07-06 17:33:39 DEBUG HttpConnection:336 D-SJN-00543448:75372 HttpConnection@393f37e5<--HeapByteBuffer@43248412[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parse HeapByteBuffer@43248412[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+2016-07-06 17:33:39 DEBUG HttpParser:1157 D-SJN-00543448:75372 parseNext s=START HeapByteBuffer@43248412[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:33:39 DEBUG HttpConnection:341 D-SJN-00543448:75372 HttpConnection@393f37e5<--HeapByteBuffer@43248412[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} parsed false HttpParser{s=START,0 of -1}
+2016-07-06 17:33:39 DEBUG HttpConnection:191 D-SJN-00543448:75372 releaseRequestBuffer HttpConnection@393f37e5<--HeapByteBuffer@43248412[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2016-07-06 17:33:39 DEBUG AbstractConnection:117 D-SJN-00543448:75372 fillInterested HttpConnection@393f37e5<--null
+2016-07-06 17:33:39 DEBUG FillInterest:61 D-SJN-00543448:75372 FillInterest@275debac{true,AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}} register AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}
+2016-07-06 17:33:39 DEBUG FillInterest:75 D-SJN-00543448:75372 FillInterest@275debac{true,AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}} register AC.ReadCB@393f37e5{HttpConnection@393f37e5<--null}
+2016-07-06 17:33:39 DEBUG SelectChannelEndPoint:162 D-SJN-00543448:75372 changeInterests p=false 0->1 for SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=0,kro=1}
+2016-07-06 17:33:39 DEBUG ManagedSelector:116 D-SJN-00543448:75372 Queued change org.eclipse.jetty.io.SelectChannelEndPoint$1@679d60bd on org.eclipse.jetty.io.ManagedSelector@4567e53d id=0 keys=1 selected=0
+2016-07-06 17:33:39 DEBUG ManagedSelector:233 D-SJN-00543448:75372 Selector loop woken up from select, 0/1 selected
+2016-07-06 17:33:39 DEBUG HttpConnection:257 D-SJN-00543448:75372 HttpConnection@393f37e5<--null onFillable exit HttpChannelState@3a52a1bc{s=IDLE a=null i=true r=!P!U w=false}
+2016-07-06 17:33:39 DEBUG ManagedSelector:213 D-SJN-00543448:75372 Running change org.eclipse.jetty.io.SelectChannelEndPoint$1@679d60bd
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:193 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e ran org.eclipse.jetty.io.SelectChannelEndPoint$2@4de363de
+2016-07-06 17:33:39 DEBUG SelectChannelEndPoint:128 D-SJN-00543448:75372 Key interests updated 0 -> 1 on SelectChannelEndPoint@42b4fe6{/127.0.0.1:58540<->8080,Open,in,out,R,-,0/30000,HttpConnection}{io=1,kio=1,kro=1}
+2016-07-06 17:33:39 DEBUG ExecuteProduceRun:206 D-SJN-00543448:75372 EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e produce exit
+2016-07-06 17:33:39 DEBUG ManagedSelector:230 D-SJN-00543448:75372 Selector loop waiting on select
+2016-07-06 17:33:39 DEBUG QueuedThreadPool:561 D-SJN-00543448:75372 ran EPR Prod/org.eclipse.jetty.io.ManagedSelector$SelectorProducer@6ccb811e
+2016-07-06 17:34:25 FATAL WorkAppLoggerTestCase:72 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:25 ERROR WorkAppLoggerTestCase:78 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:25 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:25 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:25 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:62220  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-06 17:34:25 INFO  WorkAppLoggerTestCase:59 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:25 FATAL WorkAppLoggerTestCase:72 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:25 ERROR WorkAppLoggerTestCase:78 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:25 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:25 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:25 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:62220  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-06 17:34:25 INFO  WorkAppLoggerTestCase:59 D-SJN-00543448:62220  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:34:29 INFO  WorkAppPropertiesFileWriterExample:91 D-SJN-00543448:62220 Printing Properties to FilePath
+2016-07-06 17:37:42 FATAL WorkAppLoggerTestCase:72 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:42 ERROR WorkAppLoggerTestCase:78 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:42 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:42 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:42 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:73484  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.Log4jPropertiesConfigOverrideTest(WorkAppLoggerTestCase.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-06 17:37:42 INFO  WorkAppLoggerTestCase:59 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:42 FATAL WorkAppLoggerTestCase:72 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:42 ERROR WorkAppLoggerTestCase:78 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:42 WARN  WorkAppLoggerTestCase:84 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:42 INFO  WorkAppLoggerTestCase:91 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:42 INFO  WorkAppLoggerTestCase:66 D-SJN-00543448:73484  [ Test Exception ]  - Stacktrace : java.lang.Exception: Test Exception
+	at com.workapp.workappserver.common.logging.WorkAppLoggerTestCase.doBasicTest(WorkAppLoggerTestCase.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+2016-07-06 17:37:42 INFO  WorkAppLoggerTestCase:59 D-SJN-00543448:73484  [2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99,Test GUID] 
+2016-07-06 17:37:47 INFO  WorkAppPropertiesFileWriterExample:91 D-SJN-00543448:73484 Printing Properties to FilePath

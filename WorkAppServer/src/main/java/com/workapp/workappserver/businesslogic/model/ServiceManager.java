@@ -23,7 +23,7 @@ import com.workapp.workappserver.dataaccess.statementgeneration.mysql.implementa
 import com.workapp.workappserver.dataaccess.statementgeneration.mysql.interfaces.WorkAppQbFactory;
 import com.workapp.workappserver.dataaccess.statementgeneration.mysql.interfaces.WorkAppQbSelect;
 
-public class WorkAppServiceManager
+public class ServiceManager
 {
 	private  WorkAppMySQLConnectionManager _connections;
 	private HashMap<String, Object> _configMap;
@@ -36,7 +36,7 @@ public class WorkAppServiceManager
 	 * @param connections
 	 * @throws SQLException
 	 */
-	public WorkAppServiceManager (WorkAppMySQLConnectionManager connections, HashMap<String, Object> configMap, IApplicationLogger logger) throws SQLException
+	public ServiceManager (WorkAppMySQLConnectionManager connections, HashMap<String, Object> configMap, IApplicationLogger logger) throws SQLException
 	{
 		_connections = connections;
 		_configMap = configMap;
@@ -74,23 +74,23 @@ public class WorkAppServiceManager
 		{
 			if (ex.getCause() instanceof MySQLIntegrityConstraintViolationException)
 			{
-				_logger.LogDebug("[" + queryID + "] " + user.getEmail() + " already exists in the database.", WorkAppServiceManager.class);
+				_logger.LogDebug("[" + queryID + "] " + user.getEmail() + " already exists in the database.", ServiceManager.class);
 				throw new DuplicateDBEntryException(user.getEmail() + " already exists in the database.", ex);
 			}
 			else
 			{
-				_logger.LogException(ex, WorkAppServiceManager.class);
+				_logger.LogException(ex, ServiceManager.class);
 				throw new DatabaseException("[" + queryID + "] " + "Database Exception with messasge:" + ex.getMessage(), ex);
 			}
 		}
 		catch (SQLException ex)
 		{
-			_logger.LogException(ex, WorkAppServiceManager.class);
+			_logger.LogException(ex, ServiceManager.class);
 			throw new DatabaseException("[" + queryID + "] " + "Database Exception with messasge:" + ex.getMessage(), ex);
 		}
 		catch (MD5HashingException ex)
 		{
-			_logger.LogException(ex, WorkAppServiceManager.class);
+			_logger.LogException(ex, ServiceManager.class);
 			throw new InternalServerException("[" + queryID + "] " + "Hashing Exception with messasge:" + ex.getMessage(), ex);
 		}
 		finally

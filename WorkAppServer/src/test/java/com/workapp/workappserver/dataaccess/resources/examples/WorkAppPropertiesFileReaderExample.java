@@ -5,7 +5,7 @@ import java.util.Properties;
 
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
 
 /**
@@ -71,7 +71,7 @@ public class WorkAppPropertiesFileReaderExample
 		String fileSystemPath = "/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties";
 		String fileSystemLog4jPath = "/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties";
 
-		IApplicationLogger logger = new WorkAppLogger(null);
+		IApplicationLogger logger = new AppLogger(null);
 
 		printPropertiesFromClassPath(logger, classFilePath);
 		printPropertiesFromFileSystem(logger, fileSystemPath);

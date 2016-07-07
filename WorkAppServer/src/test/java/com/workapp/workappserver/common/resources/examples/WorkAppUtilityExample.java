@@ -16,7 +16,7 @@ import com.workapp.workappserver.common.exception.CryptoException;
 import com.workapp.workappserver.common.exception.MD5HashingException;
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.common.resources.implementation.WorkAppUtil;
 
 /**
@@ -170,7 +170,7 @@ public class WorkAppUtilityExample
 	 */
 	public static void main(String args[]) throws SystemException, MD5HashingException, CryptoException
 	{
-		IApplicationLogger logger = new WorkAppLogger(null);
+		IApplicationLogger logger = new AppLogger(null);
 		WorkAppUtilityExample example = new WorkAppUtilityExample();
 		example.getPIDTest(logger);
 		example.getHostInfoTest(logger);

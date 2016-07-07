@@ -3,13 +3,13 @@ package com.workapp.workappserver.common.resources.implementation;
 import com.workapp.workappserver.common.resources.interfaces.IContext;
 
 /**
- * WorkAppContext is an implementation of IContext, which is used to trace flow
+ * AppContext is an implementation of IContext, which is used to trace flow
  * within the system
  * 
  * @author dhgovindaraj
  *
  */
-public class WorkAppContext implements IContext
+public class AppContext implements IContext
 {
 
 	private String mGUID = "";
@@ -18,7 +18,7 @@ public class WorkAppContext implements IContext
 	/**
 	 * Default Constructor
 	 */
-	public WorkAppContext()
+	public AppContext()
 	{
 
 	}
@@ -30,7 +30,7 @@ public class WorkAppContext implements IContext
 	 * @param ContextName
 	 *            ContextName related to the Context object
 	 */
-	public WorkAppContext(String GUID, String message)
+	public AppContext(String GUID, String message)
 	{
 		this.mGUID = GUID;
 		this.mContextComment = message;

@@ -15,17 +15,17 @@ import com.workapp.workappserver.common.resources.implementation.WorkAppUtil;
 import com.workapp.workappserver.common.resources.interfaces.IContext;
 
 /**
- * WorkAppLogger is an implementation of ILogger Interface
+ * AppLogger is an implementation of ILogger Interface
  * 
  * @author dhgovindaraj
  *
  */
-public class WorkAppLogger implements IApplicationLogger
+public class AppLogger implements IApplicationLogger
 {
 	private ConcurrentHashMap<Class<?>, Logger> mLoggerInstances = new ConcurrentHashMap<Class<?>, Logger>();
 	private static IApplicationLogger mInstance = null;
 
-	public WorkAppLogger(Properties config) throws SystemException
+	public AppLogger(Properties config) throws SystemException
 	{
 		// If External Config File Exists, override default log4j.properties
 		if (config != null)
@@ -36,7 +36,7 @@ public class WorkAppLogger implements IApplicationLogger
 		MDC.put("port", WorkAppUtil.getMyPid(this, null));
 
 		// Logger to catch uncaught exceptions in a separate thread
-		WorkAppUncaughtExceptionLogger.setDefaultUncaughtExceptionHandler(this);
+		UncaughtExceptionLogger.setDefaultUncaughtExceptionHandler(this);
 	}
 
 	private static void configureDefaults(Properties config)

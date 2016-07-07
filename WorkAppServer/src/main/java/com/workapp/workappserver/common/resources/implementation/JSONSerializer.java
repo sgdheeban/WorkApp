@@ -11,13 +11,13 @@ import com.workapp.workappserver.common.logging.IApplicationLogger;
 import com.workapp.workappserver.common.resources.interfaces.ISerializer;
 
 /**
- * WorkAppJSONSerializer is an implementation of ISerializer interface for
+ * JSONSerializer is an implementation of ISerializer interface for
  * serializing and de-serializing JSON and POJO
  * 
  * @author dhgovindaraj
  *
  */
-public class WorkAppJSONSerializer implements ISerializer
+public class JSONSerializer implements ISerializer
 {
 	/**
 	 * Serializes POJO to JSON String
@@ -35,17 +35,17 @@ public class WorkAppJSONSerializer implements ISerializer
 		try
 		{
 			jsonInString = mapper.writeValueAsString(pojo);
-			logger.LogDebug(jsonInString, WorkAppJSONSerializer.class);
+			logger.LogDebug(jsonInString, JSONSerializer.class);
 		}
 		catch (JsonGenerationException | JsonMappingException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 
 		catch (IOException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 		return jsonInString;
@@ -67,17 +67,17 @@ public class WorkAppJSONSerializer implements ISerializer
 		try
 		{
 			jsonInString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(pojo);
-			logger.LogDebug(jsonInString, WorkAppJSONSerializer.class);
+			logger.LogDebug(jsonInString, JSONSerializer.class);
 		}
 		catch (JsonGenerationException | JsonMappingException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 
 		catch (IOException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 		return jsonInString;
@@ -104,13 +104,13 @@ public class WorkAppJSONSerializer implements ISerializer
 		}
 		catch (JsonGenerationException | JsonMappingException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 
 		catch (IOException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 	}
@@ -136,13 +136,13 @@ public class WorkAppJSONSerializer implements ISerializer
 		}
 		catch (JsonGenerationException | JsonMappingException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 
 		catch (IOException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 	}
@@ -167,17 +167,17 @@ public class WorkAppJSONSerializer implements ISerializer
 		{
 			pojo = mapper.readValue(json, classname);
 			String pojoString = mapper.writeValueAsString(pojo);
-			logger.LogDebug(pojoString, WorkAppJSONSerializer.class);
+			logger.LogDebug(pojoString, JSONSerializer.class);
 		}
 		catch (JsonGenerationException | JsonMappingException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 
 		catch (IOException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 		return pojo;
@@ -203,17 +203,17 @@ public class WorkAppJSONSerializer implements ISerializer
 		{
 			pojo = mapper.readValue(new File(jsonFilePath), classname);
 			String pojoString = mapper.writeValueAsString(pojo);
-			logger.LogDebug(pojoString, WorkAppJSONSerializer.class);
+			logger.LogDebug(pojoString, JSONSerializer.class);
 		}
 		catch (JsonGenerationException | JsonMappingException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 
 		catch (IOException ex)
 		{
-			logger.LogException(ex, WorkAppJSONSerializer.class);
+			logger.LogException(ex, JSONSerializer.class);
 			throw new JSONSerializationException("JSON Generation   or Mapping Exception", ex);
 		}
 		return pojo;

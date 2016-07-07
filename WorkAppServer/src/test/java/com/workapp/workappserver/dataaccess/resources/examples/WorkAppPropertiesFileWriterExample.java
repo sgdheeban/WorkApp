@@ -6,7 +6,7 @@ import java.util.Map;
 
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileWriter;
 
 /**
@@ -35,7 +35,7 @@ public class WorkAppPropertiesFileWriterExample
 	public static void main(String args[]) throws IOException, SystemException
 	{
 		String writepath = "config5.properties";
-		IApplicationLogger logger = new WorkAppLogger(null);
+		IApplicationLogger logger = new AppLogger(null);
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("database", "localhost");
 		map.put("dbuser", "dheeban");

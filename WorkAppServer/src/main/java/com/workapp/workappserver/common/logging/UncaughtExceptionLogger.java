@@ -9,9 +9,9 @@ import com.workapp.workappserver.common.exception.WorkAppUncaughtException;
  * @author dhgovindaraj
  *
  */
-public class WorkAppUncaughtExceptionLogger implements ILogger
+public class UncaughtExceptionLogger implements ILogger
 {
-	public static void setDefaultUncaughtExceptionHandler(WorkAppLogger workAppLoggerInstance)
+	public static void setDefaultUncaughtExceptionHandler(AppLogger workAppLoggerInstance)
 	{
 		Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler()
 		{

@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
 
 /**
@@ -29,7 +29,7 @@ public class WorkAppPropertiesFileReaderTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			String classFilePath = "config.properties";
 			WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader.getInstance(logger);
 			Properties prop = propertiesFileReader.loadPropertyFromClassPath(classFilePath);
@@ -54,7 +54,7 @@ public class WorkAppPropertiesFileReaderTestCase
 		IApplicationLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			String fileSystemPath = "/home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/config.properties";
 			WorkAppPropertyFileReader propertiesFileReader = (WorkAppPropertyFileReader) WorkAppPropertyFileReader.getInstance(logger);
 			Properties prop = propertiesFileReader.loadPropertyFromFileSystem(fileSystemPath);

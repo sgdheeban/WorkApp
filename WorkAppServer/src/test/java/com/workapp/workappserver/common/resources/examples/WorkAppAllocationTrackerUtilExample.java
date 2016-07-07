@@ -1,8 +1,8 @@
 package com.workapp.workappserver.common.resources.examples;
 
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
-import com.workapp.workappserver.common.resources.implementation.WorkAppAllocationTrackerUtil;
+import com.workapp.workappserver.common.logging.AppLogger;
+import com.workapp.workappserver.common.resources.implementation.AllocationTrackerUtil;
 
 /**
  * Test Class to illustrate WorkApp Allocation Tracker
@@ -14,7 +14,7 @@ public class WorkAppAllocationTrackerUtilExample
 {
 	public static void main(String[] args) throws Exception
 	{
-		IApplicationLogger logger = new WorkAppLogger(null);
+		IApplicationLogger logger = new AppLogger(null);
 
 		/**
 		 * Enabling Allocation Tracker to track all Heap Object Allocations
@@ -25,7 +25,7 @@ public class WorkAppAllocationTrackerUtilExample
 		 * allocation-instrumenter/java-allocation-instrumenter/3.0/java-
 		 * allocation-instrumenter-3.0.jar
 		 */
-		WorkAppAllocationTrackerUtil.trackHeapAllocation(logger);
+		AllocationTrackerUtil.trackHeapAllocation(logger);
 
 		/**
 		 * Enabling Allocation Tracker to track all Constructor Allocations
@@ -36,7 +36,7 @@ public class WorkAppAllocationTrackerUtilExample
 		 * allocation-instrumenter/java-allocation-instrumenter/3.0/java-
 		 * allocation-instrumenter-3.0.jar
 		 */
-		WorkAppAllocationTrackerUtil.trackConstructorAllocationTest(logger);
+		AllocationTrackerUtil.trackConstructorAllocationTest(logger);
 
 		for (int i = 0; i < 10; i++)
 		{
@@ -46,8 +46,8 @@ public class WorkAppAllocationTrackerUtilExample
 
 		for (int i = 0; i < 20; i++)
 		{
-			new WorkAppAllocationTrackerUtil.TestTracker();
+			new AllocationTrackerUtil.TestTracker();
 		}
-		System.out.println("Constructed " + WorkAppAllocationTrackerUtil.TestTracker.count + " instances of TestTracker");
+		System.out.println("Constructed " + AllocationTrackerUtil.TestTracker.count + " instances of TestTracker");
 	}
 }

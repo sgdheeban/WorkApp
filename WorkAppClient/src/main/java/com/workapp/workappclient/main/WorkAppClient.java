@@ -30,7 +30,7 @@ import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 import com.workapp.workappclient.main.Command;
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppArgument;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppPropertyFileReader;
@@ -113,7 +113,7 @@ public class WorkAppClient
 		{
 			input = new FileInputStream(log4jPropFile);
 			log4jProp.load(input);
-			mLogger = new WorkAppLogger(log4jProp);
+			mLogger = new AppLogger(log4jProp);
 		}
 		catch (IOException ex)
 		{
@@ -413,7 +413,7 @@ public class WorkAppClient
 		if (log4jPropFile == null)
 			try
 			{
-				logger = new WorkAppLogger(null);
+				logger = new AppLogger(null);
 			}
 			catch (SystemException ex)
 			{

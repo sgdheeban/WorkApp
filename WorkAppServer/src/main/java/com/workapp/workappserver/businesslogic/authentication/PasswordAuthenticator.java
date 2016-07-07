@@ -6,7 +6,7 @@ package com.workapp.workappserver.businesslogic.authentication;
  * @author dhgovindaraj
  *
  */
-public class WorkAppPasswordAuthenticator implements IAuthenticator
+public class PasswordAuthenticator implements IAuthenticator
 {
 
 }

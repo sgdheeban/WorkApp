@@ -7,7 +7,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 
-import com.workapp.workappserver.businesslogic.model.WorkAppServiceManager;
+import com.workapp.workappserver.businesslogic.model.ServiceManager;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
 
 /**
@@ -21,14 +21,14 @@ public class WorkAppResource implements IResource
 {
 
 	private static IApplicationLogger _logger;
-	private static WorkAppServiceManager _serviceManager;
+	private static ServiceManager _serviceManager;
 
 	/**
 	 * Initialize Resources
 	 * @param logger
 	 * @param serviceManager
 	 */
-	public static void initResource(IApplicationLogger logger, WorkAppServiceManager serviceManager)
+	public static void initResource(IApplicationLogger logger, ServiceManager serviceManager)
 	{
 		_logger = logger;
 		_serviceManager = serviceManager;

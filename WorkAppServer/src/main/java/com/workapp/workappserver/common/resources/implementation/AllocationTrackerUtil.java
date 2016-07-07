@@ -9,13 +9,13 @@ import com.google.monitoring.runtime.instrumentation.Sampler;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
 
 /**
- * WorkAppAllocationTrackerUtil is a util class which tracks all objects created
+ * AllocationTrackerUtil is a util class which tracks all objects created
  * by WorkApp
  * 
  * @author dhgovindaraj
  *
  */
-public class WorkAppAllocationTrackerUtil
+public class AllocationTrackerUtil
 {
 	public static class TestTracker
 	{
@@ -46,11 +46,11 @@ public class WorkAppAllocationTrackerUtil
 			public void sampleAllocation(int count, String desc, Object newObj, long size)
 			{
 				if (logger != null)
-					logger.LogDebug("Allocated the object " + newObj + " of type " + desc + " whose size is " + size, WorkAppAllocationTrackerUtil.class);
+					logger.LogDebug("Allocated the object " + newObj + " of type " + desc + " whose size is " + size, AllocationTrackerUtil.class);
 				if (count != -1)
 				{
 					if (logger != null)
-						logger.LogDebug("It's an array of size " + count, WorkAppAllocationTrackerUtil.class);
+						logger.LogDebug("It's an array of size " + count, AllocationTrackerUtil.class);
 				}
 			}
 		});
@@ -76,7 +76,7 @@ public class WorkAppAllocationTrackerUtil
 				public void sample(TestTracker t)
 				{
 					if (logger != null)
-						logger.LogDebug("Constructing an element of type TestTracker with x = " + t.x, WorkAppAllocationTrackerUtil.class);
+						logger.LogDebug("Constructing an element of type TestTracker with x = " + t.x, AllocationTrackerUtil.class);
 					TestTracker.count++;
 				}
 			});
@@ -84,7 +84,7 @@ public class WorkAppAllocationTrackerUtil
 		catch (UnmodifiableClassException ex)
 		{
 			if (logger != null)
-				logger.LogException(ex, WorkAppAllocationTrackerUtil.class);
+				logger.LogException(ex, AllocationTrackerUtil.class);
 		}
 	}
 }

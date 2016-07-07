@@ -14,7 +14,7 @@ import org.junit.Test;
 
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
+import com.workapp.workappserver.common.logging.AppLogger;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppJDBCConnection;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
 
@@ -36,7 +36,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 	{
 		try
 		{
-			IApplicationLogger logger = new WorkAppLogger(null);
+			IApplicationLogger logger = new AppLogger(null);
 			String dbUrl = "jdbc:mysql://localhost:3306/";
 			String dbClass = "com.mysql.jdbc.Driver";
 			// String query = "Select distinct(table_name) from
@@ -86,7 +86,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 	{
 		try
 		{
-			IApplicationLogger logger = new WorkAppLogger(null);
+			IApplicationLogger logger = new AppLogger(null);
 			String dbUrl = "jdbc:mysql://localhost:3306/";
 			String dbClass = "com.mysql.jdbc.Driver";
 			// String query = "Select distinct(table_name) from
@@ -135,7 +135,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
-			IApplicationLogger logger = new WorkAppLogger(null);
+			IApplicationLogger logger = new AppLogger(null);
 			String dbUrl = "jdbc:mysql://localhost:3306/";
 			String query = "Select * from testdb.user";
 			String username = "root";
@@ -208,7 +208,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
-			IApplicationLogger logger = new WorkAppLogger(null);
+			IApplicationLogger logger = new AppLogger(null);
 			String dbUrl = "jdbc:mysql://localhost:3306/";
 			String username = "root";
 			String password = "password";
@@ -305,7 +305,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
-			IApplicationLogger logger = new WorkAppLogger(null);
+			IApplicationLogger logger = new AppLogger(null);
 			String dbUrl = "jdbc:mysql://localhost:3306/";
 			String query = "Select * from testdb.user";
 			String username = "root";
@@ -378,7 +378,7 @@ public class WorkAppMySQLConnectionManagerTestCase
 		WorkAppMySQLConnectionManager connections = null;
 		try
 		{
-			IApplicationLogger logger = new WorkAppLogger(null);
+			IApplicationLogger logger = new AppLogger(null);
 			String dbUrl = "jdbc:mysql://localhost:3306/";
 			String username = "root";
 			String password = "password";

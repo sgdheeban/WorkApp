@@ -16,11 +16,11 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.jhades.JHades;
 
-import com.workapp.workappserver.businesslogic.model.WorkAppServiceManager;
+import com.workapp.workappserver.businesslogic.model.ServiceManager;
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
-import com.workapp.workappserver.common.resources.implementation.WorkAppAllocationTrackerUtil;
+import com.workapp.workappserver.common.logging.AppLogger;
+import com.workapp.workappserver.common.resources.implementation.AllocationTrackerUtil;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppArgument;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppCommandLineArgsReader;
 import com.workapp.workappserver.dataaccess.resources.implementation.WorkAppMySQLConnectionManager;
@@ -183,7 +183,7 @@ public class WorkAppMainServer
 		{
 			input = new FileInputStream(log4jPropFile);
 			log4jProp.load(input);
-			mLogger = new WorkAppLogger(log4jProp);
+			mLogger = new AppLogger(log4jProp);
 		}
 		catch (IOException ex)
 		{
@@ -323,7 +323,7 @@ public class WorkAppMainServer
 		if (log4jPropFile == null)
 			try
 			{
-				logger = new WorkAppLogger(null);
+				logger = new AppLogger(null);
 			}
 			catch (SystemException ex)
 			{
@@ -382,10 +382,10 @@ public class WorkAppMainServer
 		{
 			logger.LogDebug("Don't forgot to add JVM param -javaagent:<location-to>/java-allocation-instrumenter-3.0.jar", WorkAppMainServer.class);
 			// Track Heap Allocations
-			WorkAppAllocationTrackerUtil.trackHeapAllocation(logger);
+			AllocationTrackerUtil.trackHeapAllocation(logger);
 			// Track Custom Constructor Allocations (you can write your own
 			// constructor method to track like below example)
-			// WorkAppAllocationTrackerUtil.trackConstructorAllocationTest(logger);
+			// AllocationTrackerUtil.trackConstructorAllocationTest(logger);
 		}
 
 		// If DB config not null - Instantiate Essentials
@@ -397,7 +397,7 @@ public class WorkAppMainServer
 			try
 			{
 				connections = new WorkAppMySQLConnectionManager(database + dbSchema, dbUser, dbPassword, dbPoolSize, logger);
-				WorkAppServiceManager serviceManager = new WorkAppServiceManager(connections, configMap, logger);
+				ServiceManager serviceManager = new ServiceManager(connections, configMap, logger);
 				WorkAppResource.initResource(logger, serviceManager);
 			}
 			catch (SQLException ex)

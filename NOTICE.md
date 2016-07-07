@@ -46,6 +46,8 @@ This product includes the libraries
   
   
 This product also includes modified version of the source code from the following open-source projects and abide by the original open-source permissive license of these projects 
+  
   perist orm/dao developed by Julio Maia
   query-string-builder developed by Alex Kashchenko
+  pipeline-workflow developed by Michal Antolik
   	  

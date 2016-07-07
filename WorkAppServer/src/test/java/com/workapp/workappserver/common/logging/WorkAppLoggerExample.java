@@ -3,19 +3,19 @@ package com.workapp.workappserver.common.logging;
 import java.io.IOException;
 
 import com.workapp.workappserver.common.exception.SystemException;
-import com.workapp.workappserver.common.logging.WorkAppLogger;
-import com.workapp.workappserver.common.resources.implementation.WorkAppContext;
+import com.workapp.workappserver.common.logging.AppLogger;
+import com.workapp.workappserver.common.resources.implementation.AppContext;
 import com.workapp.workappserver.common.resources.interfaces.IContext;
 
 /**
- * Example testing WorkAppLogger functionality
+ * Example testing AppLogger functionality
  * 
  * @author dhgovindaraj
  *
  */
 public class WorkAppLoggerExample
 {
-	private static IContext ctx = new WorkAppContext("2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99", "Test GUID");
+	private static IContext ctx = new AppContext("2634b48f-c7ee-418c-8d0a-7c1fb3a1fc99", "Test GUID");
 
 	/**
 	 * Testing Default Logging Behavior, with inbuilt log4j.properties added to
@@ -23,10 +23,10 @@ public class WorkAppLoggerExample
 	 */
 	private static void defaultLoggerFunctionalityTest()
 	{
-		WorkAppLogger logger;
+		AppLogger logger;
 		try
 		{
-			logger = new WorkAppLogger(null);
+			logger = new AppLogger(null);
 			logger.LogFatal(ctx, WorkAppLoggerExample.class);
 			logger.LogError(ctx, WorkAppLoggerExample.class);
 			logger.LogWarn(ctx, WorkAppLoggerExample.class);
