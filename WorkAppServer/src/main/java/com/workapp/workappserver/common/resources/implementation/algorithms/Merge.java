@@ -1,4 +1,4 @@
-package com.workapp.workappserver.common.resources.implementation.aglorithms;
+package com.workapp.workappserver.common.resources.implementation.algorithms;
 
 import com.workapp.workappserver.common.resources.interfaces.IAlgorithm;
 

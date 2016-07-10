@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import com.workapp.workappserver.common.resources.implementation.aglorithms.Merge;
+import com.workapp.workappserver.common.resources.implementation.algorithms.Merge;
 
 public class MergeSortExample {
 

@@ -3,7 +3,7 @@ package com.workapp.workappserver.common.resources.examples;
 import java.io.IOException;
 
 import com.workapp.workappserver.common.exception.AlgorithmException;
-import com.workapp.workappserver.common.resources.implementation.aglorithms.UnionFindAlgorithm;
+import com.workapp.workappserver.common.resources.implementation.algorithms.UnionFindAlgorithm;
 
 public class UnionFindAlgorithmExample
 {

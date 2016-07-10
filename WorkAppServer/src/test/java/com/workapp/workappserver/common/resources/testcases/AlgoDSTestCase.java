@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import com.workapp.workappserver.common.exception.AlgorithmException;
-import com.workapp.workappserver.common.resources.implementation.aglorithms.Merge;
-import com.workapp.workappserver.common.resources.implementation.aglorithms.UnionFindAlgorithm;
+import com.workapp.workappserver.common.resources.implementation.algorithms.Merge;
+import com.workapp.workappserver.common.resources.implementation.algorithms.UnionFindAlgorithm;
 import com.workapp.workappserver.common.resources.implementation.datastructures.RwayTrieST;
 import com.workapp.workappserver.common.resources.implementation.datastructures.TernarySearchTrieST;
 
