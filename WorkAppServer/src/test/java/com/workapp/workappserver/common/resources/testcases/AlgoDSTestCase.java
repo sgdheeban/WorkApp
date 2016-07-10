@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import com.workapp.workappserver.common.exception.AlgorithmException;
+import com.workapp.workappserver.common.resources.implementation.aglorithms.Merge;
 import com.workapp.workappserver.common.resources.implementation.aglorithms.UnionFindAlgorithm;
 import com.workapp.workappserver.common.resources.implementation.datastructures.RwayTrieST;
 import com.workapp.workappserver.common.resources.implementation.datastructures.TernarySearchTrieST;
@@ -46,7 +47,6 @@ public class AlgoDSTestCase
 	@Test
 	public void testTrieST()
 	{
-
 		RwayTrieST<Integer> rwayTrie = new RwayTrieST<Integer>();
 		rwayTrie.put("cat", 1);
 		rwayTrie.put("bat", 2);
@@ -65,7 +65,18 @@ public class AlgoDSTestCase
 		assertEquals(new Integer(1), tst.get("cat"));
 		assertNotEquals(new Integer(2), tst.get("dat"));
 		assertEquals(new Integer(5), tst.get("aa"));
-
+	}
+	
+	/**
+	 * Testing Merge Sort
+	 */
+	@Test
+	public void testMergeSort()
+	{
+		Integer[] a = {5,21,1};
+		Integer[] b = {1,5,21};
+		Merge.sort(a);
+		assertArrayEquals(a, b);
 	}
 
 }
