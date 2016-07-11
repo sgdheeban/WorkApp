@@ -6,14 +6,11 @@ import com.workapp.workappserver.common.exception.AlgorithmException;
 import com.workapp.workappserver.common.resources.interfaces.IAlgorithm;
 
 /**
- * Weighted Union Find with Path Compression enables to find connected
+ * Standard implementation of Weighted Union Find with Path Compression enables to find connected
  * components Big-O: O(N+ m* log*N)
  * 
  * where N = no of objects m = total no of union-find operations log*N is a
  * constant of 5 for real world
- * 
- * Copied from  Robert Sedgewick and Kevin Wayne algorithms algorithm design manual
- * 
  * 
  * @author dhgovindaraj
  *
