@@ -14,6 +14,5 @@ This is the main server module, which hosts the backend server logic for WorkApp
   8. Java MultiThreading Pipeline - Queuing and Batching Layer [Common Resources Package]
   9. Database Connection Manager for MySQL [Data Access Package]
   10. REST Service Layer using Embedded Jetty-Jersey Server on port 8080 [Common Resources / Service Package]
-  11. Supports Ehcache, Guava Cache, ActiveMQ, RocksDB, Thrift Integration [Maven Jars Included]
-  12. Algorithm Packages - Constantly updated as a Learning Exercise [Common Resources Packages]
-  13. Customize Business Objects using underlying components - Contains sample symbol table API [Model Package]
+  11. Algorithm Packages - Constantly updated as a Learning Exercise [Common Resources Packages]
+  12. Customize Business Objects using underlying components - Contains sample symbol table API [Model Package]
