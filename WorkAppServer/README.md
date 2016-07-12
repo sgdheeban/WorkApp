@@ -4,8 +4,6 @@ This is the main server module, which hosts the backend server logic for WorkApp
 
 ## Sub-Components
 
-### Core Components
-
   1. Common Logger [Common Resources Package]
   2. File and Command Line based Configuration Reader [Data Access Package]
   3. Deserializer between POJO and JSON [Common Resources Package]
@@ -18,11 +16,4 @@ This is the main server module, which hosts the backend server logic for WorkApp
   10. REST Service Layer using Embedded Jetty-Jersey Server on port 8080 [Common Resources / Service Package]
   11. Supports Ehcache, Guava Cache, ActiveMQ, RocksDB, Thrift Integration [Maven Jars Included]
   12. Algorithm Packages - Constantly updated as a Learning Exercise [Common Resources Packages]
- 
-### Business Logic Components
-
-  1. Model Business Objects & Business Logic using the underlying components [Model Package]
-
-### Components for Scale-Out and Scale-Up Performance Improvements (Todo)
-
-  1. Distributed Coordination Layer [Common Resources Package]
+  13. Customize Business Objects using underlying components - Contains sample symbol table API [Model Package]
