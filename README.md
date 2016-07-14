@@ -1,7 +1,7 @@
 # WorkApp
 Client-Server codebase for WorkApp, an open-source, generic client-server framework for building data-driven software applications. 
 
-This is a project framework with all necessary utilities pre-built to run a single node application (but could be easily scaled out by adding appropriate consumers of distributed technologies), and provides a ready to use project structure, which could be easily extended for any use case, simply by adding business objects utilizing the underlying components.
+This is a project framework with all necessary utilities pre-built to run a single node application (it's modular, so could be easily scaled out as well), and provides a ready to use project structure, which could be easily extended for any use case, simply by adding business objects utilizing the underlying components.
 
 This project was built solely as an academic exercise over evenings and weekends, well covered by JUnit test cases and returned back to the Open Source Community with appropriate permissive licence, to the best of my knowledge.
 

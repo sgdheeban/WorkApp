@@ -1,14 +1,11 @@
 package com.workapp.workappclient.main;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
-import java.util.zip.GZIPInputStream;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -17,10 +14,7 @@ import javax.ws.rs.core.Response;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.javatuples.Pair;
 import org.javatuples.Quartet;
-import org.javatuples.Quintet;
-
 import jline.TerminalFactory;
 import jline.console.ConsoleReader;
 import jline.console.completer.FileNameCompleter;
@@ -257,6 +251,7 @@ public class WorkAppClient
 		outputString.append("test : Test the REST Service\n");
 		outputString.append("get(key) : Get Value for a key\n");
 		outputString.append("put(key,value) : Store a key-value pair\n");
+		outputString.append("get(key) : Delete a key-value pair\n");
 		outputString.append("quit : Quit\n");
 		System.out.println(outputString.toString());
 
@@ -266,6 +261,9 @@ public class WorkAppClient
 	private static void registerRestAPI()
 	{
 		commandMap.put(Command.test, new Quartet(GET, "http://" + host + ":" + port + "/workapp/v1/test", "text/plain", null));
+		commandMap.put(Command.get, new Quartet(GET, "http://" + host + ":" + port + "/workapp/v1/get?key=", "text/plain", null));
+		commandMap.put(Command.put, new Quartet(GET, "http://" + host + ":" + port + "/workapp/v1/put?key=", "text/plain", null));
+		commandMap.put(Command.delete, new Quartet(GET, "http://" + host + ":" + port + "/workapp/v1/delete?key=", "text/plain", null));
 	}
 
 	private static void executeGetURL(String url, String contentType)
@@ -277,7 +275,6 @@ public class WorkAppClient
 			Response response = client.target(url).request().get();
 			if (response.getStatus() != 200) { throw new RuntimeException("Failed : HTTP error code : " + response.getStatus()); }
 			String output = response.readEntity(String.class);
-			System.out.println("Output from Server ....");
 			System.out.println(output);
 		}
 		catch (Exception ex)
@@ -354,10 +351,40 @@ public class WorkAppClient
 				{
 					switch (line.toLowerCase())
 					{
-					case Command.test:
-						executeURL(commandMap.get(Command.test));
-						break;
-
+						case Command.test:
+							executeURL(commandMap.get(Command.test));
+							break;
+						case Command.get:
+							console.setPrompt("Enter Key > ");
+					        String key = console.readLine();
+					        Quartet<String, String, String, String> getQuartet = commandMap.get(Command.get);
+					        Quartet<String, String, String, String> quartet = new Quartet<String, String, String, String>(getQuartet.getValue0(), getQuartet.getValue1()+key, getQuartet.getValue2(), getQuartet.getValue3());
+					        executeURL(quartet);
+							console.setPrompt("WorkAppClient> ");
+							break;
+						case Command.put:
+							console.setPrompt("Enter Key > ");
+					        String key1 = console.readLine();
+					        console.setPrompt("Enter Value > ");
+					        String value1 = console.readLine();
+					        Quartet<String, String, String, String> putQuartet = commandMap.get(Command.put);
+					        Quartet<String, String, String, String> quartet1 = new Quartet<String, String, String, String>(putQuartet.getValue0(), putQuartet.getValue1()+key1+"&value="+value1, putQuartet.getValue2(), putQuartet.getValue3());
+					        executeURL(quartet1);
+							console.setPrompt("WorkAppClient> ");
+							executeURL(commandMap.get(Command.put));
+							break;
+						case Command.delete:
+							console.setPrompt("Enter Key > ");
+					        String key11 = console.readLine();
+					        Quartet<String, String, String, String> deleteQuartet = commandMap.get(Command.delete);
+					        Quartet<String, String, String, String> quartet11 = new Quartet<String, String, String, String>(deleteQuartet.getValue0(), deleteQuartet.getValue1()+key11, deleteQuartet.getValue2(), deleteQuartet.getValue3());
+					        executeURL(quartet11);
+							console.setPrompt("WorkAppClient> ");
+							executeURL(commandMap.get(Command.delete));
+							break;
+						case Command.quit:
+							terminate();
+							break;
 					}
 				}
 			}

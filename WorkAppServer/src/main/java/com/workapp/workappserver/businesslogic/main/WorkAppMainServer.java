@@ -17,6 +17,8 @@ import org.apache.log4j.Logger;
 import org.jhades.JHades;
 
 import com.workapp.workappserver.businesslogic.model.ServiceManager;
+import com.workapp.workappserver.common.exception.DatabaseException;
+import com.workapp.workappserver.common.exception.DuplicateDBEntryException;
 import com.workapp.workappserver.common.exception.SystemException;
 import com.workapp.workappserver.common.logging.IApplicationLogger;
 import com.workapp.workappserver.common.logging.AppLogger;
@@ -388,6 +390,7 @@ public class WorkAppMainServer
 			// AllocationTrackerUtil.trackConstructorAllocationTest(logger);
 		}
 
+		ServiceManager serviceManager = null;
 		// If DB config not null - Instantiate Essentials
 		// Get an instance of Connection Manager - use connection-string from
 		// dbconfig
@@ -397,7 +400,7 @@ public class WorkAppMainServer
 			try
 			{
 				connections = new WorkAppMySQLConnectionManager(database + dbSchema, dbUser, dbPassword, dbPoolSize, logger);
-				ServiceManager serviceManager = new ServiceManager(connections, configMap, logger);
+				serviceManager = new ServiceManager(connections, configMap, logger);
 				WorkAppResource.initResource(logger, serviceManager);
 			}
 			catch (SQLException ex)
@@ -414,7 +417,7 @@ public class WorkAppMainServer
 			}
 
 		}
-
+		
 		// Start an Jetty-HTTP or Thrift server to serve requests - use
 		// mode/port info from config
 		if (mode.equalsIgnoreCase(REST_SERVICE))

@@ -7,5 +7,5 @@ drop database if exists `testdb` ;
 // Dropping workapp db
 drop database if exists `workapp` ;
 
-// Dropping kvdb
-drop database if exists `kvdb` ;
+// Dropping basedb
+drop database if exists `basedb` ;
