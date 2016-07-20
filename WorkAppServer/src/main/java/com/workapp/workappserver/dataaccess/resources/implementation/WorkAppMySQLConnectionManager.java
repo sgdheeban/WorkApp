@@ -63,7 +63,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 	/**
 	 * Close the Connection Manager, closes and removes all active connections
 	 */
-	public synchronized void close()
+	public void close()
 	{
 		mLogger.LogDebug("Closing all MySQL connections!", WorkAppMySQLConnectionManager.class);
 		final Enumeration<WorkAppJDBCConnection> conns = connections.elements();
@@ -81,7 +81,7 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 	 * @return
 	 * @throws SQLException
 	 */
-	public synchronized WorkAppJDBCConnection getConnection() throws SQLException
+	public WorkAppJDBCConnection getConnection() throws SQLException
 	{
 		WorkAppJDBCConnection conn;
 		for (int i = 0; i < connections.size(); i++)
@@ -114,12 +114,12 @@ public class WorkAppMySQLConnectionManager implements Closeable, IConnectionMana
 	 * @param conn
 	 *            Connection object to be closed
 	 */
-	public static synchronized void removeConn(Connection conn)
+	public static void removeConn(Connection conn)
 	{
 		connections.remove(conn);
 	}
 
-	private synchronized void verifyConnections()
+	private void verifyConnections()
 	{
 		mLogger.LogDebug("Attempting to remove dead connections", WorkAppMySQLConnectionManager.class);
 		final long stale = System.currentTimeMillis() - timeToLive;
