@@ -12,3 +12,16 @@ create table user (
 
 --test-dash
 select * from user;
+
+//Creating basedb Database
+drop database if exists `basedb`;
+create database `basedb`;
+use basedb;
+
+//Creating kv_table
+drop table if exists kv_table;
+create table kv_table (
+	key_str varchar(255),	
+	value_str varchar(255),
+	PRIMARY KEY (key_str)
+);

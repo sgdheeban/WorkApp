@@ -1,9 +1,9 @@
 # WorkApp
 Client-Server codebase for WorkApp, an open-source, generic client-server framework for building data-driven software applications. 
 
-This is a project framework with all necessary utilities pre-built, and provides a ready to use project structure, which could be easily extended for any use case. 
+This is a project framework with all necessary utilities pre-built to run a single node application (it's modular, so could be easily scaled out as well), and provides a ready to use project structure, which could be easily extended for any use case, simply by adding business objects utilizing the underlying components.
 
-This project was built solely as an academic exercise, well covered by JUnit test cases and returned back to the Open Source Community with appropriate permissive licence, to the best of my knowledge.
+This project was built solely as an academic exercise over evenings and weekends, well covered by JUnit test cases and returned back to the Open Source Community with appropriate permissive licence, to the best of my knowledge.
 
 ## Requirements
 
@@ -33,7 +33,7 @@ WorkApp is a standard Maven project. Simply run the following command from the p
 
 On the first build, Maven will download all the dependencies from the internet and cache them in the local repository (`~/.m2/repository`), which can take a considerable amount of time. Subsequent builds will be faster. 
 
-Also, during your first build, depending on the version of the JDK installed in your system, you may encounter build path errors in eclipse, which you can fix by adjusting the build path to point to your JDK specification. You can mirror the same command line and VM arguments for building both the server and the client.
+Also, during your first build, depending on the version of the JDK installed in your system, you may encounter build path errors in eclipse, which you can fix by adjusting the build path to point to your JDK specification. 
 
 WorkApp has a comprehensive set of unit tests that can take several minutes to run. You can disable the tests when building:
 
@@ -53,7 +53,7 @@ After opening the project in Eclipse IDE, double check that the Java SDK is prop
 
 WorkApp comes with sample configuration that should work out-of-the-box for development. Use the following options to create a run configuration:
 
-* Main Class: `com.workappinc.workapp.server.WorkAppServer`
+* Main Class: `com.workapp.workapp.server.WorkAppServer`
 * Command Line Options (Check Main method for More options): `-c /home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/dev_config.properties -lp /home/dhgovindaraj/Documents/git_clone/WorkApp/WorkAppServer/config/log4j.properties -l debug`
 * VM Options: `-ea -Xmx2G`
 * VM Options for enabling Allocation Tracker : `-javaagent:local-maven-repo-path-to-jar/java-allocation-instrumenter-3.0.jar`
@@ -63,3 +63,5 @@ WorkApp comes with sample configuration that should work out-of-the-box for deve
 
 The working directory should be the `WorkApp` subdirectory. In EclipseIDE, using `$MODULE_DIR$` accomplishes this automatically.
 For more info on Allocation Tracker, please check here : `https://github.com/google/allocation-instrumenter`
+
+For WorkAppClient, you can mirror the same command line and VM arguments for building both the server and the client. But, add -Djline.terminal=jline.UnsupportedTerminal to get the client working in Eclipse, as the JLine, our console reader library has a bug that makes it not to work in Eclise without this parameter.

@@ -6,3 +6,6 @@ drop database if exists `testdb` ;
 
 // Dropping workapp db
 drop database if exists `workapp` ;
+
+// Dropping basedb
+drop database if exists `basedb` ;
